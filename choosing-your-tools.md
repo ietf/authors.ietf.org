@@ -2,7 +2,7 @@
 title: Choosing your format and tools
 description: 
 published: true
-date: 2021-10-10T22:15:29.825Z
+date: 2021-10-12T18:19:01.637Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T23:57:12.813Z
@@ -22,7 +22,7 @@ To help with your choice, the diagram below deconstructs the authoring process i
 
 ```mermaid
 graph TD  
-  A("Initial drafting<br/>(Any format)") --> B("Collaborative editing<br/>(Any format")
+  A("Initial drafting<br/>(Any format)") --> B("Collaborative editing<br/>(Any format)")
   A -.-> D
   B -.-> D
   B -- Optional --> C("Document validation<br/>(XML or plain text only)")

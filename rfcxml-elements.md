@@ -2,7 +2,7 @@
 title: RFCXML Elements
 description: 
 published: true
-date: 2021-11-02T23:42:05.448Z
+date: 2021-11-02T23:49:19.000Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -98,6 +98,7 @@ Formatters that do pagination should attempt to keep artwork on a single page. T
 
 See Section 5 for a description of how to deal with issues of using "&" and "<" characters in artwork.
 
+### Schema
 Parents: `artset`, `aside`, `blockquote`, `dd`, `figure`, `li`, `section`, `td`, `th`
 
 Contents: `( text* | svg )`
@@ -142,4 +143,67 @@ A complete list of the preferred values is maintained on the RFC Editor web site
 
 ### "width"
 TBD
+
+## aside
+## Tabs {.tabset}
+### Usage
+This element is a container for content that is semantically less important or tangential to the content that surrounds it.
+ 
+### Schema
+Parents: `dd`, `section`
+
+Contents: `( artset | artwork | blockquote | dl | figure | iref | ol | t | table | ul )*`
+
+### "anchor"
+Document-wide unique identifier for this `aside` element.
+
+## author
+## Tabs {.tabset}
+### Usage
+Provides information about a document's author. This is used both for the document itself (at the beginning of the document) and for referenced documents.
+
+The `author` elements contained within the document's `front` element are used to fill the boilerplate and also to generate the "Author's Address" section (see RFC7322).
+
+Note that an "author" can also be just an organization (by not specifying any of the "name" attributes, but adding the `organization` child element).
+
+Furthermore, the "role" attribute can be used to mark an author as "editor". This is reflected both on the front page and in the "Author's Address" section, as well as in bibliographic references. Note that this specification does not define a precise meaning for the term "editor".
+
+### Schema
+Parents: `front`, `section`
+
+Contents: `organization?, address?`
+
+### "anchor"
+Document-wide unique identifier for this `author` element.
+
+### "asciiFullname" 
+
+The Latin script equivalent of the author's full name.
+
+### "asciiInitials" 
+
+The Latin script equivalent of the author's initials, to be used in conjunction with the separately specified asciiSurname.
+
+### "asciiSurname" 
+
+The Latin script equivalent of the author's surname, to be used in conjunction with the separately specified asciiInitials.
+
+### "fullname" 
+
+The full name (used in the automatically generated "Author's Address" section). Although this attribute is optional, if one or more of the "asciiFullname", "asciiInitials", or "asciiSurname" attributes does not have values, the "fullname" attribute is required.
+
+### "initials" 
+
+An abbreviated variant of the given name(s), to be used in conjunction with the separately specified surname. It usually appears on the front page, in footers, and in references.
+
+Some processors will post-process the value -- for instance, when it only contains a single letter (in which case they might add a trailing dot). Relying on this kind of post-processing can lead to results varying across formatters and thus ought to be avoided.
+
+### "role" 
+
+Specifies the role the author had in creating the document.
+
+### "surname" 
+
+The author's surname, to be used in conjunction with the separately specified initials. It usually appears on the front page, in footers, and in references.
+
 

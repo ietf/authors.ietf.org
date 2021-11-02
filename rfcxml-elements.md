@@ -2,7 +2,7 @@
 title: RFCXML Elements
 description: 
 published: true
-date: 2021-11-02T23:36:37.335Z
+date: 2021-11-02T23:42:05.448Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -101,3 +101,45 @@ See Section 5 for a description of how to deal with issues of using "&" and "<" 
 Parents: `artset`, `aside`, `blockquote`, `dd`, `figure`, `li`, `section`, `td`, `th`
 
 Contents: `( text* | svg )`
+
+### "align"
+Controls whether the artwork appears left justified, centered, or right justified.
+
+Possible values: `( "left" | "center" | "right" )`
+Default value: `"left"`
+
+### "alt"
+Alternative text description of the artwork (which is more than just a summary or caption). When the art comes from the "src" attribute and the format of that artwork supports alternate text, the alternative text comes from the text of the artwork itself, not from this attribute. The contents of this attribute are important to readers who are visually impaired, as well as those reading on devices that cannot show the artwork well, or at all.
+
+### "anchor"
+Document-wide unique identifier for this `artwork` element.
+
+### "height"
+TBD
+
+### "name"
+A filename suitable for the contents (such as for extraction to a local file). This attribute can be helpful for other kinds of tools (such as automated syntax checkers, which work by extracting the artwork). Note that the "name" attribute does not need to be unique for `artwork` elements in a document. If multiple `artwork` elements have the same "name" attribute, a processing tool might assume that the elements are all fragments of a single file, and the tool can collect those fragments for later processing.
+
+### "src"
+The URI reference of a graphics file RFC3986, or the name of a file on the local disk. This can be a "data" URI RFC2397 that contains the contents of the graphics file. Note that the inclusion of art with the "src" attribute depends on the capabilities of the processing tool reading the XML document. Tools need to be able to handle the file: URI, and they should be able to handle http: and https: URIs as well. The prep tool will be able to handle reading the "src" attribute.
+
+If no URI scheme is given in the attribute, the attribute is considered to be a local filename relative to the current directory. Processing tools must be careful to not accept dangerous values for the filename, particularly those that contain absolute references outside the current directory. Document creators should think hard before using relative URIs due to possible later problems if files move around on the disk. Also, documents should most likely use explicit URI schemes wherever possible.
+
+In some cases, the prep tool may remove the "src" attribute after processing its value. See RFC7998 for a description of this.
+
+### "type"
+Specifies the format of the artwork. The value of this attribute is free text with certain values designated as preferred.
+
+The preferred values for `artwork` types are:
+
+* ascii-art
+* binary-art
+* svg
+
+Values that don't describe the format, such as "call-flow" or "hex-dump" were mentioned in RFC7991, but are not supported here; they are instead candidates for use with another future attribute to describe the artwork content.
+
+A complete list of the preferred values is maintained on the RFC Editor web site, and that list is expected to be updated over time. Thus, a consumer of this attribute should not cause a failure when it encounters an unexpected type or no type is specified. The table will also indicate which type of art can appear in plain-text output (for example, type="svg" cannot).
+
+### "width"
+TBD
+

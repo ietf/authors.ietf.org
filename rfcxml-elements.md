@@ -2,7 +2,7 @@
 title: RFCXML Elements
 description: 
 published: true
-date: 2021-11-02T23:49:19.000Z
+date: 2021-11-02T23:53:18.988Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -206,4 +206,13 @@ Specifies the role the author had in creating the document.
 
 The author's surname, to be used in conjunction with the separately specified initials. It usually appears on the front page, in footers, and in references.
 
+## back
+## Tabs {.tabset}
+### Usage
+Contains the "back" part of the document: the references and appendices. In `back`, `section` elements indicate appendices.
+
+### Schema
+Parents: `rfc`
+
+Contents: `displayreference*, references*, section*`
 

@@ -2,7 +2,7 @@
 title: RFCXML Elements
 description: 
 published: true
-date: 2021-11-02T23:53:18.988Z
+date: 2021-11-03T00:37:33.476Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -215,4 +215,80 @@ Contains the "back" part of the document: the references and appendices. In `bac
 Parents: `rfc`
 
 Contents: `displayreference*, references*, section*`
+
+## bcp14
+## Tabs {.tabset}
+### Usage
+Marks text that are phrases defined in BCP14 such as "MUST", "SHOULD NOT", and so on. When shown in some of the output representations, the text in this element might be highlighted. The use of this element is optional.
+
+This element is only to be used around the actual phrase from BCP 14, not the full definition of a requirement. For example, it is correct to say "The packet \<bcp14>MUST\</bcp14> be dropped.", but it is not correct to say "\<bcp14>The packet MUST be dropped.\</bcp14>".
+### Schema
+Parents: `annotation`, `blockquote`, `dd`, `dt`, `em`, `li`, `name`, `refcontent`, `strong`, `sub`, `sup`, `t`, `td`, `th`, `tt`.
+
+Contents: `text`
+
+## blockquote
+## Tabs {.tabset}
+### Usage
+Specifies that a block of text is a quotation.
+### Schema
+Parents: `aside`, `li`, `section`
+
+Contents: `( ( artset | artwork | dl | figure | ol | sourcecode | t | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )+ )`
+
+### "anchor" 
+Document-wide unique identifier for this `blockquote` element.
+
+### "cite" 
+The source of the citation. This must be a URI. If the "quotedFrom" attribute is given, this URI will be used by processing tools as the link for the text of that attribute.
+
+### "quotedFrom" 
+Name of person or document the text in this element is quoted from. A formatter should render this as visible text at the end of the quotation.
+
+## boilerplate
+## Tabs {.tabset}
+### Usage
+Holds the boilerplate text for the document. This element is filled in by the prep tool.
+
+This element contains `section` elements. Every `section` element in this element must have the "numbered" attribute set to "false".
+### Schema
+Parents: `front`
+
+Contents: `section+`
+
+## br
+## Tabs {.tabset}
+### Usage
+Inserts a forced break. Use sparingly. In most situations, it's better to insert U+200B, ZERO WIDTH SPACE, in order to encourage line breaking at a point where it would otherwise not occur.
+
+### Schema
+Parents: `blockquote`, `cref`, `dd`, `dt`, `em`, `li`, `name`, `strong`, `t`, `td`, `th`, `title`, `tt`
+
+Contents: `empty`
+
+## city
+## Tabs {.tabset}
+### Usage
+Gives the city name in a postal address.
+
+### Schema
+Parents: `postal`
+
+Contents: `text`
+
+### "ascii"
+
+The ASCII equivalent of the `city` content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
+
+## cityarea
+## Tabs {.tabset}
+### Usage
+Where postal addresses use city subdivisions, these are mapped to the `cityarea` element. Korean addresses would use this for a city district, for instance. Countries known to use this element are Ascension Island, China, Iran, South Korea, and Thailand.
+### Schema
+Parents: `postal`
+
+Content schema: `text`
+
+### "ascii" 
+The ASCII equivalent of the `cityarea` content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 

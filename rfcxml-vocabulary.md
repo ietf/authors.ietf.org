@@ -1,8 +1,8 @@
 ---
-title: RFCXML vocabulary
+title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-03T12:27:40.172Z
+date: 2021-11-03T12:32:23.602Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z

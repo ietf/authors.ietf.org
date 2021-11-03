@@ -2,7 +2,7 @@
 title: RFCXML Elements
 description: 
 published: true
-date: 2021-11-03T01:27:25.721Z
+date: 2021-11-03T01:35:54.941Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -13,30 +13,27 @@ dateCreated: 2021-11-02T22:58:38.001Z
 ## Tabs {.tabset}
 ### Usage
 Contains the Abstract of the document. See RFC7322 for more information on restrictions for the Abstract.
-### Schema
+
 Can be child of: [`front`](rfcxml-elements#front)
-
 Contents: ([`dl`](rfcxml-elements#dl), ol, t, ul)+
-
-### "anchor"
+### Attributes
+#### "anchor"
 Document-wide unique identifier for this element.
 
 ## address
 ## Tabs {.tabset}
 ### Usage
 Provides address information for the author.
-### Schema
-Can be child of: [`author`](rfcxml#author), `contact`
 
+Can be child of: [`author`](rfcxml#author), `contact`
 Contents: `postal?, phone?, email*, uri?`
 
 ## annotation
 ## Tabs {.tabset}
 ### Usage
 Provides additional prose augmenting a bibliographic reference. This text is intended to be shown after the rest of the generated reference text.
-### Schema
-Can be child of: `reference`
 
+Can be child of: `reference`
 Contents: `( text | bcp14 | cref | em | eref | iref | strong | sub | sup | tt | u | xref )*`
 
 ## area
@@ -45,9 +42,8 @@ Contents: `( text | bcp14 | cref | em | eref | iref | strong | sub | sup | tt | 
 Provides information about the IETF area to which this document relates (currently not used when generating documents).
 
 The value ought to be either the full name or the abbreviation of one of the IETF areas as listed on http://www.ietf.org/iesg/area.html. A list of full names and abbreviations will be kept by the RFC Series Editor.
-### Schema
-Can be child of: `front`
 
+Can be child of: `front`
 Contents: `text`
 
 ## artset
@@ -58,12 +54,12 @@ This element allows for the support of multiple artwork formats, in order to pro
 When multiple `artwork` instances are provided within one `artset` element, the renderer will try to pick the `artwork` instance which is most appropriate for its current output format from the given alternatives.
 
 If more than one `artwork` element with the same "type" is found within an `artset` element, the renderer could select the first one, or possibly choose between the alternative instances based on the output format and some quality of the alternatives that make one more suitable than the others for that particular format, such as size, aspect ratio, etc.
-### Schema
-Can be child of: `aside`, `blockquote`, `dd`, `figure`, `li`, `section`, `td`, `th`
 
+Can be child of: `aside`, `blockquote`, `dd`, `figure`, `li`, `section`, `td`, `th`
 Contents: `artwork+`
-### "anchor"
-Document-wide unique identifier for this `artset` element.
+### Attributes
+#### "anchor"
+Document-wide unique identifier for this element.
 
 ## artwork
 ## Tabs {.tabset}
@@ -107,12 +103,10 @@ Formatters that do pagination should attempt to keep artwork on a single page. T
 
 See Section 5 for a description of how to deal with issues of using "&" and "<" characters in artwork.
 
-### Schema
 Can be child of: `artset`, `aside`, `blockquote`, `dd`, `figure`, `li`, `section`, `td`, `th`
-
 Contents: `( text* | svg )`
-### Attributes
 
+### Attributes
 #### "align"
 Controls whether the artwork appears left justified, centered, or right justified.
 
@@ -159,12 +153,9 @@ TBD
 ### Usage
 This element is a container for content that is semantically less important or tangential to the content that surrounds it.
  
-### Schema
 Can be child of: `dd`, `section`
-
 Contents: `( artset | artwork | blockquote | dl | figure | iref | ol | t | table | ul )*`
 ### Attributes
-
 #### "anchor"
 Document-wide unique identifier for this `aside` element.
 
@@ -179,43 +170,34 @@ Note that an "author" can also be just an organization (by not specifying any of
 
 Furthermore, the "role" attribute can be used to mark an author as "editor". This is reflected both on the front page and in the "Author's Address" section, as well as in bibliographic references. Note that this specification does not define a precise meaning for the term "editor".
 
-### Schema
 Can be child of: `front`, `section`
-
 Contents: `organization?, address?`
-### Attributes
 
+### Attributes
 #### "anchor"
-Document-wide unique identifier for this `author` element.
+Document-wide unique identifier for this element.
 
 #### "asciiFullname" 
-
 The Latin script equivalent of the author's full name.
 
 #### "asciiInitials" 
-
 The Latin script equivalent of the author's initials, to be used in conjunction with the separately specified asciiSurname.
 
 #### "asciiSurname" 
-
 The Latin script equivalent of the author's surname, to be used in conjunction with the separately specified asciiInitials.
 
 #### "fullname" 
-
 The full name (used in the automatically generated "Author's Address" section). Although this attribute is optional, if one or more of the "asciiFullname", "asciiInitials", or "asciiSurname" attributes does not have values, the "fullname" attribute is required.
 
 #### "initials" 
-
 An abbreviated variant of the given name(s), to be used in conjunction with the separately specified surname. It usually appears on the front page, in footers, and in references.
 
 Some processors will post-process the value -- for instance, when it only contains a single letter (in which case they might add a trailing dot). Relying on this kind of post-processing can lead to results varying across formatters and thus ought to be avoided.
 
 #### "role" 
-
 Specifies the role the author had in creating the document.
 
 #### "surname" 
-
 The author's surname, to be used in conjunction with the separately specified initials. It usually appears on the front page, in footers, and in references.
 
 ## back
@@ -223,9 +205,7 @@ The author's surname, to be used in conjunction with the separately specified in
 ### Usage
 Contains the "back" part of the document: the references and appendices. In `back`, `section` elements indicate appendices.
 
-### Schema
 Can be child of: `rfc`
-
 Contents: `displayreference*, references*, section*`
 
 ## bcp14
@@ -234,25 +214,26 @@ Contents: `displayreference*, references*, section*`
 Marks text that are phrases defined in BCP14 such as "MUST", "SHOULD NOT", and so on. When shown in some of the output representations, the text in this element might be highlighted. The use of this element is optional.
 
 This element is only to be used around the actual phrase from BCP 14, not the full definition of a requirement. For example, it is correct to say "The packet \<bcp14>MUST\</bcp14> be dropped.", but it is not correct to say "\<bcp14>The packet MUST be dropped.\</bcp14>".
-### Schema
-Can be child of: `annotation`, `blockquote`, `dd`, `dt`, `em`, `li`, `name`, `refcontent`, `strong`, `sub`, `sup`, `t`, `td`, `th`, `tt`.
 
+Can be child of: `annotation`, `blockquote`, `dd`, `dt`, `em`, `li`, `name`, `refcontent`, `strong`, `sub`, `sup`, `t`, `td`, `th`, `tt`.
 Contents: `text`
 
 ## blockquote
 ## Tabs {.tabset}
 ### Usage
 Specifies that a block of text is a quotation.
-### Schema
+
 Can be child of: `aside`, `li`, `section`
-
 Contents: `( ( artset | artwork | dl | figure | ol | sourcecode | t | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )+ )`
-### Attributes
 
-#### "cite" 
+### Attributes
+#### anchor
+Document-wide unique identifier for this element.
+
+#### cite
 The source of the citation. This must be a URI. If the "quotedFrom" attribute is given, this URI will be used by processing tools as the link for the text of that attribute.
 
-#### "quotedFrom" 
+#### quotedFrom
 Name of person or document the text in this element is quoted from. A formatter should render this as visible text at the end of the quotation.
 
 ## boilerplate
@@ -261,9 +242,8 @@ Name of person or document the text in this element is quoted from. A formatter 
 Holds the boilerplate text for the document. This element is filled in by the prep tool.
 
 This element contains `section` elements. Every `section` element in this element must have the "numbered" attribute set to "false".
-### Schema
-Can be child of: `front`
 
+Can be child of: `front`
 Contents: `section+`
 
 ## br
@@ -271,9 +251,7 @@ Contents: `section+`
 ### Usage
 Inserts a forced break. Use sparingly. In most situations, it's better to insert U+200B, ZERO WIDTH SPACE, in order to encourage line breaking at a point where it would otherwise not occur.
 
-### Schema
 Can be child of: `blockquote`, `cref`, `dd`, `dt`, `em`, `li`, `name`, `strong`, `t`, `td`, `th`, `title`, `tt`
-
 Contents: `empty`
 
 ## city
@@ -281,10 +259,9 @@ Contents: `empty`
 ### Usage
 Gives the city name in a postal address.
 
-### Schema
 Can be child of: `postal`
-
 Contents: `text`
+
 ### Attributes
 #### "ascii"
 
@@ -294,24 +271,24 @@ The ASCII equivalent of the `city` content. This element may have non-ASCII Lati
 ## Tabs {.tabset}
 ### Usage
 Where postal addresses use city subdivisions, these are mapped to the `cityarea` element. Korean addresses would use this for a city district, for instance. Countries known to use this element are Ascension Island, China, Iran, South Korea, and Thailand.
-### Schema
-Can be child of: `postal`
 
+Can be child of: `postal`
 Content schema: `text`
+
 ### Attributes
-#### "ascii" 
+#### ascii 
 The ASCII equivalent of the `cityarea` content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 
 ## code
 ## Tabs {.tabset}
 ### Usage
 Gives the postal region code.
-### Schema
-This element can be a child element of `postal`.
 
+This element can be a child element of `postal`.
 Contents: `text`
 
-### "ascii" 
+### Attributes
+#### "ascii" 
 The ASCII equivalent of the `code` content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 
 ## contact
@@ -320,30 +297,30 @@ The ASCII equivalent of the `code` content. This element may have non-ASCII Lati
 Provides information about contributors. This element can be used inline within a `t`, and will be rendered with name only, similarly to how `author` is rendered in a `reference`, or it can be used as a direct child of `section`, where it will be rendered the same way as an author address block within the "Authors' Addresses" section.
 
 Note that a "contact" can also be just an organization (by not specifying any of the "name" attributes, but adding the `organization` child element).
-### Schema
-This element can be a child element of `section`, `t`
 
+This element can be a child element of `section`, `t`
 Contents: `organization?, address?`
+
 ### Attributes
-#### "anchor" 
+#### anchor
 Document-wide unique identifier for this element.
 
-#### "asciiFullname"
+#### asciiFullname
 The Latin script equivalent of the contact's full name.
 
-#### "asciiInitials" 
+#### asciiInitials
 The Latin script equivalent of the contact's initials, to be used in conjunction with the separately specified asciiSurname.
 
-#### "asciiSurname" 
+#### asciiSurname
 The Latin script equivalent of the contact's surname, to be used in conjunction with the separately specified asciiInitials.
 
-#### "fullname"
+#### fullname
 The full name. Although this attribute is optional, if one or more of the "asciiFullname", "asciiInitials", or "asciiSurname" attributes does not have values, the "fullname" attribute is required.
 
-#### "initials" 
+#### initials
 An abbreviated variant of the given name(s), to be used in conjunction with the separately specified surname.
 
-#### "surname" 
+#### surname
 The contact's surname, to be used in conjunction with the separately specified initials.
 
 ## country
@@ -352,12 +329,12 @@ The contact's surname, to be used in conjunction with the separately specified i
 Specifies the country name in a postal address. All common and official country names should be recognized; in addition two- and three-letter country codes according to ISO 3166 are recognized.
 
 xml2rfc has a help option which will list all names and country codes it recognizes as valid country names: xml2rfc --country-help .
-### Schema
-This element can be a child element of `postal`.
 
+This element can be a child element of `postal`.
 Contents: `text`
+
 ### Attributes
-#### "ascii" 
+#### ascii
 The ASCII equivalent of the `country` content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 
 ## cref
@@ -367,21 +344,20 @@ Represents a comment.
 
 Comments can be used in a document while it is work in progress. They might appear either inline and visually highlighted, at the end of the document, or not at all, depending on the formatting tool.
 
-### Schema
 This element can be a child element of `annotation`, `blockquote`, `dd`, `dt`, `em`, `li`, `name`, `strong`, `sub`, `sup`, `t`, `td`, `th`, `tt`
-
 Content schema: ( text | br | em | eref | strong | sub | sup | tt | xref )*
+
 ### Attributes
-#### "anchor" 
+#### anchor
 Document-wide unique identifier for this element.
 
-#### "display" 
+#### display
 Suggests whether or not the comment should be displayed by formatting tools. This might be set to "false" if you want to keep a comment in a document after the contents of the comment have already been dealt with.
   
 Possible values: ( "true" | "false" )
 Default value: "true"
 
-#### "source" 
+#### source 
 Holds the "source" of a comment, such as the name or the initials of the person who made the comment.
 
 ## date
@@ -398,30 +374,30 @@ Boilerplate for Internet-Drafts and RFCs:
 In dates in `rfc` elements, the month must be a number or a month in English. The prep tool will silently change text month names to numbers. Similarly, the year must be a four-digit number.
 
 When the prep tool is used to create Internet-Drafts, it will warn if the draft has a `date` element in the boilerplate for itself that is more than 3 days away from today. To avoid this problem, authors might simply not include a `date` element in the boilerplate.
-### Schema
-This element can be a child element of `front`
 
+This element can be a child element of `front`
 Content schema: text
+
 ### Attributes
-#### "day" 
+#### day 
 The day of publication.
 
-#### "month" 
+#### month
 The month of publication.
 
-#### "year" 
+#### year 
 The year of publication.
 
 ## dd
 ## Tabs {.tabset}
 ### Usage
 The definition part of an entry in a definition list.
-### Schema
-This element can be a child element of `dl`.
 
+This element can be a child element of `dl`.
 Content schema: ( ( artset | artwork | aside | dl | figure | ol | sourcecode | t | table | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )+ )
+
 ### Attributes
-#### "anchor" 
+#### anchor
 Document-wide unique identifier for this element.
 
 ## displayreference
@@ -432,39 +408,40 @@ This element gives a mapping between the anchor of a reference and a name that w
 <displayreference target="RFC6949" to="RFC-dev"/>
 ```
 If a reference section is sorted, this element changes the sort order.
-### Schema
+
 This element can be a child element of `back`.
+
 ### Attributes
-#### "target" (Required)
+#### target (Required)
 This attribute must be the name of an anchor in a `reference` or `referencegroup` element.
 
-#### "to" (Required)
+#### to (Required)
 This attribute is a name that will be displayed as the anchor instead of the anchor that is given in the `reference` element. The string given must start with one of the following characters: 0-9, a-z, or A-Z. The other characters in the string must be 0-9, a-z, A-Z, "-", ".", or "_".
 
 ## dl
 ## Tabs {.tabset}
 ### Usage
 A definition list. Each entry has a pair of elements: a term (`dt`) and a definition (`dd`). (This is slightly different and simpler than the model used in HTML, which allows for multiple terms for a single definition.)
-### Schema
-This element can be a child element of `abstract`, `aside`, `blockquote`, `dd`, `li`, `note`, `section`, `td`, `th`.
 
+This element can be a child element of `abstract`, `aside`, `blockquote`, `dd`, `li`, `note`, `section`, `td`, `th`.
 Content schema: ( dt, dd )+
+
 ### Attributes
-#### "anchor" 
+#### anchor
 Document-wide unique identifier for this element.
 
-#### "indent"
+#### indent
 Indicates the indentation to be used for the rendering of the second and following lines of the item (the first line starts with the term, and is not indented). The indentation amount is interpreted as characters when rendering plain-text documents, and en-space units when rendering in formats that have richer typographic support such as HTML or PDF. One en-space is assumed to be the length of 0.5 em-space in CSS units.
 
 Default value: "3"
 
-#### "newline"
+#### newline
 The "newline" attribute defines whether or not the term appears on the same line as the definition. newline="false" indicates that the term is to the left of the definition, while newline="true" indicates that the term will be on a separate line.
 
 Possible values: ( "true" | "false" )
 Default value: "false"
 
-#### "spacing"
+#### spacing
 Defines whether or not there is a blank line between entries. spacing="normal" indicates a single blank line, while spacing="compact" indicates no blank line between entries.
 
 Possible values: ( "normal" | "compact" )

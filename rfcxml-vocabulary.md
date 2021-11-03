@@ -2,7 +2,7 @@
 title: RFCXML Vocabulary
 description: 
 published: true
-date: 2021-11-03T10:18:20.816Z
+date: 2021-11-03T10:37:14.649Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -15,10 +15,12 @@ dateCreated: 2021-11-02T22:58:38.001Z
 Contains the Abstract of the document. See RFC7322 for more information on restrictions for the Abstract.
 
 Used in: [`front`](/rfcxml-vocabulary#front)
-Contents: ([`dl`](/rfcxml-vocabulary#dl), [`ol`](/rfcxml-vocabulary#ol), [`t`](/rfcxml-vocabulary#t), [`ul`](/rfcxml-vocabulary#ul))+
+Allowed content: ([`dl`](/rfcxml-vocabulary#dl), [`ol`](/rfcxml-vocabulary#ol), [`t`](/rfcxml-vocabulary#t), [`ul`](/rfcxml-vocabulary#ul))+
+
 ### Attributes
 #### anchor
 Document-wide unique identifier for this element.
+
 ### Schema
 ```
    abstract =
@@ -37,7 +39,7 @@ Document-wide unique identifier for this element.
 Provides address information for the author.
 
 Used in: [`author`](rfcxml#author), [`contact`](/rfcxml-vocabulary#contact)
-Contents: [`postal?`](/rfcxml-vocabulary#postal),[`phone?`](/rfcxml-vocabulary#phone),[`email*`](/rfcxml-vocabulary#email),[`uri?`](/rfcxml-vocabulary#uri)
+Allowed content: [`postal`](/rfcxml-vocabulary#postal)?,[`phone`](/rfcxml-vocabulary#phone)?,[`email`](/rfcxml-vocabulary#email)\*,[`uri`](/rfcxml-vocabulary#uri)?
 
 ## annotation
 ## Tabs {.tabset}
@@ -45,7 +47,7 @@ Contents: [`postal?`](/rfcxml-vocabulary#postal),[`phone?`](/rfcxml-vocabulary#p
 Provides additional prose augmenting a bibliographic reference. This text is intended to be shown after the rest of the generated reference text.
 
 Used in: [`reference`](/rfcxml-vocabulary#reference)
-Contents: ( text | [`bcp14`](/rfcxml-vocabulary#bcp14) | [`cref`](/rfcxml-vocabulary#cref) | [`em`](/rfcxml-vocabulary#em) | [`eref`](/rfcxml-vocabulary#eref) | [`iref`](/rfcxml-vocabulary#iref) | [`strong`](/rfcxml-vocabulary#strong) | [`sub`](/rfcxml-vocabulary#sub) | [`sup`](/rfcxml-vocabulary#sup) | [`tt`](/rfcxml-vocabulary#tt) | [`u`](/rfcxml-vocabulary#u) | [`xref`](/rfcxml-vocabulary#xref) )*
+Allowed content: ( text | [`bcp14`](/rfcxml-vocabulary#bcp14) | [`cref`](/rfcxml-vocabulary#cref) | [`em`](/rfcxml-vocabulary#em) | [`eref`](/rfcxml-vocabulary#eref) | [`iref`](/rfcxml-vocabulary#iref) | [`strong`](/rfcxml-vocabulary#strong) | [`sub`](/rfcxml-vocabulary#sub) | [`sup`](/rfcxml-vocabulary#sup) | [`tt`](/rfcxml-vocabulary#tt) | [`u`](/rfcxml-vocabulary#u) | [`xref`](/rfcxml-vocabulary#xref) )*
 
 ## area
 ## Tabs {.tabset}
@@ -55,7 +57,7 @@ Provides information about the IETF area to which this document relates (current
 The value ought to be either the full name or the abbreviation of one of the IETF areas as listed on http://www.ietf.org/iesg/area.html. A list of full names and abbreviations will be kept by the RFC Series Editor.
 
 Used in: [`front`](/rfcxml-vocabulary#front)
-Contents: text
+Allowed content: text
 
 ## artset
 ## Tabs {.tabset}
@@ -67,9 +69,10 @@ When multiple [`artwork`](/rfcxml-vocabulary#artwork) instances are provided wit
 If more than one [`artwork`](/rfcxml-vocabulary#artwork) element with the same "type" is found within an [`artset`](/rfcxml-vocabulary#artset) element, the renderer could select the first one, or possibly choose between the alternative instances based on the output format and some quality of the alternatives that make one more suitable than the others for that particular format, such as size, aspect ratio, etc.
 
 Used in: [`aside`](/rfcxml-vocabulary#aside), [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`figure`](/rfcxml-vocabulary#figure), [`li`](/rfcxml-vocabulary#li), [`section`](/rfcxml-vocabulary#section), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th)
-Contents: `artwork+`
+Allowed content: [`artwork`](rfcxml-elements#artwork)+
+
 ### Attributes
-#### "anchor"
+#### anchor
 Document-wide unique identifier for this element.
 
 ## artwork
@@ -115,7 +118,7 @@ Formatters that do pagination should attempt to keep artwork on a single page. T
 See Section 5 for a description of how to deal with issues of using "&" and "<" characters in artwork.
 
 Used in: [`artset`](/rfcxml-vocabulary#artset), [`aside`](/rfcxml-vocabulary#aside), [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`figure`](/rfcxml-vocabulary#figure), [`li`](/rfcxml-vocabulary#li), [`section`](/rfcxml-vocabulary#section), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th)
-Contents: ( [`text*`](/rfcxml-vocabulary#text) | [`svg`](/rfcxml-vocabulary#svg) )
+Allowed content: ( [`text`](/rfcxml-vocabulary#text)\* | [`svg`](/rfcxml-vocabulary#svg) )
 
 ### Attributes
 #### align
@@ -152,7 +155,7 @@ The preferred values for [`artwork`](/rfcxml-vocabulary#artwork) types are:
 * binary-art
 * svg
 
-Values that don't describe the format, such as "call-flow" or "hex-dump" were mentioned in RFC7991, but are not supported here; they are instead candidates for use with another future attribute to describe the artwork content.
+Values that don't describe the format, such as "call-flow" or "hex-dump" were mentioned in RFC7991, but are not supported; they are instead candidates for use with another future attribute to describe the artwork content.
 
 A complete list of the preferred values is maintained on the RFC Editor web site, and that list is expected to be updated over time. Thus, a consumer of this attribute should not cause a failure when it encounters an unexpected type or no type is specified. The table will also indicate which type of art can appear in plain-text output (for example, type="svg" cannot).
 
@@ -165,7 +168,7 @@ TBD
 This element is a container for content that is semantically less important or tangential to the content that surrounds it.
  
 Used in: [`dd`](/rfcxml-vocabulary#dd), [`section`](/rfcxml-vocabulary#section)
-Contents: ( [`artset`](/rfcxml-vocabulary#artset) | [`artwork`](/rfcxml-vocabulary#artwork) | [`blockquote`](/rfcxml-vocabulary#blockquote) | [`dl`](/rfcxml-vocabulary#dl) | [`figure`](/rfcxml-vocabulary#figure) | [`iref`](/rfcxml-vocabulary#iref) | [`ol`](/rfcxml-vocabulary#ol) | [`t`](/rfcxml-vocabulary#t) | [`table`](/rfcxml-vocabulary#table) | [`ul`](/rfcxml-vocabulary#ul) )*
+Allowed content: ( [`artset`](/rfcxml-vocabulary#artset) | [`artwork`](/rfcxml-vocabulary#artwork) | [`blockquote`](/rfcxml-vocabulary#blockquote) | [`dl`](/rfcxml-vocabulary#dl) | [`figure`](/rfcxml-vocabulary#figure) | [`iref`](/rfcxml-vocabulary#iref) | [`ol`](/rfcxml-vocabulary#ol) | [`t`](/rfcxml-vocabulary#t) | [`table`](/rfcxml-vocabulary#table) | [`ul`](/rfcxml-vocabulary#ul) )*
 
 ### Attributes
 #### anchor
@@ -183,7 +186,7 @@ Note that an "author" can also be just an organization (by not specifying any of
 Furthermore, the "role" attribute can be used to mark an author as "editor". This is reflected both on the front page and in the "Author's Address" section, as well as in bibliographic references. Note that this specification does not define a precise meaning for the term "editor".
 
 Used in: [`front`](/rfcxml-vocabulary#front), [`section`](/rfcxml-vocabulary#section)
-Contents: organization?, address?
+Allowed content: organization?, address?
 
 ### Attributes
 #### anchor
@@ -218,7 +221,7 @@ The author's surname, to be used in conjunction with the separately specified in
 Contains the "back" part of the document: the references and appendices. In [`back`](/rfcxml-vocabulary#back), [`section`](/rfcxml-vocabulary#section) elements indicate appendices.
 
 Used in: [`rfc`](/rfcxml-vocabulary#rfc)
-Contents: `displayreference*, references*, section*`
+Allowed content: `displayreference*, references*, section*`
 
 ## bcp14
 ## Tabs {.tabset}
@@ -228,7 +231,7 @@ Marks text that are phrases defined in BCP14 such as "MUST", "SHOULD NOT", and s
 This element is only to be used around the actual phrase from BCP 14, not the full definition of a requirement. For example, it is correct to say "The packet \<bcp14>MUST\</bcp14> be dropped.", but it is not correct to say "\<bcp14>The packet MUST be dropped.\</bcp14>".
 
 Used in: [`annotation`](/rfcxml-vocabulary#annotation), [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`dt`](/rfcxml-vocabulary#dt), [`em`](/rfcxml-vocabulary#em), [`li`](/rfcxml-vocabulary#li), [`name`](/rfcxml-vocabulary#name), [`refcontent`](/rfcxml-vocabulary#refcontent), [`strong`](/rfcxml-vocabulary#strong), [`sub`](/rfcxml-vocabulary#sub), [`sup`](/rfcxml-vocabulary#sup), [`t`](/rfcxml-vocabulary#t), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th), [`tt`](/rfcxml-vocabulary#tt).
-Contents: `text`
+Allowed content: `text`
 
 ## blockquote
 ## Tabs {.tabset}
@@ -236,7 +239,7 @@ Contents: `text`
 Specifies that a block of text is a quotation.
 
 Used in: [`aside`](/rfcxml-vocabulary#aside), [`li`](/rfcxml-vocabulary#li), [`section`](/rfcxml-vocabulary#section)
-Contents: ( ( artset | artwork | dl | figure | ol | sourcecode | t | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )+ )
+Allowed content: ( ( artset | artwork | dl | figure | ol | sourcecode | t | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )+ )
 
 ### Attributes
 #### anchor
@@ -256,7 +259,7 @@ Holds the boilerplate text for the document. This element is filled in by the pr
 This element contains [`section`](/rfcxml-vocabulary#section) elements. Every [`section`](/rfcxml-vocabulary#section) element in this element must have the "numbered" attribute set to "false".
 
 Used in: [`front`](/rfcxml-vocabulary#front)
-Contents: section+
+Allowed content: section+
 
 ## br
 ## Tabs {.tabset}
@@ -264,7 +267,7 @@ Contents: section+
 Inserts a forced break. Use sparingly. In most situations, it's better to insert U+200B, ZERO WIDTH SPACE, in order to encourage line breaking at a point where it would otherwise not occur.
 
 Used in: [`blockquote`](/rfcxml-vocabulary#blockquote), [`cref`](/rfcxml-vocabulary#cref), [`dd`](/rfcxml-vocabulary#dd), [`dt`](/rfcxml-vocabulary#dt), [`em`](/rfcxml-vocabulary#em), [`li`](/rfcxml-vocabulary#li), [`name`](/rfcxml-vocabulary#name), [`strong`](/rfcxml-vocabulary#strong), [`t`](/rfcxml-vocabulary#t), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th), [`title`](/rfcxml-vocabulary#title), [`tt`](/rfcxml-vocabulary#tt)
-Contents: empty
+Allowed content: empty
 
 ## city
 ## Tabs {.tabset}
@@ -272,7 +275,7 @@ Contents: empty
 Gives the city name in a postal address.
 
 Used in: [`postal`](/rfcxml-vocabulary#postal)
-Contents: text
+Allowed content: text
 
 ### Attributes
 #### "ascii"
@@ -285,7 +288,7 @@ The ASCII equivalent of the [`city`](/rfcxml-vocabulary#city) content. This elem
 Where postal addresses use city subdivisions, these are mapped to the [`cityarea`](/rfcxml-vocabulary#cityarea) element. Korean addresses would use this for a city district, for instance. Countries known to use this element are Ascension Island, China, Iran, South Korea, and Thailand.
 
 Used in: [`postal`](/rfcxml-vocabulary#postal)
-Content schema: text
+Allowed content: text
 
 ### Attributes
 #### ascii 
@@ -297,7 +300,7 @@ The ASCII equivalent of the [`cityarea`](/rfcxml-vocabulary#cityarea) content. T
 Gives the postal region code.
 
 Used in: [`postal`](/rfcxml-vocabulary#postal).
-Contents: text
+Allowed content: text
 
 ### Attributes
 #### "ascii" 
@@ -311,7 +314,7 @@ Provides information about contributors. This element can be used inline within 
 Note that a "contact" can also be just an organization (by not specifying any of the "name" attributes, but adding the `organization` child element).
 
 Used in: [`section`](/rfcxml-vocabulary#section), [`t`](/rfcxml-vocabulary#t)
-Contents: organization?, address?
+Allowed content: organization?, address?
 
 ### Attributes
 #### anchor
@@ -343,7 +346,7 @@ Specifies the country name in a postal address. All common and official country 
 xml2rfc has a help option which will list all names and country codes it recognizes as valid country names: xml2rfc --country-help .
 
 Used in: [`postal`](/rfcxml-vocabulary#postal).
-Contents: [`text`](/rfcxml-vocabulary#text)
+Allowed content: [`text`](/rfcxml-vocabulary#text)
 
 ### Attributes
 #### ascii
@@ -357,7 +360,7 @@ Represents a comment.
 Comments can be used in a document while it is work in progress. They might appear either inline and visually highlighted, at the end of the document, or not at all, depending on the formatting tool.
 
 Used in: [`annotation`](/rfcxml-vocabulary#annotation), [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`dt`](/rfcxml-vocabulary#dt), [`em`](/rfcxml-vocabulary#em), [`li`](/rfcxml-vocabulary#li), [`name`](/rfcxml-vocabulary#name), [`strong`](/rfcxml-vocabulary#strong), [`sub`](/rfcxml-vocabulary#sub), [`sup`](/rfcxml-vocabulary#sup), [`t`](/rfcxml-vocabulary#t), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th), [`tt`](/rfcxml-vocabulary#tt)
-Content schema: ( text | br | em | eref | strong | sub | sup | tt | xref )*
+Allowed content: ( text | br | em | eref | strong | sub | sup | tt | xref )*
 
 ### Attributes
 #### anchor
@@ -388,7 +391,7 @@ In dates in [`rfc`](/rfcxml-vocabulary#rfc) elements, the month must be a number
 When the prep tool is used to create Internet-Drafts, it will warn if the draft has a [`date`](/rfcxml-vocabulary#date) element in the boilerplate for itself that is more than 3 days away from today. To avoid this problem, authors might simply not include a `date` element in the boilerplate.
 
 Used in: [`front`](/rfcxml-vocabulary#front)
-Content schema: text
+Allowed content: text
 
 ### Attributes
 #### day 
@@ -406,7 +409,7 @@ The year of publication.
 The definition part of an entry in a definition list.
 
 Used in: [`dl`](/rfcxml-vocabulary#dl).
-Content schema: ( ( artset | artwork | aside | dl | figure | ol | sourcecode | t | table | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )+ )
+Allowed content: ( ( artset | artwork | aside | dl | figure | ol | sourcecode | t | table | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )+ )
 
 ### Attributes
 #### anchor
@@ -436,7 +439,7 @@ This attribute is a name that will be displayed as the anchor instead of the anc
 A definition list. Each entry has a pair of elements: a term ([`dt`](/rfcxml-vocabulary#dt)) and a definition ([`dd`](/rfcxml-vocabulary#dd)). (This is slightly different and simpler than the model used in HTML, which allows for multiple terms for a single definition.)
 
 Used in: [`abstract`](/rfcxml-vocabulary#abstract), [`aside`](/rfcxml-vocabulary#aside), [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`li`](/rfcxml-vocabulary#li), [`note`](/rfcxml-vocabulary#note), [`section`](/rfcxml-vocabulary#section), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th).
-Content schema: ( [`dt`](/rfcxml-vocabulary#dt), [`dd`](/rfcxml-vocabulary#dd) )+
+Allowed content: ( [`dt`](/rfcxml-vocabulary#dt), [`dd`](/rfcxml-vocabulary#dd) )+
 
 ### Attributes
 #### anchor
@@ -465,7 +468,7 @@ Default value: "normal"
 The term being defined in a definition list.
 
 Used in: [`dl`](/rfcxml-vocabulary#dl).
-Content schema: ( text | [bcp14](/rfcxml-vocabulary#bcp14) | [br](/rfcxml-vocabulary#br) | [cref](/rfcxml-vocabulary#cref) | [em](/rfcxml-vocabulary#em) | [eref](/rfcxml-vocabulary#eref) | [iref](/rfcxml-vocabulary#iref) | [strong](/rfcxml-vocabulary#strong) | [sub](/rfcxml-vocabulary#sub) | [sup](/rfcxml-vocabulary#sup) | [tt](/rfcxml-vocabulary#tt) | [xref](/rfcxml-vocabulary#xref) )*
+Allowed content: ( text | [bcp14](/rfcxml-vocabulary#bcp14) | [br](/rfcxml-vocabulary#br) | [cref](/rfcxml-vocabulary#cref) | [em](/rfcxml-vocabulary#em) | [eref](/rfcxml-vocabulary#eref) | [iref](/rfcxml-vocabulary#iref) | [strong](/rfcxml-vocabulary#strong) | [sub](/rfcxml-vocabulary#sub) | [sup](/rfcxml-vocabulary#sup) | [tt](/rfcxml-vocabulary#tt) | [xref](/rfcxml-vocabulary#xref) )*
 ### Attributes
 #### anchor 
 Document-wide unique identifier for this element.
@@ -476,7 +479,7 @@ Document-wide unique identifier for this element.
 Indicates text that is semantically emphasized. In HTML and PDF rendering, text enclosed within this element will be displayed as italic after processing; in text rendering it will be preceded and folled by an underline character. This element can be combined with other character formatting elements, and the formatting will be additive.
 
 Used in: [`annotation`](/rfcxml-vocabulary#annotation), [`blockquote`](/rfcxml-vocabulary#blockquote), [`cref`](/rfcxml-vocabulary#cref), [`dd`](/rfcxml-vocabulary#dd), [`dt`](/rfcxml-vocabulary#dt), [`li`](/rfcxml-vocabulary#li), [`name`](/rfcxml-vocabulary#name), [`refcontent`](/rfcxml-vocabulary#refcontent), [`strong`](/rfcxml-vocabulary#strong), [`sub`](/rfcxml-vocabulary#sub), [`sup`](/rfcxml-vocabulary#sup), [`t`](/rfcxml-vocabulary#t), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th), [`tt`](/rfcxml-vocabulary#tt),[`xref`](/rfcxml-vocabulary#xref).
-Content schema: ( text | [bcp14](/rfcxml-vocabulary#bcp14) | [br](/rfcxml-vocabulary#br) | [cref](/rfcxml-vocabulary#cref) | [eref](/rfcxml-vocabulary#eref) | [iref](/rfcxml-vocabulary#iref) | [strong](/rfcxml-vocabulary#strong) | [sub](/rfcxml-vocabulary#sub) | [sup](/rfcxml-vocabulary#sup) | [tt](/rfcxml-vocabulary#tt) | [xref](/rfcxml-vocabulary#xref) )*
+Allowed content: ( text | [bcp14](/rfcxml-vocabulary#bcp14) | [br](/rfcxml-vocabulary#br) | [cref](/rfcxml-vocabulary#cref) | [eref](/rfcxml-vocabulary#eref) | [iref](/rfcxml-vocabulary#iref) | [strong](/rfcxml-vocabulary#strong) | [sub](/rfcxml-vocabulary#sub) | [sup](/rfcxml-vocabulary#sup) | [tt](/rfcxml-vocabulary#tt) | [xref](/rfcxml-vocabulary#xref) )*
 
 ## email
 ## Tabs {.tabset}
@@ -489,7 +492,7 @@ Multiple email addresses are permitted.
 
 Used in: [`address`](/rfcxml-vocabulary#address).
 
-Content schema: text
+Allowed content: text
 ### Attributes
 #### ascii
 The ASCII equivalent of the author's email address. This is only used if the email address has any internationalized components.
@@ -503,7 +506,7 @@ If the [`eref`](/rfcxml-vocabulary#eref) element has non-empty text content, the
 
 Used in: [`annotation`](/rfcxml-vocabulary#annotation), [`blockquote`](/rfcxml-vocabulary#blockquote), [`cref`](/rfcxml-vocabulary#cref), [`dd`](/rfcxml-vocabulary#dd), [`dt`](/rfcxml-vocabulary#dt), [`em`](/rfcxml-vocabulary#em), [`li`](/rfcxml-vocabulary#li), [`name`](/rfcxml-vocabulary#name), [`strong`](/rfcxml-vocabulary#strong), [`sub`](/rfcxml-vocabulary#sub), [`sup`](/rfcxml-vocabulary#sup), [`t`](/rfcxml-vocabulary#t), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th), [`tt`](/rfcxml-vocabulary#tt), .
 
-Content schema: text
+Allowed content: text
 ### Attributes
 #### brackets
 
@@ -523,7 +526,7 @@ Extra address information. This element can be used for address parts more speci
 
 Used in: [`postal`](/rfcxml-vocabulary#postal).
 
-Content schema: text
+Allowed content: text
 ### Attributes
 #### ascii
 
@@ -536,7 +539,7 @@ Contains a figure with a caption with the figure number. If the element contains
 
 Used in: [`aside`](/rfcxml-vocabulary#aside), [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`li`](/rfcxml-vocabulary#li), [`section`](/rfcxml-vocabulary#section), [`td`](/rfcxml-vocabulary#td), and [`th`](/rfcxml-vocabulary#th).
 
-Content schema: name?, iref*, ( artset | artwork | sourcecode )+
+Allowed content: name?, iref*, ( artset | artwork | sourcecode )+
 ### Attributes
 #### align
 
@@ -573,7 +576,7 @@ A [`front`](/rfcxml-vocabulary#front) element may have more than one [`seriesInf
 
 Used in: [`reference`](/rfcxml-vocabulary#reference) and [`rfc`](/rfcxml-vocabulary#rfc).
 
-Content schema: title, seriesInfo\*, author+, date?, area\*, workgroup\*, keyword\*, abstract?, note\*, boilerplate?, toc?
+Allowed content: title, seriesInfo\*, author+, date?, area\*, workgroup\*, keyword\*, abstract?, note\*, boilerplate?, toc?
 
 ## iref
 ## Tabs {.tabset}
@@ -588,7 +591,7 @@ When the prep tool is creating index content, it collects the items in a case-se
 
 Used in: [`annotation`](/rfcxml-vocabulary#annotation), [`aside`](/rfcxml-vocabulary#aside), [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`dt`](/rfcxml-vocabulary#dt), [`em`](/rfcxml-vocabulary#em), [`figure`](/rfcxml-vocabulary#figure), [`li`](/rfcxml-vocabulary#li), [`name`](/rfcxml-vocabulary#name), [`section`](/rfcxml-vocabulary#section), [`strong`](/rfcxml-vocabulary#strong), [`sub`](/rfcxml-vocabulary#sub), [`sup`](/rfcxml-vocabulary#sup), [`t`](/rfcxml-vocabulary#t), [`table`](/rfcxml-vocabulary#table), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th), [`tt`](/rfcxml-vocabulary#tt), .
 
-Content schema: empty
+Allowed content: empty
 
 ### Attributes
 #### item (Required)
@@ -614,7 +617,7 @@ Keywords are used both in the RFC Index and in the metadata of generated documen
 
 Used in: [`front`](/rfcxml-vocabulary#front).
 
-Content schema: text
+Allowed content: text
 
 ## li
 ## Tabs {.tabset}
@@ -623,7 +626,7 @@ A list element, used in [`ol`](/rfcxml-vocabulary#ol) and [`ul`](/rfcxml-vocabul
 
 Used in: [`ol`](/rfcxml-vocabulary#ol) and [`ul`](/rfcxml-vocabulary#ul).
 
-Content schema: ( ( artset | artwork | blockquote | dl | figure | ol | sourcecode | t | table | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )+ )
+Allowed content: ( ( artset | artwork | blockquote | dl | figure | ol | sourcecode | t | table | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )+ )
 
 ### Attributes
 #### anchor
@@ -650,7 +653,7 @@ Used in: [`rfc`](/rfcxml-vocabulary#rfc).
 The URI of the external document.
 
 #### rel
-The relationship of the external document to this one. The relationships are taken from the "Link Relations" registry maintained by IANA [LINKRELATIONS].
+The relationship of the external document to this one. The relationships are taken from the IANA-maintained [Link relations registry](https://www.iana.org/assignments/link-relations/link-relations.xhtml).
 
 ## middle
 ## Tabs {.tabset}
@@ -659,7 +662,7 @@ Represents the main content of the document.
 
 Used in: [`rfc`](/rfcxml-vocabulary#rfc).
 
-Content schema: section+
+Allowed content: section+
 
 ## name
 ## Tabs {.tabset}
@@ -668,7 +671,7 @@ The name of the containing (parent) element, for instance the section name. This
 
 Used in: [`figure`](/rfcxml-vocabulary#figure), [`note`](/rfcxml-vocabulary#note), [`references`](/rfcxml-vocabulary#references), [`section`](/rfcxml-vocabulary#section), [`table`](/rfcxml-vocabulary#table), .
 
-Content schema: ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | xref )*
+Allowed content: ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | xref )*
 
 ## note
 ## Tabs {.tabset}
@@ -679,7 +682,7 @@ It is usually used for additional information to reviewers (Working Group inform
 
 Used in: [`front`](/rfcxml-vocabulary#front).
 
-Content schema: name?, ( dl | ol | t | ul )+
+Allowed content: name?, ( dl | ol | t | ul )+
 
 ### Attributes
 #### removeInRFC
@@ -698,7 +701,7 @@ An ordered list. The labels on the items will be either a number or a letter, de
 
 Used in: [`abstract`](/rfcxml-vocabulary#abstract), [`aside`](/rfcxml-vocabulary#aside), [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`li`](/rfcxml-vocabulary#li), [`note`](/rfcxml-vocabulary#note), [`section`](/rfcxml-vocabulary#section), [`td`](/rfcxml-vocabulary#td), and [`th`](/rfcxml-vocabulary#th).
 
-Content schema: li+
+Allowed content: li+
 
 ### Attributes
 #### anchor
@@ -785,7 +788,7 @@ This information appears both in the "Author's Address" section and on the front
 
 Used in: [`author`](/rfcxml-vocabulary#author) and [`contact`](/rfcxml-vocabulary#contact).
 
-Content schema: text
+Allowed content: text
 
 ### Attributes
 #### abbrev
@@ -812,7 +815,7 @@ The value is expected to be the scheme-specific part of a "tel" URI (and so does
 
 Used in: [`address`](/rfcxml-vocabulary#address).
 
-Content schema: text
+Allowed content: text
 
 ## pobox
 ## Tabs {.tabset}
@@ -821,7 +824,7 @@ Represents a post office box number.
 
 Used in: [`postal`](/rfcxml-vocabulary#postal).
 
-Content schema: text
+Allowed content: text
 
 ### Attributes
 #### ascii
@@ -835,7 +838,7 @@ Contains optional child elements providing postal information. These elements wi
 
 Used in: [`address`](/rfcxml-vocabulary#address).
 
-Content schema: ( ( city | cityarea | code | country | extaddr | pobox | region | sortingcode | street )* | postalLine+ )
+Allowed content: ( ( city | cityarea | code | country | extaddr | pobox | region | sortingcode | street )* | postalLine+ )
 
 ## postalLine
 ## Tabs {.tabset}
@@ -844,7 +847,7 @@ Represents one line of a postal address. When more than one [`postalLine`](/rfcx
 
 Used in: [`postal`](/rfcxml-vocabulary#postal).
 
-Content schema: text
+Allowed content: text
 
 ### Attributes
 #### ascii
@@ -872,7 +875,7 @@ would render as:
 
 Used in: [`reference`](/rfcxml-vocabulary#reference).
 
-Content schema: ( text | bcp14 | em | strong | sub | sup | tt )*
+Allowed content: ( text | bcp14 | em | strong | sub | sup | tt )*
 
 ## reference
 ## Tabs {.tabset}
@@ -881,7 +884,7 @@ Represents a bibliographic reference.
 
 Used in: [`referencegroup`](/rfcxml-vocabulary#referencegroup) and [`references`](/rfcxml-vocabulary#references).
 
-Content schema: stream?, front, ( annotation | refcontent | seriesInfo )*
+Allowed content: stream?, front, ( annotation | refcontent | seriesInfo )*
 
 ### Attributes
 #### anchor (Required)
@@ -902,7 +905,7 @@ Represents a list of bibliographic references that will be represented as a sing
 
 Used in: [`references`](/rfcxml-vocabulary#references).
 
-Content schema: reference+
+Allowed content: reference+
 
 ### Attributes
 #### anchor (Required)
@@ -932,7 +935,7 @@ The recommended way to include references to RFCs and Internet-Drafts is to use 
 ```
 Used in: [`back`](/rfcxml-vocabulary#back) and [`references`](/rfcxml-vocabulary#references).
 
-Content schema: name?, ( references+ | ( reference | referencegroup )* )
+Allowed content: name?, ( references+ | ( reference | referencegroup )* )
 
 ### Attributes
 #### anchor
@@ -948,7 +951,7 @@ Provides the region name in a postal address.
 
 Used in: [`postal`](/rfcxml-vocabulary#postal).
 
-Content schema: text
+Allowed content: text
 
 ### Attributes
 #### ascii
@@ -959,7 +962,7 @@ The ASCII equivalent of the [`region`](/rfcxml-vocabulary#region) content. This 
 ### Usage
 This is the root element of the xml2rfc vocabulary.
 
-Content schema: link\*, front, middle, back?
+Allowed content: link\*, front, middle, back?
 
 ### Attributes
 #### category
@@ -1056,7 +1059,7 @@ Subsections are created by nesting [`section`](/rfcxml-vocabulary#section) eleme
 
 Used in: [`back`](/rfcxml-vocabulary#back), [`boilerplate`](/rfcxml-vocabulary#boilerplate), [`middle`](/rfcxml-vocabulary#middle), [`section`](/rfcxml-vocabulary#section), and [`toc`](/rfcxml-vocabulary#toc).
 
-Content schema: name?, ( artset | artwork | aside | author | blockquote | contact | dl | figure | iref | ol | sourcecode | t | table | ul )*, section*
+Allowed content: name?, ( artset | artwork | aside | author | blockquote | contact | dl | figure | iref | ol | sourcecode | t | table | ul )*, section*
 
 ### Attributes
 #### anchor
@@ -1094,7 +1097,7 @@ It is invalid to have multiple [`seriesInfo`](/rfcxml-vocabulary#seriesInfo) ele
 
 Used in: [`front`](/rfcxml-vocabulary#front) and [`reference`](/rfcxml-vocabulary#reference).
 
-Content schema: empty
+Allowed content: empty
 
 ### Attributes
 #### asciiName
@@ -1133,7 +1136,7 @@ A sorting code is related to postal codes in that it is used in addresses to all
 
 Used in: [`postal`](/rfcxml-vocabulary#postal).
 
-Content schema: text
+Allowed content: text
 
 ### Attributes
 #### ascii
@@ -1153,7 +1156,7 @@ Output formatters that do pagination will attempt to keep source code on a singl
 
 Used in: [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`figure`](/rfcxml-vocabulary#figure), [`li`](/rfcxml-vocabulary#li), [`section`](/rfcxml-vocabulary#section), [`td`](/rfcxml-vocabulary#td), and [`th`](/rfcxml-vocabulary#th).
 
-Content schema: text
+Allowed content: text
 
 ### Attributes
 #### anchor
@@ -1187,7 +1190,7 @@ Indicates which stream an RFC belongs to.
 
 Used in: [`reference`](/rfcxml-vocabulary#reference).
 
-Content schema: ( "IETF" | "IAB" | "IRTF" | "independent" )?
+Allowed content: ( "IETF" | "IAB" | "IRTF" | "independent" )?
 
 ## street
 ## Tabs {.tabset}
@@ -1196,7 +1199,7 @@ Provides a street address.
 
 Used in: [`postal`](/rfcxml-vocabulary#postal).
 
-Content schema: text
+Allowed content: text
 
 ### Attributes
 #### ascii
@@ -1209,7 +1212,7 @@ Indicates text that is semantically strong. In HTML and PDF rendering, text encl
 
 Used in: [`annotation`](/rfcxml-vocabulary#annotation), [`blockquote`](/rfcxml-vocabulary#blockquote), [`cref`](/rfcxml-vocabulary#cref), [`dd`](/rfcxml-vocabulary#dd), [`dt`](/rfcxml-vocabulary#dt), [`em`](/rfcxml-vocabulary#em), [`li`](/rfcxml-vocabulary#li), [`name`](/rfcxml-vocabulary#name), [`refcontent`](/rfcxml-vocabulary#refcontent), [`sub`](/rfcxml-vocabulary#sub), [`sup`](/rfcxml-vocabulary#sup), [`t`](/rfcxml-vocabulary#t), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th), [`tt`](/rfcxml-vocabulary#tt), and [`xref`](/rfcxml-vocabulary#xref).
 
-Content schema: ( text | bcp14 | br | cref | em | eref | iref | sub | sup | tt | xref )*
+Allowed content: ( text | bcp14 | br | cref | em | eref | iref | sub | sup | tt | xref )*
 
 ## sub
 ## Tabs {.tabset}
@@ -1218,7 +1221,7 @@ Causes the text to be displayed as subscript, approximately half a letter-height
 
 Used in: [`annotation`](/rfcxml-vocabulary#annotation), [`blockquote`](/rfcxml-vocabulary#blockquote), [`cref`](/rfcxml-vocabulary#cref), [`dd`](/rfcxml-vocabulary#dd), [`dt`](/rfcxml-vocabulary#dt), [`em`](/rfcxml-vocabulary#em), [`li`](/rfcxml-vocabulary#li), [`name`](/rfcxml-vocabulary#name), [`refcontent`](/rfcxml-vocabulary#refcontent), [`strong`](/rfcxml-vocabulary#strong), [`sub`](/rfcxml-vocabulary#sub), [`sup`](/rfcxml-vocabulary#sup), [`t`](/rfcxml-vocabulary#t), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th), [`tt`](/rfcxml-vocabulary#tt), and [`xref`](/rfcxml-vocabulary#xref).
 
-Content schema: ( text | bcp14 | cref | em | eref | iref | strong | sub | sup | tt | xref )*
+Allowed content: ( text | bcp14 | cref | em | eref | iref | strong | sub | sup | tt | xref )*
 
 ## sup
 ## Tabs {.tabset}
@@ -1227,7 +1230,7 @@ Causes the text to be displayed as superscript, approximately half a letter-heig
 
 Used in: [`annotation`](/rfcxml-vocabulary#annotation), [`blockquote`](/rfcxml-vocabulary#blockquote), [`cref`](/rfcxml-vocabulary#cref), [`dd`](/rfcxml-vocabulary#dd), [`dt`](/rfcxml-vocabulary#dt), [`em`](/rfcxml-vocabulary#em), [`li`](/rfcxml-vocabulary#li), [`name`](/rfcxml-vocabulary#name), [`refcontent`](/rfcxml-vocabulary#refcontent), [`strong`](rfcxml-elements[`strong`](/rfcxml-vocabulary#strong), [`sub`](/rfcxml-vocabulary#sub), [`sup`](/rfcxml-vocabulary#sup), [`t`](/rfcxml-vocabulary#t), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th), [`tt`](/rfcxml-vocabulary#tt), and [`xref`](/rfcxml-vocabulary#xref).
 
-Content schema: ( text | bcp14 | cref | em | eref | iref | strong | sub | sup | tt | xref )*
+Allowed content: ( text | bcp14 | cref | em | eref | iref | strong | sub | sup | tt | xref )*
 
 ## t
 ## Tabs {.tabset}
@@ -1236,7 +1239,7 @@ Contains a paragraph of text.
 
 Used in: [`abstract`](/rfcxml-vocabulary#abstract), [`aside`](/rfcxml-vocabulary#aside), [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`li`](/rfcxml-vocabulary#li), [`note`](/rfcxml-vocabulary#note), [`section`](/rfcxml-vocabulary#section), [`td`](/rfcxml-vocabulary#td), and [`th`](/rfcxml-vocabulary#th).
 
-Content schema: ( text | bcp14 | br | contact | cref | em | eref | iref | strong | sub | sup | tt | u | xref )*
+Allowed content: ( text | bcp14 | br | contact | cref | em | eref | iref | strong | sub | sup | tt | u | xref )*
 
 ### Attributes
 #### anchor
@@ -1271,7 +1274,7 @@ Inside the [`table`](/rfcxml-vocabulary#table) element there is, optionally, a [
 
 Used in: [`aside`](/rfcxml-vocabulary#aside), [`dd`](/rfcxml-vocabulary#dd), [`li`](/rfcxml-vocabulary#li), and [`section`](/rfcxml-vocabulary#section).
 
-Content schema: name?, iref\*, thead?, tbody+, tfoot?
+Allowed content: name?, iref\*, thead?, tbody+, tfoot?
 
 ### Attributes
 #### align
@@ -1290,7 +1293,7 @@ A container for a set of body rows for a table.
 
 Used in: [`table`](/rfcxml-vocabulary#table).
 
-Content schema: tr+
+Allowed content: tr+
 ### Attributes
 #### anchor
 Document-wide unique identifier for this element.
@@ -1302,7 +1305,7 @@ A cell in a table row.
 
 Used in: [`tr`](/rfcxml-vocabulary#tr).
 
-Content schema: ( ( artset | artwork | dl | figure | ol | sourcecode | t | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )* )
+Allowed content: ( ( artset | artwork | dl | figure | ol | sourcecode | t | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )* )
 
 ### Attributes
 #### align
@@ -1331,7 +1334,7 @@ A container for a set of footer rows for a table.
 
 Used in: [`table`](/rfcxml-vocabulary#table).
 
-Content schema: tr+
+Allowed content: tr+
 
 ### Attributes
 #### anchor
@@ -1344,7 +1347,7 @@ A cell in a table row. When rendered, this will normally come out in boldface; o
 
 Used in: [`tr`](/rfcxml-vocabulary#tr).
 
-Content schema: ( ( artset | artwork | dl | figure | ol | sourcecode | t | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )* )
+Allowed content: ( ( artset | artwork | dl | figure | ol | sourcecode | t | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )* )
 
 ### Attributes
 #### align
@@ -1373,7 +1376,7 @@ A container for a set of header rows for a table.
 
 Used in: [`table`](/rfcxml-vocabulary#table).
 
-Content schema: tr+
+Allowed content: tr+
 
 ### Attributes
 #### anchor
@@ -1388,7 +1391,7 @@ When this element appears in the [`front`](/rfcxml-vocabulary#front) element of 
 
 Used in: [`front`](/rfcxml-vocabulary#front).
 
-Content schema: ( text | br )*
+Allowed content: ( text | br )*
 
 ### Attributes
 #### abbrev
@@ -1404,7 +1407,7 @@ This element contains the Table of Content. The content of the [`toc`](/rfcxml-v
 
 Used in: [`front`](/rfcxml-vocabulary#front).
 
-Content schema: section*
+Allowed content: section*
 
 ## tr
 ## Tabs {.tabset}
@@ -1413,7 +1416,7 @@ A row of a table.
 
 Used in: [`tbody`](/rfcxml-vocabulary#tbody), [`tfoot`](/rfcxml-vocabulary#tfoot), and [`thead`](/rfcxml-vocabulary#thead).
 
-Content schema: ( td | th )+
+Allowed content: ( td | th )+
 
 ### Attributes
 #### anchor
@@ -1426,7 +1429,7 @@ Causes the text to be displayed in a constant-width font. This element can be co
 
 Used in: [`annotation`](/rfcxml-vocabulary#annotation), [`blockquote`](/rfcxml-vocabulary#blockquote), [`cref`](/rfcxml-vocabulary#cref), [`dd`](/rfcxml-vocabulary#dd), [`dt`](/rfcxml-vocabulary#dt), [`em`](/rfcxml-vocabulary#em), [`li`](/rfcxml-vocabulary#li), [`name`](/rfcxml-vocabulary#name), [`refcontent`](/rfcxml-vocabulary#refcontent), [`strong`](/rfcxml-vocabulary#strong), [`sub`](/rfcxml-vocabulary#sub), [`sup`](/rfcxml-vocabulary#sup), [`t`](/rfcxml-vocabulary#t), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th), and [`xref`](/rfcxml-vocabulary#xref).
 
-Content schema: ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | xref )*
+Allowed content: ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | xref )*
 
 ## u
 ## Tabs {.tabset}
@@ -1437,7 +1440,7 @@ In order to insert Unicode characters in any other context, xml2rfc vocabulary v
 
 Used in: [`annotation`](/rfcxml-vocabulary#annotation), [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`li`](/rfcxml-vocabulary#li), [`t`](/rfcxml-vocabulary#t), [`td`](/rfcxml-vocabulary#td), and [`th`](/rfcxml-vocabulary#th).
 
-Content schema: text
+Allowed content: text
 
 ### Attributes
 #### anchor
@@ -1601,7 +1604,7 @@ An unordered list. The labels on the items will be symbols picked by the formatt
 
 Used in: [`abstract`](/rfcxml-vocabulary#abstract), [`aside`](/rfcxml-vocabulary#aside), [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`li`](/rfcxml-vocabulary#li), [`note`](/rfcxml-vocabulary#note), [`section`](/rfcxml-vocabulary#section), [`td`](/rfcxml-vocabulary#td), and [`th`](/rfcxml-vocabulary#th).
 
-Content schema: li+
+Allowed content: li+
 
 ### Attributes
 #### anchor
@@ -1654,7 +1657,7 @@ The contents should be a valid URI; this most likely will be an "http:" or "http
 
 Used in: [`address`](/rfcxml-vocabulary#address).
 
-Content schema: text
+Allowed content: text
 
 ## workgroup
 ## Tabs {.tabset}
@@ -1665,7 +1668,7 @@ In Internet-Drafts, this is used in the upper left corner of the boilerplate, re
 
 Used in: [`front`](/rfcxml-vocabulary#front).
 
-Content schema: text
+Allowed content: text
 
 ## xref
 ## Tabs {.tabset}
@@ -1682,7 +1685,7 @@ The attribute "format" affect the internal link rendering only, and the "section
 
 Used in: [`annotation`](/rfcxml-vocabulary#annotation), [`blockquote`](/rfcxml-vocabulary#blockquote), [`cref`](/rfcxml-vocabulary#cref), [`dd`](/rfcxml-vocabulary#dd), [`dt`](/rfcxml-vocabulary#dt), [`em`](/rfcxml-vocabulary#em), [`li`](/rfcxml-vocabulary#li), [`name`](/rfcxml-vocabulary#name), [`strong`](/rfcxml-vocabulary#strong), [`sub`](/rfcxml-vocabulary#sub), [`sup`](/rfcxml-vocabulary#sup), [`t`](/rfcxml-vocabulary#t), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th), [`tt`](/rfcxml-vocabulary#tt).
 
-Content schema: ( text | em | strong | sub | sup | tt )*
+Allowed content: ( text | em | strong | sub | sup | tt )*
 
 ### Attributes
 #### format
@@ -1723,4 +1726,3 @@ This value for the "sectionFormat" attribute is useful when it is desired to exp
 
 #### target (Required)
 Identifies the document component being referenced. The value needs to match the value of the "anchor" attribute of an element in the document; otherwise, it is an error.
-

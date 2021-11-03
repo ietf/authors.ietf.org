@@ -2,7 +2,7 @@
 title: RFCXML Elements
 description: 
 published: true
-date: 2021-11-03T01:19:27.365Z
+date: 2021-11-03T01:27:25.721Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -111,33 +111,34 @@ See Section 5 for a description of how to deal with issues of using "&" and "<" 
 Can be child of: `artset`, `aside`, `blockquote`, `dd`, `figure`, `li`, `section`, `td`, `th`
 
 Contents: `( text* | svg )`
+### Attributes
 
-### "align"
+#### "align"
 Controls whether the artwork appears left justified, centered, or right justified.
 
 Possible values: `( "left" | "center" | "right" )`
 Default value: `"left"`
 
-### "alt"
+#### "alt"
 Alternative text description of the artwork (which is more than just a summary or caption). When the art comes from the "src" attribute and the format of that artwork supports alternate text, the alternative text comes from the text of the artwork itself, not from this attribute. The contents of this attribute are important to readers who are visually impaired, as well as those reading on devices that cannot show the artwork well, or at all.
 
-### "anchor"
-Document-wide unique identifier for this `artwork` element.
+#### "anchor"
+Document-wide unique identifier for this element.
 
-### "height"
+#### "height"
 TBD
 
-### "name"
+#### "name"
 A filename suitable for the contents (such as for extraction to a local file). This attribute can be helpful for other kinds of tools (such as automated syntax checkers, which work by extracting the artwork). Note that the "name" attribute does not need to be unique for `artwork` elements in a document. If multiple `artwork` elements have the same "name" attribute, a processing tool might assume that the elements are all fragments of a single file, and the tool can collect those fragments for later processing.
 
-### "src"
+#### "src"
 The URI reference of a graphics file RFC3986, or the name of a file on the local disk. This can be a "data" URI RFC2397 that contains the contents of the graphics file. Note that the inclusion of art with the "src" attribute depends on the capabilities of the processing tool reading the XML document. Tools need to be able to handle the file: URI, and they should be able to handle http: and https: URIs as well. The prep tool will be able to handle reading the "src" attribute.
 
 If no URI scheme is given in the attribute, the attribute is considered to be a local filename relative to the current directory. Processing tools must be careful to not accept dangerous values for the filename, particularly those that contain absolute references outside the current directory. Document creators should think hard before using relative URIs due to possible later problems if files move around on the disk. Also, documents should most likely use explicit URI schemes wherever possible.
 
 In some cases, the prep tool may remove the "src" attribute after processing its value. See RFC7998 for a description of this.
 
-### "type"
+#### "type"
 Specifies the format of the artwork. The value of this attribute is free text with certain values designated as preferred.
 
 The preferred values for `artwork` types are:
@@ -150,7 +151,7 @@ Values that don't describe the format, such as "call-flow" or "hex-dump" were me
 
 A complete list of the preferred values is maintained on the RFC Editor web site, and that list is expected to be updated over time. Thus, a consumer of this attribute should not cause a failure when it encounters an unexpected type or no type is specified. The table will also indicate which type of art can appear in plain-text output (for example, type="svg" cannot).
 
-### "width"
+#### "width"
 TBD
 
 ## aside
@@ -162,8 +163,9 @@ This element is a container for content that is semantically less important or t
 Can be child of: `dd`, `section`
 
 Contents: `( artset | artwork | blockquote | dl | figure | iref | ol | t | table | ul )*`
+### Attributes
 
-### "anchor"
+#### "anchor"
 Document-wide unique identifier for this `aside` element.
 
 ## author
@@ -181,37 +183,38 @@ Furthermore, the "role" attribute can be used to mark an author as "editor". Thi
 Can be child of: `front`, `section`
 
 Contents: `organization?, address?`
+### Attributes
 
-### "anchor"
+#### "anchor"
 Document-wide unique identifier for this `author` element.
 
-### "asciiFullname" 
+#### "asciiFullname" 
 
 The Latin script equivalent of the author's full name.
 
-### "asciiInitials" 
+#### "asciiInitials" 
 
 The Latin script equivalent of the author's initials, to be used in conjunction with the separately specified asciiSurname.
 
-### "asciiSurname" 
+#### "asciiSurname" 
 
 The Latin script equivalent of the author's surname, to be used in conjunction with the separately specified asciiInitials.
 
-### "fullname" 
+#### "fullname" 
 
 The full name (used in the automatically generated "Author's Address" section). Although this attribute is optional, if one or more of the "asciiFullname", "asciiInitials", or "asciiSurname" attributes does not have values, the "fullname" attribute is required.
 
-### "initials" 
+#### "initials" 
 
 An abbreviated variant of the given name(s), to be used in conjunction with the separately specified surname. It usually appears on the front page, in footers, and in references.
 
 Some processors will post-process the value -- for instance, when it only contains a single letter (in which case they might add a trailing dot). Relying on this kind of post-processing can lead to results varying across formatters and thus ought to be avoided.
 
-### "role" 
+#### "role" 
 
 Specifies the role the author had in creating the document.
 
-### "surname" 
+#### "surname" 
 
 The author's surname, to be used in conjunction with the separately specified initials. It usually appears on the front page, in footers, and in references.
 
@@ -244,14 +247,12 @@ Specifies that a block of text is a quotation.
 Can be child of: `aside`, `li`, `section`
 
 Contents: `( ( artset | artwork | dl | figure | ol | sourcecode | t | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )+ )`
+### Attributes
 
-### "anchor" 
-Document-wide unique identifier for this `blockquote` element.
-
-### "cite" 
+#### "cite" 
 The source of the citation. This must be a URI. If the "quotedFrom" attribute is given, this URI will be used by processing tools as the link for the text of that attribute.
 
-### "quotedFrom" 
+#### "quotedFrom" 
 Name of person or document the text in this element is quoted from. A formatter should render this as visible text at the end of the quotation.
 
 ## boilerplate
@@ -284,8 +285,8 @@ Gives the city name in a postal address.
 Can be child of: `postal`
 
 Contents: `text`
-
-### "ascii"
+### Attributes
+#### "ascii"
 
 The ASCII equivalent of the `city` content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 
@@ -297,8 +298,8 @@ Where postal addresses use city subdivisions, these are mapped to the `cityarea`
 Can be child of: `postal`
 
 Content schema: `text`
-
-### "ascii" 
+### Attributes
+#### "ascii" 
 The ASCII equivalent of the `cityarea` content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 
 ## code
@@ -323,26 +324,26 @@ Note that a "contact" can also be just an organization (by not specifying any of
 This element can be a child element of `section`, `t`
 
 Contents: `organization?, address?`
-
-### "anchor" 
+### Attributes
+#### "anchor" 
 Document-wide unique identifier for this element.
 
-### "asciiFullname"
+#### "asciiFullname"
 The Latin script equivalent of the contact's full name.
 
-### "asciiInitials" 
+#### "asciiInitials" 
 The Latin script equivalent of the contact's initials, to be used in conjunction with the separately specified asciiSurname.
 
-### "asciiSurname" 
+#### "asciiSurname" 
 The Latin script equivalent of the contact's surname, to be used in conjunction with the separately specified asciiInitials.
 
-### "fullname"
+#### "fullname"
 The full name. Although this attribute is optional, if one or more of the "asciiFullname", "asciiInitials", or "asciiSurname" attributes does not have values, the "fullname" attribute is required.
 
-### "initials" 
+#### "initials" 
 An abbreviated variant of the given name(s), to be used in conjunction with the separately specified surname.
 
-### "surname" 
+#### "surname" 
 The contact's surname, to be used in conjunction with the separately specified initials.
 
 ## country
@@ -355,8 +356,8 @@ xml2rfc has a help option which will list all names and country codes it recogni
 This element can be a child element of `postal`.
 
 Contents: `text`
-
-### "ascii" 
+### Attributes
+#### "ascii" 
 The ASCII equivalent of the `country` content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 
 ## cref
@@ -370,16 +371,17 @@ Comments can be used in a document while it is work in progress. They might appe
 This element can be a child element of `annotation`, `blockquote`, `dd`, `dt`, `em`, `li`, `name`, `strong`, `sub`, `sup`, `t`, `td`, `th`, `tt`
 
 Content schema: ( text | br | em | eref | strong | sub | sup | tt | xref )*
-### "anchor" 
+### Attributes
+#### "anchor" 
 Document-wide unique identifier for this element.
 
-### "display" 
+#### "display" 
 Suggests whether or not the comment should be displayed by formatting tools. This might be set to "false" if you want to keep a comment in a document after the contents of the comment have already been dealt with.
   
 Possible values: ( "true" | "false" )
 Default value: "true"
 
-### "source" 
+#### "source" 
 Holds the "source" of a comment, such as the name or the initials of the person who made the comment.
 
 ## date
@@ -400,13 +402,14 @@ When the prep tool is used to create Internet-Drafts, it will warn if the draft 
 This element can be a child element of `front`
 
 Content schema: text
-### "day" 
+### Attributes
+#### "day" 
 The day of publication.
 
-### "month" 
+#### "month" 
 The month of publication.
 
-### "year" 
+#### "year" 
 The year of publication.
 
 ## dd
@@ -417,11 +420,13 @@ The definition part of an entry in a definition list.
 This element can be a child element of `dl`.
 
 Content schema: ( ( artset | artwork | aside | dl | figure | ol | sourcecode | t | table | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )+ )
-
-### "anchor" 
-Document-wide unique identifier for this `dd` element.
+### Attributes
+#### "anchor" 
+Document-wide unique identifier for this element.
 
 ## displayreference
+## Tabs {.tabset}
+### Usage
 This element gives a mapping between the anchor of a reference and a name that will be displayed instead. This allows authors to display more mnemonic anchor names for automatically included references. The mapping in this element only applies to `xref` elements whose format is "default". For example, if the reference uses the anchor "RFC6949", the following would cause that anchor in the body of displayed documents to be "RFC-dev":
 ```xml
 <displayreference target="RFC6949" to="RFC-dev"/>
@@ -429,11 +434,11 @@ This element gives a mapping between the anchor of a reference and a name that w
 If a reference section is sorted, this element changes the sort order.
 ### Schema
 This element can be a child element of `back`.
-
-### "target" (Required)
+### Attributes
+#### "target" (Required)
 This attribute must be the name of an anchor in a `reference` or `referencegroup` element.
 
-### "to" (Required)
+#### "to" (Required)
 This attribute is a name that will be displayed as the anchor instead of the anchor that is given in the `reference` element. The string given must start with one of the following characters: 0-9, a-z, or A-Z. The other characters in the string must be 0-9, a-z, A-Z, "-", ".", or "_".
 
 ## dl

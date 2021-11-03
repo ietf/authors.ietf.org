@@ -2,7 +2,7 @@
 title: RFCXML Elements
 description: 
 published: true
-date: 2021-11-03T00:49:34.785Z
+date: 2021-11-03T00:53:33.802Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -14,7 +14,7 @@ dateCreated: 2021-11-02T22:58:38.001Z
 ### Usage
 Contains the Abstract of the document. See RFC7322 for more information on restrictions for the Abstract.
 ### Schema
-Parents: `front`
+Can be child of: `front`
 
 Contents: `(dl, ol, t, ul)+`
 
@@ -27,7 +27,7 @@ Document-wide unique identifier for this `<abstract>` element.
 ### Usage
 Provides address information for the author.
 ### Schema
-Parents: `author`, `contact`
+Can be child of: `author`, `contact`
 
 Contents: `postal?, phone?, email*, uri?`
 
@@ -36,7 +36,7 @@ Contents: `postal?, phone?, email*, uri?`
 ### Usage
 Provides additional prose augmenting a bibliographic reference. This text is intended to be shown after the rest of the generated reference text.
 ### Schema
-Parents: `reference`
+Can be child of: `reference`
 
 Contents: `( text | bcp14 | cref | em | eref | iref | strong | sub | sup | tt | u | xref )*`
 
@@ -47,7 +47,7 @@ Provides information about the IETF area to which this document relates (current
 
 The value ought to be either the full name or the abbreviation of one of the IETF areas as listed on http://www.ietf.org/iesg/area.html. A list of full names and abbreviations will be kept by the RFC Series Editor.
 ### Schema
-Parents: `front`
+Can be child of: `front`
 
 Contents: `text`
 
@@ -60,7 +60,7 @@ When multiple `artwork` instances are provided within one `artset` element, the 
 
 If more than one `artwork` element with the same "type" is found within an `artset` element, the renderer could select the first one, or possibly choose between the alternative instances based on the output format and some quality of the alternatives that make one more suitable than the others for that particular format, such as size, aspect ratio, etc.
 ### Schema
-Parents: `aside`, `blockquote`, `dd`, `figure`, `li`, `section`, `td`, `th`
+Can be child of: `aside`, `blockquote`, `dd`, `figure`, `li`, `section`, `td`, `th`
 
 Contents: `artwork+`
 ### "anchor"
@@ -109,7 +109,7 @@ Formatters that do pagination should attempt to keep artwork on a single page. T
 See Section 5 for a description of how to deal with issues of using "&" and "<" characters in artwork.
 
 ### Schema
-Parents: `artset`, `aside`, `blockquote`, `dd`, `figure`, `li`, `section`, `td`, `th`
+Can be child of: `artset`, `aside`, `blockquote`, `dd`, `figure`, `li`, `section`, `td`, `th`
 
 Contents: `( text* | svg )`
 
@@ -160,7 +160,7 @@ TBD
 This element is a container for content that is semantically less important or tangential to the content that surrounds it.
  
 ### Schema
-Parents: `dd`, `section`
+Can be child of: `dd`, `section`
 
 Contents: `( artset | artwork | blockquote | dl | figure | iref | ol | t | table | ul )*`
 
@@ -179,7 +179,7 @@ Note that an "author" can also be just an organization (by not specifying any of
 Furthermore, the "role" attribute can be used to mark an author as "editor". This is reflected both on the front page and in the "Author's Address" section, as well as in bibliographic references. Note that this specification does not define a precise meaning for the term "editor".
 
 ### Schema
-Parents: `front`, `section`
+Can be child of: `front`, `section`
 
 Contents: `organization?, address?`
 
@@ -222,7 +222,7 @@ The author's surname, to be used in conjunction with the separately specified in
 Contains the "back" part of the document: the references and appendices. In `back`, `section` elements indicate appendices.
 
 ### Schema
-Parents: `rfc`
+Can be child of: `rfc`
 
 Contents: `displayreference*, references*, section*`
 
@@ -233,7 +233,7 @@ Marks text that are phrases defined in BCP14 such as "MUST", "SHOULD NOT", and s
 
 This element is only to be used around the actual phrase from BCP 14, not the full definition of a requirement. For example, it is correct to say "The packet \<bcp14>MUST\</bcp14> be dropped.", but it is not correct to say "\<bcp14>The packet MUST be dropped.\</bcp14>".
 ### Schema
-Parents: `annotation`, `blockquote`, `dd`, `dt`, `em`, `li`, `name`, `refcontent`, `strong`, `sub`, `sup`, `t`, `td`, `th`, `tt`.
+Can be child of: `annotation`, `blockquote`, `dd`, `dt`, `em`, `li`, `name`, `refcontent`, `strong`, `sub`, `sup`, `t`, `td`, `th`, `tt`.
 
 Contents: `text`
 
@@ -242,7 +242,7 @@ Contents: `text`
 ### Usage
 Specifies that a block of text is a quotation.
 ### Schema
-Parents: `aside`, `li`, `section`
+Can be child of: `aside`, `li`, `section`
 
 Contents: `( ( artset | artwork | dl | figure | ol | sourcecode | t | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )+ )`
 
@@ -262,7 +262,7 @@ Holds the boilerplate text for the document. This element is filled in by the pr
 
 This element contains `section` elements. Every `section` element in this element must have the "numbered" attribute set to "false".
 ### Schema
-Parents: `front`
+Can be child of: `front`
 
 Contents: `section+`
 
@@ -272,7 +272,7 @@ Contents: `section+`
 Inserts a forced break. Use sparingly. In most situations, it's better to insert U+200B, ZERO WIDTH SPACE, in order to encourage line breaking at a point where it would otherwise not occur.
 
 ### Schema
-Parents: `blockquote`, `cref`, `dd`, `dt`, `em`, `li`, `name`, `strong`, `t`, `td`, `th`, `title`, `tt`
+Can be child of: `blockquote`, `cref`, `dd`, `dt`, `em`, `li`, `name`, `strong`, `t`, `td`, `th`, `title`, `tt`
 
 Contents: `empty`
 
@@ -282,7 +282,7 @@ Contents: `empty`
 Gives the city name in a postal address.
 
 ### Schema
-Parents: `postal`
+Can be child of: `postal`
 
 Contents: `text`
 
@@ -295,7 +295,7 @@ The ASCII equivalent of the `city` content. This element may have non-ASCII Lati
 ### Usage
 Where postal addresses use city subdivisions, these are mapped to the `cityarea` element. Korean addresses would use this for a city district, for instance. Countries known to use this element are Ascension Island, China, Iran, South Korea, and Thailand.
 ### Schema
-Parents: `postal`
+Can be child of: `postal`
 
 Content schema: `text`
 

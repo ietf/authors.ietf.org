@@ -2,16 +2,14 @@
 title: Drafting in XML
 description: 
 published: true
-date: 2021-11-03T12:31:33.776Z
+date: 2021-11-03T12:58:23.068Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:56:56.326Z
 ---
 
 ## Introducing RFCXML
-RFCXML, previously called 'The "xml2rfc" vocabulary', is an XML markup language that has been used as the canonical format for published RFCs since RFC 8650 in November 2019.  
-
-The [RFCXML vocabulary reference](/rfcxml-vocabulary) documents each element and attribute of RFCXML.
+For an introduction to RFCXML see the [RFCXML overview](/rfcxml-overview) and for detailed documentation on each element and attribute see the[RFCXML vocabulary reference](/rfcxml-vocabulary).
 
 ## What to look for in an XML toolchain
 There are two key features to look for in an XML toolchain:

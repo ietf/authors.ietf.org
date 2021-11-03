@@ -2,7 +2,7 @@
 title: RFCXML Elements
 description: 
 published: true
-date: 2021-11-03T04:16:51.221Z
+date: 2021-11-03T04:23:37.519Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -1526,7 +1526,7 @@ Content schema:
 ### Usage
 In xml2rfc vocabulary version 3, the elements [`author`](/rfcxml-elements#author), [`organisation`](/rfcxml-elements#organisation), [`street`](/rfcxml-elements#street), [`city`](/rfcxml-elements#city), [`region`](/rfcxml-elements#region), [`code`](/rfcxml-elements#code), [`country`](/rfcxml-elements#country), [`postalLine`](/rfcxml-elements#postalLine), [`email`](/rfcxml-elements#email), [`seriesInfo`](/rfcxml-elements#seriesInfo), and [`title`](/rfcxml-elements#title) may contain non- ascii characters for the purpose of rendering author names, addresses, and reference titles correctly. They also have an additional "ascii" attribute for the purpose of proper rendering in ascii-only media.
 
-In order to insert Unicode characters in any other context, xml2rfc vocabulary v3 requires that the Unicode string be enclosed within an <u> element. The element will be expanded inline based on the value of a "format" attribute. This provides a generalised means of generating the 6 methods of Unicode renderings listed in [RFC7997], Section 3.4, and also several others found in for instance the RFC Format Tools example rendering of RFC 7700, at https://rfc-format.github.io/draft-iab-rfc-css-bis/sample2-v2.html.
+In order to insert Unicode characters in any other context, xml2rfc vocabulary v3 requires that the Unicode string be enclosed within an [`u`](rfcxml-elements#u) element. The element will be expanded inline based on the value of a "format" attribute. This provides a generalised means of generating the 6 methods of Unicode renderings listed in [RFC7997], Section 3.4, and also several others found in for instance the RFC Format Tools example rendering of RFC 7700, at https://rfc-format.github.io/draft-iab-rfc-css-bis/sample2-v2.html.
 
 This element can be a child element of [`annotation`](/rfcxml-elements#annotation), [`blockquote`](/rfcxml-elements#blockquote), [`dd`](/rfcxml-elements#dd), [`li`](/rfcxml-elements#li), [`t`](/rfcxml-elements#t), [`td`](/rfcxml-elements#td), and [`th`](/rfcxml-elements#th).
 
@@ -1587,7 +1587,7 @@ If the [`u`](/rfcxml-elements#u) element encloses a sequence of Unicode codepoin
 ```
 will be expanded to "U+13DA U+13A2 U+13B5 U+13AC U+13A2 U+13AC U+13D2 ("ᏚᎢᎵᎬᎢᎬᏒ")".
 
-Unicode characters in document text which are not enclosed in <u> will be replaced with a question mark (?) and a warning will be issued.
+Unicode characters in document text which are not enclosed in [`u`](rfcxml-elements#u) will be replaced with a question mark (?) and a warning will be issued.
 
 ##### Non-simplified \<u> format specifications
 
@@ -1602,7 +1602,7 @@ will be rendered as
    The "Δ" character (U+0394).
 As for the simplified format, "num" MUST always be part of the specified format in order to ensure that no specification mistakes can result for rendering methods that cannot render all Unicode code points,
 
-###### Split expansion of <u> elements
+###### Split expansion of `u` elements
 
 There are cases which cannot be handled with either the simplified or full [`u`](/rfcxml-elements#u) format specifications. One is exemplified in Table 1 of the CSS sample document at https://rfc-format.github.io/draft-iab-rfc-css-bis/sample2-v2.html#s-3. Rendering this with [`u`](/rfcxml-elements#u) elements requires that the non-ascii content be rendered in one place (a table cell in one column) while the expansion is rendered in another cell in a different column. Provision for this has been made by modifying the expansion of [`u`](/rfcxml-elements#u) when it is referenced by an [`xref`](/rfcxml-elements#xref). This table, with [`u`](/rfcxml-elements#u) elements referenced by [`xref`](/rfcxml-elements#xref) instances:
 ```xml
@@ -1848,6 +1848,5 @@ This value for the "sectionFormat" attribute is useful when it is desired to exp
 #### target (Required)
 
 Identifies the document component being referenced. The value needs to match the value of the "anchor" attribute of an element in the document; otherwise, it is an error.¶
-
 
 

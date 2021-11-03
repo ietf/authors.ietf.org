@@ -2,7 +2,7 @@
 title: RFCXML Elements
 description: 
 published: true
-date: 2021-11-03T00:54:54.895Z
+date: 2021-11-03T01:19:27.365Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -14,13 +14,12 @@ dateCreated: 2021-11-02T22:58:38.001Z
 ### Usage
 Contains the Abstract of the document. See RFC7322 for more information on restrictions for the Abstract.
 ### Schema
-Can be child of: `front`
+Can be child of: [`front`](rfcxml-elements#front)
 
-Contents: `(dl, ol, t, ul)+`
+Contents: ([`dl`](rfcxml-elements#dl), ol, t, ul)+
 
 ### "anchor"
-
-Document-wide unique identifier for this `<abstract>` element.
+Document-wide unique identifier for this element.
 
 ## address
 ## Tabs {.tabset}
@@ -80,23 +79,23 @@ In previous versions of the schema, the `artwork` element was also used for sour
 There are at least five ways to include SVG in artwork in Internet- Drafts:
 
 * Inline, by including all of the SVG in the content of the element, such as:
-```html
+```xml
 <artwork type="svg"><svg xmlns="http://www.w3.org/2000/ svg...">
   ```
 * Inline, but using XInclude (see Appendix B.1), such as:
-```html
+```xml
 <artwork type="svg"><xi:include href=...>
   ```
 * As a data: URI, such as:
-```html 
+```xml 
 <artwork type="svg" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww...">
   ```
 * As a URI to an external entity, such as:
-```html
+```xml
 <artwork type="svg" src="http://www.example.com/...">
   ```
 * As a local file, such as:
-```html
+```xml
 <artwork type="svg" src="diagram12.svg">
   ```
 
@@ -359,4 +358,111 @@ Contents: `text`
 
 ### "ascii" 
 The ASCII equivalent of the `country` content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
+
+## cref
+## Tabs {.tabset}
+### Usage
+Represents a comment.
+
+Comments can be used in a document while it is work in progress. They might appear either inline and visually highlighted, at the end of the document, or not at all, depending on the formatting tool.
+
+### Schema
+This element can be a child element of `annotation`, `blockquote`, `dd`, `dt`, `em`, `li`, `name`, `strong`, `sub`, `sup`, `t`, `td`, `th`, `tt`
+
+Content schema: ( text | br | em | eref | strong | sub | sup | tt | xref )*
+### "anchor" 
+Document-wide unique identifier for this element.
+
+### "display" 
+Suggests whether or not the comment should be displayed by formatting tools. This might be set to "false" if you want to keep a comment in a document after the contents of the comment have already been dealt with.
+  
+Possible values: ( "true" | "false" )
+Default value: "true"
+
+### "source" 
+Holds the "source" of a comment, such as the name or the initials of the person who made the comment.
+
+## date
+## Tabs {.tabset}
+### Usage
+Provides information about the publication date. This element is used for two cases: the boilerplate of the document being produced, and inside bibliographic references that use the `front` element.
+
+Bibliographic references:
+* In order to be able to specify fuzzy dates, such as "2002-2003", "Second quarter 2010", etc., the date element is now permitted to have text content in addition to the "year", "month", and "day" attributes. If there is only text content, it will be rendered as is. If there is both text content and date components, both will be rendered, with the expanded date components in parentheses.
+
+Boilerplate for Internet-Drafts and RFCs:
+* This element defines the date of publication for the current document (Internet-Draft or RFC). When producing Internet-Drafts, the prep tool uses this date to compute the expiration date (see [IDGUIDE]). When one or more of "year", "month", or "day" are left out, the prep tool will attempt to use the current system date if the attributes that are present are consistent with that date.
+
+In dates in `rfc` elements, the month must be a number or a month in English. The prep tool will silently change text month names to numbers. Similarly, the year must be a four-digit number.
+
+When the prep tool is used to create Internet-Drafts, it will warn if the draft has a `date` element in the boilerplate for itself that is more than 3 days away from today. To avoid this problem, authors might simply not include a `date` element in the boilerplate.
+### Schema
+This element can be a child element of `front`
+
+Content schema: text
+### "day" 
+The day of publication.
+
+### "month" 
+The month of publication.
+
+### "year" 
+The year of publication.
+
+## dd
+## Tabs {.tabset}
+### Usage
+The definition part of an entry in a definition list.
+### Schema
+This element can be a child element of `dl`.
+
+Content schema: ( ( artset | artwork | aside | dl | figure | ol | sourcecode | t | table | ul )+ | ( text | bcp14 | br | cref | em | eref | iref | strong | sub | sup | tt | u | xref )+ )
+
+### "anchor" 
+Document-wide unique identifier for this `dd` element.
+
+## displayreference
+This element gives a mapping between the anchor of a reference and a name that will be displayed instead. This allows authors to display more mnemonic anchor names for automatically included references. The mapping in this element only applies to `xref` elements whose format is "default". For example, if the reference uses the anchor "RFC6949", the following would cause that anchor in the body of displayed documents to be "RFC-dev":
+```xml
+<displayreference target="RFC6949" to="RFC-dev"/>
+```
+If a reference section is sorted, this element changes the sort order.
+### Schema
+This element can be a child element of `back`.
+
+### "target" (Required)
+This attribute must be the name of an anchor in a `reference` or `referencegroup` element.
+
+### "to" (Required)
+This attribute is a name that will be displayed as the anchor instead of the anchor that is given in the `reference` element. The string given must start with one of the following characters: 0-9, a-z, or A-Z. The other characters in the string must be 0-9, a-z, A-Z, "-", ".", or "_".
+
+## dl
+## Tabs {.tabset}
+### Usage
+A definition list. Each entry has a pair of elements: a term (`dt`) and a definition (`dd`). (This is slightly different and simpler than the model used in HTML, which allows for multiple terms for a single definition.)
+### Schema
+This element can be a child element of `abstract`, `aside`, `blockquote`, `dd`, `li`, `note`, `section`, `td`, `th`.
+
+Content schema: ( dt, dd )+
+### Attributes
+#### "anchor" 
+Document-wide unique identifier for this element.
+
+#### "indent"
+Indicates the indentation to be used for the rendering of the second and following lines of the item (the first line starts with the term, and is not indented). The indentation amount is interpreted as characters when rendering plain-text documents, and en-space units when rendering in formats that have richer typographic support such as HTML or PDF. One en-space is assumed to be the length of 0.5 em-space in CSS units.
+
+Default value: "3"
+
+#### "newline"
+The "newline" attribute defines whether or not the term appears on the same line as the definition. newline="false" indicates that the term is to the left of the definition, while newline="true" indicates that the term will be on a separate line.
+
+Possible values: ( "true" | "false" )
+Default value: "false"
+
+#### "spacing"
+Defines whether or not there is a blank line between entries. spacing="normal" indicates a single blank line, while spacing="compact" indicates no blank line between entries.
+
+Possible values: ( "normal" | "compact" )
+Default value: "normal"
+
 

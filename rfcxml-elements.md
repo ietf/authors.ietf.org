@@ -2,7 +2,7 @@
 title: RFCXML Elements
 description: 
 published: true
-date: 2021-11-03T00:37:33.476Z
+date: 2021-11-03T00:49:34.785Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -80,15 +80,25 @@ In previous versions of the schema, the `artwork` element was also used for sour
 There are at least five ways to include SVG in artwork in Internet- Drafts:
 
 * Inline, by including all of the SVG in the content of the element, such as:
-```<artwork type="svg"><svg xmlns="http://www.w3.org/2000/ svg...">```
+```html
+<artwork type="svg"><svg xmlns="http://www.w3.org/2000/ svg...">
+  ```
 * Inline, but using XInclude (see Appendix B.1), such as:
-```<artwork type="svg"><xi:include href=...>```
+```html
+<artwork type="svg"><xi:include href=...>
+  ```
 * As a data: URI, such as:
-```<artwork type="svg" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww...">```
+```html 
+<artwork type="svg" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww...">
+  ```
 * As a URI to an external entity, such as:
-```<artwork type="svg" src="http://www.example.com/...">```
+```html
+<artwork type="svg" src="http://www.example.com/...">
+  ```
 * As a local file, such as:
-```<artwork type="svg" src="diagram12.svg">```
+```html
+<artwork type="svg" src="diagram12.svg">
+  ```
 
 The use of SVG in Internet-Drafts and RFCs is covered in much more detail in [RFC7996].
 
@@ -291,4 +301,62 @@ Content schema: `text`
 
 ### "ascii" 
 The ASCII equivalent of the `cityarea` content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
+
+## code
+## Tabs {.tabset}
+### Usage
+Gives the postal region code.
+### Schema
+This element can be a child element of `postal`.
+
+Contents: `text`
+
+### "ascii" 
+The ASCII equivalent of the `code` content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
+
+## contact
+## Tabs {.tabset}
+### Usage
+Provides information about contributors. This element can be used inline within a `t`, and will be rendered with name only, similarly to how `author` is rendered in a `reference`, or it can be used as a direct child of `section`, where it will be rendered the same way as an author address block within the "Authors' Addresses" section.
+
+Note that a "contact" can also be just an organization (by not specifying any of the "name" attributes, but adding the `organization` child element).
+### Schema
+This element can be a child element of `section`, `t`
+
+Contents: `organization?, address?`
+
+### "anchor" 
+Document-wide unique identifier for this element.
+
+### "asciiFullname"
+The Latin script equivalent of the contact's full name.
+
+### "asciiInitials" 
+The Latin script equivalent of the contact's initials, to be used in conjunction with the separately specified asciiSurname.
+
+### "asciiSurname" 
+The Latin script equivalent of the contact's surname, to be used in conjunction with the separately specified asciiInitials.
+
+### "fullname"
+The full name. Although this attribute is optional, if one or more of the "asciiFullname", "asciiInitials", or "asciiSurname" attributes does not have values, the "fullname" attribute is required.
+
+### "initials" 
+An abbreviated variant of the given name(s), to be used in conjunction with the separately specified surname.
+
+### "surname" 
+The contact's surname, to be used in conjunction with the separately specified initials.
+
+## country
+## Tabs {.tabset}
+### Usage
+Specifies the country name in a postal address. All common and official country names should be recognized; in addition two- and three-letter country codes according to ISO 3166 are recognized.
+
+xml2rfc has a help option which will list all names and country codes it recognizes as valid country names: xml2rfc --country-help .
+### Schema
+This element can be a child element of `postal`.
+
+Contents: `text`
+
+### "ascii" 
+The ASCII equivalent of the `country` content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 

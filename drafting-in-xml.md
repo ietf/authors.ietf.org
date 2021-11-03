@@ -2,22 +2,16 @@
 title: Drafting in XML
 description: 
 published: true
-date: 2021-10-10T21:03:25.287Z
+date: 2021-11-03T12:31:33.776Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:56:56.326Z
 ---
 
-## Introducing RFC XML
-RFC XML, also called 'The "xml2rfc" vocabulary', is an XML markup language that has been used as the canonical format for published RFCs since RFC 8650 in November 2019.  
+## Introducing RFCXML
+RFCXML, previously called 'The "xml2rfc" vocabulary', is an XML markup language that has been used as the canonical format for published RFCs since RFC 8650 in November 2019.  
 
-The current version of RFC XML, v3, is formally defined in a RELAX NG Compact Syntax (RNC) schema as documented and explained in [RFC 7991](https://www.rfc-editor.org/info/rfc7991). Since the publication of RFC 7991, a number of changes have been made to the schema that are currently documented in the [implementation notes for RFC 7991](https://datatracker.ietf.org/doc/html/draft-levkowetz-xml2rfc-v3-implementation-notes-11).
-
-The previous version of RFC XML, v2, is still actively used as some of the tools that process RFC XML do not fully support v3 or still default to v2. RFC XML v2 is documented and explained in [RFC 7749](https://www.rfc-editor.org/info/rfc7749).
-
-A small [library](https://tools.ietf.org/tools/templates/) of RFC XML templates is available though these are under review and likely to be updated and moved.
-
-Published RFCs go through a 'prep' process that makes multiple changes to the RFC XML in order to support the long time archival nature of RFCs.  While RFCs validate with the same schema, using an XML RFC as a template for an Internet-Draft is not recommended. 
+The [RFCXML vocabulary reference](/rfcxml-vocabulary) documents each element and attribute of RFCXML.
 
 ## What to look for in an XML toolchain
 There are two key features to look for in an XML toolchain:

@@ -2,13 +2,13 @@
 title: RFCXML Vocabulary
 description: 
 published: true
-date: 2021-11-03T12:09:39.313Z
+date: 2021-11-03T12:12:30.632Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
 ---
 
-The RFCXML vocabulary being with the root element [`rfc`]().  The available elements are listed below:
+The RFCXML vocabulary begins with the root element [`rfc`](/rfcxml-vocabulary#rfc).  The available elements are listed below:
 
 
 # Elements

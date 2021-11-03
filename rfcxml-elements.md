@@ -2,7 +2,7 @@
 title: RFCXML Elements
 description: 
 published: true
-date: 2021-11-03T00:53:33.802Z
+date: 2021-11-03T00:54:54.895Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -27,7 +27,7 @@ Document-wide unique identifier for this `<abstract>` element.
 ### Usage
 Provides address information for the author.
 ### Schema
-Can be child of: `author`, `contact`
+Can be child of: [`author`](rfcxml#author), `contact`
 
 Contents: `postal?, phone?, email*, uri?`
 

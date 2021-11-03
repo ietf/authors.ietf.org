@@ -2,13 +2,13 @@
 title: RFCXML Vocabulary
 description: 
 published: true
-date: 2021-11-03T12:12:30.632Z
+date: 2021-11-03T12:23:30.556Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
 ---
 
-The RFCXML vocabulary begins with the root element [`rfc`](/rfcxml-vocabulary#rfc).  The available elements are listed below:
+The current version of the RFCXML vocabulary is v3.  All documents written in RFCXML  begin with the root element [`rfc`](/rfcxml-vocabulary#rfc) and follow the schema rules for the contents of each element.  The available elements are listed below along with their attributes and a snipper of the RNC schema that defines that element.
 
 
 # Elements
@@ -94,7 +94,7 @@ Allowed content: ( text | [`bcp14`](/rfcxml-vocabulary#bcp14) | [`cref`](/rfcxml
 ### Usage
 Provides information about the IETF area to which this document relates (currently not used when generating documents).
 
-The value ought to be either the full name or the abbreviation of one of the IETF areas as listed on http://www.ietf.org/iesg/area.html. A list of full names and abbreviations will be kept by the RFC Series Editor.
+The value ought to be either the full name or the abbreviation of one of the listed [IETF areas](https://www.ietf.org/iesg/area.html). A list of full names and abbreviations is kept by the RFC Series Editor.
 
 Used in: [`front`](/rfcxml-vocabulary#front)
 Allowed content: text
@@ -144,7 +144,7 @@ Alternatively, the "src" attribute allows referencing an external graphics file,
 
 In order to include alternative artwork expressions for different output formats, you should provide multiple [`artwork`](/rfcxml-vocabulary#artwork) elements enclosed within an [`artset`](/rfcxml-vocabulary#artset). The text renderer will prefer instances with type="ascii-art", while the HTML and PDF renderers will prefer instances with type="svg".
 
-In previous versions of the schema, the [`artwork`](/rfcxml-vocabulary#artwork) element was also used for source code and formal languages; this is now done with [`sourcecode`](/rfcxml-vocabulary#sourcecode).
+The [`artwork`](/rfcxml-vocabulary#artwork) element should not be used for source code and formal languages, the [`sourcecode`](/rfcxml-vocabulary#sourcecode) element should be used instead.
 
 There are at least five ways to include SVG in artwork in Internet- Drafts:
 
@@ -175,8 +175,6 @@ The above methods for inclusion of SVG art can also be used for including text a
 
 Formatters that do pagination should attempt to keep artwork on a single page. This is to prevent artwork that is split across pages from looking like two separate pieces of artwork.
 
-See Section 5 for a description of how to deal with issues of using "&" and "<" characters in artwork.
-
 Used in: [`artset`](/rfcxml-vocabulary#artset), [`aside`](/rfcxml-vocabulary#aside), [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`figure`](/rfcxml-vocabulary#figure), [`li`](/rfcxml-vocabulary#li), [`section`](/rfcxml-vocabulary#section), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th)
 Allowed content: ( [`text`](/rfcxml-vocabulary#text)\* | [`svg`](/rfcxml-vocabulary#svg) )
 
@@ -200,7 +198,7 @@ TBD
 A filename suitable for the contents (such as for extraction to a local file). This attribute can be helpful for other kinds of tools (such as automated syntax checkers, which work by extracting the artwork). Note that the "name" attribute does not need to be unique for [`artwork`](/rfcxml-vocabulary#artwork) elements in a document. If multiple [`artwork`](/rfcxml-vocabulary#artwork) elements have the same "name" attribute, a processing tool might assume that the elements are all fragments of a single file, and the tool can collect those fragments for later processing.
 
 #### src
-The URI reference of a graphics file RFC3986, or the name of a file on the local disk. This can be a "data" URI RFC2397 that contains the contents of the graphics file. Note that the inclusion of art with the "src" attribute depends on the capabilities of the processing tool reading the XML document. Tools need to be able to handle the file: URI, and they should be able to handle http: and https: URIs as well. The prep tool will be able to handle reading the "src" attribute.
+The URI reference of a graphics file (RFC3986), or the name of a file on the local disk. This can be a "data" URI RFC2397 that contains the contents of the graphics file. Note that the inclusion of art with the "src" attribute depends on the capabilities of the processing tool reading the XML document. Tools need to be able to handle the file: URI, and they should be able to handle http: and https: URIs as well. The prep tool will be able to handle reading the "src" attribute.
 
 If no URI scheme is given in the attribute, the attribute is considered to be a local filename relative to the current directory. Processing tools must be careful to not accept dangerous values for the filename, particularly those that contain absolute references outside the current directory. Document creators should think hard before using relative URIs due to possible later problems if files move around on the disk. Also, documents should most likely use explicit URI schemes wherever possible.
 
@@ -282,9 +280,9 @@ Provides information about a document's author. This is used both for the docume
 
 The [`author`](/rfcxml-vocabulary#author) elements contained within the document's [`front`](/rfcxml-vocabulary#front) element are used to fill the boilerplate and also to generate the "Author's Address" section (see RFC7322).
 
-Note that an "author" can also be just an organization (by not specifying any of the "name" attributes, but adding the [`organization`](/rfcxml-vocabulary#organization) child element).
+Note that an "author" can also be just an organization by not specifying any of the "name" attributes and adding the [`organization`](/rfcxml-vocabulary#organization) child element.
 
-Furthermore, the "role" attribute can be used to mark an author as "editor". This is reflected both on the front page and in the "Author's Address" section, as well as in bibliographic references. Note that this specification does not define a precise meaning for the term "editor".
+Furthermore, the "role" attribute can be used to mark an author as "editor". This is reflected both on the front page and in the "Author's Address" section, as well as in bibliographic references.
 
 Used in: [`front`](/rfcxml-vocabulary#front), [`section`](/rfcxml-vocabulary#section)
 Allowed content: [`organization`](/rfcxml-vocabulary#organization)?, [`address`](/rfcxml-vocabulary#address)?

@@ -2,7 +2,7 @@
 title: RFCXML overview and background
 description: 
 published: true
-date: 2021-11-04T06:36:23.317Z
+date: 2021-11-04T06:49:19.992Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-03T13:17:49.168Z
@@ -28,5 +28,5 @@ v3 was documented in RFC 7991, published in December 2016. Since the publication
 
 Published RFCs go through a 'prep' process that makes multiple changes to the RFCXML in order to support the long time archival nature of RFCs.  Key aspects of the prep tool are documented in RFC 7998.  
 
-> NOTE: While RFCs validate with the same schemas Internet-Drafts, using an XML RFC as a template for an Internet-Draft is not recommended as the prep tool hard codes multiple data into the RFC, making it unsuitable for further manual editing.
+> NOTE: While RFCs validate with the same schema as Internet-Drafts, using an XML RFC as a template for an Internet-Draft is not recommended as the prep tool hard codes multiple data into the RFC, making it unsuitable for further manual editing.
 {.is-warning}

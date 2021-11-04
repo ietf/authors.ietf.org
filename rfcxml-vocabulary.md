@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-04T02:20:10.722Z
+date: 2021-11-04T02:36:44.720Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -802,7 +802,7 @@ Default value: "normal"
 The term being defined in a definition list.
 
 Used in: [`dl`](/rfcxml-vocabulary#dl).
-Allowed content: ( text | [bcp14](/rfcxml-vocabulary#bcp14) | [br](/rfcxml-vocabulary#br) | [cref](/rfcxml-vocabulary#cref) | [em](/rfcxml-vocabulary#em) | [eref](/rfcxml-vocabulary#eref) | [iref](/rfcxml-vocabulary#iref) | [strong](/rfcxml-vocabulary#strong) | [sub](/rfcxml-vocabulary#sub) | [sup](/rfcxml-vocabulary#sup) | [tt](/rfcxml-vocabulary#tt) | [xref](/rfcxml-vocabulary#xref) )*
+Allowed content: ( text | [`bcp14`](/rfcxml-vocabulary#bcp14) | [`br`](/rfcxml-vocabulary#br) | [`cref`](/rfcxml-vocabulary#cref) | [`em`](/rfcxml-vocabulary#em) | [`eref`](/rfcxml-vocabulary#eref) | [`iref`](/rfcxml-vocabulary#iref) | [`strong`](/rfcxml-vocabulary#strong) | [`sub`](/rfcxml-vocabulary#sub) | [`sup`](/rfcxml-vocabulary#sup) | [`tt`](/rfcxml-vocabulary#tt) | [`xref`](/rfcxml-vocabulary#xref) )*
 ### Attributes
 #### anchor 
 Document-wide unique identifier for this element.

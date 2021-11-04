@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-04T07:39:52.189Z
+date: 2021-11-04T09:24:06.587Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -115,7 +115,7 @@ This element allows for the support of multiple artwork formats, in order to pro
 
 When multiple [`artwork`](/rfcxml-vocabulary#artwork) instances are provided within one `artset` element, the renderer will try to pick the [`artwork`](/rfcxml-vocabulary#artwork) instance which is most appropriate for its current output format from the given alternatives.
 
-If more than one [`artwork`](/rfcxml-vocabulary#artwork) element with the same "type" is found within an [`artset`](/rfcxml-vocabulary#artset) element, the renderer could select the first one, or possibly choose between the alternative instances based on the output format and some quality of the alternatives that make one more suitable than the others for that particular format, such as size, aspect ratio, etc.
+If more than one [`artwork`](/rfcxml-vocabulary#artwork) element with the same **type** is found within an [`artset`](/rfcxml-vocabulary#artset) element, the renderer could select the first one, or possibly choose between the alternative instances based on the output format and some quality of the alternatives that make one more suitable than the others for that particular format, such as size, aspect ratio, etc.
 
 Used in: [`aside`](/rfcxml-vocabulary#aside), [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`figure`](/rfcxml-vocabulary#figure), [`li`](/rfcxml-vocabulary#li), [`section`](/rfcxml-vocabulary#section), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th)
 Allowed content: [`artwork`](rfcxml-elements#artwork)+
@@ -138,11 +138,11 @@ Document-wide unique identifier for this element.
 ## artwork
 ## Tabs {.tabset}
 ### Usage
-This element allows the inclusion of "artwork" in the document. [`artwork`](/rfcxml-vocabulary#artwork) provides full control of horizontal whitespace and line breaks; thus, it is used for a variety of things, such as diagrams ("line art") and protocol unit diagrams. Tab characters (U+0009) inside of this element are prohibited.
+This element allows the inclusion of artwork in the document. [`artwork`](/rfcxml-vocabulary#artwork) provides full control of horizontal whitespace and line breaks; thus, it is used for a variety of things, such as diagrams ("line art") and protocol unit diagrams. Tab characters (U+0009) inside of this element are prohibited.
 
-Alternatively, the "src" attribute allows referencing an external graphics file, such as a vector drawing in SVG or a bitmap graphic file, using a URI. In this case, the textual content acts as a fallback for output representations that do not support graphics; thus, it ought to contain either (1) a "line art" variant of the graphics or (2) prose that describes the included image in sufficient detail.
+Alternatively, the **src** attribute allows referencing an external graphics file, such as a vector drawing in SVG or a bitmap graphic file, using a URI. In this case, the textual content acts as a fallback for output representations that do not support graphics; thus, it ought to contain either (1) a "line art" variant of the graphics or (2) prose that describes the included image in sufficient detail.
 
-In order to include alternative artwork expressions for different output formats, you should provide multiple [`artwork`](/rfcxml-vocabulary#artwork) elements enclosed within an [`artset`](/rfcxml-vocabulary#artset). The text renderer will prefer instances with type="ascii-art", while the HTML and PDF renderers will prefer instances with type="svg".
+In order to include alternative artwork expressions for different output formats, you should provide multiple [`artwork`](/rfcxml-vocabulary#artwork) elements enclosed within an [`artset`](/rfcxml-vocabulary#artset). The text renderer will prefer instances with `type="ascii-art"`, while the HTML and PDF renderers will prefer instances with `type="svg"`.
 
 The [`artwork`](/rfcxml-vocabulary#artwork) element should not be used for source code and formal languages, the [`sourcecode`](/rfcxml-vocabulary#sourcecode) element should be used instead.
 
@@ -186,7 +186,7 @@ Possible values: `( "left" | "center" | "right" )`
 Default value: `"left"`
 
 #### alt
-Alternative text description of the artwork (which is more than just a summary or caption). When the art comes from the "src" attribute and the format of that artwork supports alternate text, the alternative text comes from the text of the artwork itself, not from this attribute. The contents of this attribute are important to readers who are visually impaired, as well as those reading on devices that cannot show the artwork well, or at all.
+Alternative text description of the artwork (which is more than just a summary or caption). When the art comes from the **src** attribute and the format of that artwork supports alternate text, the alternative text comes from the text of the artwork itself, not from this attribute. The contents of this attribute are important to readers who are visually impaired, as well as those reading on devices that cannot show the artwork well, or at all.
 
 #### anchor
 Document-wide unique identifier for this element.
@@ -195,19 +195,19 @@ Document-wide unique identifier for this element.
 TBD
 
 #### name
-A filename suitable for the contents (such as for extraction to a local file). This attribute can be helpful for other kinds of tools (such as automated syntax checkers, which work by extracting the artwork). Note that the "name" attribute does not need to be unique for [`artwork`](/rfcxml-vocabulary#artwork) elements in a document. If multiple [`artwork`](/rfcxml-vocabulary#artwork) elements have the same "name" attribute, a processing tool might assume that the elements are all fragments of a single file, and the tool can collect those fragments for later processing.
+A filename suitable for the contents (such as for extraction to a local file). This attribute can be helpful for other kinds of tools (such as automated syntax checkers, which work by extracting the artwork). Note that the **name** attribute does not need to be unique for [`artwork`](/rfcxml-vocabulary#artwork) elements in a document. If multiple [`artwork`](/rfcxml-vocabulary#artwork) elements have the same **name** attribute, a processing tool might assume that the elements are all fragments of a single file, and the tool can collect those fragments for later processing.
 
 #### src
-The URI reference of a graphics file (RFC3986), or the name of a file on the local disk. This can be a "data" URI RFC2397 that contains the contents of the graphics file. Note that the inclusion of art with the "src" attribute depends on the capabilities of the processing tool reading the XML document. Tools need to be able to handle the file: URI, and they should be able to handle http: and https: URIs as well. The prep tool will be able to handle reading the "src" attribute.
+The URI reference of a graphics file (RFC3986), or the name of a file on the local disk. This can be a "data" URI RFC2397 that contains the contents of the graphics file. Note that the inclusion of art with the **src** attribute depends on the capabilities of the processing tool reading the XML document. Tools need to be able to handle the file: URI, and they should be able to handle http: and https: URIs as well. The prep tool will be able to handle reading the **src** attribute.
 
 If no URI scheme is given in the attribute, the attribute is considered to be a local filename relative to the current directory. Processing tools must be careful to not accept dangerous values for the filename, particularly those that contain absolute references outside the current directory. Document creators should think hard before using relative URIs due to possible later problems if files move around on the disk. Also, documents should most likely use explicit URI schemes wherever possible.
 
-In some cases, the prep tool may remove the "src" attribute after processing its value. See RFC7998 for a description of this.
+In some cases, the prep tool may remove the **src** attribute after processing its value. See RFC7998 for a description of this.
 
 #### type
 Specifies the format of the artwork. The value of this attribute is free text with certain values designated as preferred.
 
-The preferred values for [`artwork`](/rfcxml-vocabulary#artwork) types are:
+The preferred values for [`artwork`](/rfcxml-vocabulary#artwork) **type**s are:
 
 * ascii-art
 * binary-art
@@ -215,7 +215,7 @@ The preferred values for [`artwork`](/rfcxml-vocabulary#artwork) types are:
 
 Values that don't describe the format, such as "call-flow" or "hex-dump" were mentioned in RFC7991, but are not supported; they are instead candidates for use with another future attribute to describe the artwork content.
 
-A complete list of the preferred values is maintained on the RFC Editor web site, and that list is expected to be updated over time. Thus, a consumer of this attribute should not cause a failure when it encounters an unexpected type or no type is specified. The table will also indicate which type of art can appear in plain-text output (for example, type="svg" cannot).
+A complete list of the preferred values is maintained on the RFC Editor web site, and that list is expected to be updated over time. Thus, a consumer of this attribute should not cause a failure when it encounters an unexpected type or no type is specified. The table will also indicate which type of art can appear in plain-text output (for example, `type="svg"` cannot).
 
 #### width
 TBD
@@ -280,9 +280,9 @@ Provides information about a document's author. This is used both for the docume
 
 The [`author`](/rfcxml-vocabulary#author) elements contained within the document's [`front`](/rfcxml-vocabulary#front) element are used to fill the boilerplate and also to generate the "Author's Address" section (see RFC7322).
 
-Note that an "author" can also be just an organization by not specifying any of the "name" attributes and adding the [`organization`](/rfcxml-vocabulary#organization) child element.
+Note that an author can also be solely an organization by adding the [`organization`](/rfcxml-vocabulary#organization) child element and not specifying any of the **name** attributes.
 
-Furthermore, the "role" attribute can be used to mark an author as "editor". This is reflected both on the front page and in the "Author's Address" section, as well as in bibliographic references.
+Furthermore, the **role** attribute can be used to mark an author as "editor". This is reflected both on the front page and in the "Author's Address" section, as well as in bibliographic references.
 
 Used in: [`front`](/rfcxml-vocabulary#front), [`section`](/rfcxml-vocabulary#section)
 Allowed content: [`organization`](/rfcxml-vocabulary#organization)?, [`address`](/rfcxml-vocabulary#address)?
@@ -301,12 +301,12 @@ The Latin script equivalent of the author's initials, to be used in conjunction 
 The Latin script equivalent of the author's surname, to be used in conjunction with the separately specified asciiInitials.
 
 #### fullname
-The full name (used in the automatically generated "Author's Address" section). Although this attribute is optional, if one or more of the "asciiFullname", "asciiInitials", or "asciiSurname" attributes does not have values, the "fullname" attribute is required.
+The full name (used in the automatically generated "Author's Address" section). Although this attribute is optional, if one or more of the **asciiFullname**, **asciiInitials**, or **asciiSurname** attributes does not have values, the **fullname** attribute is required.
 
 #### initials
 An abbreviated variant of the given name(s), to be used in conjunction with the separately specified surname. It usually appears on the front page, in footers, and in references.
 
-Some processors will post-process the value -- for instance, when it only contains a single letter (in which case they might add a trailing dot). Relying on this kind of post-processing can lead to results varying across formatters and thus ought to be avoided.
+Some processors will post-process the value, for instance when it only contains a single letter (in which case they might add a trailing dot). Relying on this kind of post-processing can lead to results varying across formatters and thus ought to be avoided.
 
 #### role
 Specifies the role the author had in creating the document.
@@ -356,7 +356,7 @@ Allowed content: [`displayreference`](/rfcxml-vocabulary#displayreference)\*, [`
 ### Usage
 Marks text that are phrases defined in [BCP14](https://www.rfc-editor.org/rfc/rfc2119.html) such as "MUST", "SHOULD NOT", and so on. When shown in some of the output representations, the text in this element might be highlighted. The use of this element is optional.
 
-This element is only to be used around the actual phrase from BCP 14, not the full definition of a requirement. For example, it is correct to say "The packet \<bcp14>MUST\</bcp14> be dropped.", but it is not correct to say "\<bcp14>The packet MUST be dropped.\</bcp14>".
+This element is only to be used around the actual phrase from BCP 14, not the full definition of a requirement. For example, it is correct to say `The packet <bcp14>MUST</bcp14> be dropped.`, but it is not correct to say `<bcp14>The packet MUST be dropped.</bcp14>`.
 
 Used in: [`annotation`](/rfcxml-vocabulary#annotation), [`blockquote`](/rfcxml-vocabulary#blockquote), [`dd`](/rfcxml-vocabulary#dd), [`dt`](/rfcxml-vocabulary#dt), [`em`](/rfcxml-vocabulary#em), [`li`](/rfcxml-vocabulary#li), [`name`](/rfcxml-vocabulary#name), [`refcontent`](/rfcxml-vocabulary#refcontent), [`strong`](/rfcxml-vocabulary#strong), [`sub`](/rfcxml-vocabulary#sub), [`sup`](/rfcxml-vocabulary#sup), [`t`](/rfcxml-vocabulary#t), [`td`](/rfcxml-vocabulary#td), [`th`](/rfcxml-vocabulary#th), [`tt`](/rfcxml-vocabulary#tt).
 Allowed content: text
@@ -383,7 +383,7 @@ Allowed content: ( ( [`artset`](/rfcxml-vocabulary#artset) | [`artwork`](/rfcxml
 Document-wide unique identifier for this element.
 
 #### cite
-The source of the citation. This must be a URI. If the "quotedFrom" attribute is given, this URI will be used by processing tools as the link for the text of that attribute.
+The source of the citation. This must be a URI. If the **quotedFrom** attribute is given, this URI will be used by processing tools as the link for the text of that attribute.
 
 #### quotedFrom
 Name of person or document the text in this element is quoted from. A formatter should render this as visible text at the end of the quotation.
@@ -420,7 +420,7 @@ Name of person or document the text in this element is quoted from. A formatter 
 ### Usage
 Holds the boilerplate text for the document. This element is filled in by the prep tool.
 
-This element contains [`section`](/rfcxml-vocabulary#section) elements. Every [`section`](/rfcxml-vocabulary#section) element in this element must have the "numbered" attribute set to "false".
+This element contains [`section`](/rfcxml-vocabulary#section) elements. Every [`section`](/rfcxml-vocabulary#section) element inside this element must have the **numbered** attribute set to "false".
 
 Used in: [`front`](/rfcxml-vocabulary#front)
 Allowed content: [`section`](/rfcxml-vocabulary#section)+
@@ -2885,8 +2885,8 @@ The following attributes still appear in the schema for non-deprecated elements 
 * [`section`](/rfcxml-vocabulary#section)
   * **title**
 * [`seriesInfo`](/rfcxml-vocabulary#seriesInfo)
-"status"
-"stream"
-<t>:
-"hangText"
+  * **status**
+  * **stream**
+* [`t`](/rfcxml-vocabulary#t)
+  * **hangText**
 

@@ -2,14 +2,14 @@
 title: Drafting in XML
 description: 
 published: true
-date: 2021-11-03T13:18:33.059Z
+date: 2021-11-04T19:57:13.584Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:56:56.326Z
 ---
 
 ## Introducing RFCXML
-For an introduction to RFCXML see the [RFCXML overview and background](/rfcxml-overview) and for detailed documentation on each element and attribute see the[RFCXML vocabulary reference](/rfcxml-vocabulary).
+For an introduction to RFCXML see the [RFCXML overview and background](/rfcxml-overview) and for detailed documentation on each element and attribute see the [RFCXML vocabulary reference](/rfcxml-vocabulary).
 
 ## What to look for in an XML toolchain
 There are two key features to look for in an XML toolchain:

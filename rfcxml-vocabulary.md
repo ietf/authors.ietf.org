@@ -2,13 +2,13 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-03T12:32:23.602Z
+date: 2021-11-04T02:20:10.722Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
 ---
 
-The current version of the RFCXML vocabulary is v3.  All documents written in RFCXML  begin with the root element [`rfc`](/rfcxml-vocabulary#rfc) and follow the schema rules for the contents of each element.  The available elements are listed below along with their attributes and a snipper of the RNC schema that defines that element.
+The current version of the RFCXML vocabulary is v3.  All documents written in RFCXML  begin with the root element [`rfc`](/rfcxml-vocabulary#rfc) and follow the schema rules for the contents of each element.  The available elements are listed below along with their attributes and a snippet of the RNC schema that defines that element.
 
 
 # Elements
@@ -1069,7 +1069,7 @@ The subitem to include.
        attribute primary { "true" | "false" }?,
        attribute pn { xsd:ID }?,
        empty
-     ```
+```
 
 ## keyword
 ## Tabs {.tabset}

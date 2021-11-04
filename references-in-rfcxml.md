@@ -2,16 +2,20 @@
 title: References in RFCXML
 description: 
 published: true
-date: 2021-11-04T23:48:24.883Z
+date: 2021-11-04T23:53:52.515Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T23:45:18.949Z
 ---
 
-# Inserting a reference
-RFCXML encodes citations in a format called BibXML as defined in RFC7991. A set of online citation libraries are maintained on [xml2rfc.tools.ietf.org](). They include citations for RFCs, Internet-Drafts, and documents produced by the W3C and 3GPP, among others.
+# Introduction
+RFCXML has three key elements 
 
-To make use of the citation libraries, use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section as follows.
+uses citations that are encoded in a format called BibXML, which is defined in RFC 7991. A set of online citation libraries are maintained on [xml2rfc.tools.ietf.org](). They include citations for RFCs, Internet-Drafts, and documents produced by the W3C and 3GPP, among others.
+
+
+# Inserting a reference
+Use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section thet points to a citation in the library as follows.
 ```xml
 <xi:include
     href="https://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml"/>

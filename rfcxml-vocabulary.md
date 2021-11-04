@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-04T02:36:44.720Z
+date: 2021-11-04T07:08:15.345Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -645,7 +645,7 @@ Bibliographic references:
 * In order to be able to specify fuzzy dates, such as "2002-2003", "Second quarter 2010", etc., the date element is now permitted to have text content in addition to the "year", "month", and "day" attributes. If there is only text content, it will be rendered as is. If there is both text content and date components, both will be rendered, with the expanded date components in parentheses.
 
 Boilerplate for Internet-Drafts and RFCs:
-* This element defines the date of publication for the current document (Internet-Draft or RFC). When producing Internet-Drafts, the prep tool uses this date to compute the expiration date (see [IDGUIDE]). When one or more of "year", "month", or "day" are left out, the prep tool will attempt to use the current system date if the attributes that are present are consistent with that date.
+* This element defines the date of publication for the current document (Internet-Draft or RFC). When producing Internet-Drafts, the prep tool uses this date to compute the expiration date (see the [Guidelines for I-D Authors](https://www.ietf.org/standards/ids/guidelines/) for details). When one or more of "year", "month", or "day" are left out, the prep tool will attempt to use the current system date if the attributes that are present are consistent with that date.
 
 In dates in [`rfc`](/rfcxml-vocabulary#rfc) elements, the month must be a number or a month in English. The prep tool will silently change text month names to numbers. Similarly, the year must be a four-digit number.
 

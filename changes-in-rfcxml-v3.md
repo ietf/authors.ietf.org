@@ -2,7 +2,7 @@
 title: Changes in RFCXML v3
 description: 
 published: true
-date: 2021-11-04T19:26:45.619Z
+date: 2021-11-04T19:34:20.261Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T19:26:45.619Z
@@ -21,7 +21,7 @@ This was used in [**\<reference\>**](/rfcxml-vocabulary#reference) and is replac
 * **\<list\>**
 This was used for a list and has been replaced with [**\<ul\>**](/rfcxml-vocabulary#ul), [**\<ol\>**](/rfcxml-vocabulary#ol), [**\<dl\>**](/rfcxml-vocabulary#dl) and [**\<li\>**](/rfcxml-vocabulary#li) as found in HTML.
 * **\<postamble\>** **\<preamble\>**
-These were special elements associated with text before or after figures and tables. The recommended replacments is to add [**\<t\>**](/rfcxml-vocabulary#t) paragraphs before and/or after the figure or table.
+These were special elements associated with text before or after figures and tables. The recommended replacement is to add [**\<t\>**](/rfcxml-vocabulary#t) paragraphs before and/or after the figure or table.
 * **\<relref\>**
 The functionality of the [**\<xref\>**](/rfcxml-vocabulary#xref) element has extended to replicate the functionality of this element
 * **\<spanx\>**

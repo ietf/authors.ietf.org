@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-04T07:10:12.029Z
+date: 2021-11-04T07:39:52.189Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -2849,40 +2849,44 @@ Identifies the document component being referenced. The value needs to match the
      }
 ```
 
-
 # Deprecated elements
-The following elements have all been deprecated and should not be used.  They are listed here for reference because they still appear in the schema.
+The following elements still appear in the schema but have been deprecated and should not be used. See [Changes from v2 to v2 of RFCXML]() for more details including any recommended replacement functionality.
 
-## c
-**Deprecated**.
+* `c`
+* `facsimile`
+* `format`
+* `list`
+* `postamble`
+* `preamble`
+* `relref`
+* `spanx`
+* `texttable`
+* `ttcol`
+* `vspace`
 
-## facsimile
-**Deprecated**.  Nobody uses facsimile machines any more.
+# Deprecated attributes
+The following attributes still appear in the schema for non-deprecated elements but have been deprecated and should not be used. See [Changes from v2 to v2 of RFCXML]() for more details including any recommended replacement functionality.
 
-## format
-**Deprecated**.
-
-## list
-**Deprecated**.  Replaced with [`ul`](rfcxml-vocabulary#ul) and [`ol`](rfcxml-vocabulary#ol).
-
-## postamble
-**Deprecated**.
-
-## preamble
-**Deprecated**.
-
-## relref
-**Deprecated**.
-
-## spanx
-**Deprecated**.
-
-## texttable
-**Deprecated**.
-
-## ttcol
-**Deprecated**.
-
-## vspace
-**Deprecated**.
+* [`artwork`](/rfcxml-vocabulary#artwork)
+  * **height**
+  * **width**
+* [`figure`](/rfcxml-vocabulary#figure)
+  * **align**
+  * **alt**
+  * **height**
+  * **src**
+  * **suppress-title**
+  * **title**
+  * **width**
+* [`note`](/rfcxml-vocabulary#note)
+  * **title**
+* [`reference`](/rfcxml-vocabulary#reference)
+  * **title**
+* [`section`](/rfcxml-vocabulary#section)
+  * **title**
+* [`seriesInfo`](/rfcxml-vocabulary#seriesInfo)
+"status"
+"stream"
+<t>:
+"hangText"
 

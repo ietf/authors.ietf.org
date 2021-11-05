@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-04T19:27:05.177Z
+date: 2021-11-05T02:13:41.277Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -10,7 +10,7 @@ dateCreated: 2021-11-02T22:58:38.001Z
 
 The current version of the RFCXML vocabulary is v3.  All documents written in RFCXML  begin with the root element [**\<rfc\>**](/rfcxml-vocabulary#rfc) and follow the schema rules for the contents of each element.  The available elements are listed below along with their attributes and a snippet of the RNC schema that defines that element.
 
-> NOTE:  The schema snippets below include reference to elements and attributes that have been deprecated and should not be used.  Details of this deprecated syntax can be found in [Changes in RFCXML v3](/changes-in-rfcxml-v3).
+> NOTE:  The schema snippets below include reference to elements and attributes that have been deprecated and should not be used.  Details of this deprecated syntax can be found in [Upgrading from v2](/upgrading-from-v2).
 {.is-info}
 
 

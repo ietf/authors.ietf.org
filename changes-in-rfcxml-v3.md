@@ -1,12 +1,57 @@
 ---
-title: Changes in RFCXML v3
+title: Upgrading from v2
 description: 
 published: true
-date: 2021-11-04T19:34:20.261Z
+date: 2021-11-05T01:58:16.680Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T19:26:45.619Z
 ---
+
+# Converting an XML file from v2 to v3
+## Initial conversion
+There are two ways:
+* Use the [Author Tools](hhtps://author-tools.ietf.org) web service
+* Use xml2rfc locally.  On the command line: `xml2rfc --v2v3 inputfile.xml`. You can use the `--add-xinclude` option to replace RFC and I-D reference elements with the appropriate `xi:include` element.
+
+## Futher updates after converting an XML file from v2 to v3
+You may want to do the following (for the sake of generating good output and having a semantically accurate XML file):
+
+* Review each list.
+  * Is it really a list? Or should indentation be added in another manner, e.g., [**\<blockquote\>**](/rfcxml-vocabulary#blockquote).
+  * If so, should it be [**\<dl\>**](/rfcxml-vocabulary#dl), [**\<ul\>**](/rfcxml-vocabulary#ul), or [**\<ol\>**](/rfcxml-vocabulary#ol)?
+* Review each [**\<artwork\>**](/rfcxml-vocabulary#artwork).
+  * Should it be [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode)? If so, what type?
+  * Should it be a table?
+* Search for URLs; should these be [**\<eref\>**](/rfcxml-vocabulary#eref)?
+* Look for equations or other text where new features may improve clarity.
+* Search for hardcoded citation tags (e.g., [RFC5234]) and update to [**\<xref\>**](/rfcxml-vocabulary#xref)s.
+* Search for "section" and make a link for any section number in RFCs and I-Ds (using [**\<xref\>**](/rfcxml-vocabulary#xref) with **section** and **sectionFormat** attributes).
+* Review postal addresses of authors; has each address been tagged correctly?
+
+## Fixing common errors after the upgrade from v2 to v3
+
+xml2rfc warns "Setting consensus="true" for IETF STD document".
+This is being discussed on the xml2rfc-dev list. You should disregard this warning for now.
+xml2rfc fails with "Reserved anchor name: section-.... Don't use anchor names beginning with one of u-, section-, iref-, figure-, table-".
+Rename your section.
+Other errors can appear if you're using a helper tool to write your XML:
+
+7.3.1. kramdown-rfc2629
+
+If you're using kramdown-rfc2629:
+
+If you don't specify a date for a reference, xml2rfc fails with "Expected <date> attribute "year" to be an integer, but found "n.d.""
+This issue is tracked in https://github.com/cabo/kramdown-rfc2629/issues/64. Add date: false to your reference to avoid the error.
+7.3.2. i-d-template
+
+If you're using i-d-template:
+
+xml2rfc warns that "The 'docName' attribute of the <rfc/> element should have a revision number as the last component: docName="draft-foo-bar-02"."
+This issue is tracked in https://trac.ietf.org/tools/xml2rfc/trac/ticket/439. You can't modify your source to avoid it.
+7.4. What are the new features with v3?
+
+Some highlights are including Unicode characters, text formatting, and SVG diagrams. For complete details, see Section 1.3 of [RFC7991].
 
 # Deprecated syntax
 ## Elements

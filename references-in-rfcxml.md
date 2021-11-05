@@ -2,19 +2,15 @@
 title: References in RFCXML
 description: 
 published: true
-date: 2021-11-04T23:53:52.515Z
+date: 2021-11-05T01:08:28.007Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T23:45:18.949Z
 ---
 
-# Introduction
-RFCXML has three key elements 
+# Inserting a reference from a library
+RFCXML uses references that are encoded in a format called BibXML, as defined in RFC 7991. A set of online citation libraries are maintained on [xml2rfc.tools.ietf.org](). They include citations for RFCs, Internet-Drafts, and documents produced by the W3C and 3GPP, among others.
 
-uses citations that are encoded in a format called BibXML, which is defined in RFC 7991. A set of online citation libraries are maintained on [xml2rfc.tools.ietf.org](). They include citations for RFCs, Internet-Drafts, and documents produced by the W3C and 3GPP, among others.
-
-
-# Inserting a reference
 Use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section thet points to a citation in the library as follows.
 ```xml
 <xi:include
@@ -25,7 +21,7 @@ For an Internet-Draft, the citation filename uses the draft string. For example:
 <xi:include
     href="https://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-wgname-topic.xml"/>
 ```
-Preferably, use the citation libraries when possible. However, another option is to include the full reference element. Here's a template of a reference element:
+Preferably, use the citation libraries. However, another option is to include the full reference element. Here's a template of a reference element:
 ```xml
     <reference anchor="" target="">
         <front>
@@ -43,9 +39,7 @@ All are cited textually in the same manner -- by using [**\<xref\>**](/rfcxml-vo
 * The anchors for RFCs are "RFCNNNN" (4 digits, using leading zeros)
 * The anchors for Internet-Drafts are "I-D.<name without "draft-" or the version number>".
 
-# Finding the full reference
-
-There are several ways to insert the full reference element from the citation library:
+There are several ways to find the full reference element:
 
 1. Keep a local copy of the citation libraries. They are available from https://xml2rfc.tools.ietf.org [xml2rfc].
 1. Use a browser to look it up online, e.g., https://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml, and copy the page source.

@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-05T02:13:41.277Z
+date: 2021-11-05T02:35:16.702Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -357,7 +357,7 @@ Allowed content: [**\<displayreference\>**](/rfcxml-vocabulary#displayreference)
 ## bcp14
 ## Tabs {.tabset}
 ### Usage
-Marks text that are phrases defined in [BCP14](https://www.rfc-editor.org/rfc/rfc2119.html) such as "MUST", "SHOULD NOT", and so on. When shown in some of the output representations, the text in this element might be highlighted. The use of this element is optional.
+Marks text that are phrases defined in [BCP14](https://www.rfc-editor.org/rfc/rfc2119.html) such as "MUST", "SHOULD NOT", and so on. When shown in some of the output representations, the text in this element might be highlighted. The use of this element is optional but it makes the usage much clearer.
 
 This element is only to be used around the actual phrase from BCP 14, not the full definition of a requirement. For example, it is correct to say `The packet <bcp14>MUST</bcp14> be dropped.`, but it is not correct to say `<bcp14>The packet MUST be dropped.</bcp14>`.
 

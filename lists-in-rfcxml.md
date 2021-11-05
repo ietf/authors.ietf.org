@@ -2,7 +2,7 @@
 title: Lists in RFCXML
 description: 
 published: true
-date: 2021-11-05T01:35:56.674Z
+date: 2021-11-05T01:37:10.690Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-05T01:35:56.674Z
@@ -87,14 +87,14 @@ For example:
 ```
 yields:
 ```
-Unassigned:  Unused and available for assignment via documented 
+Unassigned: Unused and available for assignment via documented 
   procedures.
-Reserved:  Not to be assigned. Reserved values are held for special 
+Reserved: Not to be assigned. Reserved values are held for special 
   uses, such as to extend the namespace when it become exhausted. 
   Reserved values are not available for general assignment.
 ```
 Set **newline** to "true" to get a line break after the term. For example:
-```
+```xml
 <dl newline="true">
   <dt>Unassigned:</dt>
   <dd>Unused and available for assignment via
@@ -138,7 +138,7 @@ Example: [**\<ol\>**](/rfcxml-vocabulary#ol) nested within [**\<dl\>**](/rfcxml-
 ```
 yields:
 ```
-Foo validator:  It performs the following actions:
+Foo validator: It performs the following actions:
     1. runs
     2. jumps
     3. walks
@@ -159,7 +159,7 @@ Example: [**\<ul\>**](/rfcxml-vocabulary#ol) nested within [**\<ul\>**](/rfcxml-
 ```
 yields:
 ```
-Step 1:  Send it to:
+Step 1: Send it to:
     * Alice
     * Bob
     * Carol

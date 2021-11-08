@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-08T12:23:16.805Z
+date: 2021-11-08T12:30:55.256Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -535,7 +535,7 @@ Document-wide unique identifier for this element.
 The Latin script equivalent of the contact's full name.
 
 #### asciiInitials
-The Latin script equivalent of the contact's initials, to be used in conjunction with the separately specified **asciiSurname*.
+The Latin script equivalent of the contact's initials, to be used in conjunction with the separately specified **asciiSurname**.
 
 #### asciiSurname
 The Latin script equivalent of the contact's surname, to be used in conjunction with the separately specified **asciiInitials**.
@@ -734,10 +734,14 @@ Used in: [**\<back\>**](/rfcxml-vocabulary#back).
 
 ### Attributes
 #### target
-This attribute must be specified and must be the name of an anchor in a [**\<reference\>**](/rfcxml-vocabulary#reference) or [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) element.
+Required.
+
+The name of an anchor in a [**\<reference\>**](/rfcxml-vocabulary#reference) or [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) element.
 
 #### to
-This attribute must be specified as a name that will be displayed as the anchor instead of the anchor that is given in the [**\<reference\>**](/rfcxml-vocabulary#reference) element. The string given must start with one of the following characters: 0-9, a-z, or A-Z. The other characters in the string must be 0-9, a-z, A-Z, "-", ".", or "_".
+Required. 
+
+The name that will be displayed as the anchor instead of the anchor that is given in the [**\<reference\>**](/rfcxml-vocabulary#reference) element. The string given must start with one of the following characters: 0-9, a-z, or A-Z. The other characters in the string must be 0-9, a-z, A-Z, "-", ".", or "_".
 ### Schema
 ```
    displayreference =
@@ -1288,7 +1292,9 @@ The ordinal value at which to start the list. This defaults to "1" and must be a
 Default value: "1"
 
 #### type
-This attribute must be specified and must be the type of the labels on list items. If the length of the **type** value is 1, the meaning is the same as it is for HTML:
+Required.
+
+The type of the labels on list items. If the length of the **type** value is 1, the meaning is the same as it is for HTML:
 * "a" - Lowercase letters (a, b, c, ...)
 * "A" - Uppercase letters (A, B, C, ...)
 * "1" - Decimal numbers (1, 2, 3, ...)
@@ -1867,7 +1873,9 @@ The ASCII equivalent of the **name** attribute.
 The ASCII equivalent of the **value** attribute.
 
 #### name
-The name of the series. This attribute must be specified. Some values in use by the IETF community are "RFC", "Internet-Draft", and "DOI", but other names such as "ISO", "W3C" for exist for other standardisation organisations.
+Required.
+
+The name of the series. Some values in use by the IETF community are "RFC", "Internet-Draft", and "DOI", but other names such as "ISO", "W3C" for exist for other standardisation organisations.
 
 #### status
 TBD

@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-08T12:08:53.141Z
+date: 2021-11-08T12:23:16.805Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -2762,7 +2762,7 @@ Allowed content: text
 ### Usage
 This element is used to specify the Working Group (IETF) or Research Group (IRTF) from which the document originates, if any. The recommended format is the official name of the Working Group (with some capitalization).
 
-In Internet-Drafts, this is used in the upper left corner of the boilerplate, replacing the "Network Working Group" string. Formatting software can append the words "Working Group" or "Research Group", depending on the "submissionType" property of the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element.
+In Internet-Drafts, this is used in the upper left corner of the boilerplate, replacing the "Network Working Group" string. Formatting software can append the words "Working Group" or "Research Group", depending on the **submissionType** attribute of the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element.
 
 Used in: [**\<front\>**](/rfcxml-vocabulary#front).
 Allowed content: text
@@ -2780,31 +2780,31 @@ Allowed content: text
 ## xref
 ## Tabs {.tabset}
 ### Usage
-A reference to an anchor in this document. Formatters that have links (such as HTML and PDF) are likely to render [**\<xref\>**](/rfcxml-vocabulary#xref) elements as internal hyperlinks. This element is useful for referring to references in the "References" section, to specific sections of the document, to specific figures, and so on.
+A reference to an anchor in this document. Formatters that have links (such as HTML and PDF) are likely to render [**\<xref\>**](/rfcxml-vocabulary#xref) elements as internal hyperlinks. This element is useful for referring to references in the References section, to specific sections of the document, to specific figures, and so on.
 
-If the "section" attribute is present, this represents a link to a specific part of a document that appears in a [**\<reference\>**](/rfcxml-vocabulary#reference) element. Formatters that have links (such as HTML and PDF) render [**\<xref\>**](/rfcxml-vocabulary#xref) elements with "section" attributes as external hyperlinks to the specified part of the reference, creating the link target by combining the base URI from the [**\<reference\>**](/rfcxml-vocabulary#reference) element with the "relative" attribute from this element. The "target" attribute is required, and it must be the anchor of a [**\<reference\>**](/rfcxml-vocabulary#reference) element.
+If the **section** attribute is present, this represents a link to a specific part of a document that appears in a [**\<reference\>**](/rfcxml-vocabulary#reference) element. Formatters that have links (such as HTML and PDF) render [**\<xref\>**](/rfcxml-vocabulary#xref) elements with **section** attributes as external hyperlinks to the specified part of the reference, creating the link target by combining the base URI from the [**\<reference\>**](/rfcxml-vocabulary#reference) element with the **relative** attribute from this element. The **target** attribute is required, and it must be the anchor of a [**\<reference\>**](/rfcxml-vocabulary#reference) element.
 
-If the reference is not an RFC or Internet-Draft that is in the v3 format, the element needs to have a "relative" attribute; in this case, the value of the "section" attribute is used to render the text of the external link.
+If the reference is not an RFC or Internet-Draft that is in the v3 format, the element needs to have a **relative** attribute; in this case, the value of the **section** attribute is used to render the text of the external link.
 
-If the "sectino" attribute is present, the rendering will for most cominations of the "format" and "sectionFormat" have two links; one external link to the specific part of the referenced document, and one internal link to the [**\<reference\>**](/rfcxml-vocabulary#reference) entry.
+If the **section** attribute is present, the rendering will, for most cominations of the **format** and **sectionFormat**, have two links; one external link to the specific part of the referenced document, and one internal link to the [**\<reference\>**](/rfcxml-vocabulary#reference) entry.
 
-The attribute "format" affect the internal link rendering only, and the "sectionFormat" affects the rendering of the external link and its textual relationship to the internal link only.
+The  **format** attribute affect the internal link rendering only, and the **sectionFormat** attribute affects the rendering of the external link and its textual relationship to the internal link only.
 
 Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<cref\>**](/rfcxml-vocabulary#cref), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<dt\>**](/rfcxml-vocabulary#dt), [**\<em\>**](/rfcxml-vocabulary#em), [**\<li\>**](/rfcxml-vocabulary#li), [**\<name\>**](/rfcxml-vocabulary#name), [**\<strong\>**](/rfcxml-vocabulary#strong), [**\<sub\>**](/rfcxml-vocabulary#sub), [**\<sup\>**](/rfcxml-vocabulary#sup), [**\<t\>**](/rfcxml-vocabulary#t), [**\<td\>**](/rfcxml-vocabulary#td), [**\<th\>**](/rfcxml-vocabulary#th), [**\<tt\>**](/rfcxml-vocabulary#tt).
 Allowed content: ( text | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) )*
 
 ### Attributes
 #### format
-Possible values: ( "default" | "title" | "counter" | "none" )
+Possible values: "default", "title", "counter", "none"
 Default value: "default"
 
 This attribute signals to formatters what the desired format of the internal link to the relevant [**\<reference\>**](/rfcxml-vocabulary#reference) should be.
 
-* "default" - If the element has no content, the "derivedContent" attribute will contain a text fragment that describes the referenced part completely, such as "XML" for a target that is a [**\<reference\>**](/rfcxml-vocabulary#reference), or "Section 2" or "Table 4" for a target to a non-reference.
+* "default" - If the element has no content, the **derivedContent** attribute will contain a text fragment that describes the referenced part completely, such as "XML" for a target that is a [**\<reference\>**](/rfcxml-vocabulary#reference), or "Section 2" or "Table 4" for a target to a non-reference.
 
-* "title" - If the target is a [**\<reference\>**](/rfcxml-vocabulary#reference) element, the "derivedContent" attribute will contain the name of the reference, extracted from the [**\<title\>**](/rfcxml-vocabulary#title) child of the [**\<front\>**](/rfcxml-vocabulary#front) child of the reference. Or, if the target element has a [**\<name\>**](/rfcxml-vocabulary#name) child element, the "derivedContent" attribute will contain the text content of that [**\<name\>**](/rfcxml-vocabulary#name) element concatenated with the text content of each descendant node of [**\<name\>**](/rfcxml-vocabulary#name) (that is, stripping out all of the XML markup, leaving only the text). Or, if the target element does not contain a [**\<name\>**](/rfcxml-vocabulary#name) child element, the "derivedContent" attribute will contain the name of the "anchor" attribute of that element with no other adornment.
+* "title" - If the target is a [**\<reference\>**](/rfcxml-vocabulary#reference) element, the **derivedContent** attribute will contain the name of the reference, extracted from the [**\<title\>**](/rfcxml-vocabulary#title) child of the [**\<front\>**](/rfcxml-vocabulary#front) child of the reference. Or, if the target element has a [**\<name\>**](/rfcxml-vocabulary#name) child element, the **derivedContent** attribute will contain the text content of that [**\<name\>**](/rfcxml-vocabulary#name) element concatenated with the text content of each descendant node of [**\<name\>**](/rfcxml-vocabulary#name) (that is, stripping out all of the XML markup, leaving only the text). Or, if the target element does not contain a [**\<name\>**](/rfcxml-vocabulary#name) child element, the **derivedContent** attribute will contain the name of the **anchor** attribute of that element with no other adornment.
 
-* "counter" - The "derivedContent" attribute will contain just a counter. This is used for targets that are [**\<section\>**](/rfcxml-vocabulary#section), [**\<figure\>**](/rfcxml-vocabulary#figure), [**\<table\>**](/rfcxml-vocabulary#table), or items in an ordered list. Using "format='counter'" where the target is any other type of element is an error.
+* "counter" - The **derivedContent** attribute will contain just a counter. This is used for targets that are [**\<section\>**](/rfcxml-vocabulary#section), [**\<figure\>**](/rfcxml-vocabulary#figure), [**\<table\>**](/rfcxml-vocabulary#table), or items in an ordered list. Setting **format** to "counter" where the target is any other type of element is an error.
 
 * "none" - There will be no autogenerated text for the xref. When this value is used, it expected that the [**\<xref\>**](/rfcxml-vocabulary#xref) element will have explicit text content.
 
@@ -2812,26 +2812,31 @@ This attribute signals to formatters what the desired format of the internal lin
 Specifies a relative reference from the URI in the target reference. This value must include whatever leading character is needed to create the relative reference; typically, this is "#" for HTML documents.
 
 #### section
-Specifies a section of the target reference. If the reference is not an RFC or Internet-Draft in the v3 format, and no "relative" attribute has been provided, it is an error.
+Specifies a section of the target reference. If the reference is not an RFC or Internet-Draft in the v3 format, and no **relative** attribute has been provided, it is an error.
 
 #### sectionFormat
-Possible values: ( "of" | "comma" | "parens" | "bare" )
+Possible values: "of", "comma", "parens", "bare"
 Default value: "of"
 
 This attribute is used to signal formatters what the desired format of the external reference should be. Formatters for document types that have linking capability should wrap each part of the displayed text in hyperlinks. If there is content in the [**\<xref\>**](/rfcxml-vocabulary#xref) element, that content will be used when rendering the internal link part of the [**\<xref\>**](/rfcxml-vocabulary#xref) rendering, but will not affect the external link.
 
-* "of" - The [**\<xref\>**](/rfcxml-vocabulary#xref) element will be displayed as an external link followed by an internal link, separated by the work 'of'. The external link will have as its display text the word "Section" followed by a space and the contents of the "section" attribute. This will be followed by a space, the word "of", another space, and an internal link to the relevant [**\<reference\>**](/rfcxml-vocabulary#reference) entry, formatted based on the "format" attribute.
+* "of" - The [**\<xref\>**](/rfcxml-vocabulary#xref) element will be displayed as an external link followed by an internal link, separated by the word 'of'. The external link will have as its display text the word "Section" followed by a space and the contents of the **section** attribute. This will be followed by a space, the word "of", another space, and an internal link to the relevant [**\<reference\>**](/rfcxml-vocabulary#reference) entry, formatted based on the **format** attribute.
 
-* "comma" - The [**\<xref\>**](/rfcxml-vocabulary#xref) element will be displayed as an internal link followed by an external link, separated by a comma. The external link will have as its display text the word "Section" followed by a space and the contents of the "section" attribute. The internal link will point to the relevant [**\<reference\>**](/rfcxml-vocabulary#reference) entry, and will be rendered according to the "format" attribute.
+* "comma" - The [**\<xref\>**](/rfcxml-vocabulary#xref) element will be displayed as an internal link followed by an external link, separated by a comma. The external link will have as its display text the word "Section" followed by a space and the contents of the **section** attribute. The internal link will point to the relevant [**\<reference\>**](/rfcxml-vocabulary#reference) entry, and will be rendered according to the **format** attribute.
 
-* "parens" - The [**\<xref\>**](/rfcxml-vocabulary#xref) element will be displayed as an internal link followed by an external link within parentheses. The external link will have as its display text the word "Section" followed by a space and the contents of the "section" attribute. The internal link will point to the relevant [**\<reference\>**](/rfcxml-vocabulary#reference) entry, and will be rendered according to the "format" attribute.
+* "parens" - The [**\<xref\>**](/rfcxml-vocabulary#xref) element will be displayed as an internal link followed by an external link within parentheses. The external link will have as its display text the word "Section" followed by a space and the contents of the **section** attribute. The internal link will point to the relevant [**\<reference\>**](/rfcxml-vocabulary#reference) entry, and will be rendered according to the **format** attribute.
 
-* "bare" - The [**\<xref\>**](/rfcxml-vocabulary#xref) element will be displayed as an external link, possibly followed by the same link within parentheses. The first external link will have as its display text only contents of the "section" attribute; the second link will be present within parentheses only if the [**\<xref\>**](/rfcxml-vocabulary#xref) element has any text content, and will then have the text content as its display text.
+* "bare" - The [**\<xref\>**](/rfcxml-vocabulary#xref) element will be displayed as an external link, possibly followed by the same link within parentheses. The first external link will have as its display text only contents of the **section** attribute; the second link will be present within parentheses only if the [**\<xref\>**](/rfcxml-vocabulary#xref) element has any text content, and will then have the text content as its display text.
 
-This value for the "sectionFormat" attribute is useful when it is desired to express for instance `Sections 3.2 and 3.3 of [RFC7997]`.
+This value for the **sectionFormat** attribute is useful when it is desired to express for instance 
+```
+Sections 3.2 and 3.3 of [RFC7997]
+```
 
-#### target (Required)
-Identifies the document component being referenced. The value needs to match the value of the "anchor" attribute of an element in the document; otherwise, it is an error.
+#### target
+Required.
+
+Identifies the document component being referenced.  The value needs to match the value of the **anchor** attribute of an element in the document; otherwise, it is an error.
 ### Schema
 ```
    xref =

@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-05T02:35:16.702Z
+date: 2021-11-08T11:00:24.828Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -116,7 +116,7 @@ Allowed content: text
 ### Usage
 This element allows for the support of multiple artwork formats, in order to provide suitable artwork for different output formats.
 
-When multiple [**\<artwork\>**](/rfcxml-vocabulary#artwork) instances are provided within one `artset` element, the renderer will try to pick the [**\<artwork\>**](/rfcxml-vocabulary#artwork) instance which is most appropriate for its current output format from the given alternatives.
+When multiple [**\<artwork\>**](/rfcxml-vocabulary#artwork) instances are provided within one [**\<artset\>**](/rfcxml-vocabulary#artset) element, the renderer will try to pick the [**\<artwork\>**](/rfcxml-vocabulary#artwork) instance which is most appropriate for its current output format from the given alternatives.
 
 If more than one [**\<artwork\>**](/rfcxml-vocabulary#artwork) element with the same **type** is found within an [**\<artset\>**](/rfcxml-vocabulary#artset) element, the renderer could select the first one, or possibly choose between the alternative instances based on the output format and some quality of the alternatives that make one more suitable than the others for that particular format, such as size, aspect ratio, etc.
 
@@ -145,7 +145,7 @@ This element allows the inclusion of artwork in the document. [**\<artwork\>**](
 
 Alternatively, the **src** attribute allows referencing an external graphics file, such as a vector drawing in SVG or a bitmap graphic file, using a URI. In this case, the textual content acts as a fallback for output representations that do not support graphics; thus, it ought to contain either (1) a "line art" variant of the graphics or (2) prose that describes the included image in sufficient detail.
 
-In order to include alternative artwork expressions for different output formats, you should provide multiple [**\<artwork\>**](/rfcxml-vocabulary#artwork) elements enclosed within an [**\<artset\>**](/rfcxml-vocabulary#artset). The text renderer will prefer instances with `type="ascii-art"`, while the HTML and PDF renderers will prefer instances with `type="svg"`.
+In order to include alternative artwork expressions for different output formats, you should provide multiple [**\<artwork\>**](/rfcxml-vocabulary#artwork) elements enclosed within an [**\<artset\>**](/rfcxml-vocabulary#artset). The text renderer will prefer instances with **type** of "ascii-art", while the HTML and PDF renderers will prefer instances with **type** of "svg".
 
 The [**\<artwork\>**](/rfcxml-vocabulary#artwork) element should not be used for source code and formal languages, the [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) element should be used instead.
 
@@ -155,7 +155,7 @@ There are at least five ways to include SVG in artwork in Internet- Drafts:
 ```xml
 <artwork type="svg"><svg xmlns="http://www.w3.org/2000/ svg...">
 ```
-* Inline, but using XInclude (see Appendix B.1), such as:
+* Inline, but using XInclude, such as:
 ```xml
 <artwork type="svg"><xi:include href=...>
 ```
@@ -185,8 +185,8 @@ Allowed content: ( [**\<text\>**](/rfcxml-vocabulary#text)\* | [**\<svg\>**](/rf
 #### align
 Controls whether the artwork appears left justified, centered, or right justified.
 
-Possible values: `( "left" | "center" | "right" )`
-Default value: `"left"`
+Possible values: "left", "center", "right"
+Default value: "left"
 
 #### alt
 Alternative text description of the artwork (which is more than just a summary or caption). When the art comes from the **src** attribute and the format of that artwork supports alternate text, the alternative text comes from the text of the artwork itself, not from this attribute. The contents of this attribute are important to readers who are visually impaired, as well as those reading on devices that cannot show the artwork well, or at all.
@@ -210,15 +210,11 @@ In some cases, the prep tool may remove the **src** attribute after processing i
 #### type
 Specifies the format of the artwork. The value of this attribute is free text with certain values designated as preferred.
 
-The preferred values for [**\<artwork\>**](/rfcxml-vocabulary#artwork) **type**s are:
-
-* ascii-art
-* binary-art
-* svg
+The preferred values for **type** are: "ascii-art", "binary-art", "svg"
 
 Values that don't describe the format, such as "call-flow" or "hex-dump" were mentioned in RFC7991, but are not supported; they are instead candidates for use with another future attribute to describe the artwork content.
 
-A complete list of the preferred values is maintained on the RFC Editor web site, and that list is expected to be updated over time. Thus, a consumer of this attribute should not cause a failure when it encounters an unexpected type or no type is specified. The table will also indicate which type of art can appear in plain-text output (for example, `type="svg"` cannot).
+A complete list of the preferred values is maintained on the RFC Editor web site, and that list is expected to be updated over time. Thus, a consumer of this attribute should not cause a failure when it encounters an unexpected type or no type is specified. The table will also indicate which type of art can appear in plain-text output (for example, a **type** of "svg" cannot).
 
 #### width
 TBD
@@ -298,16 +294,16 @@ Document-wide unique identifier for this element.
 The Latin script equivalent of the author's full name.
 
 #### asciiInitials
-The Latin script equivalent of the author's initials, to be used in conjunction with the separately specified asciiSurname.
+The Latin script equivalent of the author's initials, to be used in conjunction with the separately specified **asciiSurname**.
 
 #### asciiSurname
-The Latin script equivalent of the author's surname, to be used in conjunction with the separately specified asciiInitials.
+The Latin script equivalent of the author's surname, to be used in conjunction with the separately specified **asciiInitials**.
 
 #### fullname
 The full name (used in the automatically generated "Author's Address" section). Although this attribute is optional, if one or more of the **asciiFullname**, **asciiInitials**, or **asciiSurname** attributes does not have values, the **fullname** attribute is required.
 
 #### initials
-An abbreviated variant of the given name(s), to be used in conjunction with the separately specified surname. It usually appears on the front page, in footers, and in references.
+An abbreviated variant of the given name(s), to be used in conjunction with the separately specified **surname**. It usually appears on the front page, in footers, and in references.
 
 Some processors will post-process the value, for instance when it only contains a single letter (in which case they might add a trailing dot). Relying on this kind of post-processing can lead to results varying across formatters and thus ought to be avoided.
 
@@ -315,7 +311,7 @@ Some processors will post-process the value, for instance when it only contains 
 Specifies the role the author had in creating the document.
 
 #### surname
-The author's surname, to be used in conjunction with the separately specified initials. It usually appears on the front page, in footers, and in references.
+The author's surname, to be used in conjunction with the separately specified **initials**. It usually appears on the front page, in footers, and in references.
 ### Schema
 ```
    author =
@@ -338,7 +334,7 @@ The author's surname, to be used in conjunction with the separately specified in
 ## back
 ## Tabs {.tabset}
 ### Usage
-Contains the "back" part of the document: the references and appendices. In [**\<back\>**](/rfcxml-vocabulary#back), [**\<section\>**](/rfcxml-vocabulary#section) elements indicate appendices.
+Contains the Back part of the document: the references and appendices. In [**\<back\>**](/rfcxml-vocabulary#back), [**\<section\>**](/rfcxml-vocabulary#section) elements indicate appendices.
 
 Used in: [**\<rfc\>**](/rfcxml-vocabulary#rfc)
 Allowed content: [**\<displayreference\>**](/rfcxml-vocabulary#displayreference)\*, [**\<references\>**](/rfcxml-vocabulary#references)\*, [**\<section\>**](/rfcxml-vocabulary#section)\*
@@ -524,9 +520,9 @@ The ASCII equivalent of the [**\<code\>**](/rfcxml-vocabulary#code) content. Thi
 ## contact
 ## Tabs {.tabset}
 ### Usage
-Provides information about contributors. This element can be used inline within a [**\<t\>**](/rfcxml-vocabulary#t), and will be rendered with name only, similarly to how [**\<author\>**](/rfcxml-vocabulary#author) is rendered in a [**\<reference\>**](/rfcxml-vocabulary#reference), or it can be used as a direct child of [**\<section\>**](/rfcxml-vocabulary#section), where it will be rendered the same way as an author address block within the "Authors' Addresses" section.
+Provides information about contributors. This element can be used inline within a [**\<t\>**](/rfcxml-vocabulary#t), and will be rendered with name only, similarly to how [**\<author\>**](/rfcxml-vocabulary#author) is rendered in a [**\<reference\>**](/rfcxml-vocabulary#reference), or it can be used as a direct child of [**\<section\>**](/rfcxml-vocabulary#section), where it will be rendered the same way as an author address block within the Authors' Addresses section.
 
-Note that a "contact" can also be just an organization (by not specifying any of the "name" attributes, but adding the `organization` child element).
+Note that a  [**\<contact\>**](/rfcxml-vocabulary#contact) can also be just an organization by adding the  [**\<organization\>**](/rfcxml-vocabulary#organization) child element and not providing any of the attributes that specify an individual's name.
 
 Used in: [**\<section\>**](/rfcxml-vocabulary#section), [**\<t\>**](/rfcxml-vocabulary#t)
 Allowed content: [**\<organization\>**](/rfcxml-vocabulary#organization)?, [**\<address\>**](/rfcxml-vocabulary#address)?
@@ -539,19 +535,19 @@ Document-wide unique identifier for this element.
 The Latin script equivalent of the contact's full name.
 
 #### asciiInitials
-The Latin script equivalent of the contact's initials, to be used in conjunction with the separately specified asciiSurname.
+The Latin script equivalent of the contact's initials, to be used in conjunction with the separately specified **asciiSurname*.
 
 #### asciiSurname
-The Latin script equivalent of the contact's surname, to be used in conjunction with the separately specified asciiInitials.
+The Latin script equivalent of the contact's surname, to be used in conjunction with the separately specified **asciiInitials**.
 
 #### fullname
-The full name. Although this attribute is optional, if one or more of the "asciiFullname", "asciiInitials", or "asciiSurname" attributes does not have values, the "fullname" attribute is required.
+The full name. Although this attribute is optional, if one or more of the **asciiFullname**, **asciiInitials**, or **asciiSurname** attributes does not have values, the **fullname** attribute is required.
 
 #### initials
-An abbreviated variant of the given name(s), to be used in conjunction with the separately specified surname.
+An abbreviated variant of the given name(s), to be used in conjunction with the separately specified **surname**.
 
 #### surname
-The contact's surname, to be used in conjunction with the separately specified initials.
+The contact's surname, to be used in conjunction with the separately specified **initials**.
 ### Schema
 ```
    contact =
@@ -611,11 +607,11 @@ Document-wide unique identifier for this element.
 #### display
 Suggests whether or not the comment should be displayed by formatting tools. This might be set to "false" if you want to keep a comment in a document after the contents of the comment have already been dealt with.
   
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "true"
 
 #### source 
-Holds the "source" of a comment, such as the name or the initials of the person who made the comment.
+Holds the source of a comment, such as the name or the initials of the person who made the comment.
 ### Schema
 ```
    cref =
@@ -645,14 +641,14 @@ Holds the "source" of a comment, such as the name or the initials of the person 
 Provides information about the publication date. This element is used for two cases: the boilerplate of the document being produced, and inside bibliographic references that use the [**\<front\>**](/rfcxml-vocabulary#front) element.
 
 Bibliographic references:
-* In order to be able to specify fuzzy dates, such as "2002-2003", "Second quarter 2010", etc., the date element is now permitted to have text content in addition to the "year", "month", and "day" attributes. If there is only text content, it will be rendered as is. If there is both text content and date components, both will be rendered, with the expanded date components in parentheses.
+* In order to be able to specify fuzzy dates, such as "2002-2003", "Second quarter 2010", etc., the date element is now permitted to have text content in addition to the **year**, **month**, and **day** attributes. If there is only text content, it will be rendered as is. If there is both text content and date components, both will be rendered, with the expanded date components in parentheses.
 
 Boilerplate for Internet-Drafts and RFCs:
-* This element defines the date of publication for the current document (Internet-Draft or RFC). When producing Internet-Drafts, the prep tool uses this date to compute the expiration date (see the [Guidelines for I-D Authors](https://www.ietf.org/standards/ids/guidelines/) for details). When one or more of "year", "month", or "day" are left out, the prep tool will attempt to use the current system date if the attributes that are present are consistent with that date.
+* This element defines the date of publication for the current document (Internet-Draft or RFC). When producing Internet-Drafts, the prep tool uses this date to compute the expiration date (see the [Guidelines for I-D Authors](https://www.ietf.org/standards/ids/guidelines/) for details). When one or more of **year**, **month**, or **day** attributes are left out, the prep tool will attempt to use the current system date if the attributes that are present are consistent with that date.
 
 In dates in [**\<rfc\>**](/rfcxml-vocabulary#rfc) elements, the month must be a number or a month in English. The prep tool will silently change text month names to numbers. Similarly, the year must be a four-digit number.
 
-When the prep tool is used to create Internet-Drafts, it will warn if the draft has a [**\<date\>**](/rfcxml-vocabulary#date) element in the boilerplate for itself that is more than 3 days away from today. To avoid this problem, authors might simply not include a `date` element in the boilerplate.
+When the prep tool is used to create Internet-Drafts, it will warn if the draft has a [**\<date\>**](/rfcxml-vocabulary#date) element in the boilerplate for itself that is more than 3 days away from today. To avoid this problem, authors might simply not include a [**\<date\>**](/rfcxml-vocabulary#date) element in the boilerplate.
 
 Used in: [**\<front\>**](/rfcxml-vocabulary#front)
 Allowed content: text
@@ -728,7 +724,7 @@ Document-wide unique identifier for this element.
 ## displayreference
 ## Tabs {.tabset}
 ### Usage
-This element gives a mapping between the anchor of a reference and a name that will be displayed instead. This allows authors to display more mnemonic anchor names for automatically included references. The mapping in this element only applies to `xref` elements whose format is "default". For example, if the reference uses the anchor "RFC6949", the following would cause that anchor in the body of displayed documents to be "RFC-dev":
+This element gives a mapping between the anchor of a reference and a name that will be displayed instead. This allows authors to display more mnemonic anchor names for automatically included references. The mapping in this element only applies to [**\<xref\>**](/rfcxml-vocabulary#xref) elements whose **format** is "default". For example, if the reference uses the anchor "RFC6949", the following would cause that anchor in the body of displayed documents to be "RFC-dev":
 ```xml
 <displayreference target="RFC6949" to="RFC-dev"/>
 ```
@@ -737,11 +733,11 @@ If a reference section is sorted, this element changes the sort order.
 Used in: [**\<back\>**](/rfcxml-vocabulary#back).
 
 ### Attributes
-#### target (Required)
-This attribute must be the name of an anchor in a [**\<reference\>**](/rfcxml-vocabulary#reference) or [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) element.
+#### target
+This attribute must be specified and must be the name of an anchor in a [**\<reference\>**](/rfcxml-vocabulary#reference) or [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) element.
 
-#### to (Required)
-This attribute is a name that will be displayed as the anchor instead of the anchor that is given in the [**\<reference\>**](/rfcxml-vocabulary#reference) element. The string given must start with one of the following characters: 0-9, a-z, or A-Z. The other characters in the string must be 0-9, a-z, A-Z, "-", ".", or "_".
+#### to
+This attribute must be specified as a name that will be displayed as the anchor instead of the anchor that is given in the [**\<reference\>**](/rfcxml-vocabulary#reference) element. The string given must start with one of the following characters: 0-9, a-z, or A-Z. The other characters in the string must be 0-9, a-z, A-Z, "-", ".", or "_".
 ### Schema
 ```
    displayreference =
@@ -771,15 +767,15 @@ Indicates the indentation to be used for the rendering of the second and followi
 Default value: "3"
 
 #### newline
-The "newline" attribute defines whether or not the term appears on the same line as the definition. newline="false" indicates that the term is to the left of the definition, while newline="true" indicates that the term will be on a separate line.
+The **newline** attribute defines whether or not the term appears on the same line as the definition. Setting **newline** to "false" indicates that the term is to the left of the definition, while setting **newline** to "true" indicates that the term will be on a separate line.
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "false"
 
 #### spacing
-Defines whether or not there is a blank line between entries. spacing="normal" indicates a single blank line, while spacing="compact" indicates no blank line between entries.
+Defines whether or not there is a blank line between entries. Setting **spacing** to "normal" indicates a single blank line, while setting **spacing** to "compact" indicates no blank line between entries.
 
-Possible values: ( "normal" | "compact" )
+Possible values: "normal", "compact"
 Default value: "normal"
 ### Schema
 ```
@@ -836,7 +832,7 @@ Document-wide unique identifier for this element.
 ## em
 ## Tabs {.tabset}
 ### Usage
-Indicates text that is semantically emphasized. In HTML and PDF rendering, text enclosed within this element will be displayed as italic after processing; in text rendering it will be preceded and folled by an underline character. This element can be combined with other character formatting elements, and the formatting will be additive.
+Indicates text that is semantically emphasized. In HTML and PDF rendering, text enclosed within this element will be displayed as italic after processing; in text rendering it will be preceded and followed by an underline character. This element can be combined with other character formatting elements, and the formatting will be additive.
 
 Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<cref\>**](/rfcxml-vocabulary#cref), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<dt\>**](/rfcxml-vocabulary#dt), [**\<li\>**](/rfcxml-vocabulary#li), [**\<name\>**](/rfcxml-vocabulary#name), [**\<refcontent\>**](/rfcxml-vocabulary#refcontent), [**\<strong\>**](/rfcxml-vocabulary#strong), [**\<sub\>**](/rfcxml-vocabulary#sub), [**\<sup\>**](/rfcxml-vocabulary#sup), [**\<t\>**](/rfcxml-vocabulary#t), [**\<td\>**](/rfcxml-vocabulary#td), [**\<th\>**](/rfcxml-vocabulary#th), [**\<tt\>**](/rfcxml-vocabulary#tt),[**\<xref\>**](/rfcxml-vocabulary#xref).
 Allowed content: ( text | [bcp14](/rfcxml-vocabulary#bcp14) | [br](/rfcxml-vocabulary#br) | [cref](/rfcxml-vocabulary#cref) | [eref](/rfcxml-vocabulary#eref) | [iref](/rfcxml-vocabulary#iref) | [strong](/rfcxml-vocabulary#strong) | [sub](/rfcxml-vocabulary#sub) | [sup](/rfcxml-vocabulary#sup) | [tt](/rfcxml-vocabulary#tt) | [xref](/rfcxml-vocabulary#xref) )*
@@ -890,9 +886,9 @@ The ASCII equivalent of the author's email address. This is only used if the ema
 ## eref
 ## Tabs {.tabset}
 ### Usage
-Represents an "external" link (as specified in the "target" attribute). This is useful for embedding URIs in the body of a document.
+Represents an external link as specified in the **target** attribute. This is useful for embedding URIs in the body of a document.
 
-If the [**\<eref\>**](/rfcxml-vocabulary#eref) element has non-empty text content, the content is used as the displayed text that is linked. Otherwise, the value of the "target" attribute is used as the displayed text.
+If the [**\<eref\>**](/rfcxml-vocabulary#eref) element has non-empty text content, the content is used as the displayed text that is linked. Otherwise, the value of the **target** attribute is used as the displayed text.
 
 Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<cref\>**](/rfcxml-vocabulary#cref), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<dt\>**](/rfcxml-vocabulary#dt), [**\<em\>**](/rfcxml-vocabulary#em), [**\<li\>**](/rfcxml-vocabulary#li), [**\<name\>**](/rfcxml-vocabulary#name), [**\<strong\>**](/rfcxml-vocabulary#strong), [**\<sub\>**](/rfcxml-vocabulary#sub), [**\<sup\>**](/rfcxml-vocabulary#sup), [**\<t\>**](/rfcxml-vocabulary#t), [**\<td\>**](/rfcxml-vocabulary#td), [**\<th\>**](/rfcxml-vocabulary#th), [**\<tt\>**](/rfcxml-vocabulary#tt), .
 Allowed content: text
@@ -900,14 +896,14 @@ Allowed content: text
 ### Attributes
 #### brackets
 
-Determines the type of brackets that an eref will be rendered with. "angle" will render with angle brackets, and "none" will render with no brackets in HTML and PDF, and with parentheses by the text renderer.
+Determines the type of brackets that an [**\<eref\>**](/rfcxml-vocabulary#eref) will be rendered with. "angle" will render with angle brackets, and "none" will render with no brackets in HTML and PDF, and with parentheses by the text renderer.
 
-Possible values: ( "none" | "angle" )
+Possible values: "none", "angle"
 Default value: "none"
 
-#### target (Required)
+#### target
 
-URI of the link target (RFC3986). This must begin with a scheme name (such as "https://") and thus not be relative to the URL of the current document.
+This attribute must be specified and must be the URI of the link target (RFC3986). This must begin with a scheme name (such as "https://") and thus not be relative to the URL of the current document.
 ### Schema
 ```
    eref =
@@ -955,7 +951,7 @@ Allowed content: [**\<name\>**](/rfcxml-vocabulary#name)?, [**\<iref\>**](/rfcxm
 ### Attributes
 #### align
 
-Possible values: ( "left" | "center" | "right" )
+Possible values: "left", "center", "right" 
 Default value: "left"
 #### alt
 TBD
@@ -970,7 +966,7 @@ TBD
 TBD
 
 #### suppress-title
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "false"
 
 #### title
@@ -1007,9 +1003,9 @@ TBD
 ## front
 ## Tabs {.tabset}
 ### Usage
-Represents the "front matter" metadata (such as author information), the Abstract, and additional notes.
+Represents the Front part of the document including the Author Information, the Abstract, and additional notes.
 
-A [**\<front\>**](/rfcxml-vocabulary#front) element may have more than one [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) element. Each should contain a "name" attribute with the series name and a "value" attribute with the series number; other uses of [**\<front\>**](/rfcxml-vocabulary#front)[**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) described in RFC7991 are deprecated.
+A [**\<front\>**](/rfcxml-vocabulary#front) element may have more than one [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) element. Each should contain a **name** attribute with the series name and a **value** attribute with the series number; other uses of [**\<front\>**](/rfcxml-vocabulary#front)[**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) described in RFC7991 are deprecated.
 
 Used in: [**\<reference\>**](/rfcxml-vocabulary#reference) and [**\<rfc\>**](/rfcxml-vocabulary#rfc).
 Allowed content: [**\<title\>**](/rfcxml-vocabulary#title), [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo)\*, [**\<author\>**](/rfcxml-vocabulary#author)+, [**\<date\>**](/rfcxml-vocabulary#date)?, [**\<area\>**](/rfcxml-vocabulary#area)\*, [**\<workgroup\>**](/rfcxml-vocabulary#workgroup)\*, [**\<keyword\>**](/rfcxml-vocabulary#keyword)\*, [**\<abstract\>**](/rfcxml-vocabulary#abstract)?, [**\<note\>**](/rfcxml-vocabulary#note)\*, [**\<boilerplate\>**](/rfcxml-vocabulary#boilerplate)?, [**\<toc\>**](/rfcxml-vocabulary#toc)?
@@ -1039,7 +1035,7 @@ Allowed content: [**\<title\>**](/rfcxml-vocabulary#title), [**\<seriesInfo\>**]
 ### Usage
 Provides terms for the document's index.
 
-Index entries can be either regular entries (when just the "item" attribute is given) or nested entries (by specifying "subitem" as well), grouped under a regular entry.
+Index entries can be either regular entries (when just the **item** attribute is given) or nested entries (by specifying **subitem** as well), grouped under a regular entry.
 
 Index entries generally refer to the exact place where the [**\<iref\>**](/rfcxml-vocabulary#iref) element occurred. An exception is the occurrence as a child element of [**\<section\>**](/rfcxml-vocabulary#section), in which case the whole section is considered to be relevant for that index entry. In some formats, index entries of this type might be displayed as ranges.
 
@@ -1049,13 +1045,13 @@ Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<aside\>**](/r
 Allowed content: empty
 
 ### Attributes
-#### item (Required)
-The item to include.
+#### item
+This attribute must be specified and must be the item to include.
 
 #### primary
-Setting this to "true" declares the occurrence as "primary", which might cause it to be highlighted in the index. There is no restriction on the number of occurrences that can be "primary".
+Setting this to "true" declares the occurrence as primary, which might cause it to be highlighted in the index. There is no restriction on the number of occurrences that can be primary.
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "false"
 
 #### subitem

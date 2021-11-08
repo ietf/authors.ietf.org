@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-08T12:37:55.190Z
+date: 2021-11-08T13:31:12.469Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -2267,6 +2267,10 @@ Default value: "1"
 The number of rows that the cell is to span. For example, setting **rowspan** to "3" indicates that the cell occupies the same vertical space as three rows.
 
 Default value: "1"
+### Examples
+Fully featured table elements using rowspan or colspan)
+* [Table 5 in RFC 8761](https://www.rfc-editor.org/rfc/rfc8761.html#table-5)
+* [Table 6 in RFC 8697](https://www.rfc-editor.org/rfc/rfc8697.html#table-6)
 ### Schema
 ```
    td =
@@ -2524,6 +2528,14 @@ A combination of up to 3 of the following keywords may be used, separated by das
 
 In order to ensure that no specification mistakes can result for rendering methods that cannot render all Unicode code points, "num" MUST always be part of the specified format.
 
+Example of usage include:
+* format="num-lit": `Temperature changes are indicated by the character U+0394 ("Δ")`
+* format="num-name": `Temperature changes are indicated by the character U+0394 (GREEK CAPITAL LETTER DELTA)`
+* format="num-lit-name": `Temperature changes are indicated by the character U+0394 ("Δ", GREEK CAPITAL LETTER DELTA)`
+* format="num-name-lit": `Temperature changes are indicated by the character U+0394 (GREEK CAPITAL LETTER DELTA, "Δ")`
+* format="name-lit-num": `Temperature changes are indicated by the character GREEK CAPITAL LETTER DELTA ("Δ", U+0394)`
+* format="lit-name-num": `Temperature changes are indicated by the character "Δ" (GREEK CAPITAL LETTER DELTA, U+0394)`
+
 Default value: "lit-name-num"
 
 ##### Expansion of [**\<u\>**](/rfcxml-vocabulary#u) multi-codepoint strings
@@ -2649,12 +2661,12 @@ comes out as shown below:
 _Table 1: A Sample of Legal Nicknames_
 ```
 ### Examples
-* format="num-lit": `Temperature changes are indicated by the character U+0394 ("Δ")`
-* format="num-name": `Temperature changes are indicated by the character U+0394 (GREEK CAPITAL LETTER DELTA)`
-* format="num-lit-name": `Temperature changes are indicated by the character U+0394 ("Δ", GREEK CAPITAL LETTER DELTA)`
-* format="num-name-lit": `Temperature changes are indicated by the character U+0394 (GREEK CAPITAL LETTER DELTA, "Δ")`
-* format="name-lit-num": `Temperature changes are indicated by the character GREEK CAPITAL LETTER DELTA ("Δ", U+0394)`
-* format="lit-name-num": `Temperature changes are indicated by the character "Δ" (GREEK CAPITAL LETTER DELTA, U+0394)`
+Non-ASCII characters in an author's name:
+* in the Latin blocks: RFC 8655, RFC 8753, RFC 8831.
+* outside the Latin blocks: RFC 8694, RFC 9005, RFC 9093, RFC 9094
+Non-ASCII characters in a contact's name:
+* in the Latin blocks: RFC 8725
+* outside the Latin blocks: RFC 9000, RFC 9001, RFC 9002
 
 ### Schema
 ```

@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-08T11:00:24.828Z
+date: 2021-11-08T11:18:46.983Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -1095,7 +1095,7 @@ Allowed content: text
 ## li
 ## Tabs {.tabset}
 ### Usage
-A list element, used in [**\<ol\>**](/rfcxml-vocabulary#ol) and [**\<ul\>**](/rfcxml-vocabulary#ul).
+A list item, used in [**\<ol\>**](/rfcxml-vocabulary#ol) and [**\<ul\>**](/rfcxml-vocabulary#ul).
 
 Used in: [**\<ol\>**](/rfcxml-vocabulary#ol) and [**\<ul\>**](/rfcxml-vocabulary#ul).
 Allowed content: ( ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<blockquote\>**](/rfcxml-vocabulary#blockquote) | [**\<dl\>**](/rfcxml-vocabulary#dl) | [**\<figure\>**](/rfcxml-vocabulary#figure) | [**\<ol\>**](/rfcxml-vocabulary#ol) | [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) | [**\<t\>**](/rfcxml-vocabulary#t) | [**\<table\>**](/rfcxml-vocabulary#table) | [**\<ul\>**](/rfcxml-vocabulary#ul) )+ | ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>**](/rfcxml-vocabulary#br) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<u\>**](/rfcxml-vocabulary#u) | [**\<xref\>**](/rfcxml-vocabulary#xref) )+ )
@@ -1146,10 +1146,10 @@ A link to an external document that is related to the RFC.
 
 The following are the supported types of external documents that can be pointed to in a [**\<link\>**](/rfcxml-vocabulary#link) element:
 
-* The current International Standard Serial Number (ISSN) for the RFC Series. The value for the "rel" attribute is "item". The link should use the form "urn:issn:".
-* The Digital Object Identifier (DOI) for this document. The value for the "rel" attribute is "describedBy". The link should use the form specified in RFC7669; this is expected to change in the future.
-* The Internet-Draft that was submitted to the RFC Editor to become the published RFC. The value for the "rel" attribute is "prev". (RFC7998 specified "convertedFrom", but that value is not one of the recognised values for the @rel attribute of [**\<link\>**](/rfcxml-vocabulary#link) elements in HTML. The "prev" value has the desired semantics.) The link should be to an IETF-controlled web site that retains copies of Internet-Drafts.
-* A representation of the document offered by the document author. The value for the "rel" attribute is "alternate". The link can be to a personally run web site.
+* The current International Standard Serial Number (ISSN) for the RFC Series. The value for the **rel** attribute is "item". The link should use the form "urn:issn:".
+* The Digital Object Identifier (DOI) for this document. The value for the **rel** attribute is "describedBy". The link should use the form specified in RFC7669; this is expected to change in the future.
+* The Internet-Draft that was submitted to the RFC Editor to become the published RFC. The value for the **rel** attribute is "prev". (RFC7998 specified "convertedFrom", but that value is not one of the recognised values for the identicaly named rel attribute of the identically named link element in HTML. The "prev" value has the desired semantics.) The link should be to an IETF-controlled web site that retains copies of Internet-Drafts.
+* A representation of the document offered by the document author. The value for the **rel** attribute is "alternate". The link can be to a personally run web site.
 
 In RFC production mode, the prep tool needs to check the values for [**\<link\>**](/rfcxml-vocabulary#link) before an RFC is published. In draft production mode, the prep tool might remove some [**\<link\>**](/rfcxml-vocabulary#link) elements during the draft submission process.
 
@@ -1233,9 +1233,9 @@ Allowed content: [**\<name\>**](/rfcxml-vocabulary#name)?, ( [**\<dl\>**](/rfcxm
 
 ### Attributes
 #### removeInRFC
-If set to "true", this note is marked in the prep tool with text indicating that it should be removed before the document is published as an RFC. That text will be "This note is to be removed before publishing as an RFC."
+If **removeInRFC** is set to "true", this note is marked in the prep tool with text indicating that it should be removed before the document is published as an RFC. That text will be "This note is to be removed before publishing as an RFC."
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "false"
 
 #### title
@@ -1258,28 +1258,28 @@ Deprecated. Use the [**\<name\>**](/rfcxml-vocabulary#name) element instead.
 ## ol
 ## Tabs {.tabset}
 ### Usage
-An ordered list. The labels on the items will be either a number or a letter, depending on the value of the style attribute.
+An ordered list. The labels on the items will be either a number or a letter, depending on the value of the **style** attribute.
 
 Used in: [**\<abstract\>**](/rfcxml-vocabulary#abstract), [**\<aside\>**](/rfcxml-vocabulary#aside), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<li\>**](/rfcxml-vocabulary#li), [**\<note\>**](/rfcxml-vocabulary#note), [**\<section\>**](/rfcxml-vocabulary#section), [**\<td\>**](/rfcxml-vocabulary#td), and [**\<th\>**](/rfcxml-vocabulary#th).
 Allowed content: [**\<li\>**](/rfcxml-vocabulary#li)+
 
 ### Attributes
 #### anchor
-Document-wide unique identifier for this [**\<ol\>**](/rfcxml-vocabulary#ol) element.
+Document-wide unique identifier for this element.
 
 #### group
-When the prep tool sees an [**\<ol\>**](/rfcxml-vocabulary#ol) element with a "group" attribute that has already been seen, it continues the numbering of the list from where the previous list with the same group name left off. If an [**\<ol\>**](/rfcxml-vocabulary#ol) element has both a "group" attribute and a "start" attribute, the group's numbering is reset to the given start value.
+When the prep tool sees an [**\<ol\>**](/rfcxml-vocabulary#ol) element with a **group** attribute that has already been seen, it continues the numbering of the list from where the previous list with the same group name left off. If an [**\<ol\>**](/rfcxml-vocabulary#ol) element has both a **group** attribute and a **start** attribute, the group's numbering is reset to the given start value.
 
 #### indent
-The indentation of the list elements relative to the start of the list item number. With indent='adaptive', the width of the widest list item number will determine the indentation. With a numeric value, that value will be used to determine the amount of indentation. The indentation amount is interpreted as characters when rendering plain-text documents, and en-space units when rendering in formats that have richer typographic support such as HTML or PDF. One en-space is assumed to be the length of 0.5 em-space in CSS units. Only non-negative integer amounts of indentation are supported.
+The indentation of the list elements relative to the start of the list item number. With **indent** set to "adaptive", the width of the widest list item number will determine the indentation. With a numeric value, that value will be used to determine the amount of indentation. The indentation amount is interpreted as characters when rendering plain-text documents, and en-space units when rendering in formats that have richer typographic support such as HTML or PDF. One en-space is assumed to be the length of 0.5 em-space in CSS units. Only non-negative integer amounts of indentation are supported.
 
-Possible values: ( text | "adaptive" )
+Possible values: text, "adaptive"
 Default value: "adaptive"
 
 #### spacing
-Defines whether or not there is a blank line between entries. spacing="normal" indicates a single blank line, while spacing="compact" indicates no blank line between entries.
+Defines whether or not there is a blank line between entries. Setting **spacing** to "normal" indicates a single blank line, while setting **spacing** to "compact" indicates no blank line between entries.
 
-Possible values: ( "normal" | "compact" )
+Possible values: "normal", "compact"
 Default value: "normal"
 
 #### start
@@ -1288,19 +1288,18 @@ The ordinal value at which to start the list. This defaults to "1" and must be a
 Default value: "1"
 
 #### type
-The type of the labels on list items. If the length of the type value is 1, the meaning is the same as it is for HTML:
-
-Default value: "1"
-
+This attribute must be specified and must be the type of the labels on list items. If the length of the **type** value is 1, the meaning is the same as it is for HTML:
 * "a" - Lowercase letters (a, b, c, ...)
 * "A" - Uppercase letters (A, B, C, ...)
 * "1" - Decimal numbers (1, 2, 3, ...)
 * "i" - Lowercase Roman numerals (i, ii, iii, ...)
 * "I" - Uppercase Roman numerals (I, II, III, ...)
 
-For types "a" and "A", after the 26th entry, the numbering starts at "aa"/"AA", then "ab"/"AB", and so on.
+Default value: "1"
 
-If the length of the type value is greater than 1, the value must contain a percent-encoded indicator and other text. The value is a free-form text that allows counter values to be inserted using a "percent-letter" format. For instance, "[REQ%d]" generates labels of the form "[REQ1]", where "%d" inserts the item number as a decimal number.
+For **type**s "a" and "A", after the 26th entry, the numbering starts at "aa"/"AA", then "ab"/"AB", and so on.
+
+If the length of the **type** value is greater than 1, the value must contain a percent-encoded indicator and other text. The value is a free-form text that allows counter values to be inserted using a "percent-letter" format. For instance, "\[REQ%d\]" generates labels of the form "\[REQ1\]", where "%d" inserts the item number as a decimal number.
 
 The following formats are supported:
 
@@ -1312,9 +1311,9 @@ The following formats are supported:
 * "%p" - The list counter of a list item in a parent list (see more below)
 * "%%" - Represents a percent sign
 
-Other formats are reserved for future use. Only one percent encoding other than "%%" and "%p" is allowed in a type string.
+Other formats are reserved for future use. Only one percent encoding other than "%%" and "%p" is allowed in a **type** value.
 
-It is an error for the type string to be empty. For bulleted lists, use the [**\<ul\>**](/rfcxml-vocabulary#ul) element. For lists that have neither bullets nor numbers, use the [**\<ul\>**](/rfcxml-vocabulary#ul) element with the 'empty="true"' attribute.
+It is an error for the **type** attribute to be empty. For bulleted lists, use the [**\<ul\>**](/rfcxml-vocabulary#ul) element. For lists that have neither bullets nor numbers, use the [**\<ul\>**](/rfcxml-vocabulary#ul) element with **empty** set to "true".
 
 '%p' may be used in nested ordered lists, where it represents the item number of the parent list item. This lets you say for instance:
 ```xml
@@ -1362,7 +1361,7 @@ Without the '%p' format specifier, you would have to explicitly insert the count
 ### Usage
 Specifies the affiliation (RFC7322) of an author.
 
-This information appears both in the "Author's Address" section and on the front page (see RFC7322 for more information). If the value is long, an abbreviated variant can be specified in the "abbrev" attribute.
+This information appears both in the Author's Address section and on the front page (see RFC7322 for more information). If the value is long, an abbreviated variant can be specified in the **abbrev** attribute.
 
 Used in: [**\<author\>**](/rfcxml-vocabulary#author), [**\<contact\>**](/rfcxml-vocabulary#contact)
 Allowed content: text
@@ -1380,7 +1379,7 @@ The ASCII equivalent of the abbreviated variant of the organization's name.
 #### showOnFrontPage
 Turns off listing of organization with author name on the first document page.
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "true"
 ### Schema
 ```
@@ -1501,8 +1500,9 @@ For example:
 ```
 would render as:
 
-  [April1] Phunny, K., "On Being A Fool", Self-published pamphlet, April 2000.
-
+```
+    [April1] Phunny, K., "On Being A Fool", Self-published pamphlet, April 2000.
+```
 Used in: [**\<reference\>**](/rfcxml-vocabulary#reference).
 Allowed content: ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) )*
 
@@ -1526,12 +1526,12 @@ Allowed content: [**\<stream\>**](/rfcxml-vocabulary#stream)?, [**\<front\>**](/
 
 ### Attributes
 #### anchor (Required)
-Document-wide unique identifier for this [**\<reference\>**](/rfcxml-vocabulary#reference). Usually, this will be used both to "label" the reference in the "References" section and as an identifier in links to this reference entry; but see [**\<displayreference\>**](/rfcxml-vocabulary#displayreference) for how to change this.
+Document-wide unique identifier for this element. Usually, this will be used both to label the reference in the References section and as an identifier in links to this reference entry; but see [**\<displayreference\>**](/rfcxml-vocabulary#displayreference) for how to change this.
 
 #### quote-title
 Specifies whether or not the title in the reference should be quoted. This can be used to prevent quoting, such as on errata.
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 
 #### target
 Holds the URI for the reference.
@@ -1563,7 +1563,7 @@ Allowed content: [**\<reference\>**](/rfcxml-vocabulary#reference)+
 
 ### Attributes
 #### anchor (Required)
-Document-wide unique identifier for this [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup). Usually, this will be used both to "label" the reference group in the "References" section and as an identifier in links to this reference entry; but see [**\<displayreference\>**](/rfcxml-vocabulary#displayreference) for how to change this.
+Document-wide unique identifier for this element. Usually, this will be used both to label the reference group in the References section and as an identifier in links to this reference entry; but see [**\<displayreference\>**](/rfcxml-vocabulary#displayreference) for how to change this.
 
 #### target
 Holds an URI for the reference group, analogous to the "target" attribute of [**\<reference\>**](/rfcxml-vocabulary#reference). Useful for a STD which consists of multiple RFCs with their own URLs, but also has its own unique URL.

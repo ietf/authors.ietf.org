@@ -2,7 +2,7 @@
 title: RFCXML overview and background
 description: 
 published: true
-date: 2021-11-04T06:49:19.992Z
+date: 2021-11-08T13:57:51.375Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-03T13:17:49.168Z

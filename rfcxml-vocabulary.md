@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-08T12:30:55.256Z
+date: 2021-11-08T12:37:55.190Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -1886,14 +1886,13 @@ Deprecated. Use the [**\<stream\>**](/rfcxml-vocabulary#stream) element instead.
 Possible values: "IETF", "IAB", "IRTF", "independent"
 
 #### value
+Required.
 
-The identifier within the series specified by the **name** attribute. This attribute must be specified.
+The identifier within the series specified by the **name** attribute. 
 
-For BCPs, FYIs, RFCs, and STDs, this is the number within the series.
-
-For Internet-Drafts, it is the full draft name (ending with the two-digit version number).
-
-For DOIs, the value is given, such as "10.17487/rfc1149", as described in RFC7669.
+* For BCPs, FYIs, RFCs, and STDs, this is the number within the series.
+* For Internet-Drafts, it is the full draft name (ending with the two-digit version number).
+* For DOIs, the value is given, such as "10.17487/rfc1149", as described in RFC7669.
 
 The name in the value should be the document name without any file extension.
 ### Schema
@@ -2527,14 +2526,6 @@ In order to ensure that no specification mistakes can result for rendering metho
 
 Default value: "lit-name-num"
 
-##### Examples
-* format="num-lit": `Temperature changes are indicated by the character U+0394 ("Δ")`
-* format="num-name": `Temperature changes are indicated by the character U+0394 (GREEK CAPITAL LETTER DELTA)`
-* format="num-lit-name": `Temperature changes are indicated by the character U+0394 ("Δ", GREEK CAPITAL LETTER DELTA)`
-* format="num-name-lit": `Temperature changes are indicated by the character U+0394 (GREEK CAPITAL LETTER DELTA, "Δ")`
-* format="name-lit-num": `Temperature changes are indicated by the character GREEK CAPITAL LETTER DELTA ("Δ", U+0394)`
-* format="lit-name-num": `Temperature changes are indicated by the character "Δ" (GREEK CAPITAL LETTER DELTA, U+0394)`
-
 ##### Expansion of [**\<u\>**](/rfcxml-vocabulary#u) multi-codepoint strings
 
 If the [**\<u\>**](/rfcxml-vocabulary#u) element encloses a sequence of Unicode codepoints, rather than a single one, the rendering reflects this. For example:
@@ -2559,7 +2550,7 @@ will be rendered as
 
 As for the simplified format, "num" MUST always be part of the specified format in order to ensure that no specification mistakes can result for rendering methods that cannot render all Unicode code points,
 
-###### Split expansion of [**\<u\>**](/rfcxml-vocabulary#u) elements
+##### Split expansion of [**\<u\>**](/rfcxml-vocabulary#u) elements
 
 There are cases which cannot be handled with either the simplified or full [**\<u\>**](/rfcxml-vocabulary#u) format specifications. One is exemplified in Table 1 of the CSS sample document at [https://rfc-format.github.io/draft-iab-rfc-css-bis/sample2-v2.html#s-3](https://rfc-format.github.io/draft-iab-rfc-css-bis/sample2-v2.html#s-3). Rendering this with [**\<u\>**](/rfcxml-vocabulary#u) elements requires that the non-ascii content be rendered in one place (a table cell in one column) while the expansion is rendered in another cell in a different column. Provision for this has been made by modifying the expansion of [**\<u\>**](/rfcxml-vocabulary#u) when it is referenced by an [**\<xref\>**](/rfcxml-vocabulary#xref). This table, with [**\<u\>**](/rfcxml-vocabulary#u) elements referenced by [**\<xref\>**](/rfcxml-vocabulary#xref) instances:
 ```xml
@@ -2657,6 +2648,14 @@ comes out as shown below:
 | 9   | \<Richard Ⅳ\> (U+2163) | \<richard iv\>                          |
 _Table 1: A Sample of Legal Nicknames_
 ```
+### Examples
+* format="num-lit": `Temperature changes are indicated by the character U+0394 ("Δ")`
+* format="num-name": `Temperature changes are indicated by the character U+0394 (GREEK CAPITAL LETTER DELTA)`
+* format="num-lit-name": `Temperature changes are indicated by the character U+0394 ("Δ", GREEK CAPITAL LETTER DELTA)`
+* format="num-name-lit": `Temperature changes are indicated by the character U+0394 (GREEK CAPITAL LETTER DELTA, "Δ")`
+* format="name-lit-num": `Temperature changes are indicated by the character GREEK CAPITAL LETTER DELTA ("Δ", U+0394)`
+* format="lit-name-num": `Temperature changes are indicated by the character "Δ" (GREEK CAPITAL LETTER DELTA, U+0394)`
+
 ### Schema
 ```
    u = 

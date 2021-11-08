@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-08T11:18:46.983Z
+date: 2021-11-08T12:08:53.141Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -1566,7 +1566,7 @@ Allowed content: [**\<reference\>**](/rfcxml-vocabulary#reference)+
 Document-wide unique identifier for this element. Usually, this will be used both to label the reference group in the References section and as an identifier in links to this reference entry; but see [**\<displayreference\>**](/rfcxml-vocabulary#displayreference) for how to change this.
 
 #### target
-Holds an URI for the reference group, analogous to the "target" attribute of [**\<reference\>**](/rfcxml-vocabulary#reference). Useful for a STD which consists of multiple RFCs with their own URLs, but also has its own unique URL.
+Holds an URI for the reference group, analogous to the **target** attribute of [**\<reference\>**](/rfcxml-vocabulary#reference). Useful for a STD which consists of multiple RFCs with their own URLs, but also has its own unique URL.
 ### Schema
 ```
    referencegroup =
@@ -1585,7 +1585,7 @@ Holds an URI for the reference group, analogous to the "target" attribute of [**
 ### Usage
 Contains a set of bibliographic references.
 
-In the early days of the RFC Series, there was only one "References" section per RFC. This convention was later changed to group references into two sets, "Normative" and "Informative", as described in RFC7322. This vocabulary supports the split with the [**\<name\>**](/rfcxml-vocabulary#name) child element. In general, the title should be either "Normative References" or "Informative References".
+In the early days of the RFC Series, there was only one References section per RFC. This convention was later changed to group references into two sets, "Normative" and "Informative", as described in RFC7322. This element supports the split with the [**\<name\>**](/rfcxml-vocabulary#name) child element. In general, the title should be either "Normative References" or "Informative References".
 
 The recommended way to include references to RFCs and Internet-Drafts is to use the standard XML XInclude mechanism. Here is an example:
 ```xml
@@ -1654,18 +1654,18 @@ Allowed content: [**\<link\>**](/rfcxml-vocabulary#link)\*, [**\<front\>**](/rfc
 #### category
 Document category
 
-For RFCs, the "category" attribute determines the "maturity level" (see Section 4 of RFC2026). The allowed values are "std" for "Standards Track", "bcp" for "BCP", "info" for "Informational", "exp" for "Experimental", and "historic" for "Historic".
+For RFCs, the **category** attribute determines the maturity level (see Section 4 of RFC2026). The allowed values are "std" for "Standards Track", "bcp" for "BCP", "info" for "Informational", "exp" for "Experimental", and "historic" for "Historic".
 
-For Internet-Drafts, the "category" attribute is not needed; when supplied, it will appear as "Intended Status". Supplying this information can be useful to reviewers.
+For Internet-Drafts, the **category** attribute is not needed; when supplied, it will appear as "Intended Status". Supplying this information can be useful to reviewers.
 
-Possible values: ( "std" | "bcp" | "exp" | "info" | "historic" )
+Possible values: "std", "bcp", "exp", "info", "historic"
 
 #### consensus
 Affects the generated boilerplate. Note that the values of "no" and "yes" are deprecated and are replaced by "false" and "true".
 
 See RFC7841 for more information.
 
-Possible values: ( "no" | "yes" | "false" | "true" )
+Possible values: "false" | "true"
 Default value: "false"
 
 #### docName
@@ -1674,19 +1674,19 @@ Indicates the draft name (including revision number) for a draft, or the draft f
 #### indexInclude
 Specifies whether or not a formatter is requested to include an index in generated files. If the source file has no [**\<iref\>**](/rfcxml-vocabulary#iref) elements, an index is never generated. This option is useful for generating documents where the source document has [**\<iref\>**](/rfcxml-vocabulary#iref) elements but the author no longer wants an index.
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "true"
 
 #### ipr
 Represents the Intellectual Property status of the document.
 
-If the attribute is set to the empty string: `<tt>ipr=''</tt>`, it is assumed that this is not a regular IETF/IRTF/IAB/ISE document, and the document header content is reduced. This is considered a feature by a few other standards organisations that have used xml2rfc to format their standards documents.
+If the attribute is set to the empty string, it is assumed that this is not a regular IETF/IRTF/IAB/ISE document, and the document header content is reduced. This is considered a feature by a few other standards organisations that use IETF tools to format their standards documents.
 
 #### iprExtract
-Identifies a single section within the document for which extraction "as is" is explicitly allowed (only relevant for historic values of the "ipr).
+Identifies a single section within the document for which extraction "as is" is explicitly allowed (only relevant for historic values of **ipr**).
 
 #### number
-Used to determine wheher to produce an RFC or an Internet-Draft.
+Used to determine whether to produce an RFC or an Internet-Draft.
 
 #### obsoletes
 A comma-separated list of RFC numbers or Internet-Draft names.
@@ -1697,24 +1697,24 @@ The prep tool will parse the attribute value so that incorrect references can be
 The date that the XML was processed by a prep tool. This is included in the XML file just before it is saved to disk. The value is formatted using the "date-time" format defined in Section 5.6 of RFC3339. The "time-offset" should be "Z".
 
 #### seriesNo
-Deprecated; instead, use the "value" in [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo).
+Deprecated; instead, use the **value** attribute in [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo).
 
 #### sortRefs
 Specifies whether or not the prep tool will sort the references in each reference section.
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "false"
 
 #### submissionType
 The document stream, as described in RFC7841. (The RFC Series Editor may change the list of allowed values in the future.)
 
-Possible values: ( "IETF" | "IAB" | "IRTF" | "independent" )
+Possible values: "IETF", "IAB", "IRTF", "independent"
 Default value: "IETF"
 
 #### symRefs
-Specifies whether or not a formatter is requested to use symbolic references (such as "RFC2119"). If the value for this is "false", the references come out as numbers (such as "[3]").
+Specifies whether or not a formatter is requested to use symbolic references (such as "RFC2119"). If the value for this is "false", the references come out as numbers (such as `[3]`).
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "true"
 
 #### tocDepth
@@ -1725,7 +1725,7 @@ Default value: "3"
 #### tocInclude
 Specifies whether or not a formatter is requested to include a table of contents in generated files.
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "true"
 
 #### updates
@@ -1734,7 +1734,7 @@ A comma-separated list of RFC numbers or Internet-Draft names.
 The prep tool will parse the attribute value so that incorrect references can be detected.
 
 #### version
-Specifies the version of xml2rfc syntax used in this document. The only expected value is "3".
+Specifies the version of RFCXML syntax used in this document. The only expected value is "3".
 ### Schema
 ```
    rfc =
@@ -1786,31 +1786,31 @@ Represents a section (when inside a [**\<middle\>**](/rfcxml-vocabulary#middle) 
 Subsections are created by nesting [**\<section\>**](/rfcxml-vocabulary#section) elements inside [**\<section\>**](/rfcxml-vocabulary#section) elements. Sections are allowed to be empty.
 
 Used in: [**\<back\>**](/rfcxml-vocabulary#back), [**\<boilerplate\>**](/rfcxml-vocabulary#boilerplate), [**\<middle\>**](/rfcxml-vocabulary#middle), [**\<section\>**](/rfcxml-vocabulary#section), and [**\<toc\>**](/rfcxml-vocabulary#toc).
-Allowed content: [**\<name\>**](/rfcxml-vocabulary#name)?, ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<aside\>**](/rfcxml-vocabulary#aside) | [**\<author\>**](/rfcxml-vocabulary#author) | [**\<blockquote\>**](/rfcxml-vocabulary#blockquote) | [**\<contact\>**](/rfcxml-vocabulary#contact) | [**\<dl\>**](/rfcxml-vocabulary#dl) | [**\<figure\>**](/rfcxml-vocabulary#figure) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<ol\>**](/rfcxml-vocabulary#ol) | [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) | [**\<t\>**](/rfcxml-vocabulary#t) | [**\<table\>**](/rfcxml-vocabulary#table) | [**\<ul\>**](/rfcxml-vocabulary#ul) )*, section*
+Allowed content: [**\<name\>**](/rfcxml-vocabulary#name)?, ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<aside\>**](/rfcxml-vocabulary#aside) | [**\<author\>**](/rfcxml-vocabulary#author) | [**\<blockquote\>**](/rfcxml-vocabulary#blockquote) | [**\<contact\>**](/rfcxml-vocabulary#contact) | [**\<dl\>**](/rfcxml-vocabulary#dl) | [**\<figure\>**](/rfcxml-vocabulary#figure) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<ol\>**](/rfcxml-vocabulary#ol) | [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) | [**\<t\>**](/rfcxml-vocabulary#t) | [**\<table\>**](/rfcxml-vocabulary#table) | [**\<ul\>**](/rfcxml-vocabulary#ul) )*, section\*
 
 ### Attributes
 #### anchor
 Document-wide unique identifier for this [**\<section\>**](/rfcxml-vocabulary#section) element.
 
 #### numbered
-If set to "false", the formatter is requested to not display a section number. The prep tool will verify that such a section is not followed by a numbered section in this part of the document. Descendant sections of unnumbered sections are unnumbered by definition. Both top-level [**\<section\>**](/rfcxml-vocabulary#section)s and other [**\<section\>**](/rfcxml-vocabulary#section)s may have numbered='false'.
+If set to "false", the formatter is requested to not display a section number. The prep tool will verify that such a section is not followed by a numbered section in this part of the document. Descendant sections of unnumbered sections are unnumbered by definition. Both top-level [**\<section\>**](/rfcxml-vocabulary#section)s and other [**\<section\>**](/rfcxml-vocabulary#section)s may have **numbered** set to "false".
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "true"
 
 #### removeInRFC
 If set to "true", this section is marked in the prep tool with text indicating that it should be removed before the document is published as an RFC. That text will be "This section is to be removed before publishing as an RFC."
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "false"
 
 #### title
 Deprecated. Use the [**\<name\>**](/rfcxml-vocabulary#name) element instead.
 
 #### toc
-Indicates to a formatter whether or not the section is to be included in a table of contents, if such a table of contents is produced. This only takes effect if the level of the section would have appeared in the table of contents based on the "tocDepth" attribute of the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, and of course only if the table of contents is being created based on the "tocInclude" attribute of the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element. If this is set to "exclude", any section below this one will be excluded as well. The "default" value indicates inclusion of the section if it would be included by the tocDepth attribute of the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element.
+Indicates to a formatter whether or not the section is to be included in a table of contents, if such a table of contents is produced. This only takes effect if the level of the section would have appeared in the table of contents based on the **tocDepth** attribute of the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, and of course only if the table of contents is being created based on the **tocInclude** attribute of the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element. If this is set to "exclude", any section below this one will be excluded as well. The "default" value indicates inclusion of the section if it would be included by the **tocDepth** attribute of the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element.
 
-Possible values: ( "include" | "exclude" | "default" )
+Possible values: "include", "exclude", "default"
 Default value: "default"
 ### Schema
 ```
@@ -1852,22 +1852,22 @@ Default value: "default"
 ### Usage
 Specifies the document series in which this document appears, and also specifies an identifier within that series.
 
-A processing tool determines whether it is working on an RFC or an Internet-Draft by inspecting the "name" attribute of a [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) element inside the [**\<front\>**](/rfcxml-vocabulary#front) element inside the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, looking for "RFC" or "Internet-Draft". (Specifying neither value in any of the [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) elements can be useful for producing other types of documents but is out of scope for this specification.)
+A processing tool determines whether it is working on an RFC or an Internet-Draft by inspecting the **name** attribute of a [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) element inside the [**\<front\>**](/rfcxml-vocabulary#front) element inside the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, looking for "RFC" or "Internet-Draft". (Specifying neither value in any of the [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) elements can be useful for producing other types of documents but is out of scope for this specification.)
 
-It is invalid to have multiple [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) elements inside the same [**\<front\>**](/rfcxml-vocabulary#front) element containing the same "name" value. Some combinations of [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) "name" attribute values make no sense, such as having both `<seriesInfo name="rfc"/>` and `<seriesInfo name="Internet-Draft"/>` in the same [**\<front\>**](/rfcxml-vocabulary#front) element.
+It is invalid to have multiple [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) elements inside the same [**\<front\>**](/rfcxml-vocabulary#front) element containing the same **name** value. Some combinations of [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) **name** attribute values make no sense, such as having both `<seriesInfo name="rfc"/>` and `<seriesInfo name="Internet-Draft"/>` in the same [**\<front\>**](/rfcxml-vocabulary#front) element.
 
 Used in: [**\<front\>**](/rfcxml-vocabulary#front) and [**\<reference\>**](/rfcxml-vocabulary#reference).
 Allowed content: empty
 
 ### Attributes
 #### asciiName
-The ASCII equivalent of the name field.
+The ASCII equivalent of the **name** attribute.
 
 #### asciiValue
-The ASCII equivalent of the value field.
+The ASCII equivalent of the **value** attribute.
 
-#### name (Required)
-The name of the series. Some values in use by the IETF community are "RFC", "Internet-Draft", and "DOI", but other names such as "ISO", "W3C" for exist for other standardisation organisations.
+#### name
+The name of the series. This attribute must be specified. Some values in use by the IETF community are "RFC", "Internet-Draft", and "DOI", but other names such as "ISO", "W3C" for exist for other standardisation organisations.
 
 #### status
 TBD
@@ -1875,17 +1875,17 @@ TBD
 #### stream
 Deprecated. Use the [**\<stream\>**](/rfcxml-vocabulary#stream) element instead.
 
-Possible values: ( "IETF" | "IAB" | "IRTF" | "independent" )
+Possible values: "IETF", "IAB", "IRTF", "independent"
 
-#### value (Required)
+#### value
 
-The identifier within the series specified by the "name" attribute.
+The identifier within the series specified by the **name** attribute. This attribute must be specified.
 
 For BCPs, FYIs, RFCs, and STDs, this is the number within the series.
 
 For Internet-Drafts, it is the full draft name (ending with the two-digit version number).
 
-For DOIs, the value is given, such as `10.17487/rfc1149`, as described in RFC7669.
+For DOIs, the value is given, such as "10.17487/rfc1149", as described in RFC7669.
 
 The name in the value should be the document name without any file extension.
 ### Schema
@@ -1943,28 +1943,28 @@ Allowed content: text
 
 ### Attributes
 #### anchor
-Document-wide unique identifier for this [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) element.
+Document-wide unique identifier for this element.
 
 #### markers
 Indicates whether `<CODE BEGINS>` and `<CODE ENDS>` markers, as introduced by RFC6087, should be generated when rendering the [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) element. The alternative is to include these explicitly inside the element, but that would necessitate extra code to strip these, when extracting code from the XML source.
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "false"
 
 #### name
-A filename suitable for the contents (such as for extraction to a local file). This attribute can be helpful for other kinds of tools (such as automated syntax checkers, which work by extracting the source code). Note that the "name" attribute does not need to be unique for [**\<artwork\>**](/rfcxml-vocabulary#artwork) elements in a document. If multiple [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) elements have the same "name" attribute, a formatter might assume that the elements are all fragments of a single file, and such a formatter can collect those fragments for later processing.
+A filename suitable for the contents (such as for extraction to a local file). This attribute can be helpful for other kinds of tools (such as automated syntax checkers, which work by extracting the source code). Note that the **name** attribute does not need to be unique for [**\<artwork\>**](/rfcxml-vocabulary#artwork) elements in a document. If multiple [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) elements have the same **name** attribute, a formatter might assume that the elements are all fragments of a single file, and such a formatter can collect those fragments for later processing.
 
 #### src
 The URI reference of a source file (RFC3986).
 
-It is an error to have both a "src" attribute and content in the [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) element.
+It is an error to have both a **src** attribute and content in the [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) element.
 
 #### type
 Specifies the type of the source code. The value of this attribute is free text with certain values designated as preferred.
 
 Most of the preferred values for [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) types are language names, in a wide sense, such as "abnf", "asn.1", "bash", "c++", etc.
 
-The RFC Series Editor maintains a list of the preferred values on the RFC Editor web site at https://www.rfc-editor.org/materials/sourcecode-types.txt, and that list is updated over time. Thus, a consumer of v3 XML should not cause a failure when it encounters an unexpected type or no type is specified.
+The RFC Series Editor maintains a list of the preferred values on the RFC Editor web site at [https://www.rfc-editor.org/materials/sourcecode-types.txt](https://www.rfc-editor.org/materials/sourcecode-types.txt), and that list is updated over time. Thus, a consumer of RFCXML should not cause a failure when it encounters an unexpected type or no type is specified.
 ### Schema
 ```
    sourcecode =
@@ -2128,15 +2128,15 @@ Indicates any extra amount of indentation to be used when rendering the paragrap
 Default value: "0"
 
 #### keepWithNext
-Acts as a hint to the output formatters that do pagination to do a best-effort attempt to keep the paragraph with the next element, whatever that happens to be. For example, for HTML output @media print CSS might translate this to page-break-after: avoid. For PDF, the paginator could attempt to keep the paragraph with the next element. Note: this attribute is strictly a hint and not always actionable.
+Acts as a hint to the output formatters that do pagination to do a best-effort attempt to keep the paragraph with the next element, whatever that happens to be. For example, for HTML output @media print CSS might translate this to `page-break-after: avoid`. For PDF, the paginator could attempt to keep the paragraph with the next element. Note: this attribute is strictly a hint and not always actionable.
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "false"
 
 #### keepWithPrevious
-Acts as a hint to the output formatters that do pagination to do a best-effort attempt to keep the paragraph with the previous element, whatever that happens to be. For example, for HTML output @media print CSS might translate this to page-break-before: avoid. For PDF, the paginator could attempt to keep the paragraph with the previous element. Note: this attribute is strictly a hint and not always actionable.
+Acts as a hint to the output formatters that do pagination to do a best-effort attempt to keep the paragraph with the previous element, whatever that happens to be. For example, for HTML output @media print CSS might translate this to `page-break-before: avoid`. For PDF, the paginator could attempt to keep the paragraph with the previous element. Note: this attribute is strictly a hint and not always actionable.
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "false"
 ### Schema
 ```
@@ -2186,9 +2186,9 @@ Allowed content: [**\<name\>**](/rfcxml-vocabulary#name)?, [**\<iref\>**](/rfcxm
 
 ### Attributes
 #### align
-Controls whether the table appears left justified, centered, or right justified. The caption will be centered under the table, and the combined table and caption will be aligned according to the "align" attribute.
+Controls whether the table appears left justified, centered, or right justified. The caption will be centered under the table, and the combined table and caption will be aligned according to the **align** attribute.
 
-Possible values: ( "left" | "center" | "right" )
+Possible values: "left", "center", "right"
 Default value: "center"
 
 #### anchor
@@ -2245,19 +2245,19 @@ Allowed content: ( ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\
 #### align
 Controls whether the content of the cell appears left justified, centered, or right justified. Note that "center" or "right" will probably only work well in cells with plain text; any other elements might make the contents render badly.
 
-Possible values: ( "left" | "center" | "right" )
+Possible values: "left", "center", "right"
 Default value: "left"
 
 #### anchor
 Document-wide unique identifier for this element.
 
 #### colspan
-The number of columns that the cell is to span. For example, setting "colspan='3'" indicates that the cell occupies the same horizontal space as three cells of a row without any "colspan" attributes.
+The number of columns that the cell is to span. For example, setting **colspan** to "3" indicates that the cell occupies the same horizontal space as three cells of a row without the **colspan** attributes.
 
 Default value: "1"
 
 #### rowspan
-The number of rows that the cell is to span. For example, setting "rowspan='3'" indicates that the cell occupies the same vertical space as three rows.
+The number of rows that the cell is to span. For example, setting **rowspan** to "3" indicates that the cell occupies the same vertical space as three rows.
 
 Default value: "1"
 ### Schema
@@ -2323,19 +2323,19 @@ Allowed content: ( ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\
 #### align
 Controls whether the content of the cell appears left justified, centered, or right justified. Note that "center" or "right" will probably only work well in cells with plain text; any other elements might make the contents render badly.
 
-Possible values: ( "left" | "center" | "right" )
+Possible values: "left", "center", "right"
 Default value: "left"
 
 #### anchor
 Document-wide unique identifier for this element.
 
 #### colspan
-The number of columns that the cell is to span. For example, setting "colspan='3'" indicates that the cell occupies the same horizontal space as three cells of a row without any "colspan" attributes.
+The number of columns that the cell is to span. For example, setting **colspan** to "3" indicates that the cell occupies the same horizontal space as three cells of a row without the **colspan** attributes.
 
 Default value: "1"
 
 #### rowspan
-The number of rows that the cell is to span. For example, setting "rowspan='3'" indicates that the cell occupies the same vertical space as three rows.
+The number of rows that the cell is to span. For example, setting **rowspan** to "3" indicates that the cell occupies the same vertical space as three rows.
 
 Default value: "1"
 ### Schema
@@ -2394,7 +2394,7 @@ Document-wide unique identifier for this element.
 ### Usage
 Represents the document title.
 
-When this element appears in the [**\<front\>**](/rfcxml-vocabulary#front) element of the current document, the title might also appear in page headers or footers. If it is long (\~40 characters), the "abbrev" attribute can be used to specify an abbreviated variant.
+When this element appears in the [**\<front\>**](/rfcxml-vocabulary#front) element of the current document, the title might also appear in page headers or footers. If it is long (\~40 characters), the **abbrev** attribute can be used to specify an abbreviated variant.
 
 Used in: [**\<front\>**](/rfcxml-vocabulary#front).
 Allowed content: ( text | [**\<br\>**](/rfcxml-vocabulary#br) )*
@@ -2420,7 +2420,7 @@ The ASCII equivalent of the [**\<title\>**](/rfcxml-vocabulary#title) content. T
 ## toc
 ## Tabs {.tabset}
 ### Usage
-This element contains the Table of Content. The content of the [**\<toc\>**](/rfcxml-vocabulary#toc) element is generated by the preptool based on the "tocInclude" and "tocDepth" attributes of the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element. As a document author, you should not use [**\<toc\>**](/rfcxml-vocabulary#toc) directly.
+This element contains the Table of Content. The content of the [**\<toc\>**](/rfcxml-vocabulary#toc) element is generated by the preptool based on the **tocInclude** and **tocDepth** attributes of the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element. As a document author, you should not use [**\<toc\>**](/rfcxml-vocabulary#toc) directly.
 
 Used in: [**\<front\>**](/rfcxml-vocabulary#front).
 Allowed content: [**\<section\>**](/rfcxml-vocabulary#section)*
@@ -2488,9 +2488,9 @@ Allowed content: ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>*
 ## u
 ## Tabs {.tabset}
 ### Usage
-The elements [**\<author\>**](/rfcxml-vocabulary#author), [**\<organisation\>**](/rfcxml-vocabulary#organisation), [**\<street\>**](/rfcxml-vocabulary#street), [**\<city\>**](/rfcxml-vocabulary#city), [**\<region\>**](/rfcxml-vocabulary#region), [**\<code\>**](/rfcxml-vocabulary#code), [**\<country\>**](/rfcxml-vocabulary#country), [**\<postalLine\>**](/rfcxml-vocabulary#postalLine), [**\<email\>**](/rfcxml-vocabulary#email), [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo), and [**\<title\>**](/rfcxml-vocabulary#title) may contain non- ascii characters for the purpose of rendering author names, addresses, and reference titles correctly. They also have an additional "ascii" attribute for the purpose of proper rendering in ascii-only media.
+The elements [**\<author\>**](/rfcxml-vocabulary#author), [**\<organisation\>**](/rfcxml-vocabulary#organisation), [**\<street\>**](/rfcxml-vocabulary#street), [**\<city\>**](/rfcxml-vocabulary#city), [**\<region\>**](/rfcxml-vocabulary#region), [**\<code\>**](/rfcxml-vocabulary#code), [**\<country\>**](/rfcxml-vocabulary#country), [**\<postalLine\>**](/rfcxml-vocabulary#postalLine), [**\<email\>**](/rfcxml-vocabulary#email), [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo), and [**\<title\>**](/rfcxml-vocabulary#title) may contain non- ascii characters for the purpose of rendering author names, addresses, and reference titles correctly. They also have an additional **ascii** attribute for the purpose of proper rendering in ascii-only media.
 
-In order to insert Unicode characters in any other context, xml2rfc vocabulary v3 requires that the Unicode string be enclosed within an [**\<u\>**](/rfcxml-vocabulary#u) element. The element will be expanded inline based on the value of a "format" attribute. This provides a generalised means of generating the 6 methods of Unicode renderings listed in RFC7997, Section 3.4, and also several others found in for instance the RFC Format Tools example rendering of RFC 7700, at https://rfc-format.github.io/draft-iab-rfc-css-bis/sample2-v2.html.
+In order to insert Unicode characters in any other context, RFCXML requires that the Unicode string be enclosed within an [**\<u\>**](/rfcxml-vocabulary#u) element. The element will be expanded inline based on the value of a **format** attribute. This provides a generalised means of generating the 6 methods of Unicode renderings listed in RFC7997, Section 3.4, and also several others found in for instance the RFC Format Tools example rendering of RFC 7700, at https://rfc-format.github.io/draft-iab-rfc-css-bis/sample2-v2.html.
 
 Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<li\>**](/rfcxml-vocabulary#li), [**\<t\>**](/rfcxml-vocabulary#t), [**\<td\>**](/rfcxml-vocabulary#td), and [**\<th\>**](/rfcxml-vocabulary#th).
 Allowed content: text
@@ -2500,10 +2500,10 @@ Allowed content: text
 Document-wide unique identifier for this element.
 
 #### ascii
-The ASCII equivalent of the content, to be used if the "ascii" keyword is used in the "format" specification.
+The ASCII equivalent of the content, to be used if the "ascii" keyword is used in the **format** specification.
 
 #### format
-The "format" attribute accepts either a simplified format specification, or a full format string with placeholders for the various possible Unicode expansions.
+The **format** attribute accepts either a simplified format specification, or a full format string with placeholders for the various possible Unicode expansions.
 
 The simplified format consists of dash-separated keywords, where each keyword represents a possible expansion of the Unicode character or string; use for example `<u "lit-num-name">foo</u>` to expand the text to its literal value, code point values, and code point names.
 
@@ -2538,7 +2538,7 @@ will be expanded to "U+13DA U+13A2 U+13B5 U+13AC U+13A2 U+13AC U+13D2 ("ᏚᎢ�
 Unicode characters in document text which are not enclosed in [**\<u\>**](/rfcxml-vocabulary#u) will be replaced with a question mark (?) and a warning will be issued.
 
 ##### Non-simplified [**\<u\>**](/rfcxml-vocabulary#u) format specifications
-In order to provide for cases where the simplified format above is insufficient, without relinquishing the requirement that the number of a code point always must be rendered, the "format" attribute can also accept a full format string. This format uses placeholders which consist of any of the key words above enclosed in curly braces; outside of this, any ascii text is permissible. For example,
+In order to provide for cases where the simplified format above is insufficient, without relinquishing the requirement that the number of a code point always must be rendered, the **format** attribute can also accept a full format string. This format uses placeholders which consist of any of the key words above enclosed in curly braces; outside of this, any ascii text is permissible. For example,
 
 ```xml
    The <u format="{lit} character ({num})">Δ</u>
@@ -2553,7 +2553,7 @@ As for the simplified format, "num" MUST always be part of the specified format 
 
 ###### Split expansion of [**\<u\>**](/rfcxml-vocabulary#u) elements
 
-There are cases which cannot be handled with either the simplified or full [**\<u\>**](/rfcxml-vocabulary#u) format specifications. One is exemplified in Table 1 of the CSS sample document at https://rfc-format.github.io/draft-iab-rfc-css-bis/sample2-v2.html#s-3. Rendering this with [**\<u\>**](/rfcxml-vocabulary#u) elements requires that the non-ascii content be rendered in one place (a table cell in one column) while the expansion is rendered in another cell in a different column. Provision for this has been made by modifying the expansion of [**\<u\>**](/rfcxml-vocabulary#u) when it is referenced by an [**\<xref\>**](/rfcxml-vocabulary#xref). This table, with [**\<u\>**](/rfcxml-vocabulary#u) elements referenced by [**\<xref\>**](/rfcxml-vocabulary#xref) instances:
+There are cases which cannot be handled with either the simplified or full [**\<u\>**](/rfcxml-vocabulary#u) format specifications. One is exemplified in Table 1 of the CSS sample document at [https://rfc-format.github.io/draft-iab-rfc-css-bis/sample2-v2.html#s-3](https://rfc-format.github.io/draft-iab-rfc-css-bis/sample2-v2.html#s-3). Rendering this with [**\<u\>**](/rfcxml-vocabulary#u) elements requires that the non-ascii content be rendered in one place (a table cell in one column) while the expansion is rendered in another cell in a different column. Provision for this has been made by modifying the expansion of [**\<u\>**](/rfcxml-vocabulary#u) when it is referenced by an [**\<xref\>**](/rfcxml-vocabulary#xref). This table, with [**\<u\>**](/rfcxml-vocabulary#u) elements referenced by [**\<xref\>**](/rfcxml-vocabulary#xref) instances:
 ```xml
    <table>
      <name>A Sample of Legal Nicknames</name>
@@ -2635,7 +2635,7 @@ There are cases which cannot be handled with either the simplified or full [**\<
    </table>
 ```
 comes out as shown below:
-
+```
 | #   | Nickname               | Output for comparison                   |
 | --: | :--------------------- | :-------------------------------------- |
 | 1   | \<Foo\>                | \<foo\>                                 |
@@ -2648,6 +2648,7 @@ comes out as shown below:
 | 8   | \<♚\>                  | BLACK CHESS KING (U+265A)               |
 | 9   | \<Richard Ⅳ\> (U+2163) | \<richard iv\>                          |
 _Table 1: A Sample of Legal Nicknames_
+```
 ### Schema
 ```
    u = 
@@ -2660,7 +2661,6 @@ _Table 1: A Sample of Legal Nicknames_
        text
      }
 ```
-
 
 ## ul
 ## Tabs {.tabset}
@@ -2676,31 +2676,17 @@ Allowed content: [**\<li\>**](/rfcxml-vocabulary#li)+
 Document-wide unique identifier for this element.
 
 #### bare
-Can only be used with empty="true" (see below). Determines if the blank bullet has an horizontal extension or not. With bare="false", the empty list bullet will still occupy the same space as for empty="false". With empty="true", there will be no bullet at all, i.e., the list items will have no indentation.
+Can only be used with **empty** set to "true" (see below). Determines if the blank bullet has an horizontal extension or not. With **bare** set to "false", the empty list bullet will still occupy the same space as for **empty** set to "false". With **empty** set to "true", there will be no bullet at all, i.e., the list items will have no indentation.
 
-Possible values: ( "true" | "false" )
+Possible values: "true", "false"
 Default value: "false"
-
-Example: an unordered list with bare="true" and empty="true":
-
-One
-Two
 
 #### empty
-Defines whether or not the list item bullets are empty. empty="true" indicates that a blank (empty) bullet will be shown.
+Defines whether or not the list item bullets are empty. Setting **empty** to "true" indicates that a blank (empty) bullet will be shown.
 
-Possible values: ( "true" | "false" )
+Possible values: "true" "false"
 Default value: "false"
 
-Example: an unordered list with bare="false" and empty="false":
-
-* One
-* Two
-
-Example: an unordered list with bare="false" and empty="true":
-
-  One
-  Two
 
 #### indent
 The indentation of the list elements relative to the start of the bullet or bullet text.
@@ -2708,10 +2694,29 @@ The indentation of the list elements relative to the start of the bullet or bull
 Default value: "3"
 
 #### spacing
-Defines whether or not there is a blank line between entries. spacing="normal" indicates a single blank line, while spacing="compact" indicates no blank line between entries.
+Defines whether or not there is a blank line between entries. Setting **spacing** to "normal" indicates a single blank line, while setting **spacing** to "compact" indicates no blank line between entries.
 
-Possible values: ( "normal" | "compact" )
+Possible values: "normal", "compact"
 Default value: "normal"
+### Examples
+Example: an unordered list with **bare** as "true" and **empty** as "true":
+```
+List:
+One
+Two
+```
+Example: an unordered list with **bare** as "false" and **empty** as "false":
+```
+List:
+ * One
+ * Two
+```
+Example: an unordered list with **bare** as "false" and **empty** as "true":
+```
+List:
+   One  
+   Two
+```
 ### Schema
 ```
    ul =

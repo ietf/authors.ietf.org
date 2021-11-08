@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-08T13:31:12.469Z
+date: 2021-11-08T13:48:24.041Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -2064,7 +2064,8 @@ Causes the text to be displayed as subscript, approximately half a letter-height
 
 Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<cref\>**](/rfcxml-vocabulary#cref), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<dt\>**](/rfcxml-vocabulary#dt), [**\<em\>**](/rfcxml-vocabulary#em), [**\<li\>**](/rfcxml-vocabulary#li), [**\<name\>**](/rfcxml-vocabulary#name), [**\<refcontent\>**](/rfcxml-vocabulary#refcontent), [**\<strong\>**](/rfcxml-vocabulary#strong), [**\<sub\>**](/rfcxml-vocabulary#sub), [**\<sup\>**](/rfcxml-vocabulary#sup), [**\<t\>**](/rfcxml-vocabulary#t), [**\<td\>**](/rfcxml-vocabulary#td), [**\<th\>**](/rfcxml-vocabulary#th), [**\<tt\>**](/rfcxml-vocabulary#tt), and [**\<xref\>**](/rfcxml-vocabulary#xref).
 Allowed content: ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<xref\>**](/rfcxml-vocabulary#xref) )*
-
+### Examples
+* [RFC 8759, Section 6](https://www.rfc-editor.org/rfc/rfc8759.html#section-6)
 ### Schema
 ```
    sub =
@@ -2093,6 +2094,8 @@ Causes the text to be displayed as superscript, approximately half a letter-heig
 
 Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<cref\>**](/rfcxml-vocabulary#cref), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<dt\>**](/rfcxml-vocabulary#dt), [**\<em\>**](/rfcxml-vocabulary#em), [**\<li\>**](/rfcxml-vocabulary#li), [**\<name\>**](/rfcxml-vocabulary#name), [**\<refcontent\>**](/rfcxml-vocabulary#refcontent), [**\<strong\>**](rfcxml-elements[**\<strong\>**](/rfcxml-vocabulary#strong), [**\<sub\>**](/rfcxml-vocabulary#sub), [**\<sup\>**](/rfcxml-vocabulary#sup), [**\<t\>**](/rfcxml-vocabulary#t), [**\<td\>**](/rfcxml-vocabulary#td), [**\<th\>**](/rfcxml-vocabulary#th), [**\<tt\>**](/rfcxml-vocabulary#tt), and [**\<xref\>**](/rfcxml-vocabulary#xref).
 Allowed content: ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<xref\>**](/rfcxml-vocabulary#xref) )*
+### Examples
+* [RFC 8681, Section 1.2](https://www.rfc-editor.org/rfc/rfc8681.html#section-1.2)
 ### Schema
 ```
    sup =

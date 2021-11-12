@@ -2,7 +2,7 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-11-12T11:44:35.800Z
+date: 2021-11-12T12:20:50.929Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
@@ -32,14 +32,14 @@ The tools generally provide one of more of the following broad operations:
 ## Formats
 The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB, LaTeX, Markdown, nroff, Org Mode, PDF, Plain Text, RFC XML v2, RFC XML v3
 
-# Feature matrix
+# Catalog
 # Tables {.tabset}
 ## Basic
 
 | Tool | Description |
 | :--- | :---------- |
 | bibtext2rfc |
-| **bibxml2md** | Converts bibxml references into markdown | 
+| [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Converts bibxml references into markdown |
 | Bill's ABNF parser |
 | id2xml |
 | idnits |
@@ -47,17 +47,17 @@ The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB,
 | kramdown-rfc2629 |
 | lyx2rfc |
 | metanorma-ietf |
-| **nroff2xml** | Converts nroff I-D sources into xml2rfc format (xml) | 
-| pyang |
-| rfcdiff |
-| SMICng |
-| smilint |
-| svgcheck |
-| xml2rfc |
-| xml2rfc-xxe |
-| xym |
+| [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Converts nroff I-D sources into xml2rfc format (xml) |
+| pyang | |
+| rfcdiff | |
+| SMICng | |
+| smilint | |
+| svgcheck | |
+| xml2rfc | |
+| xml2rfc-xxe | |
+| xym | |
 | YANG validator |
-| yanglint |
+| yanglint | |
 
 ## Features
 
@@ -86,10 +86,10 @@ The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB,
 
 ## Status
 
-| Tool | Author | Ownership | License | Repository | Maintained | Maintainer |
-| :--- | :----- | :-------- | :------ | :--------- | :--------- | :--------- |
+| Tool | Author | Ownership | License | Maintained | Maintainer |
+| :--- | :----- | :-------- | :------ | :--------- | :--------- |
 | bibtext2rfc |
-| **bibxml2md** | Yaron Sheffer | None | None | [GitHub](https://github.com/yaronf/bibxml2md) | Yes | Yaron Sheffer |
+| **bibxml2md** | Yaron Sheffer | None | None | Yes | Yaron Sheffer |
 | Bill's ABNF parser |
 | id2xml |
 | idnits |
@@ -97,14 +97,14 @@ The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB,
 | kramdown-rfc2629 |
 | lyx2rfc |
 | metanorma-ietf |
-| **nroff2xml** | Tomek Mrugalski | IETF Trust | Simplified BSD | [GitHub](https://github.com/tomaszmrugalski/nroff2xml) | No | None |
+| **nroff2xml** | Tomek Mrugalski | IETF Trust | Simplified BSD | No | None |
 | pyang |
 | rfcdiff |
 | SMICng |
 | smilint |
 | svgcheck |
 | xml2rfc |
-| xml2rfc-xxe |
+| xml2rfc-xxe | | | | 
 | xym |
 | YANG validator |
 | yanglint |

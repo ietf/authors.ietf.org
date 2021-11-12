@@ -2,13 +2,20 @@
 title: Rendering and converting
 description: 
 published: true
-date: 2021-10-10T22:17:20.755Z
+date: 2021-11-12T11:56:17.549Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-02T02:05:52.949Z
 ---
 
-It is common for authors to render their documents into a different format to make them easier to read, or to convert to another format for use in another tool. The table below shows the conversion options from the two supported source formats of RFC XML and Plain Text into other formats.  If you want to convert from a different source format then hyou should first convert to one of these two formats and then refer to this table.
+It is common for authors to render their documents into a different format to make them easier to read, or to convert to another format for use in another tool. 
+
+This page explains the conversion options from the two supported source formats of RFCXML and Plain Text into other formats.  If you want to convert from a different source format then you should first convert to one of these two formats.
+
+# Rendering RFCXML
+The two main tools for this are [xml2rfc]() and [rfc2629xslt]()
+
+and then refer to this table.
 
 | Output     | Input ||
 |            | RFC XML | Plain Text |

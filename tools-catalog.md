@@ -2,7 +2,7 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-11-12T14:46:22.335Z
+date: 2021-11-12T14:52:47.501Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
@@ -51,7 +51,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Converts Lyx documents to RFCXML and then transforms using xml2rfc |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Converts AsciiRFC into RFCXML |
 | [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Converts nroff I-D sources into xml2rfc format (xml) |
-| pyang | |
+| [**pyang**](https://github.com/mbj4668/pyang) | Validates and converts YANG modules |
 | rfcdiff | |
 | SMICng | |
 | smilint | |
@@ -70,13 +70,13 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Build, CLI | Convert | BibXML | RFCXML(old) | No |
 | [**bap**](https://github.com/ietf-tools/bap) | Build, CLI | Extract, Validate | ABNF | - | Unknown |
 | [**id2xml**]() | Build, CLI | Convert | Plain text | RFCXML | Yes |
-| [**idnits**]() | Build, CLI, Web | Validate | Plain text | - | No |
-| [**idspell**]() | Build, CLI, Web | Validate | Plain text | - | No |
+| [**idnits**]() | Build, CLI, Web | Validate | Plain text | - | N/A |
+| [**idspell**]() | Build, CLI, Web | Validate | Plain text | - | N/A |
 | [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Build, CLI, Web | Convert, Validate | Markdown | RFCXML | Yes |
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | ? | Validate, Convert | LaTeX(Lyx) | ? | No |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Build, CLI | Validate, Convert | AsciiDoc(AsciiRFC) | RFCXML | Yes |
 | [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Build, CLI | Convert | nroff | RFCXML(old) | No |
-| pyang |
+| [**pyang**](https://github.com/mbj4668/pyang) | Build, CLI | Validate, Convert | YANG | ? | N/A |
 | rfcdiff |
 | SMICng |
 | smilint |
@@ -101,7 +101,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Nico Williams | Nico Williams | Unknown | No | None |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Ribose | Ribose | Simplified BSD | Yes | Ribose |
 | [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Tomek Mrugalski | IETF Trust | Simplified BSD | No | None |
-| pyang |
+| [**pyang**](https://github.com/mbj4668/pyang) | Martin Bjorklund | Martin Bjorklund | ISC | Yes | Martin Bjorklund |
 | rfcdiff |
 | SMICng |
 | smilint |

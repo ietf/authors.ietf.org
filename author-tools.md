@@ -1,8 +1,8 @@
 ---
-title: The Author Tools web service
+title: Author Tools web service
 description: 
 published: true
-date: 2021-11-12T12:37:54.926Z
+date: 2021-11-12T12:43:05.643Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T12:37:54.926Z

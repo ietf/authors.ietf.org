@@ -2,14 +2,15 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-11-12T12:20:50.929Z
+date: 2021-11-12T14:01:16.866Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
 ---
 
-# Classification of tools
-## Modes
+# Feature classification of tools
+The catalog below includes a feature classification which lists the following for each tool:
+## Supported modes
 The tools generally support one or more of the following modes of operation:
 
 - Interactive **Editor** 
@@ -19,7 +20,7 @@ The tools generally support one or more of the following modes of operation:
     - Where the author uses an interactive web page that in turns calls a remote web service, on individual local files generally one operation at the time.
     - Where the author(s) configures their build service to use a remote web service via an API instead of installing the tools. 
 
-## Operations
+## Supported operations
 The tools generally provide one of more of the following broad operations:
 
 -  **Convert** the document from one format to another such as from XML to PDF.
@@ -29,8 +30,10 @@ The tools generally provide one of more of the following broad operations:
 -  **Compare** two different I-Ds or two versions of an I-D.
 -  Supports an interactive **Editor** with features such as auto-completion.
 
-## Formats
-The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB, LaTeX, Markdown, nroff, Org Mode, PDF, Plain Text, RFC XML v2, RFC XML v3
+## Supported formats
+The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB, LaTeX, Markdown, nroff, Org Mode, PDF, Plain Text, RFCXML.
+
+Some tools only support the previous version of RFCXML (v2) and the format is written as RFCXML(old) in the table where that occurs, as well as "No" in the "Supports v3" column.
 
 # Catalog
 # Tables {.tabset}
@@ -38,7 +41,7 @@ The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB,
 
 | Tool | Description |
 | :--- | :---------- |
-| bibtext2rfc |
+| [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Converts BibTeX citations into bibxml references |
 | [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Converts bibxml references into markdown |
 | Bill's ABNF parser |
 | id2xml |
@@ -59,12 +62,12 @@ The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB,
 | YANG validator |
 | yanglint | |
 
-## Features
+## Feature classification
 
-| Tool | Modes | Operations | Input formats | Output formats |
-| :--- | :---- | :------------ | :------------ | :------------- |
-| bibtext2rfc |
-| **bibxml2md** | Build, CLI | Convert | BibXML | XML |
+| Tool | Modes | Operations | Input formats | Output formats | Supports v3 |
+| :--- | :---- | :--------- | :------------ | :------------- | :---------: |
+| [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Build, CLI | Convert | BibTex | BibXML | Yes |
+| [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Build, CLI | Convert | BibXML | RFCXML(old) | No |
 | Bill's ABNF parser |
 | id2xml |
 | idnits |
@@ -72,7 +75,7 @@ The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB,
 | kramdown-rfc2629 |
 | lyx2rfc |
 | metanorma-ietf |
-| **nroff2xml** | Build, CLI | Convert | nroff | XML |
+| [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Build, CLI | Convert | nroff | RFCXML(old) | No |
 | pyang |
 | rfcdiff |
 | SMICng |
@@ -88,8 +91,8 @@ The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB,
 
 | Tool | Author | Ownership | License | Maintained | Maintainer |
 | :--- | :----- | :-------- | :------ | :--------- | :--------- |
-| bibtext2rfc |
-| **bibxml2md** | Yaron Sheffer | None | None | Yes | Yaron Sheffer |
+| [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Yaron Sheffer | Public domain | Yes | Yaron Sheffer |
+| [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Yaron Sheffer | None | None | Yes | Yaron Sheffer | Unknown |
 | Bill's ABNF parser |
 | id2xml |
 | idnits |
@@ -97,7 +100,7 @@ The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB,
 | kramdown-rfc2629 |
 | lyx2rfc |
 | metanorma-ietf |
-| **nroff2xml** | Tomek Mrugalski | IETF Trust | Simplified BSD | No | None |
+| [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Tomek Mrugalski | IETF Trust | Simplified BSD | No | None |
 | pyang |
 | rfcdiff |
 | SMICng |

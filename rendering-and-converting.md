@@ -2,13 +2,13 @@
 title: Rendering and converting
 description: 
 published: true
-date: 2021-11-12T13:15:35.408Z
+date: 2021-11-12T13:16:01.200Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-02T02:05:52.949Z
 ---
 
-It is common for authors to render their documents into a different format to make them easier to read, or to convert to another format for use in another tool. 
+It is common for authors to render (convert) their documents into a different format to make them easier to read, or to convert to another format for use in another tool. 
 
 # Rendering RFCXML
 There are three main ways to render RFCXML:

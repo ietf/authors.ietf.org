@@ -2,7 +2,7 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-11-12T14:01:16.866Z
+date: 2021-11-12T14:20:02.268Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
@@ -31,7 +31,7 @@ The tools generally provide one of more of the following broad operations:
 -  Supports an interactive **Editor** with features such as auto-completion.
 
 ## Supported formats
-The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB, LaTeX, Markdown, nroff, Org Mode, PDF, Plain Text, RFCXML.
+The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB, LaTeX, Markdown, nroff, Org Mode, PDF, Plain Text, RFCXML, as well as the formal languages of ABNF, MIB, YANG and SVG.
 
 Some tools only support the previous version of RFCXML (v2) and the format is written as RFCXML(old) in the table where that occurs, as well as "No" in the "Supports v3" column.
 
@@ -43,8 +43,8 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | :--- | :---------- |
 | [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Converts BibTeX citations into bibxml references |
 | [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Converts bibxml references into markdown |
-| Bill's ABNF parser |
-| id2xml |
+| [**bap**](https://github.com/ietf-tools/bap) | Extract and validates ABNF |
+| [**id2xml**]() | Convert plain text I-D into RFCXML |
 | idnits |
 | idspell |
 | kramdown-rfc2629 |
@@ -68,8 +68,8 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | :--- | :---- | :--------- | :------------ | :------------- | :---------: |
 | [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Build, CLI | Convert | BibTex | BibXML | Yes |
 | [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Build, CLI | Convert | BibXML | RFCXML(old) | No |
-| Bill's ABNF parser |
-| id2xml |
+| [**bap**](https://github.com/ietf-tools/bap) | Build, CLI | Validate | ABNF | n/a | n/a |
+| [**id2xml**]() | Build, CLI | Convert | Plain text | RFCXML | Yes |
 | idnits |
 | idspell |
 | kramdown-rfc2629 |
@@ -91,10 +91,10 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 
 | Tool | Author | Ownership | License | Maintained | Maintainer |
 | :--- | :----- | :-------- | :------ | :--------- | :--------- |
-| [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Yaron Sheffer | Public domain | Yes | Yaron Sheffer |
-| [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Yaron Sheffer | None | None | Yes | Yaron Sheffer | Unknown |
-| Bill's ABNF parser |
-| id2xml |
+| [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Yaron Sheffer | Yaron Sheffer | Public domain | Yes | Yaron Sheffer |
+| [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Yaron Sheffer | Yaron Sheffer | Unknown | Unsure | Yaron Sheffer |
+| [**bap**](https://github.com/ietf-tools/bap) | Bill Fenner | Bill Fenner | Unknown | No | None | 
+| [**id2xml**]() | Henrik Levkowetz | IETF Trust | Simplified BSD | Unknown | Unknown |
 | idnits |
 | idspell |
 | kramdown-rfc2629 |

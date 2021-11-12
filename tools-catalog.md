@@ -2,7 +2,7 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-11-12T11:39:47.055Z
+date: 2021-11-12T11:44:35.800Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
@@ -32,17 +32,14 @@ The tools generally provide one of more of the following broad operations:
 ## Formats
 The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB, LaTeX, Markdown, nroff, Org Mode, PDF, Plain Text, RFC XML v2, RFC XML v3
 
-# Catalog
-The catalog tables below provide the following details for each tool:
-- **Basic** - name and description
-- **Features** - modes, operations, input formats and output formats 
-- **Status** - author, ownership, licensing, maintenance status, maintainer
-## Tables {.tabset}
-### Basic
+# Feature matrix
+# Tables {.tabset}
+## Basic
 
 | Tool | Description |
 | :--- | :---------- |
 | bibtext2rfc |
+| **bibxml2md** | Converts bibxml references into markdown | 
 | Bill's ABNF parser |
 | id2xml |
 | idnits |
@@ -50,6 +47,7 @@ The catalog tables below provide the following details for each tool:
 | kramdown-rfc2629 |
 | lyx2rfc |
 | metanorma-ietf |
+| **nroff2xml** | Converts nroff I-D sources into xml2rfc format (xml) | 
 | pyang |
 | rfcdiff |
 | SMICng |
@@ -60,14 +58,13 @@ The catalog tables below provide the following details for each tool:
 | xym |
 | YANG validator |
 | yanglint |
-| **bibxml2md** | Converts bibxml references into markdown | 
-| **nroff2xml** | Converts nroff I-D sources into xml2rfc format (xml) | 
 
-### Features
+## Features
 
 | Tool | Modes | Operations | Input formats | Output formats |
 | :--- | :---- | :------------ | :------------ | :------------- |
 | bibtext2rfc |
+| **bibxml2md** | Build, CLI | Convert | BibXML | XML |
 | Bill's ABNF parser |
 | id2xml |
 | idnits |
@@ -75,6 +72,7 @@ The catalog tables below provide the following details for each tool:
 | kramdown-rfc2629 |
 | lyx2rfc |
 | metanorma-ietf |
+| **nroff2xml** | Build, CLI | Convert | nroff | XML |
 | pyang |
 | rfcdiff |
 | SMICng |
@@ -85,14 +83,13 @@ The catalog tables below provide the following details for each tool:
 | xym |
 | YANG validator |
 | yanglint |
-| **bibxml2md** | Build, CLI | Convert | BibXML | XML |
-| **nroff2xml** | Build, CLI | Convert | nroff | XML |
 
-### Status
+## Status
 
 | Tool | Author | Ownership | License | Repository | Maintained | Maintainer |
 | :--- | :----- | :-------- | :------ | :--------- | :--------- | :--------- |
 | bibtext2rfc |
+| **bibxml2md** | Yaron Sheffer | None | None | [GitHub](https://github.com/yaronf/bibxml2md) | Yes | Yaron Sheffer |
 | Bill's ABNF parser |
 | id2xml |
 | idnits |
@@ -100,6 +97,7 @@ The catalog tables below provide the following details for each tool:
 | kramdown-rfc2629 |
 | lyx2rfc |
 | metanorma-ietf |
+| **nroff2xml** | Tomek Mrugalski | IETF Trust | Simplified BSD | [GitHub](https://github.com/tomaszmrugalski/nroff2xml) | No | None |
 | pyang |
 | rfcdiff |
 | SMICng |
@@ -110,6 +108,4 @@ The catalog tables below provide the following details for each tool:
 | xym |
 | YANG validator |
 | yanglint |
-| **bibxml2md** | Yaron Sheffer | None | None | [GitHub](https://github.com/yaronf/bibxml2md) | Yes | Yaron Sheffer |
-| **nroff2xml** | Tomek Mrugalski | IETF Trust | Simplified BSD | [GitHub](https://github.com/tomaszmrugalski/nroff2xml) | No | None |
 

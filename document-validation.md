@@ -2,7 +2,7 @@
 title: Document validation
 description: 
 published: true
-date: 2021-11-12T13:34:28.090Z
+date: 2021-11-12T13:35:25.984Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
@@ -22,7 +22,7 @@ Document validation is an important step for an Internet-Draft to ensure that it
 The [Author Tools](/https://author-tools.ietf.org) web service supports a wide range of formats for validation. 
 
 ## 2. Validating RFCXML I-Ds with xml2rfc
-RFCXML I-Ds can be validated by running [xml2rfc] locally or as part of your build process
+RFCXML I-Ds can be validated by running [xml2rfc]() locally or as part of your build process
 
 ## 3. Validating plain text I-Ds with idnits
 Plain text I-Ds can be validated by running [idnits]() locally or as part of your build service.

@@ -2,7 +2,7 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-11-12T14:20:02.268Z
+date: 2021-11-12T14:46:22.335Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
@@ -45,11 +45,11 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Converts bibxml references into markdown |
 | [**bap**](https://github.com/ietf-tools/bap) | Extract and validates ABNF |
 | [**id2xml**]() | Convert plain text I-D into RFCXML |
-| idnits |
-| idspell |
-| kramdown-rfc2629 |
-| lyx2rfc |
-| metanorma-ietf |
+| [**idnits**]() | Check plain text I-D for submission nits |
+| [**idspell**]() | Checks the spelling in I-Ds |
+| [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Generates RFCXML from Markdown |
+| [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Converts Lyx documents to RFCXML and then transforms using xml2rfc |
+| [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Converts AsciiRFC into RFCXML |
 | [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Converts nroff I-D sources into xml2rfc format (xml) |
 | pyang | |
 | rfcdiff | |
@@ -68,13 +68,13 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | :--- | :---- | :--------- | :------------ | :------------- | :---------: |
 | [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Build, CLI | Convert | BibTex | BibXML | Yes |
 | [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Build, CLI | Convert | BibXML | RFCXML(old) | No |
-| [**bap**](https://github.com/ietf-tools/bap) | Build, CLI | Validate | ABNF | n/a | n/a |
+| [**bap**](https://github.com/ietf-tools/bap) | Build, CLI | Extract, Validate | ABNF | - | Unknown |
 | [**id2xml**]() | Build, CLI | Convert | Plain text | RFCXML | Yes |
-| idnits |
-| idspell |
-| kramdown-rfc2629 |
-| lyx2rfc |
-| metanorma-ietf |
+| [**idnits**]() | Build, CLI, Web | Validate | Plain text | - | No |
+| [**idspell**]() | Build, CLI, Web | Validate | Plain text | - | No |
+| [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Build, CLI, Web | Convert, Validate | Markdown | RFCXML | Yes |
+| [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | ? | Validate, Convert | LaTeX(Lyx) | ? | No |
+| [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Build, CLI | Validate, Convert | AsciiDoc(AsciiRFC) | RFCXML | Yes |
 | [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Build, CLI | Convert | nroff | RFCXML(old) | No |
 | pyang |
 | rfcdiff |
@@ -95,11 +95,11 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Yaron Sheffer | Yaron Sheffer | Unknown | Unsure | Yaron Sheffer |
 | [**bap**](https://github.com/ietf-tools/bap) | Bill Fenner | Bill Fenner | Unknown | No | None | 
 | [**id2xml**]() | Henrik Levkowetz | IETF Trust | Simplified BSD | Unknown | Unknown |
-| idnits |
-| idspell |
-| kramdown-rfc2629 |
-| lyx2rfc |
-| metanorma-ietf |
+| [**idnits**]() | Henrik Levkowetz | Henrik Levkowetz | GPL | Yes | Tools Team |
+| [**idspell**]() | Henrik Levkowetz | Henrik Levkowetz | GPL | No | None |
+| [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Carsten Bormann | Carsten Bormann | MIT | Yes | Carsten Bormann |
+| [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Nico Williams | Nico Williams | Unknown | No | None |
+| [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Ribose | Ribose | Simplified BSD | Yes | Ribose |
 | [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Tomek Mrugalski | IETF Trust | Simplified BSD | No | None |
 | pyang |
 | rfcdiff |

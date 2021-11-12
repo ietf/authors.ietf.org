@@ -2,7 +2,7 @@
 title: Document validation
 description: 
 published: true
-date: 2021-11-12T13:35:25.984Z
+date: 2021-11-12T14:49:09.220Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
@@ -51,5 +51,8 @@ The MIB Doctors have produced three templates specifically aimed at drafts conta
 ## 4. Extract and validate YANG with YANG Catalog
 [YANG Catalog](https://www.yangvalidator.com/) is a website operated and maintained by the IETF that provides a central resource for the use of YANG, including the [YANG Validator](https://www.yangvalidator.com/yangvalidator).
 
-## 5. Validate SVG with svgcheck
+## 5. Validate and convert YANG with pyang
+[pyang](https://github.com/mbj4668/pyang) validates YANG modules and converts them into other formal languages.
+
+## 6. Validate SVG with svgcheck
 [svgcheck](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) takes an XML file containing an SVG or an RFC document. It then compares all of the SVG elements with the schema defined in the document with RFC 7996 bis. The program has the option of modifying and writing out a version of the input that passes the defined schema.

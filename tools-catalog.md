@@ -2,7 +2,7 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-11-15T02:10:33.609Z
+date: 2021-11-15T07:26:33.605Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
@@ -44,22 +44,22 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 
 | Tool | Description |
 | :--- | :---------- |
-| [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Converts BibTeX citations into bibxml references |
-| [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Converts bibxml references into markdown |
+| [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Generates BibXML references from BibTeX citations |
+| [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Generates Markdown references from BibXML references |
 | [**bap**](https://github.com/ietf-tools/bap) | Extract and validates ABNF |
-| [**id2xml**]() | Convert plain text I-D into RFCXML |
+| [**id2xml**]() | Generates RFCXML from plain text I-Ds |
 | [**idnits**]() | Check plain text I-D for submission nits |
 | [**idspell**]() | Checks the spelling in I-Ds |
-| [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Generates RFCXML from Markdown documents |
-| [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Generates RFCXML from Lyx (LaTeX) documents and then transforms using xml2rfc |
-| [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Generates RFCXML from AsciiRFC (AsciiDoc) documents |
-| [**mmark**](https://mmark.miek.nl) | Generates RFCXML from Markdown documents |
-| [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Generates RFCXML from nroff documents |
+| [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Generates RFCXML from Markdown I-Ds |
+| [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Generates RFCXML from Lyx (LaTeX) I-Ds and then transforms using xml2rfc |
+| [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Generates RFCXML from AsciiRFC (AsciiDoc) I-Ds |
+| [**mmark**](https://mmark.miek.nl) | Generates RFCXML from Markdown I-Ds |
+| [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Generates RFCXML from nroff I-Ds |
 | [**pyang**](https://github.com/mbj4668/pyang) | Validates and converts YANG modules |
 | [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Side-by-side comparison of an I-D and another version or an RFC |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Validates RFC-specific SVG and generates conformant SVG |
 | [**xml2rfc**]() | Validates RFCXML and plain text I-Ds and converts to multiple output formats |
-| [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | A configuration to assist editing xml2rfc-format documents using XMLMind XML Editor |
+| [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | A configuration to assist editing RFCXML documents using XMLMind XML Editor |
 | [**xym**](https://github.com/xym-tool/xym) | Extracts YANG modules from I-Ds and RFCs |
 | [**YANG validator**](https://github.com/YangCatalog/bottle-yang-extractor-validator) | Extract and validate YANG modules |
 

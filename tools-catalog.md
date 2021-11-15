@@ -2,7 +2,7 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-11-15T02:03:29.636Z
+date: 2021-11-15T02:08:47.525Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
@@ -61,7 +61,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**xml2rfc**]() | Validates RFCXML and plain text I-Ds and converts to multiple output formats |
 | [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | A configuration to assist editing xml2rfc-format documents using XMLMind XML Editor |
 | [**xym**](https://github.com/xym-tool/xym) | Extracts YANG modules from I-Ds and RFCs |
-| YANG validator |
+| [**YANG validator**](https://github.com/YangCatalog/bottle-yang-extractor-validator) | Extract and validate YANG modules |
 | yanglint | |
 
 ## Feature classification
@@ -85,7 +85,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**xml2rfc**]() | Build, CLI, Web | Validate, Convert | RFCXML, RFCXML(old), Plain text | RFCXML Plain text, PDF, HTML, HTMLised, EPUB, nroff | Yes |
 | [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | Editor | Validate, Insert | RFCXML(old) | RFCXML(old) | No |
 | [**xym**](https://github.com/xym-tool/xym) | Build, CLI | Extract | RFCXML | YANG | Yes |
-| YANG validator |
+| [**YANG validator**](https://github.com/YangCatalog/bottle-yang-extractor-validator) | Web | RFCXML | YANG | Yes |
 | yanglint |
 
 ## Status
@@ -109,6 +109,6 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**xml2rfc**]() | Henrik Levkowetz | IETF Trust | Simplified BSD | Yes | Tools Team |
 | [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | Warren Kumari | Warren Kumari | Unknown | No | None | 
 | [**xym**](https://github.com/xym-tool/xym) | Multiple | Cisco Systems | Revised BSD | Yes | Einar Nilsen-Nygaard |
-| YANG validator |
+| [**YANG validator**](https://github.com/YangCatalog/bottle-yang-extractor-validator) | Multiple | IETF Trust | Simplified BSD | Yes | Pantheon |
 | yanglint |
 

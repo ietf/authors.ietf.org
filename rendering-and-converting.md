@@ -2,7 +2,7 @@
 title: Rendering and converting
 description: 
 published: true
-date: 2021-11-12T13:16:01.200Z
+date: 2021-11-15T09:57:01.777Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-02T02:05:52.949Z
@@ -21,10 +21,10 @@ The following table shows the output formats supported by each tool.
 | Tool | Supported output formats ||||||||
 |    | Plain text | HTML | HTMLised<sup>1</sup> | PDF | EPUB | Nroff | CHM<sup>2</sup> | DOCX |
 | :- | :--------- | :--- | :------------------- | :-- | :--- | :---- | :-------------- |
-| [Author Tools](/https://author-tools.ietf.org) | Yes | Yes | Yes | Yes | Yes | Yes | No | No |
-|  [xml2rfc]() | Yes | Yes | Yes | Yes | Yes | Yes | No | No |
-| [rfc2629.xslt](https://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629xslt.html) | Yes | Yes | No | Yes | Yes | No | Yes | No |
-| [xml2docx](https://github.com/evyncke/xml2docx) | No | No | No | No | No | No | No | Yes |
+| [**Author Tools**](/https://author-tools.ietf.org) | Yes | Yes | Yes | Yes | Yes | Yes | No | No |
+|  [**xml2rfc**]() | Yes | Yes | Yes | Yes | Yes | Yes | No | No |
+| [**rfc2629xslt**](https://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629xslt.html) | Yes | Yes | No | Yes | Yes | No | Yes | No |
+| [**xml2docx**](https://github.com/evyncke/xml2docx) | No | No | No | No | No | No | No | Yes |
 
 Notes:
 <sup>1</sup> **HTMLised** is the plain text version with an HTML wrapper and the references and table of contents turned into links.

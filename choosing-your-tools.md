@@ -2,7 +2,7 @@
 title: Choosing your format and tools
 description: 
 published: true
-date: 2021-11-15T08:53:47.403Z
+date: 2021-11-15T09:49:42.198Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T23:57:12.813Z
@@ -10,7 +10,7 @@ dateCreated: 2021-08-17T23:57:12.813Z
 
 Writing Internet-Drafts is complex and time consuming and careful choice of authoring format and authoring tools can make this task much easier.
 
-## Understanding your options
+# Understanding your options
 Your choice of format and tools is likely to depend on what markup languages and document editing tools you are familiar with, and how you intend to work.  Your options are:
 1. **RFCXML**.  This is the most popular choice as RFCXML is the markup language used for published RFCs and can be used end-to-end throughout the authoring process. However, RFCXML is also the most complex and best suits an author or group of co-authors who are very familiar with XML and who all have access to XML editing tools. Ideally these XML tools will support collaborative editing (more below).
 1. **Markdown**.  This is the next most popular choice as Markdown is a simplified text markup language, used with one of the tools that converts Markdown to RFCXML. 
@@ -20,7 +20,7 @@ Your choice of format and tools is likely to depend on what markup languages and
     1. Indirectly by authoring in a markup language and generating the plain text from that.
   1.  Finally, there are a couple of tools that support WYSIWYG editors such as Microsoft Word, converting their output to RFCXML.
 
-## The authoring stages and different formats and tools
+# The authoring stages and different formats and tools
 To help with your choice, the diagram below deconstructs the authoring process into stages to show how the different formats and tools come in:
 
 ```mermaid
@@ -57,6 +57,3 @@ If your document is chosen to become an RFC then it will need to go through the 
 
 - **RFC Publication**
 The canonical format for published RFCs is XML and the other published formats, PDF, HTML and plain text, are derived from this XML. The published XML differs from Internet-Draft XML as it has been passed through the 'prep' tool which makes it work better as a standalone document. 
-
-## Running the tools
-Be aware that some tools only work in specific editors, some only work from the command line and some require unusual runtimes to be installed to suport them. If you are not comfortable with installing and running command line tools then there are options that make this easier.

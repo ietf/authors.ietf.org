@@ -2,7 +2,7 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-11-15T02:08:47.525Z
+date: 2021-11-15T02:10:33.609Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
@@ -62,7 +62,6 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | A configuration to assist editing xml2rfc-format documents using XMLMind XML Editor |
 | [**xym**](https://github.com/xym-tool/xym) | Extracts YANG modules from I-Ds and RFCs |
 | [**YANG validator**](https://github.com/YangCatalog/bottle-yang-extractor-validator) | Extract and validate YANG modules |
-| yanglint | |
 
 ## Feature classification
 
@@ -86,7 +85,6 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | Editor | Validate, Insert | RFCXML(old) | RFCXML(old) | No |
 | [**xym**](https://github.com/xym-tool/xym) | Build, CLI | Extract | RFCXML | YANG | Yes |
 | [**YANG validator**](https://github.com/YangCatalog/bottle-yang-extractor-validator) | Web | RFCXML | YANG | Yes |
-| yanglint |
 
 ## Status
 
@@ -110,5 +108,4 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | Warren Kumari | Warren Kumari | Unknown | No | None | 
 | [**xym**](https://github.com/xym-tool/xym) | Multiple | Cisco Systems | Revised BSD | Yes | Einar Nilsen-Nygaard |
 | [**YANG validator**](https://github.com/YangCatalog/bottle-yang-extractor-validator) | Multiple | IETF Trust | Simplified BSD | Yes | Pantheon |
-| yanglint |
 

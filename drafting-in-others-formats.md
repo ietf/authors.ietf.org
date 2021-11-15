@@ -1,8 +1,8 @@
 ---
-title: Drafting in other formats 
+title: Drafting in other formats
 description: 
 published: true
-date: 2021-11-15T09:52:10.355Z
+date: 2021-11-15T10:01:44.857Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-19T09:01:14.498Z
@@ -26,21 +26,21 @@ Most of these toolchains are not widely used and in some cases rely on tools tha
 
 lyx2rfc is unmaintained and was last updated in 2014.
 
-# Nroff format
-Nroff is a text formatting program that produces output suitable for fixed-width files. An out of date [Nroff template](https://www.rfc-editor.org/materials/3-nroff.template) is available with a similarly out of date [tutorial](https://www.rfc-editor.org/materials/nroff.html).
+# nroff format
+nroff is a text formatting program that produces output suitable for fixed-width files. An out of date [Nroff template](https://www.rfc-editor.org/materials/3-nroff.template) is available with a similarly out of date [tutorial](https://www.rfc-editor.org/materials/nroff.html).
 
 [xml2rfc] can convert an I-D in RFC XML into Nroff format.
   
-## 1. Emacs editor in Nroff mode
+## 1. Emacs editor in nroff mode
 The popular open source editor Emacs includes [Nroff mode](https://www.gnu.org/software/emacs/manual/html_node/emacs/Nroff-Mode.html).
 
-## 2. Nroff with Nroff Edit
-[Nroff Edit](https://aaa-sec.com/nroffedit/) is a Java based WYSIWYG editor for writing and editing Internet-Drafts in Nroff. The Nroff based Internet-Draft file is edited in the left window while the resulting compiled text version is instantly shown in the right Window as a result of any edit changes.
+## 2. nroff with Nroff Edit
+[nroff Edit](https://aaa-sec.com/nroffedit/) is a Java based WYSIWYG editor for writing and editing Internet-Drafts in nroff. The nroff based Internet-Draft file is edited in the left window while the resulting compiled text version is instantly shown in the right Window as a result of any edit changes.
 
 Nroff Edit is unmaintained and was last updated in 2015.
 
-## 3. Nroff with nroff2xml
-[nroff2xml](https://github.com/tomaszmrugalski/nroff2xml) is a Python script that converts a file in Nroff format into v2 RFC XML.  
+## 3. nroff with nroff2xml
+[nroff2xml](https://github.com/tomaszmrugalski/nroff2xml) is a Python script that converts a file in nroff format into v2 RFC XML.  
 
 nroff2xml is unmaintained and was last updated in 2013.
 

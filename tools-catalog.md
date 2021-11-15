@@ -2,11 +2,14 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-11-12T14:52:47.501Z
+date: 2021-11-15T01:28:07.737Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
 ---
+
+# Introduction
+While there are many tools that can be used by I-D authors, there are some that have been specifically developed to support I-D authors and are commonly referred to.  This catalog is a reference catalog for these tools and is intended to supplement the task/context-specific mentions of the tools elsewhere in this documentation, not replace it.
 
 # Feature classification of tools
 The catalog below includes a feature classification which lists the following for each tool:
@@ -47,15 +50,14 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**id2xml**]() | Convert plain text I-D into RFCXML |
 | [**idnits**]() | Check plain text I-D for submission nits |
 | [**idspell**]() | Checks the spelling in I-Ds |
-| [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Generates RFCXML from Markdown |
-| [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Converts Lyx documents to RFCXML and then transforms using xml2rfc |
-| [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Converts AsciiRFC into RFCXML |
-| [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Converts nroff I-D sources into xml2rfc format (xml) |
+| [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Generates RFCXML from Markdown documents |
+| [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Generates RFCXML from Lyx (LaTeX) documents and then transforms using xml2rfc |
+| [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Generates RFCXML from AsciiRFC (AsciiDoc) documents |
+| [**mmark**](https://mmark.miek.nl) | Generates RFCXML from Markdown documents |
+| [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Generates RFCXML from nroff documents |
 | [**pyang**](https://github.com/mbj4668/pyang) | Validates and converts YANG modules |
-| rfcdiff | |
-| SMICng | |
-| smilint | |
-| svgcheck | |
+| [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Side-by-side comparison of an I-D and another version or an RFC |
+| [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Validates RFC-specific SVG and generates conformant SVG |
 | xml2rfc | |
 | xml2rfc-xxe | |
 | xym | |
@@ -75,12 +77,11 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Build, CLI, Web | Convert, Validate | Markdown | RFCXML | Yes |
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | ? | Validate, Convert | LaTeX(Lyx) | ? | No |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Build, CLI | Validate, Convert | AsciiDoc(AsciiRFC) | RFCXML | Yes |
+| [**mmark**](https://mmark.miek.nl) | Validate, Convert | Build, CLI | Markdown | RFCXML | Yes |
 | [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Build, CLI | Convert | nroff | RFCXML(old) | No |
 | [**pyang**](https://github.com/mbj4668/pyang) | Build, CLI | Validate, Convert | YANG | ? | N/A |
-| rfcdiff |
-| SMICng |
-| smilint |
-| svgcheck |
+| [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Web | Compare | Plain text | - | N/A |
+| [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Build, CLI, Web | Validate, Convert | SVG | SVG | Yes |
 | xml2rfc |
 | xml2rfc-xxe |
 | xym |
@@ -92,7 +93,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | Tool | Author | Ownership | License | Maintained | Maintainer |
 | :--- | :----- | :-------- | :------ | :--------- | :--------- |
 | [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Yaron Sheffer | Yaron Sheffer | Public domain | Yes | Yaron Sheffer |
-| [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Yaron Sheffer | Yaron Sheffer | Unknown | Unsure | Yaron Sheffer |
+| [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Yaron Sheffer | Yaron Sheffer | Unknown | Unknown | Yaron Sheffer |
 | [**bap**](https://github.com/ietf-tools/bap) | Bill Fenner | Bill Fenner | Unknown | No | None | 
 | [**id2xml**]() | Henrik Levkowetz | IETF Trust | Simplified BSD | Unknown | Unknown |
 | [**idnits**]() | Henrik Levkowetz | Henrik Levkowetz | GPL | Yes | Tools Team |
@@ -100,12 +101,11 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Carsten Bormann | Carsten Bormann | MIT | Yes | Carsten Bormann |
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Nico Williams | Nico Williams | Unknown | No | None |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Ribose | Ribose | Simplified BSD | Yes | Ribose |
+| [**mmark**](https://mmark.miek.nl) | Miek Gieben | Miek Gieben | Simplified BSD | Yes | Miek Gieben |
 | [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Tomek Mrugalski | IETF Trust | Simplified BSD | No | None |
 | [**pyang**](https://github.com/mbj4668/pyang) | Martin Bjorklund | Martin Bjorklund | ISC | Yes | Martin Bjorklund |
-| rfcdiff |
-| SMICng |
-| smilint |
-| svgcheck |
+| [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Henrik Levkowetz | Henrik Levkowetz | Unknown | Unknown | Unknown |
+| [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Jim Schaad | IETF Trust | Simplied BSD | Yes | Tools Team |
 | xml2rfc |
 | xml2rfc-xxe | | | | 
 | xym |

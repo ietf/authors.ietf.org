@@ -2,7 +2,7 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-11-15T01:28:07.737Z
+date: 2021-11-15T02:03:29.636Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
@@ -58,9 +58,9 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**pyang**](https://github.com/mbj4668/pyang) | Validates and converts YANG modules |
 | [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Side-by-side comparison of an I-D and another version or an RFC |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Validates RFC-specific SVG and generates conformant SVG |
-| xml2rfc | |
-| xml2rfc-xxe | |
-| xym | |
+| [**xml2rfc**]() | Validates RFCXML and plain text I-Ds and converts to multiple output formats |
+| [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | A configuration to assist editing xml2rfc-format documents using XMLMind XML Editor |
+| [**xym**](https://github.com/xym-tool/xym) | Extracts YANG modules from I-Ds and RFCs |
 | YANG validator |
 | yanglint | |
 
@@ -82,9 +82,9 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**pyang**](https://github.com/mbj4668/pyang) | Build, CLI | Validate, Convert | YANG | ? | N/A |
 | [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Web | Compare | Plain text | - | N/A |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Build, CLI, Web | Validate, Convert | SVG | SVG | Yes |
-| xml2rfc |
-| xml2rfc-xxe |
-| xym |
+| [**xml2rfc**]() | Build, CLI, Web | Validate, Convert | RFCXML, RFCXML(old), Plain text | RFCXML Plain text, PDF, HTML, HTMLised, EPUB, nroff | Yes |
+| [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | Editor | Validate, Insert | RFCXML(old) | RFCXML(old) | No |
+| [**xym**](https://github.com/xym-tool/xym) | Build, CLI | Extract | RFCXML | YANG | Yes |
 | YANG validator |
 | yanglint |
 
@@ -106,9 +106,9 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**pyang**](https://github.com/mbj4668/pyang) | Martin Bjorklund | Martin Bjorklund | ISC | Yes | Martin Bjorklund |
 | [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Henrik Levkowetz | Henrik Levkowetz | Unknown | Unknown | Unknown |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Jim Schaad | IETF Trust | Simplied BSD | Yes | Tools Team |
-| xml2rfc |
-| xml2rfc-xxe | | | | 
-| xym |
+| [**xml2rfc**]() | Henrik Levkowetz | IETF Trust | Simplified BSD | Yes | Tools Team |
+| [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | Warren Kumari | Warren Kumari | Unknown | No | None | 
+| [**xym**](https://github.com/xym-tool/xym) | Multiple | Cisco Systems | Revised BSD | Yes | Einar Nilsen-Nygaard |
 | YANG validator |
 | yanglint |
 

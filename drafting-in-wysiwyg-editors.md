@@ -1,25 +1,23 @@
 ---
-title: Drafting in WYSIWYG editors
+title: Drafting in word processors
 description: 
 published: true
-date: 2021-10-10T22:20:32.677Z
+date: 2021-11-15T09:47:25.575Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:58:56.227Z
 ---
 
-WYSIWYG is used here to mean the class of tools where the author uses a GUI with no visibility of the underlying document format. 
+# Word processor toolchains
+A number of community members use word processors for I-D authoring because they are familiar with them and because they have good support for collaborative editing.
 
-## WYSIWYG toolchains
-The toolchains listed here support WYSIWYG editing.
+## 1. MS Word with RFC 5385 template and tool
+The [Template for Internet-Drafts and RFCs for WinXP MS Word 2000+](https://www.strayalpha.com/tools/) comprises an MS Word template and a Perl script for converting your resulting .docx file into RFCXML.  This is fully documented in [RFC 5385](https://datatracker.ietf.org/doc/html/rfc5385).
 
-### 1. MS Word with RFC 5385 template and tool
-The [Template for Internet-Drafts and RFCs for WinXP MS Word 2000+](https://www.strayalpha.com/tools/) comprises an MS Word template and a Perl script for converting your resulting .docx file into RFC XML.  This is fully documented in [RFC 5385](https://datatracker.ietf.org/doc/html/rfc5385).
+## 2. MS Word with RFC Tool
+[RFC Tool](https://github.com/hallambaker/PHB-Build-Tools/tree/master/DocTools/rfctool) converts .docx files from MS Word into RFCXML.  This is documented in [draft-hallambaker-rfctool](https://datatracker.ietf.org/doc/html/draft-hallambaker-rfctool).
 
-### 2. MS Word with RFC Tool
-[RFC Tool](https://github.com/hallambaker/PHB-Build-Tools/tree/master/DocTools/rfctool) converts .docx files from MS Word into RFC XML.  This is documented in [draft-hallambaker-rfctool](https://datatracker.ietf.org/doc/html/draft-hallambaker-rfctool).
+# Supporting tools
 
-## Other WYSIWYG
-In addiiton to the toolchains listed above, a number of the [XML toolchains](/drafting-in-xml) support near-WYSIWYG drafting.
-
-Other WYSIWYG editors, such as LibreOffice, are not listed because there is no support for exporting or converting to RFC XML, though that can be used for Plain Text drafting.
+## 1. xml2docx
+[xml2docx](https://github.com/evyncke/xml2docx) generates an Office Open XML (.DOCX) format document from an RFCXML document.

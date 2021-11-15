@@ -1,12 +1,14 @@
 ---
-title: Author Tools web service
+title: Core tools and web services
 description: 
 published: true
-date: 2021-11-12T12:43:05.643Z
+date: 2021-11-15T08:55:06.614Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T12:37:54.926Z
 ---
+
+Whatever format you choose to 
 
 The IETF provides a [web service](https://author-tools.ietf.org) that supports a range of common tasks, thereby reducing the need for authors to install and maintain key tools locally.  
 

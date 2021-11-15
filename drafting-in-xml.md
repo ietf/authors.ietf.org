@@ -2,7 +2,7 @@
 title: Drafting in XML
 description: 
 published: true
-date: 2021-11-04T19:57:13.584Z
+date: 2021-11-15T08:40:56.290Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:56:56.326Z
@@ -24,15 +24,18 @@ The following XML toolchains have been reported as in use by IETF community memb
 ### 1. Emacs editor in nXML Mode
 The popular open source editor Emacs includes [nXML Mode](https://www.gnu.org/software/emacs/manual/html_mono/nxml-mode.html), which enables validation and schema-sensitive editing when you use an RNC schema. 
 
-### 2. XMLmind XML Editor (XXE) with xml2rfc-xxe
-[XMLmind XML Editor (XXE)](https://www.xmlmind.com/xmleditor/) is a commercial near-WYSIWYG XML editor with a free edition for personal use.  XXE supports RNC schema validation and context-sensitive editing.
+### 2. Other text editors
+IETF community members report using a range of text editors some of which provide specific support for XML editing and some of which don't, and validating the RFCXML externally.
 
-A community developed configuration for XXE, [xml2rfc-xxe](https://github.com/wkumari/xml2rfc-xxe/) is available, providing additional context-sensitive editing features. 
-
-### 3. Oxygen XML Editor
-[Oxygen XML Editor](https://www.oxygenxml.com/xml_editor.html) is a commercial XML editing tool that comes in different versions with a number of different licensing options. All versions support RELAX NG validation and some support syntax highlighting and intelligent auto-completion. The premium version also supports collaborative edIting, including tracked changes and comment review.
+### 3. Commercial XML Editors
+The one commercial XML editor that we are aware of people using is [Oxygen XML Editor](https://www.oxygenxml.com/xml_editor.html).  This tool comes in different versions with a number of different licensing options, though all versions support RELAX NG validation and some support syntax highlighting and intelligent auto-completion. The premium version also supports collaborative edIting, including tracked changes and comment review.
 
 The same company also makes [Oxygen Content Fusion](https://www.oxygenxml.com/content_fusion.html), which support web-based collaborative editing and document review.
+  
+### 4. XMLmind XML Editor (XXE) with xml2rfc-xxe
+[XMLmind XML Editor (XXE)](https://www.xmlmind.com/xmleditor/) is a commercial near-WYSIWYG XML editor with a free edition for personal use.  XXE supports RNC schema validation and context-sensitive editing.
+
+A community developed configuration for XXE, [xml2rfc-xxe](https://github.com/wkumari/xml2rfc-xxe/) is available, providing additional context-sensitive editing features, however this does not support the latest version of RFCXML and is unsupported.
 
 ## Supporting tools
 Authors writing in XML may find the following tools helpful:

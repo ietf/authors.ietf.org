@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2021-11-16T10:25:39.542Z
+date: 2021-11-16T10:28:18.579Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -38,7 +38,7 @@ All of the **draft-tools-\*** templates above aleady have this processing instru
 [rfc7749.rnc]() is the RelaxNG Compact Schema for the version of RFCXML described in RFC7749.  It is provided as a legacy schema for those working with old I-Ds or RFCs.
 
 ## Character entities
-In XML a character entity is a way of using a name in the XML, such as `&nbhy;` that can be used in place of the character itself (in this example the 'non-breaking hyphen' character).
+In XML a character entity is a way of using a name in the XML, such as `&nbhy;` in place of the character itself (in this example the 'non-breaking hyphen' character).
 
 RFCXML documents can reference a set of character entities to assist authors
 ### rfcxml-standard.ent

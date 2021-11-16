@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2021-11-16T10:28:18.579Z
+date: 2021-11-16T21:58:25.023Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -10,14 +10,14 @@ dateCreated: 2021-11-15T10:07:09.043Z
 
 # RFCXML
 ## Templates
-### draft-tools-rfcxml-template-annotated
-[draft-tools-rfcxml-template-annotated.xml]() is an RFCXML template that includes examples for almost all of the features of RFCXML and many examples of how to achieve specific formatting, along with ample comments to explain the examples.
+### draft-rfcxml-general-template-annotated
+[draft-rfcxml-general-template-annotated.xml]() is an RFCXML template that includes examples for almost all of the features of RFCXML and many examples of how to achieve specific formatting, along with ample comments to explain the examples.
 
-### draft-tools-rfcxml-template-standard
-[draft-tools-rfcxml-template-annotated.xml]() is an RFCXML template that includes examples of the most commonly used features of RFCXML with comments explaining how to customise them.  This template can be quickly turned into an I-D by editing the examples provided. 
+### draft-rfcxml-general-template-standard
+[draft-rfcxml-general-template-annotated.xml]() is an RFCXML template that includes examples of the most commonly used features of RFCXML with comments explaining how to customise them.  This template can be quickly turned into an I-D by editing the examples provided. 
 
-### draft-tools-rfcxml-template-bare
-[draft-tools-rfcxml-template-bare.xml]() is an RFCXML template for experienced authors who want to start from the barest template possible. This template validates correctly but is not a valid I-D as many key sections are missing.
+### draft-rfcxml-general-template-bare
+[draft-rfcxml-general-template-bare.xml]() is an RFCXML template for experienced authors who want to start from the barest template possible. This template validates correctly but is not a valid I-D as many key sections are missing.
 
 ## Schema
 
@@ -30,12 +30,6 @@ All of the **draft-tools-\*** templates above aleady have this processing instru
 
 ### SVG-1.2-RFC.rnc
 [SVG-1.2-RFC.rnc]() is the RelaxNG Compact schema for the current subset of SVG allowed in RFCXML documents.  This schema is referenced in rfc7991bis.rnc and so no specific processing instruction is required to include it but a local copy must be present. 
-
-### rfc7991.rnc
-[rfc7991.rnc]() is the RelaxNG Compact Schema for the version of RFCXML described in RFC7991.  It is provided as a legacy schema for those working with old I-Ds or RFCs.
-
-### rfc7749.rnc
-[rfc7749.rnc]() is the RelaxNG Compact Schema for the version of RFCXML described in RFC7749.  It is provided as a legacy schema for those working with old I-Ds or RFCs.
 
 ## Character entities
 In XML a character entity is a way of using a name in the XML, such as `&nbhy;` in place of the character itself (in this example the 'non-breaking hyphen' character).
@@ -53,6 +47,14 @@ To use this set of character entities, the following line must appear in your XM
 ```xml
 <!DOCTYPE rfc SYSTEM "rfcxml-standard.ent">
 ```
+
+## Legacy files
+The following files are legacy files for those working with old I-Ds or RFCs and should not be used for any new I-Ds.
+
+* [rfc7991.rnc]() is the RelaxNG Compact Schema for the version of RFCXML described in RFC7991.
+* [rfc7749.rnc]() is the RelaxNG Compact Schema for the version of RFCXML described in RFC7749.
+* [rfc2629-other.ent]() is small set of character entities.
+
 
 # Markdown
 ## Templates

@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2021-11-16T10:16:06.643Z
+date: 2021-11-16T10:25:39.542Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -51,7 +51,7 @@ This set of character entities includes:
 To use this set of character entities, the following line must appear in your XML source:
 
 ```xml
-<!DOCTYPE rfc SYSTEM "rfc2629-xhtml.ent">
+<!DOCTYPE rfc SYSTEM "rfcxml-standard.ent">
 ```
 
 # Markdown

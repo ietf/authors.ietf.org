@@ -2,7 +2,7 @@
 title: Drafting in XML
 description: 
 published: true
-date: 2021-11-15T10:12:59.080Z
+date: 2021-11-16T09:15:54.964Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:56:56.326Z

@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-17T09:43:49.515Z
+date: 2021-11-17T09:55:31.809Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -2806,6 +2806,8 @@ If the reference is not an RFC or Internet-Draft that is in the v3 format, the e
 If the **section** attribute is present, the rendering will, for most cominations of the **format** and **sectionFormat**, have two links; one external link to the specific part of the referenced document, and one internal link to the [**\<reference\>**](/rfcxml-vocabulary#reference) entry.
 
 The  **format** attribute affect the internal link rendering only, and the **sectionFormat** attribute affects the rendering of the external link and its textual relationship to the internal link only.
+
+See [References in RFCXML](/references-in-rfcxml) for more information.
 
 Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<cref\>**](/rfcxml-vocabulary#cref), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<dt\>**](/rfcxml-vocabulary#dt), [**\<em\>**](/rfcxml-vocabulary#em), [**\<li\>**](/rfcxml-vocabulary#li), [**\<name\>**](/rfcxml-vocabulary#name), [**\<strong\>**](/rfcxml-vocabulary#strong), [**\<sub\>**](/rfcxml-vocabulary#sub), [**\<sup\>**](/rfcxml-vocabulary#sup), [**\<t\>**](/rfcxml-vocabulary#t), [**\<td\>**](/rfcxml-vocabulary#td), [**\<th\>**](/rfcxml-vocabulary#th), [**\<tt\>**](/rfcxml-vocabulary#tt).
 Allowed content: ( text | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) )*

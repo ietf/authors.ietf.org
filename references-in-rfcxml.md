@@ -2,7 +2,7 @@
 title: References in RFCXML
 description: 
 published: true
-date: 2021-11-17T09:17:17.927Z
+date: 2021-11-17T09:34:21.864Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T23:45:18.949Z
@@ -27,7 +27,7 @@ All are cited textually in the same manner, by using [**\<xref\>**](/rfcxml-voca
 * The anchors for Internet-Drafts are "I-D.<name without "draft-" or the version number>".
 
 # Inserting references manually
-A complete example for an RFC:
+The following complete example is for an RFC (verbatim contents of [https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml](https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml)):
 ```xml
 <reference anchor="RFC2119" target="https://www.rfc-editor.org/info/rfc2119">
   <front>
@@ -84,8 +84,7 @@ Use the [**\<displayreference\>**](/rfcxml-vocabulary#displayreference) element 
 <displayreference target="RFC7296" to="IKEv2"/>
 <references>
 [...]
-<xi:include
-    href="https://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.7296.xml"/>
+<xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.7296.xml"/>
 ```
 yields:
 ```
@@ -119,12 +118,12 @@ yields
 
 Another option is using xref and creating a reference that uses the **target** attribute for the URL. For example:
 ```xml
-    <reference anchor="W3C" target="https://www.w3.org/">
-        <front>
-            <title>World Wide Web Consortium (W3C)</title>
-            <author/>
-        </front>
-    </reference>
+<reference anchor="W3C" target="https://www.w3.org/">
+  <front>
+    <title>World Wide Web Consortium (W3C)</title>
+    <author/>
+  </front>
+</reference>
 ```
 yields
 ```
@@ -134,30 +133,29 @@ yields
 
 Use the [**\<name\>**](/rfcxml-vocabulary#name) element (child of the [**\<references\>**](/rfcxml-vocabulary#references) element) as follows:
 ```xml
-    <back>
-      <references>
-        <name>Normative References</name>
-        ...
-      </references>
-      <references>
-        <name>Informative References</name>
-        ...
-      </references>
-    </back>
+<back>
+  <references>
+    <name>References</name>
+    <references>
+      <name>Normative References</name>
+      ...
+    </references>
+    <references>
+      <name>Informative References</name>
+      ...
+    </references>
+  </references>
+</back>
 ```
 # Creating a reference to a BCP (or STD) that contains multiple RFCs
 
 Use [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) with an `xi:include` for each RFC inside of it:
 ```xml
 <referencegroup anchor="STD78" target="https://www.rfc-editor.org/info/std78">
-  <xi:include
-   href="https://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.5343.xml"/>
-  <xi:include
-   href="https://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.5590.xml"/>
-  <xi:include
-   href="https://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.5591.xml"/>
-  <xi:include
-   href="https://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.6353.xml"/>
+  <xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.5343.xml"/>
+  <xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.5590.xml"/>
+  <xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.5591.xml"/>
+  <xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.6353.xml"/>
 </referencegroup>
 ```
 which yields

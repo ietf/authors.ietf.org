@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-17T09:39:24.293Z
+date: 2021-11-17T09:43:49.515Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -121,7 +121,7 @@ When multiple [**\<artwork\>**](/rfcxml-vocabulary#artwork) instances are provid
 If more than one [**\<artwork\>**](/rfcxml-vocabulary#artwork) element with the same **type** is found within an [**\<artset\>**](/rfcxml-vocabulary#artset) element, the renderer could select the first one, or possibly choose between the alternative instances based on the output format and some quality of the alternatives that make one more suitable than the others for that particular format, such as size, aspect ratio, etc.
 
 Used in: [**\<aside\>**](/rfcxml-vocabulary#aside), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<figure\>**](/rfcxml-vocabulary#figure), [**\<li\>**](/rfcxml-vocabulary#li), [**\<section\>**](/rfcxml-vocabulary#section), [**\<td\>**](/rfcxml-vocabulary#td), [**\<th\>**](/rfcxml-vocabulary#th)
-Allowed content: [**\<artwork\>**](rfcxml-elements#artwork)+
+Allowed content: [**\<artwork\>**](/rfcxml-vocabulary#artwork)+
 
 ### Attributes
 #### anchor

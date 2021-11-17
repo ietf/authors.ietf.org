@@ -2,7 +2,7 @@
 title: References in RFCXML
 description: 
 published: true
-date: 2021-11-17T09:34:21.864Z
+date: 2021-11-17T09:48:55.881Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T23:45:18.949Z
@@ -10,8 +10,8 @@ dateCreated: 2021-11-04T23:45:18.949Z
 
 # Introduction
 RFCXML uses references that are encoded in a format called BibXML, as defined in RFC 7991. To simplify the process of inserting references, the IETF maintains a set of online citation libraries as follows:
-* For RFCs the official site is [rfc-editor.org](https://rfc-editor.org/). The reference can be accessed from the information page for each RFC.
-* For RFCs, Internet-Drafts, and documents produced by the W3C, 3GPP, IANA and NIST the current site is [xml2rfc.tools.ietf.org]().
+* For RFCs the official site is [rfc-editor.org](https://rfc-editor.org/). The information page for each RFC has a link to the BibXML file.
+* For RFCs, Internet-Drafts, and documents produced by the W3C, 3GPP, IANA and NIST the current site is [xml2rfc.tools.ietf.org]().  Many of these sets of references can be downloaded as a set for offline access.
 
 # Inserting a reference from a library
 Use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section thet points to a citation in the library as follows.

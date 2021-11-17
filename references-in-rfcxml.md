@@ -2,7 +2,7 @@
 title: References in RFCXML
 description: 
 published: true
-date: 2021-11-17T09:59:57.019Z
+date: 2021-11-17T10:02:08.318Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T23:45:18.949Z
@@ -13,8 +13,8 @@ RFCXML uses references that are encoded in a format called BibXML, as defined in
 * For RFCs the official site is [rfc-editor.org](https://rfc-editor.org/). The information page for each RFC has a link to the BibXML file.
 * For RFCs, Internet-Drafts, and documents produced by the W3C, 3GPP, IANA and NIST the current site is [xml2rfc.tools.ietf.org]().  Many of these sets of references can be downloaded as a set for offline access.
 
-# Insert references from a library
-Use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section thet points to a citation in the library as follows.
+# Inserting references from a library
+Use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section that points to a citation in the library as follows.
 ```xml
 <xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml"/>
 ```
@@ -26,7 +26,7 @@ All are cited textually in the same manner, by using [**\<xref\>**](/rfcxml-voca
 * The anchors for RFCs are "RFCNNNN" (4 digits, using leading zeros)
 * The anchors for Internet-Drafts are "I-D.<name without "draft-" or the version number>".
 
-# Insert references manually
+# Inserting references manually
 The following complete example is for an RFC (verbatim contents of [https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml](https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml)):
 ```xml
 <reference anchor="RFC2119" target="https://www.rfc-editor.org/info/rfc2119">
@@ -71,12 +71,12 @@ An example of a reference written by an organisation is:
 </reference>
 ```
 
-# Change all reference tags from symbolic to numeric
+# Changing all reference tags from symbolic to numeric
 For example, `[1]` instead of `[RFC2119]`
 
 In the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, set the attribute **symRefs** to "no" for symbolic references. This makes reference tags be numeric, e.g., `[1]`, instead of symbolic, e.g., `[RFC2119]`.
 
-# Change a reference tag to use a nickname
+# Changing a reference tag to use a nickname
 For example, `[IKEv2]` instead of `[RFC4306]`
 
 Use the [**\<displayreference\>**](/rfcxml-vocabulary#displayreference) element and set the **to** attribute to the nickname. Tip: place it before the first references element. For example:
@@ -93,11 +93,11 @@ yields:
              (IKEv2)", STD 79, RFC 7296, DOI 10.17487/RFC7296, 
              October 2014, <https://www.rfc-editor.org/info/rfc7296>.
 ```
-# List references in alphabetical order
+# Listing references in alphabetical order
 
 In the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, set the attribute **sortRefs** to "yes". Note that **sortRefs** only has an effect if **symRefs** is "yes".
 
-# Reference a URL
+# Referencing a URL
 
 The [**\<eref\>**](/rfcxml-vocabulary#eref) element for an external reference creates a link in the HTML output. For example:
 ```xml
@@ -147,7 +147,7 @@ Use the [**\<name\>**](/rfcxml-vocabulary#name) element (child of the [**\<refer
   </references>
 </back>
 ```
-# Create a reference to a BCP (or STD) that contains multiple RFCs
+# Creating a reference to a BCP (or STD) that contains multiple RFCs
 
 Use [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) with an `xi:include` for each RFC inside it:
 ```xml
@@ -178,7 +178,7 @@ which yields
 
              <https://www.rfc-editor.org/info/std78>
 ```
-# Cross-reference to another section
+# Cross-referencing to another section
 
 Make sure the section you want to reference has an **anchor** attribute. For example:
 ```xml
@@ -194,7 +194,7 @@ which yields
 ```
 (where the number of that section is determined dynamically).
 
-# Refer to a section in another document such as another RFC
+# Referring to a section in another document such as another RFC
 
 Use [**\<xref\>**](/rfcxml-vocabulary#xref) and set the **sectionFormat** attribute to various options.
 
@@ -205,7 +205,7 @@ Use [**\<xref\>**](/rfcxml-vocabulary#xref) and set the **sectionFormat** attrib
 
 When **sectionFormat** is not set at all, the output is the same as "of".
 
-# Link to multiple sections within a document 
+# Linking to multiple sections within a document 
 For example, 'see Sections 3 and 4'.
 
 Use [**\<xref\>**](/rfcxml-vocabulary#xref) with the format attribute. For example, assuming the anchors for the relevant sections match the targets:
@@ -227,7 +227,7 @@ yields the output:
   See <a href="#s_using_refs">Using References</a> and 
   <a href="#s_using_lists">Using Lists.</a>
 ```
-# Link to multiple sections in a different document 
+# Linking to multiple sections in a different document 
 For example, 'see Sections 5 and 6 in RFC 3550'.
 
 Use [**\<xref\>**](/rfcxml-vocabulary#xref) with sectionFormat="bare". For example:

@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-17T08:01:09.378Z
+date: 2021-11-17T08:25:58.002Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -1527,7 +1527,9 @@ and renders as:
 ## reference
 ## Tabs {.tabset}
 ### Usage
-Represents a bibliographic reference. [**\<reference\>**](/rfcxml-vocabulary#reference) should only be used for references where a BibXML file does not exist.  See [References in RFCXML](/references-in-rfcxml) for more information.
+Represents a bibliographic reference. [**\<reference\>**](/rfcxml-vocabulary#reference) should only be used for references where a BibXML file does not exist.  
+
+See [References in RFCXML](/references-in-rfcxml) for more information.
 
 Used in: [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) and [**\<references\>**](/rfcxml-vocabulary#references).
 Allowed content: [**\<stream\>**](/rfcxml-vocabulary#stream)?, [**\<front\>**](/rfcxml-vocabulary#front), ( [**\<annotation\>**](/rfcxml-vocabulary#annotation) | [**\<refcontent\>**](/rfcxml-vocabulary#refcontent) | [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) )*

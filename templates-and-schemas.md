@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2021-11-17T00:07:15.145Z
+date: 2021-11-17T00:08:33.418Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -26,7 +26,7 @@ dateCreated: 2021-11-15T10:07:09.043Z
 ```
 <?xml-model href="rfc7991bis.rnc"?>
 ```
-All of the **draft-tools-\*** templates above aleady have this processing instruction included and so will support schema validation and schema-aware editing out of the box.
+All of the templates above aleady have this processing instruction included and so will support schema validation and schema-aware editing out of the box.
 
 ### SVG-1.2-RFC.rnc
 [SVG-1.2-RFC.rnc]() is the RelaxNG Compact schema for the current subset of SVG allowed in RFCXML documents.  This schema is referenced in rfc7991bis.rnc and so no specific processing instruction is required to include it but a local copy must be present. 

@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-17T09:36:45.519Z
+date: 2021-11-17T09:39:24.293Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -45,7 +45,7 @@ Document-wide unique identifier for this element.
 ### Usage
 Provides address information for the author.
 
-Used in: [**\<author\>**](rfcxml#author), [**\<contact\>**](/rfcxml-vocabulary#contact)
+Used in: [**\<author\>**](/rfcxml-vocabulary#author), [**\<contact\>**](/rfcxml-vocabulary#contact)
 Allowed content: [**\<postal\>**](/rfcxml-vocabulary#postal)?, [**\<phone\>**](/rfcxml-vocabulary#phone)?, [**\<email\>**](/rfcxml-vocabulary#email)\*, [**\<uri\>**](/rfcxml-vocabulary#uri)?
 ### Schema
 ```

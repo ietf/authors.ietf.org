@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2021-11-16T21:58:25.023Z
+date: 2021-11-17T00:07:15.145Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -49,7 +49,7 @@ To use this set of character entities, the following line must appear in your XM
 ```
 
 ## Legacy files
-The following files are legacy files for those working with old I-Ds or RFCs and should not be used for any new I-Ds.
+The following legacy files are for those working with old I-Ds or RFCs and should not be used for any new I-Ds.
 
 * [rfc7991.rnc]() is the RelaxNG Compact Schema for the version of RFCXML described in RFC7991.
 * [rfc7749.rnc]() is the RelaxNG Compact Schema for the version of RFCXML described in RFC7749.

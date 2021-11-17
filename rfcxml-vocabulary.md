@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-17T02:49:11.620Z
+date: 2021-11-17T08:01:09.378Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -1469,7 +1469,7 @@ Allowed content: ( ( [**\<city\>**](/rfcxml-vocabulary#city) | [**\<cityarea\>**
 ## postalLine
 ## Tabs {.tabset}
 ### Usage
-Represents one line of a postal address. When more than one [**\<postalLine\>**](/rfcxml-vocabulary#postalLine) is given, the prep tool emits them in the order given.
+Represents one line of a postal address. When more than one [**\<postalLine\>**](/rfcxml-vocabulary#postalLine) is provided, they are rendered in the order given.
 
 Used in: [**\<postal\>**](/rfcxml-vocabulary#postal).
 Allowed content: text
@@ -1491,9 +1491,14 @@ The ASCII equivalent of the [**\<postalLine\>**](/rfcxml-vocabulary#postalLine) 
 ## refcontent
 ## Tabs {.tabset}
 ### Usage
-Text that should appear between the title and the date of a reference. The purpose of this element is to obviate the need for abuse of [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) in order to add such text.
+Text that should appear between the title and the date of a [**\<reference\>**](/rfcxml-vocabulary#reference). [**\<refcontent\>**](/rfcxml-vocabulary#refcontent) should be used in preference to incorrectly using [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) where the publication is not part of a recognised series.
 
-For example:
+
+Used in: [**\<reference\>**](/rfcxml-vocabulary#reference).
+Allowed content: ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) )*
+
+### Examples
+The following [**\<reference\>**](/rfcxml-vocabulary#reference) uses [**\<refcontent\>**](/rfcxml-vocabulary#refcontent):
 ```xml
 <reference anchor="April1"> 
   <front> 
@@ -1504,13 +1509,10 @@ For example:
   <refcontent>Self-published pamphlet</refcontent> 
 </reference>
 ```
-would render as:
-
+and renders as:
 ```
     [April1] Phunny, K., "On Being A Fool", Self-published pamphlet, April 2000.
 ```
-Used in: [**\<reference\>**](/rfcxml-vocabulary#reference).
-Allowed content: ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) )*
 
 ### Schema
 ```
@@ -1525,7 +1527,7 @@ Allowed content: ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<em\>*
 ## reference
 ## Tabs {.tabset}
 ### Usage
-Represents a bibliographic reference.
+Represents a bibliographic reference. [**\<reference\>**](/rfcxml-vocabulary#reference) should only be used for references where a BibXML file does not exist.  See [References in RFCXML](/references-in-rfcxml) for more information.
 
 Used in: [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) and [**\<references\>**](/rfcxml-vocabulary#references).
 Allowed content: [**\<stream\>**](/rfcxml-vocabulary#stream)?, [**\<front\>**](/rfcxml-vocabulary#front), ( [**\<annotation\>**](/rfcxml-vocabulary#annotation) | [**\<refcontent\>**](/rfcxml-vocabulary#refcontent) | [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) )*
@@ -1562,7 +1564,9 @@ Holds the URI for the reference.
 ## referencegroup
 ## Tabs {.tabset}
 ### Usage
-Represents a list of bibliographic references that will be represented as a single reference. This is most often used to reference STDs and BCPs, where a single reference (such as "BCP 9") may encompass more than one RFC.
+Represents a list of bibliographic references that will be represented as a single reference. This is most often used to reference STDs and BCPs, where a single reference (such as "BCP 9") may encompass more than one RFC.  
+
+See [References in RFCXML](/references-in-rfcxml) for more information.
 
 Used in: [**\<references\>**](/rfcxml-vocabulary#references).
 Allowed content: [**\<reference\>**](/rfcxml-vocabulary#reference)+
@@ -1589,20 +1593,10 @@ Holds an URI for the reference group, analogous to the **target** attribute of [
 ## references
 ## Tabs {.tabset}
 ### Usage
-Contains a set of bibliographic references.
+Contains a set of bibliographic references.  In general, the [**\<name\>**](/rfcxml-vocabulary#name) child element should be either "Normative References" or "Informative References".
 
-In the early days of the RFC Series, there was only one References section per RFC. This convention was later changed to group references into two sets, "Normative" and "Informative", as described in RFC7322. This element supports the split with the [**\<name\>**](/rfcxml-vocabulary#name) child element. In general, the title should be either "Normative References" or "Informative References".
+See [References in RFCXML](/references-in-rfcxml) for more information.
 
-The recommended way to include references to RFCs and Internet-Drafts is to use the standard XML XInclude mechanism. Here is an example:
-```xml
-<references>
-<name>Normative References</name>
-<!--RTP-->
-<xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml"/>
-<!--SIP-->
-<xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.3261.xml"/>
-</references>
-```
 Used in: [**\<back\>**](/rfcxml-vocabulary#back) and [**\<references\>**](/rfcxml-vocabulary#references).
 Allowed content: [**\<name\>**](/rfcxml-vocabulary#name)?, ( [**\<references\>**](/rfcxml-vocabulary#references)+ | ( [**\<reference\>**](/rfcxml-vocabulary#reference) | [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) )* )
 

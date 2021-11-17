@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-08T13:48:24.041Z
+date: 2021-11-17T02:49:11.620Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -1598,11 +1598,9 @@ The recommended way to include references to RFCs and Internet-Drafts is to use 
 <references>
 <name>Normative References</name>
 <!--RTP-->
-<xi:include href=
-"https://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.3550.xml"/>
+<xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml"/>
 <!--SIP-->
-<xi:include href=
-"https://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.3261.xml"/>
+<xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.3261.xml"/>
 </references>
 ```
 Used in: [**\<back\>**](/rfcxml-vocabulary#back) and [**\<references\>**](/rfcxml-vocabulary#references).

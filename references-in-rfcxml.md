@@ -2,7 +2,7 @@
 title: References in RFCXML
 description: 
 published: true
-date: 2021-11-17T09:13:23.275Z
+date: 2021-11-17T09:17:17.927Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T23:45:18.949Z
@@ -55,6 +55,18 @@ A bare minimum example is:
       <organization/>
     </author>
     <date year="2006"/>
+  </front>
+</reference>
+```
+An example of a reference written by an organisation is:
+```xml
+<reference anchor="org_ref" target="http://www.example.com/">
+  <front>
+    <title>Organisational Reference</title>
+    <author>
+      <organization>Example Inc.</organization>
+    </author>
+    <date year="2001"/>
   </front>
 </reference>
 ```

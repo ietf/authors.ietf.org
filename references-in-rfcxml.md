@@ -2,48 +2,62 @@
 title: References in RFCXML
 description: 
 published: true
-date: 2021-11-05T20:10:34.486Z
+date: 2021-11-17T09:13:23.275Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T23:45:18.949Z
 ---
 
-# Inserting a reference from a library
-RFCXML uses references that are encoded in a format called BibXML, as defined in RFC 7991. A set of online citation libraries are maintained on [xml2rfc.tools.ietf.org](). They include citations for RFCs, Internet-Drafts, and documents produced by the W3C and 3GPP, among others.
+# Introduction
+RFCXML uses references that are encoded in a format called BibXML, as defined in RFC 7991. To simplify the process of inserting references, the IETF maintains a set of online citation libraries as follows:
+* For RFCs the official site is [rfc-editor.org](https://rfc-editor.org/). The reference can be accessed from the information page for each RFC.
+* For RFCs, Internet-Drafts, and documents produced by the W3C, 3GPP, IANA and NIST the current site is [xml2rfc.tools.ietf.org]().
 
+# Inserting a reference from a library
 Use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section thet points to a citation in the library as follows.
 ```xml
-<xi:include
-    href="https://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml"/>
+<xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml"/>
 ```
 For an Internet-Draft, the citation filename uses the draft string. For example:
 ```xml
-<xi:include
-    href="https://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-wgname-topic.xml"/>
+<xi:include href="https://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-wgname-topic.xml"/>
 ```
-Preferably, use the citation libraries. However, another option is to include the full reference element. Here's a template of a reference element:
-```xml
-    <reference anchor="" target="">
-        <front>
-            <title></title>
-            <author initials="" surname="" fullname="">
-                <organization />
-            </author>
-            <date month="" year="" />
-        </front>
-        <seriesInfo name="" value="" />
-        <refcontent></refcontent>
-    </reference>
-```
-All are cited textually in the same manner -- by using [**\<xref\>**](/rfcxml-vocabulary#xref) elements where the target corresponds to the anchor of the reference element, e.g., `<xref target="RFC2119" />`. 
+All are cited textually in the same manner, by using [**\<xref\>**](/rfcxml-vocabulary#xref) elements where the target corresponds to the anchor of the reference element, e.g., `<xref target="RFC2119" />`. 
 * The anchors for RFCs are "RFCNNNN" (4 digits, using leading zeros)
 * The anchors for Internet-Drafts are "I-D.<name without "draft-" or the version number>".
 
-There are several ways to find the full reference element:
-
-1. Keep a local copy of the citation libraries. They are available from https://xml2rfc.tools.ietf.org [xml2rfc].
-1. Use a browser to look it up online, e.g., https://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml, and copy the page source.
-1. Run xml2rfc with output mode set to XML. The output will include the complete reference elements for any entities and includes.
+# Inserting references manually
+A complete example for an RFC:
+```xml
+<reference anchor="RFC2119" target="https://www.rfc-editor.org/info/rfc2119">
+  <front>
+    <title>Key words for use in RFCs to Indicate Requirement Levels</title>
+    <author initials="S." surname="Bradner" fullname="S. Bradner">
+      <organization/>
+    </author>
+    <date year="1997" month="March"/>
+    <abstract>
+      <t>In many standards track documents several words are used to signify the requirements in the specification. These words are often capitalized. This document defines these words as they should be interpreted in IETF documents. This document specifies an Internet Best Current Practices for the Internet Community, and requests discussion and suggestions for improvements.
+      </t>
+    </abstract>
+  </front>
+  <seriesInfo name="BCP" value="14"/>
+  <seriesInfo name="RFC" value="2119"/>
+  <seriesInfo name="DOI" value="10.17487/RFC2119"/>
+</reference>
+```
+A bare minimum example is:
+```xml
+<reference anchor="min_ref">
+  <front>
+    <title>Minimal Reference</title>
+    <author initials="authInitials" surname="authSurName">
+      <organization/>
+    </author>
+    <date year="2006"/>
+  </front>
+</reference>
+```
 
 # Change the reference tags from symbolic to numeric
 For example, `[1]` instead of `[RFC2119]`

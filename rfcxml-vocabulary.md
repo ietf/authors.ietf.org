@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-17T08:25:58.002Z
+date: 2021-11-17T09:36:45.519Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -1647,7 +1647,8 @@ The ASCII equivalent of the [**\<region\>**](/rfcxml-vocabulary#region) content.
 ## rfc
 ## Tabs {.tabset}
 ### Usage
-This is the root element of the xml2rfc vocabulary.
+This is the root element of RFCXML.
+
 Allowed content: [**\<link\>**](/rfcxml-vocabulary#link)\*, [**\<front\>**](/rfcxml-vocabulary#front), [**\<middle\>**](/rfcxml-vocabulary#middle), [**\<back\>**](/rfcxml-vocabulary#back)?
 
 ### Attributes

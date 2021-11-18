@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2021-11-18T09:17:46.555Z
+date: 2021-11-18T09:20:03.556Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -10,6 +10,7 @@ dateCreated: 2021-11-15T10:07:09.043Z
 
 # RFCXML
 ## Templates
+To use one of these templates you will also need to download both of the schemas and the character entity file below and keep them all in the same directory.
 
 ### draft-rfcxml-general-template-standard.xml
 [draft-rfcxml-general-template-standard.xml]() is an RFCXML template that includes examples of the most commonly used features of RFCXML with comments explaining how to customise them.  This template can be quickly turned into an I-D by editing the examples provided. 

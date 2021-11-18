@@ -2,7 +2,7 @@
 title: Drafting in other formats
 description: 
 published: true
-date: 2021-11-15T10:01:44.857Z
+date: 2021-11-18T10:07:48.333Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-19T09:01:14.498Z

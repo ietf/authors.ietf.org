@@ -23,7 +23,8 @@ You may want to do the following (for the sake of generating good output and hav
 * Review each [**\<artwork\>**](/rfcxml-vocabulary#artwork).
   * Should it be [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode)? If so, what type?
   * Should it be a table?
-* Search for URLs; should these be [**\<eref\>**](/rfcxml-vocabulary#eref)?
+* Check for misuse of lists where [**\<aside\>**] or [**\<blockquote\>**] might be more appropriate.
+* Search for URLs; should these be [**\<eref\>**](/rfcxml-vocabulary#eref) or should a full reference be created and linked using [**\<xref\>**]?
 * Look for equations or other text where new features may improve clarity.
 * Search for hardcoded citation tags (e.g., `[RFC5234]`) and update to [**\<xref\>**](/rfcxml-vocabulary#xref)s.
 * Search for "section" and make a link for any section number in RFCs and I-Ds (using [**\<xref\>**](/rfcxml-vocabulary#xref) with **section** and **sectionFormat** attributes).

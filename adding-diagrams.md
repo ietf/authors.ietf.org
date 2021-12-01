@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-01T22:15:19.104Z
+date: 2021-12-01T22:22:09.748Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -225,3 +225,12 @@ For reference, the following tools are also known to generate SVG.  If you use a
 ### Details
 [Textik](https://textik.com/) is a web based interactive ASCII diagramming tool.  It only supports ASCII characters.  Textik is [open source](https://github.com/astashov/tixi).
 
+# Examples
+## SVG examples
+[RFC 9115](https://www.rfc-editor.org/rfc/rfc9115.html#figure-1) (Figures 1, 11 - 14)
+[RFC 9100](https://www.rfc-editor.org/rfc/rfc9100.html#figure-1) (Figure 1)
+[RFC 9043](https://www.rfc-editor.org/rfc/rfc9043.html#figure-4) (Figures 4 - 17, 22, 23, 29, 30)
+[RFC 8899](https://www.rfc-editor.org/rfc/rfc8899.html#figure-1) (Figures 1 - 5)
+[RFC 8989](https://www.rfc-editor.org/rfc/rfc8989.html#figure-1) (Figures 1 - 4)
+
+Some extracted SVG diagrams are also [available](https://www.rfc-editor.org/materials/format/svg/)

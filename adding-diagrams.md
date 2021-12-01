@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-01T02:36:00.258Z
+date: 2021-12-01T22:02:40.090Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -38,9 +38,37 @@ Your SVG diagrams must conform to the SVG profile "SVG 1.2 RFC" as documented in
 
 See [Document Validation](/document-validation) for details of how to validate your SVG.
 
-# Tools that generate SVG
+# Tools to generate SVG
 
-The following tools are known to be used to generate SVG:
+The following tools are known to be used by community members to generate SVG:
+
+## Dia
+## {.tabset}
+### Details
+Dia is a program to draw structured diagrams.  It is open source and runs on Windows, OSX, GNU/Linux and Unix. For more details and downloads see [http://dia-installer.de](http://dia-installer.de).  Dia outputs SVG where text strings within the diagram are searchable and selectable.
+
+### Community tips
+#### Nevil Brownlee, July 2018
+Dia is simple to use. Save your drawing as xxx.dia, then export it as xxx.svg.
+
+Dia draws line-end arrowheads as filled polygons, and it doesn't use markers.
+
+## GoAT: Go ASCII Tool
+## {.tabset}
+### Details
+[GoAT](https://github.com/blampe/goat) takes ASCII diagrams and converts them into SVG.
+
+### Community tips
+#### Julian Reschke, October 2021
+(Extract from his [list email](https://mailarchive.ietf.org/arch/msg/rfc-interest/4wlkqfxZIFFPnvhHsmVwxthv_fE/))
+
+So the problem is that goat positions every non-line-art character
+separately.
+
+The [attached script](https://mailarchive.ietf.org/arch/msg/rfc-interest/4wlkqfxZIFFPnvhHsmVwxthv_fE/2/) will try to recombine SVG text elements that are
+"next" to each other (as produced by Goat, not in general!)
+
+The attachment [x.svg](https://mailarchive.ietf.org/arch/msg/rfc-interest/4wlkqfxZIFFPnvhHsmVwxthv_fE/3/) is the post-processed output for [https://www.rfc-editor.org/rfc/rfc8899.html#section-5-3.1.1](https://www.rfc-editor.org/rfc/rfc8899.html#section-5-3.1.1)
 
 ## Inkscape
 ## {.tabset}
@@ -65,17 +93,6 @@ Another nice feature of Inkscape is that its 'Resize page to content' lets you r
 This is good if you're used to LibreOffice, and your drawing is fairly simple.
 
 Create your drawing using Draw, group it into a single object, then export it. (For me, that makes an SVG diagram that emacs and Inkscape display properly, but Firefox donesn't - however, check-svg.py's rewritten SVG diagram displays properly in Firefox, with Draw's arrowheads displayed properly.)
-
-## Dia
-## {.tabset}
-### Details
-Dia is a program to draw structured diagrams.  It is open source and runs on Windows, OSX, GNU/Linux and Unix. For more details and downloads see [http://dia-installer.de](http://dia-installer.de).  Dia outputs SVG where text strings within the diagram are searchable and selectable.
-
-### Community tips
-#### Nevil Brownlee, July 2018
-Dia is simple to use. Save your drawing as xxx.dia, then export it as xxx.svg.
-
-Dia draws line-end arrowheads as filled polygons, and it doesn't use markers.
 
 ## Powerpoint
 ## {.tabset}
@@ -182,3 +199,13 @@ Adobe Illustrator is not open source but is included as some may have already ha
 ### Community tips
 #### Nevil Brownlee, July 2018
 If you're familiar with Adobe Illustrator, it can also be used. It can save files as SVG-t (i.e. SVG Tiny), which - I assume - means that drawings saved in SVG-t don't use arrowheads.
+
+## Other tools
+For reference, the following tools are also known to generate SVG.  If you use any of these tools then please send us any tips that should be included here.
+
+* [Graphviz](https://www.graphviz.org) (open source)
+* [LucidChart](https://www.lucidchart.com/) (paid)
+* [OmniGraffle](https://www.omnigroup.com/omnigraffle) (paid)
+* [Boxy SVG Editor](https://boxy-svg.com) (paid)
+
+# Tools to generate ASCII diagrams

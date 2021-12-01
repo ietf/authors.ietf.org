@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-01T02:24:22.022Z
+date: 2021-12-01T02:36:00.258Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -76,6 +76,103 @@ Dia is a program to draw structured diagrams.  It is open source and runs on Win
 Dia is simple to use. Save your drawing as xxx.dia, then export it as xxx.svg.
 
 Dia draws line-end arrowheads as filled polygons, and it doesn't use markers.
+
+## Powerpoint
+## {.tabset}
+### Details
+
+### Community tips
+#### Don Fedyk, April 2021
+If you have black and white diagrams in PowerPoint these can be copied and pasted into Inkscape. You can resize and position on Inkscape's default page or you can create a drawing size and adjust. Then you can save as a plain svg. PowerPoint can save natively into SVG as well but that SVG is very detailed.
+
+The plain SVG will have:
+```xml
+  width="210mm"
+  height="279mm"
+  viewBox="0 0 210 279" 
+```
+(or whatever your starting size was)
+
+It is easier to make Inkscape drawing size close to the dimensions you want before saving. For a 1/2 page drawing a full page may be used and the height can be adjusted, but sometimes the conversion will complain and the height/width have to be removed. See positioning tips.)
+
+Editing the basic svg:
+
+You will need to remove clipPath and metadata (it will probably look something like this):
+```xml
+ <defs
+    id="defs2">
+   <clipPath
+      id="clip0">
+     <rect
+        x="52"
+        y="349"
+        width="2159"
+        height="889"
+        id="rect10" />
+   </clipPath>
+ </defs>
+ <metadata
+    id="metadata5">
+   <rdf:RDF>
+     <cc:Work
+        rdf:about="">
+       <dc:format>image/svg+xml</dc:format>
+       <dc:type
+          rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+       <dc:title></dc:title>
+     </cc:Work>
+   </rdf:RDF>
+ </metadata>
+```
+The basic svg has some identifiers that must be removed:
+```
+font-weight
+font-family
+style="stroke-width:0.0911541"<...
+```
+The font-related ones can usually be deleted by deleting the whole line. The style one is part of a tspan tag and you must only remove the text. These VIM command line commands do it properly:
+```
+:1,$s/style="stroke.*"// 
+:g/font-weight/d   
+:g/font-family/d
+```
+At this point you can test the SVG either by including and running it in xml2rfc or using the SVG tester but xml2rfc catches more issues so I skip the tester. Rendering: `xml2rfc –pdf your_v3_xml_draft.xml`
+
+Another issue is with `<tspan>`s. It seems text is expanded to text and tspan tags. Sometimes the physical text is between `<text>like this</text>`and sometimes it is between `<text><tspan>like</tspan><tspan>this</tspan></text>`which is fine but with hyphenated text there are two issues. It might put the text between the tspan and text tags: `<text><tspan>fouled</tspan>-</tspan>up</text>` and you need to correct it by either moving the text or deleting the tags. The `xml2rfc –pdf` will complain about this. Simply moving the text inside the tspan tags works.
+
+Usually there are coordinates within the text and tspan tags - you want to keep those. Another issue is the coordinates of the text can cause the characters to overwrite in different tspans. `<text><tspan>fouled-up</tspan></text>` will print better than `<text><tspan>fouled</tspan>-up</tspan></text>`.
+
+Positioning: The ViewBox has x-min y-min
+```
+x="0" y="0" width="100%" height="100%"/
+```
+For a half page drawing from the original:
+```
+  width="210mm"
+  height="279mm"
+  viewBox="0 0 210 279" 
+           x y  w%   h%
+```
+
+The height controls the whitespace; if your drawing is 1/2 page you can usually reduce by 1/2 and it will only take 1/2 a page. Inch-based dimensions were harder to work with, and width and height had to be removed, but with mm dimensions the height could be reduced more before it complained. The x y controls move the origin; positive values for y move the origin down and the drawing upwards.
+
+Adjusted for 1/2 page it might look like this:
+```
+
+  width="210mm"
+  height="110mm"
+  viewBox="0 15 210 110"  
+```
+
+Note that the x dimension is unchanged; also, in my experience, the scaling is far from linear. A slightly large diagram needed these values but the difference from 50 to 30 on the veiwBox height was hardly noticeable.
+```
+
+  width="210mm"
+  height="135mm"
+  viewBox="0 52 210 30"
+```
+
+The scaling is constant whether the drawing is at the top or following other drawings. Two pictures easily fit with captions on a page using this.
 
 ## Adobe Illustrator
 ## {.tabset}

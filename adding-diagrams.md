@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-01T22:44:59.989Z
+date: 2021-12-01T22:45:37.134Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -20,9 +20,9 @@ If you are [drafting in XML](/drafting-in-xml) then your diagrams need to be pro
 
 ## Drafting in Markdown or another lightweight markup language
 If you are [drafting in Markdown](/drafting-in-markdown) or [another lightweight markup language](/drafting-in-other-formats) then your options depend on the toolchain you use:
-    1. Some tools allow you to specify an external SVG file
-    1. Some tools support embedded diagramming languages and manage the conversion of those into SVG
-    1. Some tools do not support SVG diagrams requiring you to use ASCII diagrams and/or add the SVG manually after the I-D has been converted to RFCXML.
+1. Some tools allow you to specify an external SVG file
+1. Some tools support embedded diagramming languages and manage the conversion of those into SVG
+1. Some tools do not support SVG diagrams requiring you to use ASCII diagrams and/or add the SVG manually after the I-D has been converted to RFCXML.
 
 ## Drafting in plain text
 For I-Ds that are submitted in plain text, any diagrams need to be included in ASCII inline in the text.

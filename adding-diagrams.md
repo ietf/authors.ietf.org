@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-01T02:19:57.587Z
+date: 2021-12-01T02:24:22.022Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -69,7 +69,7 @@ Create your drawing using Draw, group it into a single object, then export it. (
 ## Dia
 ## {.tabset}
 ### Details
-Dia is a program to draw structured diagrams.  It is open source and runs on Windows, OSX, GNU/Linux and Unix. For more details and downloads see [http://dia-installer.de](http://dia-installer.de)
+Dia is a program to draw structured diagrams.  It is open source and runs on Windows, OSX, GNU/Linux and Unix. For more details and downloads see [http://dia-installer.de](http://dia-installer.de).  Dia outputs SVG where text strings within the diagram are searchable and selectable.
 
 ### Community tips
 #### Nevil Brownlee, July 2018

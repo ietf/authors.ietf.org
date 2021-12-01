@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-01T22:02:40.090Z
+date: 2021-12-01T22:15:19.104Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -209,3 +209,19 @@ For reference, the following tools are also known to generate SVG.  If you use a
 * [Boxy SVG Editor](https://boxy-svg.com) (paid)
 
 # Tools to generate ASCII diagrams
+
+## Monodraw
+## {.tabset}
+### Details
+[Monodraw](https://monodraw.helftone.com) is an interactive ASCII diagramming tool that support both ASCII and extended Unicode box drawing characters.  It is paid, but very cheap, and MacOS only.  Monodraw can generate SVG but no information is available on the features used by the generated SVG.
+
+## asciiflow
+## {.tabset}
+### Details
+[asciiflow](https://asciiflow.com/#/) is a web based interactive ASCII diagramming tool. It support both ASCII and extended Unicode box drawing characters.  asciiflow only exports as text.
+
+## Textik
+## {.tabset}
+### Details
+[Textik](https://textik.com/) is a web based interactive ASCII diagramming tool.  It only supports ASCII characters.  Textik is [open source](https://github.com/astashov/tixi).
+

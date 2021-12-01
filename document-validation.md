@@ -2,7 +2,7 @@
 title: Document validation
 description: 
 published: true
-date: 2021-11-12T14:49:09.220Z
+date: 2021-12-01T01:53:43.630Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
@@ -33,6 +33,13 @@ When an I-D is submitted to Datatracker it automatically validates the I-D and r
 ## 5. Validating I-Ds in other formats
 Document validation is only possible for I-Ds written in XML or plain text.  An I-D authored in a different format needs to be converted to either XML or plain text and then validated using one of the methods above.
 
+# Validating SVG
+## 1. Validating use the Author Tools web service
+The [Author Tools](/https://author-tools.ietf.org) web service can validate your SVG and output a corrected SVG file if required.
+
+## 2. Validating locally with svgcheck
+[svgcheck](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) takes an XML file containing an SVG or an RFC document. It then compares all of the SVG elements with the schema defined in the document with RFC 7996 bis. The program has the option of modifying and writing out a version of the input that passes the defined schema. The [Author Tools](/https://author-tools.ietf.org) web service uses [svgcheck](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) in the background.
+
 # Validating formal languages
 There are a number of formal languages used in I-Ds and several tools have been written to help process them.
 
@@ -53,6 +60,3 @@ The MIB Doctors have produced three templates specifically aimed at drafts conta
 
 ## 5. Validate and convert YANG with pyang
 [pyang](https://github.com/mbj4668/pyang) validates YANG modules and converts them into other formal languages.
-
-## 6. Validate SVG with svgcheck
-[svgcheck](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) takes an XML file containing an SVG or an RFC document. It then compares all of the SVG elements with the schema defined in the document with RFC 7996 bis. The program has the option of modifying and writing out a version of the input that passes the defined schema.

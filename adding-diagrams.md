@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-01T22:22:09.748Z
+date: 2021-12-01T22:44:59.989Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -27,13 +27,13 @@ If you are [drafting in Markdown](/drafting-in-markdown) or [another lightweight
 ## Drafting in plain text
 For I-Ds that are submitted in plain text, any diagrams need to be included in ASCII inline in the text.
 
-# Accepted SVG - SVG 1.2 RFC
+# Allowable SVG - SVG 1.2 RFC
 Your SVG diagrams must conform to the SVG profile "SVG 1.2 RFC" as documented in RFC 7996 (which is in turn a subset of SVG Tiny 1.2) that has the following restrictions compared to standard SVG:
 * No animation
 * No interactivity
 * No scripting or other extensibility
 * No colour or grayscale, only black and white
-* Only 'serif', 'sans-serif', and 'monospace'generic font families from the WebFonts facility
+* Only 'serif', 'sans-serif', and 'monospace' generic font families from the WebFonts facility
 * Only ASCII links
 
 See [Document Validation](/document-validation) for details of how to validate your SVG.

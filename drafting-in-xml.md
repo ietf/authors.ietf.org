@@ -2,21 +2,15 @@
 title: Drafting in XML
 description: 
 published: true
-date: 2021-11-16T09:16:11.563Z
+date: 2021-12-01T01:02:00.219Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:56:56.326Z
 ---
 
-# Introducing RFCXML
 For an introduction to RFCXML see the [RFCXML overview and background](/rfcxml-overview) and for detailed documentation on each element and attribute see the [RFCXML vocabulary reference](/rfcxml-vocabulary).
 
-# What to look for in an XML toolchain
-There are two key features to look for in an XML toolchain:
-1. RNC schema validation. This ensures that your document is valid RFC XML as you type it.
-1. RNC aware editing support. 
-
-To take advantage of these features your XML code must include an [`<?xml-model ...>`](https://www.w3.org/TR/xml-model/) processing instruction as found in [Templates and schemas](/templates-and-schemas).
+Modern XML toolchains include advanced features that support XML editing including schema validation and schema-aware editing.  The templates provided at [Templates and schemas](/templates-and-schemas) contain the necessary code to make this work.
 
 # RFC XML toolchains
 The following XML toolchains have been reported as in use by IETF community members.  These are all interactive XML editors. 

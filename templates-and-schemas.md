@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2021-12-06T09:03:07.405Z
+date: 2021-12-06T09:15:15.338Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z

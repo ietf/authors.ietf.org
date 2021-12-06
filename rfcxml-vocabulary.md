@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-12-06T21:29:51.370Z
+date: 2021-12-06T21:37:30.339Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -1969,7 +1969,7 @@ Specifies the type of the source code. The value of this attribute is free text 
 Most of the preferred values for [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) types are language names, in a wide sense, such as "abnf", "asn.1", "bash", "c++", etc.
 
 The RFC Series Editor maintains a list of the preferred values on the RFC Editor web site at [https://www.rfc-editor.org/materials/sourcecode-types.txt](https://www.rfc-editor.org/materials/sourcecode-types.txt), and that list is updated over time. Thus, a consumer of RFCXML should not cause a failure when it encounters an unexpected type or no type is specified.
-### Example
+### Examples
 The following is a basic example of a c program as set by the **type** attribute, using a CDATA block because the source code contains angle brackets and a **name** attribute that suggests a file name for the extracted code:
 ```xml
 <sourcecode name="helloworld.c" type="c" markers="true">
@@ -1983,6 +1983,9 @@ The following is a basic example of a c program as set by the **type** attribute
   ]]>
 </sourcecode>
 ```
+
+Another example can be found at [https://www.rfc-editor.org/rfc/rfc8689.html#section-2-2.8.1](https://www.rfc-editor.org/rfc/rfc8689.html#section-2-2.8.1) where the  [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) element is within an [**\<li\>**](/rfcxml-vocabulary#li) and therefore indented to start at the same level of ident.
+
 ### Schema
 ```
    sourcecode =

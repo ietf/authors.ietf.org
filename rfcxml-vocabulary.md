@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-11-17T09:55:31.809Z
+date: 2021-12-06T21:29:51.370Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -1936,6 +1936,8 @@ This element allows the inclusion of source code into the document.
 
 When rendered, source code is always shown in a monospace font. When [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) is a child of [**\<figure\>**](/rfcxml-vocabulary#figure) or [**\<section\>**](/rfcxml-vocabulary#section), it provides full control of horizontal whitespace and line breaks. When formatted, it is indented relative to the left margin of the enclosing element. It is thus useful for source code and formal languages, such as ABNF (RFC5234) or the RNC notation used in this document. (When [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) is a child of other elements, it flows with the text that surrounds it.) Tab characters (U+0009) inside of this element are prohibited.
 
+The use of `<![CDATA[ ... ]]>` wrappers is recommended to avoid unxpected processing or issues with angle brackets. 
+
 For artwork such as character-based art, diagrams of message layouts, and so on, use the [**\<artwork\>**](/rfcxml-vocabulary#artwork) element instead.
 
 Output formatters that do pagination will attempt to keep source code on a single page. This is to prevent source code that is split across pages from looking like two separate pieces of code.
@@ -1967,6 +1969,20 @@ Specifies the type of the source code. The value of this attribute is free text 
 Most of the preferred values for [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) types are language names, in a wide sense, such as "abnf", "asn.1", "bash", "c++", etc.
 
 The RFC Series Editor maintains a list of the preferred values on the RFC Editor web site at [https://www.rfc-editor.org/materials/sourcecode-types.txt](https://www.rfc-editor.org/materials/sourcecode-types.txt), and that list is updated over time. Thus, a consumer of RFCXML should not cause a failure when it encounters an unexpected type or no type is specified.
+### Example
+The following is a basic example of a c program as set by the **type** attribute, using a CDATA block because the source code contains angle brackets and a **name** attribute that suggests a file name for the extracted code:
+```xml
+<sourcecode name="helloworld.c" type="c" markers="true">
+  <![CDATA[
+  #include <stdio.h>
+        
+  int main() {
+    printf("Hello World");
+    return 0;
+  }
+  ]]>
+</sourcecode>
+```
 ### Schema
 ```
    sourcecode =

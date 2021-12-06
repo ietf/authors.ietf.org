@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2021-12-06T09:15:15.338Z
+date: 2021-12-06T23:42:50.963Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -54,9 +54,16 @@ To use this set of character entities, the following line must appear in your XM
 ## Legacy files
 The following legacy files are for those working with old I-Ds or RFCs and should not be used for any new I-Ds.
 
-* [rfc7991.rnc]() is the RelaxNG Compact Schema for the version of RFCXML described in RFC7991.
-* [rfc7749.rnc]() is the RelaxNG Compact Schema for the version of RFCXML described in RFC7749.
-* [rfc2629-other.ent]() is small set of character entities.
+### rfc7991.rnc
+[rfc7991.rnc](https://github.com/ietf-authors/legacy-templates-and-schemas/blob/main/rfc7991.rnc) is the RelaxNG Compact Schema for the first release of v3 of RFCXML as documented in RFC7991.  Use [rfc7991bis.rnc](#rfc7991bisrnc) instead.
+### rfc7749.rnc
+[rfc7749.rnc](https://github.com/ietf-authors/legacy-templates-and-schemas/blob/main/rfc7749.rnc) is the RelaxNG Compact Schema for v2 of RFCXML as documented in RFC7749.  When originally published, this file was called v2.rnc.
+### rfc2629-other.ent
+[rfc2629-other.ent](https://github.com/ietf-authors/legacy-templates-and-schemas/blob/main/rfc2629-other.ent) is a small set of character entities. Use [rfcxml.ent](#rfcxmlent) instead as that combines both this file and [rfc2629-html.ent](#rfc2629-htmlent) into a single file.
+### rfc2629-html.ent
+[rfc2629-html.ent](https://github.com/ietf-authors/legacy-templates-and-schemas/blob/main/rfc2629-html.ent) is a larger set of character entities. Use [rfcxml.ent](#rfcxmlent) instead as that combines both this file and [rfc2629-other.ent](#rfc2629-otherent) into a single file.
+### rfc2629.dtd
+[rfc2629.dtd](https://github.com/ietf-authors/legacy-templates-and-schemas/blob/main/rfc2629.dtd) is the DTD for v1 of RFCXML as documented in RFC2629.
 
 
 # Markdown

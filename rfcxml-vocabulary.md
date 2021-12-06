@@ -1970,7 +1970,7 @@ Most of the preferred values for [**\<sourcecode\>**](/rfcxml-vocabulary#sourcec
 
 The RFC Series Editor maintains a list of the preferred values on the RFC Editor web site at [https://www.rfc-editor.org/materials/sourcecode-types.txt](https://www.rfc-editor.org/materials/sourcecode-types.txt), and that list is updated over time. Thus, a consumer of RFCXML should not cause a failure when it encounters an unexpected type or no type is specified.
 ### Examples
-The following is a basic example of a c program as set by the **type** attribute, using a CDATA block because the source code contains angle brackets and a **name** attribute that suggests a file name for the extracted code:
+The following is a basic example of a c program as set by the **type** attribute, using a CDATA block because the source code contains angle brackets, and a **name** attribute that suggests a file name for the extracted code:
 ```xml
 <sourcecode name="helloworld.c" type="c" markers="true">
   <![CDATA[

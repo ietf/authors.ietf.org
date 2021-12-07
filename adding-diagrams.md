@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-07T18:54:02.342Z
+date: 2021-12-07T18:56:04.538Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -25,11 +25,6 @@ For I-Ds that are submitted in plain text, all diagrams need to be included as A
 
 # Generating ASCII-art diagrams
 
-## Monodraw
-## {.tabset}
-### Details
-[Monodraw](https://monodraw.helftone.com) is an interactive ASCII diagramming tool that support both ASCII and extended Unicode box drawing characters.  It is paid, but very cheap, and MacOS only.  Monodraw can generate SVG but no information is available on the features used by the generated SVG.
-
 ## asciiflow
 ## {.tabset}
 ### Details
@@ -39,6 +34,11 @@ For I-Ds that are submitted in plain text, all diagrams need to be included as A
 ## {.tabset}
 ### Details
 [Textik](https://textik.com/) is a web based interactive ASCII diagramming tool.  It only supports ASCII characters.  Textik is [open source](https://github.com/astashov/tixi).
+
+## Monodraw
+## {.tabset}
+### Details
+[Monodraw](https://monodraw.helftone.com) is an interactive ASCII diagramming tool that support both ASCII and extended Unicode box drawing characters.  It is paid, but very cheap, and MacOS only.  Monodraw can generate SVG but no information is available on the features used by the generated SVG.
 
 # Generating SVG diagrams
 SVG can be generated in one of a number of methods:

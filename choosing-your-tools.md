@@ -2,7 +2,7 @@
 title: Choosing your format and tools
 description: 
 published: true
-date: 2021-11-15T09:49:42.198Z
+date: 2021-12-07T20:16:38.433Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T23:57:12.813Z
@@ -12,7 +12,7 @@ Writing Internet-Drafts is complex and time consuming and careful choice of auth
 
 # Understanding your options
 Your choice of format and tools is likely to depend on what markup languages and document editing tools you are familiar with, and how you intend to work.  Your options are:
-1. **RFCXML**.  This is the most popular choice as RFCXML is the markup language used for published RFCs and can be used end-to-end throughout the authoring process. However, RFCXML is also the most complex and best suits an author or group of co-authors who are very familiar with XML and who all have access to XML editing tools. Ideally these XML tools will support collaborative editing (more below).
+1. **RFCXML**.  This is the most popular choice as RFCXML is the markup language used for published RFCs and can be used end-to-end throughout the authoring process. However, RFCXML is also the most complex and best suits an author or group of co-authors who are very familiar with XML and who all have access to XML editing tools.
 1. **Markdown**.  This is the next most popular choice as Markdown is a simplified text markup language, used with one of the tools that converts Markdown to RFCXML. 
 1. **Other markup languages**.  If you are very familiar with one of the less well known text markup languages and their normal editors, for example LaTeX, nroff or Org Mode in Emacs, then this may be a good choice for you.  A number of these markup languages are supported by tools that can convert your text to either RFCXML or plain text I-D format, though they may not be as well maintained or fully featured as the Markdown tools.
 1. **Plain text**.  Plain text documents are still accepted for I-Ds submission and many people work with plain text in one of two ways:

@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2021-12-07T02:15:31.776Z
+date: 2021-12-07T02:16:32.016Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -68,6 +68,7 @@ The following legacy files are for those working with old I-Ds or RFCs and shoul
 
 # Markdown
 ## Templates
+None available
 
 ## Schemas
 Markdown doesn't yet have the concept of a schema.

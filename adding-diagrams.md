@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-07T01:03:56.812Z
+date: 2021-12-07T01:38:43.467Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -228,7 +228,7 @@ For reference, the following tools are also known to generate SVG.  If you use a
 [Textik](https://textik.com/) is a web based interactive ASCII diagramming tool.  It only supports ASCII characters.  Textik is [open source](https://github.com/astashov/tixi).
 
 # Examples
-## SVG examples
+## SVG in RFCs
 [RFC 9115](https://www.rfc-editor.org/rfc/rfc9115.html#figure-1) (Figures 1, 11 - 14)
 [RFC 9100](https://www.rfc-editor.org/rfc/rfc9100.html#figure-1) (Figure 1)
 [RFC 9043](https://www.rfc-editor.org/rfc/rfc9043.html#figure-4) (Figures 4 - 17, 22, 23, 29, 30)
@@ -236,3 +236,27 @@ For reference, the following tools are also known to generate SVG.  If you use a
 [RFC 8989](https://www.rfc-editor.org/rfc/rfc8989.html#figure-1) (Figures 1 - 4)
 
 Some extracted SVG diagrams are also [available](https://www.rfc-editor.org/materials/format/svg/)
+## Full example
+The followiong example has one [**\<artset\>**](https://authors.ietf.org/en/rfcxml-vocabulary#artset) element that contains two [**\<artwork\>**](https://authors.ietf.org/en/rfcxml-vocabulary#artwork) elements, each of a different type. The SVG is included directly and a **name** attribute provided to recommend a filename if the diagram is extracted.
+```xml
+<artset>
+  <artwork type="svg" name="box.svg">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="71.0" height="40.0" viewBox="0 0 71 40">
+      <g>
+        <title>Layer 1</title>
+        <rect x="4.5" y="6.5" width="61.0" height="27.0" stroke="black" stroke-width="1.0" stroke-linecap="square" stroke-linejoin="miter" fill="none" />
+        <text x="33.883" text-anchor="middle" y="26.559">
+          <tspan fill="black" font-size="13.0">A box</tspan>
+        </text>
+      </g>
+    </svg>
+  </artwork>
+  <artwork type="ascii-art" name="box.txt">
+    <![CDATA[
+ +--------+
+ | A box  |
+ +--------+          
+    ]]>
+  </artwork>
+</artset>      
+```

@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-12-06T21:37:30.339Z
+date: 2021-12-07T00:52:46.724Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -114,7 +114,7 @@ Allowed content: text
 ## artset
 ## Tabs {.tabset}
 ### Usage
-This element allows for the support of multiple artwork formats, in order to provide suitable artwork for different output formats.
+This element allows for the support of multiple artwork formats, in order to provide suitable artwork for different output formats.  See [Adding diagrams](/adding-diagrams) for more details on diagrams in general.
 
 When multiple [**\<artwork\>**](/rfcxml-vocabulary#artwork) instances are provided within one [**\<artset\>**](/rfcxml-vocabulary#artset) element, the renderer will try to pick the [**\<artwork\>**](/rfcxml-vocabulary#artwork) instance which is most appropriate for its current output format from the given alternatives.
 
@@ -141,7 +141,9 @@ Document-wide unique identifier for this element.
 ## artwork
 ## Tabs {.tabset}
 ### Usage
-This element allows the inclusion of artwork in the document. [**\<artwork\>**](/rfcxml-vocabulary#artwork) provides full control of horizontal whitespace and line breaks; thus, it is used for a variety of things, such as diagrams ("line art") and protocol unit diagrams. Tab characters (U+0009) inside of this element are prohibited.
+This element allows the inclusion of artwork in the document. [**\<artwork\>**](/rfcxml-vocabulary#artwork) provides full control of horizontal whitespace and line breaks; thus, it is used for a variety of things, such as diagrams ("line art") and protocol unit diagrams. See [Adding diagrams](/adding-diagrams) for more details on diagrams in general.
+
+Tab characters (U+0009) inside of this element are prohibited.
 
 Alternatively, the **src** attribute allows referencing an external graphics file, such as a vector drawing in SVG or a bitmap graphic file, using a URI. In this case, the textual content acts as a fallback for output representations that do not support graphics; thus, it ought to contain either (1) a "line art" variant of the graphics or (2) prose that describes the included image in sufficient detail.
 

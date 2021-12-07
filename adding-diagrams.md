@@ -2,17 +2,17 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-07T02:21:19.276Z
+date: 2021-12-07T18:51:56.087Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
 ---
 
 # Introduction
-Your diagrams can be provided in SVG, ASCII-art or both, depending on your authoring format and the format you submit your I-D in.
-*  If both are provided then SVG is used by the HTML and PDF renderer, and ASCII-art is used by the plain text renderer
-*  If only ASCII-art is provided then it is used in HTML, PDF and plain text rendering (see RFC9139 for example)
-*  If only SVG is provided then …
+Your diagrams can be provided in ASCII-art, SVG or both, depending on your authoring format and the format you submit your I-D in.
+*  If both are provided then SVG is used in the HTML and PDF rendering, and ASCII-art is used in the plain text rendering
+*  If only ASCII-art is provided then it is used in all rendering (see RFC9139 for example)
+*  If only SVG is provided then it is used in the HTML and PDF rendering but no diagram is included in the plain text rendering, only a message that says "Artwork only available as SVG".  For this reason, providing only SVG is not recommended.
 
 If you are [drafting in XML](/drafting-in-xml) then all the choices are open to you.
 
@@ -23,7 +23,30 @@ If you are [drafting in Markdown](/drafting-in-markdown) or [another lightweight
 
 For I-Ds that are submitted in plain text, all diagrams need to be included as ASCII-art inline in the text.
 
-# Allowable SVG - SVG 1.2 RFC
+# Generating ASCII-art diagrams
+
+## Monodraw
+## {.tabset}
+### Details
+[Monodraw](https://monodraw.helftone.com) is an interactive ASCII diagramming tool that support both ASCII and extended Unicode box drawing characters.  It is paid, but very cheap, and MacOS only.  Monodraw can generate SVG but no information is available on the features used by the generated SVG.
+
+## asciiflow
+## {.tabset}
+### Details
+[asciiflow](https://asciiflow.com/#/) is a web based interactive ASCII diagramming tool. It support both ASCII and extended Unicode box drawing characters.  asciiflow only exports as text.
+
+## Textik
+## {.tabset}
+### Details
+[Textik](https://textik.com/) is a web based interactive ASCII diagramming tool.  It only supports ASCII characters.  Textik is [open source](https://github.com/astashov/tixi).
+
+# Generating SVG diagrams
+SVG can be generated in one of a number of methods:
+1. Using an interactive diagramming tool that generates SVG
+1. Using a diagramming language that generates SVG
+1. Converting a diagram in another format into SVG
+1. Hand-coding the SVG
+
 Your SVG diagrams must conform to the SVG profile "SVG 1.2 RFC" as documented in RFC 7996 (which is in turn a subset of SVG Tiny 1.2) that has the following restrictions compared to standard SVG:
 * No animation
 * No interactivity
@@ -33,14 +56,6 @@ Your SVG diagrams must conform to the SVG profile "SVG 1.2 RFC" as documented in
 * Only ASCII links
 
 See [Document Validation](/document-validation) for details of how to validate your SVG.
-
-# Generating SVG diagrams
-
-SVG can be generated in one of a number of methods:
-1. Using an interactive diagramming tool that generates SVG
-1. Using a diagramming language that generates SVG
-1. Converting a diagram in another format into SVG
-1. Hand-coding the SVG
 
 The following tools are known to be used by community members to generate SVG using one or more of the methods above:
 
@@ -210,23 +225,6 @@ For reference, the following tools are also known to generate SVG.  If you use a
 * [LucidChart](https://www.lucidchart.com/) (paid)
 * [OmniGraffle](https://www.omnigroup.com/omnigraffle) (paid)
 * [Boxy SVG Editor](https://boxy-svg.com) (paid)
-
-# Generating ASCII-art diagrams
-
-## Monodraw
-## {.tabset}
-### Details
-[Monodraw](https://monodraw.helftone.com) is an interactive ASCII diagramming tool that support both ASCII and extended Unicode box drawing characters.  It is paid, but very cheap, and MacOS only.  Monodraw can generate SVG but no information is available on the features used by the generated SVG.
-
-## asciiflow
-## {.tabset}
-### Details
-[asciiflow](https://asciiflow.com/#/) is a web based interactive ASCII diagramming tool. It support both ASCII and extended Unicode box drawing characters.  asciiflow only exports as text.
-
-## Textik
-## {.tabset}
-### Details
-[Textik](https://textik.com/) is a web based interactive ASCII diagramming tool.  It only supports ASCII characters.  Textik is [open source](https://github.com/astashov/tixi).
 
 # Examples
 ## SVG in RFCs

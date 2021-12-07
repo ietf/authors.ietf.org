@@ -2,7 +2,7 @@
 title: Home
 description: Welcome to the Internet-Draft/RFC author resources site
 published: true
-date: 2021-12-07T20:34:05.687Z
+date: 2021-12-07T20:36:30.312Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T00:11:52.864Z
@@ -13,13 +13,13 @@ dateCreated: 2021-08-18T00:11:52.864Z
 > **!! THIS SITE IS STILL UNDER CONSTRUCTION AND THE INFORMATION ON IT SHOULD NOT BE TRUSTED UNTIL IT GOES LIVE !!**
 {.is-warning}
 
-This site is the central resource site for authors of an Internet-Draft (I-D), with information on how to write an I-D and the tools available to support this. 
+This site is the central resource site for authors of an Internet-Draft (I-D), with information on how to write an I-D and the tools available to support this. If you are new to authoring then start with the overview below, or if you are more familiar then the main menu lists multiple individual topics.
 
 > If you have been redirected here from **tools.ietf.org** then that site has been decommissioned.  The features available at that site have been replaced as follows:
 >*  The interactive tools are now at [https://author-tools.ietf.org](https://author-tools.ietf.org)
 >* The catalog of tools is now at [Tools catalog](/tools-catalog)
 >* The xml2rfc vocabulary documentation is now at [RFCXML Vocabulary](/rfcxml-vocabulary)
->* The repositories for the various tools are now in the [ietf-tools organisation on GitHub](https://github.com/ietf-tools)
+>* The repositories for the various tools are now in the [ietf-tools organisation on GitHub](https://github.com/ietf-tools).
 {.is-info}
 
 # Overview of the authoring process

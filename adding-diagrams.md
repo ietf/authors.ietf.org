@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-07T01:38:43.467Z
+date: 2021-12-07T02:21:19.276Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -75,7 +75,7 @@ The attachment [x.svg](https://mailarchive.ietf.org/arch/msg/rfc-interest/4wlkqf
 ## Inkscape
 ## {.tabset}
 ### Details
-
+[Inkscape](https://inkscape.org) is a professional quality, open source, vector graphics  editor that runs on Linux, Windows and MacOS.
 
 ### Community tips
 #### Nevil Brownlee, July 2018
@@ -88,7 +88,7 @@ Another nice feature of Inkscape is that its 'Resize page to content' lets you r
 ## LibreOffice Draw
 ## {.tabset}
 ### Details
-
+[LibreOffice Draw](https://www.libreoffice.org/discover/draw/) is an open source, vector graphics editor.
 
 ### Community tips
 #### Nevil Brownlee, July 2018
@@ -99,6 +99,7 @@ Create your drawing using Draw, group it into a single object, then export it. (
 ## Powerpoint
 ## {.tabset}
 ### Details
+Powerpoint is a commercial presentation tools with basic digramming capabilities, part of the MS Office suite. 
 
 ### Community tips
 #### Don Fedyk, April 2021

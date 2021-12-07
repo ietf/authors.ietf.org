@@ -2,30 +2,26 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-01T22:45:37.134Z
+date: 2021-12-07T01:03:20.518Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
 ---
 
 # Introduction
-Your options for adding diagrams depends on your choice of authoring format:
+Your diagrams can be provided in SVG, ASCII-art or both, depending on your authoring format and the format you submit your I-D in.
+*  If both are provided then SVG is used by the HTML and PDF renderer, and ASCII-art is used by the plain text renderer
+*  If only ASCII-art is provided then it is used in HTML, PDF and plain text rendering (see RFC9139 for example)
+*  If only SVG is provided then …
 
-## Drafting in XML
-If you are [drafting in XML](/drafting-in-xml) then your diagrams need to be provided in SVG format and optionally also in ASCII for use when the I-D is rendered in plain text.  The SVG can be generated in one of a number of ways:
-1. Using an interactive diagramming tool that generates SVG
-1. Using a diagramming language that generates SVG
-1. Converting a diagram in another format into SVG
-1. Hand-coding the SVG
+If you are [Drafting in xML](/drafting-in-xml) then all the choices are open to you.
 
-## Drafting in Markdown or another lightweight markup language
 If you are [drafting in Markdown](/drafting-in-markdown) or [another lightweight markup language](/drafting-in-other-formats) then your options depend on the toolchain you use:
 1. Some tools allow you to specify an external SVG file
 1. Some tools support embedded diagramming languages and manage the conversion of those into SVG
-1. Some tools do not support SVG diagrams requiring you to use ASCII diagrams and/or add the SVG manually after the I-D has been converted to RFCXML.
+1. Some tools do not support SVG diagrams requiring you to use ASCII-art diagrams and/or add the SVG manually after the I-D has been converted to RFCXML.
 
-## Drafting in plain text
-For I-Ds that are submitted in plain text, any diagrams need to be included in ASCII inline in the text.
+For I-Ds that are submitted in plain text, all diagrams need to be included as ASCII-art inline in the text.
 
 # Allowable SVG - SVG 1.2 RFC
 Your SVG diagrams must conform to the SVG profile "SVG 1.2 RFC" as documented in RFC 7996 (which is in turn a subset of SVG Tiny 1.2) that has the following restrictions compared to standard SVG:
@@ -38,9 +34,15 @@ Your SVG diagrams must conform to the SVG profile "SVG 1.2 RFC" as documented in
 
 See [Document Validation](/document-validation) for details of how to validate your SVG.
 
-# Tools to generate SVG
+# Generating SVG diagrams
 
-The following tools are known to be used by community members to generate SVG:
+SVG can be generated in one of a number of methods:
+1. Using an interactive diagramming tool that generates SVG
+1. Using a diagramming language that generates SVG
+1. Converting a diagram in another format into SVG
+1. Hand-coding the SVG
+
+The following tools are known to be used by community members to generate SVG using one or more of the methods above:
 
 ## Dia
 ## {.tabset}
@@ -208,7 +210,7 @@ For reference, the following tools are also known to generate SVG.  If you use a
 * [OmniGraffle](https://www.omnigroup.com/omnigraffle) (paid)
 * [Boxy SVG Editor](https://boxy-svg.com) (paid)
 
-# Tools to generate ASCII diagrams
+# Generating ASCII-art diagrams
 
 ## Monodraw
 ## {.tabset}

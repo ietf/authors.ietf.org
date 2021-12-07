@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-07T18:59:34.328Z
+date: 2021-12-07T19:22:23.960Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -235,7 +235,7 @@ For reference, the following tools are also known to generate SVG.  If you use a
 [RFC 8989](https://www.rfc-editor.org/rfc/rfc8989.html#figure-1) (Figures 1 - 4)
 
 Some extracted SVG diagrams are also [available](https://www.rfc-editor.org/materials/format/svg/)
-## ASCII-art and SVG in a single artset
+## ASCII-art and SVG in a single \<artset\>
 The followiong example has one [**\<artset\>**](https://authors.ietf.org/en/rfcxml-vocabulary#artset) element that contains two [**\<artwork\>**](https://authors.ietf.org/en/rfcxml-vocabulary#artwork) elements, each of a different type. The SVG is included directly and a **name** attribute provided to recommend a filename if the diagram is extracted.
 ```xml
 <figure>

@@ -2,7 +2,7 @@
 title: Rendering and converting
 description: 
 published: true
-date: 2021-11-15T09:57:01.777Z
+date: 2021-12-07T02:29:26.261Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-02T02:05:52.949Z
@@ -10,7 +10,7 @@ dateCreated: 2021-09-02T02:05:52.949Z
 
 It is common for authors to render (convert) their documents into a different format to make them easier to read, or to convert to another format for use in another tool. 
 
-# Rendering RFCXML
+# Rendering RFCXML into other formats
 There are three main ways to render RFCXML:
 1. Use the [Author Tools](/https://author-tools.ietf.org) web service
 1. Install [xml2rfc]() and run directly
@@ -31,8 +31,8 @@ Notes:
 <sup>2</sup> **CHM** is Microsoft's Compiled Help Module.
 
 
-# Rendering plain text
-There are three main ways to render RFCXML:
+# Rendering plain text into other formats
+There are three main ways to render plain text:
 1. Use the [Author Tools](/https://author-tools.ietf.org) web service
 1. Install [xml2rfc]() and run directly
 1. Install [id2xml]() and use that to convert your plain text to RFCXML and then follow the instructions for rendering RFCXML above

@@ -2,7 +2,7 @@
 title: Home
 description: Welcome to the Internet-Draft/RFC author resources site
 published: true
-date: 2021-12-07T20:36:30.312Z
+date: 2021-12-07T21:02:49.567Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T00:11:52.864Z
@@ -63,8 +63,12 @@ The canonical format for published RFCs is XML and the other published formats, 
 # Limitations of this site
 This site does not currently include the [Guidelines for I-D authors](https://www.ietf.org/standards/ids/guidelines/) though it is expected that this content will migrate here soon.
 
-This site does not cover the IETF [standards development process](https://www.ietf.org/standards/process/) or the RFC publication process.
+This site does not cover the IETF [standards development process](https://www.ietf.org/standards/process/) 
+
+This site does not cover the RFC publication process, which is documented on the [RFC Editor site](https://rfc-editor.org).
 
 # Contributing to this site
 The content for this site is available in [GitHub](https://github.com/ietf-authors/authors.ietf.org) and we welcome pull requests proposing changes from the community.
+
+Likewise, the [templates and schemas](/templates-and-schemas) available on this site are published on [GitHub](https://github.com/ietf-authors/rfcxml-templates-and-schemas) and we welcome pull requests proposing changes.
 

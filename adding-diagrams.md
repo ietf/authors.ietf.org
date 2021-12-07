@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-07T01:03:20.518Z
+date: 2021-12-07T01:03:56.812Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -14,7 +14,7 @@ Your diagrams can be provided in SVG, ASCII-art or both, depending on your autho
 *  If only ASCII-art is provided then it is used in HTML, PDF and plain text rendering (see RFC9139 for example)
 *  If only SVG is provided then …
 
-If you are [Drafting in xML](/drafting-in-xml) then all the choices are open to you.
+If you are [drafting in XML](/drafting-in-xml) then all the choices are open to you.
 
 If you are [drafting in Markdown](/drafting-in-markdown) or [another lightweight markup language](/drafting-in-other-formats) then your options depend on the toolchain you use:
 1. Some tools allow you to specify an external SVG file

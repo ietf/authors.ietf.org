@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-07T18:51:56.087Z
+date: 2021-12-07T18:54:02.342Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -10,9 +10,9 @@ dateCreated: 2021-11-17T10:06:49.972Z
 
 # Introduction
 Your diagrams can be provided in ASCII-art, SVG or both, depending on your authoring format and the format you submit your I-D in.
-*  If both are provided then SVG is used in the HTML and PDF rendering, and ASCII-art is used in the plain text rendering
 *  If only ASCII-art is provided then it is used in all rendering (see RFC9139 for example)
-*  If only SVG is provided then it is used in the HTML and PDF rendering but no diagram is included in the plain text rendering, only a message that says "Artwork only available as SVG".  For this reason, providing only SVG is not recommended.
+*  If both are provided then SVG is used in the HTML and PDF rendering, and ASCII-art is used in the plain text rendering
+*  If only SVG is provided then it is used in the HTML and PDF rendering but no diagram is included in the plain text rendering, replaced with a message that says "Artwork only available as SVG".  For this reason, providing only SVG is **not recommended**.
 
 If you are [drafting in XML](/drafting-in-xml) then all the choices are open to you.
 

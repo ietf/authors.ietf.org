@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-12-07T00:52:46.724Z
+date: 2021-12-07T01:12:26.441Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -114,7 +114,7 @@ Allowed content: text
 ## artset
 ## Tabs {.tabset}
 ### Usage
-This element allows for the support of multiple artwork formats, in order to provide suitable artwork for different output formats.  See [Adding diagrams](/adding-diagrams) for more details on diagrams in general.
+This element allows for the support of multiple artwork formats, in order to provide suitable artwork for different output formats.  See [Adding diagrams](/adding-diagrams) for more details on diagrams and SVG.
 
 When multiple [**\<artwork\>**](/rfcxml-vocabulary#artwork) instances are provided within one [**\<artset\>**](/rfcxml-vocabulary#artset) element, the renderer will try to pick the [**\<artwork\>**](/rfcxml-vocabulary#artwork) instance which is most appropriate for its current output format from the given alternatives.
 
@@ -141,7 +141,7 @@ Document-wide unique identifier for this element.
 ## artwork
 ## Tabs {.tabset}
 ### Usage
-This element allows the inclusion of artwork in the document. [**\<artwork\>**](/rfcxml-vocabulary#artwork) provides full control of horizontal whitespace and line breaks; thus, it is used for a variety of things, such as diagrams ("line art") and protocol unit diagrams. See [Adding diagrams](/adding-diagrams) for more details on diagrams in general.
+This element allows the inclusion of artwork in the document. [**\<artwork\>**](/rfcxml-vocabulary#artwork) provides full control of horizontal whitespace and line breaks; thus, it is used for a variety of things, such as diagrams ("line art") and protocol unit diagrams. See [Adding diagrams](/adding-diagrams) for more details on diagrams and SVG.
 
 Tab characters (U+0009) inside of this element are prohibited.
 
@@ -173,8 +173,6 @@ There are at least five ways to include SVG in artwork in Internet- Drafts:
 ```xml
 <artwork type="svg" src="diagram12.svg">
 ```
-
-The use of SVG in Internet-Drafts and RFCs is covered in much more detail in RFC7996.
 
 The above methods for inclusion of SVG art can also be used for including text artwork, but using a data: URI is probably confusing for text artwork.
 

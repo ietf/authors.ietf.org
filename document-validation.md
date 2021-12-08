@@ -2,7 +2,7 @@
 title: Document validation
 description: 
 published: true
-date: 2021-12-08T20:15:56.206Z
+date: 2021-12-08T20:53:11.304Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
@@ -26,7 +26,7 @@ Plain text I-Ds can be validated by running [idnits](https://github.com/ietf-too
 When an I-D is submitted to Datatracker it automatically validates the I-D and reports any errors.
 
 ## 5. Validating I-Ds in other formats
-Document validation is only possible for I-Ds written in XML or plain text.  An I-D authored in a different format needs to be converted to either XML or plain text and then validated using one of the methods above.
+Document validation is only possible for I-Ds written in RFCXML or plain text.  An I-D authored in a different format needs to be converted to either RFCXML or plain text and then validated using one of the methods above.
 
 # Validating SVG
 ## 1. Validating use the Author Tools web service

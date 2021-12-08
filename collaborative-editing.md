@@ -2,7 +2,7 @@
 title: Collaborative editing
 description: 
 published: true
-date: 2021-09-01T04:06:00.191Z
+date: 2021-12-08T17:58:32.371Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-25T04:21:06.810Z

@@ -2,7 +2,7 @@
 title: Drafting in XML
 description: 
 published: true
-date: 2021-12-01T01:02:00.219Z
+date: 2021-12-08T20:51:40.247Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:56:56.326Z
@@ -38,4 +38,4 @@ Authors writing in XML may find the following tools helpful:
 This [script](https://strayalpha.com/software/rfcxml/lookback-bcp-fix.pl) adds `<bcp14>` tags around RFC 2119 keywords in XML source.
 
 ## 2. bibtex2rfc
-[bibtex2rfc](https://github.com/yaronf/bibtex2rfc) converts BibTeX citations into BibXML references. The IETF publishes a [library of BibXML references](https://xml2rfc.tools.ietf.org), which should be checked first.
+[bibtex2rfc](https://github.com/yaronf/bibtex2rfc) converts BibTeX citations into BibXML references. See [References in RFCXML](/references-in-rfcxml) for more details.

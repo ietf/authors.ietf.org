@@ -2,7 +2,7 @@
 title: Document validation
 description: 
 published: true
-date: 2021-12-01T01:53:43.630Z
+date: 2021-12-08T01:04:26.614Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
@@ -22,10 +22,10 @@ Document validation is an important step for an Internet-Draft to ensure that it
 The [Author Tools](/https://author-tools.ietf.org) web service supports a wide range of formats for validation. 
 
 ## 2. Validating RFCXML I-Ds with xml2rfc
-RFCXML I-Ds can be validated by running [xml2rfc]() locally or as part of your build process
+RFCXML I-Ds can be validated by running [xml2rfc](https://github.com/ietf-tools/xml2rfc) locally or as part of your build process
 
 ## 3. Validating plain text I-Ds with idnits
-Plain text I-Ds can be validated by running [idnits]() locally or as part of your build service.
+Plain text I-Ds can be validated by running [idnits](https://github.com/ietf-tools/idnits-mirror) locally or as part of your build service.
 
 ## 4. Validating by submitting your I-D to Datatracker
 When an I-D is submitted to Datatracker it automatically validates the I-D and reports any errors.
@@ -47,7 +47,7 @@ There are a number of formal languages used in I-Ds and several tools have been 
 [rfcstrip](https://github.com/mbj4668/rfcstrip) extracts code components, YANG modules and SMIv2 modules from RFCs and I-Ds, and extracts and unfolds artwork from RFCs and I-Ds in XML format.
 
 ## 2. Extract and validate ABNF with bap
-[bap](https://github.com/fenner/bap) can extract and validate ABNF.  The extraction feature is available as a separate [web service](https://tools.ietf.org/abnf/) and the validation as a separate [web form](https://tools.ietf.org/tools/bap/abnf.cgi).
+[bap](https://github.com/ietf-tools/bap) can extract and validate ABNF.  The extraction feature is available as a separate [web service](https://tools.ietf.org/abnf/) and the validation as a separate [web form](https://tools.ietf.org/tools/bap/abnf.cgi).
 
 ## 3. MIB templates from the MIB doctors
 The MIB Doctors have produced three templates specifically aimed at drafts containing MIB modules: 

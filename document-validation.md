@@ -2,7 +2,7 @@
 title: Document validation
 description: 
 published: true
-date: 2021-12-08T01:04:26.614Z
+date: 2021-12-08T01:20:54.540Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
@@ -49,14 +49,8 @@ There are a number of formal languages used in I-Ds and several tools have been 
 ## 2. Extract and validate ABNF with bap
 [bap](https://github.com/ietf-tools/bap) can extract and validate ABNF.  The extraction feature is available as a separate [web service](https://tools.ietf.org/abnf/) and the validation as a separate [web form](https://tools.ietf.org/tools/bap/abnf.cgi).
 
-## 3. MIB templates from the MIB doctors
-The MIB Doctors have produced three templates specifically aimed at drafts containing MIB modules: 
-* The first is an [XML template](https://tools.ietf.org/tools/templates/mib-doc-template-xml.txt). Some advice echoing guidelines from RFC4181 is embedded in comments. 
-* A second template is a plain text [template for MIB documents with advice embedded](https://tools.ietf.org/tools/templates/mib-doc-template-advice.txt) in the document. 
-* A third template is a plain text [template with no advice included](https://tools.ietf.org/tools/templates/mib-doc-template-plain.txt).
-
-## 4. Extract and validate YANG with YANG Catalog
+## 3. Extract and validate YANG with YANG Catalog
 [YANG Catalog](https://www.yangvalidator.com/) is a website operated and maintained by the IETF that provides a central resource for the use of YANG, including the [YANG Validator](https://www.yangvalidator.com/yangvalidator).
 
-## 5. Validate and convert YANG with pyang
+## 4. Validate and convert YANG with pyang
 [pyang](https://github.com/mbj4668/pyang) validates YANG modules and converts them into other formal languages.

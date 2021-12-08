@@ -39,3 +39,7 @@ This [script](https://strayalpha.com/software/rfcxml/lookback-bcp-fix.pl) adds `
 
 ## 2. bibtex2rfc
 [bibtex2rfc](https://github.com/yaronf/bibtex2rfc) converts BibTeX citations into BibXML references. See [References in RFCXML](/references-in-rfcxml) for more details.
+
+## 3. i-d-template
+
+The [markdown page](./drafting-in-markdown#h-3-internet-draft-template-and-i-d-template) describes the use of the [i-d-template](https://github.com/martinthomson/i-d-template) and [internet-draft-template](https://github.com/martinthomson/internet-draft-template) projects for managing drafts.  These tools can be used to manage XML source, with most of the same [automation features](https://github.com/martinthomson/i-d-template/blob/main/doc/FEATURES.md#automation-features).

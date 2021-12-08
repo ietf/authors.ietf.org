@@ -2,7 +2,7 @@
 title: Drafting in Markdown
 description: 
 published: true
-date: 2021-12-08T17:58:58.333Z
+date: 2021-12-08T20:39:47.986Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:57:57.022Z
@@ -22,6 +22,11 @@ The IETF provides an [experimental web service implementation](https://xml2rfc.t
 
 ## 2. mmark
 [mmark](https://mmark.miek.nl) is an open source text processor that converts files written in its proprietary markdown syntax into RFC XML.
+
+## 3. internet-draft-template and i-d-template
+[internet-draft-template](https://github.com/martinthomson/internet-draft-template) and [i-d-template](https://github.com/martinthomson/i-d-template) are a pair of tools that work together together to provide an automated Markdown I-D build system in GitHub.  Behind the scenes, they use [kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) as the Markdown processor.
+
+To use these tools you start by [creating a new repository](https://github.com/martinthomson/internet-draft-template/generate) using internet-draft-template.  The new created repository includes a template Markdown file and the automation features of i-d-template.
 
 # Supporting tools
 Authors writing in Markdown may find the following tools helpful:

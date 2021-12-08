@@ -2,7 +2,7 @@
 title: Drafting in Markdown
 description: 
 published: true
-date: 2021-12-08T20:47:10.871Z
+date: 2021-12-08T20:47:44.355Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:57:57.022Z
@@ -14,7 +14,7 @@ Markdown is a lightweight markup language that is widely supported.  While Markd
 The following Markdown toolchains have been reported in common use by I-D authors.
 
 ## 1. kramdown-rfc2629
-[kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) is an open source text processor that converts files written in its proprietary markdown syntax into RFCXML. 
+[kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) it is an open source text processor that converts files written in its proprietary markdown syntax into RFCXML. 
 
 The [Author Tools](https://author-tools.ietf.org) web service supports kramdown-rfc2629 as one of its backend processors.
 

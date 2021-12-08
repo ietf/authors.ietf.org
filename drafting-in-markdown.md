@@ -2,7 +2,7 @@
 title: Drafting in Markdown
 description: 
 published: true
-date: 2021-12-08T01:01:30.884Z
+date: 2021-12-08T17:58:58.333Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:57:57.022Z

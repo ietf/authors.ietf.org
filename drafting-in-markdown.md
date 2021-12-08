@@ -2,7 +2,7 @@
 title: Drafting in Markdown
 description: 
 published: true
-date: 2021-12-08T20:45:53.330Z
+date: 2021-12-08T20:47:10.871Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:57:57.022Z
@@ -34,4 +34,4 @@ To use these tools you start by [creating a new repository](https://github.com/m
 Authors writing in Markdown may find the following tools helpful:
 
 ## 1. bibxml2md
-[bibxml2md](https://github.com/yaronf/bibxml2md) converts BibXML references into Markdown.  The IETF publishes a [library of BibXML references](https://xml2rfc.tools.ietf.org).
+[bibxml2md](https://github.com/yaronf/bibxml2md) converts BibXML references into Markdown.  See [References in RFCXML](/references-in-rfcxml) for more details.

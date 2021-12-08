@@ -2,18 +2,13 @@
 title: Document validation
 description: 
 published: true
-date: 2021-12-08T01:20:54.540Z
+date: 2021-12-08T20:15:56.206Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
 ---
 
 As your I-D evolves you will inevitably want to check the contents and validate the format at regular stages.
-
-# Checking spelling, grammar and terminology
-
-## 1. idspell
-[idspell](https://tools.ietf.org/tools/idspell/webservice) is a shell script that checks the spelling of plain text I-Ds. It requires GNU Aspell and supplements that with a [custom wordlist](tools.ietf.org/tools/idspell/ietf-words.wl) of common IETF terminology built from two years' of published RFCs, the surnames of I-D authors in the reference bibliography and a short list of manually added words.
 
 # Validating your Internet-Draft
 Document validation is an important step for an Internet-Draft to ensure that it is correctly formatted.  This is different from the syntax validation that some of the tools perform as you use them.

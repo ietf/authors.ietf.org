@@ -28,7 +28,7 @@ The [Author Tools](https://author-tools.ietf.org) web service supports mmark as 
 ## 3. internet-draft-template and i-d-template
 [internet-draft-template](https://github.com/martinthomson/internet-draft-template) and [i-d-template](https://github.com/martinthomson/i-d-template) are a pair of tools that work together together to provide an automated Markdown I-D build system in GitHub.  Behind the scenes, they use [kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) as the Markdown processor.
 
-To use these tools you start by [creating a new repository](https://github.com/martinthomson/internet-draft-template/generate) using internet-draft-template.  The new created repository includes a template Markdown file and the automation features of i-d-template.
+To use these tools you start by [creating a new repository](https://github.com/martinthomson/i-d-template/blob/main/doc/TEMPLATE.md) using [internet-draft-template](https://github.com/martinthomson/internet-draft-template/generate).  The new created repository includes a template Markdown file and the [automation features](https://github.com/martinthomson/i-d-template/blob/main/doc/FEATURES.md#automation-features) of i-d-template.
 
 # Supporting tools
 Authors writing in Markdown may find the following tools helpful:

@@ -2,7 +2,7 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-12-08T01:10:04.801Z
+date: 2021-12-08T20:17:00.602Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
@@ -49,7 +49,6 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**bap**](https://github.com/ietf-tools/bap) | Extract and validates ABNF |
 | [**id2xml**](https://github.com/ietf-tools/id2xml) | Generates RFCXML from plain text I-Ds |
 | [**idnits**](https://github.com/ietf-tools/idnits-mirror) | Check plain text I-D for submission nits |
-| [**idspell**](https://github.com/ietf-tools/idspell) | Checks the spelling in I-Ds |
 | [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Generates RFCXML from Markdown I-Ds |
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Generates RFCXML from Lyx (LaTeX) I-Ds and then transforms using xml2rfc |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Generates RFCXML from AsciiRFC (AsciiDoc) I-Ds |
@@ -72,7 +71,6 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**bap**](https://github.com/ietf-tools/bap) | Build, CLI | Extract, Validate | ABNF | - | Unknown |
 | [**id2xml**](https://github.com/ietf-tools/id2xml) | Build, CLI | Convert | Plain text | RFCXML | Yes |
 | [**idnits**](https://github.com/ietf-tools/idnits) | Build, CLI, Web | Validate | Plain text | - | N/A |
-| [**idspell**](https://github.com/ietf-tools/idspell) | Build, CLI, Web | Validate | Plain text | - | N/A |
 | [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Build, CLI, Web | Convert, Validate | Markdown | RFCXML | Yes |
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | ? | Validate, Convert | LaTeX(Lyx) | ? | No |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Build, CLI | Validate, Convert | AsciiDoc(AsciiRFC) | RFCXML | Yes |
@@ -95,7 +93,6 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**bap**](https://github.com/ietf-tools/bap) | Bill Fenner | Bill Fenner | Unknown | No | None | 
 | [**id2xml**](https://github.com/ietf-tools/id2xml) | Henrik Levkowetz | IETF Trust | Simplified BSD | Unknown | Unknown |
 | [**idnits**](https://github.com/ietf-tools/idnits) | Henrik Levkowetz | Henrik Levkowetz | GPL | Yes | Tools Team |
-| [**idspell**](https://github.com/ietf-tools/idspell) | Henrik Levkowetz | Henrik Levkowetz | GPL | No | None |
 | [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Carsten Bormann | Carsten Bormann | MIT | Yes | Carsten Bormann |
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Nico Williams | Nico Williams | Unknown | No | None |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Ribose | Ribose | Simplified BSD | Yes | Ribose |

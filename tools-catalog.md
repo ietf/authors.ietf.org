@@ -2,7 +2,7 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-11-15T07:26:33.605Z
+date: 2021-12-08T01:10:04.801Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
@@ -47,9 +47,9 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Generates BibXML references from BibTeX citations |
 | [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Generates Markdown references from BibXML references |
 | [**bap**](https://github.com/ietf-tools/bap) | Extract and validates ABNF |
-| [**id2xml**]() | Generates RFCXML from plain text I-Ds |
-| [**idnits**]() | Check plain text I-D for submission nits |
-| [**idspell**]() | Checks the spelling in I-Ds |
+| [**id2xml**](https://github.com/ietf-tools/id2xml) | Generates RFCXML from plain text I-Ds |
+| [**idnits**](https://github.com/ietf-tools/idnits-mirror) | Check plain text I-D for submission nits |
+| [**idspell**](https://github.com/ietf-tools/idspell) | Checks the spelling in I-Ds |
 | [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Generates RFCXML from Markdown I-Ds |
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Generates RFCXML from Lyx (LaTeX) I-Ds and then transforms using xml2rfc |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Generates RFCXML from AsciiRFC (AsciiDoc) I-Ds |
@@ -58,7 +58,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**pyang**](https://github.com/mbj4668/pyang) | Validates and converts YANG modules |
 | [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Side-by-side comparison of an I-D and another version or an RFC |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Validates RFC-specific SVG and generates conformant SVG |
-| [**xml2rfc**]() | Validates RFCXML and plain text I-Ds and converts to multiple output formats |
+| [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Validates RFCXML and plain text I-Ds and converts to multiple output formats |
 | [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | A configuration to assist editing RFCXML documents using XMLMind XML Editor |
 | [**xym**](https://github.com/xym-tool/xym) | Extracts YANG modules from I-Ds and RFCs |
 | [**YANG validator**](https://github.com/YangCatalog/bottle-yang-extractor-validator) | Extract and validate YANG modules |
@@ -70,9 +70,9 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Build, CLI | Convert | BibTex | BibXML | Yes |
 | [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Build, CLI | Convert | BibXML | RFCXML(old) | No |
 | [**bap**](https://github.com/ietf-tools/bap) | Build, CLI | Extract, Validate | ABNF | - | Unknown |
-| [**id2xml**]() | Build, CLI | Convert | Plain text | RFCXML | Yes |
-| [**idnits**]() | Build, CLI, Web | Validate | Plain text | - | N/A |
-| [**idspell**]() | Build, CLI, Web | Validate | Plain text | - | N/A |
+| [**id2xml**](https://github.com/ietf-tools/id2xml) | Build, CLI | Convert | Plain text | RFCXML | Yes |
+| [**idnits**](https://github.com/ietf-tools/idnits) | Build, CLI, Web | Validate | Plain text | - | N/A |
+| [**idspell**](https://github.com/ietf-tools/idspell) | Build, CLI, Web | Validate | Plain text | - | N/A |
 | [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Build, CLI, Web | Convert, Validate | Markdown | RFCXML | Yes |
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | ? | Validate, Convert | LaTeX(Lyx) | ? | No |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Build, CLI | Validate, Convert | AsciiDoc(AsciiRFC) | RFCXML | Yes |
@@ -81,7 +81,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**pyang**](https://github.com/mbj4668/pyang) | Build, CLI | Validate, Convert | YANG | ? | N/A |
 | [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Web | Compare | Plain text | - | N/A |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Build, CLI, Web | Validate, Convert | SVG | SVG | Yes |
-| [**xml2rfc**]() | Build, CLI, Web | Validate, Convert | RFCXML, RFCXML(old), Plain text | RFCXML Plain text, PDF, HTML, HTMLised, EPUB, nroff | Yes |
+| [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Build, CLI, Web | Validate, Convert | RFCXML, RFCXML(old), Plain text | RFCXML Plain text, PDF, HTML, HTMLised, EPUB, nroff | Yes |
 | [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | Editor | Validate, Insert | RFCXML(old) | RFCXML(old) | No |
 | [**xym**](https://github.com/xym-tool/xym) | Build, CLI | Extract | RFCXML | YANG | Yes |
 | [**YANG validator**](https://github.com/YangCatalog/bottle-yang-extractor-validator) | Web | RFCXML | YANG | Yes |
@@ -93,9 +93,9 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Yaron Sheffer | Yaron Sheffer | Public domain | Yes | Yaron Sheffer |
 | [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Yaron Sheffer | Yaron Sheffer | Unknown | Unknown | Yaron Sheffer |
 | [**bap**](https://github.com/ietf-tools/bap) | Bill Fenner | Bill Fenner | Unknown | No | None | 
-| [**id2xml**]() | Henrik Levkowetz | IETF Trust | Simplified BSD | Unknown | Unknown |
-| [**idnits**]() | Henrik Levkowetz | Henrik Levkowetz | GPL | Yes | Tools Team |
-| [**idspell**]() | Henrik Levkowetz | Henrik Levkowetz | GPL | No | None |
+| [**id2xml**](https://github.com/ietf-tools/id2xml) | Henrik Levkowetz | IETF Trust | Simplified BSD | Unknown | Unknown |
+| [**idnits**](https://github.com/ietf-tools/idnits) | Henrik Levkowetz | Henrik Levkowetz | GPL | Yes | Tools Team |
+| [**idspell**](https://github.com/ietf-tools/idspell) | Henrik Levkowetz | Henrik Levkowetz | GPL | No | None |
 | [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Carsten Bormann | Carsten Bormann | MIT | Yes | Carsten Bormann |
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Nico Williams | Nico Williams | Unknown | No | None |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Ribose | Ribose | Simplified BSD | Yes | Ribose |
@@ -104,7 +104,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**pyang**](https://github.com/mbj4668/pyang) | Martin Bjorklund | Martin Bjorklund | ISC | Yes | Martin Bjorklund |
 | [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Henrik Levkowetz | Henrik Levkowetz | Unknown | Unknown | Unknown |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Jim Schaad | IETF Trust | Simplied BSD | Yes | Tools Team |
-| [**xml2rfc**]() | Henrik Levkowetz | IETF Trust | Simplified BSD | Yes | Tools Team |
+| [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Henrik Levkowetz | IETF Trust | Simplified BSD | Yes | Tools Team |
 | [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | Warren Kumari | Warren Kumari | Unknown | No | None | 
 | [**xym**](https://github.com/xym-tool/xym) | Multiple | Cisco Systems | Revised BSD | Yes | Einar Nilsen-Nygaard |
 | [**YANG validator**](https://github.com/YangCatalog/bottle-yang-extractor-validator) | Multiple | IETF Trust | Simplified BSD | Yes | Pantheon |

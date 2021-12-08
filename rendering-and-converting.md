@@ -2,7 +2,7 @@
 title: Rendering and converting
 description: 
 published: true
-date: 2021-12-07T02:29:26.261Z
+date: 2021-12-08T00:30:40.260Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-02T02:05:52.949Z
@@ -12,9 +12,9 @@ It is common for authors to render (convert) their documents into a different fo
 
 # Rendering RFCXML into other formats
 There are three main ways to render RFCXML:
-1. Use the [Author Tools](/https://author-tools.ietf.org) web service
-1. Install [xml2rfc]() and run directly
-1. Use [rfc2629xslt](https://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629xslt.html) with any XSLT processor
+1. Use the [Author Tools](/https://author-tools.ietf.org) web service.  
+1. Install [xml2rfc]() and run it directly.
+1. Use [rfc2629xslt](https://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629xslt.html) with any XSLT processor.  This allows those using XML editors to directly render output from that editor and in some editors, to see the results in real time.
 
 The following table shows the output formats supported by each tool.
 
@@ -33,7 +33,7 @@ Notes:
 
 # Rendering plain text into other formats
 There are three main ways to render plain text:
-1. Use the [Author Tools](/https://author-tools.ietf.org) web service
+1. Use the [Author Tools](/https://author-tools.ietf.org) web service.  This takes I-Ds in a number of formats, including Markdown, and directly renders an output document.
 1. Install [xml2rfc]() and run directly
 1. Install [id2xml]() and use that to convert your plain text to RFCXML and then follow the instructions for rendering RFCXML above
 

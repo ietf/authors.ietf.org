@@ -2,7 +2,7 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-12-08T20:17:00.602Z
+date: 2021-12-09T03:40:42.597Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
@@ -34,7 +34,7 @@ The tools generally provide one of more of the following broad operations:
 -  Supports an interactive **Editor** with features such as auto-completion.
 
 ## Supported formats
-The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB, LaTeX, Markdown, nroff, Org Mode, PDF, Plain Text, RFCXML, as well as the formal languages of ABNF, MIB, YANG and SVG.
+The formats that we are aware of tools supporting include: AsciiDoc, DOCX, EPUB, LaTeX, Markdown, nroff, Org Mode, PDF, plaintext, RFCXML, as well as the formal languages of ABNF, MIB, YANG and SVG.
 
 Some tools only support the previous version of RFCXML (v2) and the format is written as RFCXML(old) in the table where that occurs, as well as "No" in the "Supports v3" column.
 
@@ -69,17 +69,17 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Build, CLI | Convert | BibTex | BibXML | Yes |
 | [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Build, CLI | Convert | BibXML | RFCXML(old) | No |
 | [**bap**](https://github.com/ietf-tools/bap) | Build, CLI | Extract, Validate | ABNF | - | Unknown |
-| [**id2xml**](https://github.com/ietf-tools/id2xml) | Build, CLI | Convert | Plain text | RFCXML | Yes |
-| [**idnits**](https://github.com/ietf-tools/idnits) | Build, CLI, Web | Validate | Plain text | - | N/A |
+| [**id2xml**](https://github.com/ietf-tools/id2xml) | Build, CLI | Convert | plaintext | RFCXML | Yes |
+| [**idnits**](https://github.com/ietf-tools/idnits) | Build, CLI, Web | Validate | plaintext | - | N/A |
 | [**kramdown-rfc2629**](https://github.com/cabo/kramdown-rfc2629) | Build, CLI, Web | Convert, Validate | Markdown | RFCXML | Yes |
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | ? | Validate, Convert | LaTeX(Lyx) | ? | No |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Build, CLI | Validate, Convert | AsciiDoc(AsciiRFC) | RFCXML | Yes |
 | [**mmark**](https://mmark.miek.nl) | Validate, Convert | Build, CLI | Markdown | RFCXML | Yes |
 | [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Build, CLI | Convert | nroff | RFCXML(old) | No |
 | [**pyang**](https://github.com/mbj4668/pyang) | Build, CLI | Validate, Convert | YANG | ? | N/A |
-| [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Web | Compare | Plain text | - | N/A |
+| [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Web | Compare | plaintext | - | N/A |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Build, CLI, Web | Validate, Convert | SVG | SVG | Yes |
-| [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Build, CLI, Web | Validate, Convert | RFCXML, RFCXML(old), Plain text | RFCXML Plain text, PDF, HTML, HTMLised, EPUB, nroff | Yes |
+| [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Build, CLI, Web | Validate, Convert | RFCXML, RFCXML(old), plaintext | RFCXML Plain text, PDF, HTML, HTMLised, EPUB, nroff | Yes |
 | [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | Editor | Validate, Insert | RFCXML(old) | RFCXML(old) | No |
 | [**xym**](https://github.com/xym-tool/xym) | Build, CLI | Extract | RFCXML | YANG | Yes |
 | [**YANG validator**](https://github.com/YangCatalog/bottle-yang-extractor-validator) | Web | RFCXML | YANG | Yes |

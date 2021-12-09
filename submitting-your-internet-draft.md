@@ -2,7 +2,7 @@
 title: Submitting your Internet-Draft
 description: 
 published: true
-date: 2021-12-09T19:26:56.042Z
+date: 2021-12-09T19:31:26.698Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-09T03:59:06.890Z
@@ -39,7 +39,7 @@ After the deadlines, submissions will not be accepted until the meeting begins. 
 Care should be taken when submitting an I-D near the deadline, especially if a manual post is requested. The steps to confirm and post the submission take time.
 
 # Manual submissions
-If authors are unable to submit an I-D through the Datatracker, they may make a manual-post request by sending the I-D via email to support@ietf.org. The message may contain the I-D as an attachment, or a URL that will resolve to the I-D. The I-D must be a standalone document in either RFCXML or plaintext format. Multiple files presented in containers such as zip or tar will not be accepted. All other formats will be discarded without opening.
+If you are unable to submit an I-D through the Datatracker, you may make a manual-post request by sending the I-D via email to support@ietf.org. The message may contain the I-D as an attachment, or a URL that will resolve to the I-D. The I-D must be a standalone document in either RFCXML or plaintext format. Multiple files presented in containers such as zip or tar will not be accepted. All other formats will be discarded without opening.
 
 # Repository and archive
 When an Internet-Draft is submitted it is placed in both the [Internet-Draft Repository](https://www.ietf.org/id)  and the [Internet-Draft Archive](https://www.ietf.org/archive/id) along with any additional renderings.

@@ -2,7 +2,7 @@
 title: RFCXML overview and background
 description: 
 published: true
-date: 2021-11-08T14:33:02.169Z
+date: 2021-12-09T03:43:42.456Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-03T13:17:49.168Z
@@ -13,9 +13,11 @@ RFCXML is an XML language, used as the preferred format for Internet-Drafts and 
 
 The [RFCXML vocabulary reference](/rfcxml-vocabulary) documents all of the elements and attributes and their usage and allowed values.  
 
-We recommend that authors start an I-D using a template from the [library](https://tools.ietf.org/tools/templates/) and an [XML toolchain](/drafting-in-xml) that is RNC schema-aware as this will simplify the process.
+We recommend that authors start an I-D using a template from [Templates and Schemas](/templates-and-schemas) as this will simplify the process.
 
-Authors will normally want to render their RFCXML I-D into more readable output and that process is explained in [rendering and converting](/rendering-and-converting).
+Authors will normally want to render their RFCXML I-D into more readable output and that process is explained in [Rendering and converting](/rendering-and-converting).
+
+RFCXML was previously known as the "xml2rfc vocabulary".
 
 # Background
 v1 of RFCXML was documented in RFC2629, published in 1999, when the preferred format for I-Ds was plain text and the canonical format for RFCs was nroff.  This used a DTD for the formal specification.
@@ -27,6 +29,3 @@ v3 was documented in RFC 7991, published in December 2016. Since the publication
 # The 'prep' tool
 
 Published RFCs go through a 'prep' process that makes multiple changes to the RFCXML in order to support the long time archival nature of RFCs.  Key aspects of the prep tool are documented in RFC 7998.  
-
-> NOTE: While RFCs validate with the same schema as Internet-Drafts, using an XML RFC as a template for an Internet-Draft is not recommended as the prep tool hard codes multiple data into the RFC, making it unsuitable for further manual editing.
-{.is-warning}

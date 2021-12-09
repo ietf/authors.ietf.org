@@ -2,7 +2,7 @@
 title: Submitting your Internet-Draft
 description: 
 published: true
-date: 2021-12-09T04:11:21.925Z
+date: 2021-12-09T07:15:47.967Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-09T03:59:06.890Z
@@ -11,13 +11,13 @@ dateCreated: 2021-12-09T03:59:06.890Z
 # Submission tool
 Internet-Draft submissions are made using the [IETF Datatracker's submission tool](https://datatracker.ietf.org/submit). Datatracker accounts are free and automatically created by a number of IETF processes. 
 
-An I-D submission should be an [RFCXML](https://authors.ietf.org/en/rfcxml-overview) v3 source file, but a v2 source will be accepted. If an RFCXML file is submitted, this is taken as the authoritative version of the document.
+Your submission should be an [RFCXML](https://authors.ietf.org/en/rfcxml-overview) I-D, which the Datatracker will use as the authoritative source to generate plaintext and HTML renderings. A plaintext version can be submitted alongside the RFCXML version, instead of being auto-generated.
 
-If RFCXML source is submitted, the Datatracker will generate both plaintext and HTML versions of the I-D and place them in the Archive.
+If an RFCXML submission is not possible, the draft can be submitted as plaintext and this will be used as the authoritative version.
 
-If an RFCXML submission is not possible, the draft can be submitted as plaintext and will be taken as the authoritive version. A plaintext version can also be submitted as an "alternate form" of the I-D when and RFCXML version is submitted.
+It is currently possible to submit a legacy v2 RFCXML I-D instead of the current v3.
 
-It is currently possible to submit a PDF version of the document, which is kept with the authoritative document source in the repository and archive. It is expected that supoprt for PDF will be removed at some point.
+It is also currently possible to submit a PDF version of the document alongside both an RFCXML and plaintext submission. It is expected that support for PDF will be removed at some point.
 
 > In short: submit RFCXML if at all possible, with v3 preferred over v2.
 {.is-success}
@@ -41,8 +41,10 @@ Care should be taken when submitting an I-D near the deadline, especially if a m
 # Manual submissions
 If authors are unable to submit an I-D through the Datatracker, they may make a manual-post request by sending the I-D via email to support@ietf.org. The message may contain the I-D as an attachment, or a URL that will resolve to the I-D. The I-D must be a standalone document in either RFCXML or plaintext format. Multiple files presented in containers such as zip or tar will not be accepted. All other formats will be discarded without opening.
 
-# After submission
-Active versions of Internet-Drafts are also placed in the [Internet-Draft Repository](https://www.ietf.org/id). Versions of Internet-Drafts are superseded in the Repository when any of the following occur:
+# Repository and archive
+When an Internet-Draft is submitted it is placed in both the Repository and the Archive along with any additional renderings.
+
+The [Internet-Draft Repository](https://www.ietf.org/id) contains only active versions of Internet-Drafts.  When an Internet-Draft is submitted, that version becomes active and ceases to be active, and so removed from the Repository, when any of the following occur:
 
 * The I-D is updated with a new version.
 * The I-D is replaced by another Internet-Draft.
@@ -51,6 +53,6 @@ Active versions of Internet-Drafts are also placed in the [Internet-Draft Reposi
 
 An I-D expires 185 days after it was placed in the Repository, unless it is in a state that prevents it from expiring. Examples of such states include being processed by the IESG for publication in the IETF stream, or being under review by the Independent Series Editor (ISE) for publication in the [Independent Submission Stream](https://www.rfc-editor.org/about/independent/).
 
-All versions of Internet-Drafts are kept in the [Internet-Draft Archive](https://www.ietf.org/archive/id). Internet-Drafts are not removed from the Archive when they are superseded in the Repository. Removing an I-D from the Archive occurs only in exceptional circumstances, described in this [IESG Statement](https://www.ietf.org/about/groups/iesg/statements/internet-draft-removal/).
+Additionally, all versions of Internet-Drafts are kept in the [Internet-Draft Archive](https://www.ietf.org/archive/id) along with any additional renderings.  Removing an I-D from the Archive occurs only in exceptional circumstances, described in this [IESG Statement](https://www.ietf.org/about/groups/iesg/statements/internet-draft-removal/).
 
-Even though Internet-Drafts are kept in the Archive, they are not an archival series and should not be cited or quoted as anything other than "work in progress".
+Even though Internet-Drafts are kept in an Archive, they are not an archival series and should not be cited or quoted as anything other than "work in progress".

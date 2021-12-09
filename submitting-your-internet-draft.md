@@ -2,14 +2,16 @@
 title: Submitting your Internet-Draft
 description: 
 published: true
-date: 2021-12-09T03:59:06.890Z
+date: 2021-12-09T04:10:17.084Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-09T03:59:06.890Z
 ---
 
 # Submission tool
-Internet-Draft submissions are made using the [IETF Datatracker's submission tool](https://datatracker.ietf.org/submit). An I-D submission should be an [RFCXML](https://authors.ietf.org/en/rfcxml-overview) v3 source file, but a v2 source will be accepted. If an RFCXML file is submitted, this is taken as the authoritative version of the document.
+Internet-Draft submissions are made using the [IETF Datatracker's submission tool](https://datatracker.ietf.org/submit). Datatracker accounts are free and automatically created by a number of IETF processes. 
+
+An I-D submission should be an [RFCXML](https://authors.ietf.org/en/rfcxml-overview) v3 source file, but a v2 source will be accepted. If an RFCXML file is submitted, this is taken as the authoritative version of the document.
 
 If RFCXML source is submitted, the Datatracker will generate both plaintext and HTML versions of the I-D and place them in the Archive.
 
@@ -25,7 +27,7 @@ When a submission is made through the submission tool, the authors will receive 
 
 If the I-D being submitted replaces another I-D, the submitter will be able to identify the replacement using the submission tool. A group chair or the IETF Secretariat will verify the replacement before the relationship is added to the Datatracker.
 
-The submission tool will validate the document but authors are expected to have manually applied all relevant guidance before submission.
+The submission tool will validate the document using [xml2rfc](https://github.com/ietf-tools/xml2rfc), [id2xml](https://github.com/ietf-tools/id2xml) and [idnits](https://github.com/ietf-tools/idnits-mirror) as appropriate, but authors are expected to have manually applied all relevant guidance before submission.
 
 While some of the requirements highlighted on this site are for RFCs, Internet-Drafts are expected to adhere to them to the extent possible. In particular, IETF stream I-Ds submitted to the IESG must follow all of the guidance.  Working groups are encouraged to require the guidance be followed for I-Ds entering Working Group Last Call. I-Ds will progress through the review and publication process more efficiently the earlier the guidance is followed in the I-D.
 

@@ -2,7 +2,7 @@
 title: Submitting your Internet-Draft
 description: 
 published: true
-date: 2021-12-09T07:17:22.117Z
+date: 2021-12-09T07:56:08.695Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-09T03:59:06.890Z
@@ -17,7 +17,7 @@ If an RFCXML submission is not possible, the draft can be submitted as plaintext
 
 It is currently possible to submit a legacy v2 RFCXML I-D instead of the current v3.
 
-It is also currently possible to submit a PDF version of the document alongside both an RFCXML and plaintext submission. It is expected that support for PDF will be removed at some point.
+It is also currently possible to submit a PDF rendering of the document alongside both an RFCXML and plaintext submission. It is expected that support for PDF will be removed at some point.
 
 > In short: submit RFCXML if at all possible, with v3 preferred over v2.
 {.is-success}

@@ -2,7 +2,7 @@
 title: Home
 description: Welcome to the Internet-Draft/RFC author resources site
 published: true
-date: 2021-12-07T21:24:04.962Z
+date: 2021-12-09T03:24:30.951Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T00:11:52.864Z
@@ -22,8 +22,16 @@ This site is the central resource site for authors of an Internet-Draft (I-D), w
 >* The repositories for the various tools are now in the [ietf-tools organisation on GitHub](https://github.com/ietf-tools).
 {.is-info}
 
+# Introducing Internet-Drafts
+Internet-Drafts (I-Ds) are the basic work items of the IETF. They are the primary inputs into what may eventually be published as a Request for Comment (RFC).
+
+Internet-Drafts are used by all of the [RFC Streams](https://rfc-editor.org/info/rfc8729). Unless otherwise indicated, the information on this site applies to all streams.
+
+Internet-Drafts are prepared by people acting in possibly several roles, such as an author or an editor. The term "author" is used here, but the information applies to people acting in any role.
+
+
 # Overview of the authoring process
-The diagram below deconstructs the authoring process into stages and shows how the different formats supported at each stage:
+The diagram below deconstructs the authoring process into stages and shows the different formats supported at each stage:
 
 ```mermaid
 graph TD  
@@ -63,12 +71,12 @@ The canonical format for published RFCs is XML and the other published formats, 
 # Limitations of this site
 This site does not currently include the [Guidelines for I-D authors](https://www.ietf.org/standards/ids/guidelines/) though it is expected that this content will migrate here soon.
 
-This site does not cover the IETF [standards development process](https://www.ietf.org/standards/process/) 
+This site does not cover the IETF [standards development process](https://www.ietf.org/standards/process/).
 
-This site does not cover the RFC publication process, which is documented on the [RFC Editor site](https://rfc-editor.org).
+This site does not cover the [RFC publication process](https://www.rfc-editor.org/pubprocess/).
 
 # Contributing to this site
-The content for this site is available in [GitHub](https://github.com/ietf-authors/authors.ietf.org) and we welcome pull requests proposing changes from the community.
+The content for this site is available in [GitHub](https://github.com/ietf-authors/authors.ietf.org) and we welcome pull requests proposing changes from the community. The repository [README](https://github.com/ietf-authors/authors.ietf.org/blob/main/README.md) provides guidance on how to submit pull requests.
 
 Likewise, the [templates and schemas](/templates-and-schemas) available on this site are published on [GitHub](https://github.com/ietf-authors/rfcxml-templates-and-schemas) and we welcome pull requests proposing changes.
 

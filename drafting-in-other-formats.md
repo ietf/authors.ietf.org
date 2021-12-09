@@ -2,13 +2,13 @@
 title: Drafting in other formats
 description: 
 published: true
-date: 2021-12-08T20:50:23.878Z
+date: 2021-12-09T03:34:31.742Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-19T09:01:14.498Z
 ---
 
-There are many other lightweight text markup languages with their own processing systems. Those listed here are supported by a toolchain that produces either a plain text or an RFCXML Internet-Draft.
+There are many other lightweight text markup languages with their own processing systems. Those listed here are supported by a toolchain that produces either a plaintext or an RFCXML Internet-Draft.
 
 Most of these toolchains are not widely used and in some cases rely on tools that are unmaintained. 
 
@@ -43,7 +43,7 @@ Nroff Edit is unmaintained and was last updated in 2015.
 nroff2xml is unmaintained and was last updated in 2013.
 
 # Org Mode
-Org is a highly flexible structured plain text file format that is used mainly in the Emacs editor in [Org Mode](https://orgmode.org).
+Org is a highly flexible structured plaintext file format that is used mainly in the Emacs editor in [Org Mode](https://orgmode.org).
 
 ## 1. Org Mode RFC XML Exporter
 [Org Mode RFC XML Exporter](https://github.com/choppsv1/org-rfc-export) is an Emacs plugin that exports Org Mode files to RFCXML.

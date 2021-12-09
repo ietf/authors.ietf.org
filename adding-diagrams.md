@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-07T19:22:23.960Z
+date: 2021-12-09T03:35:59.659Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -11,8 +11,8 @@ dateCreated: 2021-11-17T10:06:49.972Z
 # Introduction
 Your diagrams can be provided in ASCII-art, SVG or both, depending on your authoring format and the format you submit your I-D in.
 *  If only ASCII-art is provided then it is used in all rendering (see RFC9139 for example)
-*  If both are provided then SVG is used in the HTML and PDF rendering, and ASCII-art is used in the plain text rendering
-*  If only SVG is provided then it is used in the HTML and PDF rendering but no diagram is included in the plain text rendering, replaced with a message that says "Artwork only available as SVG".  For this reason, providing only SVG is **not recommended**.
+*  If both are provided then SVG is used in the HTML and PDF rendering, and ASCII-art is used in the plaintext rendering
+*  If only SVG is provided then it is used in the HTML and PDF rendering but no diagram is included in the plaintext rendering, replaced with a message that says "Artwork only available as SVG".  For this reason, providing only SVG is **not recommended**.
 
 If you are [drafting in XML](/drafting-in-xml) then all the choices are open to you.
 
@@ -21,7 +21,7 @@ If you are [drafting in Markdown](/drafting-in-markdown) or [another lightweight
 1. Some tools support embedded diagramming languages and manage the conversion of those into SVG
 1. Some tools do not support SVG diagrams requiring you to use ASCII-art diagrams and/or add the SVG manually after the I-D has been converted to RFCXML.
 
-For I-Ds that are submitted in plain text, all diagrams need to be included as ASCII-art inline in the text.
+For I-Ds that are submitted in plaintext, all diagrams need to be included as ASCII-art inline in the text.
 
 # Generating ASCII-art diagrams
 
@@ -236,7 +236,7 @@ For reference, the following tools are also known to generate SVG.  If you use a
 
 Some extracted SVG diagrams are also [available](https://www.rfc-editor.org/materials/format/svg/)
 ## ASCII-art and SVG in a single \<artset\>
-The followiong example has one [**\<artset\>**](https://authors.ietf.org/en/rfcxml-vocabulary#artset) element that contains two [**\<artwork\>**](https://authors.ietf.org/en/rfcxml-vocabulary#artwork) elements, each of a different type. The SVG is included directly and a **name** attribute provided to recommend a filename if the diagram is extracted.
+The following example has one [**\<artset\>**](https://authors.ietf.org/en/rfcxml-vocabulary#artset) element that contains two [**\<artwork\>**](https://authors.ietf.org/en/rfcxml-vocabulary#artwork) elements, each of a different type. The SVG is included directly and a **name** attribute provided to recommend a filename if the diagram is extracted.
 ```xml
 <figure>
   <name>Box diagram</name>

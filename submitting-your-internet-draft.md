@@ -2,7 +2,7 @@
 title: Submitting your Internet-Draft
 description: 
 published: true
-date: 2021-12-09T19:17:42.045Z
+date: 2021-12-09T19:19:42.266Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-09T03:59:06.890Z
@@ -11,7 +11,7 @@ dateCreated: 2021-12-09T03:59:06.890Z
 # Submission tool
 Internet-Draft submissions are made using the [IETF Datatracker's submission tool](https://datatracker.ietf.org/submit). You do not need to be logged in to Datatracker to submit an I-D. 
 
-Your submission should be an [RFCXML](https://authors.ietf.org/en/rfcxml-overview) I-D, which the Datatracker will use as the authoritative source to generate plaintext and HTML renderings. A plaintext version can be submitted alongside the RFCXML version, instead of being auto-generated.
+Your submission should be an [RFCXML](https://authors.ietf.org/en/rfcxml-overview) I-D, which the Datatracker will use as the authoritative source to generate plaintext and HTML renderings. A plaintext rendering can be submitted alongside the RFCXML version, instead of being generated.
 
 If an RFCXML submission is not possible, the draft can be submitted as plaintext and this will be used as the authoritative version but no renderings will be generated. 
 

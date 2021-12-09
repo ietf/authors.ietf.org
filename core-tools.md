@@ -2,7 +2,7 @@
 title: Core tools and web services
 description: 
 published: true
-date: 2021-12-08T00:59:03.615Z
+date: 2021-12-09T03:41:33.543Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T12:37:54.926Z
@@ -21,8 +21,6 @@ The Author Tools web service is regularly enhanced and suggestions for new tasks
 
 # xml2rfc
 [xml2rfc](https://github.com/ietf-tools/xml2rfc) is the core tool for validating and transforming RFCXML files.  It can be installed locally for command line (CLI) access, or as part of an automated build system, or in a web service.
-
-RFCXML was previously known as the "xml2rfc vocabulary".
 
 # Datatracker
 The IETF's core document management system is [Datatracker](https://datatracker.ietf.org).  Datatracker accounts are free and automatically created by a number of IETF processes. 

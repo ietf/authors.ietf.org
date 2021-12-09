@@ -2,7 +2,7 @@
 title: Home
 description: Welcome to the Internet-Draft/RFC author resources site
 published: true
-date: 2021-12-09T03:25:30.002Z
+date: 2021-12-09T03:25:56.681Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T00:11:52.864Z
@@ -13,7 +13,7 @@ dateCreated: 2021-08-18T00:11:52.864Z
 
 # Welcome to the Internet-Draft authors resource site
 
-This site is the central resource site for authors of an Internet-Draft (I-D), with information on how to write an I-D and the tools available to support this. If you are new to authoring then start with the overview below, or if you are more familiar then the main menu lists multiple individual topics.
+This site is the central resource site for authors of an Internet-Draft (I-D), with information on how to write an I-D and the tools available to support this. If you are new to authoring then start with the introduction and overview below, or if you are more familiar then the main menu lists multiple individual topics.
 
 > If you have been redirected here from **tools.ietf.org** then that site has been decommissioned.  The features available at that site have been replaced as follows:
 >*  The interactive tools are now at [https://author-tools.ietf.org](https://author-tools.ietf.org)

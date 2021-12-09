@@ -2,16 +2,16 @@
 title: Home
 description: Welcome to the Internet-Draft/RFC author resources site
 published: true
-date: 2021-12-09T03:24:30.951Z
+date: 2021-12-09T03:25:30.002Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T00:11:52.864Z
 ---
 
-# Welcome to the Internet-Draft authors resource site
-
 > **!! THIS SITE IS STILL UNDER CONSTRUCTION AND THE INFORMATION ON IT SHOULD NOT BE TRUSTED UNTIL IT GOES LIVE !!**
 {.is-warning}
+
+# Welcome to the Internet-Draft authors resource site
 
 This site is the central resource site for authors of an Internet-Draft (I-D), with information on how to write an I-D and the tools available to support this. If you are new to authoring then start with the overview below, or if you are more familiar then the main menu lists multiple individual topics.
 

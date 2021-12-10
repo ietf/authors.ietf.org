@@ -2,7 +2,7 @@
 title: Document validation
 description: 
 published: true
-date: 2021-12-10T03:09:48.503Z
+date: 2021-12-10T03:14:45.598Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
@@ -63,3 +63,8 @@ All MIB modules should have correct syntax, so they should compile cleanly using
 smilint -m -s -l 6 -i namelength-32
 ```
 An [online service](https://www.ibr.cs.tu-bs.de/projects/libsmi/tools/) is available for MIB syntax checking. This allows you to extract the MIB module from a document for your own local use, but you can also directly run a syntax check.
+
+Please evaluate all diagnostic messages and if in doubt, feel free to check on the [ietfmibs mailing list](https://www.ietf.org/mailman/listinfo/IETFMIBS) or with the OPS ADs.
+
+> You should also ensure that you follow the Guidelines for Authors and Reviewers of MIB documents (RFC 4181)
+{.is-success}

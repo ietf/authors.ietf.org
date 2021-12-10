@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2021-12-10T01:32:18.712Z
+date: 2021-12-10T02:39:32.611Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -10,7 +10,7 @@ dateCreated: 2021-11-15T10:07:09.043Z
 
 # RFCXML
 ## Templates
-To use one of these templates you will also need to download both of the schemas and the character entity file below and keep them all in the same directory.  For those that use Git, you can clone the [repository](https://github.com/ietf-authors/rfcxml-templates-and-schemas) and go from there.
+To use one of these templates you will also need to download both of the schemas below and keep them all in the same directory.  For those that use Git, you can clone the [repository](https://github.com/ietf-authors/rfcxml-templates-and-schemas) and go from there.
 
 > NOTE: While RFCs validate with the same schema as Internet-Drafts, using an XML RFC as a template for an Internet-Draft is not recommended as the prep tool hard codes multiple data into the RFC, making it unsuitable for further manual editing.
 {.is-warning}
@@ -40,6 +40,20 @@ All of the templates above aleady have this processing instruction included and 
 In XML a character entity is a way of using a name in the XML, such as `&nbhy;` in place of the character itself (in this example the 'non-breaking hyphen' character).
 
 RFCXML documents can reference a set of character entities to assist authors
+
+### Included in the templates
+
+The Standard and Annotated templates above include the following character entities directly in the source with a DOCTYPE statement as follows:
+
+```xml
+<!DOCTYPE rfc [
+  <!ENTITY nbsp    "&#160;">
+  <!ENTITY zwsp   "&#8203;">
+  <!ENTITY nbhy   "&#8209;">
+  <!ENTITY wj     "&#8288;">
+]>
+```
+
 ### rfcxml.ent
 [rfcxml.ent](https://github.com/ietf-authors/rfcxml-templates-and-schemas/blob/main/rfcxml.ent) contains a full set of XML character entities for authors, including:
 * Some basic ASCII
@@ -48,7 +62,7 @@ RFCXML documents can reference a set of character entities to assist authors
 * Other useful Unicode characters (including some from the windows-1252 repertoire)
 * Typographic help characters
 
-To use this set of character entities, the following line must appear in your XML source:
+To use this set of character entities, the following line must appear in your XML source, which is commented out in the above templates:
 
 ```xml
 <!DOCTYPE rfc SYSTEM "rfcxml.ent">

@@ -2,14 +2,14 @@
 title: Guidelines for plaintext I-Ds
 description: 
 published: true
-date: 2021-12-10T00:52:53.501Z
+date: 2021-12-10T01:20:59.403Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-10T00:52:53.501Z
 ---
 
 # General guidelines
-The format constraints for a plaintext I-D are primarily the same as those for the text format of an RFC as specified in RFC 7994. One notable difference is that Internet-Drafts are paginated, and include running headers and footers. A few formatting requirements are highlighted here, but authors drafting plaintext documents should fully understand the requirements in RFC 7994, RFC 7841, RFC 7332, RFC 7322, the RFC Editor's Style Guide, and the current acceptable boilerplate texts.
+The format constraints for a plaintext I-D are primarily the same as those for the text format of an RFC as specified in RFC 7994. One notable difference is that Internet-Drafts are paginated, and include running headers and footers. A few formatting requirements are highlighted here, but authors drafting plaintext documents should fully understand the requirements in RFC 7994, RFC 7841, RFC 7332, RFC 7322, the RFC Editor's [Style Guide](https://www.rfc-editor.org/styleguide/), and the current [acceptable boilerplate texts](https://www.iab.org/documents/headers-boilerplate/).
 
 # Checklist
 
@@ -32,4 +32,4 @@ The following formatting requirements for plaintext I-Ds are often overlooked:
     - [ ] The names of RFCs contained in these sections are not reformatted as references.
 - [ ] Verify that the I-D is well formatted for readability and clarity.
 - [ ] If the I-D has "Contributors" and/or "Acknowlegments" sections, verify that the sections are unnumbered and placed after the "References" section and any appendices.
-- [ ] Verify that references to Internet-Drafts and RFCs are formatted as shown in the "web portion" of the RFC Editor's Style Guide (see here for guidance on I-Ds and here for guidance on RFCs). Note that these formats can change over time, so review these links carefully with each document submission.
+- [ ] Verify that references to Internet-Drafts and RFCs are formatted as shown in the "web portion" of the RFC Editor's Style Guide. Note that these formats can change over time, so review these links carefully with each document submission.

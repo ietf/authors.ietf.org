@@ -1,8 +1,8 @@
 ---
-title: Drafting in other formats
+title: Drafting in other markup languages
 description: 
 published: true
-date: 2021-12-09T03:34:31.742Z
+date: 2021-12-10T00:14:27.051Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-19T09:01:14.498Z

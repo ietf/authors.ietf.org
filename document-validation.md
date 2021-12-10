@@ -2,7 +2,7 @@
 title: Document validation
 description: 
 published: true
-date: 2021-12-10T00:38:33.693Z
+date: 2021-12-10T03:06:24.795Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
@@ -36,7 +36,10 @@ The [Author Tools](/https://author-tools.ietf.org) web service can validate your
 [svgcheck](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) takes an XML file containing an SVG or an RFC document. It then compares all of the SVG elements with the schema defined in the document with RFC 7996 bis. The program has the option of modifying and writing out a version of the input that passes the defined schema. The [Author Tools](/https://author-tools.ietf.org) web service uses [svgcheck](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) in the background.
 
 # Validating formal languages
-There are a number of formal languages used in I-Ds and several tools have been written to help process them.
+There are a number of formal languages used in I-Ds and several tools have been written to help process them. 
+
+> Make sure that any use of formal languages conforms with the [IESG statement on the use of formal languages](https://www.ietf.org/about/groups/iesg/statements/formal-languages-use/).
+{.is-success}
 
 ## 1. rfcstrip
 [rfcstrip](https://github.com/mbj4668/rfcstrip) extracts code components, YANG modules and SMIv2 modules from RFCs and I-Ds, and extracts and unfolds artwork from RFCs and I-Ds in XML format.
@@ -49,3 +52,12 @@ There are a number of formal languages used in I-Ds and several tools have been 
 
 ## 4. Validate and convert YANG with pyang
 [pyang](https://github.com/mbj4668/pyang) validates YANG modules and converts them into other formal languages.
+
+## 5. Validate MIBs with smilint
+smilint is a command line tool that is part of the [libsmi](https://www.ibr.cs.tu-bs.de/projects/libsmi/download.html?lang=de) suite of tools and is available as a [package](https://command-not-found.com/smilint) for most operating systems.
+
+All MIB modules should have correct syntax, so they should compile cleanly using smilint, e.g.:
+```bash
+smilint -m -s -l 6 -i namelength-32
+```
+An [online service](https://www.ibr.cs.tu-bs.de/projects/libsmi/tools/) is available for MIB syntax checking. This allows you to extract the MIB module from a document for your own local use, but you can also directly run a syntax check.

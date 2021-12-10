@@ -2,7 +2,7 @@
 title: Document validation
 description: 
 published: true
-date: 2021-12-10T03:06:24.795Z
+date: 2021-12-10T03:09:48.503Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
@@ -46,6 +46,8 @@ There are a number of formal languages used in I-Ds and several tools have been 
 
 ## 2. Extract and validate ABNF with bap
 [bap](https://github.com/ietf-tools/bap) can extract and validate ABNF.  The extraction feature is available as a separate [web service](https://tools.ietf.org/abnf/) and the validation as a separate [web form](https://tools.ietf.org/tools/bap/abnf.cgi).
+
+If ABNF is used, your I-D should contain a normative reference to RFC 5234, the specification for ABNF.
 
 ## 3. Extract and validate YANG with YANG Catalog
 [YANG Catalog](https://www.yangvalidator.com/) is a website operated and maintained by the IETF that provides a central resource for the use of YANG, including the [YANG Validator](https://www.yangvalidator.com/yangvalidator).

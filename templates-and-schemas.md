@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2021-12-09T03:44:13.133Z
+date: 2021-12-10T01:32:18.712Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -15,14 +15,14 @@ To use one of these templates you will also need to download both of the schemas
 > NOTE: While RFCs validate with the same schema as Internet-Drafts, using an XML RFC as a template for an Internet-Draft is not recommended as the prep tool hard codes multiple data into the RFC, making it unsuitable for further manual editing.
 {.is-warning}
 
-### draft-rfcxml-general-template-standard.xml
-[draft-rfcxml-general-template-standard.xml](https://github.com/ietf-authors/rfcxml-templates-and-schemas/blob/main/draft-rfcxml-general-template-standard.xml) is an RFCXML template that includes examples of the most commonly used features of RFCXML with comments explaining how to customise them.  This template can be quickly turned into an I-D by editing the examples provided. 
+### draft-rfcxml-general-template-standard-00.xml
+[draft-rfcxml-general-template-standard-00.xml](https://github.com/ietf-authors/rfcxml-templates-and-schemas/blob/main/draft-rfcxml-general-template-standard-00.xml) is an RFCXML template that includes examples of the most commonly used features of RFCXML with comments explaining how to customise them.  This template can be quickly turned into an I-D by editing the examples provided. 
 
-### draft-rfcxml-general-template-bare.xml
-[draft-rfcxml-general-template-bare.xml](https://github.com/ietf-authors/rfcxml-templates-and-schemas/blob/main/draft-rfcxml-general-template-bare.xml) is an RFCXML template for experienced authors who want to start from the barest template possible. This template validates correctly but is not a valid I-D as many key sections are missing.
+### draft-rfcxml-general-template-bare-00.xml
+[draft-rfcxml-general-template-bare-00.xml](https://github.com/ietf-authors/rfcxml-templates-and-schemas/blob/main/draft-rfcxml-general-template-bare-00.xml) is an RFCXML template for experienced authors who want to start from the barest template possible. This template validates correctly but is not a valid I-D as many key sections are missing.
 
-### draft-rfcxml-general-template-annotated.xml
-[draft-rfcxml-general-template-annotated.xml](https://github.com/ietf-authors/rfcxml-templates-and-schemas/blob/main/draft-rfcxml-general-template-annotated.xml) is an RFCXML template that includes examples for almost all of the features of RFCXML and many examples of how to achieve specific formatting, along with ample comments to explain the examples.
+### draft-rfcxml-general-template-annotated-00.xml
+[draft-rfcxml-general-template-annotated-00.xml](https://github.com/ietf-authors/rfcxml-templates-and-schemas/blob/main/draft-rfcxml-general-template-annotated-00.xml) is an RFCXML template that includes examples for almost all of the features of RFCXML and many examples of how to achieve specific formatting, along with ample comments to explain the examples.
 
 ## Schemas
 

@@ -2,16 +2,20 @@
 title: Using formal languages
 description: 
 published: true
-date: 2021-12-11T22:42:14.471Z
+date: 2021-12-11T22:44:29.601Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-11T22:42:14.471Z
 ---
 
-There are a number of formal languages used in I-Ds and several tools have been written to help process them. 
+> This page is still being worked on and needs the formal language section from the Guidelines for I-D Authors to be incorporated
+{.is-danger}
+
 
 > Make sure that any use of formal languages conforms with the [IESG statement on the use of formal languages](https://www.ietf.org/about/groups/iesg/statements/formal-languages-use/).
 {.is-success}
+
+There are a number of formal languages used in I-Ds and several tools have been written to help process them. 
 
 ## 1. rfcstrip
 [rfcstrip](https://github.com/mbj4668/rfcstrip) extracts code components, YANG modules and SMIv2 modules from RFCs and I-Ds, and extracts and unfolds artwork from RFCs and I-Ds in XML format.

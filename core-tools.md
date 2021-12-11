@@ -2,14 +2,11 @@
 title: xml2rfc and the Author-Tools web service
 description: 
 published: true
-date: 2021-12-09T04:12:36.522Z
+date: 2021-12-11T21:07:20.016Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T12:37:54.926Z
 ---
-
-# xml2rfc
-[xml2rfc](https://github.com/ietf-tools/xml2rfc) is the core tool for validating and transforming RFCXML files.  It can be installed locally for command line (CLI) access, or as part of an automated build system, or in a web service.
 
 # Author Tools web service
 The [Author Tools](https://author-tools.ietf.org) web service supports a range of common tasks, thereby reducing the need for authors to install and maintain key tools locally.  These tasks include:

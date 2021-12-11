@@ -2,7 +2,7 @@
 title: Document validation
 description: 
 published: true
-date: 2021-12-10T03:14:45.598Z
+date: 2021-12-11T21:08:52.127Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
@@ -11,22 +11,25 @@ dateCreated: 2021-08-20T02:57:26.157Z
 As your I-D evolves you will inevitably want to check the contents and validate the format at regular stages.
 
 # Validating your Internet-Draft
-Document validation is an important step for an Internet-Draft to ensure that it is correctly formatted.  This is different from the syntax validation that some of the tools perform as you use them.
+Document validation is an important step for an Internet-Draft to ensure that it is correctly formatted.  This is different from the syntax validation that some of the tools perform as you use them.  There are three approaches to validation:
 
-## 1. Validating use the Author Tools web service
-The [Author Tools](/https://author-tools.ietf.org) web service supports a wide range of formats for validation. 
+## Validating with the Author Tools web service
+[Author Tools](/https://author-tools.ietf.org) is a fully featured web service for validation, rendering and more. It allows you to validate documents written in a range of common formats by chaining together multiple tools.  For more details see [Author Tools web service](/author-tools-web-service).
+  
+## Validating with command line tools
+There are two key command line tools provided for validation.  Both can be installed locally for command line access, or as part of an automated build system, or in a web service.
 
-## 2. Validating RFCXML I-Ds with xml2rfc
-RFCXML I-Ds can be validated by running [xml2rfc](https://github.com/ietf-tools/xml2rfc) locally or as part of your build process
+The command line validation tools below only support I-Ds written in RFCXML or plaintext.  It is common for authors who draft in other formats to to create their own local build process, chaining together multiple tools.
 
-## 3. Validating plaintext I-Ds with idnits
-Plaintext I-Ds can be validated by running [idnits](https://github.com/ietf-tools/idnits-mirror) locally or as part of your build service.
+### xml2rfc
+[xml2rfc](https://github.com/ietf-tools/xml2rfc) is the core tool for validating and transforming RFCXML files with a wide range of features. xml2rfc is the main tool used behind the scenes in the Author Tools web service.
 
-## 4. Validating by submitting your I-D to Datatracker
-When an I-D is submitted to Datatracker it automatically validates the I-D and reports any errors.  For more details, see [Submitting your Internet-Draft](/submitting-your-internet-draft).
+### idnits
+[idnits](https://github.com/ietf-tools/idnits-mirror) validates plaintext I-Ds. idnits is also used behind the scenes by the Author Tools web service.
 
-## 5. Validating I-Ds in other formats
-Document validation is only possible for I-Ds written in RFCXML or plain text.  An I-D authored in a different format needs to be converted to either RFCXML or plaintext and then validated using one of the methods above.
+## Validating by submitting your I-D to Datatracker
+When an I-D is submitted to Datatracker it automatically validates the I-D and reports any errors.  For more details, see [Submitting your Internet-Draft](/submitting-your-internet-drafts).
+
 
 # Validating SVG
 ## 1. Validating use the Author Tools web service

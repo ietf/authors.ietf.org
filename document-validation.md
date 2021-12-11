@@ -2,7 +2,7 @@
 title: Document validation
 description: 
 published: true
-date: 2021-12-11T21:08:52.127Z
+date: 2021-12-11T22:33:58.282Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
@@ -28,7 +28,7 @@ The command line validation tools below only support I-Ds written in RFCXML or p
 [idnits](https://github.com/ietf-tools/idnits-mirror) validates plaintext I-Ds. idnits is also used behind the scenes by the Author Tools web service.
 
 ## Validating by submitting your I-D to Datatracker
-When an I-D is submitted to Datatracker it automatically validates the I-D and reports any errors.  For more details, see [Submitting your Internet-Draft](/submitting-your-internet-drafts).
+When an I-D is submitted to Datatracker it automatically validates the I-D and reports any errors.  For more details, see [Submitting your Internet-Draft](/submitting-your-internet-draft).
 
 
 # Validating SVG

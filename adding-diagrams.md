@@ -2,14 +2,14 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-10T00:45:35.122Z
+date: 2021-12-11T22:38:40.915Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
 ---
 
 # Introduction
-Your diagrams can be provided in ASCII-art, SVG or both, depending on your authoring format and the format you submit your I-D in.
+Your diagrams can be provided in ASCII-art, SVG or both:
 *  If only ASCII-art is provided then it is used in all rendering (see RFC9139 for example)
 *  If both are provided then SVG is used in the HTML and PDF rendering, and ASCII-art is used in the plaintext rendering
 *  If only SVG is provided then it is used in the HTML and PDF rendering but no diagram is included in the plaintext rendering, replaced with a message that says "Artwork only available as SVG".  For this reason, providing only SVG is **not recommended**.
@@ -21,7 +21,7 @@ If you are [Drafting in Markdown](/drafting-in-markdown) or [Drafting in other m
 1. Some tools support embedded diagramming languages and manage the conversion of those into SVG
 1. Some tools do not support SVG diagrams requiring you to use ASCII-art diagrams and/or add the SVG manually after the I-D has been converted to RFCXML.
 
-For I-Ds that are submitted in plaintext, all diagrams need to be included as ASCII-art inline in the text.
+If you are [Drafting in plaintext](/drafting-in-plaintext) then all diagrams need to be included as ASCII-art inline in the text.
 
 # Generating ASCII-art diagrams
 
@@ -55,7 +55,7 @@ Your SVG diagrams must conform to the SVG profile "SVG 1.2 RFC" as documented in
 * Only 'serif', 'sans-serif', and 'monospace' generic font families from the WebFonts facility
 * Only ASCII links
 
-See [Document Validation](/document-validation) for details of how to validate your SVG.
+See [Validating your SVG](#validating-your-svg) for details of how to validate your SVG.
 
 The following tools are known to be used by community members to generate SVG using one or more of the methods above:
 
@@ -225,6 +225,11 @@ For reference, the following tools are also known to generate SVG.  If you use a
 * [LucidChart](https://www.lucidchart.com/) (paid)
 * [OmniGraffle](https://www.omnigroup.com/omnigraffle) (paid)
 * [Boxy SVG Editor](https://boxy-svg.com) (paid)
+
+# Validating your SVG
+The [Author Tools](/https://author-tools.ietf.org) web service can validate your SVG and output a corrected SVG file if required.
+
+[svgcheck](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) takes an XML file containing an SVG or an RFC document. It then compares all of the SVG elements with the schema defined in the document with RFC 7996 bis. The program has the option of modifying and writing out a version of the input that passes the defined schema. The [Author Tools](/https://author-tools.ietf.org) web service uses [svgcheck](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) in the background.
 
 # Examples
 ## SVG in RFCs

@@ -2,13 +2,19 @@
 title: Document validation
 description: 
 published: true
-date: 2021-12-11T22:45:27.576Z
+date: 2021-12-11T22:49:16.563Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
 ---
 
-Document validation is an important step for an Internet-Draft to ensure that it is correctly formatted.  This is different from the syntax validation that some of the tools perform as you use them.  There are three approaches to validation:
+Document validation is an important step for an Internet-Draft to ensure that it is correctly formatted.  This is different from the syntax validation that some of the tools perform as you use them.  
+
+> For information on validating SVG see [Adding diagrams](/adding-diagrams) and for information on validating formal languages see [Using formal languages](/using-formal-languages).
+{.is-info}
+
+
+There are three approaches to validation:
 
 # Validating with the Author Tools web service
 [Author Tools](/https://author-tools.ietf.org) is a fully featured web service for validation, rendering and more. It allows you to validate documents written in a range of common formats by chaining together multiple tools.  For more details see [Author Tools web service](/author-tools-web-service).

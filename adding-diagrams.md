@@ -2,7 +2,7 @@
 title: Adding diagrams
 description: 
 published: true
-date: 2021-12-11T22:38:40.915Z
+date: 2021-12-11T22:39:33.403Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -229,7 +229,7 @@ For reference, the following tools are also known to generate SVG.  If you use a
 # Validating your SVG
 The [Author Tools](/https://author-tools.ietf.org) web service can validate your SVG and output a corrected SVG file if required.
 
-[svgcheck](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) takes an XML file containing an SVG or an RFC document. It then compares all of the SVG elements with the schema defined in the document with RFC 7996 bis. The program has the option of modifying and writing out a version of the input that passes the defined schema. The [Author Tools](/https://author-tools.ietf.org) web service uses [svgcheck](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) in the background.
+[svgcheck](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) is a command line tool that takes an XML file containing an SVG or an RFC document. It then compares all of the SVG elements with the schema defined in the document with RFC 7996 bis. The program has the option of modifying and writing out a version of the input that passes the defined schema. The [Author Tools](/https://author-tools.ietf.org) web service uses [svgcheck](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) in the background.
 
 # Examples
 ## SVG in RFCs

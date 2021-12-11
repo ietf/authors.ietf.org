@@ -2,7 +2,7 @@
 title: Home
 description: Welcome to the Internet-Draft/RFC author resources site
 published: true
-date: 2021-12-11T20:19:25.158Z
+date: 2021-12-11T20:21:28.168Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T00:11:52.864Z
@@ -54,7 +54,7 @@ At this stage, you have all the options above though we recommend reading throug
 It is common for a group of authors to work on an I-D and so it is important to consider if all of your co-authors can work with your chosen format and have access to and familiarity with the same tools. Additionally, you need to consider if your I-Ds will be worked on using an integrated issue tracker and source control system such as GitHub.  For more details see [Collaborative editing](/collaborative-editing).
 
 - **Document validation** 
-Validation is an important step for a document to ensure that it is correctly formatted and for it to successfully pass the next steps of submission as an Internet-Draft or output rendering, though many authors rely on the submission process to validate their I-D. The two supported formats for document validation tools are RFCXML and plaintext.  If you have used a different format then you will need to ensure it is supported by a tool that can convert it into either plaintext or RFCXML for validation.  For more details, see [Document validation](/document-validation).
+Validation is an important step for a document to ensure that it is correctly formatted and for it to successfully pass the next steps of submission as an Internet-Draft or output rendering, though many authors rely on the submission process to validate their I-D.  For more details, see [Document validation](/document-validation).
 
 - **Rendered output**
 It is common for authors to render their documents into a easily read format such as PDF, HTML or plaintext.  For more details see [Rendering and converting](/rendering-and-converting).

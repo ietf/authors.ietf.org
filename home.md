@@ -2,7 +2,7 @@
 title: Home
 description: Welcome to the Internet-Draft/RFC author resources site
 published: true
-date: 2021-12-09T03:30:56.917Z
+date: 2021-12-11T20:19:25.158Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T00:11:52.864Z
@@ -60,7 +60,7 @@ Validation is an important step for a document to ensure that it is correctly fo
 It is common for authors to render their documents into a easily read format such as PDF, HTML or plaintext.  For more details see [Rendering and converting](/rendering-and-converting).
 
 - **Datatracker submission with document validation**
-Datatracker only accepts documents in RFCXML or plaintext, not in any lightweight text markup language such as Markdown, and automatically validates all I-Ds as part of the submission process. If you have used a different format for authoring then you will need to ensure that it is supported by a tool that can convert it into either plaintext or RFCXML for submission.
+When you are ready to share your I-D you need to submit it to the Datatracker at which point it will be automatically validated.  Datatracker only accepts I-Ds in RFCXML or plaintext format.  For more details see [Submitting your Internet-Draft](/submitting-your-internet-draft).
 
 - **RFC Pre-publication review**
 If your document is chosen to become an RFC then it will need to go through the [AUTH48 pre-publication review process](https://www.rfc-editor.org/pubprocess/auth48/), which uses RFCXML only.  If up to this point you have used plaintext or a markup language that is converted into plaintext for validation and submission, then the [id2xml](https://github.com/ietf-tools/id2xml) tool will be used to convert it into RFCXML, which may not produce an identical looking result. At this stage you will need to work with RFCXML to address any issues raised by the editors in order for the RFC to be published.

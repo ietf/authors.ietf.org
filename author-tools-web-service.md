@@ -2,13 +2,12 @@
 title: Author Tools web service
 description: 
 published: true
-date: 2021-12-11T21:08:06.496Z
+date: 2021-12-11T22:32:36.367Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T12:37:54.926Z
 ---
 
-# Author Tools web service
 The [Author Tools](https://author-tools.ietf.org) web service supports a range of common tasks, thereby reducing the need for authors to install and maintain key tools locally.  These tasks include:
 * Validating I-Ds
 * Converting from one format to another 

@@ -2,7 +2,7 @@
 title: Document validation
 description: 
 published: true
-date: 2021-12-11T22:49:16.563Z
+date: 2021-12-14T08:16:31.668Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
@@ -10,7 +10,7 @@ dateCreated: 2021-08-20T02:57:26.157Z
 
 Document validation is an important step for an Internet-Draft to ensure that it is correctly formatted.  This is different from the syntax validation that some of the tools perform as you use them.  
 
-> For information on validating SVG see [Adding diagrams](/adding-diagrams) and for information on validating formal languages see [Using formal languages](/using-formal-languages).
+> For information on validating SVG see [Adding diagrams](/adding-diagrams) and for information on validating formal languages see [Adding formal languages](/adding-formal-languages).
 {.is-info}
 
 

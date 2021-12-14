@@ -2,7 +2,7 @@
 title: Adding formal languages
 description: 
 published: true
-date: 2021-12-14T09:57:13.395Z
+date: 2021-12-14T10:05:44.076Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-11T22:42:14.471Z
@@ -13,9 +13,6 @@ There are a number of formal languages used in I-Ds and several tools have been 
 
 > Make sure that any use of formal languages conforms with the [IESG statement on the use of formal languages](https://www.ietf.org/about/groups/iesg/statements/formal-languages-use/).
 {.is-success}
-
-## rfcstrip
-[rfcstrip](https://github.com/mbj4668/rfcstrip) extracts code components, YANG modules and SMIv2 (MIB) modules from RFCs and I-Ds, and extracts and unfolds artwork from RFCs and I-Ds in XML format.
 
 # ABNF
 ABNF is a general purpose formal grammar notation specified in STD 68 (RFC 5234).
@@ -40,6 +37,9 @@ MIB modules with the correct syntax will compile cleanly using smilint, e.g.:
 ```bash
 smilint -m -s -l 6 -i namelength-32
 ```
+
+## rfcstrip
+[rfcstrip](https://github.com/mbj4668/rfcstrip) extracts code components, YANG modules and SMIv2 (MIB) modules from RFCs and I-Ds, and extracts and unfolds artwork from RFCs and I-Ds in XML format.
 
 # YANG
 YANG (Yet Another Next Generation) is a data modeling language for data sent over network management protocols such as NETCONF and RESTCONF specified in RFC 7950, RFC 8340 and many others  
@@ -68,7 +68,7 @@ pyang -f yang --keep-comments --yang-line-length 69 FILE
 [libyang](https://github.com/CESNET/libyang) is an open source YANG data modelling language parser and toolkit that includes the [yanglint](https://github.com/CESNET/libyang/blob/master/tools/lint/examples/README.md) command line tool for validation and conversion of the schemas and YANG modeled data.
 
 ## xym
-[xym](https://github.com/xym-tool/xym) is an open source tool for extracting YANG modules from files.
+[xym](https://github.com/xym-tool/xym) is an open source tool for extracting YANG modules from files.  See also [rfcstrip](#rfcstrip).
 
 # XML
 Protocol specifications that use XML should always use well-formed XML at a minimum. Sample XML instances included in a specification have to be well-formed, and if the XML is supposed to be valid (according to the current W3C definition of validity), the samples must reference and be validated using an appropriate XML Schema, DTD, or another standard validation mechanism that is structurally and syntactically correct.

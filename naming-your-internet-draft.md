@@ -2,7 +2,7 @@
 title: Naming your Internet-Draft
 description: 
 published: true
-date: 2021-12-14T23:17:10.215Z
+date: 2021-12-14T23:22:05.952Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-14T23:17:10.215Z
@@ -18,14 +18,14 @@ If your I-D is submitted as plain text (which is not recommended), the name and 
 # Formats
 Internet-Draft names have one of the following formats each made up of a number of components:
 
-1. Individual submissions
+1. **Individual submissions**
    This format is used if the I-D has not been adopted into any stream (i.e. an individual submission) or if it is being considered for publication in the Independent Submission Stream
   
 > draft-***(author)***-***(subject)***-***(version)***
 > draft-***(author)***-***(group)***-***(subject)***-***(version)***
 {.is-info}
 
-2. Adopted submissions and submissions from related organizations
+2. **Adopted submissions and submissions from related organizations**
    This format is used if an I-D has been adopted into any stream other than the Independent Submission Stream, or if the I-D has been authored by one of the related organizations as listed under ***(source)*** below.
 
 > draft-***(source)***-***(group)***-***(subject)***-***(version)***

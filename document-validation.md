@@ -2,7 +2,7 @@
 title: Document validation
 description: 
 published: true
-date: 2021-12-14T08:16:31.668Z
+date: 2021-12-14T20:24:40.530Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
@@ -26,6 +26,14 @@ The command line validation tools below only support I-Ds written in RFCXML or p
 
 ## xml2rfc
 [xml2rfc](https://github.com/ietf-tools/xml2rfc) is the core tool for validating and transforming RFCXML files with a wide range of features. xml2rfc is the main tool used behind the scenes in the Author Tools web service.
+
+## rfclint
+[rfclint](https://github.com/ietf-tools/RfcEditor/tree/master/rfclint) is used by the RFC Production Center as a validation tool for RFCXML files.  rfclint performs the following checks:
+* Validate the file is well formed XML and that it conforms to the XML2RFC Version 3 schema as defined in RFC 7991.
+* Verify that embedded XML stanzas are well formed.
+* Verify that embedded ABNF is complete and well formed.
+* Identify misspelled words.
+* Detect duplicate words.
 
 ## idnits
 [idnits](https://github.com/ietf-tools/idnits-mirror) validates plaintext I-Ds. idnits is also used behind the scenes by the Author Tools web service.

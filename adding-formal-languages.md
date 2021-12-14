@@ -1,8 +1,8 @@
 ---
-title: Adding formal languages
+title: Formal languages
 description: 
 published: true
-date: 2021-12-14T10:05:44.076Z
+date: 2021-12-14T20:37:05.217Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-11T22:42:14.471Z

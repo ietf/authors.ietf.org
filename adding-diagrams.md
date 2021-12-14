@@ -1,8 +1,8 @@
 ---
-title: Adding diagrams
+title: Diagrams
 description: 
 published: true
-date: 2021-12-11T22:39:33.403Z
+date: 2021-12-14T20:36:37.614Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z

@@ -2,7 +2,7 @@
 title: Home
 description: Welcome to the Internet-Draft/RFC author resources site
 published: true
-date: 2021-12-11T20:21:28.168Z
+date: 2021-12-14T23:37:04.607Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T00:11:52.864Z
@@ -79,4 +79,9 @@ This site does not cover the [RFC publication process](https://www.rfc-editor.or
 The content for this site is available in [GitHub](https://github.com/ietf-authors/authors.ietf.org) and we welcome pull requests proposing changes from the community. The repository [README](https://github.com/ietf-authors/authors.ietf.org/blob/main/README.md) provides guidance on how to submit pull requests.
 
 Likewise, the [templates and schemas](/templates-and-schemas) available on this site are published on [GitHub](https://github.com/ietf-authors/rfcxml-templates-and-schemas) and we welcome pull requests proposing changes.
+
+# Acknowledgements
+This site includes much text from previous work by Henrik Levkowetz, Robert Sparks, Russ Housley, Ben Kaduk, Murray Kucherawy, Alvaro Retana, the RFC Production Center, and the members of many IESGs.
+
+
 

@@ -2,7 +2,7 @@
 title: Naming your Internet-Draft
 description: 
 published: true
-date: 2021-12-14T23:22:05.952Z
+date: 2021-12-14T23:45:41.784Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-14T23:17:10.215Z
@@ -77,6 +77,8 @@ A popular convention is that an individual submission seeking adoption by a work
 
 ## (subject)
 This describes the subject of the I-D, usually in just a few words. Each word is separated by a hyphen.
+
+The name of an I-D should not imply a status. Avoid the use of the terms "Standard", "Proposed", "Draft", "Experimental", "Historic", "Required", "Recommended", "Elective", or "Restricted".
 
 Internet-Drafts that revise existing RFCs often have names with "bis" in them, meaning 'again' or 'twice'. For example, an I-D that is proposed as a replacement to RFC 2345 might be called "draft-someone-rfc2345bis-00".
 

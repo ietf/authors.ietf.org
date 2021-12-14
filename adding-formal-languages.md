@@ -2,7 +2,7 @@
 title: Adding formal languages
 description: 
 published: true
-date: 2021-12-14T09:36:31.643Z
+date: 2021-12-14T09:49:34.222Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-11T22:42:14.471Z
@@ -19,7 +19,6 @@ ABNF is a general purpose formal grammar notation specified in STD 68 (RFC 5234)
 [bap](https://github.com/ietf-tools/bap) can extract and validate ABNF.  The extraction feature is available as a separate [web service](https://tools.ietf.org/abnf/) and the validation as a separate [web form](https://tools.ietf.org/tools/bap/abnf.cgi).
 
 When ABNF is used, your I-D must contain a normative reference to RFC 5234, the specification for ABNF.
-
 
 # MIB modules
 MIB modules are collections of related objects of SMIv2 management information specified in STD 58 (RFC 2578, RFC 2579, RFC2580).
@@ -63,6 +62,17 @@ pyang -f yang --keep-comments --yang-line-length 69 FILE
 
 ## libyang
 [libyang](https://github.com/CESNET/libyang) is an open source YANG data modelling language parser and toolkit that includes the [yanglint](https://github.com/CESNET/libyang/blob/master/tools/lint/examples/README.md) command line tool for validation and conversion of the schemas and YANG modeled data.
+
+# XML
+Protocol specifications that use XML should always use well-formed XML at a minimum. Sample XML instances included in a specification have to be well-formed, and if the XML is supposed to be valid (according to the current W3C definition of validity), the samples must reference and be validated using an appropriate XML Schema, DTD, or another standard validation mechanism that is structurally and syntactically correct.
+
+Other guidelines for the use of XML in IETF protocols can be found in RFC 3470. Internet-Drafts that include an XML Schema should include a normative reference to either the W3C XML Schema Definition Language 1.1 [Part1](https://www.w3.org/TR/xmlschema11-1/) or [Part 2](https://www.w3.org/TR/xmlschema11-2/).
+
+XML allows syntax extensions using structures, such as the `<any>` element information item in XML Schema.  If your XML defines and extension mechanism then:
+
+- [ ] Ensure the I-D contains clear guidance on how, when, and where any extension structures, such as versioning, can be used.
+- [ ] Check that any new or updated XML Schemas, Namespaces, and Resource Description Framework (RDF) Schemas are being registered with IANA using the procedures described in RFC 3688.
+
 
 # Supporting tools
 

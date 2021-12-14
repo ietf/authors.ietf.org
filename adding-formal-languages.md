@@ -2,17 +2,20 @@
 title: Adding formal languages
 description: 
 published: true
-date: 2021-12-14T09:53:21.082Z
+date: 2021-12-14T09:57:13.395Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-11T22:42:14.471Z
 ---
 
+# Introduction
 There are a number of formal languages used in I-Ds and several tools have been written to help process them. 
 
 > Make sure that any use of formal languages conforms with the [IESG statement on the use of formal languages](https://www.ietf.org/about/groups/iesg/statements/formal-languages-use/).
 {.is-success}
 
+## rfcstrip
+[rfcstrip](https://github.com/mbj4668/rfcstrip) extracts code components, YANG modules and SMIv2 (MIB) modules from RFCs and I-Ds, and extracts and unfolds artwork from RFCs and I-Ds in XML format.
 
 # ABNF
 ABNF is a general purpose formal grammar notation specified in STD 68 (RFC 5234).
@@ -77,8 +80,3 @@ XML allows syntax extensions using structures, such as the `<any>` element infor
 - [ ] Ensure the I-D contains clear guidance on how, when, and where any extension structures, such as versioning, can be used.
 - [ ] Check that any new or updated XML Schemas, Namespaces, and Resource Description Framework (RDF) Schemas are being registered with IANA using the procedures described in RFC 3688.
 
-
-# Supporting tools
-
-## rfcstrip
-[rfcstrip](https://github.com/mbj4668/rfcstrip) extracts code components, YANG modules and SMIv2 (MIB) modules from RFCs and I-Ds, and extracts and unfolds artwork from RFCs and I-Ds in XML format.

@@ -2,7 +2,7 @@
 title: Tools catalog
 description: 
 published: true
-date: 2021-12-14T20:31:27.367Z
+date: 2021-12-14T20:32:07.891Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T00:37:22.495Z
@@ -79,7 +79,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Build, CLI | Convert | nroff | RFCXML(old) | No |
 | [**pyang**](https://github.com/mbj4668/pyang) | Build, CLI | Validate, Convert | YANG | ? | N/A |
 | [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Web | Compare | plaintext | - | N/A |
-| [**rfclint**](https://github.com/ietf-tools/RfcEditor/tree/master/rfclint) | Build, CLI | Validate | RFCXML | RFCXML |
+| [**rfclint**](https://github.com/ietf-tools/RfcEditor/tree/master/rfclint) | Build, CLI | Validate | RFCXML | RFCXML | Yes |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Build, CLI, Web | Validate, Convert | SVG | SVG | Yes |
 | [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Build, CLI, Web | Validate, Convert | RFCXML, RFCXML(old), plaintext | RFCXML Plain text, PDF, HTML, HTMLised, EPUB, nroff | Yes |
 | [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | Editor | Validate, Insert | RFCXML(old) | RFCXML(old) | No |

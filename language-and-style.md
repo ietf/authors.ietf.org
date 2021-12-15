@@ -2,14 +2,14 @@
 title: Language and style
 description: 
 published: true
-date: 2021-12-15T03:08:31.376Z
+date: 2021-12-15T05:20:12.438Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-14T23:52:28.098Z
 ---
 
 # Style guide
-The recommended style for Internet-Drafts is documented in a collection of documents that are together known as the [RFC Style Guide](https://www.rfc-editor.org/styleguide/).
+The recommended style for Internet-Drafts is documented in a collection of documents that are together known as the [RFC Editor's Style Guide](https://www.rfc-editor.org/styleguide/).
 
 # Abbreviations
 Abbreviations should generally be expanded in parentheses.  The RFC Editor maintains a list of [approved abbreviations](https://www.rfc-editor.org/materials/abbrev.expansion.txt) that do not need to be expanded.

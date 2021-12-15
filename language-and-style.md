@@ -2,7 +2,7 @@
 title: Language and style
 description: 
 published: true
-date: 2021-12-14T23:52:28.098Z
+date: 2021-12-15T01:17:29.824Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-14T23:52:28.098Z
@@ -12,11 +12,12 @@ dateCreated: 2021-12-14T23:52:28.098Z
 The recommended style for Internet-Drafts is documented in a collection of documents that are together known as the [RFC Style Guide](https://www.rfc-editor.org/styleguide/).
 
 # Internet-Drafts Are Not RFCs
-There are two key rules for I-D authors to avoid conflicting with the roles of the RFC Editor and the IESG:
+There are some key rules for I-D authors:
 * Your I-D must not refer to itself as an RFC or a draft RFC.
 * Your I-D must neither state nor imply that it has any standards-like status.
+* Avoid the use of the terms "Standard", "Proposed", "Draft", "Experimental", "Historic", "Required", "Recommended", "Elective", or "Restricted" in the I-D title. 
 
-The title of an I-D should not imply a status. Avoid the use of the terms "Standard", "Proposed", "Draft", "Experimental", "Historic", "Required", "Recommended", "Elective", or "Restricted" in the I-D title. An I-D may indicate its intended status, if it were to be published as an RFC, by setting the **status** attribute of the [**\<seriesInfo\>**](https://authors.ietf.org/en/rfcxml-vocabulary#seriesinfo) RFCXML element (see RFC 7322) or by placing the words `Intended status: <status>` on the left side of the headers in the first page if preparing a plaintext submission.
+An I-D may indicate its intended status, if it were to be published as an RFC, by setting the **status** attribute of the [**\<seriesInfo\>**](https://authors.ietf.org/en/rfcxml-vocabulary#seriesinfo) RFCXML element (see RFC 7322) or by placing the words `Intended status: <status>` on the left side of the headers in the first page if preparing a plaintext submission.
 
 # Use of BCP 14 terms
 If [BCP 14](https://www.rfc-editor.org/info/bcp14) language (MUST, SHOULD, etc.) is used, the guidelines in RFC 2119, especially those in Sections 6 and 7, should be followed. SHOULD is especially problematic: it needs to be clear why SHOULD is used rather than MUST, and what the implications are of varying from the recommendation.
@@ -26,3 +27,6 @@ Avoid text that will become outdated after the I-D is published. Examples includ
 
 # Inclusive Language
 The IESG has made a [statement](https://www.ietf.org/about/groups/iesg/statements/on-inclusive-language/) recommending authors review [NISTIR 8366](https://doi.org/10.6028/NIST.IR.8366) for guidelines on using inclusive terminology. Similar guidance pointing to NISTIR 8366 exists for other RFC Streams. Authors are encouraged to familiarize themselves with and apply the guidance.
+
+# Abbreviations
+Abbreviations should generally be expanded in parentheses.  The RFC Editor maintains a list of [approved abbreviations](https://www.rfc-editor.org/materials/abbrev.expansion.txt) that do not need to be expanded.

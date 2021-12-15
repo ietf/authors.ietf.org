@@ -2,7 +2,7 @@
 title: Required content
 description: 
 published: true
-date: 2021-12-15T09:41:28.477Z
+date: 2021-12-15T09:44:05.399Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-15T09:33:48.572Z
@@ -84,9 +84,9 @@ Some other references that may be useful when crafting this section are:
 * [Pervasive Monitoring Is an Attack](https://rfc-editor.org/info/rfc7258)
 * [Internet Security Glossary, Version 2](https://rfc-editor.org/info/rfc4949)
 * [Guidelines for Specifying the Use of IPsec Version 2](https://rfc-editor.org/info/rfc5406)
-Guidelines for Authors and Reviewers of MIB Documents
-Security Guidelines for IETF MIB Modules
-YANG Security Considerations
+* [Guidelines for Authors and Reviewers of MIB Documents](https://rfc-editor.org/info/rfc4181)
+* [Security Guidelines for IETF MIB Modules](https://trac.ietf.org/trac/ops/wiki/mib-security)
+* [YANG Security Considerations](https://trac.ietf.org/trac/ops/wiki/yang-security-guidelines)
 
 Checklist:
 - [ ] Verify that a meaningful Security Consideration section is present.

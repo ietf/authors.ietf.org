@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-12-07T01:12:26.441Z
+date: 2021-12-15T09:36:57.210Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -1680,6 +1680,8 @@ Default value: "true"
 
 #### ipr
 Represents the Intellectual Property status of the document.
+
+The possible values are specified in Appendix A.1 of RFC 7991 and explained in [Copyright Notice](/required-content#copyright-notice). 
 
 If the attribute is set to the empty string, it is assumed that this is not a regular IETF/IRTF/IAB/ISE document, and the document header content is reduced. This is considered a feature by a few other standards organisations that use IETF tools to format their standards documents.
 

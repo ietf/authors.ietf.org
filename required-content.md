@@ -2,7 +2,7 @@
 title: Required content
 description: 
 published: true
-date: 2021-12-15T09:33:48.572Z
+date: 2021-12-15T09:41:28.477Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-15T09:33:48.572Z
@@ -68,3 +68,25 @@ Checklist:
 
 > If you think that you, your company, or anyone else owns a patent or other Intellectual Property Rights (IPR) on the work described in the I-D, you should carefully read BCP 79. The first notice required in an I-D, described earlier in this section, obligates you to send an IPR disclosure statement under certain circumstances. In particular, when preparing a document intended to be included in the IETF Stream, before submitting the I-D, discussing it with the working group chairs or Area Directors is advised.
 {.is-info}
+
+# Introduction
+TODO.
+
+[ ] If the I-D intends to obsolete or update a previous RFC, ensure the Introduction briefly explains what is being updated and why.
+
+# Security Considerations
+RFC 3552 describes current best practices about writing a Security Considerations section. This section is mandatory in all documents.
+
+The text of this section must have a meaningful exploration of security issues raised by the proposal, which should include both risks and a description of solutions or workarounds. It is rare that technical work can legitimately make a claim like "This protocol introduces no security considerations," so it needs to be fairly obvious for that to be believable, or the document will be returned for further development. Procedural documents, however, more commonly can claim no added security risk.
+
+Some other references that may be useful when crafting this section are:
+
+* [Pervasive Monitoring Is an Attack](https://rfc-editor.org/info/rfc7258)
+* [Internet Security Glossary, Version 2](https://rfc-editor.org/info/rfc4949)
+* [Guidelines for Specifying the Use of IPsec Version 2](https://rfc-editor.org/info/rfc5406)
+Guidelines for Authors and Reviewers of MIB Documents
+Security Guidelines for IETF MIB Modules
+YANG Security Considerations
+
+Checklist:
+- [ ] Verify that a meaningful Security Consideration section is present.

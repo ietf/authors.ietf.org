@@ -2,7 +2,7 @@
 title: Language and style
 description: 
 published: true
-date: 2021-12-15T03:07:09.611Z
+date: 2021-12-15T03:08:20.894Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-14T23:52:28.098Z
@@ -25,7 +25,7 @@ An I-D may indicate its intended status, if it were to be published as an RFC, b
 # Use of BCP 14 terms
 If [BCP 14](https://www.rfc-editor.org/info/bcp14) language (MUST, SHOULD, etc.) is used, the guidelines in RFC 2119, especially those in Sections 6 and 7, should be followed. SHOULD is especially problematic: it needs to be clear why SHOULD is used rather than MUST, and what the implications are of varying from the recommendation.
 
-# Inclusive Language
+# Inclusive language
 The IESG has made a [statement](https://www.ietf.org/about/groups/iesg/statements/on-inclusive-language/) recommending authors review [NISTIR 8366](https://doi.org/10.6028/NIST.IR.8366) for guidelines on using inclusive terminology. Similar guidance pointing to NISTIR 8366 exists for other RFC Streams. Authors are encouraged to familiarize themselves with and apply the guidance.
 
 # Stale text

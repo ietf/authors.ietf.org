@@ -2,7 +2,7 @@
 title: Language and style
 description: 
 published: true
-date: 2021-12-15T03:08:20.894Z
+date: 2021-12-15T03:08:31.376Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-14T23:52:28.098Z
@@ -14,7 +14,7 @@ The recommended style for Internet-Drafts is documented in a collection of docum
 # Abbreviations
 Abbreviations should generally be expanded in parentheses.  The RFC Editor maintains a list of [approved abbreviations](https://www.rfc-editor.org/materials/abbrev.expansion.txt) that do not need to be expanded.
 
-# Internet-Drafts Are Not RFCs
+# Internet-Drafts are not RFCs
 There are some key rules for I-D authors:
 * Your I-D must not refer to itself as an RFC or a draft RFC.
 * Your I-D must neither state nor imply that it has any standards-like status.

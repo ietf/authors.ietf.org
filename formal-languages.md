@@ -2,7 +2,7 @@
 title: Formal languages
 description: 
 published: true
-date: 2021-12-14T20:37:05.217Z
+date: 2021-12-15T01:24:33.192Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-11T22:42:14.471Z
@@ -80,3 +80,5 @@ XML allows syntax extensions using structures, such as the `<any>` element infor
 - [ ] Ensure the I-D contains clear guidance on how, when, and where any extension structures, such as versioning, can be used.
 - [ ] Check that any new or updated XML Schemas, Namespaces, and Resource Description Framework (RDF) Schemas are being registered with IANA using the procedures described in RFC 3688.
 
+# Programming languages
+When programming languages are used in Internet-Drafts, you must include as a reference the formal definition of that coding language (e.g., [C99](https://www.iso.org/standard/29237.html)).

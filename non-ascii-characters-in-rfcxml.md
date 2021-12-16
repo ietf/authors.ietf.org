@@ -2,13 +2,11 @@
 title: Non-ASCII characters in RFCXML
 description: 
 published: true
-date: 2021-12-16T02:49:51.882Z
+date: 2021-12-16T04:45:35.249Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-16T02:40:30.443Z
 ---
-
-# Introduction
 
 The use of non-ASCII characters in RFCXML is detailed in RFC 7997. Your file encoding must be set as UTF-8 (the default).
 

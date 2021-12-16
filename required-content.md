@@ -2,7 +2,7 @@
 title: Required content
 description: 
 published: true
-date: 2021-12-16T03:11:12.723Z
+date: 2021-12-16T03:11:53.087Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-15T09:33:48.572Z
@@ -15,9 +15,9 @@ All Internet-Drafts must contain the following sections:
 * [Copyright Notice](#copyright-notice)
 * [Introduction](#introduction)
 * [Security Considerations](#security-considerations)
-* [IANA Considerations](iana-considerations)
+* [IANA Considerations](#iana-considerations)
 * [References](#references)
-* [Authors' Addresses](authors-addresses)
+* [Authors' Addresses](#authors-addresses)
 
 The [RFC Editor's Style Guide](https://www.rfc-editor.org/styleguide/) includes further guidance.
 

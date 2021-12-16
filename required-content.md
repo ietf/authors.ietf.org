@@ -2,13 +2,12 @@
 title: Required content
 description: 
 published: true
-date: 2021-12-16T03:18:51.567Z
+date: 2021-12-16T04:44:07.075Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-15T09:33:48.572Z
 ---
 
-# Introduction
 All Internet-Drafts must contain the following sections:
 * [Abstract](#abstract)
 * [Status of This Memo](#status-of-this-memo)

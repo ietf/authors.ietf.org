@@ -2,7 +2,7 @@
 title: Required content
 description: 
 published: true
-date: 2021-12-16T03:11:53.087Z
+date: 2021-12-16T03:18:51.567Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-15T09:33:48.572Z
@@ -19,7 +19,7 @@ All Internet-Drafts must contain the following sections:
 * [References](#references)
 * [Authors' Addresses](#authors-addresses)
 
-The [RFC Editor's Style Guide](https://www.rfc-editor.org/styleguide/) includes further guidance.
+For each of these sections, please consult the [RFC Editor's Style Guide](https://www.rfc-editor.org/styleguide/) for further guidance.
 
 # Abstract
 Every Internet-Draft must have an abstract. The abstract should provide a concise and comprehensive overview of the purpose and contents of the entire document. Its purpose is to give a technically knowledgeable reader a general overview of the function of the document, to decide whether reading it will be useful. In addition to its function in the document, the abstract is used as a summary in publication announcements and in the online [index of I-Ds](https://www.ietf.org/id/1id-abstracts.txt).
@@ -67,12 +67,13 @@ Checklist:
 {.is-info}
 
 # Introduction
-TODO.
+Your I-D must include an Introduction section that (among other things) explains the motivation for the I-D and (if appropriate) describes the applicability of the document, e.g., whether it specifies a protocol, provides a discussion of some problem, is simply of interest to the Internet community, or provides a status report on some activity.  The Introduction must call out any RFCs an I-D intends to obsolete or update  This may result in some duplication of text between the Abstract and the Introduction; this is acceptable.
 
-[ ] If the I-D intends to obsolete or update a previous RFC, ensure the Introduction briefly explains what is being updated and why.
+Checklist:
+- [ ] If the I-D intends to obsolete or update a previous RFC, ensure the Introduction briefly explains what is being updated and why.
 
 # Summary of Changes
-As noted in the abstract and introduction sections above, the abstract and introduction must call out any RFCs an I-D intends to obsolete or update. There should also be a section providing greater detail about the motivation and changes.
+As noted in the [Abstract](#abstract) and [Introduction](#introduction) sections above, the Abstract and Introduction must call out any RFCs an I-D intends to obsolete or update. There should also be a section providing greater detail about the motivation and changes.
 
 Checklist:
 - [ ] Ensure the I-D clearly summarizes any changes made from the RFCs being updated or obsoleted.

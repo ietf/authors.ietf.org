@@ -2,13 +2,12 @@
 title: Naming your Internet-Draft
 description: 
 published: true
-date: 2021-12-14T23:45:41.784Z
+date: 2021-12-16T04:43:36.904Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-14T23:17:10.215Z
 ---
 
-# Introduction
 Internet-Drafts have structured names that should accurately reflect the status and subject of the draft.  Please ensure that the following guidelines are followed when naming your draft.
 
 If your I-D is submitted as XML (which is highly recommended), the name and version of the document will be declared in the **value** attribute of a [**\<seriesInfo\>**](https://authors.ietf.org/en/rfcxml-vocabulary#seriesinfo) element. The filename submitted must have a .xml extension.

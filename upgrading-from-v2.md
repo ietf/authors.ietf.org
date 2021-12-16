@@ -2,7 +2,7 @@
 title: Upgrading from v2
 description: 
 published: true
-date: 2021-11-09T15:44:38.811Z
+date: 2021-12-16T09:16:19.756Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T19:26:45.619Z
@@ -49,7 +49,7 @@ This issue is tracked in https://github.com/cabo/kramdown-rfc2629/issues/64. Add
 This issue is tracked in https://trac.ietf.org/tools/xml2rfc/trac/ticket/439. You can't modify your source to avoid it.
 
 # New features with v3
-Some highlights are including Unicode characters, text formatting, and SVG diagrams. For complete details, see Section 1.3 of RFC7991.
+Some highlights are the handling of [non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml), new text formatting elements, and SVG [Diagrams](/diagrams). For complete details, see Section 1.3 of RFC7991.
 
 # Deprecated syntax
 ## Elements
@@ -104,3 +104,7 @@ The following attributes still appear in the schema for non-deprecated elements 
   * **hangText**
   Use a definition list ([**\<dl\>**](/rfcxml-vocabulary#dl)) instead.
 
+## Special processing of non-ASCII characters
+In v2 the canonical file format was ASCII plaintext and so xml2rfc implemented special processing whereby certain non-ASCII characters were accepted in the RFCXML source and replaced with ASCII equivalents.  For exmple, if the v2 RFCXML source contained the character entity `&pound;` it would be replaced in the rendered plaintext with `GBP` instead of the `£` non-ASCII character.
+
+With the switch in v3 to the canonical format of UTF-8 XML and the direct support of [non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml) this special processing was removed.

@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-12-16T02:44:28.097Z
+date: 2021-12-16T02:50:37.055Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -2520,7 +2520,7 @@ Allowed content: ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>*
 ### Usage
 The elements [**\<author\>**](/rfcxml-vocabulary#author), [**\<organisation\>**](/rfcxml-vocabulary#organisation), [**\<street\>**](/rfcxml-vocabulary#street), [**\<city\>**](/rfcxml-vocabulary#city), [**\<region\>**](/rfcxml-vocabulary#region), [**\<code\>**](/rfcxml-vocabulary#code), [**\<country\>**](/rfcxml-vocabulary#country), [**\<postalLine\>**](/rfcxml-vocabulary#postalLine), [**\<email\>**](/rfcxml-vocabulary#email), [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo), and [**\<title\>**](/rfcxml-vocabulary#title) may contain non- ascii characters for the purpose of rendering author names, addresses, and reference titles correctly. They also have an additional **ascii** attribute for the purpose of proper rendering in ascii-only media.
 
-In order to insert Unicode characters in any other context, RFCXML requires that the Unicode string be enclosed within an [**\<u\>**](/rfcxml-vocabulary#u) element. For more details see [non-ASCII characters in RFCXML](/non-ascii-in-rfcxml).
+In order to insert Unicode characters in any other context, RFCXML requires that the Unicode string be enclosed within an [**\<u\>**](/rfcxml-vocabulary#u) element. For more details see [non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml).
 
 Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<li\>**](/rfcxml-vocabulary#li), [**\<t\>**](/rfcxml-vocabulary#t), [**\<td\>**](/rfcxml-vocabulary#td), and [**\<th\>**](/rfcxml-vocabulary#th).
 Allowed content: text
@@ -2535,7 +2535,7 @@ The ASCII equivalent of the content, to be used if the "ascii" keyword is used i
 #### format
 The **format** attribute accepts either a simplified format specification, or a full format string with placeholders for the various possible Unicode expansions.
 
-For more details see [non-ASCII characters in RFCXML](/non-ascii-in-rfcxml).
+For more details see [non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml).
 
 Default value: "lit-name-num"
 

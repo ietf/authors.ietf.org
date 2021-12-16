@@ -2,7 +2,7 @@
 title: Home
 description: Welcome to the Internet-Draft/RFC author resources site
 published: true
-date: 2021-12-16T21:07:41.939Z
+date: 2021-12-16T22:56:20.412Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T00:11:52.864Z
@@ -81,5 +81,7 @@ Likewise, the [templates and schemas](/templates-and-schemas) available on this 
 # Acknowledgements
 This site includes much text from previous work by Henrik Levkowetz, Robert Sparks, Russ Housley, Ben Kaduk, Murray Kucherawy, Alvaro Retana, the RFC Production Center, and the members of many IESGs.
 
+# Activity tracking
+Activity on this site is tracked in accordance with the [IETF/IRTF/IAB Privacy Statement](https://www.ietf.org/privacy-statement/)
 
 

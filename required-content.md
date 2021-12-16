@@ -2,16 +2,13 @@
 title: Required content
 description: 
 published: true
-date: 2021-12-15T09:44:05.399Z
+date: 2021-12-16T03:11:12.723Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-15T09:33:48.572Z
 ---
 
-> This page is still being developed
-{.is-warning}
-
-
+# Introduction
 All Internet-Drafts must contain the following sections:
 * [Abstract](#abstract)
 * [Status of This Memo](#status-of-this-memo)
@@ -74,6 +71,13 @@ TODO.
 
 [ ] If the I-D intends to obsolete or update a previous RFC, ensure the Introduction briefly explains what is being updated and why.
 
+# Summary of Changes
+As noted in the abstract and introduction sections above, the abstract and introduction must call out any RFCs an I-D intends to obsolete or update. There should also be a section providing greater detail about the motivation and changes.
+
+Checklist:
+- [ ] Ensure the I-D clearly summarizes any changes made from the RFCs being updated or obsoleted.
+- [ ] Ensure any errata against RFCs that are being obsoleted or updated have been considered, and that the I-D clearly identifies those that have been addressed.
+
 # Security Considerations
 RFC 3552 describes current best practices about writing a Security Considerations section. This section is mandatory in all documents.
 
@@ -90,3 +94,43 @@ Some other references that may be useful when crafting this section are:
 
 Checklist:
 - [ ] Verify that a meaningful Security Consideration section is present.
+
+# IANA Considerations
+
+The [Internet Assigned Numbers Authority](https://www.iana.org/) (IANA) provides global coordination of the DNS root, IP addressing, and many other Internet protocol resources for the IETF. The "IANA Considerations" section must be present in a document and enumerate any actions IANA must take upon publication of the document as an RFC.
+
+For more specific guidelines regarding structure and content for writing IANA Considerations sections, please see RFC 8126 and the IANA [Protocol Registration Procedures](https://www.iana.org/help/protocol-registration).
+
+Checklist:
+- [ ] Verify this section contains clear instructions if IANA is expected to create a new registry or modify rules for an existing registry.
+- [ ] Verify this section contains clear instructions if the document requires IANA to assign or update values in an IANA registry before RFC publication.
+- [ ] Check the existing IANA registry for registration policy rules and any requirements for specific requests for registration of protocol parameters. Individual RFCs have specific criteria and instructions that should be followed.
+- [ ] If the registration policy is "Expert Review" or "Specification Required" and/or requires mailing list review, as soon as the requested parameter information is properly formed, consider initiating reviews with IANA or sending to the appropriate mailing list (where applicable; see the RFC for that the registry for instructions). If there are any questions about what type of approval is needed from the Designated Expert (for example, if the registration should be made immediately or only pre-reviewed before publication), please contact IANA.
+- [ ] If registrations are needed early for registries with "Specification Required", "RFC Required", "IETF Review", or "Standards Action" policies, consider using the early allocation process defined in RFC 7120.
+- [ ] Verify this section explicitly and clearly identifies any references to this document that should be added for any registrations and any that should replace existing references.
+- [ ] If the document has considerable instructions for IANA actions, request an early review of the document by IANA.
+- [ ] If there is no action for IANA, verify that this section explicitly says “This document has no IANA actions.” It is often helpful for the IANA Considerations section to remain in place upon publication as an RFC even if there are no actions.
+
+# References
+A references section must be present and split into normative and informative sections. The IESG has a [Statement on Normative and Informative References](https://www.ietf.org/about/groups/iesg/statements/normative-informative-references/).
+
+Normative and informative references to non-IETF documents are permitted. However, it is best to minimize such normative references, because assessing their status when the IETF document advances on the standards track is very difficult. It is important to use the exact title, author name(s), organization and publication date. External specifications referenced by Internet-Standard-level Technical Specifications or Applicability Statements must be to open external standards, per RFC 2026.
+
+A bare URI is not generally considered a stable reference. For web-only documents, adding a reference number, title , and/or an author will help make the reference more stable. See the RFC Editor's [Style Guide](https://www.rfc-editor.org/styleguide/) for specific guidance about URIs in Internet-Drafts. Judgment can be used here; the stability of normative references is even more important than the stability of informative references.
+
+Also note that normative references to I-Ds will cause the referencing document to wait in the RFC Editor queue for the referenced I-Ds to be published as RFCs. They may in some cases become a [cluster of documents](https://www.rfc-editor.org/about/clusters/) that will be published as RFCs simultaneously.
+
+Checklist:
+- [ ] Ensure all needed references are present and correctly identified as normative or informative.
+- [ ] Verify that references are stable and resolvable.
+
+# Authors' Addresses
+Note that if the I-D is eventually published as an RFC, this information will not be changeable. When possible, provide contact information that is expected to be stable over time.
+
+Per RFC 7322:
+
+> The total number of authors or editors on the first page is generally limited to five individuals and their affiliations. If there is a request for more than five authors, the stream-approving body needs to consider if one or two editors should have primary responsibility for this document, with the other individuals listed in the Contributors or Acknowledgements section. There must be a direct correlation of authors and editors in the document header and the Authors' Addresses section. These are the individuals that must sign off on the document during the AUTH48 process and respond to inquiries, such as errata.
+
+Checklist:
+- [ ] Verify that the I-D contains a section giving the name and contact information (postal mail, phone, and/or email) for the authors.
+- [ ] Verify that there are no more than five authors or editors. If there is a need to list more, discuss the need with the relevant stream leadership as early in the process as possible. For the IETF stream, consult an Area Director.

@@ -2,7 +2,7 @@
 title: Upgrading from v2
 description: 
 published: true
-date: 2021-12-16T09:37:40.339Z
+date: 2021-12-16T18:34:11.403Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T19:26:45.619Z
@@ -104,8 +104,8 @@ The following attributes still appear in the schema for non-deprecated elements 
   * **hangText**
   Use a definition list ([**\<dl\>**](/rfcxml-vocabulary#dl)) instead.
   
-# Superseded xml2rfc processing features
-There were a number of xml2rfc processing features that have been superseded by new features introduced into the RFCXML language itself.  
+# Superseded xml2rfc features
+There were a number of xml2rfc features that have been superseded by new features introduced into the RFCXML language itself.  
 
 ## Special processing of non-ASCII characters
 In v2 the canonical file format was ASCII plaintext and so xml2rfc implemented special processing whereby certain non-ASCII characters were accepted in the RFCXML source and replaced with ASCII equivalents.  For exmple, if the v2 RFCXML source contained the character entity `&pound;` it would be replaced in the rendered plaintext with `GBP` instead of the `£` non-ASCII character.

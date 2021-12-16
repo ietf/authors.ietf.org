@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2021-12-10T02:41:42.356Z
+date: 2021-12-16T22:40:01.788Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -39,11 +39,7 @@ All of the templates above aleady have this processing instruction included and 
 ## Character entities
 In XML a character entity is a way of using a name in the XML, such as `&nbhy;` in place of the character itself (in this example the 'non-breaking hyphen' character).
 
-RFCXML documents can reference a set of character entities to assist authors
-
-### Included in the templates
-
-The Standard and Annotated templates above include the following character entities directly in the source with a DOCTYPE statement as follows:
+The templates above include the following character entities for invisible typographics characters directly in the source with a DOCTYPE statement as follows:
 
 ```xml
 <!DOCTYPE rfc [
@@ -53,20 +49,7 @@ The Standard and Annotated templates above include the following character entit
   <!ENTITY wj     "&#8288;">
 ]>
 ```
-
-### rfcxml.ent
-[rfcxml.ent](https://github.com/ietf-authors/rfcxml-templates-and-schemas/blob/main/rfcxml.ent) contains a full set of XML character entities for authors, including:
-* Some basic ASCII
-* All of ISO Latin 1
-* Some of ISO Latin 9 and 10
-* Other useful Unicode characters (including some from the windows-1252 repertoire)
-* Typographic help characters
-
-To use this set of character entities, the following line must appear in your XML source, which is commented out in the above templates:
-
-```xml
-<!DOCTYPE rfc SYSTEM "rfcxml.ent">
-```
+If you wish to use additional character entities then the recommended method is to add further inline definitions to this DOCTYPE declaration.  Replacing the DOCTYPE with a reference to an external entity file is possible but not recommended as that will prevent you from using the [Author Tools web service](/author-tools-web-service).
 
 ## Legacy files
 The following legacy files are for those working with old I-Ds or RFCs and should not be used for any new I-Ds.
@@ -76,9 +59,9 @@ The following legacy files are for those working with old I-Ds or RFCs and shoul
 ### rfc7749.rnc
 [rfc7749.rnc](https://github.com/ietf-authors/legacy-templates-and-schemas/blob/main/rfc7749.rnc) is the RelaxNG Compact Schema for v2 of RFCXML as documented in RFC7749.  When originally published, this file was called v2.rnc.
 ### rfc2629-other.ent
-[rfc2629-other.ent](https://github.com/ietf-authors/legacy-templates-and-schemas/blob/main/rfc2629-other.ent) is a small set of character entities. Use [rfcxml.ent](#rfcxmlent) instead as that combines both this file and [rfc2629-html.ent](#rfc2629-htmlent) into a single file.
+[rfc2629-other.ent](https://github.com/ietf-authors/legacy-templates-and-schemas/blob/main/rfc2629-other.ent) is a small set of character entities.  This file is no longer needed as the [special processing of non-ASCII character](/upgrading-from-v2#special-processing-of-non-ascii-characters) has been superseded by direct support for [non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml).
 ### rfc2629-html.ent
-[rfc2629-html.ent](https://github.com/ietf-authors/legacy-templates-and-schemas/blob/main/rfc2629-html.ent) is a larger set of character entities. Use [rfcxml.ent](#rfcxmlent) instead as that combines both this file and [rfc2629-other.ent](#rfc2629-otherent) into a single file.
+[rfc2629-html.ent](https://github.com/ietf-authors/legacy-templates-and-schemas/blob/main/rfc2629-html.ent) is a larger set of character entities. This file is no longer needed as the [special processing of non-ASCII character](/upgrading-from-v2#special-processing-of-non-ascii-characters) has been superseded by direct support for[non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml).
 ### rfc2629.dtd
 [rfc2629.dtd](https://github.com/ietf-authors/legacy-templates-and-schemas/blob/main/rfc2629.dtd) is the DTD for v1 of RFCXML as documented in RFC2629.
 

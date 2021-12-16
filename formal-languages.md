@@ -2,13 +2,12 @@
 title: Formal languages
 description: 
 published: true
-date: 2021-12-15T01:24:33.192Z
+date: 2021-12-16T04:44:58.833Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-11T22:42:14.471Z
 ---
 
-# Introduction
 There are a number of formal languages used in I-Ds and several tools have been written to help process them. 
 
 > Make sure that any use of formal languages conforms with the [IESG statement on the use of formal languages](https://www.ietf.org/about/groups/iesg/statements/formal-languages-use/).

@@ -2,7 +2,7 @@
 title: Required content
 description: 
 published: true
-date: 2021-12-16T04:44:07.075Z
+date: 2021-12-16T23:02:52.918Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-15T09:33:48.572Z
@@ -36,9 +36,26 @@ Checklist:
 The text of this section consists of two parts:
 
 1. "Submission Compliance for Internet-Drafts" boilerplate as specified in section 6.a of the [Trust Legal Provisions (TLP) 5.0](https://trustee.ietf.org/documents/trust-legal-provisions/tlp-5/).
-1. Boilerplate explaining the status and usage of Internet-Drafts, as specified in [TODO].
-1. A statement specifying the expiry date of the Internet-Draft.
+```
+   This Internet-Draft is submitted in full conformance with the 
+   provisions of BCP 78 and BCP 79.
+```
+2. Boilerplate explaining the status and usage of Internet-Drafts:
+```
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
 
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+```
+3. A statement specifying the expiry date of the Internet-Draft.
+```
+This Internet-Draft will expire on DD MMMM YYYY.
+```
 This section is automatically generated for authors who submit their I-D in RFCXML.  Authors of plaintext I-Ds must reproduce the text exactly.
 
 # Copyright Notice

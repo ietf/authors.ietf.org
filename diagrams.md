@@ -2,13 +2,12 @@
 title: Diagrams
 description: 
 published: true
-date: 2021-12-14T20:36:37.614Z
+date: 2021-12-16T04:44:38.430Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
 ---
 
-# Introduction
 Your diagrams can be provided in ASCII-art, SVG or both:
 *  If only ASCII-art is provided then it is used in all rendering (see RFC9139 for example)
 *  If both are provided then SVG is used in the HTML and PDF rendering, and ASCII-art is used in the plaintext rendering

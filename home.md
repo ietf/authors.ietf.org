@@ -2,7 +2,7 @@
 title: Home
 description: Welcome to the Internet-Draft/RFC author resources site
 published: true
-date: 2021-12-14T23:37:04.607Z
+date: 2021-12-16T21:07:41.939Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T00:11:52.864Z
@@ -69,8 +69,6 @@ If your document is chosen to become an RFC then it will need to go through the 
 The canonical format for published RFCs is RFCXML and the other published formats, PDF, HTML and plain text, are derived from this RFCXML. The published RFCXML looks quite different from Internet-Draft RFCXML as it has been passed through the 'prep' tool which makes it work better as a standalone document. 
 
 # Limitations of this site
-This site does not currently include the [Guidelines for I-D authors](https://www.ietf.org/standards/ids/guidelines/) though it is expected that this content will migrate here soon.
-
 This site does not cover the IETF [standards development process](https://www.ietf.org/standards/process/).
 
 This site does not cover the [RFC publication process](https://www.rfc-editor.org/pubprocess/).

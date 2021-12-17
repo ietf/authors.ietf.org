@@ -2,7 +2,7 @@
 title: Diagrams
 description: 
 published: true
-date: 2021-12-16T04:44:38.430Z
+date: 2021-12-17T02:29:30.282Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -246,7 +246,7 @@ The following example has one [**\<artset\>**](https://authors.ietf.org/en/rfcxm
   <name>Box diagram</name>
   <artset>
     <artwork type="svg" name="box.svg">
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="71.0" height="40.0" viewBox="0 0 71 40">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 71 40">
         <g>
           <title>Layer 1</title>
           <rect x="4.5" y="6.5" width="61.0" height="27.0" stroke="black" stroke-width="1.0" stroke-linecap="square" stroke-linejoin="miter" fill="none" />

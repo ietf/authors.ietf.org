@@ -91,7 +91,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | Tool | Author | Ownership | License | Maintained | Maintainer |
 | :--- | :----- | :-------- | :------ | :--------- | :--------- |
 | [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Yaron Sheffer | Yaron Sheffer | Public domain | Yes | Yaron Sheffer |
-| [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Yaron Sheffer | Yaron Sheffer | Unknown | Unknown | Yaron Sheffer |
+| [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Yaron Sheffer | Yaron Sheffer | Public domain | Yes | Yaron Sheffer |
 | [**bap**](https://github.com/ietf-tools/bap) | Bill Fenner | Bill Fenner | Unknown | No | None | 
 | [**id2xml**](https://github.com/ietf-tools/id2xml) | Henrik Levkowetz | IETF Trust | Revised BSD | Unknown | Unknown |
 | [**idnits**](https://github.com/ietf-tools/idnits) | Henrik Levkowetz | Henrik Levkowetz | GPL | Yes | Tools Team |

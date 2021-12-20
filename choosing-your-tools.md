@@ -1,12 +1,52 @@
 ---
-title: Choosing your format and tools
+title: Getting started
 description: 
 published: true
-date: 2021-12-10T00:15:24.579Z
+date: 2021-12-20T01:10:37.813Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T23:57:12.813Z
 ---
+
+# Overview of the authoring process
+The diagram below deconstructs the authoring process into stages and shows the different formats supported at each stage:
+
+```mermaid
+graph TD  
+  A("Initial drafting<br/>(Any format)") --> B("Collaborative editing<br/>(Any format)")
+  A -.-> D
+  B -.-> D
+  B -- Optional --> C("Document validation<br/>(RFCXML or plaintext only)")
+  C -.-> D([Rendered output])
+  C --> E("Datatracker submission with document validation<br/>(RFCXML or plaintext only)")
+  E -.-> D
+  B -- Required --> E
+  E --> F("RFC Pre-publication review<br/>(RFCXML only)")
+  F --> G([RFC Publication])
+```
+
+- **Initial drafting** 
+At this stage, before you adopt a format/tool we recommend reading through all the stages below before you make a decision. New authors often report that they used a format and tool recommended by a fellow author and then later had to put in significant effort to convert it into something they could use more productively. 
+
+- **Collaborative editing**
+It is common for a group of authors to work on an I-D and so it is important to consider if all of your co-authors can work with your chosen format and have access to and familiarity with the same tools. Additionally, you need to consider if your I-Ds will be worked on using an integrated issue tracker and source control system such as GitHub.  For more details see [Collaborative editing](/collaborative-editing).
+
+- **Document validation** 
+Validation is an important step for a document to ensure that it is correctly formatted and for it to successfully pass the next steps of submission as an Internet-Draft or output rendering.  For more details, see [Document validation](/document-validation).
+
+- **Rendered output**
+It is common for authors to render their documents into a easily read format such as PDF, HTML or plaintext.  For more details see [Rendering and converting](/rendering-and-converting).
+
+- **Datatracker submission with document validation**
+When you are ready to share your I-D you need to submit it to the Datatracker at which point it will be automatically validated.  Datatracker only accepts I-Ds in RFCXML or plaintext format.  For more details see [Submitting your Internet-Draft](/submitting-your-internet-draft).
+
+- **RFC Pre-publication review**
+If your document is chosen to become an RFC (each [RFC Stream](https://rfc-editor.org/info/rfc8729) has a different process for this) then it will need to go through the [AUTH48 pre-publication review process](https://www.rfc-editor.org/pubprocess/auth48/). At this stage you will need to work with RFCXML to address any issues raised by the editors in order for the RFC to be published.
+
+- **RFC Publication**
+The canonical format for published RFCs is RFCXML and the other published formats, PDF, HTML and plain text, are derived from this RFCXML. The published RFCXML looks quite different from Internet-Draft RFCXML as it has been passed through the 'prep' tool which makes it work better as a standalone document. 
+
+# Choosing your format and tools
 
 Writing Internet-Drafts is complex and time consuming and careful choice of authoring format and authoring tools can make this task much easier. Your choice of format and tools is likely to depend on what markup languages and document editing tools you are familiar with, and how you intend to work.  Your options are:
 1. **RFCXML**.  This is the most popular choice as RFCXML is the markup language used for published RFCs and can be used end-to-end throughout the authoring process. However, RFCXML is also the most complex and best suits an author or group of co-authors who are very familiar with XML and who all have access to XML editing tools.  See [Drafting in XML](/drafting-in-xml) for more details.

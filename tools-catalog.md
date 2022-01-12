@@ -55,7 +55,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**mmark**](https://mmark.miek.nl) | Generates RFCXML from Markdown I-Ds |
 | [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Generates RFCXML from nroff I-Ds |
 | [**pyang**](https://github.com/mbj4668/pyang) | Validates and converts YANG modules |
-| [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Side-by-side comparison of an I-D and another version or an RFC |
+| [**rfcdiff**](https://www.ietf.org/rfcdiff) | Side-by-side comparison of an I-D and another version or an RFC |
 | [**rfclint**](https://github.com/ietf-tools/RfcEditor/tree/master/rfclint) | Validates RFCXML documents |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Validates RFC-specific SVG and generates conformant SVG |
 | [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Validates RFCXML and plain text I-Ds and converts to multiple output formats |

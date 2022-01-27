@@ -39,7 +39,7 @@ All of the templates above aleady have this processing instruction included and 
 ## Character entities
 In XML a character entity is a way of using a name in the XML, such as `&nbhy;` in place of the character itself (in this example the 'non-breaking hyphen' character).
 
-The templates above include the following character entities for invisible typographics characters directly in the source with a DOCTYPE statement as follows:
+The templates above include the following character entities for invisible typographic characters directly in the source with a DOCTYPE statement as follows:
 
 ```xml
 <!DOCTYPE rfc [

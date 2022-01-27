@@ -56,6 +56,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Generates RFCXML from nroff I-Ds |
 | [**pyang**](https://github.com/mbj4668/pyang) | Validates and converts YANG modules |
 | [**rfcdiff**](https://www.ietf.org/rfcdiff) | Side-by-side comparison of an I-D and another version or an RFC |
+| [**rfcfold**](https://github.com/ietf-tools/rfcfold) | Handling of long lines in width-bounded text content, e.g., code fragments or example text, in an I-D or RFC |
 | [**rfclint**](https://github.com/ietf-tools/RfcEditor/tree/master/rfclint) | Validates RFCXML documents |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Validates RFC-specific SVG and generates conformant SVG |
 | [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Validates RFCXML and plain text I-Ds and converts to multiple output formats |
@@ -79,6 +80,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Build, CLI | Convert | nroff | RFCXML(old) | No |
 | [**pyang**](https://github.com/mbj4668/pyang) | Build, CLI | Validate, Convert | YANG | ? | N/A |
 | [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Web | Compare | plaintext | - | N/A |
+| [**rfcfold**](https://github.com/ietf-tools/rfcfold) | CLI | Convert | plaintext | plaintext | N/A |
 | [**rfclint**](https://github.com/ietf-tools/RfcEditor/tree/master/rfclint) | Build, CLI | Validate | RFCXML | RFCXML | Yes |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Build, CLI, Web | Validate, Convert | SVG | SVG | Yes |
 | [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Build, CLI, Web | Validate, Convert | RFCXML, RFCXML(old), plaintext | RFCXML Plain text, PDF, HTML, HTMLised, EPUB, nroff | Yes |
@@ -102,6 +104,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**nroff2xml**](https://github.com/tomaszmrugalski/nroff2xml) | Tomek Mrugalski | IETF Trust | Revised BSD | No | None |
 | [**pyang**](https://github.com/mbj4668/pyang) | Martin Bjorklund | Martin Bjorklund | ISC | Yes | Martin Bjorklund |
 | [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Henrik Levkowetz | Henrik Levkowetz | Unknown | Unknown | Unknown |
+| [**rfcfold**](https://github.com/ietf-tools/rfcfold) | Kent Watsen and Erik Auerswald | IETF Trust | Revised BSD | Yes | Kent Watsen and Erik Auerswald |
 | [**rfclint**](https://github.com/ietf-tools/RfcEditor/tree/master/rfclint) | Jim Schaad | IETF Trust | Revised BSD | Yes | AMS |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Jim Schaad | IETF Trust | Revised BSD | Yes | Tools Team |
 | [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Henrik Levkowetz | IETF Trust | Revised BSD | Yes | Tools Team |

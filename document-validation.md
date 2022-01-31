@@ -2,7 +2,7 @@
 title: Document validation
 description: 
 published: true
-date: 2021-12-14T20:46:43.927Z
+date: 2022-01-31T22:26:01.925Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-20T02:57:26.157Z
@@ -17,7 +17,7 @@ Document validation is an important step for an Internet-Draft to ensure that it
 There are three approaches to validation:
 
 # Validating with the Author Tools web service
-[Author Tools](/https://author-tools.ietf.org) is a fully featured web service for validation, rendering and more. It allows you to validate documents written in a range of common formats by chaining together multiple tools.  For more details see [Author Tools web service](/author-tools-web-service).
+[Author Tools](https://author-tools.ietf.org) is a fully featured web service for validation, rendering and more. It allows you to validate documents written in a range of common formats by chaining together multiple tools.  For more details see [Author Tools web service](/author-tools-web-service).
   
 # Validating with command line tools
 There are two key command line tools provided for validation.  Both can be installed locally for command line access, or as part of an automated build system, or in a web service.

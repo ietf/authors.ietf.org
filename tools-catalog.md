@@ -58,6 +58,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**rfcdiff**](https://www.ietf.org/rfcdiff) | Side-by-side comparison of an I-D and another version or an RFC |
 | [**rfcfold**](https://github.com/ietf-tools/rfcfold) | Handling of long lines in width-bounded text content, e.g., code fragments or example text, in an I-D or RFC |
 | [**rfclint**](https://github.com/ietf-tools/RfcEditor/tree/master/rfclint) | Validates RFCXML documents |
+| [**rfcstrip**](https://github.com/mbj4668/rfcstrip) | Extracts code components, YANG modules and SMIv2 modules from RFCs and Internet Drafts, and extracts and unfolds artwork from RFCs and Internet Drafts in XML format |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Validates RFC-specific SVG and generates conformant SVG |
 | [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Validates RFCXML and plain text I-Ds and converts to multiple output formats |
 | [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | A configuration to assist editing RFCXML documents using XMLMind XML Editor |
@@ -82,6 +83,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Web | Compare | plaintext | - | N/A |
 | [**rfcfold**](https://github.com/ietf-tools/rfcfold) | CLI | Convert | plaintext | plaintext | N/A |
 | [**rfclint**](https://github.com/ietf-tools/RfcEditor/tree/master/rfclint) | Build, CLI | Validate | RFCXML | RFCXML | Yes |
+| [**rfcstrip**](https://github.com/mbj4668/rfcstrip) | CLI | Extract | plaintext, RFCXML | YANG, SMIv2, plaintext | Yes |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Build, CLI, Web | Validate, Convert | SVG | SVG | Yes |
 | [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Build, CLI, Web | Validate, Convert | RFCXML, RFCXML(old), plaintext | RFCXML Plain text, PDF, HTML, HTMLised, EPUB, nroff | Yes |
 | [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | Editor | Validate, Insert | RFCXML(old) | RFCXML(old) | No |
@@ -106,6 +108,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**rfcdiff**](https://tools.ietf.org/rfcdiff) | Henrik Levkowetz | Henrik Levkowetz | Unknown | Unknown | Unknown |
 | [**rfcfold**](https://github.com/ietf-tools/rfcfold) | Kent Watsen and Erik Auerswald | IETF Trust | Revised BSD | Yes | Kent Watsen and Erik Auerswald |
 | [**rfclint**](https://github.com/ietf-tools/RfcEditor/tree/master/rfclint) | Jim Schaad | IETF Trust | Revised BSD | Yes | AMS |
+| [**rfcstrip**](https://github.com/mbj4668/rfcstrip) | Multiple | Frank Strauss, Technical University of Braunschweig, and other parties | A custom license | Yes | Martin Bjorklund |
 | [**svgcheck**](https://github.com/ietf-tools/RfcEditor/tree/master/svgcheck) | Jim Schaad | IETF Trust | Revised BSD | Yes | Tools Team |
 | [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Henrik Levkowetz | IETF Trust | Revised BSD | Yes | Tools Team |
 | [**xml2rfc-xxe**](https://github.com/wkumari/xml2rfc-xxe) | Warren Kumari | Warren Kumari | Unknown | No | None | 

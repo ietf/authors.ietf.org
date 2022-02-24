@@ -2,13 +2,14 @@
 title: Getting started
 description: 
 published: true
-date: 2022-02-24T00:19:26.916Z
+date: 2022-02-24T00:22:40.721Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T23:57:12.813Z
 ---
 
 # Quick start guides
+If you want to get authoring straight away then these quick start guides should be enough.  For a more thorough guide to getting started please read the overview and the guide to choosing tools below.
 ## Quick start for RFCXML
 1. Clone or download the [RFCXML template repository](https://github.com/ietf-authors/rfcxml-templates-and-schemas).
 1. Edit the Standard (or Annotated) template with your choice of [XML toolchain](/drafting-in-xml).

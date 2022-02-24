@@ -2,7 +2,7 @@
 title: Getting started
 description: 
 published: true
-date: 2022-02-24T00:22:40.721Z
+date: 2022-02-24T00:42:17.892Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T23:57:12.813Z
@@ -10,14 +10,17 @@ dateCreated: 2021-08-17T23:57:12.813Z
 
 # Quick start guides
 If you want to get authoring straight away then these quick start guides should be enough.  For a more thorough guide to getting started please read the overview and the guide to choosing tools below.
-## Quick start for RFCXML
+
+Quick start for RFCXML:
 1. Clone or download the [RFCXML template repository](https://github.com/ietf-authors/rfcxml-templates-and-schemas).
 1. Edit the Standard (or Annotated) template with your choice of [XML toolchain](/drafting-in-xml).
-1. Process your edited I-D using the [IETF Author Tools web service](https://author-tools.ietf.org).
-1. When it is ready for publishing, [submit it](https://authors.ietf.org/en/submitting-your-internet-draft) to the IETF I-D repository and then share the IETF Datatracker link to your I-D and gather feedback.
-## Quick start for Markdown
+
+Quick start for Markdown:
 1. Start with an existing Markdown I-D or [template](/templates-and-schemas#templates-1). **Note**, your choice of template will determine which flavour of Markdown you will be authoring in.
 1. Edit the template with your choice of text editor.
+
+Next steps for both:
+1. If you require automated builds then consider the [Github workflow](https://github.com/martinthomson/i-d-template/blob/main/doc/TEMPLATE.md).
 1. Process your edited I-D using the [IETF Author Tools web service](https://author-tools.ietf.org).
 1. When it is ready for publishing, [submit it](https://authors.ietf.org/en/submitting-your-internet-draft) to the IETF I-D repository and then share the IETF Datatracker link to your I-D and gather feedback.
 

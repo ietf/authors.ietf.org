@@ -2,7 +2,7 @@
 title: Drafting in XML
 description: 
 published: true
-date: 2021-12-21T07:26:36.354Z
+date: 2022-02-24T00:07:09.550Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:56:56.326Z
@@ -12,7 +12,7 @@ For an introduction to RFCXML see the [RFCXML overview and background](/rfcxml-o
 
 Modern XML toolchains include advanced features that support XML editing including schema validation and schema-aware editing.  The templates provided at [Templates and schemas](/templates-and-schemas) contain the necessary code to make this work.
 
-# RFC XML toolchains
+# RFCXML toolchains
 The following XML toolchains have been reported as in use by IETF community members.  These are all interactive XML editors. 
 
 ## Emacs editor in nXML Mode

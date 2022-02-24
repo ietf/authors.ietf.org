@@ -97,7 +97,7 @@ Allowed content: ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<cref\
 ### Usage
 Provides information about the IETF area to which this document relates (currently not used when generating documents).
 
-The value ought to be either the full name or the abbreviation of one of the listed [IETF areas](https://www.ietf.org/iesg/area.html). A list of full names and abbreviations is kept by the RFC Series Editor.
+The value ought to be either the full name or the abbreviation of one of the listed [IETF areas](https://www.ietf.org/iesg/area.html).
 
 Used in: [**\<front\>**](/rfcxml-vocabulary#front)
 Allowed content: text
@@ -214,7 +214,7 @@ The preferred values for **type** are: "ascii-art", "binary-art", "svg"
 
 Values that don't describe the format, such as "call-flow" or "hex-dump" were mentioned in RFC7991, but are not supported; they are instead candidates for use with another future attribute to describe the artwork content.
 
-A complete list of the preferred values is maintained on the RFC Editor web site, and that list is expected to be updated over time. Thus, a consumer of this attribute should not cause a failure when it encounters an unexpected type or no type is specified. The table will also indicate which type of art can appear in plain-text output (for example, a **type** of "svg" cannot).
+See [Diagrams](/diagrams) for more information on how these types are rendered into different output formats.
 
 #### width
 TBD
@@ -1709,7 +1709,7 @@ Possible values: "true", "false"
 Default value: "false"
 
 #### submissionType
-The document stream, as described in RFC7841. (The RFC Series Editor may change the list of allowed values in the future.)
+The document stream, as described in RFC7841.
 
 Possible values: "IETF", "IAB", "IRTF", "independent"
 Default value: "IETF"
@@ -1970,7 +1970,7 @@ Specifies the type of the source code. The value of this attribute is free text 
 
 Most of the preferred values for [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) types are language names, in a wide sense, such as "abnf", "asn.1", "bash", "c++", etc.
 
-The RFC Series Editor maintains a list of the preferred values on the RFC Editor web site at [https://www.rfc-editor.org/materials/sourcecode-types.txt](https://www.rfc-editor.org/materials/sourcecode-types.txt), and that list is updated over time. Thus, a consumer of RFCXML should not cause a failure when it encounters an unexpected type or no type is specified.
+A list of the preferred values is maintained on the RFC Editor web site at [https://www.rfc-editor.org/materials/sourcecode-types.txt](https://www.rfc-editor.org/materials/sourcecode-types.txt), and that list is updated over time. Thus, a consumer of RFCXML should not cause a failure when it encounters an unexpected type or no type is specified.
 ### Examples
 The following is a basic example of a c program as set by the **type** attribute, using a CDATA block because the source code contains angle brackets, and a **name** attribute that suggests a file name for the extracted code:
 ```xml

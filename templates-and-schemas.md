@@ -76,8 +76,9 @@ The following legacy files are for those working with old I-Ds or RFCs and shoul
 
 # Markdown
 ## Templates
-Currently there are only community developed Markdown templates:
+The following are community developed Markdown templates specific to [kramdown-rfc](https://github.com/cabo/kramdown-rfc):
 * [Martin Thompson's Markdown Template](https://github.com/martinthomson/internet-draft-template/blob/main/draft-todo-yourname-protocol.md)
+* [kramdown-rfc standard template](https://raw.githubusercontent.com/cabo/kramdown-rfc/master/examples/draft-rfcxml-general-template-standard-00.xml-edited.md)
 
 ## Schemas
-Markdown doesn't yet have the concept of a schema.
+Markdown doesn't yet have the concept of a schema. It may never have.

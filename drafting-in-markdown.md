@@ -13,12 +13,12 @@ Markdown is a lightweight markup language that is widely supported.  While Markd
 # Markdown toolchains
 The following Markdown toolchains have been reported in common use by I-D authors.
 
-## kramdown-rfc2629
-[kramdown-rfc2629](https://github.com/cabo/kramdown-rfc2629) is an open source text processor that converts files written in its proprietary markdown syntax into RFCXML. 
+## kramdown-rfc
+[kramdown-rfc](https://github.com/cabo/kramdown-rfc) is an open source text processor that converts files written in its proprietary markdown syntax into RFCXML. 
 
-The [Author Tools](https://author-tools.ietf.org) web service supports kramdown-rfc2629 as one of its backend processors.
+The [Author Tools](https://author-tools.ietf.org) web service supports kramdown-rfc as one of its backend processors.
 
-[draftr](https://ipv.sx/draftr-js/) provides a live on-screen conversion using kramdown-rfc2629.
+[draftr](https://ipv.sx/draftr-js/) provides a live on-screen conversion using kramdown-rfc.
 
 ## mmark
 [mmark](https://mmark.miek.nl) is an open source text processor that converts files written in its proprietary markdown syntax into RFCXML.

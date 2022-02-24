@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2021-12-16T22:40:01.788Z
+date: 2022-02-24T00:14:54.711Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -68,7 +68,8 @@ The following legacy files are for those working with old I-Ds or RFCs and shoul
 
 # Markdown
 ## Templates
-None available
+Currently there are only community developed Markdown templates:
+* [Martin Thompson's Markdown Template](https://github.com/martinthomson/internet-draft-template/blob/main/draft-todo-yourname-protocol.md)
 
 ## Schemas
 Markdown doesn't yet have the concept of a schema.

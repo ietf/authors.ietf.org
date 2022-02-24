@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2022-02-24T00:14:54.711Z
+date: 2022-02-24T00:34:24.594Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -39,7 +39,15 @@ All of the templates above aleady have this processing instruction included and 
 ## Character entities
 In XML a character entity is a way of using a name in the XML, such as `&nbhy;` in place of the character itself (in this example the 'non-breaking hyphen' character).
 
-The templates above include the following character entities for invisible typographic characters directly in the source with a DOCTYPE statement as follows:
+The templates above include a small set of character entities defined in a DOCTYPE statement.  These are for typographic characters that if entered directly into the source can cause problems, either because they are invisible to the reader, or indistinguishable from other typographic characters.
+
+They are typically used for controlling the placement of line breaks in rendering:
+* `&nbsp;` - to prevent a line break between words (e.g. `BCP&nbsp;14` to prevent a line break within "BCP 14")
+* `&nbhy;` - to prevent a line break after a hyphen (e.g. `EUI&nbhy;64` to prevent a line break within "EUI-64")
+* `&wj;` - to prevent a line break in a specific location (e.g. `S/&wj;MIME` to prevent a line break after the "/" in "S/MIME")
+* `&zwsp;` - to mark a good location to insert a line break (e.g. forcing the content of a table cell to have a line break in the desired location. `<td>request-inactive-&zwsp;other-active</td>` as in Table 10 of RFC 9132)
+
+For info, this DOCTYPE statement is:
 
 ```xml
 <!DOCTYPE rfc [

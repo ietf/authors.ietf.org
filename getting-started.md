@@ -2,13 +2,13 @@
 title: Getting started
 description: 
 published: true
-date: 2022-02-24T00:42:17.892Z
+date: 2022-02-24T00:42:27.958Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T23:57:12.813Z
 ---
 
-# Quick start guides
+# Quick start guide
 If you want to get authoring straight away then these quick start guides should be enough.  For a more thorough guide to getting started please read the overview and the guide to choosing tools below.
 
 Quick start for RFCXML:

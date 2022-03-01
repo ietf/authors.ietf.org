@@ -2,12 +2,13 @@
 title: Drafting in Markdown
 description: 
 published: true
-date: 2021-12-14T20:44:39.434Z
+date: 2022-03-01T03:17:24.589Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:57:57.022Z
 ---
 
+# Introduction
 Markdown is a lightweight markup language that is widely supported.  While Markdown is significantly easier to use than XML it is also less powerful and is less standardised.  Consequently the Markdown toolchains are very popular but the tools are not interchangeable as they use different syntaxes.
 
 # Markdown toolchains

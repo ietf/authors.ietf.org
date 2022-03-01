@@ -2,7 +2,7 @@
 title: Getting started
 description: 
 published: true
-date: 2022-03-01T04:00:19.104Z
+date: 2022-03-01T04:01:53.779Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-17T23:57:12.813Z
@@ -10,7 +10,7 @@ dateCreated: 2021-08-17T23:57:12.813Z
 
 The basic steps in authoring an Internet-Draft (ID) are as follows:
 
-- [:basket: Choose a format and toolchain *Includes a checklist for those who want to make a quick choice*](/choosing-a-format-and-tools)
+- [:mdi-basket: Choose a format and toolchain *Includes a checklist for those who want to make a quick choice*](/choosing-a-format-and-tools)
 - [Download a template and editing that *Some tools include the templates*](/templates-and-schemas)
 - [Name your Internet-Draft *Internet-Drafts have strict naming rules*](/naming-your-internet-draft)
 - [Ensure it has all the required content *Your I-D will not validate without this required content*](/required-content)

@@ -2,7 +2,7 @@
 title: Drafting in XML
 description: 
 published: true
-date: 2022-03-01T03:14:35.272Z
+date: 2022-03-01T03:16:19.800Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:56:56.326Z
@@ -16,7 +16,7 @@ Modern XML toolchains include advanced features that support XML editing includi
 ## Quick start guide
 1. Choose your RFCXML toolchain from the list below
 1. Clone or download the [RFCXML template repository](https://github.com/ietf-authors/rfcxml-templates-and-schemas).
-1. Edit the Standard (or Annotated) template.
+1. Edit the [Standard](https://authors.ietf.org/en/templates-and-schemas#draft-rfcxml-general-template-standard-00xml) (or [Annotated](https://authors.ietf.org/en/templates-and-schemas#draft-rfcxml-general-template-annotated-00xml)) template.
 1. If you require automated builds then consider the [Github workflow](https://github.com/martinthomson/i-d-template/blob/main/doc/TEMPLATE.md).
 1. Process your edited I-D using the [IETF Author Tools web service](https://author-tools.ietf.org).
 

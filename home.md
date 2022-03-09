@@ -2,14 +2,15 @@
 title: Home
 description: Welcome to the Internet-Draft/RFC author resources site
 published: true
-date: 2021-12-20T01:25:07.700Z
+date: 2022-03-09T23:13:37.630Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T00:11:52.864Z
 ---
 
-> **!! THIS SITE IS STILL UNDER CONSTRUCTION AND THE INFORMATION ON IT SHOULD NOT BE TRUSTED UNTIL IT GOES LIVE !!**
-{.is-warning}
+# Welcome to the Internet-Draft authors resource site
+
+This site is the central resource site for authors of an Internet-Draft (I-D), with information on how to write an I-D and the tools available to support this. If you are new to authoring then begin with the introduction below or if you are more familiar then the main menu lists multiple individual topics.
 
 > If you have been redirected here from **tools.ietf.org** then that site has been decommissioned.  The features available at that site have been replaced as follows:
 >*  The interactive tools are now at [https://author-tools.ietf.org](https://author-tools.ietf.org)
@@ -17,10 +18,6 @@ dateCreated: 2021-08-18T00:11:52.864Z
 >* The xml2rfc vocabulary documentation is now at [RFCXML Vocabulary](/rfcxml-vocabulary)
 >* The repositories for the various tools are now in the [ietf-tools organisation on GitHub](https://github.com/ietf-tools).
 {.is-info}
-
-# Welcome to the Internet-Draft authors resource site
-
-This site is the central resource site for authors of an Internet-Draft (I-D), with information on how to write an I-D and the tools available to support this. If you are new to authoring then begin with the introduction below or if you are more familiar then the main menu lists multiple individual topics.
 
 # Introducing Internet-Drafts
 Internet-Drafts (I-Ds) are the basic work items of the IETF and they are produced for a variety of purposes by a wide range of individuals and groups. Anyone can write and submit an Internet-Draft. 

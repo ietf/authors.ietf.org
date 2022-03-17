@@ -43,7 +43,7 @@ Authors writing in Markdown may find the following tools helpful:
 [bibxml2md](https://github.com/yaronf/bibxml2md) converts BibXML references into Markdown.  See [References in RFCXML](/references-in-rfcxml) for more details.
 
 ## draftr
-[draftr](https://ipv.sx/draftr-js/) provides a live on-screen rendering using kramdown-rfc.  This tool is no longer maintained.
-A locally installable live-update rendering display is available in the [kdwatch](https://github.com/cabo/kdwatch) tool.
+[draftr](https://github.com/bifurcation/draftr-js.github.io) provides a [live on-screen](https://draftr-js.github.io/) rendering using kramdown-rfc.  This tool is no longer maintained, see kdwatch below instead.
 
-
+## kdwatch
+[kdwatch](https://github.com/cabo/kdwatch) is a locally installable live-update rendering display.

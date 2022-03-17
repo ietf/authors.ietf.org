@@ -22,7 +22,7 @@ Markdown is a lightweight markup language that is widely supported.  While Markd
 The following Markdown toolchains have been reported in common use by I-D authors.
 
 ## kramdown-rfc
-[kramdown-rfc](https://github.com/cabo/kramdown-rfc) is an open source text processor that converts files written in its proprietary markdown syntax into RFCXML. This is by far the most commonly used Markdown toolchain for I-Ds.
+[kramdown-rfc](https://github.com/cabo/kramdown-rfc/wiki) is an open source text processor that converts files written in its proprietary markdown syntax into RFCXML. This is by far the most commonly used Markdown toolchain for I-Ds.
 
 The [Author Tools](https://author-tools.ietf.org) web service supports kramdown-rfc as one of its backend processors.
 

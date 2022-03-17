@@ -44,7 +44,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 
 | Tool | Description |
 | :--- | :---------- |
-| [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Generates BibXML references from BibTeX citations |
+| [**bibtex2rfc**](https://github.com/yaronf/bibtex2rfc) | Generates BibXML references from BibTeX citations |
 | [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Generates Markdown references from BibXML references |
 | [**bap**](https://github.com/ietf-tools/bap) | Extract and validates ABNF |
 | [**id2xml**](https://github.com/ietf-tools/id2xml) | Generates RFCXML from plain text I-Ds |
@@ -69,7 +69,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 
 | Tool | Modes | Operations | Input formats | Output formats | Supports v3 |
 | :--- | :---- | :--------- | :------------ | :------------- | :---------: |
-| [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Build, CLI | Convert | BibTex | BibXML | Yes |
+| [**bibtex2rfc**](https://github.com/yaronf/bibtex2rfc) | Build, CLI | Convert | BibTex | BibXML | Yes |
 | [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Build, CLI | Convert | BibXML | RFCXML(old) | No |
 | [**bap**](https://github.com/ietf-tools/bap) | Build, CLI | Extract, Validate | ABNF | - | Unknown |
 | [**id2xml**](https://github.com/ietf-tools/id2xml) | Build, CLI | Convert | plaintext | RFCXML | Yes |
@@ -94,7 +94,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 
 | Tool | Author | Ownership | License | Maintained | Maintainer |
 | :--- | :----- | :-------- | :------ | :--------- | :--------- |
-| [**bibtext2rfc**](https://github.com/yaronf/bibtex2rfc) | Yaron Sheffer | Yaron Sheffer | Public domain | Yes | Yaron Sheffer |
+| [**bibtex2rfc**](https://github.com/yaronf/bibtex2rfc) | Yaron Sheffer | Yaron Sheffer | Public domain | Yes | Yaron Sheffer |
 | [**bibxml2md**](https://github.com/yaronf/bibxml2md) | Yaron Sheffer | Yaron Sheffer | Public domain | Yes | Yaron Sheffer |
 | [**bap**](https://github.com/ietf-tools/bap) | Bill Fenner | Bill Fenner | Unknown | No | None | 
 | [**id2xml**](https://github.com/ietf-tools/id2xml) | Henrik Levkowetz | IETF Trust | Revised BSD | Unknown | Unknown |

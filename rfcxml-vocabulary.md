@@ -114,7 +114,7 @@ Allowed content: text
 ## artset
 ## Tabs {.tabset}
 ### Usage
-This element allows for the support of multiple artwork formats, in order to provide suitable artwork for different output formats.  See [Adding diagrams](/adding-diagrams) for more details on diagrams and SVG.
+This element allows for the support of multiple artwork formats, in order to provide suitable artwork for different output formats.  See [diagrams](/diagrams) for more details on diagrams and SVG.
 
 When multiple [**\<artwork\>**](/rfcxml-vocabulary#artwork) instances are provided within one [**\<artset\>**](/rfcxml-vocabulary#artset) element, the renderer will try to pick the [**\<artwork\>**](/rfcxml-vocabulary#artwork) instance which is most appropriate for its current output format from the given alternatives.
 
@@ -141,7 +141,7 @@ Document-wide unique identifier for this element.
 ## artwork
 ## Tabs {.tabset}
 ### Usage
-This element allows the inclusion of artwork in the document. [**\<artwork\>**](/rfcxml-vocabulary#artwork) provides full control of horizontal whitespace and line breaks; thus, it is used for a variety of things, such as diagrams ("line art") and protocol unit diagrams. See [Adding diagrams](/adding-diagrams) for more details on diagrams and SVG.
+This element allows the inclusion of artwork in the document. [**\<artwork\>**](/rfcxml-vocabulary#artwork) provides full control of horizontal whitespace and line breaks; thus, it is used for a variety of things, such as diagrams ("line art") and protocol unit diagrams. See [diagrams](/diagrams) for more details on diagrams and SVG.
 
 Tab characters (U+0009) inside of this element are prohibited.
 

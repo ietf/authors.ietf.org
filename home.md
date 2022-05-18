@@ -31,7 +31,7 @@ Internet-Drafts are prepared by people acting in possibly several roles, such as
 **To find out more about authoring an I-D, begin with [Getting started](/getting-started).**
 
 # Contributing to this site
-The content for this site is available in [GitHub](https://github.com/ietf-authors/authors.ietf.org) and we welcome pull requests proposing changes from the community. The repository [README](https://github.com/ietf-authors/authors.ietf.org/blob/main/README.md) provides guidance on how to submit pull requests.
+The content for this site is available in [GitHub](https://github.com/ietf/authors.ietf.org) and we welcome pull requests proposing changes from the community. The repository [README](https://github.com/ietf-authors/authors.ietf.org/blob/main/README.md) provides guidance on how to submit pull requests.
 
 Likewise, the [templates and schemas](/templates-and-schemas) available on this site are published on [GitHub](https://github.com/ietf-authors/rfcxml-templates-and-schemas) and we welcome pull requests proposing changes.
 

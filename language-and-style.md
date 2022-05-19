@@ -30,27 +30,3 @@ The IESG has made a [statement](https://www.ietf.org/about/groups/iesg/statement
 
 # Stale text
 Avoid text that will become outdated after the I-D is published. Examples include non-permanent URLs, mentions of specific mailing lists as places to send comments on a document, or referring to specific WGs as a place to perform specific future actions (e.g., reviewing follow-up documents). In some cases (like the ORGANIZATION clause in MIB modules), references to working groups are impossible to avoid; however, generally, Internet-Drafts should not assign powers or responsibilities to WGs unless the WG in question is certain to exist as long as the practice documented in the published RFC remains valid. In cases where a specific WG is expected to be a focal point for future action, it is acceptable to give the task to the IESG, giving instructions on how the action is expected to be delegated, e.g., by forwarding to an appropriate WG or another set of experts.
-
-# Example addresses
-## Domain names
-Addresses used in examples should use fully qualified domain names instead of literal IP addresses, and should use example FQDNs such as "foo.example.com" instead of real-world FQDNs. See RFC 2606 for example domain names that can be used. Note that the entire “.example” TLD is reserved, allowing for arbitrary subdomains (in particular, ones that are not considered same-origin on the web.
-
-> Verify that example domain names as used in examples
-{.is-success}
-
-## IP addresses
-Literal IP addresses used in examples should be from the example ranges set aside for this purpose. For IPv4, these are defined in RFC 6890; for IPv6, see RFC 3849. IPv6 examples should be used to conform with the [IAB Statement on IPv6](https://www.iab.org/2016/11/07/iab-statement-on-ipv6).
-
-> Verify that private IP addresses that would be used in the real world are not used in examples.
-{.is-success}
-
-## Telephone number
-Telephone numbers used in examples should be those numbers that were reserved for examples or fictitious use. Available numbers for use in examples are:
-
-UK: +44-\<geographic-area-code\>-496-\<0000-0999\>
-USA: +1-\<area code\>-555-\<0100-0199\>
-
-For USA examples, also see [ATIS-0300115](https://www.nationalnanpa.com/pdf/NRUF/ATIS-0300115.pdf).
-  
-> Verify that real telephone numbers are not used in examples.
-{.is-success}

@@ -1,5 +1,5 @@
 # README
-This [GitHub repository](https://github.com/ietf-authors/authors.ietf.org) is the content of the site https://authors.ietf.org  Changes can be proposed here via pull requests. Please note the following guidance for submitters:
+This [GitHub repository](https://github.com/ietf/authors.ietf.org) is the content of the site https://authors.ietf.org  Changes can be proposed here via pull requests. Please note the following guidance for submitters:
 
 * Synchronisation and change control:
     * Synchronisation between this repository and the site is bi-directional and triggered every 5 minutes.

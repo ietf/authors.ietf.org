@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-08-17T23:57:12.813Z
 ---
 
-The basic steps in authoring an Internet-Draft (ID) are as follows:
+The basic steps in authoring an Internet-Draft (I-D) are as follows:
 
 - [Choose a format and toolchain *Includes a checklist for those who want to make a quick choice*](/choosing-a-format-and-tools)
 - [Download a template and editing that *Some tools include the templates*](/templates-and-schemas)

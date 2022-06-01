@@ -12,11 +12,11 @@ The section covers the naming and content of Internet-Drafts (I-Ds) including th
 
 - [Naming your Internet-Draft *I-Ds have strict naming rules*](/naming-your-internet-draft)
 - [Required content *Your I-D will not validate without this required content*](/required-content)
-- [Recommended content *(Optional) These sections are recommended for most I-Ds*](/recommended-content)
+- [Recommended content *These sections are recommended for most I-Ds*](/recommended-content)
 - [Language and style *Important for your I-D to be read and understood*](/language-and-style)
-- [Diagrams *(Optional) Diagrams help simplify otherwise complex interactions and concepts*](/diagrams)
-- [Formal languages  *(Optional) For example, ABNF or YANG*](/formal-languages)
-- [Protocol checklist *(Optional) Specific details for protocol defintions and references*](/protocol-checklist)
+- [Diagrams *Diagrams help simplify otherwise complex interactions and concepts*](/diagrams)
+- [Formal languages  *For example, ABNF or YANG*](/formal-languages)
+- [Protocol checklist *Specific details for protocol defintions and references*](/protocol-checklist)
 - [Example addresses *How to add example addresses both Internet and pre-Internet*](/example-addresses)
 {.links-list}
 

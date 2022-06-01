@@ -16,9 +16,9 @@ Abbreviations should generally be expanded in parentheses.  The RFC Editor maint
 
 # Internet-Drafts are not RFCs
 There are some key rules for I-D authors:
-* Your I-D must not refer to itself as an RFC or a draft RFC.
-* Your I-D must neither state nor imply that it has any standards-like status.
-* Avoid the use of the terms "Standard", "Proposed", "Draft", "Experimental", "Historic", "Required", "Recommended", "Elective", or "Restricted" in the I-D title. 
+- [x] Your I-D must not refer to itself as an RFC or a draft RFC.
+- [x] Your I-D must neither state nor imply that it has any standards-like status.
+- [x] Avoid the use of the terms "Standard", "Proposed", "Draft", "Experimental", "Historic", "Required", "Recommended", "Elective", or "Restricted" in the I-D title. 
 
 An I-D may indicate its intended status, if it were to be published as an RFC, by setting the **status** attribute of the [**\<seriesInfo\>**](https://authors.ietf.org/en/rfcxml-vocabulary#seriesinfo) RFCXML element (see RFC 7322) or by placing the words `Intended status: <status>` on the left side of the headers in the first page if preparing a plaintext submission.
 

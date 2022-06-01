@@ -76,8 +76,8 @@ Other guidelines for the use of XML in IETF protocols can be found in RFC 3470. 
 
 XML allows syntax extensions using structures, such as the `<any>` element information item in XML Schema.  If your XML defines and extension mechanism then:
 
-- [ ] Ensure the I-D contains clear guidance on how, when, and where any extension structures, such as versioning, can be used.
-- [ ] Check that any new or updated XML Schemas, Namespaces, and Resource Description Framework (RDF) Schemas are being registered with IANA using the procedures described in RFC 3688.
+- [x] Ensure the I-D contains clear guidance on how, when, and where any extension structures, such as versioning, can be used.
+- [x] Check that any new or updated XML Schemas, Namespaces, and Resource Description Framework (RDF) Schemas are being registered with IANA using the procedures described in RFC 3688.
 
 # Programming languages
 When programming languages are used in Internet-Drafts, you must include as a reference the formal definition of that coding language (e.g., [C99](https://www.iso.org/standard/29237.html)).

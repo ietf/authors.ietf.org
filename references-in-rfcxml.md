@@ -11,7 +11,7 @@ dateCreated: 2021-11-04T23:45:18.949Z
 # Introduction
 RFCXML uses references that are encoded in a format called BibXML, as defined in RFC 7991. To simplify the process of inserting references, the IETF maintains a set of online citation libraries as follows:
 * For RFCs the official site is [rfc-editor.org](https://rfc-editor.org/). The information page for each RFC has a link to the BibXML file.
-* For RFCs, Internet-Drafts, and documents produced by the W3C, 3GPP, IANA and NIST the current site is [xml2rfc.tools.ietf.org]().  Many of these sets of references can be downloaded as a set for offline access.
+* For RFCs, Internet-Drafts, and documents produced by the W3C, 3GPP, IANA and NIST, the new site is [bib.ietf.org](https://bib.ietf.org) (at the time of writing, this site has only just gone live and some usability issues are still to be resolved). Many of these sets of references can be downloaded as a set for offline access.
 
 # Inserting references from a library
 Use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section that points to a citation in the library as follows.
@@ -20,14 +20,14 @@ Use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) s
 ```
 For an Internet-Draft, the citation filename uses the draft string. For example:
 ```xml
-<xi:include href="https://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-wgname-topic.xml"/>
+<xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-wgname-topic.xml"/>
 ```
 All are cited textually in the same manner, by using [**\<xref\>**](/rfcxml-vocabulary#xref) elements where the target corresponds to the anchor of the reference element, e.g., `<xref target="RFC2119" />`. 
 * The anchors for RFCs are "RFCNNNN" (4 digits, using leading zeros)
 * The anchors for Internet-Drafts are "I-D.<name without "draft-" or the version number>".
 
 # Inserting references manually
-The following complete example is for an RFC (verbatim contents of [https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml](https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml)):
+The following complete example is for an RFC (verbatim contents of [https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml](https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml)). Full references should only be used where an `xi:include` cannot be used, or where the authors wish to specify different BibXML from that supplied in the citation libraries:
 ```xml
 <reference anchor="RFC2119" target="https://www.rfc-editor.org/info/rfc2119">
   <front>
@@ -244,7 +244,6 @@ and <a href="https://www.rfc-editor.org/rfc/rfc3550#section-6">6</a> in
 ```
 
 # Supporting tools
-Authors who often cite academic publications may find the following tool helpful, since most databases include bibliographic entries in BibTex format:
 
 ## bibtex2rfc
-[bibtex2rfc](https://github.com/yaronf/bibtex2rfc) converts BibTeX references into valid RFCXML references.
+Authors who often cite academic publications may find the [bibtex2rfc](https://github.com/yaronf/bibtex2rfc) tool, which converts BibTeX references into valid RFCXML references, helpful, since most databases include bibliographic entries in BibTex format.

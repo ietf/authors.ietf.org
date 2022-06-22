@@ -246,4 +246,4 @@ and <a href="https://www.rfc-editor.org/rfc/rfc3550#section-6">6</a> in
 # Supporting tools
 
 ## bibtex2rfc
-Authors who often cite academic publications may find the [bibtex2rfc](https://github.com/yaronf/bibtex2rfc) tool, which converts BibTeX references into valid RFCXML references, helpful, since most databases include bibliographic entries in BibTex format.
+Authors who often cite academic publications may find the [bibtex2rfc](https://github.com/yaronf/bibtex2rfc) tool, which converts BibTeX references into valid RFCXML references, helpful since most databases include bibliographic entries in BibTex format.

@@ -74,7 +74,7 @@ Dia draws line-end arrowheads as filled polygons, and it doesn't use markers.
 ### Details
 [aasvg](https://github.com/martinthomson/aasvg) takes ASCII diagrams and converts them into SVG.  This has the advantage of ensuring that the text version of the RFC presents very similar diagrams to HTML and PDF formats.
 
-This tool is a replacement for [goat](https://github.com/blampe/goat), which scrambles the placement of text in diagrams.
+This tool is inspired by [goat](https://github.com/blampe/goat) and uses a modified version of the original [markdeep](https://casual-effects.com/markdeep/) code.
 
 aasvg can be used in [kramdown-rfc](https://github.com/cabo/kramdown-rfc/wiki) by starting a block with `~~~ aasvg`.
 

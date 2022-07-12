@@ -69,22 +69,14 @@ Dia is simple to use. Save your drawing as xxx.dia, then export it as xxx.svg.
 
 Dia draws line-end arrowheads as filled polygons, and it doesn't use markers.
 
-## GoAT: Go ASCII Tool
+## aasvg
 ## {.tabset}
 ### Details
-[GoAT](https://github.com/blampe/goat) takes ASCII diagrams and converts them into SVG.
+[aasvg](https://github.com/martinthomson/aasvg) takes ASCII diagrams and converts them into SVG.  This has the advantage of ensuring that the text version of the RFC presents very similar diagrams to HTML and PDF formats.
 
-### Community tips
-#### Julian Reschke, October 2021
-(Extract from his [list email](https://mailarchive.ietf.org/arch/msg/rfc-interest/4wlkqfxZIFFPnvhHsmVwxthv_fE/))
+This tool is inspired by [goat](https://github.com/blampe/goat) and uses a modified version of the original [markdeep](https://casual-effects.com/markdeep/) code.
 
-So the problem is that goat positions every non-line-art character
-separately.
-
-The [attached script](https://mailarchive.ietf.org/arch/msg/rfc-interest/4wlkqfxZIFFPnvhHsmVwxthv_fE/2/) will try to recombine SVG text elements that are
-"next" to each other (as produced by Goat, not in general!)
-
-The attachment [x.svg](https://mailarchive.ietf.org/arch/msg/rfc-interest/4wlkqfxZIFFPnvhHsmVwxthv_fE/3/) is the post-processed output for [https://www.rfc-editor.org/rfc/rfc8899.html#section-5-3.1.1](https://www.rfc-editor.org/rfc/rfc8899.html#section-5-3.1.1)
+aasvg can be used in [kramdown-rfc](https://github.com/cabo/kramdown-rfc/wiki) by starting a block with `~~~ aasvg`.
 
 ## Inkscape
 ## {.tabset}

@@ -47,3 +47,7 @@ Authors writing in Markdown may find the following tools helpful:
 
 ## kdwatch
 [kdwatch](https://github.com/cabo/kdwatch) is a locally installable live-update rendering display.
+
+## vscode-livepreview
+[vscode-livepreview](https://github.com/microsoft/vscode-livepreview) is a VS Code extension from Microsoft that can preview the HTML document rendering. It does this by hosting a local HTTP server that can be accessed via the internal VS Code browser or and external browser. Can be combined with any "build
+on save" approach for a more live-update type workflow.

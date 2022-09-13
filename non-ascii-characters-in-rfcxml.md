@@ -22,7 +22,7 @@ non-ASCII characters in RFCXML (and I-Ds in general) can be used directly in a r
 # non-ASCII characters wrapped in \<u\>
 Other than in the resricted elements, non-ASCII characters must be wrapped by the [**\<u\>**](/rfcxml-vocabulary#u) element with the **format** attribute specifying how it is represented.
 
-The simplified **format** consists of dash-separated keywords, where each keyword represents a possible expansion of the Unicode character or string; use for example `<u "lit-num-name">foo</u>` to expand the text to its literal value, code point values, and code point names.
+The simplified **format** consists of dash-separated keywords, where each keyword represents a possible expansion of the Unicode character or string; use for example `<u format="lit-num-name">foo</u>` to expand the text to its literal value, code point values, and code point names.
 
 A combination of up to 3 of the following keywords may be used, separated by dashes: "num", "lit", "name", "ascii", "char". The keywords are expanded as follows and combined, with the second and third enclosed in parentheses if present:
 

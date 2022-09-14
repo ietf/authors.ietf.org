@@ -16,7 +16,7 @@ There are a number of formal languages used in I-Ds and several tools have been 
 # ABNF
 ABNF is a general purpose formal grammar notation specified in STD 68 (RFC 5234).
 
-[bap](https://github.com/ietf-tools/bap) can extract and validate ABNF.  The extraction feature is available as a separate [web service](https://tools.ietf.org/abnf/) and the validation as a separate [web form](https://tools.ietf.org/tools/bap/abnf.cgi).
+[bap](https://github.com/ietf-tools/bap) can extract and validate ABNF. It can be run locally on the command-line, or using [the online services at author-tools.ietf.org](https://author-tools.ietf.org/abnf). The utility provides the ability to validate ABNF and to extract ABNF from an I-D or RFC.
 
 When ABNF is used, your I-D must contain a normative reference to RFC 5234, the specification for ABNF.
 

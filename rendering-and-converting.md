@@ -12,9 +12,9 @@ It is common for authors to render (convert) their documents into a different fo
 
 # Rendering RFCXML into other formats
 There are three main ways to render RFCXML:
-1. Use the [Author Tools](/https://author-tools.ietf.org) web service.  
+1. Use the [Author Tools](/https://author-tools.ietf.org) web service. This is the easiest way as it does not require you to install anything.
 1. Install [xml2rfc](https://github.com/ietf-tools/xml2rfc) and run it directly.
-1. Use [rfc2629xslt](https://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629xslt.html) with any XSLT processor (including those embedded in web browsers). This allows those using XML editors to directly render output from that editor and in some editors, to see the results in real time. It also allows viewing the document directly in a browser without a prior conversion step.
+1. Use [rfcxml.xslt](https://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629xslt.html) with any XSLT processor (including those embedded in web browsers). This allows those using XML editors to directly render output from that editor and in some editors, to see the results in real time. It also allows viewing the document directly in a browser without a prior conversion step.
 
 The following table shows the output formats supported by each tool.
 
@@ -22,8 +22,8 @@ The following table shows the output formats supported by each tool.
 |    | Plaintext | HTML | HTMLised<sup>1</sup> | PDF | EPUB | Nroff | DOCX |
 | :- | :--------- | :--- | :------------------- | :-- | :--- | :---- | :-------------- |
 | [**Author Tools**](/https://author-tools.ietf.org) | Yes | Yes | Yes | Yes | Yes | No | No |
-|  [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Yes | Yes | Yes | Yes | Yes | Yes<sup>2</sup> | No |
-| [**rfc2629xslt**](https://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629xslt.html) | Yes | Yes | No | Yes | Yes | No | No |
+| [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Yes | Yes | Yes | Yes | Yes | Yes<sup>2</sup> | No |
+| [**rfcxml.xslt**](https://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629xslt.html) | Yes | Yes | No | Yes | Yes | No | No |
 | [**xml2docx**](https://github.com/evyncke/xml2docx) | No | No | No | No | No | No | Yes |
 
 Notes:

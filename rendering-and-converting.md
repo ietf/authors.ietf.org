@@ -23,7 +23,7 @@ The following table shows the output formats supported by each tool.
 | :- | :--------- | :--- | :------------------- | :-- | :--- | :---- | :-------------- |
 | [**Author Tools**](/https://author-tools.ietf.org) | Yes | Yes | Yes | Yes | Yes | No | No |
 | [**xml2rfc**](https://github.com/ietf-tools/xml2rfc) | Yes | Yes | Yes | Yes | Yes | Yes<sup>2</sup> | No |
-| [**rfcxml.xslt**](https://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629xslt.html) | Yes | Yes | No | Yes | Yes | No | No |
+| [**rfcxml.xslt**](https://greenbytes.de/tech/webdav/rfc2629xslt/rfc2629xslt.html) | No | Yes | No | Yes | Yes | No | No |
 | [**xml2docx**](https://github.com/evyncke/xml2docx) | No | No | No | No | No | No | Yes |
 
 Notes:

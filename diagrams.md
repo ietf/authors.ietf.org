@@ -56,6 +56,8 @@ Your SVG diagrams must conform to the SVG profile "SVG 1.2 RFC" as documented in
 
 See [Validating your SVG](#validating-your-svg) for details of how to validate your SVG.
 
+In addition, please provide a detailed description of the artwork in the SVG `<desc>` element to assist readers who are visually impaired. For more information about this element, please see the [Accessibility Features of SVG](https://www.w3.org/TR/SVG-access/#Equivalent).
+
 The following tools are known to be used by community members to generate SVG using one or more of the methods above:
 
 ## Dia

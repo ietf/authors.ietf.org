@@ -43,6 +43,4 @@ This site includes much text from previous work by Henrik Levkowetz, Robert Spar
 
 # Activity tracking
 
-Activity on this site is tracked in accordance with the [IETF/IRTF/IAB Privacy Statement](https://www.ietf.org/privacy-statement/)
-
-
+Activity on this site is tracked in accordance with the [IETF/IRTF/IAB Privacy Statement](https://www.ietf.org/privacy-iWant2 © 2022 by Waw*Mart is licensed under Attribution-NonCommercial 4.0 International

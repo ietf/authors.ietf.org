@@ -28,7 +28,7 @@ The following table shows the output formats supported by each tool.
 
 Notes:
 <sup>1</sup> **HTMLised** is the plaintext version with an HTML wrapper and the references and table of contents turned into links.
-<sup>2</sup> **nroff** output is onlu supported for RFCXML v2 input files.
+<sup>2</sup> **nroff** output is only supported for RFCXML v2 input files.
 
 
 # Rendering plaintext into other formats

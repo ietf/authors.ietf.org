@@ -9,7 +9,7 @@ dateCreated: 2021-11-03T13:17:49.168Z
 ---
 
 # Overview
-RFCXML is an XML language, used as the preferred format for Internet-Drafts and the canonical format for published RFCs since RFC 8650 in November 2019.  It is documented in RFCs and formally specified in a RELAX NG Compact Syntax (RNC) schema. The RNC schema only allows specified XML elements and attributes to be used, which means that RFCXML documents can be fully validated against the schema.
+RFCXML is an XML language, used as the preferred format for Internet-Drafts and the canonical format for published RFCs since RFC 8650 in November 2019.  It is documented documented on this site and formally specified in a RELAX NG Compact Syntax (RNC) schema. RFCXML documents can be fully validated against the schema.
 
 The [RFCXML vocabulary reference](/rfcxml-vocabulary) documents all of the elements and attributes and their usage and allowed values.  
 
@@ -24,7 +24,7 @@ v1 of RFCXML was documented in RFC2629, published in 1999, when the preferred fo
 
 v2 was documented in RFC 7749, published in February 2016, and switched to a RELAX NG Compact Syntax (RNC) schema.  v2, is still actively used as some of the tools that process RFC XML do not fully support v3 or still default to v2. 
 
-v3 was documented in RFC 7991, published in December 2016. Since the publication of RFC 7991, a number of changes have been made to the schema but these have not yet made it into an RFC though they are documented in the [RFCXML vocabulary reference](/rfcxml-vocabulary).  The background to these changes is documented in the [implementation notes for RFC 7991](https://datatracker.ietf.org/doc/html/draft-levkowetz-xml2rfc-v3-implementation-notes-11).
+v3 was documented in RFC 7991, published in December 2016 but following publication a number of changes were made to the schema and so RFC 7991 cannot be considered a normative reference for RFCXML. The authoritative source of documentation for the schema as it currently exists, is this site in [RFCXML vocabulary reference](/rfcxml-vocabulary).  For information only, the background to these changes is documented in the [implementation notes for RFC 7991](https://datatracker.ietf.org/doc/html/draft-levkowetz-xml2rfc-v3-implementation-notes-11) (though it does not cover everyhing and there have been some further changes since that was written) and a more recent attempt to document those changes in [The "xml2rfc" version 3 Vocabulary as Implemented](https://datatracker.ietf.org/doc/draft-irse-draft-irse-xml2rfcv3-implemented/).
 
 # The 'prep' tool
 

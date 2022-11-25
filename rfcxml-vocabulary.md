@@ -8,7 +8,9 @@ editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
 ---
 
-The current version of the RFCXML vocabulary is v3.  All documents written in RFCXML  begin with the root element [**\<rfc\>**](/rfcxml-vocabulary#rfc) and follow the schema rules for the contents of each element.  The available elements are listed below along with their attributes and a snippet of the RNC schema that defines that element.
+The current version of the RFCXML vocabulary is v3 and this page is currently the authoritative documentation for v3, superseding RFC 7991 as multipole changes have been made since the publication of RFC 7991.  
+
+All documents written in RFCXML  begin with the root element [**\<rfc\>**](/rfcxml-vocabulary#rfc) and follow the schema rules for the contents of each element.  The available elements are listed below along with their attributes and a snippet of the [RNC schema](/templates-and-schemas) that defines that element.
 
 > NOTE:  The schema snippets below include reference to elements and attributes that have been deprecated and should not be used.  Details of this deprecated syntax can be found in [Upgrading from v2](/upgrading-from-v2).
 {.is-info}

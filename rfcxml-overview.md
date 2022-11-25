@@ -9,7 +9,7 @@ dateCreated: 2021-11-03T13:17:49.168Z
 ---
 
 # Overview
-RFCXML is an XML language, used as the preferred format for Internet-Drafts and the canonical format for published RFCs since RFC 8650 in November 2019.  It is documented documented on this site and formally specified in a RELAX NG Compact Syntax (RNC) schema. RFCXML documents can be fully validated against the schema.
+RFCXML is an XML language, used as the preferred format for Internet-Drafts and the canonical format for published RFCs since RFC 8650 in November 2019.  It is documented on this site and formally specified in a RELAX NG Compact Syntax (RNC) schema. RFCXML documents can be fully validated against the schema.
 
 The [RFCXML vocabulary reference](/rfcxml-vocabulary) documents all of the elements and attributes and their usage and allowed values.  
 

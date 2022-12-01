@@ -2,7 +2,7 @@
 title: Upgrading from v2
 description: 
 published: true
-date: 2021-12-16T18:34:11.403Z
+date: 2022-12-01T17:35:43.323Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T19:26:45.619Z
@@ -11,7 +11,7 @@ dateCreated: 2021-11-04T19:26:45.619Z
 # Converting an XML file from v2 to v3
 ## Initial conversion
 There are two ways:
-* Use the [Author Tools](hhtps://author-tools.ietf.org) web service
+* Use the [Author Tools](https://author-tools.ietf.org) web service
 * Use xml2rfc locally.  On the command line: `xml2rfc --v2v3 inputfile.xml`. You can use the `--add-xinclude` option to replace RFC and I-D reference elements with the appropriate `xi:include` element.
 
 ## Futher updates after converting an XML file from v2 to v3

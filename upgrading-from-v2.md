@@ -2,7 +2,7 @@
 title: Upgrading from v2
 description: 
 published: true
-date: 2022-12-01T17:35:43.323Z
+date: 2022-12-02T11:00:17.128Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T19:26:45.619Z
@@ -36,17 +36,8 @@ You may want to do the following (for the sake of generating good output and hav
 This is being discussed on the xml2rfc-dev list. You should disregard this warning for now.
 2. xml2rfc fails with *"Reserved anchor name: section-.... Don't use anchor names beginning with one of u-, section-, iref-, figure-, table-"*.
 Rename your section.
-
-Other errors can appear if you're using a helper tool to write your XML:
-
-### kramdown-rfc2629
-
-1. If you don't specify a date for a reference, xml2rfc fails with *"Expected \<date\> attribute "year" to be an integer, but found "n.d.""*
-This issue is tracked in https://github.com/cabo/kramdown-rfc2629/issues/64. Add `date: false` to your reference to avoid the error.
-
-### i-d-template
-1. xml2rfc warns that *"The 'docName' attribute of the \<rfc/\> element should have a revision number as the last component: docName="draft-foo-bar-02"."*
-This issue is tracked in https://trac.ietf.org/tools/xml2rfc/trac/ticket/439. You can't modify your source to avoid it.
+3. If you use i-d template then xml2rfc warns that *"The 'docName' attribute of the \<rfc/\> element should have a revision number as the last component: docName="draft-foo-bar-02"."*
+This issue is tracked in https://github.com/ietf-tools/xml2rfc/issues/439. You can't modify your source to avoid it.
 
 # New features with v3
 Some highlights are the handling of [non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml), new text formatting elements, and SVG [Diagrams](/diagrams). For complete details, see Section 1.3 of RFC7991.

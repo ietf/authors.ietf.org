@@ -74,7 +74,7 @@ An example of a reference written by an organisation is:
 # Changing all reference tags from symbolic to numeric
 For example, `[1]` instead of `[RFC2119]`
 
-In the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, set the attribute **symRefs** to "no" for symbolic references. This makes reference tags be numeric, e.g., `[1]`, instead of symbolic, e.g., `[RFC2119]`.
+In the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, set the attribute **symRefs** to "false" for symbolic references. This makes reference tags be numeric, e.g., `[1]`, instead of symbolic, e.g., `[RFC2119]`.
 
 # Changing a reference tag to use a nickname
 For example, `[IKEv2]` instead of `[RFC4306]`
@@ -95,7 +95,7 @@ yields:
 ```
 # Listing references in alphabetical order
 
-In the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, set the attribute **sortRefs** to "yes". Note that **sortRefs** only has an effect if **symRefs** is "yes".
+In the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, set the attribute **sortRefs** to "true". Note that **sortRefs** only has an effect if **symRefs** is "true".
 
 # Referencing a URL
 

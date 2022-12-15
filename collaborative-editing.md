@@ -13,7 +13,7 @@ Collaborative editing is generally the hardest part of authoring an I-D as you w
 # GitHub
 GitHub is widely used by IETF WGs for tracking issues and the related changes to Internet-Drafts.  The following tools/services have been created by community members to support the use of GitHub:
 ## internet-draft-template and i-d-template
-[internet-draft-template](https://github.com/martinthomson/internet-draft-template) and [i-d-template](https://github.com/martinthomson/i-d-template) are a pair of tools that work together to provide an automated Markdown I-D build system in GitHub.  These are described further in [Drafting in Markdown](/drafting-in-markdown).
+[internet-draft-template](https://github.com/martinthomson/internet-draft-template) and [i-d-template](https://github.com/martinthomson/i-d-template) are a pair of tools that work together to provide an automated Markdown and XML I-D build system in GitHub.  These are described further in [Drafting in Markdown](/drafting-in-markdown).  The instructions also apply to XML documents, you just need to add your XML draft to the root of the repository.
 
 ## ietf-github-services
 The [ietf-github-services](https://github.com/ietf-github-services) organisation contains a number of repositories providing supporting functionality, including:

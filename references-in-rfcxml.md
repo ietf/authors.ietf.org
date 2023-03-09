@@ -198,15 +198,27 @@ which yields
 
 Use [**\<xref\>**](/rfcxml-vocabulary#xref) and set the **sectionFormat** attribute to various options.
 
-* "of" - `See Section 1.3 of [RFC7991].`
-* "comma" - `See [RFC7991], Section 1.3.`
-* "parens" - `See [RFC7991] (Section 1.3).`
-* "bare" - `See 1.3.`
+To construct `See Section 1.3 of [RFC7991]`, use "of" with the sectionFormat attribute:
+```xml
+   See <xref target="RFC7991" sectionFormat="of" section="1.3" />
+```
+To construct `See [RFC7991], Section 1.3`, use "comma" with the sectionFormat attribute:
+```xml
+   See <xref target="RFC7991" sectionFormat="comma" section="1.3" />
+```
+To construct `See [RFC7991] (Section 1.3)`, use "parens" with the sectionFormat attribute:
+```xml
+   See <xref target="RFC7991" sectionFormat="parens" section="1.3" />
+```
+To construct `See 1.3`, use "bare" with the sectionFormat attribute:
+```xml
+   See <xref target="RFC7991" sectionFormat="bare" section="1.3" />
+```
 
 When **sectionFormat** is not set at all, the output is the same as "of".
 
 # Linking to multiple sections within a document 
-For example, 'see Sections 3 and 4'.
+For example, `See Sections 3 and 4.`
 
 Use [**\<xref\>**](/rfcxml-vocabulary#xref) with the format attribute. For example, assuming the anchors for the relevant sections match the targets:
 ```xml

@@ -1538,7 +1538,7 @@ Allowed content: [**\<stream\>**](/rfcxml-vocabulary#stream)?, [**\<front\>**](/
 
 ### Attributes
 #### anchor (Required)
-Document-wide unique identifier for this element. Usually, this will be used both to label the reference in the References section and as an identifier in links to this reference entry; but see [**\<displayreference\>**](/rfcxml-vocabulary#displayreference) for how to change this.
+Document-wide unique identifier for this element. Note that the value of the anchor element cannot start with a number. Usually, the value will be used both to label the reference in the References section and as an identifier in links to this reference entry; but see [**\<displayreference\>**](/rfcxml-vocabulary#displayreference) for how to change this.
 
 #### quote-title
 Specifies whether or not the title in the reference should be quoted. This can be used to prevent quoting, such as on errata.

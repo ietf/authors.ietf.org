@@ -16,7 +16,7 @@ RFCXML uses references that are encoded in a format called BibXML, as defined in
 # Inserting references from a library
 Use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section that points to a citation in the library as follows.
 ```xml
-<xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml"/>
+<xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml"/>
 ```
 For an Internet-Draft, the citation filename uses the draft string. For example:
 ```xml
@@ -27,7 +27,7 @@ All are cited textually in the same manner, by using [**\<xref\>**](/rfcxml-voca
 * The anchors for Internet-Drafts are "I-D.<name without "draft-" or the version number>".
 
 # Inserting references manually
-The following complete example is for an RFC (verbatim contents of [https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml](https://www.rfc-editor.org/refs/bibxml/reference.RFC.2119.xml)). Full references should only be used where an `xi:include` cannot be used, or where the authors wish to specify different BibXML from that supplied in the citation libraries:
+The following complete example is for an RFC (verbatim contents of [https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml](https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml)). Full references should only be used where an `xi:include` cannot be used, or where the authors wish to specify different BibXML from that supplied in the citation libraries:
 ```xml
 <reference anchor="RFC2119" target="https://www.rfc-editor.org/info/rfc2119">
   <front>
@@ -60,7 +60,7 @@ A bare minimum example is:
 ```
 An example of a reference written by an organisation is:
 ```xml
-<reference anchor="org_ref" target="http://www.example.com/">
+<reference anchor="org_ref" target="https://www.example.com/">
   <front>
     <title>Organisational Reference</title>
     <author>
@@ -84,7 +84,7 @@ Use the [**\<displayreference\>**](/rfcxml-vocabulary#displayreference) element 
 <displayreference target="RFC7296" to="IKEv2"/>
 <references>
 [...]
-<xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.7296.xml"/>
+<xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7296.xml"/>
 ```
 yields:
 ```
@@ -152,10 +152,10 @@ Use the [**\<name\>**](/rfcxml-vocabulary#name) element (child of the [**\<refer
 Use [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) with an `xi:include` for each RFC inside it:
 ```xml
 <referencegroup anchor="STD78" target="https://www.rfc-editor.org/info/std78">
-  <xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.5343.xml"/>
-  <xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.5590.xml"/>
-  <xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.5591.xml"/>
-  <xi:include href="https://www.rfc-editor.org/refs/bibxml/reference.RFC.6353.xml"/>
+  <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.5343.xml"/>
+  <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.5590.xml"/>
+  <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.5591.xml"/>
+  <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.6353.xml"/>
 </referencegroup>
 ```
 which yields

@@ -39,7 +39,7 @@ Likewise, the [templates and schemas](/templates-and-schemas) available on this 
 
 # Acknowledgements
 
-This site includes much text from previous work by Henrik Levkowetz, Robert Sparks, Russ Housley, Ben Kaduk, Murray Kucherawy, Alvaro Retana, the RFC Production Center, and the members of many IESGs.
+This site includes much text from previous work by Henrik Levkowetz, Robert Sparks, Russ Housley, Ben Kaduk, Murray Kucherawy, Alvaro Retana, the RFC Production Center, and the members of many Internet Engineering Steering Groups ([IESGs](https://www.ietf.org/iesg/)).
 
 # Activity tracking
 

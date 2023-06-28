@@ -121,6 +121,9 @@ There are a number of miscellaneous tools, not directly related to drafting I-Ds
 - **[ietf-cli](https://trac.tools.ietf.org/tools/ietf-cli/)**
 A multi-functional command line tool for manipulating I-Ds and RFCs and local repositories.
 
+- **[ietf-publisher](https://github.com/marketplace/actions/ietf-publisher)**
+A GitHub action that you can use to automate the build of PDF, HTML and TXT versions of an RFC written in Markdown.
+
 - **[print_rfc_or_draft](https://www.kumari.net/index.php/programming/programmingcat/45-printrfcordraft)**
 A simple program that prints an Internet Draft (ID) or RFC. Because of the difference between the number of lines on laser printers and line / dot-matrix printers, each "page" of the draft actually takes up 2 pages and you end up with lots of pages with just a one line footer. This script tries to fix that by downloading the draft, converting it to a PDF and then printing it.
 

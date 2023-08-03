@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2021-12-16T02:50:37.055Z
+date: 2023-08-03T17:17:44.245Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -1711,9 +1711,9 @@ Possible values: "true", "false"
 Default value: "false"
 
 #### submissionType
-The document stream, as described in RFC7841.
+The document stream, as described in RFC7841. "editorial" is for the new stream added by RFC9280 that is used for submissions to the RFC Series Working Group (RSWG).
 
-Possible values: "IETF", "IAB", "IRTF", "independent"
+Possible values: "IETF", "IAB", "IRTF", "independent", "editorial"
 Default value: "IETF"
 
 #### symRefs

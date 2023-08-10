@@ -49,6 +49,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**bap**](https://github.com/ietf-tools/bap) | Extract and validates ABNF |
 | [**id2xml**](https://github.com/ietf-tools/id2xml) | Generates RFCXML from plain text I-Ds |
 | [**idnits**](https://github.com/ietf-tools/idnits-mirror) | Check plain text I-D for submission nits |
+| [**ietf-publisher**](https://github.com/marketplace/actions/ietf-publisher) | A GitHub action that you can use to automate the build of PDF, HTML and TXT versions of an RFC written in Markdown |
 | [**kramdown-rfc**](https://github.com/cabo/kramdown-rfc) | Generates RFCXML from Markdown I-Ds |
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Generates RFCXML from Lyx (LaTeX) I-Ds and then transforms using xml2rfc |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Generates RFCXML from AsciiRFC (AsciiDoc) I-Ds |
@@ -74,6 +75,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**bap**](https://github.com/ietf-tools/bap) | Build, CLI | Extract, Validate | ABNF | - | Unknown |
 | [**id2xml**](https://github.com/ietf-tools/id2xml) | Build, CLI | Convert | plaintext | RFCXML | Yes |
 | [**idnits**](https://github.com/ietf-tools/idnits) | Build, CLI, Web | Validate | plaintext | - | N/A |
+| [**ietf-publisher**](https://github.com/marketplace/actions/ietf-publisher) | Build, CLI | Convert | Markdown | PDF, HTML, TXT | ? | 
 | [**kramdown-rfc**](https://github.com/cabo/kramdown-rfc) | Build, CLI, Web | Convert, Validate | Markdown | RFCXML | Yes |
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | ? | Validate, Convert | LaTeX(Lyx) | ? | No |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Build, CLI | Validate, Convert | AsciiDoc(AsciiRFC) | RFCXML | Yes |
@@ -99,6 +101,7 @@ Some tools only support the previous version of RFCXML (v2) and the format is wr
 | [**bap**](https://github.com/ietf-tools/bap) | Bill Fenner | Bill Fenner | Unknown | No | None | 
 | [**id2xml**](https://github.com/ietf-tools/id2xml) | Henrik Levkowetz | IETF Trust | Revised BSD | Unknown | Unknown |
 | [**idnits**](https://github.com/ietf-tools/idnits) | Henrik Levkowetz | Henrik Levkowetz | GPL | Yes | Tools Team |
+| [**ietf-publisher**](https://github.com/marketplace/actions/ietf-publisher) | Will Hawkins | Will Hawkins | GPLv3 | Yes | Will Hawkins |
 | [**kramdown-rfc**](https://github.com/cabo/kramdown-rfc) | Carsten Bormann | Carsten Bormann | MIT | Yes | Carsten Bormann |
 | [**lyx2rfc**](https://github.com/nicowilliams/lyx2rfc) | Nico Williams | Nico Williams | Unknown | No | None |
 | [**metanorma-ietf**](https://github.com/metanorma/metanorma-ietf) | Ribose | Ribose | Simplified BSD | Yes | Ribose |

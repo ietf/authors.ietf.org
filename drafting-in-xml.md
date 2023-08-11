@@ -2,7 +2,7 @@
 title: Drafting in XML
 description: 
 published: true
-date: 2022-03-01T03:16:19.800Z
+date: 2023-08-11T12:00:07.248Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T10:56:56.326Z
@@ -50,4 +50,4 @@ This [script](https://strayalpha.com/software/rfcxml/lookback-bcp-fix.pl) adds `
 [bibtex2rfc](https://github.com/yaronf/bibtex2rfc) converts BibTeX citations into BibXML references. See [References in RFCXML](/references-in-rfcxml) for more details.
 
 ## i-d-template
-[Drafting in Markdown](/drafting-in-markdown#h-3-internet-draft-template-and-i-d-template) describes the use of the [i-d-template](https://github.com/martinthomson/i-d-template) and [internet-draft-template](https://github.com/martinthomson/internet-draft-template) projects for managing I-Ds.  These tools can be used to manage RFCXML I-Ds, with most of the same [automation features](https://github.com/martinthomson/i-d-template/blob/main/doc/FEATURES.md#automation-features).
+[Drafting in Markdown](/drafting-in-markdown#h-3-internet-draft-template-and-i-d-template) describes the use of the [i-d-template](https://github.com/martinthomson/i-d-template) and [internet-draft-template](https://github.com/martinthomson/internet-draft-template) projects for managing I-Ds. These tools can be used to manage RFCXML I-Ds by adding the RFCXML I-D to the root of the repository.

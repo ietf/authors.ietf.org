@@ -2,7 +2,7 @@
 title: Collaborative editing
 description: 
 published: true
-date: 2021-12-14T20:46:04.995Z
+date: 2023-08-11T12:02:30.445Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-25T04:21:06.810Z
@@ -13,7 +13,7 @@ Collaborative editing is generally the hardest part of authoring an I-D as you w
 # GitHub
 GitHub is widely used by IETF WGs for tracking issues and the related changes to Internet-Drafts.  The following tools/services have been created by community members to support the use of GitHub:
 ## internet-draft-template and i-d-template
-[internet-draft-template](https://github.com/martinthomson/internet-draft-template) and [i-d-template](https://github.com/martinthomson/i-d-template) are a pair of tools that work together to provide an automated Markdown I-D build system in GitHub.  These are described further in [Drafting in Markdown](/drafting-in-markdown).
+[internet-draft-template](https://github.com/martinthomson/internet-draft-template) and [i-d-template](https://github.com/martinthomson/i-d-template) are a pair of tools that work together to provide an [automated I-D build system](https://github.com/martinthomson/i-d-template/blob/main/doc/FEATURES.md#automation-features) in GitHub.  These are described further in [Drafting in Markdown](/drafting-in-markdown) and [Drafting in XML](/drafting-in-xml).
 
 ## ietf-github-services
 The [ietf-github-services](https://github.com/ietf-github-services) organisation contains a number of repositories providing supporting functionality, including:

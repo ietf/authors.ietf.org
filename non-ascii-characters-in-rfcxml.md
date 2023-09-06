@@ -12,15 +12,14 @@ The use of non-ASCII characters in RFCXML is detailed in RFC 7997. Your file enc
 
 # non-ASCII characters used directly
 
-non-ASCII characters in RFCXML (and I-Ds in general) can be used directly in a restricted set of elements:
+non-ASCII characters in RFCXML (and I-Ds in general) may appear within the body of the document. The **\<u\>** element is required for cases where the non-ASCII characters are needed for correct protocol operation. 
 
-* [**\<author\>**](/rfcxml-vocabulary#author) and [**\<contact\>**](/rfcxml-vocabulary#contact) elements (using the **fullname**, **initials**, and **surname** attributes, while the **asciiFullname**, **asciiInitials**, and **asciiSurname** attributes hold the ASCII equivalents). If the non-ASCII characters are in the Unicode Latin blocks, then it's not necessary to use the attributes for ASCII equivalents. (For example, when a **surname** contains "ä" (LATIN SMALL LETTER A WITH DIAERESIS, U+00E4), it's not necessary to include **asciiSurname**.)
-* [**\<organization\>**](/rfcxml-vocabulary#organization) element
-* author and contact's postal address using [**\<street\>**](/rfcxml-vocabulary#street), [**\<city\>**](/rfcxml-vocabulary#city), [**\<region\>**](/rfcxml-vocabulary#region), [**\<city\>**](/rfcxml-vocabulary#city), [**\<country\>**](/rfcxml-vocabulary#country) and * [**\<email\>**](/rfcxml-vocabulary#email) elements. Each of these elements has an ascii attribute to hold the ASCII equivalent, which will also appear in the output format.
-* [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) and [**\<artwork\>**](/rfcxml-vocabulary#artwork) elements
+## Notes on ascii attributes
+* For the [**\<author\>**](/rfcxml-vocabulary#author) and [**\<contact\>**](/rfcxml-vocabulary#contact) elements, there exist both **fullname**, **initials**, and **surname** attributes that can hold non-ASCII characters and also the **asciiFullname**, **asciiInitials**, and **asciiSurname** attributes to hold the ASCII equivalents of non-ASCII characters that are not in the Unicode Latin blocks.
+* Postal address elements [**\<street\>**](/rfcxml-vocabulary#street), [**\<city\>**](/rfcxml-vocabulary#city), [**\<region\>**](/rfcxml-vocabulary#region), [**\<city\>**](/rfcxml-vocabulary#city), [**\<country\>**](/rfcxml-vocabulary#country), and [**\<email\>**](/rfcxml-vocabulary#email) also have an ascii attribute to hold the ASCII equivalent, which will also appear in the output format.
 
 # non-ASCII characters wrapped in \<u\>
-Other than in the resricted elements, non-ASCII characters must be wrapped by the [**\<u\>**](/rfcxml-vocabulary#u) element with the **format** attribute specifying how it is represented.
+When non-ASCII characters are needed for correct protocol operation, they must be wrapped by the [**\<u\>**](/rfcxml-vocabulary#u) element with the **format** attribute specifying how it is represented.
 
 The simplified **format** consists of dash-separated keywords, where each keyword represents a possible expansion of the Unicode character or string; use for example `<u format="lit-num-name">foo</u>` to expand the text to its literal value, code point values, and code point names.
 

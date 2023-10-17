@@ -82,3 +82,14 @@ The following are community developed Markdown templates specific to [kramdown-r
 
 ## Schemas
 Markdown doesn't yet have the concept of a schema. It may never have.
+
+# Go Flavored Markdown
+## Examples
+Community developed Go markdown examples specific to [mmark](https://mmark.miek.nl/):
+* [Mmark examples](https://github.com/mmarkdown/mmark/tree/master/rfc)
+
+# Asciidoc
+## Template
+A community developed Asciidoc template specific to [metanorma-ietf](https://github.com/metanorma/metanorma-ietf):
+* [Metanorma IETF RFC template](https://github.com/metanorma/mn-templates-ietf)
+

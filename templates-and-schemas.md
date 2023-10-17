@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2022-03-03T00:18:11.692Z
+date: 2023-10-17T11:48:14.913Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -76,20 +76,16 @@ The following legacy files are for those working with old I-Ds or RFCs and shoul
 
 # Markdown
 ## Templates
-The following are community developed Markdown templates specific to [kramdown-rfc](https://github.com/cabo/kramdown-rfc):
+Community developed Markdown templates specific to [kramdown-rfc](https://github.com/cabo/kramdown-rfc):
 * [Martin Thomson's Markdown Template](https://github.com/martinthomson/internet-draft-template/raw/main/draft-todo-yourname-protocol.md)
 * [kramdown-rfc standard template](https://raw.githubusercontent.com/cabo/kramdown-rfc/master/examples/draft-rfcxml-general-template-standard-00.xml-edited.md)
 
-## Schemas
-Markdown doesn't yet have the concept of a schema. It may never have.
-
-# Go Flavored Markdown
 ## Examples
-Community developed Go markdown examples specific to [mmark](https://mmark.miek.nl/):
+Community developed Markdown examples specific to [mmark](https://mmark.miek.nl/):
 * [Mmark examples](https://github.com/mmarkdown/mmark/tree/master/rfc)
 
 # Asciidoc
-## Template
-A community developed Asciidoc template specific to [metanorma-ietf](https://github.com/metanorma/metanorma-ietf):
+## Templates
+Community developed Asciidoc template specific to [metanorma-ietf](https://github.com/metanorma/metanorma-ietf):
 * [Metanorma IETF RFC template](https://github.com/metanorma/mn-templates-ietf)
 

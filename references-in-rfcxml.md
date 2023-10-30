@@ -14,17 +14,18 @@ RFCXML uses references that are encoded in a format called BibXML, as defined in
 * For RFCs, Internet-Drafts, and documents produced by the W3C, 3GPP, IANA and NIST, the new site is [bib.ietf.org](https://bib.ietf.org) (at the time of writing, this site has only just gone live and some usability issues are still to be resolved). Many of these sets of references can be downloaded as a set for offline access.
 
 # Inserting references from a library
-Use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section that points to a citation in the library as follows.
+Use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section that points to a citation in the library as follows. The following creates a reference to an RFC:
 ```xml
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml"/>
 ```
-For an Internet-Draft, the citation filename uses the draft string. For example:
+For an Internet-Draft, the citation filename uses the draft string. Note there are two ways to create the URL. The first way, where the draft string is constructed as "I-D.<name without "draft-" or the version number>", will point to the most current version of the I-D, for example:
 ```xml
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-wgname-topic.xml"/>
 ```
-All are cited textually in the same manner, by using [**\<xref\>**](/rfcxml-vocabulary#xref) elements where the target corresponds to the anchor of the reference element, e.g., `<xref target="RFC2119" />`. 
-* The anchors for RFCs are "RFCNNNN" (4 digits, using leading zeros)
-* The anchors for Internet-Drafts are "I-D.<name without "draft-" or the version number>".
+This is helpful if you do not want to track and update the reference entry each time the I-D is updated. However, if you want to point to a specific version of an I-D, the draft string should include both "draft-" and the version number. For example: 
+```xml
+<xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.draft-ietf-wgname-topic-17.xml"/>
+```
 
 # Inserting references manually
 The following complete example is for an RFC (verbatim contents of [https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml](https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml)). Full references should only be used where an `xi:include` cannot be used, or where the authors wish to specify different BibXML from that supplied in the citation libraries:
@@ -70,6 +71,11 @@ An example of a reference written by an organisation is:
   </front>
 </reference>
 ```
+
+# Citing a reference
+To cite a reference in your text, use an [**\<xref\>**](/rfcxml-vocabulary#xref) element where the value of its target attribute corresponds to the value of the anchor attribute of the reference element, e.g., `<xref target="RFC2119" />`. For references constructed with  `xi:include`, the values of the target attributes are the following:
+* For RFCs, "RFCNNNN" (4 digits, using leading zeros)
+* For Internet-Drafts, "I-D.<name without "draft-" or the version number>", even if you specified a particular version with the `xi:include`.
 
 # Changing all reference tags from symbolic to numeric
 For example, `[1]` instead of `[RFC2119]`

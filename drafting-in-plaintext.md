@@ -2,7 +2,7 @@
 title: Drafting in plaintext
 description: 
 published: true
-date: 2021-12-14T23:32:41.442Z
+date: 2023-11-02T12:48:07.104Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-10T00:25:37.371Z
@@ -15,7 +15,7 @@ Some of the tools listed in [Drafting in other markup languages](/drafting-in-ot
 Plaintext I-Ds can be validated prior to submission as explained in [Document validation](/document-validation).
 
 # General guidelines
-The format constraints for a plaintext I-D are primarily the same as those for the text format of an RFC as specified in RFC 7994. One notable difference is that Internet-Drafts are paginated, and include running headers and footers. A few formatting requirements are highlighted here, but authors drafting plaintext documents should fully understand the requirements in RFC 7994, RFC 7841, RFC 7332, RFC 7322, the RFC Editor's [Style Guide](https://www.rfc-editor.org/styleguide/), and the current [acceptable boilerplate texts](https://www.iab.org/documents/headers-boilerplate/).
+The format constraints for a plaintext I-D are primarily the same as those for the text format of an RFC as specified in RFC 7994. One notable difference is that Internet-Drafts are paginated, and include running headers and footers. A few formatting requirements are highlighted here, but authors drafting plaintext documents should fully understand the requirements in RFC 7994, RFC 7841, RFC 7322, the RFC Editor's [Style Guide](https://www.rfc-editor.org/styleguide/), and the current [acceptable boilerplate texts](https://www.iab.org/documents/headers-boilerplate/).
 
 # Checklist
 

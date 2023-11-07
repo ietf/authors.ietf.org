@@ -48,5 +48,12 @@ Org is a highly flexible structured plaintext file format that is used mainly in
 ## Org Mode RFC XML Exporter
 [Org Mode RFC XML Exporter](https://github.com/choppsv1/org-rfc-export) is an Emacs plugin that exports Org Mode files to RFCXML.
 
+# reStructuredText
+[reStructuredText (RST)](https://en.wikipedia.org/wiki/ReStructuredText) is a text document format similar to Markdown.
+It is used for technical documentation by Python developers, by the Linux kernel community, and by CMake
+developers, among others.
 
+## RST with rst2xmlrfc
+
+[rst2rfcxml](https://github.com/dthaler/rst2rfcxml) is a processing tool that converts files in RST format into v3 RFCXML.
 

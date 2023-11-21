@@ -2,7 +2,7 @@
 title: Choosing a format and tools
 description: 
 published: true
-date: 2022-03-01T02:54:51.361Z
+date: 2023-11-21T21:21:11.560Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-01T02:54:51.361Z

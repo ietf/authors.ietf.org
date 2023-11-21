@@ -2,7 +2,7 @@
 title: Choosing a format and tools
 description: 
 published: true
-date: 2023-11-21T21:21:11.560Z
+date: 2023-11-21T21:24:12.648Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-01T02:54:51.361Z
@@ -25,15 +25,15 @@ The diagram below shows the different formats supported at each stage of the aut
 
 ```mermaid
 graph TD  
-  A("Initial drafting<br/>(Any format)") --> B("Collaborative editing<br/>(Any format)")
+  A("Initial drafting (Any format)") --> B("Collaborative editing (Any format)")
   A -.-> D
   B -.-> D
-  B -- Optional --> C("Document validation<br/>(RFCXML, generated RFCXML, plaintext)")
+  B -- Optional --> C("Document validation (RFCXML, generated RFCXML, plaintext)")
   C -.-> D([Rendered output])
-  C --> E("Datatracker submission with document validation<br/>(RFCXML, generated RFCXML, plaintext)")
+  C --> E("Datatracker submission with document validation (RFCXML, generated RFCXML, plaintext)")
   E -.-> D
   B -- Required --> E
-  E --> F("RFC Pre-publication review<br/>(RFCXML)")
+  E --> F("RFC Pre-publication review (RFCXML)")
   F --> G([RFC Publication])
 ```
 

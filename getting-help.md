@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2022-06-01T12:42:48.572Z
 ---
 
-Plenty of help is available on authoring I-Ds, both direct from the IETF and from other members of the IETF community. If you do not know where to start or your issue type is not listed below please [email Support](mailto:support@ietf.org).  While we cannot answer all question, we should be able to direct you to the right place where we can't.
+Plenty of help is available on authoring I-Ds, both direct from the IETF and from other members of the IETF community. If you do not know where to start or your issue type is not listed below please [email Support](mailto:support@ietf.org).  While we cannot answer all questions, we should be able to direct you to the right place where we can't.
 
 Otherwise, there are a number of community mailing lists where more advanced questions can be posted or questions about tools outside of IETF control.  It is often worthwhile searching the list archive first.
 

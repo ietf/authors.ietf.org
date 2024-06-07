@@ -2522,8 +2522,7 @@ Allowed content: ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>*
 ### Usage
 The elements [**\<author\>**](/rfcxml-vocabulary#author), [**\<organisation\>**](/rfcxml-vocabulary#organisation), [**\<street\>**](/rfcxml-vocabulary#street), [**\<city\>**](/rfcxml-vocabulary#city), [**\<region\>**](/rfcxml-vocabulary#region), [**\<code\>**](/rfcxml-vocabulary#code), [**\<country\>**](/rfcxml-vocabulary#country), [**\<postalLine\>**](/rfcxml-vocabulary#postalLine), [**\<email\>**](/rfcxml-vocabulary#email), [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo), and [**\<title\>**](/rfcxml-vocabulary#title) may contain non-ASCII characters for the purpose of rendering author names, addresses, and reference titles correctly. They also have an additional **ascii** attribute for the purpose of proper rendering in ascii-only media.
 
-The [**\<u\>**](/rfcxml-vocabulary#u) element is required to enclose Unicode strings that are needed for correct protocol operation.
-For more details see [non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml).
+The [**\<u\>**](/rfcxml-vocabulary#u) element is required to enclose Unicode strings that are needed for correct protocol operation. For more details, see [non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml).
 
 Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<li\>**](/rfcxml-vocabulary#li), [**\<t\>**](/rfcxml-vocabulary#t), [**\<td\>**](/rfcxml-vocabulary#td), and [**\<th\>**](/rfcxml-vocabulary#th).
 Allowed content: text

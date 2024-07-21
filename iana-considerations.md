@@ -2,7 +2,7 @@
 title: IANA Considerations
 description: 
 published: true
-date: 2024-07-21T22:42:21.343Z
+date: 2024-07-21T22:49:17.777Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-21T22:32:52.691Z
@@ -18,6 +18,8 @@ All Internet-Drafts must contain an **IANA Considerations** section that enumera
 > If there is nothing to say in the **IANA Consideration** section then that section should explicitly state “This document has no IANA actions.”
 {.is-info}
 
+# Writing the IANA Considerations section
+
 BCP 26 (RFC 8126) contains full guidelines on writing IANA Considerations sections, including:
 * An upfront [checklist](https://www.rfc-editor.org/rfc/rfc8126.html#section-1.3) to help you navigate the document.
 * How registries are [organized](https://www.rfc-editor.org/rfc/rfc8126.html#section-2.1)
@@ -30,15 +32,19 @@ The IANA [Protocol Registration Procedures](https://www.iana.org/help/protocol-r
 * Suggested text
 * Examples of registry formats
 
-RFC 7120 describes 'early allocation', a mechanism for regsitering a code point in an IANA registry before the document is published as an RFC. This is used to facilitate desired or required implementation and deployment experience prior to publication of an RFC.
+# Early allocation
+RFC 7120 describes 'early allocation', a mechanism for registering a code point in an IANA registry before the document is published as an RFC. This is used to facilitate desired or required implementation and deployment experience prior to publication of an RFC.
 
+# Review
+If your Internet-Draft is adding a code point to a registry that has a registration policy of "Expert Review" or "Specification Required" and/or requires mailing list review, then as soon as the requested parameter information is properly formed, consider initiating reviews with IANA or sending to the appropriate mailing list (where applicable; see the RFC for that the registry for instructions). If there are any questions about what type of approval is needed from the Designated Expert (for example, if the registration should be made immediately or only pre-reviewed before publication), please contact IANA.
+
+If your Internet-Draft has considerable IANA actions then you can request an early review of the document by IANA.
 
 # Checklist
 - [x] Verify this section contains clear instructions if IANA is expected to create a new registry or modify rules for an existing registry.
 - [x] Verify this section contains clear instructions if the document requires IANA to assign or update values in an IANA registry before RFC publication.
 - [x] Check the existing IANA registry for registration policy rules and any requirements for specific requests for registration of protocol parameters. Individual RFCs have specific criteria and instructions that should be followed.
-- [x] If the registration policy is "Expert Review" or "Specification Required" and/or requires mailing list review, as soon as the requested parameter information is properly formed, consider initiating reviews with IANA or sending to the appropriate mailing list (where applicable; see the RFC for that the registry for instructions). If there are any questions about what type of approval is needed from the Designated Expert (for example, if the registration should be made immediately or only pre-reviewed before publication), please contact IANA.
-- [x] If registrations are needed early for registries with "Specification Required", "RFC Required", "IETF Review", or "Standards Action" policies, consider using the early allocation process defined in RFC 7120.
+- [x] 
+
 - [x] Verify this section explicitly and clearly identifies any references to this document that should be added for any registrations and any that should replace existing references.
-- [x] If the document has considerable instructions for IANA actions, request an early review of the document by IANA.
 

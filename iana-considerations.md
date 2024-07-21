@@ -2,7 +2,7 @@
 title: IANA Considerations
 description: 
 published: true
-date: 2024-07-21T22:49:17.777Z
+date: 2024-07-21T22:55:01.048Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-21T22:32:52.691Z
@@ -13,7 +13,7 @@ dateCreated: 2024-07-21T22:32:52.691Z
 
 The [Internet Assigned Numbers Authority](https://www.iana.org/) (IANA) operates the registries that provide global coordination of the DNS root, IP addressing, and many other Internet protocol resources for the IETF. These registries are created, revised, obsoleted and closed by RFCs. For some registries, an RFC is required to register or deprecate an entry in that registry. 
 
-All Internet-Drafts must contain an **IANA Considerations** section that enumerate any actions IANA must take upon publication of the document as an RFC. That section should only contain information for IANA and designated expert reviewers, where those are specified.
+All Internet-Drafts MUST contain an **IANA Considerations** section that enumerate any actions for IANA to take upon publication of the document as an RFC. That section should contain clear instructions for IANA and designated expert reviewers, where those are specified and nothing else.
 
 > If there is nothing to say in the **IANA Consideration** section then that section should explicitly state “This document has no IANA actions.”
 {.is-info}
@@ -29,8 +29,10 @@ BCP 26 (RFC 8126) contains full guidelines on writing IANA Considerations sectio
 * The role of [designated experts](https://www.rfc-editor.org/rfc/rfc8126.html#section-5), when they should be specified and how they are managed.
 
 The IANA [Protocol Registration Procedures](https://www.iana.org/help/protocol-registration) augment those guidelines with additional guidance and more specific details, including:
-* Suggested text
-* Examples of registry formats
+* What to include for [creating registries](https://www.iana.org/help/protocol-registration#registries) and [making registrations](https://www.iana.org/help/protocol-registration#registrations)
+* Recommendations for [common issues](https://www.iana.org/help/protocol-registration#issues)
+* [Suggested text](https://www.iana.org/help/protocol-registration#verbiage) for use in your Internet-Draft
+* [Examples](https://www.iana.org/help/protocol-registration#examples) of registry formats
 
 # Early allocation
 RFC 7120 describes 'early allocation', a mechanism for registering a code point in an IANA registry before the document is published as an RFC. This is used to facilitate desired or required implementation and deployment experience prior to publication of an RFC.
@@ -41,10 +43,5 @@ If your Internet-Draft is adding a code point to a registry that has a registrat
 If your Internet-Draft has considerable IANA actions then you can request an early review of the document by IANA.
 
 # Checklist
-- [x] Verify this section contains clear instructions if IANA is expected to create a new registry or modify rules for an existing registry.
-- [x] Verify this section contains clear instructions if the document requires IANA to assign or update values in an IANA registry before RFC publication.
-- [x] Check the existing IANA registry for registration policy rules and any requirements for specific requests for registration of protocol parameters. Individual RFCs have specific criteria and instructions that should be followed.
-- [x] 
-
 - [x] Verify this section explicitly and clearly identifies any references to this document that should be added for any registrations and any that should replace existing references.
 

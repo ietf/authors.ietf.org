@@ -2,7 +2,7 @@
 title: IANA Considerations
 description: 
 published: true
-date: 2024-07-22T21:39:45.188Z
+date: 2024-07-22T21:45:42.925Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-21T22:32:52.691Z
@@ -38,9 +38,12 @@ The IANA [Protocol Registration Procedures](https://www.iana.org/help/protocol-r
 RFC 7120 describes 'early allocation', a mechanism for registering a code point in an IANA registry before the document is published as an RFC. This is used to facilitate desired or required implementation and deployment experience prior to publication of an RFC.
 
 # Getting your I-D reviewed
-If your Internet-Draft is adding a code point to a registry that has a registration policy of "Expert Review" or "Specification Required" and/or requires mailing list review, then as soon as the requested parameter information is properly formed, consider initiating reviews with IANA or sending to the appropriate mailing list (where applicable; see the RFC for that the registry for instructions). If there are any questions about what type of approval is needed from the Designated Expert (for example, if the registration should be made immediately or only pre-reviewed before publication), please contact IANA.
+There are a number of situations where it might be useful to ask IANA to review your I-D:
+* If your Internet-Draft is adding a code point to a registry that has a registration policy of "Expert Review" or "Specification Required"
+* If there are any questions about what type of approval is needed for a code point registration from the Designated Expert (e.g., if the registration should be made immediately or only pre-reviewed before publication). 
+* If your Internet-Draft has considerable IANA actions.
 
-If your Internet-Draft has considerable IANA actions then you can request an early review of the document by IANA.
+If the registration policy requires mailing list review, consider reaching out to the appropriate mailing list.
 
 # Replacing an RFC that has IANA actions
 If your I-D aims to replace an existing RFC that contains IANA actions, then special care is needed. This is explained in [Section 8 of RFC 8126](https://www.rfc-editor.org/rfc/rfc8126.html#section-8) with additional guidance in the IANA [Protocol Registration Procedures](https://www.iana.org/help/protocol-registration#bis.)

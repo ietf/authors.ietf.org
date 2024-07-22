@@ -2,7 +2,7 @@
 title: IANA Considerations
 description: 
 published: true
-date: 2024-07-21T22:55:01.048Z
+date: 2024-07-22T15:48:53.756Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-21T22:32:52.691Z
@@ -41,6 +41,9 @@ RFC 7120 describes 'early allocation', a mechanism for registering a code point 
 If your Internet-Draft is adding a code point to a registry that has a registration policy of "Expert Review" or "Specification Required" and/or requires mailing list review, then as soon as the requested parameter information is properly formed, consider initiating reviews with IANA or sending to the appropriate mailing list (where applicable; see the RFC for that the registry for instructions). If there are any questions about what type of approval is needed from the Designated Expert (for example, if the registration should be made immediately or only pre-reviewed before publication), please contact IANA.
 
 If your Internet-Draft has considerable IANA actions then you can request an early review of the document by IANA.
+
+# Writing a -bis document
+
 
 # Checklist
 - [x] Verify this section explicitly and clearly identifies any references to this document that should be added for any registrations and any that should replace existing references.

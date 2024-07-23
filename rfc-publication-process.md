@@ -2,12 +2,14 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-07-23T23:27:48.569Z
+date: 2024-07-23T23:55:11.594Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
 ---
 
+> THIS PAGE IS STILL UNDER CONSTRUCTION
+{.is-warning}
 
 # Approval of an I-D for publication as an RFC
 Each publication stream has its own process for approving an I-D and submitting it for publication as an RFC.

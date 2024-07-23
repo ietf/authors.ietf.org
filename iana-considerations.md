@@ -2,7 +2,7 @@
 title: IANA Considerations
 description: 
 published: true
-date: 2024-07-22T21:45:42.925Z
+date: 2024-07-23T01:14:14.941Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-21T22:32:52.691Z
@@ -22,24 +22,24 @@ All Internet-Drafts MUST contain an **IANA Considerations** section. This sectio
 
 BCP 26 (RFC 8126) contains full guidelines on writing IANA Considerations sections. Notable highlights include:
 * An upfront [checklist](https://www.rfc-editor.org/rfc/rfc8126.html#section-1.3) to help you navigate the document.
-* How registries are [organized](https://www.rfc-editor.org/rfc/rfc8126.html#section-2.1)
-* How to [create](https://www.rfc-editor.org/rfc/rfc8126.html#section-2.2), [revise](https://www.rfc-editor.org/rfc/rfc8126.html#section-2.4), [obsolete and close](https://www.rfc-editor.org/rfc/rfc8126.html#section-9.6) a registry
-* How to [register new values](https://www.rfc-editor.org/rfc/rfc8126.html#section-3.1) in an existing registry and [update existing](https://www.rfc-editor.org/rfc/rfc8126.html#section-3.2) registrations
-* How to choose a [registration policy](https://www.rfc-editor.org/rfc/rfc8126.html#section-4) (it also provides a detailed set of well-known policies to choose from)
+* How registries are [organized](https://www.rfc-editor.org/rfc/rfc8126.html#section-2.1).
+* How to [create](https://www.rfc-editor.org/rfc/rfc8126.html#section-2.2), [revise](https://www.rfc-editor.org/rfc/rfc8126.html#section-2.4), [obsolete and close](https://www.rfc-editor.org/rfc/rfc8126.html#section-9.6) a registry.
+* How to [register new values](https://www.rfc-editor.org/rfc/rfc8126.html#section-3.1) in an existing registry and [update existing](https://www.rfc-editor.org/rfc/rfc8126.html#section-3.2) registrations.
+* How to choose a [registration policy](https://www.rfc-editor.org/rfc/rfc8126.html#section-4) (it also provides a detailed set of well-known policies to choose from).
 * The role of [designated experts](https://www.rfc-editor.org/rfc/rfc8126.html#section-5), when they should be specified and how they are managed.
 
 The IANA [Protocol Registration Procedures](https://www.iana.org/help/protocol-registration) augment those guidelines with additional guidance and more specific details, including:
-* What to include for [creating registries](https://www.iana.org/help/protocol-registration#registries) and [making registrations](https://www.iana.org/help/protocol-registration#registrations)
-* Recommendations for [common issues](https://www.iana.org/help/protocol-registration#issues)
-* [Suggested text](https://www.iana.org/help/protocol-registration#verbiage) for use in your Internet-Draft
-* [Examples](https://www.iana.org/help/protocol-registration#examples) of registry formats
+* What to include for [creating registries](https://www.iana.org/help/protocol-registration#registries) and [making registrations](https://www.iana.org/help/protocol-registration#registrations).
+* Recommendations for [common issues](https://www.iana.org/help/protocol-registration#issues).
+* [Suggested text](https://www.iana.org/help/protocol-registration#verbiage) for use in your Internet-Draft.
+* [Examples](https://www.iana.org/help/protocol-registration#examples) of registry formats.
 
 # Early allocation
 RFC 7120 describes 'early allocation', a mechanism for registering a code point in an IANA registry before the document is published as an RFC. This is used to facilitate desired or required implementation and deployment experience prior to publication of an RFC.
 
 # Getting your I-D reviewed
 There are a number of situations where it might be useful to ask IANA to review your I-D:
-* If your Internet-Draft is adding a code point to a registry that has a registration policy of "Expert Review" or "Specification Required"
+* If your Internet-Draft is adding a code point to a registry that has a registration policy of "Expert Review" or "Specification Required".
 * If there are any questions about what type of approval is needed for a code point registration from the Designated Expert (e.g., if the registration should be made immediately or only pre-reviewed before publication). 
 * If your Internet-Draft has considerable IANA actions.
 

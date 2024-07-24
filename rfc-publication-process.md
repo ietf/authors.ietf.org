@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-07-24T21:45:56.642Z
+date: 2024-07-24T22:20:44.651Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
@@ -81,7 +81,7 @@ If the document is not already in  RFCXML then it is converted into RFCXML. The 
 ```
 
 ## Copy editing
-The document is copy-edited to find and correct errors and to ensure that the document conforms to the [style guide](https://www.rfc-editor.org/rfc/rfc7322.html).
+The document is copy-edited to find and correct errors and to ensure that the document conforms to the [style guide](https://www.rfc-editor.org/rfc/rfc7322.html). See [Language and Style](/language-and-style) for specific details.
 
 ## Reference checking and editing
 The references in the document are checked and, where needed, edited for correctness. If there is a problem with references, then the document may enter `MISSREF` or `REF` states.  In addition, a document may be assigned the `*R` (Reference) flag to indicate that the document has one or more normative references that are `IN-QUEUE` or `NOT-RECEIVED`.

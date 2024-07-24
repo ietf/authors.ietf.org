@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-07-24T20:54:40.180Z
+date: 2024-07-24T21:37:47.958Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
@@ -30,8 +30,8 @@ The state of a document can include one or more flags and generation number (mor
 
 ## Clusters
 Sometimes groups of documents are managed together as a cluster. This can be for two reasons:
-1. Where the documents contain normative references to each other and therefore need to be either published in a specific order, or in some cases published simultaneously.
-2. Where the originating working group specifically submits a set of documents that should be published together even thought they are not explicitly coupled by normative references.
+1. Where the documents contain normative references to each other, either directly or indirectly through intermediate documents, and therefore need to be either published in a specific order, or in some cases published simultaneously.
+2. Where the originating stream specifically submits a set of documents that should be published together even thought they are not explicitly coupled by normative references.
 
 Clusters can include both documents that in the queue and those that are either already published or not yet in the queue (and therefore shown as `NOT-RECEIVED`)
 

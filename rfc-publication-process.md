@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-07-24T22:20:44.651Z
+date: 2024-07-24T22:45:36.773Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
@@ -19,7 +19,9 @@ The process for publishing an RFC begins when an Internet-Draft is approved by o
 * **Independent Stream**. The process for publication of Independent Submission RFCs is documented in Section 3 of RFC 4846.
 
 # Publication queue and document states
-Once a document is approved, it enters the publication queue and is assigned an initial state, which is updated as it progress through the queue. Whenever a document enters the publication queue, changes its state in the queue, or leaves the queue, an automatic email message summarizing the state change is sent to the authors.
+Once a document is approved, it enters the publication queue and is managed by the RFC Production Center (RPC). This means that any repository the authors may have is no longer the authoritative source for this document - change control has passed to the RPC who manage that in their own repository.
+
+Documents are assigned an initial state, which is updated as it progress through the queue. Whenever a document enters the publication queue, changes its state in the queue, or leaves the queue, an automatic email message summarizing the state change is sent to the authors.
 
 The following diagram shows the states, their codes, and the flow through the queue:
 ```diagram
@@ -104,9 +106,21 @@ Occasionally IANA processing can take longer than editing, for example, if IANA 
 Editing sometimes raises issues that lead to technical discussions involving the working group and an Area Director. If the delay is significant, the document is put into `IESG` state until the issue is resolved.
 
 # Authors' final approval (AUTH48)
-After editing, the document then enters the Authors' Final Approval stage, referred to as `AUTH48` as historically this was expected to take 48 hours to complete, though it now takes weeks if not months to complete. In `AUTH48` the changes made by the RPC are shared with the authors for their approval. This can involve multiple discussions about the edits, alternative edits proposed by the authors and much negotiation. 
+After editing, the document then enters the Authors' Final Approval stage, referred to as `AUTH48` as historically this was expected to take 48 hours to complete, though it now takes weeks if not months to complete. In `AUTH48` the changes made by the RPC are shared with the authors for their approval. 
 
-`AUTH48` is explained in full detail in [TODO]
+`AUTH48` begins with an email sent to the authors asking them to complete the following actions:
+1. Review and resolve any questions raised by the RPC editors. These are included in an attached RFCXML file as XML comments and they are also sent in a subsequent email.
+2. Review any changes submitted by coauthors. The RPC assume that if authors do not speak up that they agree to changes submitted by coauthors.
+3. Review the full content of the document, as this cannot change once the RFC is published. 
+4. Review the copyright notice and legends as defined in RFC 5378 and the Trust Legal Provisions (TLP – https://trustee.ietf.org/license-info/).
+5. Review the markup in the RFCXML file to ensure that elements of content are correctly tagged. 
+6. Review the PDF, HTML, and TXT files to ensure that the formatted output, as generated from the RFCXML file, is reasonable. 
+
+Instructions are provided on how an author can submit changes and how to give final approval for the document to be published. This process can involve multiple discussions about the edits, alternative edits proposed by the authors and much negotiation. 
+
+If the authors make any changes that seem beyond editorial in nature, e.g., addition of new text, deletion of text, and technical changes, then the RPC will seek approval for those changes from the originating stream.
+
+`AUTH48` finishes when **all** authors of the document give their final approval.
 
 ## Tooling issue
 Occasionally, publication of the document is on hold pending the resolution of an issue with the software tools used to create the pubished versions.  For example, if there is an error in the PDF generation. In these circumstances, the document is moved into `TI` state until the issue is resolved.

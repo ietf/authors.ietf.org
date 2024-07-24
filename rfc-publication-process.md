@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-07-24T20:27:05.170Z
+date: 2024-07-24T20:29:14.575Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
@@ -96,7 +96,9 @@ If the document contains IANA actions then they are sent by the RPC to IANA for 
 Editing sometimes raises issues that lead to technical discussions involving the working group and an Area Director. If the delay is significant, the document is put into `IESG` state until the issue is resolved.
 
 # Authors' final approval (AUTH48)
-After editing, the document then enters the Authors' Final Approval stage, referred to as AUTH48 as this was originally expected to take 48 hours to complete, though it now take week if not months to complete. In `AUTH48` the changes made by the RPC are shared with the authors for their approval. This can involve multiple discussions about the edits, alternative edits proposed by the authors and much negotiation. 
+After editing, the document then enters the Authors' Final Approval stage, referred to as `AUTH48` as historically this was expected to take 48 hours to complete, though it now takes weeks if not months to complete. In `AUTH48` the changes made by the RPC are shared with the authors for their approval. This can involve multiple discussions about the edits, alternative edits proposed by the authors and much negotiation. 
+
+`AUTH48` is explained in full detail in [TODO]
 
 ## Tooling issue
 Occasionally, publication of the document is on hold pending the resolution of an issue with the software tools used to create the pubished versions.  For example, if there is an error in the PDF generation. In these circumstances, the document is moved into `TI` state until the issue is resolved.

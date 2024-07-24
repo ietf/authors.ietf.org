@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-07-24T20:21:05.304Z
+date: 2024-07-24T20:22:25.534Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
@@ -19,7 +19,7 @@ The process for publishing an RFC begins when an Internet-Draft is approved by o
 * **Independent Stream**. The process for publication of Independent Submission RFCs is documented in Section 3 of RFC 4846.
 
 # Publication queue and document states
-Once a document is approved, it enters the publication queue and is assigned an initial states. The state of the document is updated as it progress through the queue. Whenever a document enters the publication queue, changes its state in the queue, or leaves the queue, an automatic email message summarizing the state change is sent to the authors.
+Once a document is approved, it enters the publication queue and is assigned an initial state, which is updated as it progress through the queue. Whenever a document enters the publication queue, changes its state in the queue, or leaves the queue, an automatic email message summarizing the state change is sent to the authors.
 
 The following diagram shows the states, their codes, and the flow through the queue:
 ```diagram

@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-07-24T01:05:48.994Z
+date: 2024-07-24T01:28:24.517Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
@@ -19,13 +19,18 @@ The process for publishing an RFC begins when an Internet-Draft is approved by o
 * **Independent Stream**. The process for publication of Independent Submission RFCs is documented in Section 3 of RFC 4846.
 
 # Editing
-Once a document is approved and submitted for publication, control is handed over to the professional editors of the RFC Publication Center (RPC). They start by putting the document through an extensive editing process with multiple stages:
+Once a document is approved and submitted for publication, control is handed over to the professional editors of the RFC Publication Center (RPC). They start by putting the document through an extensive editing process with multiple stages.
+
+## Clusters
+Sometimes groups of documents are managed together as a cluster. This can be for two reasons:
+1. Where the documents contain normative references to each other and therefore need to be either published in a specific order, or in some cases published simultaneously.
+2. Where the originating working group specifically submits a set of documents that should be published together even thought they are not explicitly coupled by normative references.
+Documents in a cluster can sometimes wait for a long time for the dependencies on the other documents to be resolved.
 
 ## RFCXML editing
 If the document is not already in  RFCXML then it is converted into RFCXML. The RFCXML is examined and may be restructured to ensure consistency and readability as follows:
-
-* We will look for UTF-8 characters and mark them appropriately.
-* We will update the DOCTYPE to the following:
+* Look for UTF-8 characters and mark them appropriately.
+* Update the DOCTYPE to the following:
 ```   <!DOCTYPE rfc [
     <!ENTITY nbsp    "&#160;">
     <!ENTITY zwsp   "&#8203;">
@@ -33,38 +38,40 @@ If the document is not already in  RFCXML then it is converted into RFCXML. The 
     <!ENTITY wj     "&#8288;">
    ]> 
 ```   
-* We will check the following elements for accuracy and update them if needed:
-   * [`<rfc>`](https://authors.ietf.org/rfcxml-vocabulary#rfc)
-   * <workgroup>
-   * <area>
-We will add the <seriesInfo> element to capture the RFC number.
-If your document has key words from BCP 14 (e.g., “MUST”, “RECOMMENDED”), we will tag those key words with the <bcp14> element, which provides text formatting.
-We will check the contents of anything tagged with <artwork> to assess whether it should be converted to a table, a list, or tagged with <sourcecode> instead.
-We clean up any blank spaces or lines around <artwork> or <sourcecode> and may make edits to get the the contents to fit within the width limit.
-We check lists for correct semantics and update if necessary (e.g., changing a bulleted list to a definition list).
-Note that <ul empty=”true”> is not a preferred mechanism for indentation. Another, more appropriate tag will be applied instead (e.g., <blockquote>, <aside>, or <t indent=”6″>).
-We will adjust <table> formatting if needed.
-Subscripts and superscripts are tagged with <sub> and <sup> respectively.
-We add <contact> elements around each person’s name.
-We remove markdown source and any empty paragraphs (<t/>).
-We update any long-format references to RFCs and Internet-Drafts to use the XInclude mechanism so that information from the citation library can be pulled into the document.
-Any citation tags are updated to use <displayreference>.
-For example, original:
-    <xref target="URI"/>
+* Check the following elements for accuracy and update them if needed:
+   * [\<rfc\>](/rfcxml-vocabulary#rfc)
+   * [\<workgroup\>](/rfcxml-vocabulary#workgroup)
+   * [\<area\>](/rfcxml-vocabulary#workgroup)
+* Add the [\<seriesInfo\>](/rfcxml-vocabulary#seriesinfo) element to capture the RFC number.
+* If the document has key words from BCP 14 (e.g., “MUST”, “RECOMMENDED”), tag those key words with the [\<bcp14\>](/rfcxml-vocabulary#bcp14) element, which provides text formatting.
+* Check the contents of anything tagged with [\<artwork\>](/rfcxml-vocabulary#artwork) to assess whether it should be converted to a table, a list, or tagged with [\<sourcecode\>](/rfcxml-vocabulary#sourcecode) instead.
+* Clean up any blank spaces or lines around [\<artwork\>](/rfcxml-vocabulary#artwork) or [\<sourcecode\>]((/rfcxml-vocabulary#sourcecode) and may make edits to get the the contents to fit within the width limit.
+* Check lists for correct semantics and update if necessary (e.g., changing a bulleted list to a definition list).
+* If **\<ul empty=”true”\>** is used for indentation, this will be replaced with a more appropriate tag such as [\<blockquote\>](/rfcxml-vocabulary#blockquote), [\<aside\>](/rfcxml-vocabulary#aside), or **\<t indent=”6″\>**.
+* Adjust [\<table\>](/rfcxml-vocabulary#table) formatting if needed.
+* Subscripts and superscripts are tagged with [\<sub\>](/rfcxml-vocabulary#sub) and [\<sup\>](/rfcxml-vocabulary#sup) respectively.
+* Add [\<contact\>](/rfcxml-vocabulary#contact) elements around each person’s name.
+* Remove any markdown source and any empty paragraphs.
+
+## Reference checking and editing
+The references in the document are checked and, where needed, edited for correctness.
+
+Any long-format references to RFCs and Internet-Drafts are updated to use the [\<xi:xinclude\>](/references-in-rfcxml#inserting-references-from-a-library) mechanism so that information from the citation library can be pulled into the document.
+
+Any citation tags are updated to use [\<displayreference\>](/rfcxml-vocabulary#displayreference). For example, original:
+```    <xref target="URI"/>
     <reference anchor="URI" target="https://www.rfc-editor.org/info/rfc3986"> 
       ... 
     </reference>
-Updated to use XInclude:
-    <xref target="RFC3986"/>
+```
+Updated to use xinclude:
+```    <xref target="RFC3986"/>
     <displayreference target="RFC3986" to="URI"/>
     <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.3986.xml"/>
+```
 
-
-2. The references in the document are checked and, where needed, edited for correctness.
-3. The document is copy-edited to find and correct errors and to ensure that the document conforms to the style guide.
-
-
-
+## Copy editing
+The document is copy-edited to find and correct errors and to ensure that the document conforms to the style guide.
 
 ## IANA processing
 If the document contains IANA actions then they are sent by the RPC to IANA for processing. This generally takes place in parallel with editing, but occasionally a document can be held up a long time in IANA state (for example, if they are waiting for a designated expert to respond).
@@ -73,8 +80,12 @@ If the document contains IANA actions then they are sent by the RPC to IANA for 
 After editing, the document then enters the Authors' Final Approval stage, referred to as AUTH48 as this was originally expected to take 48 hours to complete, though it now take week if not months to complete. In AUTH48 the changes made by the RPC are shared with the authors for their approval. This can involve multiple discussions about the edits, alternative edits proposed by the authors and much negotiation. This process is fully described in [TODO]
 
 # Publication queue and document states
-The RPC maintain a public publication queue showing the current state of each document. These states are explained in detail in 
+The RPC maintain a public publication queue showing the current state of each document.  Whenever a document enters the publication queue, changes its state in the queue, or leaves the queue, an automatic email message summarizing the state change is sent to the authors.
 
+These states are explained in detail in 
+
+# Publication
+When an RFC is published, an announcement is sent to ietf-announce and rfc-dist mailing lists. The URL for the info page of an RFC is of the form: https://www.rfc-editor.org/info/rfcXXXX. The RFC Editor maintains a list of [most recently published RFCs](https://www.rfc-editor.org/rfcrss.xml).
 
 
 
@@ -85,16 +96,15 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
 
 
 
-# RFC Editing Process
-Each document in the queue is assigned to a state that tracks its progress. The state diagram shows the overall publication process.
-
-Whenever a document enters the editorial queue, changes its state in the queue, or leaves the queue, an automatic email message summarizing the state change is sent to the authors. This message is for information only; it does not replace existing messages to authors, such as AUTH48 messages.
-
-Here are the details of how we update your source file, and here are some important notes on the process.
 
 - 
+
+
+
 - A document A that has a normative reference to a document B that is not yet in the queue will be held at MISSREF state (perhaps a very long time) until B enters the queue. Once A and B are both in the queue, they will both be edited. For various reasons, this editing may require different times. A will be held in REF state, if necessary, until B’s editing is complete, so that A and B will enter the final quality-control state RFC-EDITOR, together. Collections of 5 or more documents linked by such normative references are not unusual.
-- IETF working groups sometimes submit sets of documents that should be published together although they are not explicitly coupled by normative references. (Ideally, such document sets would be visible in the queue; we are working on that). A document that belongs to such an implicit set may be held (perhaps a long time) in RFC-EDITOR state, until the entire set has entered RFC-EDITOR state.
+
+
+- IETF working groups sometimes  (Ideally, such document sets would be visible in the queue; we are working on that). A document that belongs to such an implicit set may be held (perhaps a long time) in RFC-EDITOR state, until the entire set has entered RFC-EDITOR state.
 - Editing sometimes raises issues that lead to technical discussions involving the working group and an Area Director. If the delay is significant, the document is put into IESG state until the issue is resolved.
 - A document may occasionally “fall out” of the queue at any time, e.g., because a working group, an author, or an Area Director requests that it be withdrawn.
  
@@ -117,5 +127,3 @@ If an author is no longer available, there are several options (as listed in the
 
 See the AUTH48 FAQ for more information.
 
-# Publication
-When an RFC is published, an announcement is sent to ietf-announce and rfc-dist mailing lists. The URL for the info page of an RFC is of the form: https://www.rfc-editor.org/info/rfcXXXX. The RFC Editor maintains a list of [most recently published RFCs](https://www.rfc-editor.org/rfcrss.xml).

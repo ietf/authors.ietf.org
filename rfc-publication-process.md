@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-07-24T20:11:50.656Z
+date: 2024-07-24T20:16:07.130Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
@@ -32,10 +32,10 @@ Sometimes groups of documents are managed together as a cluster. This can be for
 2. Where the originating working group specifically submits a set of documents that should be published together even thought they are not explicitly coupled by normative references.
 Documents in a cluster can sometimes wait for a long time for the dependencies on the other documents to be resolved. Currently, clusers are not visible in the publication queue.
 
-## Editing (EDIT State)
+# Editing (EDIT State)
 Once a document is approved and submitted for publication, control is handed over to the professional editors of the RFC Publication Center (RPC). They start by putting the document through an extensive editing process with multiple stages.
 
-### RFCXML editing
+## RFCXML editing
 If the document is not already in  RFCXML then it is converted into RFCXML. The RFCXML is examined and may be restructured to ensure consistency and readability. The RFCXML editing carried out by the editors includes the following:
 * Look for UTF-8 characters and mark them appropriately.
 * Update the DOCTYPE to the following:
@@ -73,10 +73,10 @@ If the document is not already in  RFCXML then it is converted into RFCXML. The 
     <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.3986.xml"/>
 ```
 
-### Copy editing
+## Copy editing
 The document is copy-edited to find and correct errors and to ensure that the document conforms to the style guide.
 
-### Reference checking and editing
+## Reference checking and editing
 The references in the document are checked and, where needed, edited for correctness. If there is a problem with references, then the document may enter MISSREF or REF states.
 
 MISSREF is fully defined as: Awaiting a missing normative reference (i.e., the reference is NOT-RECEIVED) or there was a specific request from the stream manager or authors for simultaneous publication with another document. MISSREF is further sub-divided by generation numbers:
@@ -88,18 +88,19 @@ REF is fully defined as: Document has been edited but is holding for a normative
 
 A document 'A' that has a normative reference to a document 'B' that is not yet in the queue will be held at MISSREF state (perhaps a very long time) until 'B' enters the queue. Once 'A' and 'B' are both in the queue, they will both be edited. For various reasons, this editing may require different times. 'A' will be held in REF state, if necessary, until the editing of 'B’ is complete, so that 'A' and 'B' will enter the final quality-control state RFC-EDITOR, together. Collections of 5 or more documents linked by such normative references are not unusual.
 
-### IANA processing
+## IANA processing
 If the document contains IANA actions then they are sent by the RPC to IANA for processing. This generally takes place in parallel with editing, but occasionally IANA processing can take longer than editing, for example, if IANA are waiting for a designated expert to respond, in which case the document will be moved to IANA state until the IANA processing is complete.
 
-### IESG processing
+## IESG processing
 Editing sometimes raises issues that lead to technical discussions involving the working group and an Area Director. If the delay is significant, the document is put into IESG state until the issue is resolved.
 
-## Authors' final approval (AUTH48)
+# Authors' final approval (AUTH48)
 After editing, the document then enters the Authors' Final Approval stage, referred to as AUTH48 as this was originally expected to take 48 hours to complete, though it now take week if not months to complete. In AUTH48 the changes made by the RPC are shared with the authors for their approval. This can involve multiple discussions about the edits, alternative edits proposed by the authors and much negotiation. 
 
+## Tooling issue
+Occasionally, publication of the document is on hold pending the resolution of an issue with the software tools used to create the pubished versions.  For example, if there is an error in the PDF generation. In these circumstances, the document is moved into TI state until the issue is resolved.
 
-
-## Publication
+# Publication
 When an RFC is published it is moved to PUBLISHED state and an announcement is sent to ietf-announce and rfc-dist mailing lists. The URL for the info page of an RFC is of the form: https://www.rfc-editor.org/info/rfcXXXX. The RFC Editor maintains a list of [most recently published RFCs](https://www.rfc-editor.org/rfcrss.xml).
 
 

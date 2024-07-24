@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-07-24T20:26:26.037Z
+date: 2024-07-24T20:27:05.170Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
@@ -95,7 +95,7 @@ If the document contains IANA actions then they are sent by the RPC to IANA for 
 ## IESG processing
 Editing sometimes raises issues that lead to technical discussions involving the working group and an Area Director. If the delay is significant, the document is put into `IESG` state until the issue is resolved.
 
-# Authors' final approval (`AUTH48`)
+# Authors' final approval (AUTH48)
 After editing, the document then enters the Authors' Final Approval stage, referred to as AUTH48 as this was originally expected to take 48 hours to complete, though it now take week if not months to complete. In `AUTH48` the changes made by the RPC are shared with the authors for their approval. This can involve multiple discussions about the edits, alternative edits proposed by the authors and much negotiation. 
 
 ## Tooling issue

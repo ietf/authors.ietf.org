@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-07-24T20:16:07.130Z
+date: 2024-07-24T20:21:05.304Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
@@ -32,8 +32,8 @@ Sometimes groups of documents are managed together as a cluster. This can be for
 2. Where the originating working group specifically submits a set of documents that should be published together even thought they are not explicitly coupled by normative references.
 Documents in a cluster can sometimes wait for a long time for the dependencies on the other documents to be resolved. Currently, clusers are not visible in the publication queue.
 
-# Editing (EDIT State)
-Once a document is approved and submitted for publication, control is handed over to the professional editors of the RFC Publication Center (RPC). They start by putting the document through an extensive editing process with multiple stages.
+# Editing
+Once a document is approved and submitted for publication, control is handed over to the professional editors of the RFC Publication Center (RPC) and the document moved into `EDIT`state. They start by putting the document through an extensive editing process with multiple stages.
 
 ## RFCXML editing
 If the document is not already in  RFCXML then it is converted into RFCXML. The RFCXML is examined and may be restructured to ensure consistency and readability. The RFCXML editing carried out by the editors includes the following:
@@ -77,64 +77,31 @@ If the document is not already in  RFCXML then it is converted into RFCXML. The 
 The document is copy-edited to find and correct errors and to ensure that the document conforms to the style guide.
 
 ## Reference checking and editing
-The references in the document are checked and, where needed, edited for correctness. If there is a problem with references, then the document may enter MISSREF or REF states.
+The references in the document are checked and, where needed, edited for correctness. If there is a problem with references, then the document may enter `MISSREF` or `REF` states.
 
-MISSREF is fully defined as: Awaiting a missing normative reference (i.e., the reference is NOT-RECEIVED) or there was a specific request from the stream manager or authors for simultaneous publication with another document. MISSREF is further sub-divided by generation numbers:
-- 1G = has a reference to a NOT-RECEIVED document
-- 2G = has a reference to a document that references a NOT-RECEIVED document
-- 3G = has a reference to a document that references a doc that references a NOT-RECEIVED document
+`MISSREF` is fully defined as: Awaiting a missing normative reference (i.e., the reference is `NOT-RECEIVED`) or there was a specific request from the stream manager or authors for simultaneous publication with another document. `MISSREF` is further sub-divided by generation numbers:
+- 1G = has a reference to a `NOT-RECEIVED` document
+- 2G = has a reference to a document that references a `NOT-RECEIVED` document
+- 3G = has a reference to a document that references a doc that references a `NOT-RECEIVED` document
 
-REF is fully defined as: Document has been edited but is holding for a normative reference that is in the queue. (Note: In addition, “REF” is used to mark a list of normative references shown on cluster pages. Each reference is listed as IN-QUEUE or NOT-RECEIVED.)
+`REF` is fully defined as: Document has been edited but is holding for a normative reference that is in the queue. (Note: In addition, “REF” is used to mark a list of normative references shown on cluster pages. Each reference is listed as `IN-QUEUE` or `NOT-RECEIVED`.)
 
-A document 'A' that has a normative reference to a document 'B' that is not yet in the queue will be held at MISSREF state (perhaps a very long time) until 'B' enters the queue. Once 'A' and 'B' are both in the queue, they will both be edited. For various reasons, this editing may require different times. 'A' will be held in REF state, if necessary, until the editing of 'B’ is complete, so that 'A' and 'B' will enter the final quality-control state RFC-EDITOR, together. Collections of 5 or more documents linked by such normative references are not unusual.
+A document 'A' that has a normative reference to a document 'B' that is not yet in the queue will be held at `MISSREF` state (perhaps a very long time) until 'B' enters the queue. Once 'A' and 'B' are both in the queue, they will both be edited. For various reasons, this editing may require different times. 'A' will be held in `REF` state, if necessary, until the editing of 'B’ is complete, so that 'A' and 'B' will enter the final quality-control state `RFC-EDITOR`, together. Collections of 5 or more documents linked by such normative references are not unusual.
 
 ## IANA processing
-If the document contains IANA actions then they are sent by the RPC to IANA for processing. This generally takes place in parallel with editing, but occasionally IANA processing can take longer than editing, for example, if IANA are waiting for a designated expert to respond, in which case the document will be moved to IANA state until the IANA processing is complete.
+If the document contains IANA actions then they are sent by the RPC to IANA for processing. This generally takes place in parallel with editing, but occasionally IANA processing can take longer than editing, for example, if IANA are waiting for a designated expert to respond, in which case the document will be moved to `IANA` state until the IANA processing is complete.
 
 ## IESG processing
-Editing sometimes raises issues that lead to technical discussions involving the working group and an Area Director. If the delay is significant, the document is put into IESG state until the issue is resolved.
+Editing sometimes raises issues that lead to technical discussions involving the working group and an Area Director. If the delay is significant, the document is put into `IESG` state until the issue is resolved.
 
-# Authors' final approval (AUTH48)
-After editing, the document then enters the Authors' Final Approval stage, referred to as AUTH48 as this was originally expected to take 48 hours to complete, though it now take week if not months to complete. In AUTH48 the changes made by the RPC are shared with the authors for their approval. This can involve multiple discussions about the edits, alternative edits proposed by the authors and much negotiation. 
+# Authors' final approval (`AUTH48`)
+After editing, the document then enters the Authors' Final Approval stage, referred to as AUTH48 as this was originally expected to take 48 hours to complete, though it now take week if not months to complete. In `AUTH48` the changes made by the RPC are shared with the authors for their approval. This can involve multiple discussions about the edits, alternative edits proposed by the authors and much negotiation. 
 
 ## Tooling issue
-Occasionally, publication of the document is on hold pending the resolution of an issue with the software tools used to create the pubished versions.  For example, if there is an error in the PDF generation. In these circumstances, the document is moved into TI state until the issue is resolved.
+Occasionally, publication of the document is on hold pending the resolution of an issue with the software tools used to create the pubished versions.  For example, if there is an error in the PDF generation. In these circumstances, the document is moved into `TI` state until the issue is resolved.
+
+# Withdrawn documents
+A document may occasionally “fall out” of the queue at any time, e.g., because a working group, an author, or an Area Director requests that it be withdrawn, in which case the state is set to `WITHDRAWN`.
 
 # Publication
-When an RFC is published it is moved to PUBLISHED state and an announcement is sent to ietf-announce and rfc-dist mailing lists. The URL for the info page of an RFC is of the form: https://www.rfc-editor.org/info/rfcXXXX. The RFC Editor maintains a list of [most recently published RFCs](https://www.rfc-editor.org/rfcrss.xml).
-
-
-## AUTH48
-This is explained in detail on a [dedicated page].
-
-- 
-
-
-
-- 
-
-- IETF working groups sometimes  
-
-
-
-- A document may occasionally “fall out” of the queue at any time, e.g., because a working group, an author, or an Area Director requests that it be withdrawn.
- 
-
-# Authors’ Final Review (AUTH48 State)
-Once an RFC has been edited and is ready for publication, the author(s) are given “48 hours” (in practice, this often stretches over weeks) to look over their document for errors, editorial and otherwise. We DO NOT make changes to RFCs once they have been published, so please look over your document carefully. Upon approval by all authors, the RFC will be published.
-
-The AUTH48 notification message sent to authors asks that they review the entire document, paying particular attention to:
-
-IANA considerations updates (if applicable),
-contact information, and
-references.
-All AUTH48 messages will be CCed to auth48archive@rfc-editor.org, the archival mailing list that preserves the AUTH48 conversation. The auth48archive list is not an active discussion list.
-
-Note: If absolutely necessary, authors may temporarily opt out of the archiving of messages (e.g., to discuss a sensitive matter). If opting out, authors should add a note to the top of the message that indicates the auth48archive@rfc-editor.org has been dropped. When the discussion is concluded, the archive will be re-added to the CC list and its addition will be noted at the top of the message.
-
-See the general AUTH48 process described here.
-
-If an author is no longer available, there are several options (as listed in the FAQ). Indefinite delays are not allowed, but when there is a choice, the RFC Editor would in general prefer to publish it right than to publish it early.
-
-See the AUTH48 FAQ for more information.
-
+When an RFC is published it is moved to `PUBLISHED` state and an announcement is sent to ietf-announce and rfc-dist mailing lists. The URL for the info page of an RFC is of the form: https://www.rfc-editor.org/info/rfcXXXX. The RFC Editor maintains a list of [most recently published RFCs](https://www.rfc-editor.org/rfcrss.xml).

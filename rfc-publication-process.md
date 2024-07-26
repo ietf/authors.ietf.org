@@ -13,10 +13,11 @@ dateCreated: 2024-07-23T22:38:08.063Z
 
 # Stream approval
 The process for publishing an RFC begins when an Internet-Draft is approved by one of the publication streams:
-* **IETF Stream**. I-Ds from the IETF stream are submitted by the IESG following their processes documented in RFC 2026 and multiple subsequent RFCs.
-* **IAB Stream**, The process for publication of IAB RFCs is documented in RFC 4845.
-* **IRTF Stream**. The process for publication of IRTF RFCs is documented in Section 3 of RFC 5743.
-* **Independent Stream**. The process for publication of Independent Submission RFCs is documented in Section 3 of RFC 4846.
+* **IETF Stream**. I-Ds from the IETF stream are submitted by the IESG following their processes documented in [RFC 2026](https://www.rfc-editor.org/rfc/rfc2026) and multiple subsequent RFCs.
+* **IAB Stream**. The process for publication of IAB RFCs is documented in [RFC 4845](https://www.rfc-editor.org/rfc/rfc4845).
+* **IRTF Stream**. The process for publication of IRTF RFCs is documented in [Section 3](https://www.rfc-editor.org/rfc/rfc5743#section-3) of [RFC 5743](https://www.rfc-editor.org/rfc/rfc5743).
+* **Independent Stream**. The process for publication of Independent Submission RFCs is documented in [Section 3](https://www.rfc-editor.org/rfc/rfc4846#section-3) of [RFC 4846](https://www.rfc-editor.org/rfc/rfc4846).
+* **Editorial Stream**. The process for publication of Editorial Stream RFCs is documented in [Section 3.2](https://www.rfc-editor.org/rfc/rfc9280#name-process) of [RFC 9280](https://www.rfc-editor.org/rfc/rfc9280). 
 
 # Publication queue and states
 Once a document is approved, it enters the [publication queue](https://www.rfc-editor.org/current_queue.php) and is managed by the RFC Production Center (RPC). This means that any repository the authors may have is no longer the authoritative source for this document - change control has passed to the RPC who manage it in their own repository.

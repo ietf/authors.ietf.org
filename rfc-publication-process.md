@@ -20,7 +20,7 @@ The process for publishing an RFC begins when an Internet-Draft is approved by o
 * **Editorial Stream**. The process for publication of Editorial Stream RFCs is documented in [Section 3.2](https://www.rfc-editor.org/rfc/rfc9280#name-process) of [RFC 9280](https://www.rfc-editor.org/rfc/rfc9280). 
 
 # Publication queue and states
-Once a document is approved, it enters the [publication queue](https://www.rfc-editor.org/current_queue.php) and is managed by the RFC Production Center (RPC). This means that change control has passed to the RPC. If you have any nontechnical updates to make (for instance, you would like to update your contact information) you may reach the the RPC at rfc-editor@rfc-editor.org. Otherwise, once a document has entered the publication queue, technical updates are not expected and any such updates require stream approval.
+Once a document is approved, it enters the [publication queue](https://www.rfc-editor.org/current_queue.php) and is managed by the RFC Production Center (RPC). From this point on, the RPC has change control of the document. This means that the RPC now manages the document in their own repository, and that all changes the authors wish to make must go through the RPC. Any non-technical changes, such as updating the contact information, will normally be accepted directly, but any technical updates will require stream approval.
 
 When a document enters the publication queue, it is assigned an initial state, and this state is updated as the document progresses through the queue. Any time the document's state changes, an automatic email message summarizing the state change is sent to the authors.
 

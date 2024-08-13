@@ -20,9 +20,9 @@ The process for publishing an RFC begins when an Internet-Draft is approved by o
 * **Editorial Stream**. The process for publication of Editorial Stream RFCs is documented in [Section 3.2](https://www.rfc-editor.org/rfc/rfc9280#name-process) of [RFC 9280](https://www.rfc-editor.org/rfc/rfc9280). 
 
 # Publication queue and states
-Once a document is approved, it enters the [publication queue](https://www.rfc-editor.org/current_queue.php) and is managed by the RFC Production Center (RPC). This means that any repository the authors may have is no longer the authoritative source for this document - change control has passed to the RPC who manage it in their own repository.
+Once a document is approved, it enters the [publication queue](https://www.rfc-editor.org/current_queue.php) and is managed by the RFC Production Center (RPC). From this point on, the RPC has change control of the document. This means that the RPC now manages the document in their own repository, and that all changes the authors wish to make must go through the RPC. Any non-technical changes, such as updating the contact information, will normally be accepted directly, but any technical updates will require stream approval.
 
-Documents are assigned an initial state, which is updated as it progress through the queue. Whenever a document enters the publication queue, changes its state in the queue, or leaves the queue, an automatic email message summarizing the state change is sent to the authors.
+When a document enters the publication queue, it is assigned an initial state, and this state is updated as the document progresses through the queue. Any time the document's state changes, an automatic email message summarizing the state change is sent to the authors.
 
 The following diagram shows the states, their codes, and the flow through the queue:
 ```diagram
@@ -33,20 +33,20 @@ The state of a document can include one or more flags and a generation number (m
 
 ## Clusters
 Sometimes groups of documents are managed together as a cluster. This can be for two reasons:
-1. Where the documents contain normative references to each other, either directly or indirectly through intermediate documents, and therefore need to be either published in a specific order, or in some cases published simultaneously.
+1. Where the documents contain normative references to each other, either directly or indirectly through intermediate documents, and therefore need to be either published in a specific order or in some cases published simultaneously.
 2. Where the originating stream specifically submits a set of documents that should be published together even though they are not explicitly coupled by normative references.
 
-Clusters can include both documents that in the queue and those that are either already published or not yet in the queue (and therefore shown as `NOT-RECEIVED`)
+Clusters can include both documents that are in the queue and those that are either already published or not yet in the queue (shown as `NOT-RECEIVED`).
 
 Documents in a cluster can sometimes wait for a long time for the dependencies on the other documents to be resolved. 
 
-Clusters are assigned IDs and linked to each document in the cluster.  The [Active Clusters](https://www.rfc-editor.org/all_clusters.php) page shows then current clusters and the state of each document in the cluster.
+Clusters are assigned IDs and linked to each document in the cluster.  The [Active Clusters](https://www.rfc-editor.org/all_clusters.php) page shows the current clusters and the state of each document in the cluster.
 
 # Editing
 Once a document is approved and submitted for publication, control is handed over to the professional editors of the RFC Publication Center (RPC) and the document moved into `EDIT`state. They start by putting the document through an extensive editing process with multiple stages.
 
 ## RFCXML editing
-If the document is not already in  RFCXML then it is converted into RFCXML. The RFCXML is examined and may be restructured to ensure consistency and readability. The RFCXML editing carried out by the editors includes the following:
+If the document is not already in [RFCXML](https://authors.ietf.org/en/rfcxml-overview), it is converted into RFCXML. The RFCXML is examined and may be restructured to ensure consistency and readability. The editors perform the following updates:
 * Look for UTF-8 characters and mark them appropriately.
 * Update the DOCTYPE to the following:
 ```   <!DOCTYPE rfc [
@@ -84,7 +84,7 @@ If the document is not already in  RFCXML then it is converted into RFCXML. The 
 ```
 
 ## Copy editing
-The document is copy-edited to find and correct errors and to ensure that the document conforms to the [style guide](https://www.rfc-editor.org/rfc/rfc7322.html). See [Language and Style](/language-and-style) for specific details.
+The document is copy edited to find and correct errors and to ensure that the document conforms to the [style guide](https://www.rfc-editor.org/rfc/rfc7322.html). See [Language and Style](/language-and-style) for specific details.
 
 ## Reference checking and editing
 The references in the document are checked and, where needed, edited for correctness. If there is a problem with references, then the document may enter `MISSREF` or `REF` states.  In addition, a document may be assigned the `*R` (Reference) flag to indicate that the document has one or more normative references that are `IN-QUEUE` or `NOT-RECEIVED`.

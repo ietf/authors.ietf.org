@@ -33,12 +33,16 @@ The state of a document can include one or more flags and a generation number (m
 
 ## Clusters
 Sometimes groups of documents are managed together as a cluster. This can be for two reasons:
-1. Where the documents contain normative references to each other, either directly or indirectly through intermediate documents, and therefore need to be either published in a specific order or in some cases published simultaneously.
+1. Where the documents contain normative references to each other, either directly or indirectly through intermediate documents, and therefore need to be published in a certain order and/or simultaneously.
 2. Where the originating stream specifically submits a set of documents that should be published together even though they are not explicitly coupled by normative references.
 
 Clusters can include both documents that are in the queue and those that are either already published or not yet in the queue (shown as `NOT-RECEIVED`).
 
-Documents in a cluster can sometimes wait for a long time for the dependencies on the other documents to be resolved. 
+A document waiting for a normative reference or specified dependency to enter the queue is placed in `MISSREF` state. The `MISSREF` state is further sub-divided by generation numbers:
+- `1G` has a reference to a `NOT-RECEIVED` document
+- `2G` has a reference to a document that references a `NOT-RECEIVED` document
+- `3G` has a reference to a document that references a doc that references a `NOT-RECEIVED` document
+Documents in a cluster can sometimes wait for a long time for the dependencies on the other documents to be resolved. Once the dependencies are resolved, the document moves out of the `MISSREF` state and into the `EDIT` state.
 
 Clusters are assigned IDs and linked to each document in the cluster.  The [Active Clusters](https://www.rfc-editor.org/all_clusters.php) page shows the current clusters and the state of each document in the cluster.
 
@@ -87,16 +91,9 @@ If the document is not already in [RFCXML](https://authors.ietf.org/en/rfcxml-ov
 The document is copy edited to find and correct errors and to ensure that the document conforms to the [style guide](https://www.rfc-editor.org/rfc/rfc7322.html). See [Language and Style](/language-and-style) for specific details.
 
 ## Reference checking and editing
-The references in the document are checked and, where needed, edited for correctness. If there is a problem with references, then the document may enter `MISSREF` or `REF` states.  In addition, a document may be assigned the `*R` (Reference) flag to indicate that the document has one or more normative references that are `IN-QUEUE` or `NOT-RECEIVED`.
+The references in the document are checked for accuracy and stability and, where needed, edited for correctness. 
 
-`MISSREF` is fully defined as: Awaiting a missing normative reference (i.e., the reference is `NOT-RECEIVED`) or there was a specific request from the stream manager or authors for simultaneous publication with another document. `MISSREF` is further sub-divided by generation numbers:
-- `1G` has a reference to a `NOT-RECEIVED` document
-- `2G` has a reference to a document that references a `NOT-RECEIVED` document
-- `3G` has a reference to a document that references a doc that references a `NOT-RECEIVED` document
-
-`REF` is fully defined as: Document has been edited but is holding for a normative reference that is in the queue. (Note: In addition, “REF” is used to mark a list of normative references shown on cluster pages. Each reference is listed as `IN-QUEUE` or `NOT-RECEIVED`.)
-
-A document 'A' that has a normative reference to a document 'B' that is not yet in the queue will be held at `MISSREF` state (perhaps a very long time) until 'B' enters the queue. Once 'A' and 'B' are both in the queue, they will both be edited. For various reasons, this editing may require different times. 'A' will be held in `REF` state, if necessary, until the editing of 'B’ is complete, so that 'A' and 'B' will enter the final quality-control state `RFC-EDITOR`, together. Collections of 5 or more documents linked by such normative references are not unusual.
+A document that belongs to a cluster is placed in `REF` state once its `EDIT` state has finished until the editing of the other documents in the cluster is complete so that all cluster documents will enter the final quality-control state `RFC-EDITOR` together. 
 
 ## IANA processing
 If the document contains IANA actions then they are sent by the RPC to IANA for processing. This generally takes place in parallel with editing and so the document remains in `EDIT` state and has the `*A` (IANA) flag assigned to indicate that IANA processing is underway.

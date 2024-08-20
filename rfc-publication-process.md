@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-08-20T14:58:55.547Z
+date: 2024-08-20T15:00:11.771Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
@@ -48,7 +48,6 @@ A document waiting for a normative reference, such as in a cluster, or stream-sp
 - `3G` has a reference to a document that references a doc that references a `NOT-RECEIVED` document
 
 Documents in a cluster can sometimes wait for a long time for the dependencies on the other documents to be resolved. Once the dependencies are resolved, the document moves out of the `MISSREF` state and into the `EDIT` state.
-
 
 # Professional editing (EDIT)
 Once a document is approved and submitted for publication, control is handed over to the professional editors of the RFC Publication Center (RPC) and the document moved into `EDIT`state. They start by putting the document through an extensive editing process with multiple stages.
@@ -105,6 +104,8 @@ If the document contains IANA actions then they are sent by the RPC to IANA for 
 Occasionally IANA processing can take longer than editing, for example, if IANA are waiting for a designated expert to respond, in which case the document will be moved to `IANA` state until the IANA processing is complete.
 
 # Final internal review (RFC-EDITOR)
+
+
 
 # Authors' final approval (AUTH48)
 After editing, the document then enters the Authors' Final Approval stage, referred to as `AUTH48` as historically this was expected to take 48 hours to complete, though it now takes weeks if not months to complete. In `AUTH48` the changes made by the RPC are shared with the authors for their approval. 

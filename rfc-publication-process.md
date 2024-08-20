@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-08-20T14:39:47.313Z
+date: 2024-08-20T14:52:49.552Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
@@ -39,15 +39,18 @@ Sometimes groups of documents are managed together as a cluster. This can be for
 
 Clusters can include both documents that are in the queue and those that are either already published or not yet in the queue (shown as `NOT-RECEIVED`).
 
-A document waiting for a normative reference or specified dependency to enter the queue is placed in `MISSREF` state. The `MISSREF` state is further sub-divided by generation numbers:
+Clusters are assigned IDs and linked to each document in the cluster.  The [Active Clusters](https://www.rfc-editor.org/all_clusters.php) page shows the current clusters and the state of each document in the cluster.
+
+## Initial reference check
+A document waiting for a normative reference, such as in a cluster, or stream-specified dependency to enter the queue is placed in `MISSREF` state. The `MISSREF` state is further sub-divided by generation numbers:
 - `1G` has a reference to a `NOT-RECEIVED` document
 - `2G` has a reference to a document that references a `NOT-RECEIVED` document
 - `3G` has a reference to a document that references a doc that references a `NOT-RECEIVED` document
+
 Documents in a cluster can sometimes wait for a long time for the dependencies on the other documents to be resolved. Once the dependencies are resolved, the document moves out of the `MISSREF` state and into the `EDIT` state.
 
-Clusters are assigned IDs and linked to each document in the cluster.  The [Active Clusters](https://www.rfc-editor.org/all_clusters.php) page shows the current clusters and the state of each document in the cluster.
 
-# Editing
+# Professional editing (EDIT)
 Once a document is approved and submitted for publication, control is handed over to the professional editors of the RFC Publication Center (RPC) and the document moved into `EDIT`state. They start by putting the document through an extensive editing process with multiple stages.
 
 ## RFCXML editing
@@ -101,8 +104,7 @@ If the document contains IANA actions then they are sent by the RPC to IANA for 
 
 Occasionally IANA processing can take longer than editing, for example, if IANA are waiting for a designated expert to respond, in which case the document will be moved to `IANA` state until the IANA processing is complete.
 
-## IESG processing
-Editing sometimes raises issues that lead to technical discussions involving the working group and an Area Director. If the delay is significant, the document is put into `IESG` state until the issue is resolved.
+# Final internal review (RFC-EDITOR)
 
 # Authors' final approval (AUTH48)
 After editing, the document then enters the Authors' Final Approval stage, referred to as `AUTH48` as historically this was expected to take 48 hours to complete, though it now takes weeks if not months to complete. In `AUTH48` the changes made by the RPC are shared with the authors for their approval. 
@@ -121,10 +123,17 @@ If the authors make any changes that seem beyond editorial in nature, e.g., addi
 
 `AUTH48` finishes when **all** authors of the document give their final approval.
 
-## Tooling issue
-Occasionally, publication of the document is on hold pending the resolution of an issue with the software tools used to create the pubished versions.  For example, if there is an error in the PDF generation. In these circumstances, the document is moved into `TI` state until the issue is resolved.
+# Exceptional states
+There are a number of states that occur in exceptional circumstances. 
 
-# Withdrawn documents
+## Tooling issue (TI)
+Occasionally, at the end of `AUTH48` publication of the document is on hold pending the resolution of an issue with the software tools used to create the pubished versions.  For example, if there is an error in the PDF generation. In these circumstances, the document is moved into `TI` state until the issue is resolved.
+
+## IESG action (IESG)
+Editing sometimes raises issues that lead to technical discussions involving the working group and an Area Director. If the delay is significant, the document is put into `IESG` state until the issue is resolved.
+
+
+## Withdrawn documents (WITHDRAWN)
 A document may occasionally “fall out” of the queue at any time, e.g., because a working group, an author, or an Area Director requests that it be withdrawn, in which case the state is set to `WITHDRAWN`.
 
 # Publication

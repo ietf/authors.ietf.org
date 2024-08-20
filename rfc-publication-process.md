@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-08-20T14:52:49.552Z
+date: 2024-08-20T14:58:55.547Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
@@ -122,6 +122,15 @@ Instructions are provided on how an author can submit changes and how to give fi
 If the authors make any changes that seem beyond editorial in nature, e.g., addition of new text, deletion of text, and technical changes, then the RPC will seek approval for those changes from the originating stream.
 
 `AUTH48` finishes when **all** authors of the document give their final approval.
+
+## Unavailable authors
+There may be an occasiona when one of the authors is no longer available, in which case the remaining authors can opt for one of the following paths:
+
+1. The unavailable author can be removed as an author and moved to the Acknowledgements section.
+2. The unavailable author can be removed as an author and moved to the Contributors section.
+3. A stream manager can approve the document in place of the unavailable author. (See the [IESG Statement on AUTH48 State](https://www.ietf.org/iesg/statement/auth48.html).)
+
+Option 3 is typically used in instances where the unavailable author made significant contributions to the document, so the other authors are not comfortable removing the individual from the author list.
 
 # Exceptional states
 There are a number of states that occur in exceptional circumstances. 

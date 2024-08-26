@@ -99,9 +99,9 @@ The references in the document are checked for accuracy and stability and, where
 A document that belongs to a cluster is placed in `REF` state once its `EDIT` state has finished until the editing of the other documents in the cluster is complete so that all cluster documents will enter the final quality-control state `RFC-EDITOR` together. 
 
 ## IANA processing
-If the document contains IANA actions then they are sent by the RPC to IANA for processing. This generally takes place in parallel with editing and so the document remains in `EDIT` state and has the `*A` (IANA) flag assigned to indicate that IANA processing is underway.
+If the document contains IANA actions, such as creating or updating an IANA registry, then IANA will start their processing when the document is approved for publication. IANA processing usually takes place in parallel with editing, and until the processing is completed, the document's queue state will have the `*A` (IANA) flag appended to it (e.g., `EDIT*A`).
 
-Occasionally IANA processing can take longer than editing, for example, if IANA are waiting for a designated expert to respond, in which case the document will be moved to `IANA` state until the IANA processing is complete.
+Occasionally IANA processing can take longer than editing, for example, if IANA is waiting for a designated expert to respond. In which case, the document will be moved to `IANA` state, where it will stay until the IANA processing is complete. Once IANA has completed their actions, the document will enter `RFC-EDITOR` state. 
 
 # Final internal review (RFC-EDITOR)
 

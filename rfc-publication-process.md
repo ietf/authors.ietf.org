@@ -114,7 +114,7 @@ If there are code components such as YANG modules, XML, ABNF, or MIBs, the senio
 Once the final review is complete, the senior editor lauches the Author's Final Approval stage (AUTH48).
 
 # Authors' final approval (AUTH48)
-After editing, the document then enters the Authors' Final Approval stage, referred to as `AUTH48` as historically this was expected to take 48 hours to complete, though it now takes weeks if not months to complete. In `AUTH48` the changes made by the RPC are shared with the authors for their approval. 
+After editing, the document then enters the Authors' Final Approval stage, referred to as `AUTH48` as historically this was expected to take 48 hours to complete, though it can take a week or more depending on the authors' schedules. In `AUTH48` the changes made by the RPC are shared with the authors for their approval. 
 
 `AUTH48` begins with an email sent to the authors asking them to complete the following actions:
 1. Review and resolve any questions raised by the RPC editors. These are included in an attached RFCXML file as XML comments and they are also sent in a subsequent email.
@@ -129,6 +129,8 @@ Instructions are provided on how an author can submit changes and how to give fi
 If the authors make any changes that seem beyond editorial in nature, e.g., addition of new text, deletion of text, and technical changes, then the RPC will seek approval for those changes from the originating stream.
 
 `AUTH48` finishes when **all** authors of the document give their final approval.
+
+If it was determined that an IANA registry needed updates, the RPC editor will request IANA make those updates after all author approvals are received. 
 
 ## Unavailable authors
 There may be an occasiona when one of the authors is no longer available, in which case the remaining authors can opt for one of the following paths:

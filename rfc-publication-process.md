@@ -2,14 +2,11 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-08-27T15:06:56.057Z
+date: 2024-08-27T15:19:21.925Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
 ---
-
-> THIS PAGE IS STILL UNDER CONSTRUCTION
-{.is-warning}
 
 # Stream approval
 The process for publishing an RFC begins when an Internet-Draft is approved by one of the publication streams:

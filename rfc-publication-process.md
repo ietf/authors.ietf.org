@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-08-27T15:06:38.235Z
+date: 2024-08-27T15:06:56.057Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
@@ -156,4 +156,4 @@ Editing sometimes raises issues that lead to technical discussions involving the
 A document may occasionally “fall out” of the queue at any time, e.g., because a working group, an author, or an Area Director requests that it be withdrawn, in which case the state is set to `WITHDRAWN`.
 
 # Publication
-When an RFC is published it is moved to `PUBLISHED` state and an announcement is sent to ietf-announce and rfc-dist mailing lists. The URL for the info page of an RFC is of the form: https://www.rfc-editor.org/info/rfcXXXX. The RFC Editor maintains a list of [most recently published RFCs](https://www.rfc-editor.org/rfcrss.xml).
+When an RFC is published it is moved to `PUBLISHED` state and an announcement is sent to ietf-announce and rfc-dist mailing lists. The URL for the info page of an RFC is of the form: https://www.rfc-editor.org/info/rfcXXXX. The RFC Editor maintains a list of [most recently published RFCs (RSS Feed)](https://www.rfc-editor.org/rfcrss.xml).

@@ -105,7 +105,13 @@ Occasionally IANA processing can take longer than editing, for example, if IANA 
 
 # Final internal review (RFC-EDITOR)
 
+During the final internal review, a senior editor reviews the formatting, copy edits, and the team's proposed questions to authors.
 
+If there is an IANA Considerations section, the senior editor reviews the messages regarding IANA actions, compares the information within the document to the information within the registry, and updates the section. If there are any issues with the IANA registry itself, these are noted for discussion with IANA during the Authors' Final Approval stage. 
+
+If there are code components such as YANG modules, XML, ABNF, or MIBs, the senior editor validates them with automated tools and notes any issues to discuss with authors during final approval.
+
+Once the final review is complete, the senior editor lauches the Author's Final Approval stage (AUTH48).
 
 # Authors' final approval (AUTH48)
 After editing, the document then enters the Authors' Final Approval stage, referred to as `AUTH48` as historically this was expected to take 48 hours to complete, though it now takes weeks if not months to complete. In `AUTH48` the changes made by the RPC are shared with the authors for their approval. 

@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-08-27T15:19:21.925Z
+date: 2024-08-28T12:23:57.387Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z
@@ -131,7 +131,7 @@ If the authors make any changes that seem beyond editorial in nature, e.g., addi
 If it was determined that an IANA registry needed updates, the RPC editor will request IANA make those updates after all author approvals are received. 
 
 ## Unavailable authors
-There may be an occasiona when one of the authors is no longer available, in which case the remaining authors can opt for one of the following paths:
+There may be an occasion when one of the authors is no longer available, in which case the remaining authors can opt for one of the following paths:
 
 1. The unavailable author can be removed as an author and moved to the Acknowledgements section.
 2. The unavailable author can be removed as an author and moved to the Contributors section.

@@ -2,7 +2,7 @@
 title: RFC Publication process
 description: 
 published: true
-date: 2024-08-28T12:23:57.387Z
+date: 2024-08-28T12:24:05.052Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-23T22:38:08.063Z

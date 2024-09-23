@@ -142,6 +142,9 @@ Option 3 is typically used in instances where the unavailable author made signif
 # Exceptional states
 There are a number of states that occur in exceptional circumstances. 
 
+## Questions for authors (AUTH)
+Sometimes the editors have questions for the authors that need to be resolved before they can move forward with copy editing the document. When this is the case, the document is put into `AUTH` state until the answers are received from the authors.
+
 ## Tooling issue (TI)
 Occasionally, at the end of `AUTH48` publication of the document is on hold pending the resolution of an issue with the software tools used to create the pubished versions.  For example, if there is an error in the PDF generation. In these circumstances, the document is moved into `TI` state until the issue is resolved.
 

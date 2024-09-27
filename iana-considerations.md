@@ -2,7 +2,7 @@
 title: IANA Considerations
 description: 
 published: true
-date: 2024-07-23T01:14:14.941Z
+date: 2024-09-27T13:11:55.454Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-21T22:32:52.691Z
@@ -13,10 +13,11 @@ dateCreated: 2024-07-21T22:32:52.691Z
 
 The [Internet Assigned Numbers Authority](https://www.iana.org/) (IANA) operates registries that provide global coordination of the DNS root, IP addressing, and other Internet protocol resources for the IETF. These registries are created, revised, obsoleted and closed by RFCs. For some registries, an RFC is required to register or deprecate an entry in that registry. 
 
-All Internet-Drafts MUST contain an **IANA Considerations** section. This section enumerates registry actions for IANA to take upon publication of the document as an RFC. That section should contain clear instructions for IANA (and designated expert reviewers where appropraite) and nothing else.
+All Internet-Drafts MUST contain an **IANA Considerations** section, which enumerates registry actions for IANA to take upon publication of the document as an RFC. Common actions include creating a new IANA registry, modifying rules for an existing registry, and assigning or updating values in an IANA registry.
 
-> If there is nothing to say in the **IANA Consideration** section then it should say “This document has no IANA actions.”
-{.is-info}
+This section should contain clear instructions for IANA (and designated expert reviewers where appropriate) and nothing else.
+
+If there is nothing to say in the **IANA Consideration** section then it should say “This document has no IANA actions.”
 
 # Writing the IANA Considerations section
 
@@ -35,7 +36,7 @@ The IANA [Protocol Registration Procedures](https://www.iana.org/help/protocol-r
 * [Examples](https://www.iana.org/help/protocol-registration#examples) of registry formats.
 
 # Early allocation
-RFC 7120 describes 'early allocation', a mechanism for registering a code point in an IANA registry before the document is published as an RFC. This is used to facilitate desired or required implementation and deployment experience prior to publication of an RFC.
+RFC 7120 describes 'early allocation', a mechanism for registering a code point in an IANA registry before the document is published as an RFC. This is used to facilitate desired or required implementation and deployment experience prior to publication of an RFC.  It is generally used for registries with "Specification Required", "RFC Required", "IETF Review", or "Standards Action" policies.
 
 # Getting your I-D reviewed
 There are a number of situations where it might be useful to ask IANA to review your I-D:

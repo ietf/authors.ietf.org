@@ -9,9 +9,11 @@ dateCreated: 2021-11-17T10:06:49.972Z
 ---
 
 Your diagrams can be provided in ASCII-art, SVG or both:
-*  If only ASCII-art is provided then it is used in all rendering (see RFC9139 for example)
-*  If both are provided then SVG is used in the HTML and PDF rendering, and ASCII-art is used in the plaintext rendering
-*  If only SVG is provided then it is used in the HTML and PDF rendering but no diagram is included in the plaintext rendering, replaced with a message that says "Artwork only available as SVG".  For this reason, providing only SVG is **not recommended**.
+*  If only ASCII-art is provided, then it is used in all rendering (see [RFC 9139](https://www.rfc-editor.org/info/rfc9139) for example)
+*  If both are provided, then SVG is used in the HTML and PDF rendering, and ASCII-art is used in the plaintext rendering
+*  If only SVG is provided, then it is used in the HTML and PDF rendering but no diagram is included in the plaintext rendering, instead there is a message that says "Artwork only available as SVG".  For this reason, providing only SVG is **not recommended**.
+
+If there is a non-technical difference between the ASCII-art and the SVG diagrams, it must be described in the text (for example, "In the text, you’ll see X. In the HTML and PDF, you'll see Y.") However, if the ASCII-art cannot convey the same information as the SVG, it must not be included, and a pointer to the SVG diagram be provided in the text rendering instead.
 
 If you are [Drafting in XML](/drafting-in-xml) then all the choices are open to you.
 

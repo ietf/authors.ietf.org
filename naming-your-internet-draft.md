@@ -48,7 +48,7 @@ Where possible, this component should not contain a hyphen. Hyphenated last name
 
 This component must not be easily confused with a group acronym or a reserved string as listed for ***(source)*** below.
 
-Ojectionable or misleading strings are subject to change or removal.
+Questionable or misleading strings are subject to change or removal.
 
 ## (source)
 For I-Ds that have been adopted by a stream, this component identifies the stream as follows:

@@ -2,7 +2,7 @@
 title: Diagrams
 description: 
 published: true
-date: 2024-11-19T21:26:35.150Z
+date: 2024-11-19T21:30:42.146Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -78,15 +78,6 @@ Dia is a program to draw structured diagrams.  It is open source and runs on Win
 Dia is simple to use. Save your drawing as xxx.dia, then export it as xxx.svg.
 
 Dia draws line-end arrowheads as filled polygons, and it doesn't use markers.
-
-## aasvg
-## {.tabset}
-### Details
-[aasvg](https://github.com/martinthomson/aasvg) takes ASCII diagrams and converts them into SVG.  This has the advantage of ensuring that the text version of the RFC presents very similar diagrams to HTML and PDF formats.
-
-This tool is inspired by [goat](https://github.com/blampe/goat) and uses a modified version of the original [markdeep](https://casual-effects.com/markdeep/) code.
-
-aasvg can be used in [kramdown-rfc](https://github.com/cabo/kramdown-rfc/wiki) by starting a block with `~~~ aasvg`.
 
 ## Inkscape
 ## {.tabset}
@@ -226,6 +217,17 @@ For reference, the following tools are also known to generate SVG.  If you use a
 * [LucidChart](https://www.lucidchart.com/) (paid)
 * [OmniGraffle](https://www.omnigroup.com/omnigraffle) (paid)
 * [Boxy SVG Editor](https://boxy-svg.com) (paid)
+
+# Converting ASCII-art to SVG
+It is quite common for people to produce their diagrams in ASCII-art and then convert them into SVG using the following tool:
+## aasvg
+## {.tabset}
+### Details
+[aasvg](https://github.com/martinthomson/aasvg) takes ASCII diagrams and converts them into SVG.  This has the advantage of ensuring that the text version of the RFC presents very similar diagrams to HTML and PDF formats.
+
+This tool is inspired by [goat](https://github.com/blampe/goat) and uses a modified version of the original [markdeep](https://casual-effects.com/markdeep/) code.
+
+aasvg can be used in [kramdown-rfc](https://github.com/cabo/kramdown-rfc/wiki) by starting a block with `~~~ aasvg`.
 
 # Validating your SVG
 The [Author Tools](https://author-tools.ietf.org) web service can validate your SVG and output a corrected SVG file if required.

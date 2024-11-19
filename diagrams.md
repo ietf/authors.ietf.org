@@ -2,23 +2,26 @@
 title: Diagrams
 description: 
 published: true
-date: 2021-12-17T02:29:30.282Z
+date: 2024-11-19T20:38:00.097Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
 ---
 
-Your diagrams can be provided in ASCII-art, SVG or both:
-*  If only ASCII-art is provided then it is used in all rendering (see RFC9139 for example)
-*  If both are provided then SVG is used in the HTML and PDF rendering, and ASCII-art is used in the plaintext rendering
-*  If only SVG is provided then it is used in the HTML and PDF rendering but no diagram is included in the plaintext rendering, replaced with a message that says "Artwork only available as SVG".  For this reason, providing only SVG is **not recommended**.
+# Supported formats
+Your diagrams can be provided in **ASCII-art**, **SVG** or **both**:
+*  If **only ASCII-art** is provided then it is used in all rendering (see RFC9139 for example)
+*  If **only SVG** is provided then it is used in the HTML and PDF rendering but no diagram is included in the plaintext rendering, replaced with a message that says ```Artwork only available as SVG```.  For this reason, providing **only SVG is not recommended**.
+*  If **both** are provided then **SVG** is used in the HTML and PDF rendering, and **ASCII-art** is used in the plaintext rendering
 
-If you are [Drafting in XML](/drafting-in-xml) then all the choices are open to you.
+NOTE: It is also possible to specify [binary files](/rfcxml-vocabulary#type) but this is only supported for I-Ds and not RFCs.
 
-If you are [Drafting in Markdown](/drafting-in-markdown) or [Drafting in other markup languages](/drafting-in-other-markup-languages) then your options depend on the toolchain you use:
-1. Some tools allow you to specify an external SVG file
-1. Some tools support embedded diagramming languages and manage the conversion of those into SVG
-1. Some tools do not support SVG diagrams requiring you to use ASCII-art diagrams and/or add the SVG manually after the I-D has been converted to RFCXML.
+## Specifying the format
+If you are [Drafting in XML](/drafting-in-xml) then this is through the [**type**](/rfcxml-vocabulary#type) attribute of ```<artwork>```. See the [examples](#examples) below.
+
+If you are [Drafting in Markdown](/drafting-in-markdown) or [Drafting in other markup languages](/drafting-in-other-markup-languages) then this depends on the toolchain you use as some tools allow you to specify an external SVG file, while others do not support SVG diagrams requiring you to use ASCII-art diagrams and/or add the SVG manually after the I-D has been converted to RFCXML.
+
+More modern tools support embedded diagramming languages and manage the conversion of those into SVG.
 
 If you are [Drafting in plaintext](/drafting-in-plaintext) then all diagrams need to be included as ASCII-art inline in the text.
 

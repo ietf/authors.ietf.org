@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2023-08-03T17:17:44.245Z
+date: 2024-11-19T21:39:13.731Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -212,11 +212,11 @@ In some cases, the prep tool may remove the **src** attribute after processing i
 #### type
 Specifies the format of the artwork. The value of this attribute is free text with certain values designated as preferred.
 
-The preferred values for **type** are: "ascii-art", "binary-art", "svg"
+The preferred values for **type** are: "ascii-art", "binary-art", "svg".  See [Diagrams](/diagrams) for more information on these types and how they are rendered into different output formats.
 
 Values that don't describe the format, such as "call-flow" or "hex-dump" were mentioned in RFC7991, but are not supported; they are instead candidates for use with another future attribute to describe the artwork content.
 
-See [Diagrams](/diagrams) for more information on how these types are rendered into different output formats.
+
 
 #### width
 TBD

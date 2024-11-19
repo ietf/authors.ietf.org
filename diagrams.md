@@ -2,7 +2,7 @@
 title: Diagrams
 description: 
 published: true
-date: 2024-11-19T21:22:41.419Z
+date: 2024-11-19T21:26:35.150Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -11,7 +11,7 @@ dateCreated: 2021-11-17T10:06:49.972Z
 # Supported formats
 Your diagrams can be provided in one (or more) of the following formats:
 
-1. **ASCII art**. This artwork uses unicode characters rendered in a fixed-width font to produce a diagram.  Any unicode character can be used, but the width should be less than 72 otherwise it cuts off in plaintext renderings.
+1. **ASCII-art**. This artwork uses unicode characters rendered in a fixed-width font to produce a diagram.  Any unicode character can be used, but the width should be less than 72 otherwise it cuts off in plaintext renderings.
 1. **SVG**. These must conform to the SVG profile documented in RFC 7996 "SVG 1.2 RFC" as, which has the following restrictions compared to standard SVG:
    * No animation
    * No interactivity
@@ -19,13 +19,11 @@ Your diagrams can be provided in one (or more) of the following formats:
    * No colour or grayscale, only black and white
    * Only 'serif', 'sans-serif', and 'monospace' generic font families from the WebFonts facility
    * Only ASCII links
-1. **Binary art**. Binary image data. This is not recommended for reasons explained below.
+1. **binary-art**. Binary image data. This is not recommended for reasons explained below.
 
 ## Recommendations
 
-If at all possible, provide your diagrams in both **SVG** and **ASCII-art**. **SVG** will then be used in the HTML and PDF rendering, and **ASCII-art** will be used in the plaintext rendering.
-
-If that is not possible, then try to provide your diagrams in **ASCII-art**, which will then be used in all rendering (see RFC9139 for example).
+If at all possible, provide your diagrams in **both** SVG and ASCII-art. SVG will then be used in the HTML and PDF rendering, and ASCII-art will be used in the plaintext rendering.  If that is not possible, then try to provide your diagrams in ASCII-art, which will then be used in all rendering (see RFC9139 for example).
 
 Providing **only SVG** is **not recommended** because it cannot be rendered in plaintext and so any diagram in the plaintext rendering is replaced with a message that says ```Artwork only available as SVG```. 
 

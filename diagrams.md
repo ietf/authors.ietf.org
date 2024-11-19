@@ -2,7 +2,7 @@
 title: Diagrams
 description: 
 published: true
-date: 2024-11-19T21:30:42.146Z
+date: 2024-11-19T23:52:59.745Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -25,9 +25,9 @@ Your diagrams can be provided in one (or more) of the following formats:
 
 If at all possible, provide your diagrams in **both** SVG and ASCII-art. SVG will then be used in the HTML and PDF rendering, and ASCII-art will be used in the plaintext rendering.  If that is not possible, then try to provide your diagrams in ASCII-art, which will then be used in all rendering (see RFC9139 for example).
 
-Providing **only SVG** is **not recommended** because it cannot be rendered in plaintext and so any diagram in the plaintext rendering is replaced with a message that says ```Artwork only available as SVG```. 
+Providing **only SVG** is **not recommended** because it cannot be rendered in plaintext and so any diagram in the plaintext rendering is replaced with a message that says ```Artwork only available as SVG```. If you only have SVG diagrams then consider using a tool to [convert SVG into ASCII-art](#converting-ascii-art-to-svg).
 
-Providing **binary-art** is **not recommended** because this is only supported for I-Ds and not RFCs, not well supported in the tools, has issues around specifying the format of the binary data and is likely to be withdrawn in future.
+Providing **binary-art** is **not recommended** because this is only supported for I-Ds and not RFCs, not well supported in the tools, does not display in the plaintext rendering, has issues around specifying the format of the binary data, and is likely to be withdrawn in future.
 
 ## Specifying the format
 If you are [Drafting in XML](/drafting-in-xml) then this is through the [**type**](/rfcxml-vocabulary#type) attribute of ```<artwork>```. See the [examples](#examples) below.

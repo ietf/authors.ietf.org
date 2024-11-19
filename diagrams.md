@@ -2,19 +2,34 @@
 title: Diagrams
 description: 
 published: true
-date: 2024-11-19T20:38:00.097Z
+date: 2024-11-19T21:22:41.419Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
 ---
 
 # Supported formats
-Your diagrams can be provided in **ASCII-art**, **SVG** or **both**:
-*  If **only ASCII-art** is provided then it is used in all rendering (see RFC9139 for example)
-*  If **only SVG** is provided then it is used in the HTML and PDF rendering but no diagram is included in the plaintext rendering, replaced with a message that says ```Artwork only available as SVG```.  For this reason, providing **only SVG is not recommended**.
-*  If **both** are provided then **SVG** is used in the HTML and PDF rendering, and **ASCII-art** is used in the plaintext rendering
+Your diagrams can be provided in one (or more) of the following formats:
 
-NOTE: It is also possible to specify [binary files](/rfcxml-vocabulary#type) but this is only supported for I-Ds and not RFCs.
+1. **ASCII art**. This artwork uses unicode characters rendered in a fixed-width font to produce a diagram.  Any unicode character can be used, but the width should be less than 72 otherwise it cuts off in plaintext renderings.
+1. **SVG**. These must conform to the SVG profile documented in RFC 7996 "SVG 1.2 RFC" as, which has the following restrictions compared to standard SVG:
+   * No animation
+   * No interactivity
+   * No scripting or other extensibility
+   * No colour or grayscale, only black and white
+   * Only 'serif', 'sans-serif', and 'monospace' generic font families from the WebFonts facility
+   * Only ASCII links
+1. **Binary art**. Binary image data. This is not recommended for reasons explained below.
+
+## Recommendations
+
+If at all possible, provide your diagrams in both **SVG** and **ASCII-art**. **SVG** will then be used in the HTML and PDF rendering, and **ASCII-art** will be used in the plaintext rendering.
+
+If that is not possible, then try to provide your diagrams in **ASCII-art**, which will then be used in all rendering (see RFC9139 for example).
+
+Providing **only SVG** is **not recommended** because it cannot be rendered in plaintext and so any diagram in the plaintext rendering is replaced with a message that says ```Artwork only available as SVG```. 
+
+Providing **binary-art** is **not recommended** because this is only supported for I-Ds and not RFCs, not well supported in the tools, has issues around specifying the format of the binary data and is likely to be withdrawn in future.
 
 ## Specifying the format
 If you are [Drafting in XML](/drafting-in-xml) then this is through the [**type**](/rfcxml-vocabulary#type) attribute of ```<artwork>```. See the [examples](#examples) below.
@@ -49,15 +64,7 @@ SVG can be generated in one of a number of methods:
 1. Converting a diagram in another format into SVG
 1. Hand-coding the SVG
 
-Your SVG diagrams must conform to the SVG profile "SVG 1.2 RFC" as documented in RFC 7996 (which is in turn a subset of SVG Tiny 1.2) that has the following restrictions compared to standard SVG:
-* No animation
-* No interactivity
-* No scripting or other extensibility
-* No colour or grayscale, only black and white
-* Only 'serif', 'sans-serif', and 'monospace' generic font families from the WebFonts facility
-* Only ASCII links
-
-See [Validating your SVG](#validating-your-svg) for details of how to validate your SVG.
+See above for details on the specific SVG profile that must be supported and [Validating your SVG](#validating-your-svg) for details of how to validate your SVG.
 
 In addition, please provide detailed descriptions of the artwork in SVG `<desc>` elements to assist readers who are visually impaired. For more information about this element, please see the [Accessibility Features of SVG](https://www.w3.org/TR/SVG-access/#Equivalent).
 

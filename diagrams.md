@@ -2,7 +2,7 @@
 title: Diagrams
 description: 
 published: true
-date: 2024-11-20T00:00:55.760Z
+date: 2024-11-20T00:02:13.894Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-17T10:06:49.972Z
@@ -23,9 +23,7 @@ Your diagrams can be provided in one (or more) of the following formats:
 
 ## Recommendations
 
-If at all possible, provide your diagrams in **both** SVG and ASCII-art. SVG will then be used in the HTML and PDF rendering, and ASCII-art will be used in the plaintext rendering.  
-
-If your diagrams originate in ASCII-art then there is a tool that [converts ASCII-art into compliant SVG](#converting-ascii-art-to-svg). If you choose not to use this and only provide your diagrams in ASCII-art then that will be used in all rendering (see RFC9139 for example). 
+If at all possible, provide your diagrams in **both** SVG and ASCII-art. SVG will then be used in the HTML and PDF rendering, and ASCII-art will be used in the plaintext rendering. If your diagrams originate in ASCII-art then there is a tool that [converts ASCII-art into compliant SVG](#converting-ascii-art-to-svg). If you choose not to use this and only provide your diagrams in ASCII-art then that will be used in all rendering (see RFC9139 for example). 
 
 Providing **only SVG** is **not recommended** because it cannot be rendered in plaintext and so any diagram in the plaintext rendering is replaced with a message that says ```Artwork only available as SVG```.
 

@@ -9,7 +9,7 @@ dateCreated: 2021-12-14T23:52:28.098Z
 ---
 
 # Style guide
-The recommended style for Internet-Drafts is documented in a collection of documents that are together known as the [RFC Editor's Style Guide](https://www.rfc-editor.org/styleguide/).
+The recommended style for Internet-Drafts is documented in a collection of documents that are together known as the [RFC Editor's Style Guide](https://www.rfc-editor.org/styleguide/). This style guidance is not enforced while your document is an Internet-Draft, but will be if it becomes an RFC. A mature Internet-Draft may receive feedback to follow more of this guidance so that it is better prepared for the final RFC editing process.
 
 # Abbreviations
 Abbreviations should generally be expanded in parentheses.  The RFC Editor maintains a list of [approved abbreviations](https://www.rfc-editor.org/materials/abbrev.expansion.txt) that do not need to be expanded.

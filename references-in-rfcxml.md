@@ -14,14 +14,10 @@ RFCXML uses references that are encoded in a format called BibXML, as defined in
 * For RFCs, Internet-Drafts, and documents produced by the W3C, 3GPP, IANA and NIST, the new site is [bib.ietf.org](https://bib.ietf.org) (at the time of writing, this site has only just gone live and some usability issues are still to be resolved). Many of these sets of references can be downloaded as a set for offline access.
 
 # Creating the References Section
-
-The References Section is created by adding the [**\<references\>**](/rfcxml-vocabulary#references) element as a child element of the [**\<back\>**](/rfcxml-vocabulary#back) element.
-
-(For more information on the References Section in RFCs, see [Section 4.8.6 of RFC 7322](https://www.rfc-editor.org/rfc/rfc7322.html#section-4.8.6)).
+<!-- TH: Do we need a section on creating the References section? -->
 
 ## Two sections: Normative and Informative References
-
-Use the [**\<name\>**](/rfcxml-vocabulary#name) element (child of the [**\<references\>**](/rfcxml-vocabulary#references) element) as follows:
+To create the two reference sections, use the [**\<name\>**](/rfcxml-vocabulary#name) element (child of the [**\<references\>**](/rfcxml-vocabulary#references) element) as follows:
 ```xml
 <back>
   <references>
@@ -39,7 +35,6 @@ Use the [**\<name\>**](/rfcxml-vocabulary#name) element (child of the [**\<refer
 ```
 
 ## Listing references in alphabetical order
-
 References can be listed in alphanumeric order by citation tag by setting the attribute **sortRefs** to "true" in the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element. 
 
 Note that **sortRefs** only has an effect if **symRefs** is "true".
@@ -50,14 +45,37 @@ For example:
 ```
 
 # Adding reference entries to the References Section
-
 Reference entries can be added to the References Section using two methods:
-* Using `xi:includes` to automatically add citation data from the BibXML service
+* Using an `xi:include` to automatically add citation data from the BibXML service
 * manually constructing references in a [**\<reference\>**](/rfcxml-vocabulary#reference) element
 
-## Using the IETF BibXML service and xi:includes
+Manually constructed references in RFCXML generally use the following XML syntax:
 
-The [BibXML service](https://bib.ietf.org/)is a bibliographic database which provides a bibliographic search service for authors. The citation data from the BibXML service can be added to the [**\<references\>**](/rfcxml-vocabulary#references) section of a draft using an `xi:include`. 
+```xml
+<reference anchor="CITATION-TAG" target="URL">
+  <front>
+    <title>TITLE</title>
+    <author initials="" surname="" fullname="">
+       <organization />
+    </author>
+    <date month="MONTH" year="YEAR"/>
+  </front>
+  <seriesInfo name="NAME" value="VALUE"/>
+  <seriesInfo name="DOI" value="VALUE"/>
+  <refcontent>Journal Name, vol. #, no. #, pp. 1-10</refcontent>
+</reference>
+```
+
+The BibXML service allows for the use of an `xi:include` to insert a given BibXML file's reference information automatically.
+
+An `xi:include` in RFCXML uses the following XML syntax:
+
+```xml
+<xi:include href="<URL for the BibXML file>"/>
+```
+
+## Using the IETF BibXML service and xi:includes
+The [BibXML service](https://bib.ietf.org/) is a database which provides a bibliographic search service. The citation data from the BibXML service can be added to the [**\<references\>**](/rfcxml-vocabulary#references) section of a draft using an `xi:include`. 
 
 Currently, the use of an `xi:include` is recommended when adding references for the following sources:
 
@@ -71,11 +89,16 @@ An `xi:include` that points to the reference libraries for documents from W3C, I
 
 ### Inserting RFC references using an xi:include
 
+An `xi:include` is the recommended method for inserting a reference to an RFC into the References section. The URL for an RFC's BibXML file can be found on the RFC's info page on rfc-editor.org  - for example, https://www.rfc-editor.org/info/rfc7322 - or by searching for the RFC using the [BibXML service](https://bib.ietf.org/).
+
+BibXML URLs for RFC references use the following template:
+
 ```xml
-<xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7322.xml"/>
+<xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7372.xml"/>
 ```
 
 ### Inserting RFC references manually
+If it is necessary to insert a reference to an RFC manually, then the following format is recommended:
 
 ```xml
 <reference anchor="RFC7322" target="https://www.rfc-editor.org/info/rfc7322">
@@ -84,31 +107,40 @@ An `xi:include` that points to the reference libraries for documents from W3C, I
     <author fullname="H. Flanagan" initials="H." surname="Flanagan"/>
     <author fullname="S. Ginoza" initials="S." surname="Ginoza"/>
     <date month="September" year="2014"/>
-    <abstract>
-      <t>This document describes the fundamental and unique style conventions and editorial policies currently in use for the RFC Series. It captures the RFC Editor's basic requirements and offers guidance regarding the style and structure of an RFC. Additional guidance is captured on a website that reflects the experimental nature of that guidance and prepares it for future inclusion in the RFC Style Guide. This document obsoletes RFC 2223, "Instructions to RFC Authors".</t>
-    </abstract>
   </front>
   <seriesInfo name="RFC" value="7322"/>
   <seriesInfo name="DOI" value="10.17487/RFC7322"/>
-</reference>
+</reference>	
 ```
 
 ## Creating references to Internet-Drafts (I-Ds)
-
 ### Inserting I-D references using bibxml
-For an Internet-Draft, the citation filename uses the draft string. Note there are two ways to create the URL. The first way, where the draft string is constructed as "I-D.<name without "draft-" or the version number>", will point to the most current version of the I-D, for example:
+BibXML URLs for I-Ds use the following template:
+
+```xml
+<xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.foo.xml"/>
+```
+
+#### Referencing different versions of an I-D
+Note there are two ways to create the URL for an I-D `xi:include`. 
+
+The first way, where the draft string is constructed as "I-D.<name without "draft-" or the version number>", will point to the most current version of the I-D.
+For example:
 ```xml
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.rpc-rfc7322bis.xml"/>
 ```
 
-This is helpful if you do not want to track and update the reference entry each time the I-D is updated. However, if you want to point to a specific version of an I-D, the draft string should include both "draft-" and the version number. For example: 
+This is helpful if you do not want to track and update the reference entry each time the I-D is updated. 
+
+However, if you want to point to a specific version of an I-D, the draft string should include both "draft-" and the version number. 
+For example: 
 ```xml
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.draft-rpc-rfc7322bis-02.xml"/>
 ```
 
-For example:
-
 ### Inserting I-D references manually
+If it is necessary to insert a reference to an RFC manually, then the following format is recommended:
+
 ```xml
 <reference anchor="I-D.rpc-rfc7322bis" target="https://datatracker.ietf.org/doc/html/draft-rpc-rfc7322bis-02">
    <front>
@@ -123,21 +155,6 @@ For example:
          <organization>RFC Production Center</organization>
       </author>
       <date month="January" day="24" year="2025" />
-      <abstract>
-	 <t>   This document describes the fundamental and unique style conventions
-   and editorial policies currently in use for the RFC Series.  It
-   captures the RFC Editor&#x27;s basic requirements and offers guidance
-   regarding the style and structure of an RFC.  Additional guidance is
-   captured on a website that reflects the experimental nature of that
-   guidance and prepares it for future inclusion in the RFC Style Guide.
-   This document obsoletes RFC 7322, &quot;RFC Style Guide&quot;.
-
-   Note: This draft is being developed and discussed in the GitHub repo
-   &lt;https://github.com/rfc-editor/draft-rpc-rfc7322bis&gt;, but any
-   substantive change should be discussed on &lt;rfc-interest@rfc-
-   interest.org&gt;.
-	 </t>
-      </abstract>
    </front>
    <seriesInfo name="Internet-Draft" value="draft-rpc-rfc7322bis-02" />
    
@@ -145,14 +162,18 @@ For example:
 ```
 
 ## Creating references to BCPs and STDs
+### Inserting a Subseries Reference using an xi:include
+An `xi:include` is the recommended method for inserting references to RFC subseries documents.
 
-### Inserting a Subseries Reference using bibxml
+The URL for the `xi:include` can be found on the subseries' info page - for example: https://www.rfc-editor.org/info/bcp195 - or by searching the BibXML database.
 
 ```xml
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml9/reference.BCP.0195.xml"/> 
 ```
 
 ### Inserting a Subseries Reference manually
+<!-- TODO Should we still mention this? -->
+If it is necessary to insert a reference to a subseries document manually, then the following format is recommended:
 
 ```xml
 <referencegroup anchor="BCP195" target="https://www.rfc-editor.org/info/bcp195">
@@ -162,22 +183,7 @@ For example:
 ```
 
 ## Creating references to IANA registries and subregistries
-
-### Note on URLs for IANA registries and subregistries
-
-Based on guidance from IANA, URLs for IANA references must use the "short" version of the URL that doesn't include a file extension or a URI fragment.
-
-(For more information see IANA's [Guidance for RFC Authors](https://www.iana.org/help/protocol-registration))
-
-For example:
-
-This URL is correct: https://www.iana.org/assignments/xml-registry 
-
-While this URL is incorrect: https://www.iana.org/assignments/xml-registry/xml-registry.xhtml
-
-
 ### Inserting a IANA reference using an xi:include
-
 For a registry:
 ```xml 
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml8/reference.IANA.xml-registry.xml"/>
@@ -188,9 +194,7 @@ For a subregistry:
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml8/reference.IANA.xml-registry_publicid.xml"/>
 ```
 
-
 ### Inserting an IANA reference manually
-
 For a registry:
 
 ```xml
@@ -218,12 +222,19 @@ For a subregistry:
 
 ```
 
+### Note on URLs for IANA registries and subregistries
+Based on guidance from IANA, URLs for IANA references must use the "short" version of the URL that doesn't include a file extension or a URI fragment.
+
+For example:
+
+This URL is correct: https://www.iana.org/assignments/xml-registry 
+
+While this URL is incorrect: https://www.iana.org/assignments/xml-registry/xml-registry.xhtml
+
+(For more information see IANA's [Guidance for RFC Authors](https://www.iana.org/help/protocol-registration))
+
 # Reference tags and in-text citations
-
-For more information on citations see [Section 3.5 of RFC 7322](https://www.rfc-editor.org/rfc/rfc7322.html#section-3.5).
-
 ## Editing citation tags
-
 ### Changing a reference tag to use a nickname
 For example, `[IKEv2]` instead of `[RFC4306]`
 
@@ -250,11 +261,26 @@ In the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, set the attribute **symRef
 
 ## Inserting an in-text citation
 
+To cite a reference in the text of the document do the following:
+
+Locate the reference anchor for the reference:
+
+Add an [**\<xref\>**](/rfcxml-vocabulary#xref) element with the target attribute set to the reference anchor (in this case, "RFC7322").
+
+```xml
+See <xref target="RFC7322"/> for more information. 
+```
+
+Which yields:
+
+```
+See [RFC7322] for more information.
+```
+
+See [Part 2 of the RFC Style Guide](https://www.rfc-editor.org/styleguide/part2/#citation_usage) for guidance on the correct use of in-text citations.
+
 # Section References
-
-
-# Cross-referencing to another section
-
+## Cross-referencing to another section within the document
 Make sure the section you want to reference has an **anchor** attribute. For example:
 ```xml
    <section anchor="s_using_lists">
@@ -269,30 +295,7 @@ which yields
 ```
 (where the number of that section is determined dynamically).
 
-# Referring to a section in another document such as another RFC
-
-Use [**\<xref\>**](/rfcxml-vocabulary#xref) and set the **sectionFormat** attribute to various options.
-
-To construct `See Section 1.3 of [RFC7991]`, use "of" with the sectionFormat attribute:
-```xml
-   See <xref target="RFC7991" sectionFormat="of" section="1.3" />
-```
-To construct `See [RFC7991], Section 1.3`, use "comma" with the sectionFormat attribute:
-```xml
-   See <xref target="RFC7991" sectionFormat="comma" section="1.3" />
-```
-To construct `See [RFC7991] (Section 1.3)`, use "parens" with the sectionFormat attribute:
-```xml
-   See <xref target="RFC7991" sectionFormat="parens" section="1.3" />
-```
-To construct `See 1.3`, use "bare" with the sectionFormat attribute:
-```xml
-   See <xref target="RFC7991" sectionFormat="bare" section="1.3" />
-```
-
-When **sectionFormat** is not set at all, the output is the same as "of".
-
-# Linking to multiple sections within a document 
+## Linking to multiple sections within a document 
 For example, `See Sections 3 and 4.`
 
 Use [**\<xref\>**](/rfcxml-vocabulary#xref) with the format attribute. For example, assuming the anchors for the relevant sections match the targets:
@@ -314,7 +317,30 @@ yields the output:
   See <a href="#s_using_refs">Using References</a> and 
   <a href="#s_using_lists">Using Lists.</a>
 ```
-# Linking to multiple sections in a different document 
+
+## Referring to a section in another RFC
+Use [**\<xref\>**](/rfcxml-vocabulary#xref) and set the **sectionFormat** attribute to various options.
+
+To construct `See Section 1.3 of [RFC7991]`, use "of" with the sectionFormat attribute:
+```xml
+   See <xref target="RFC7991" sectionFormat="of" section="1.3" />
+```
+To construct `See [RFC7991], Section 1.3`, use "comma" with the sectionFormat attribute:
+```xml
+   See <xref target="RFC7991" sectionFormat="comma" section="1.3" />
+```
+To construct `See [RFC7991] (Section 1.3)`, use "parens" with the sectionFormat attribute:
+```xml
+   See <xref target="RFC7991" sectionFormat="parens" section="1.3" />
+```
+To construct `See 1.3`, use "bare" with the sectionFormat attribute:
+```xml
+   See <xref target="RFC7991" sectionFormat="bare" section="1.3" />
+```
+
+When **sectionFormat** is not set at all, the output is the same as "of".
+
+# Linking to multiple sections in an RFC
 For example, 'see Sections 5 and 6 in RFC 3550'.
 
 Use [**\<xref\>**](/rfcxml-vocabulary#xref) with sectionFormat="bare". For example:
@@ -329,6 +355,8 @@ See Sections <a href="https://www.rfc-editor.org/rfc/rfc3550#section-5">5</a>
 and <a href="https://www.rfc-editor.org/rfc/rfc3550#section-6">6</a> in 
 [<a href="#RFC3550">RFC3550</a>].
 ```
+
+
 
 # Supporting tools
 

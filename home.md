@@ -2,11 +2,11 @@
 title: Home
 description: Welcome to the Internet-Draft/RFC author resources site
 published: true
-date: 2024-06-20T20:05:46.961Z
-tags: 
+date: 2025-02-24T20:05:46.961Zam
+tags: 0xA1819563c8F39b9Bb8bA8728391FEBebe06b9890
 editor: markdown
 dateCreated: 2021-08-18T00:11:52.864Z
----
+---gh pr checkout 49532
 
 # Welcome to the Internet-Draft authors resource site
 

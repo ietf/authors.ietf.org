@@ -2,14 +2,11 @@
 title: IANA Considerations
 description: 
 published: true
-date: 2024-09-27T13:14:14.193Z
+date: 2025-06-24T21:46:36.233Z
 tags: 
 editor: markdown
 dateCreated: 2024-07-21T22:32:52.691Z
 ---
-
-> PAGE UNDER CONSTRUCTION
-{.is-warning}
 
 The [Internet Assigned Numbers Authority](https://www.iana.org/) (IANA) operates registries that provide global coordination of the DNS root, IP addressing, and other Internet protocol resources for the IETF. These registries are created, revised, obsoleted and closed by RFCs. For some registries, an RFC is required to register or deprecate an entry in that registry. 
 

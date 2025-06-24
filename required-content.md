@@ -2,7 +2,7 @@
 title: Required content
 description: 
 published: true
-date: 2025-06-24T21:48:33.773Z
+date: 2025-06-24T21:48:59.047Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-15T09:33:48.572Z
@@ -114,7 +114,7 @@ Checklist:
 
 # IANA Considerations
 
-This section is covered on the separate [IANA Considerations]((/iana-considerations) page.
+This section is covered on the separate [IANA Considerations](/iana-considerations) page.
 
 # References
 A references section must be present and split into normative and informative sections. The IESG has a [Statement on Normative and Informative References](https://www.ietf.org/about/groups/iesg/statements/normative-informative-references/).

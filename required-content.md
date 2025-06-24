@@ -2,7 +2,7 @@
 title: Required content
 description: 
 published: true
-date: 2021-12-16T23:02:52.918Z
+date: 2025-06-24T21:48:33.773Z
 tags: 
 editor: markdown
 dateCreated: 2021-12-15T09:33:48.572Z
@@ -114,19 +114,7 @@ Checklist:
 
 # IANA Considerations
 
-The [Internet Assigned Numbers Authority](https://www.iana.org/) (IANA) provides global coordination of the DNS root, IP addressing, and many other Internet protocol resources for the IETF. The "IANA Considerations" section must be present in a document and enumerate any actions IANA must take upon publication of the document as an RFC.
-
-For more specific guidelines regarding structure and content for writing IANA Considerations sections, please see RFC 8126 and the IANA [Protocol Registration Procedures](https://www.iana.org/help/protocol-registration).
-
-Checklist:
-- [x] Verify this section contains clear instructions if IANA is expected to create a new registry or modify rules for an existing registry.
-- [x] Verify this section contains clear instructions if the document requires IANA to assign or update values in an IANA registry before RFC publication.
-- [x] Check the existing IANA registry for registration policy rules and any requirements for specific requests for registration of protocol parameters. Individual RFCs have specific criteria and instructions that should be followed.
-- [x] If the registration policy is "Expert Review" or "Specification Required" and/or requires mailing list review, as soon as the requested parameter information is properly formed, consider initiating reviews with IANA or sending to the appropriate mailing list (where applicable; see the RFC for that the registry for instructions). If there are any questions about what type of approval is needed from the Designated Expert (for example, if the registration should be made immediately or only pre-reviewed before publication), please contact IANA.
-- [x] If registrations are needed early for registries with "Specification Required", "RFC Required", "IETF Review", or "Standards Action" policies, consider using the early allocation process defined in RFC 7120.
-- [x] Verify this section explicitly and clearly identifies any references to this document that should be added for any registrations and any that should replace existing references.
-- [x] If the document has considerable instructions for IANA actions, request an early review of the document by IANA.
-- [x] If there is no action for IANA, verify that this section explicitly says “This document has no IANA actions.” It is often helpful for the IANA Considerations section to remain in place upon publication as an RFC even if there are no actions.
+This section is covered on the separate [IANA Considerations]((/iana-considerations) page.
 
 # References
 A references section must be present and split into normative and informative sections. The IESG has a [Statement on Normative and Informative References](https://www.ietf.org/about/groups/iesg/statements/normative-informative-references/).

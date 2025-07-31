@@ -376,7 +376,7 @@ Allowed content: text
 ### Usage
 Specifies that a block of text is a quotation.
 
-Used in: [**\<aside\>**](/rfcxml-vocabulary#aside), [**\<li\>**](/rfcxml-vocabulary#li), [**\<section\>**](/rfcxml-vocabulary#section)
+Used in: [**\<aside\>**](/rfcxml-vocabulary#aside), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<li\>**](/rfcxml-vocabulary#li), [**\<section\>**](/rfcxml-vocabulary#section)
 Allowed content: ( ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<dl\>**](/rfcxml-vocabulary#dl) | [**\<figure\>**](/rfcxml-vocabulary#figure) | [**\<ol\>**](/rfcxml-vocabulary#ol) | [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) | [**\<t\>**](/rfcxml-vocabulary#t) | [**\<ul\>**](/rfcxml-vocabulary#ul) )+ | ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>**](/rfcxml-vocabulary#br) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<u\>**](/rfcxml-vocabulary#u) | [**\<xref\>**](/rfcxml-vocabulary#xref) )+ )
 
 ### Attributes
@@ -683,7 +683,7 @@ The year of publication.
 The definition part of an entry in a definition list.
 
 Used in: [**\<dl\>**](/rfcxml-vocabulary#dl).
-Allowed content: ( ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<aside\>**](/rfcxml-vocabulary#aside) | [**\<dl\>**](/rfcxml-vocabulary#dl) | [**\<figure\>**](/rfcxml-vocabulary#figure) | [**\<ol\>**](/rfcxml-vocabulary#ol) | [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) | [**\<t\>**](/rfcxml-vocabulary#t) | [**\<table\>**](/rfcxml-vocabulary#table) | [**\<ul\>**](/rfcxml-vocabulary#ul) )+ | ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>**](/rfcxml-vocabulary#br) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<u\>**](/rfcxml-vocabulary#u) | [**\<xref\>**](/rfcxml-vocabulary#xref) )+ )
+Allowed content: ( ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<aside\>**](/rfcxml-vocabulary#aside) | [**\<blockquote\>**](/rfcxml-vocabulary#blockquote) | [**\<dl\>**](/rfcxml-vocabulary#dl) | [**\<figure\>**](/rfcxml-vocabulary#figure) | [**\<ol\>**](/rfcxml-vocabulary#ol) | [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) | [**\<t\>**](/rfcxml-vocabulary#t) | [**\<table\>**](/rfcxml-vocabulary#table) | [**\<ul\>**](/rfcxml-vocabulary#ul) )+ | ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>**](/rfcxml-vocabulary#br) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<u\>**](/rfcxml-vocabulary#u) | [**\<xref\>**](/rfcxml-vocabulary#xref) )+ )
 
 ### Attributes
 #### anchor
@@ -699,6 +699,7 @@ Document-wide unique identifier for this element.
        (( artset
           | artwork
           | aside
+          | blockquote
           | dl
           | figure
           | ol

@@ -2,12 +2,15 @@
 title: Home
 description: Welcome to the Internet-Draft/RFC author resources site
 published: true
-date: 2024-06-20T20:05:46.961Z
+date: 2025-08-07T14:00:25.859Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-18T00:11:52.864Z
 ---
 
+> PLANNED OUTAGE at 1900UTC on 14 August 2025
+IETF wikis, IETF Datatracker, Mailarchives, and other services affected. [Read more](https://www.ietf.org/blog/it-infrastructure-outage-2024-08-14/)
+{.is-warning}
 # Welcome to the Internet-Draft authors resource site
 
 This site is the central resource site for authors of an Internet-Draft (I-D), with information on how to write an I-D and the tools available to support this. If you are new to authoring then begin with the introduction below or if you are more familiar then the main menu lists multiple individual topics.

@@ -2,7 +2,7 @@
 title: References in RFCXML
 description: 
 published: true
-date: 2025-09-04T03:10:50.127Z
+date: 2025-09-04T03:12:23.893Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T23:45:18.949Z
@@ -11,13 +11,12 @@ dateCreated: 2021-11-04T23:45:18.949Z
 # Introduction
 RFCXML supports references through the [**\<reference\>**](/rfcxml-vocabulary#reference) and [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) elements. 
 
-# Libraries of pre-built references
+# Inserting references from a library of pre-built references
 To simplify the process of inserting references, the IETF maintains libraries of pre-built reference files for RFCs and Internet-Drafts, and for documents produced by the W3C, 3GPP, IANA and NIST, on the site [bib.ietf.org](https://bib.ietf.org). These pre-built references files are referred to as BibXML files though they are only XML excerpts, not fully XML documents.
 
 In addition, for RFCs the information page for each RFC on [rfc-editor.org](https://rfc-editor.org/) has a link to the BibXML file.
 
-# Inserting references from a library
-Use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section that points to a citation in the library as follows. 
+To use a pre-built references file, use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section that points to a citation in the library.  Examples below.
 
 ## References to RFCs
 The following creates a reference to an RFC:

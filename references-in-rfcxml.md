@@ -2,7 +2,7 @@
 title: References in RFCXML
 description: 
 published: true
-date: 2025-09-04T03:12:23.893Z
+date: 2025-09-04T03:41:49.869Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T23:45:18.949Z
@@ -11,21 +11,22 @@ dateCreated: 2021-11-04T23:45:18.949Z
 # Introduction
 RFCXML supports references through the [**\<reference\>**](/rfcxml-vocabulary#reference) and [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) elements. 
 
-# Inserting references from a library of pre-built references
+# Inserting references
+## The IETF library of pre-built references
 To simplify the process of inserting references, the IETF maintains libraries of pre-built reference files for RFCs and Internet-Drafts, and for documents produced by the W3C, 3GPP, IANA and NIST, on the site [bib.ietf.org](https://bib.ietf.org). These pre-built references files are referred to as BibXML files though they are only XML excerpts, not fully XML documents.
 
 In addition, for RFCs the information page for each RFC on [rfc-editor.org](https://rfc-editor.org/) has a link to the BibXML file.
 
 To use a pre-built references file, use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section that points to a citation in the library.  Examples below.
 
-## References to RFCs
+### Library references to RFCs
 The following creates a reference to an RFC:
 ```xml
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml"/>
 ```
-That creates the anchor `RFC2119` that can be used in an [**\<xref\>**](/rfcxml-vocabulary#xref) such as `"See <xref target="RFC2119"/>`
+That creates the anchor `RFC2119`.
 
-## References to Internet-Drafts
+### Library references to Internet-Drafts
 For an Internet-Draft, the citation filename uses the draft string. Note there are two ways to create the URL. The first way, where the draft string is constructed as "I-D.<name without "draft-" or the version number>", will point to the most current version of the I-D, for example:
 ```xml
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.daley-meeting-network-requirements.xml"/>
@@ -34,27 +35,28 @@ If you want to point to a specific version of an I-D, the draft string should in
 ```xml
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.daley-meeting-network-requirements-00.xml"/>
 ```
-That creates the anchor `I-D.daley-meeting-network-requirements` that can be used in an [**\<xref\>**](/rfcxml-vocabulary#xref) such as `"See <xref target="I-D.daley-meeting-network-requirements"/>`
+That creates the anchor `I-D.daley-meeting-network-requirements`.
 
-## References to BCPs and STDs
+### Library references to BCPs and STDs
 References to BCPs and STDs are added in a similar way to RFCs:
 ```xml
  <xi:include href="https://bib.ietf.org/public/rfc/bibxml-rfcsubseries/reference.BCP.14.xml"/>
 ```
-That creates the anchor `BCP14` that can be used in an [**\<xref\>**](/rfcxml-vocabulary#xref) such as `"See <xref target="BCP14"/>`
+That creates the anchor `BCP14`.
 
-**Please note** that BCP and STD references are implemented as a [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) element that contains within it full [**\<reference\>**](/rfcxml-vocabulary#reference) elements for each of the RFCs that makes up that BCP or STD.  This automatically adds them as references and so they do not need to be added separately (doing so will give an XML error).
+**Please note** that BCP and STD references are implemented as a [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) element that contains within it full [**\<reference\>**](/rfcxml-vocabulary#reference) elements for each of the components RFCs that makes up that BCP or STD.  This automatically adds them as references and so they do not need to be added separately (doing so will give an XML error).  It also means that the rendered output lists all of the component RFCs.
 
-## References to W3C, 3GPP, IANA and NIST documents
+
+### Library references to W3C, 3GPP, IANA and NIST documents
 These are found individually by searching on the [bib.ietf.org](https://bib.ietf.org) site. (The UI is not very friendly and is due to be replaced).  For example, searching that site for "W3C XSLT" leads to a reference that is then included as:
 ```xml
  <xi:include href="https://bib.ietf.org/public/rfc/bibxml4/reference.W3C.xslt.xml"/>
 ```
-That creates the anchor `W3C.xslt` that can be used in an [**\<xref\>**](/rfcxml-vocabulary#xref) such as `"See <xref target="W3C.xslt"/>`
+That creates the anchor `W3C.xslt`.
 
 
-# Inserting references manually
-The following complete example is for an RFC (verbatim contents of [https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml](https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml)). Full references should only be used where an `xi:include` cannot be used, or where the authors wish to specify different BibXML from that supplied in the citation libraries:
+## Inserting references manually
+Full references should only be used where an `xi:include` cannot be used, or where the authors wish to specify different BibXML from that supplied in the citation libraries.  The following complete example is for an RFC (verbatim contents of [https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml](https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml)):
 ```xml
 <reference anchor="RFC2119" target="https://www.rfc-editor.org/info/rfc2119">
   <front>
@@ -98,39 +100,7 @@ An example of a reference written by an organisation is:
 </reference>
 ```
 
-# Citing a reference
-To cite a reference in your text, use an [**\<xref\>**](/rfcxml-vocabulary#xref) element where the value of its target attribute corresponds to the value of the anchor attribute of the reference element, e.g., `<xref target="RFC2119" />`. For references constructed with  `xi:include`, the values of the target attributes are the following:
-* For RFCs, "RFCNNNN" (4 digits, using leading zeros)
-* For Internet-Drafts, "I-D.<name without "draft-" or the version number>", even if you specified a particular version with the `xi:include`.
-
-# Changing all reference tags from symbolic to numeric
-For example, `[1]` instead of `[RFC2119]`
-
-In the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, set the attribute **symRefs** to "false" for symbolic references. This makes reference tags be numeric, e.g., `[1]`, instead of symbolic, e.g., `[RFC2119]`.
-
-# Changing a reference tag to use a nickname
-For example, `[IKEv2]` instead of `[RFC4306]`
-
-Use the [**\<displayreference\>**](/rfcxml-vocabulary#displayreference) element and set the **to** attribute to the nickname. Tip: place it before the first references element. For example:
-```xml
-<displayreference target="RFC7296" to="IKEv2"/>
-<references>
-[...]
-<xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7296.xml"/>
-```
-yields:
-```
-  [IKEv2]    Kaufman, C., Hoffman, P., Nir, Y., Eronen, P., and T. 
-             Kivinen, "Internet Key Exchange Protocol Version 2 
-             (IKEv2)", STD 79, RFC 7296, DOI 10.17487/RFC7296, 
-             October 2014, <https://www.rfc-editor.org/info/rfc7296>.
-```
-# Listing references in alphabetical order
-
-In the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, set the attribute **sortRefs** to "true". Note that **sortRefs** only has an effect if **symRefs** is "true".
-
-# Referencing a URL
-
+## Referencing a URL
 The [**\<eref\>**](/rfcxml-vocabulary#eref) element for an external reference creates a link in the HTML output. For example:
 ```xml
 <eref target="https://www.w3.org" />
@@ -161,72 +131,12 @@ yields
 ```
   [W3C]     "World Wide Web Consortium (W3C)", <https://www.w3.org/>.
 ```
-# Two sections: Normative and Informative References
 
-Use the [**\<name\>**](/rfcxml-vocabulary#name) element (child of the [**\<references\>**](/rfcxml-vocabulary#references) element) as follows:
-```xml
-<back>
-  <references>
-    <name>References</name>
-    <references>
-      <name>Normative References</name>
-      ...
-    </references>
-    <references>
-      <name>Informative References</name>
-      ...
-    </references>
-  </references>
-</back>
-```
-# Creating a reference to a BCP (or STD) that contains multiple RFCs
+# Citing a reference
+To cite a reference in your text, use an [**\<xref\>**](/rfcxml-vocabulary#xref) element where the value of its target attribute corresponds to the value of the anchor attribute of the reference element, e.g., `<xref target="RFC2119" />`. For references constructed with  `xi:include`, the values of the anchors are explained above.
 
-Use [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) with an `xi:include` for each RFC inside it:
-```xml
-<referencegroup anchor="STD78" target="https://www.rfc-editor.org/info/std78">
-  <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.5343.xml"/>
-  <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.5590.xml"/>
-  <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.5591.xml"/>
-  <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.6353.xml"/>
-</referencegroup>
-```
-which yields
-```
-  [STD78]    Schoenwaelder, J., "Simple Network Management Protocol
-             (SNMP) Context EngineID Discovery", STD 78, RFC 5343,
-             September 2008.
 
-             Harrington, D. and J. Schoenwaelder, "Transport Subsystem
-             for the Simple Network Management Protocol (SNMP)",
-             STD 78, RFC 5590, June 2009.
-
-             Harrington, D. and W. Hardaker, "Transport Security Model
-             for the Simple Network Management Protocol (SNMP)",
-             STD 78, RFC 5591, June 2009.
-
-             Hardaker, W., "Transport Layer Security (TLS) Transport
-             Model for the Simple Network Management Protocol (SNMP)",
-             STD 78, RFC 6353, July 2011.
-
-             <https://www.rfc-editor.org/info/std78>
-```
-# Cross-referencing to another section
-
-Make sure the section you want to reference has an **anchor** attribute. For example:
-```xml
-   <section anchor="s_using_lists">
-```
-Then, refer to it with an [**\<xref\>**](/rfcxml-vocabulary#xref) element:
-```xml
-  See <xref target="s_using_lists" />.
-```
-which yields
-```html
-  See <a href="#s_using_lists">Section 4.</a>
-```
-(where the number of that section is determined dynamically).
-
-# Referring to a section in another document such as another RFC
+## Citing a section in another document such as another RFC
 
 Use [**\<xref\>**](/rfcxml-vocabulary#xref) and set the **sectionFormat** attribute to various options.
 
@@ -249,7 +159,7 @@ To construct `See 1.3`, use "bare" with the sectionFormat attribute:
 
 When **sectionFormat** is not set at all, the output is the same as "of".
 
-# Linking to multiple sections within a document 
+## Citing multiple sections within a document 
 For example, `See Sections 3 and 4.`
 
 Use [**\<xref\>**](/rfcxml-vocabulary#xref) with the format attribute. For example, assuming the anchors for the relevant sections match the targets:
@@ -271,7 +181,7 @@ yields the output:
   See <a href="#s_using_refs">Using References</a> and 
   <a href="#s_using_lists">Using Lists.</a>
 ```
-# Linking to multiple sections in a different document 
+## Citing multiple sections in a different document 
 For example, 'see Sections 5 and 6 in RFC 3550'.
 
 Use [**\<xref\>**](/rfcxml-vocabulary#xref) with sectionFormat="bare". For example:
@@ -286,6 +196,71 @@ See Sections <a href="https://www.rfc-editor.org/rfc/rfc3550#section-5">5</a>
 and <a href="https://www.rfc-editor.org/rfc/rfc3550#section-6">6</a> in 
 [<a href="#RFC3550">RFC3550</a>].
 ```
+
+
+# Changing all reference tags from symbolic to numeric
+For example, `[1]` instead of `[RFC2119]`
+
+In the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, set the attribute **symRefs** to "false" for symbolic references. This makes reference tags be numeric, e.g., `[1]`, instead of symbolic, e.g., `[RFC2119]`.
+
+# Changing a reference tag to use a nickname
+For example, `[IKEv2]` instead of `[RFC4306]`
+
+Use the [**\<displayreference\>**](/rfcxml-vocabulary#displayreference) element and set the **to** attribute to the nickname. Tip: place it before the first references element. For example:
+```xml
+<displayreference target="RFC7296" to="IKEv2"/>
+<references>
+[...]
+<xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7296.xml"/>
+```
+yields:
+```
+  [IKEv2]    Kaufman, C., Hoffman, P., Nir, Y., Eronen, P., and T. 
+             Kivinen, "Internet Key Exchange Protocol Version 2 
+             (IKEv2)", STD 79, RFC 7296, DOI 10.17487/RFC7296, 
+             October 2014, <https://www.rfc-editor.org/info/rfc7296>.
+```
+# Listing references in alphabetical order
+
+In the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, set the attribute **sortRefs** to "true". Note that **sortRefs** only has an effect if **symRefs** is "true".
+
+
+# Two sections: Normative and Informative References
+
+Use the [**\<name\>**](/rfcxml-vocabulary#name) element (child of the [**\<references\>**](/rfcxml-vocabulary#references) element) as follows:
+```xml
+<back>
+  <references>
+    <name>References</name>
+    <references>
+      <name>Normative References</name>
+      ...
+    </references>
+    <references>
+      <name>Informative References</name>
+      ...
+    </references>
+  </references>
+</back>
+```
+```
+# Cross-referencing to another section
+
+Make sure the section you want to reference has an **anchor** attribute. For example:
+```xml
+   <section anchor="s_using_lists">
+```
+Then, refer to it with an [**\<xref\>**](/rfcxml-vocabulary#xref) element:
+```xml
+  See <xref target="s_using_lists" />.
+```
+which yields
+```html
+  See <a href="#s_using_lists">Section 4.</a>
+```
+(where the number of that section is determined dynamically).
+
+
 
 # Supporting tools
 

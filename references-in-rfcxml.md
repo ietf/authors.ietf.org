@@ -2,7 +2,7 @@
 title: References in RFCXML
 description: 
 published: true
-date: 2025-09-04T03:41:49.869Z
+date: 2025-09-04T03:56:36.239Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T23:45:18.949Z
@@ -35,7 +35,7 @@ If you want to point to a specific version of an I-D, the draft string should in
 ```xml
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.daley-meeting-network-requirements-00.xml"/>
 ```
-That creates the anchor `I-D.daley-meeting-network-requirements`.
+That creates the anchor `I-D.daley-meeting-network-requirements` even if a specific version is referenced.
 
 ### Library references to BCPs and STDs
 References to BCPs and STDs are added in a similar way to RFCs:
@@ -100,7 +100,87 @@ An example of a reference written by an organisation is:
 </reference>
 ```
 
-## Referencing a URL
+# Citing a reference
+To cite a reference in your text, use an [**\<xref\>**](/rfcxml-vocabulary#xref) element where the value of its target attribute corresponds to the value of the anchor attribute of the reference element, e.g., `<xref target="RFC2119" />`. For references constructed with  `xi:include`, the values of the anchors are explained above.
+
+
+## Citing a section in the same document
+Make sure the section you want to reference has an **anchor** attribute. For example:
+```xml
+   <section anchor="s_using_lists">
+```
+Then, refer to it with an [**\<xref\>**](/rfcxml-vocabulary#xref) element:
+```xml
+  See <xref target="s_using_lists" />.
+```
+which yields
+```html
+  See <a href="#s_using_lists">Section 4.</a>
+```
+(where the number of that section is determined dynamically).
+
+## Citing multiple sections in the same document 
+For example, `See Sections 3 and 4.`
+
+Use [**\<xref\>**](/rfcxml-vocabulary#xref) with the format attribute. For example, assuming the anchors for the relevant sections match the targets:
+```xml
+  See Sections <xref target="s_using_refs" format="counter" /> and
+  <xref target="s_using_lists" format="counter" />.
+```
+yields the output:
+```html
+See Sections <a href="#s_using_refs">3</a> and <a href="#s_using_lists">4</a>.
+```
+Note: The **format** attribute can have the value "title", which displays the title of the section. For example,
+```xml
+  See Sections <xref target="s_using_refs" format="title" /> and
+  <xref target="s_using_lists" format="title" />.
+```
+yields the output:
+```html
+  See <a href="#s_using_refs">Using References</a> and 
+  <a href="#s_using_lists">Using Lists.</a>
+```
+## Citing a section in a different document
+
+Use [**\<xref\>**](/rfcxml-vocabulary#xref) and set the **sectionFormat** attribute to various options.
+
+To construct `See Section 1.3 of [RFC7991]`, use "of" with the sectionFormat attribute:
+```xml
+   See <xref target="RFC7991" sectionFormat="of" section="1.3" />
+```
+To construct `See [RFC7991], Section 1.3`, use "comma" with the sectionFormat attribute:
+```xml
+   See <xref target="RFC7991" sectionFormat="comma" section="1.3" />
+```
+To construct `See [RFC7991] (Section 1.3)`, use "parens" with the sectionFormat attribute:
+```xml
+   See <xref target="RFC7991" sectionFormat="parens" section="1.3" />
+```
+To construct `See 1.3`, use "bare" with the sectionFormat attribute:
+```xml
+   See <xref target="RFC7991" sectionFormat="bare" section="1.3" />
+```
+
+When **sectionFormat** is not set at all, the output is the same as "of".
+
+## Citing multiple sections in a different document 
+For example, 'see Sections 5 and 6 in RFC 3550'.
+
+Use [**\<xref\>**](/rfcxml-vocabulary#xref) with sectionFormat="bare". For example:
+```xml
+See Sections <xref target="RFC3550" section="5" sectionFormat="bare" /> and
+<xref target="RFC3550" section="6" sectionFormat="bare" /> in
+<xref target="RFC3550"/>.
+```
+yields the output:
+```html
+See Sections <a href="https://www.rfc-editor.org/rfc/rfc3550#section-5">5</a> 
+and <a href="https://www.rfc-editor.org/rfc/rfc3550#section-6">6</a> in 
+[<a href="#RFC3550">RFC3550</a>].
+```
+
+## Citing a source by URL
 The [**\<eref\>**](/rfcxml-vocabulary#eref) element for an external reference creates a link in the HTML output. For example:
 ```xml
 <eref target="https://www.w3.org" />
@@ -131,79 +211,14 @@ yields
 ```
   [W3C]     "World Wide Web Consortium (W3C)", <https://www.w3.org/>.
 ```
-
-# Citing a reference
-To cite a reference in your text, use an [**\<xref\>**](/rfcxml-vocabulary#xref) element where the value of its target attribute corresponds to the value of the anchor attribute of the reference element, e.g., `<xref target="RFC2119" />`. For references constructed with  `xi:include`, the values of the anchors are explained above.
-
-
-## Citing a section in another document such as another RFC
-
-Use [**\<xref\>**](/rfcxml-vocabulary#xref) and set the **sectionFormat** attribute to various options.
-
-To construct `See Section 1.3 of [RFC7991]`, use "of" with the sectionFormat attribute:
-```xml
-   See <xref target="RFC7991" sectionFormat="of" section="1.3" />
-```
-To construct `See [RFC7991], Section 1.3`, use "comma" with the sectionFormat attribute:
-```xml
-   See <xref target="RFC7991" sectionFormat="comma" section="1.3" />
-```
-To construct `See [RFC7991] (Section 1.3)`, use "parens" with the sectionFormat attribute:
-```xml
-   See <xref target="RFC7991" sectionFormat="parens" section="1.3" />
-```
-To construct `See 1.3`, use "bare" with the sectionFormat attribute:
-```xml
-   See <xref target="RFC7991" sectionFormat="bare" section="1.3" />
-```
-
-When **sectionFormat** is not set at all, the output is the same as "of".
-
-## Citing multiple sections within a document 
-For example, `See Sections 3 and 4.`
-
-Use [**\<xref\>**](/rfcxml-vocabulary#xref) with the format attribute. For example, assuming the anchors for the relevant sections match the targets:
-```xml
-  See Sections <xref target="s_using_refs" format="counter" /> and
-  <xref target="s_using_lists" format="counter" />.
-```
-yields the output:
-```html
-See Sections <a href="#s_using_refs">3</a> and <a href="#s_using_lists">4</a>.
-```
-Note: The **format** attribute can have the value "title", which displays the title of the section. For example,
-```xml
-  See Sections <xref target="s_using_refs" format="title" /> and
-  <xref target="s_using_lists" format="title" />.
-```
-yields the output:
-```html
-  See <a href="#s_using_refs">Using References</a> and 
-  <a href="#s_using_lists">Using Lists.</a>
-```
-## Citing multiple sections in a different document 
-For example, 'see Sections 5 and 6 in RFC 3550'.
-
-Use [**\<xref\>**](/rfcxml-vocabulary#xref) with sectionFormat="bare". For example:
-```xml
-See Sections <xref target="RFC3550" section="5" sectionFormat="bare" /> and
-<xref target="RFC3550" section="6" sectionFormat="bare" /> in
-<xref target="RFC3550"/>.
-```
-yields the output:
-```html
-See Sections <a href="https://www.rfc-editor.org/rfc/rfc3550#section-5">5</a> 
-and <a href="https://www.rfc-editor.org/rfc/rfc3550#section-6">6</a> in 
-[<a href="#RFC3550">RFC3550</a>].
-```
-
-
-# Changing all reference tags from symbolic to numeric
+# Advanced configuration
+## Customising reference tags
+### Changing all reference tags from symbolic to numeric
 For example, `[1]` instead of `[RFC2119]`
 
 In the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, set the attribute **symRefs** to "false" for symbolic references. This makes reference tags be numeric, e.g., `[1]`, instead of symbolic, e.g., `[RFC2119]`.
 
-# Changing a reference tag to use a nickname
+### Changing a reference tag to use a nickname
 For example, `[IKEv2]` instead of `[RFC4306]`
 
 Use the [**\<displayreference\>**](/rfcxml-vocabulary#displayreference) element and set the **to** attribute to the nickname. Tip: place it before the first references element. For example:
@@ -220,7 +235,7 @@ yields:
              (IKEv2)", STD 79, RFC 7296, DOI 10.17487/RFC7296, 
              October 2014, <https://www.rfc-editor.org/info/rfc7296>.
 ```
-# Listing references in alphabetical order
+## Listing references in alphabetical order
 
 In the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, set the attribute **sortRefs** to "true". Note that **sortRefs** only has an effect if **symRefs** is "true".
 
@@ -243,23 +258,6 @@ Use the [**\<name\>**](/rfcxml-vocabulary#name) element (child of the [**\<refer
   </references>
 </back>
 ```
-```
-# Cross-referencing to another section
-
-Make sure the section you want to reference has an **anchor** attribute. For example:
-```xml
-   <section anchor="s_using_lists">
-```
-Then, refer to it with an [**\<xref\>**](/rfcxml-vocabulary#xref) element:
-```xml
-  See <xref target="s_using_lists" />.
-```
-which yields
-```html
-  See <a href="#s_using_lists">Section 4.</a>
-```
-(where the number of that section is determined dynamically).
-
 
 
 # Supporting tools

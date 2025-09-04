@@ -2,30 +2,57 @@
 title: References in RFCXML
 description: 
 published: true
-date: 2021-11-17T10:02:08.318Z
+date: 2025-09-04T03:10:50.127Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-04T23:45:18.949Z
 ---
 
 # Introduction
-RFCXML uses references that are encoded in a format called BibXML, as defined in RFC 7991. To simplify the process of inserting references, the IETF maintains a set of online citation libraries as follows:
-* For RFCs the official site is [rfc-editor.org](https://rfc-editor.org/). The information page for each RFC has a link to the BibXML file.
-* For RFCs, Internet-Drafts, and documents produced by the W3C, 3GPP, IANA and NIST, the new site is [bib.ietf.org](https://bib.ietf.org) (at the time of writing, this site has only just gone live and some usability issues are still to be resolved). Many of these sets of references can be downloaded as a set for offline access.
+RFCXML supports references through the [**\<reference\>**](/rfcxml-vocabulary#reference) and [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) elements. 
+
+# Libraries of pre-built references
+To simplify the process of inserting references, the IETF maintains libraries of pre-built reference files for RFCs and Internet-Drafts, and for documents produced by the W3C, 3GPP, IANA and NIST, on the site [bib.ietf.org](https://bib.ietf.org). These pre-built references files are referred to as BibXML files though they are only XML excerpts, not fully XML documents.
+
+In addition, for RFCs the information page for each RFC on [rfc-editor.org](https://rfc-editor.org/) has a link to the BibXML file.
 
 # Inserting references from a library
-Use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section that points to a citation in the library as follows. The following creates a reference to an RFC:
+Use an `xi:include` in the [**\<references\>**](/rfcxml-vocabulary#references) section that points to a citation in the library as follows. 
+
+## References to RFCs
+The following creates a reference to an RFC:
 ```xml
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml"/>
 ```
+That creates the anchor `RFC2119` that can be used in an [**\<xref\>**](/rfcxml-vocabulary#xref) such as `"See <xref target="RFC2119"/>`
+
+## References to Internet-Drafts
 For an Internet-Draft, the citation filename uses the draft string. Note there are two ways to create the URL. The first way, where the draft string is constructed as "I-D.<name without "draft-" or the version number>", will point to the most current version of the I-D, for example:
 ```xml
-<xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-wgname-topic.xml"/>
+<xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.daley-meeting-network-requirements.xml"/>
 ```
-This is helpful if you do not want to track and update the reference entry each time the I-D is updated. However, if you want to point to a specific version of an I-D, the draft string should include both "draft-" and the version number. For example: 
+If you want to point to a specific version of an I-D, the draft string should include both "draft-" and the version number. For example: 
 ```xml
-<xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.draft-ietf-wgname-topic-17.xml"/>
+<xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.daley-meeting-network-requirements-00.xml"/>
 ```
+That creates the anchor `I-D.daley-meeting-network-requirements` that can be used in an [**\<xref\>**](/rfcxml-vocabulary#xref) such as `"See <xref target="I-D.daley-meeting-network-requirements"/>`
+
+## References to BCPs and STDs
+References to BCPs and STDs are added in a similar way to RFCs:
+```xml
+ <xi:include href="https://bib.ietf.org/public/rfc/bibxml-rfcsubseries/reference.BCP.14.xml"/>
+```
+That creates the anchor `BCP14` that can be used in an [**\<xref\>**](/rfcxml-vocabulary#xref) such as `"See <xref target="BCP14"/>`
+
+**Please note** that BCP and STD references are implemented as a [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) element that contains within it full [**\<reference\>**](/rfcxml-vocabulary#reference) elements for each of the RFCs that makes up that BCP or STD.  This automatically adds them as references and so they do not need to be added separately (doing so will give an XML error).
+
+## References to W3C, 3GPP, IANA and NIST documents
+These are found individually by searching on the [bib.ietf.org](https://bib.ietf.org) site. (The UI is not very friendly and is due to be replaced).  For example, searching that site for "W3C XSLT" leads to a reference that is then included as:
+```xml
+ <xi:include href="https://bib.ietf.org/public/rfc/bibxml4/reference.W3C.xslt.xml"/>
+```
+That creates the anchor `W3C.xslt` that can be used in an [**\<xref\>**](/rfcxml-vocabulary#xref) such as `"See <xref target="W3C.xslt"/>`
+
 
 # Inserting references manually
 The following complete example is for an RFC (verbatim contents of [https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml](https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml)). Full references should only be used where an `xi:include` cannot be used, or where the authors wish to specify different BibXML from that supplied in the citation libraries:

@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2025-09-04T02:20:56.456Z
+date: 2025-09-08T02:37:39.026Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -1883,7 +1883,7 @@ TBD
 #### stream
 Deprecated. Use the [**\<stream\>**](/rfcxml-vocabulary#stream) element instead.
 
-Possible values: "IETF", "IAB", "IRTF", "independent"
+Possible values: "IETF", "IAB", "IRTF", "independent", "editorial"
 
 #### value
 Required.
@@ -1906,7 +1906,7 @@ The name in the value should be the document name without any file extension.
        attribute asciiName { text }?,
        attribute asciiValue { text }?,
        attribute status { text }?,
-       attribute stream { "IETF" | "IAB" | "IRTF" | "independent" }?,
+       attribute stream { "IETF" | "IAB" | "IRTF" | "independent" | "editorial" }?,
        empty
      }
 ```
@@ -2015,13 +2015,13 @@ Another example can be found at [https://www.rfc-editor.org/rfc/rfc8689.html#sec
 Indicates which stream an RFC belongs to.
 
 Used in: [**\<reference\>**](/rfcxml-vocabulary#reference).
-Allowed content: ( "IETF" | "IAB" | "IRTF" | "independent" )?
+Allowed content: ( "IETF" | "IAB" | "IRTF" | "independent" | "editorial" )?
 
 ### Schema
 ```
    stream = 
      element stream {
-       ( "IETF" | "IAB" | "IRTF" | "independent" )?
+       ( "IETF" | "IAB" | "IRTF" | "independent" | "editorial" )?
    }
 ```
 

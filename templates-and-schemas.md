@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2025-10-01T01:59:27.988Z
+date: 2025-10-01T02:24:50.190Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -63,15 +63,15 @@ If you wish to use additional character entities then the recommended method is 
 The following legacy files are for those working with old I-Ds or RFCs and should not be used for any new I-Ds.
 
 ### rfc7991.rnc
-[rfc7991.rnc](https://github.com/ietf-tools/legacy-templates-and-schemas/raw/main/rfc7991.rnc) is the RelaxNG Compact Schema for the first release of v3 of RFCXML as documented in RFC7991.  Use [rfc7991bis.rnc](#rfc7991bisrnc) instead.
+[rfc7991.rnc](https://raw.githubusercontent.com/ietf-tools/RFCXML/refs/heads/main/legacy/rfc7991.rnc) is the RelaxNG Compact Schema for the first release of v3 of RFCXML as documented in RFC7991.  Use [rfc7991bis.rnc](#rfc7991bisrnc) instead.
 ### rfc7749.rnc
-[rfc7749.rnc](https://github.com/ietf-tools/legacy-templates-and-schemas/raw/main/rfc7749.rnc) is the RelaxNG Compact Schema for v2 of RFCXML as documented in RFC7749.  When originally published, this file was called v2.rnc.
+[rfc7749.rnc](https://raw.githubusercontent.com/ietf-tools/RFCXML/refs/heads/main/legacy/rfc7749.rnc) is the RelaxNG Compact Schema for v2 of RFCXML as documented in RFC7749.  When originally published, this file was called v2.rnc.
 ### rfc2629-other.ent
-[rfc2629-other.ent](https://github.com/ietf-tools/legacy-templates-and-schemas/raw/main/rfc2629-other.ent) is a small set of character entities.  This file is no longer needed as the [special processing of non-ASCII character](/upgrading-from-v2#special-processing-of-non-ascii-characters) has been superseded by direct support for [non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml).
+[rfc2629-other.ent](https://raw.githubusercontent.com/ietf-tools/RFCXML/refs/heads/main/legacy/rfc2629-other.ent) is a small set of character entities.  This file is no longer needed as the [special processing of non-ASCII character](/upgrading-from-v2#special-processing-of-non-ascii-characters) has been superseded by direct support for [non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml).
 ### rfc2629-xhtml.ent
-[rfc2629-xhtml.ent](https://github.com/ietf-tools/legacy-templates-and-schemas/raw/main/rfc2629-xhtml.ent) is a larger set of character entities. This file is no longer needed as the [special processing of non-ASCII character](/upgrading-from-v2#special-processing-of-non-ascii-characters) has been superseded by direct support for[non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml).
+[rfc2629-xhtml.ent](https://raw.githubusercontent.com/ietf-tools/RFCXML/refs/heads/main/legacy/rfc2629-xhtml.ent) is a larger set of character entities. This file is no longer needed as the [special processing of non-ASCII character](/upgrading-from-v2#special-processing-of-non-ascii-characters) has been superseded by direct support for[non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml).
 ### rfc2629.dtd
-[rfc2629.dtd](https://github.com/ietf-tools/legacy-templates-and-schemas/raw/main/rfc2629.dtd) is the DTD for v1 of RFCXML as documented in RFC2629.
+[rfc2629.dtd](https://raw.githubusercontent.com/ietf-tools/RFCXML/refs/heads/main/legacy/rfc2629.dtd) is the DTD for v1 of RFCXML as documented in RFC2629.
 
 
 # Markdown

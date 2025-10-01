@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2025-10-01T01:57:51.285Z
+date: 2025-10-01T01:59:27.988Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -16,13 +16,13 @@ To use one of these templates you will also need to download both of the schemas
 {.is-warning}
 
 ### draft-rfcxml-general-template-standard-00.xml
-[draft-rfcxml-general-template-standard-00.xml](https://github.com/ietf-tools/RFCXML/templates/raw/main/draft-rfcxml-general-template-standard-00.xml) is an RFCXML template that includes examples of the most commonly used features of RFCXML with comments explaining how to customise them.  This template can be quickly turned into an I-D by editing the examples provided. 
+[draft-rfcxml-general-template-standard-00.xml](https://raw.githubusercontent.com/ietf-tools/RFCXML/refs/heads/main/templates/draft-rfcxml-general-template-standard-00.xml) is an RFCXML template that includes examples of the most commonly used features of RFCXML with comments explaining how to customise them.  This template can be quickly turned into an I-D by editing the examples provided. 
 
 ### draft-rfcxml-general-template-bare-00.xml
-[draft-rfcxml-general-template-bare-00.xml](https://github.com/ietf-tools/RFCXML/templates/raw/main/draft-rfcxml-general-template-bare-00.xml) is an RFCXML template for experienced authors who want to start from the barest template possible. This template validates correctly but is not a valid I-D as many key sections are missing.
+[draft-rfcxml-general-template-bare-00.xml](https://raw.githubusercontent.com/ietf-tools/RFCXML/refs/heads/main/templates/draft-rfcxml-general-template-bare-00.xml) is an RFCXML template for experienced authors who want to start from the barest template possible. This template validates correctly but is not a valid I-D as many key sections are missing.
 
 ### draft-rfcxml-general-template-annotated-00.xml
-[draft-rfcxml-general-template-annotated-00.xml](https://github.com/ietf-tools/RFCXML/templates/raw/main/draft-rfcxml-general-template-annotated-00.xml) is an RFCXML template that includes examples for almost all of the features of RFCXML and many examples of how to achieve specific formatting, along with ample comments to explain the examples.
+[draft-rfcxml-general-template-annotated-00.xml](https://raw.githubusercontent.com/ietf-tools/RFCXML/refs/heads/main/templates/draft-rfcxml-general-template-annotated-00.xml) is an RFCXML template that includes examples for almost all of the features of RFCXML and many examples of how to achieve specific formatting, along with ample comments to explain the examples.
 
 ## Schemas
 

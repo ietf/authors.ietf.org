@@ -2,7 +2,7 @@
 title: Templates and schemas
 description: 
 published: true
-date: 2023-10-17T11:48:14.913Z
+date: 2025-10-01T01:57:51.285Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T10:07:09.043Z
@@ -16,25 +16,25 @@ To use one of these templates you will also need to download both of the schemas
 {.is-warning}
 
 ### draft-rfcxml-general-template-standard-00.xml
-[draft-rfcxml-general-template-standard-00.xml](https://github.com/ietf-tools/rfcxml-templates-and-schemas/raw/main/draft-rfcxml-general-template-standard-00.xml) is an RFCXML template that includes examples of the most commonly used features of RFCXML with comments explaining how to customise them.  This template can be quickly turned into an I-D by editing the examples provided. 
+[draft-rfcxml-general-template-standard-00.xml](https://github.com/ietf-tools/RFCXML/templates/raw/main/draft-rfcxml-general-template-standard-00.xml) is an RFCXML template that includes examples of the most commonly used features of RFCXML with comments explaining how to customise them.  This template can be quickly turned into an I-D by editing the examples provided. 
 
 ### draft-rfcxml-general-template-bare-00.xml
-[draft-rfcxml-general-template-bare-00.xml](https://github.com/ietf-tools/rfcxml-templates-and-schemas/raw/main/draft-rfcxml-general-template-bare-00.xml) is an RFCXML template for experienced authors who want to start from the barest template possible. This template validates correctly but is not a valid I-D as many key sections are missing.
+[draft-rfcxml-general-template-bare-00.xml](https://github.com/ietf-tools/RFCXML/templates/raw/main/draft-rfcxml-general-template-bare-00.xml) is an RFCXML template for experienced authors who want to start from the barest template possible. This template validates correctly but is not a valid I-D as many key sections are missing.
 
 ### draft-rfcxml-general-template-annotated-00.xml
-[draft-rfcxml-general-template-annotated-00.xml](https://github.com/ietf-tools/rfcxml-templates-and-schemas/raw/main/draft-rfcxml-general-template-annotated-00.xml) is an RFCXML template that includes examples for almost all of the features of RFCXML and many examples of how to achieve specific formatting, along with ample comments to explain the examples.
+[draft-rfcxml-general-template-annotated-00.xml](https://github.com/ietf-tools/RFCXML/templates/raw/main/draft-rfcxml-general-template-annotated-00.xml) is an RFCXML template that includes examples for almost all of the features of RFCXML and many examples of how to achieve specific formatting, along with ample comments to explain the examples.
 
 ## Schemas
 
 ### rfc7991bis.rnc
-[rfc7991bis.rnc](https://github.com/ietf-tools/rfcxml-templates-and-schemas/raw/main/rfc7991bis.rnc) is the RelaxNG Compact Schema for the current version of RFCXML.  XML editors that validate against a schema and which support schema-aware editing, require a local copy of this schema and the following processing instruction in the RFCXML file:
+[rfc7991bis.rnc](https://github.com/ietf-tools/RFCXML/raw/main/rfc7991bis.rnc) is the RelaxNG Compact Schema for the current version of RFCXML.  XML editors that validate against a schema and which support schema-aware editing, require a local copy of this schema and the following processing instruction in the RFCXML file:
 ```xml
 <?xml-model href="rfc7991bis.rnc"?>
 ```
 All of the templates above aleady have this processing instruction included and so will support schema validation and schema-aware editing out of the box.
 
 ### SVG-1.2-RFC.rnc
-[SVG-1.2-RFC.rnc](https://github.com/ietf-tools/rfcxml-templates-and-schemas/raw/main/SVG-1.2-RFC.rnc) is the RelaxNG Compact schema for the subset of SVG allowed in RFCXML documents (SVG 1.2 RFC).  This schema is referenced in rfc7991bis.rnc and so no specific processing instruction is required to include it but a local copy must be present. 
+[SVG-1.2-RFC.rnc](https://github.com/ietf-tools/RFCXML/raw/main/SVG-1.2-RFC.rnc) is the RelaxNG Compact schema for the subset of SVG allowed in RFCXML documents (SVG 1.2 RFC).  This schema is referenced in rfc7991bis.rnc and so no specific processing instruction is required to include it but a local copy must be present. 
 
 ## Character entities
 In XML a character entity is a way of using a name in the XML, such as `&nbhy;` in place of the character itself (in this example the 'non-breaking hyphen' character).

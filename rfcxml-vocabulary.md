@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2025-09-08T02:37:39.026Z
+date: 2025-10-20T23:08:22.460Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -1012,10 +1012,10 @@ TBD
 ### Usage
 Represents the Front part of the document including the Author Information, the Abstract, and additional notes.
 
-A [**\<front\>**](/rfcxml-vocabulary#front) element may have more than one [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) element. Each should contain a **name** attribute with the series name and a **value** attribute with the series number; other uses of [**\<front\>**](/rfcxml-vocabulary#front)[**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) described in RFC7991 are deprecated.
+A [**\<front\>**](/rfcxml-vocabulary#front) element may have more than one [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesinfo) element. Each should contain a **name** attribute with the series name and a **value** attribute with the series number; other uses of [**\<front\>**](/rfcxml-vocabulary#front)[**\<seriesInfo\>**](/rfcxml-vocabulary#seriesinfo) described in RFC7991 are deprecated.
 
 Used in: [**\<reference\>**](/rfcxml-vocabulary#reference) and [**\<rfc\>**](/rfcxml-vocabulary#rfc).
-Allowed content: [**\<title\>**](/rfcxml-vocabulary#title), [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo)\*, [**\<author\>**](/rfcxml-vocabulary#author)+, [**\<date\>**](/rfcxml-vocabulary#date)?, [**\<area\>**](/rfcxml-vocabulary#area)\*, [**\<workgroup\>**](/rfcxml-vocabulary#workgroup)\*, [**\<keyword\>**](/rfcxml-vocabulary#keyword)\*, [**\<abstract\>**](/rfcxml-vocabulary#abstract)?, [**\<note\>**](/rfcxml-vocabulary#note)\*, [**\<boilerplate\>**](/rfcxml-vocabulary#boilerplate)?, [**\<toc\>**](/rfcxml-vocabulary#toc)?
+Allowed content: [**\<title\>**](/rfcxml-vocabulary#title), [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesinfo)\*, [**\<author\>**](/rfcxml-vocabulary#author)+, [**\<date\>**](/rfcxml-vocabulary#date)?, [**\<area\>**](/rfcxml-vocabulary#area)\*, [**\<workgroup\>**](/rfcxml-vocabulary#workgroup)\*, [**\<keyword\>**](/rfcxml-vocabulary#keyword)\*, [**\<abstract\>**](/rfcxml-vocabulary#abstract)?, [**\<note\>**](/rfcxml-vocabulary#note)\*, [**\<boilerplate\>**](/rfcxml-vocabulary#boilerplate)?, [**\<toc\>**](/rfcxml-vocabulary#toc)?
 
 ### Schema
 ```
@@ -1858,9 +1858,9 @@ Default value: "default"
 ### Usage
 Specifies the document series in which this document appears, and also specifies an identifier within that series.
 
-A processing tool determines whether it is working on an RFC or an Internet-Draft by inspecting the **name** attribute of a [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) element inside the [**\<front\>**](/rfcxml-vocabulary#front) element inside the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, looking for "RFC" or "Internet-Draft". (Specifying neither value in any of the [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) elements can be useful for producing other types of documents but is out of scope for this specification.)
+A processing tool determines whether it is working on an RFC or an Internet-Draft by inspecting the **name** attribute of a [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesinfo) element inside the [**\<front\>**](/rfcxml-vocabulary#front) element inside the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element, looking for "RFC" or "Internet-Draft". (Specifying neither value in any of the [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesinfo) elements can be useful for producing other types of documents but is out of scope for this specification.)
 
-It is invalid to have multiple [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) elements inside the same [**\<front\>**](/rfcxml-vocabulary#front) element containing the same **name** value. Some combinations of [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) **name** attribute values make no sense, such as having both `<seriesInfo name="rfc"/>` and `<seriesInfo name="Internet-Draft"/>` in the same [**\<front\>**](/rfcxml-vocabulary#front) element.
+It is invalid to have multiple [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesinfo) elements inside the same [**\<front\>**](/rfcxml-vocabulary#front) element containing the same **name** value. Some combinations of [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesinfo) **name** attribute values make no sense, such as having both `<seriesInfo name="rfc"/>` and `<seriesInfo name="Internet-Draft"/>` in the same [**\<front\>**](/rfcxml-vocabulary#front) element.
 
 Used in: [**\<front\>**](/rfcxml-vocabulary#front) and [**\<reference\>**](/rfcxml-vocabulary#reference).
 Allowed content: empty

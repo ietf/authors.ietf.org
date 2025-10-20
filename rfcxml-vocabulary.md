@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2025-10-20T23:08:22.460Z
+date: 2025-10-20T23:25:00.182Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -26,7 +26,7 @@ Contains the Abstract of the document. See RFC7322 for more information on restr
 Used in: [**\<front\>**](/rfcxml-vocabulary#front)
 Allowed content: ([**\<dl\>**](/rfcxml-vocabulary#dl), [**\<ol\>**](/rfcxml-vocabulary#ol), [**\<t\>**](/rfcxml-vocabulary#t), [**\<ul\>**](/rfcxml-vocabulary#ul))+
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 ### Schema
@@ -125,7 +125,7 @@ If more than one [**\<artwork\>**](/rfcxml-vocabulary#artwork) element with the 
 Used in: [**\<aside\>**](/rfcxml-vocabulary#aside), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<figure\>**](/rfcxml-vocabulary#figure), [**\<li\>**](/rfcxml-vocabulary#li), [**\<section\>**](/rfcxml-vocabulary#section), [**\<td\>**](/rfcxml-vocabulary#td), [**\<th\>**](/rfcxml-vocabulary#th)
 Allowed content: [**\<artwork\>**](/rfcxml-vocabulary#artwork)+
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 ### Schema
@@ -183,7 +183,7 @@ Formatters that do pagination should attempt to keep artwork on a single page. T
 Used in: [**\<artset\>**](/rfcxml-vocabulary#artset), [**\<aside\>**](/rfcxml-vocabulary#aside), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<figure\>**](/rfcxml-vocabulary#figure), [**\<li\>**](/rfcxml-vocabulary#li), [**\<section\>**](/rfcxml-vocabulary#section), [**\<td\>**](/rfcxml-vocabulary#td), [**\<th\>**](/rfcxml-vocabulary#th)
 Allowed content: ( [**\<text\>**](/rfcxml-vocabulary#text)\* | [**\<svg\>**](/rfcxml-vocabulary#svg) )
 
-### Attributes
+---
 #### align
 Controls whether the artwork appears left justified, centered, or right justified.
 
@@ -250,7 +250,7 @@ This element is a container for content that is semantically less important or t
 Used in: [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<section\>**](/rfcxml-vocabulary#section)
 Allowed content: ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<blockquote\>**](/rfcxml-vocabulary#blockquote) | [**\<dl\>**](/rfcxml-vocabulary#dl) | [**\<figure\>**](/rfcxml-vocabulary#figure) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<ol\>**](/rfcxml-vocabulary#ol) | [**\<t\>**](/rfcxml-vocabulary#t) | [**\<table\>**](/rfcxml-vocabulary#table) | [**\<ul\>**](/rfcxml-vocabulary#ul) )*
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 ### Schema
@@ -288,7 +288,7 @@ Furthermore, the **role** attribute can be used to mark an author as "editor". T
 Used in: [**\<front\>**](/rfcxml-vocabulary#front), [**\<section\>**](/rfcxml-vocabulary#section)
 Allowed content: [**\<organization\>**](/rfcxml-vocabulary#organization)?, [**\<address\>**](/rfcxml-vocabulary#address)?
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 
@@ -379,7 +379,7 @@ Specifies that a block of text is a quotation.
 Used in: [**\<aside\>**](/rfcxml-vocabulary#aside), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<li\>**](/rfcxml-vocabulary#li), [**\<section\>**](/rfcxml-vocabulary#section)
 Allowed content: ( ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<dl\>**](/rfcxml-vocabulary#dl) | [**\<figure\>**](/rfcxml-vocabulary#figure) | [**\<ol\>**](/rfcxml-vocabulary#ol) | [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) | [**\<t\>**](/rfcxml-vocabulary#t) | [**\<ul\>**](/rfcxml-vocabulary#ul) )+ | ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>**](/rfcxml-vocabulary#br) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<u\>**](/rfcxml-vocabulary#u) | [**\<xref\>**](/rfcxml-vocabulary#xref) )+ )
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 
@@ -460,7 +460,7 @@ Gives the city name in a postal address.
 Used in: [**\<postal\>**](/rfcxml-vocabulary#postal)
 Allowed content: text
 
-### Attributes
+---
 #### "ascii"
 
 The ASCII equivalent of the [**\<city\>**](/rfcxml-vocabulary#city) content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
@@ -483,7 +483,7 @@ Where postal addresses use city subdivisions, these are mapped to the [**\<citya
 Used in: [**\<postal\>**](/rfcxml-vocabulary#postal)
 Allowed content: text
 
-### Attributes
+---
 #### ascii 
 The ASCII equivalent of the [**\<cityarea\>**](/rfcxml-vocabulary#cityarea) content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 ### Schema
@@ -505,7 +505,7 @@ Gives the postal region code.
 Used in: [**\<postal\>**](/rfcxml-vocabulary#postal).
 Allowed content: text
 
-### Attributes
+---
 #### "ascii" 
 The ASCII equivalent of the [**\<code\>**](/rfcxml-vocabulary#code) content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 ### Schema
@@ -529,7 +529,7 @@ Note that a  [**\<contact\>**](/rfcxml-vocabulary#contact) can also be just an o
 Used in: [**\<section\>**](/rfcxml-vocabulary#section), [**\<t\>**](/rfcxml-vocabulary#t)
 Allowed content: [**\<organization\>**](/rfcxml-vocabulary#organization)?, [**\<address\>**](/rfcxml-vocabulary#address)?
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 
@@ -578,7 +578,7 @@ xml2rfc has a help option which will list all names and country codes it recogni
 Used in: [**\<postal\>**](/rfcxml-vocabulary#postal).
 Allowed content: text
 
-### Attributes
+---
 #### ascii
 The ASCII equivalent of the [**\<country\>**](/rfcxml-vocabulary#country) content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 ### Schema
@@ -602,7 +602,7 @@ Comments can be used in a document while it is work in progress. They might appe
 Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<dt\>**](/rfcxml-vocabulary#dt), [**\<em\>**](/rfcxml-vocabulary#em), [**\<li\>**](/rfcxml-vocabulary#li), [**\<name\>**](/rfcxml-vocabulary#name), [**\<strong\>**](/rfcxml-vocabulary#strong), [**\<sub\>**](/rfcxml-vocabulary#sub), [**\<sup\>**](/rfcxml-vocabulary#sup), [**\<t\>**](/rfcxml-vocabulary#t), [**\<td\>**](/rfcxml-vocabulary#td), [**\<th\>**](/rfcxml-vocabulary#th), [**\<tt\>**](/rfcxml-vocabulary#tt)
 Allowed content: ( text | [**\<br\>**](/rfcxml-vocabulary#br) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<xref\>**](/rfcxml-vocabulary#xref) )*
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 
@@ -655,7 +655,7 @@ When the prep tool is used to create Internet-Drafts, it will warn if the draft 
 Used in: [**\<front\>**](/rfcxml-vocabulary#front)
 Allowed content: text
 
-### Attributes
+---
 #### day 
 The day of publication.
 
@@ -685,7 +685,7 @@ The definition part of an entry in a definition list.
 Used in: [**\<dl\>**](/rfcxml-vocabulary#dl).
 Allowed content: ( ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<aside\>**](/rfcxml-vocabulary#aside) | [**\<blockquote\>**](/rfcxml-vocabulary#blockquote) | [**\<dl\>**](/rfcxml-vocabulary#dl) | [**\<figure\>**](/rfcxml-vocabulary#figure) | [**\<ol\>**](/rfcxml-vocabulary#ol) | [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) | [**\<t\>**](/rfcxml-vocabulary#t) | [**\<table\>**](/rfcxml-vocabulary#table) | [**\<ul\>**](/rfcxml-vocabulary#ul) )+ | ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>**](/rfcxml-vocabulary#br) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<u\>**](/rfcxml-vocabulary#u) | [**\<xref\>**](/rfcxml-vocabulary#xref) )+ )
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 ### Schema
@@ -735,7 +735,7 @@ If a reference section is sorted, this element changes the sort order.
 
 Used in: [**\<back\>**](/rfcxml-vocabulary#back).
 
-### Attributes
+---
 #### target
 Required.
 
@@ -764,7 +764,7 @@ A definition list. Each entry has a pair of elements: a term ([**\<dt\>**](/rfcx
 Used in: [**\<abstract\>**](/rfcxml-vocabulary#abstract), [**\<aside\>**](/rfcxml-vocabulary#aside), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<li\>**](/rfcxml-vocabulary#li), [**\<note\>**](/rfcxml-vocabulary#note), [**\<section\>**](/rfcxml-vocabulary#section), [**\<td\>**](/rfcxml-vocabulary#td), [**\<th\>**](/rfcxml-vocabulary#th).
 Allowed content: ( [**\<dt\>**](/rfcxml-vocabulary#dt), [**\<dd\>**](/rfcxml-vocabulary#dd) )+
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 
@@ -809,7 +809,7 @@ The term being defined in a definition list.
 
 Used in: [**\<dl\>**](/rfcxml-vocabulary#dl).
 Allowed content: ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>**](/rfcxml-vocabulary#br) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<xref\>**](/rfcxml-vocabulary#xref) )*
-### Attributes
+---
 #### anchor 
 Document-wide unique identifier for this element.
 ### Schema
@@ -876,7 +876,7 @@ Multiple email addresses are permitted.
 Used in: [**\<address\>**](/rfcxml-vocabulary#address).
 
 Allowed content: text
-### Attributes
+---
 #### ascii
 The ASCII equivalent of the author's email address. This is only used if the email address has any internationalized components.
 ### Schema
@@ -900,7 +900,7 @@ If the [**\<eref\>**](/rfcxml-vocabulary#eref) element has non-empty text conten
 Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<cref\>**](/rfcxml-vocabulary#cref), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<dt\>**](/rfcxml-vocabulary#dt), [**\<em\>**](/rfcxml-vocabulary#em), [**\<li\>**](/rfcxml-vocabulary#li), [**\<name\>**](/rfcxml-vocabulary#name), [**\<strong\>**](/rfcxml-vocabulary#strong), [**\<sub\>**](/rfcxml-vocabulary#sub), [**\<sup\>**](/rfcxml-vocabulary#sup), [**\<t\>**](/rfcxml-vocabulary#t), [**\<td\>**](/rfcxml-vocabulary#td), [**\<th\>**](/rfcxml-vocabulary#th), [**\<tt\>**](/rfcxml-vocabulary#tt), .
 Allowed content: text
 
-### Attributes
+---
 #### brackets
 
 Determines the type of brackets that an [**\<eref\>**](/rfcxml-vocabulary#eref) will be rendered with. "angle" will render with angle brackets, and "none" will render with no brackets in HTML and PDF, and with parentheses by the text renderer.
@@ -932,7 +932,7 @@ Extra address information. This element can be used for address parts more speci
 Used in: [**\<postal\>**](/rfcxml-vocabulary#postal).
 
 Allowed content: text
-### Attributes
+---
 #### ascii
 
 The ASCII equivalent of the [**\<extaddr\>**](/rfcxml-vocabulary#extaddr) content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
@@ -955,7 +955,7 @@ Contains a figure with a caption with the figure number. If the element contains
 Used in: [**\<aside\>**](/rfcxml-vocabulary#aside), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<li\>**](/rfcxml-vocabulary#li), [**\<section\>**](/rfcxml-vocabulary#section), [**\<td\>**](/rfcxml-vocabulary#td), and [**\<th\>**](/rfcxml-vocabulary#th).
 
 Allowed content: [**\<name\>**](/rfcxml-vocabulary#name)?, [**\<iref\>**](/rfcxml-vocabulary#iref)\*, ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) )+
-### Attributes
+---
 #### align
 
 Possible values: "left", "center", "right" 
@@ -1051,7 +1051,7 @@ When the prep tool is creating index content, it collects the items in a case-se
 Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<aside\>**](/rfcxml-vocabulary#aside), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<dt\>**](/rfcxml-vocabulary#dt), [**\<em\>**](/rfcxml-vocabulary#em), [**\<figure\>**](/rfcxml-vocabulary#figure), [**\<li\>**](/rfcxml-vocabulary#li), [**\<name\>**](/rfcxml-vocabulary#name), [**\<section\>**](/rfcxml-vocabulary#section), [**\<strong\>**](/rfcxml-vocabulary#strong), [**\<sub\>**](/rfcxml-vocabulary#sub), [**\<sup\>**](/rfcxml-vocabulary#sup), [**\<t\>**](/rfcxml-vocabulary#t), [**\<table\>**](/rfcxml-vocabulary#table), [**\<td\>**](/rfcxml-vocabulary#td), [**\<th\>**](/rfcxml-vocabulary#th), [**\<tt\>**](/rfcxml-vocabulary#tt), .
 Allowed content: empty
 
-### Attributes
+---
 #### item
 This attribute must be specified and must be the item to include.
 
@@ -1107,7 +1107,7 @@ A list item, used in [**\<ol\>**](/rfcxml-vocabulary#ol) and [**\<ul\>**](/rfcxm
 Used in: [**\<ol\>**](/rfcxml-vocabulary#ol) and [**\<ul\>**](/rfcxml-vocabulary#ul).
 Allowed content: ( ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<blockquote\>**](/rfcxml-vocabulary#blockquote) | [**\<dl\>**](/rfcxml-vocabulary#dl) | [**\<figure\>**](/rfcxml-vocabulary#figure) | [**\<ol\>**](/rfcxml-vocabulary#ol) | [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) | [**\<t\>**](/rfcxml-vocabulary#t) | [**\<table\>**](/rfcxml-vocabulary#table) | [**\<ul\>**](/rfcxml-vocabulary#ul) )+ | ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>**](/rfcxml-vocabulary#br) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<u\>**](/rfcxml-vocabulary#u) | [**\<xref\>**](/rfcxml-vocabulary#xref) )+ )
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 ### Schema
@@ -1162,7 +1162,7 @@ In RFC production mode, the prep tool needs to check the values for [**\<link\>*
 
 Used in: [**\<rfc\>**](/rfcxml-vocabulary#rfc).
 
-### Attributes
+---
 #### href (Required)
 The URI of the external document.
 
@@ -1238,7 +1238,7 @@ It is usually used for additional information to reviewers (Working Group inform
 Used in: [**\<front\>**](/rfcxml-vocabulary#front).
 Allowed content: [**\<name\>**](/rfcxml-vocabulary#name)?, ( [**\<dl\>**](/rfcxml-vocabulary#dl) | [**\<ol\>**](/rfcxml-vocabulary#ol) | [**\<t\>**](/rfcxml-vocabulary#t) | [**\<ul\>**](/rfcxml-vocabulary#ul) )+
 
-### Attributes
+---
 #### removeInRFC
 If **removeInRFC** is set to "true", this note is marked in the prep tool with text indicating that it should be removed before the document is published as an RFC. That text will be "This note is to be removed before publishing as an RFC."
 
@@ -1270,7 +1270,7 @@ An ordered list. The labels on the items will be either a number or a letter, de
 Used in: [**\<abstract\>**](/rfcxml-vocabulary#abstract), [**\<aside\>**](/rfcxml-vocabulary#aside), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<li\>**](/rfcxml-vocabulary#li), [**\<note\>**](/rfcxml-vocabulary#note), [**\<section\>**](/rfcxml-vocabulary#section), [**\<td\>**](/rfcxml-vocabulary#td), and [**\<th\>**](/rfcxml-vocabulary#th).
 Allowed content: [**\<li\>**](/rfcxml-vocabulary#li)+
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 
@@ -1375,7 +1375,7 @@ This information appears both in the Author's Address section and on the front p
 Used in: [**\<author\>**](/rfcxml-vocabulary#author), [**\<contact\>**](/rfcxml-vocabulary#contact)
 Allowed content: text
 
-### Attributes
+---
 #### abbrev
 Abbreviated variant of the organization name.
 
@@ -1433,7 +1433,7 @@ Represents a post office box number.
 Used in: [**\<postal\>**](/rfcxml-vocabulary#postal).
 Allowed content: text
 
-### Attributes
+---
 #### ascii
 
 The ASCII equivalent of the [**\<pobox\>**](/rfcxml-vocabulary#pobox) content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
@@ -1477,7 +1477,7 @@ Represents one line of a postal address. When more than one [**\<postalLine\>**]
 Used in: [**\<postal\>**](/rfcxml-vocabulary#postal).
 Allowed content: text
 
-### Attributes
+---
 #### ascii
 The ASCII equivalent of the [**\<postalLine\>**](/rfcxml-vocabulary#postalLine) content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 ### Schema
@@ -1537,7 +1537,7 @@ See [References in RFCXML](/references-in-rfcxml) for more information.
 Used in: [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) and [**\<references\>**](/rfcxml-vocabulary#references).
 Allowed content: [**\<stream\>**](/rfcxml-vocabulary#stream)?, [**\<front\>**](/rfcxml-vocabulary#front), ( [**\<annotation\>**](/rfcxml-vocabulary#annotation) | [**\<refcontent\>**](/rfcxml-vocabulary#refcontent) | [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) )*
 
-### Attributes
+---
 #### anchor (Required)
 Document-wide unique identifier for this element. This will be used both to label the reference in the References section and as an identifier in links to this reference entry; but this can be changed as explained in [**\<displayreference\>**](/rfcxml-vocabulary#displayreference). When used in links, this identifier cannot start with a number.
 
@@ -1576,7 +1576,7 @@ See [References in RFCXML](/references-in-rfcxml) for more information.
 Used in: [**\<references\>**](/rfcxml-vocabulary#references).
 Allowed content: [**\<reference\>**](/rfcxml-vocabulary#reference)+
 
-### Attributes
+---
 #### anchor (Required)
 Document-wide unique identifier for this element. Usually, this will be used both to label the reference group in the References section and as an identifier in links to this reference entry; but see [**\<displayreference\>**](/rfcxml-vocabulary#displayreference) for how to change this.
 
@@ -1605,7 +1605,7 @@ See [References in RFCXML](/references-in-rfcxml) for more information.
 Used in: [**\<back\>**](/rfcxml-vocabulary#back) and [**\<references\>**](/rfcxml-vocabulary#references).
 Allowed content: [**\<name\>**](/rfcxml-vocabulary#name)?, ( [**\<references\>**](/rfcxml-vocabulary#references)+ | ( [**\<reference\>**](/rfcxml-vocabulary#reference) | [**\<referencegroup\>**](/rfcxml-vocabulary#referencegroup) )* )
 
-### Attributes
+---
 #### anchor
 An optional user-supplied identifier for this set of references.
 
@@ -1633,7 +1633,7 @@ Provides the region name in a postal address.
 Used in: [**\<postal\>**](/rfcxml-vocabulary#postal).
 Allowed content: text
 
-### Attributes
+---
 #### ascii
 The ASCII equivalent of the [**\<region\>**](/rfcxml-vocabulary#region) content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 ### Schema
@@ -1654,7 +1654,7 @@ This is the root element of RFCXML.
 
 Allowed content: [**\<link\>**](/rfcxml-vocabulary#link)\*, [**\<front\>**](/rfcxml-vocabulary#front), [**\<middle\>**](/rfcxml-vocabulary#middle), [**\<back\>**](/rfcxml-vocabulary#back)?
 
-### Attributes
+---
 #### category
 Document category
 
@@ -1794,7 +1794,7 @@ Subsections are created by nesting [**\<section\>**](/rfcxml-vocabulary#section)
 Used in: [**\<back\>**](/rfcxml-vocabulary#back), [**\<boilerplate\>**](/rfcxml-vocabulary#boilerplate), [**\<middle\>**](/rfcxml-vocabulary#middle), [**\<section\>**](/rfcxml-vocabulary#section), and [**\<toc\>**](/rfcxml-vocabulary#toc).
 Allowed content: [**\<name\>**](/rfcxml-vocabulary#name)?, ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<aside\>**](/rfcxml-vocabulary#aside) | [**\<author\>**](/rfcxml-vocabulary#author) | [**\<blockquote\>**](/rfcxml-vocabulary#blockquote) | [**\<contact\>**](/rfcxml-vocabulary#contact) | [**\<dl\>**](/rfcxml-vocabulary#dl) | [**\<figure\>**](/rfcxml-vocabulary#figure) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<ol\>**](/rfcxml-vocabulary#ol) | [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) | [**\<t\>**](/rfcxml-vocabulary#t) | [**\<table\>**](/rfcxml-vocabulary#table) | [**\<ul\>**](/rfcxml-vocabulary#ul) )*, section\*
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this [**\<section\>**](/rfcxml-vocabulary#section) element.
 
@@ -1865,7 +1865,7 @@ It is invalid to have multiple [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesinf
 Used in: [**\<front\>**](/rfcxml-vocabulary#front) and [**\<reference\>**](/rfcxml-vocabulary#reference).
 Allowed content: empty
 
-### Attributes
+---
 #### asciiName
 The ASCII equivalent of the **name** attribute.
 
@@ -1919,7 +1919,7 @@ A sorting code is related to postal codes in that it is used in addresses to all
 Used in: [**\<postal\>**](/rfcxml-vocabulary#postal).
 Allowed content: text
 
-### Attributes
+---
 #### ascii
 
 The ASCII equivalent of the [**\<sortingcode\>**](/rfcxml-vocabulary#sortingcode) content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
@@ -1950,7 +1950,7 @@ Output formatters that do pagination will attempt to keep source code on a singl
 Used in: [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<figure\>**](/rfcxml-vocabulary#figure), [**\<li\>**](/rfcxml-vocabulary#li), [**\<section\>**](/rfcxml-vocabulary#section), [**\<td\>**](/rfcxml-vocabulary#td), and [**\<th\>**](/rfcxml-vocabulary#th).
 Allowed content: text
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 
@@ -2033,7 +2033,7 @@ Provides a street address.
 Used in: [**\<postal\>**](/rfcxml-vocabulary#postal).
 Allowed content: text
 
-### Attributes
+---
 #### ascii
 The ASCII equivalent of the [**\<street\>**](/rfcxml-vocabulary#street) content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 ### Schema
@@ -2144,7 +2144,7 @@ Contains a paragraph of text.
 Used in: [**\<abstract\>**](/rfcxml-vocabulary#abstract), [**\<aside\>**](/rfcxml-vocabulary#aside), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<li\>**](/rfcxml-vocabulary#li), [**\<note\>**](/rfcxml-vocabulary#note), [**\<section\>**](/rfcxml-vocabulary#section), [**\<td\>**](/rfcxml-vocabulary#td), and [**\<th\>**](/rfcxml-vocabulary#th).
 Allowed content: ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>**](/rfcxml-vocabulary#br) | [**\<contact\>**](/rfcxml-vocabulary#contact) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<u\>**](/rfcxml-vocabulary#u) | [**\<xref\>**](/rfcxml-vocabulary#xref) )*
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this paragraph.
 
@@ -2213,7 +2213,7 @@ Inside the [**\<table\>**](/rfcxml-vocabulary#table) element there is, optionall
 Used in: [**\<aside\>**](/rfcxml-vocabulary#aside), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<li\>**](/rfcxml-vocabulary#li), and [**\<section\>**](/rfcxml-vocabulary#section).
 Allowed content: [**\<name\>**](/rfcxml-vocabulary#name)?, [**\<iref\>**](/rfcxml-vocabulary#iref)\*, [**\<thead\>**](/rfcxml-vocabulary#thead)?, [**\<tbody\>**](/rfcxml-vocabulary#tbody)+, [**\<tfoot\>**](/rfcxml-vocabulary#tfoot)?
 
-### Attributes
+---
 #### align
 Controls whether the table appears left justified, centered, or right justified. The caption will be centered under the table, and the combined table and caption will be aligned according to the **align** attribute.
 
@@ -2248,7 +2248,7 @@ A container for a set of body rows for a table.
 Used in: [**\<table\>**](/rfcxml-vocabulary#table).
 Allowed content: [**\<tr\>**](/rfcxml-vocabulary#tr)+
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 ### Schema
@@ -2270,7 +2270,7 @@ A cell in a table row.
 Used in: [**\<tr\>**](/rfcxml-vocabulary#tr).
 Allowed content: ( ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<dl\>**](/rfcxml-vocabulary#dl) | [**\<figure\>**](/rfcxml-vocabulary#figure) | [**\<ol\>**](/rfcxml-vocabulary#ol) | [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) | [**\<t\>**](/rfcxml-vocabulary#t) | [**\<ul\>**](/rfcxml-vocabulary#ul) )+ | ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>**](/rfcxml-vocabulary#br) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<u\>**](/rfcxml-vocabulary#u) | [**\<xref\>**](/rfcxml-vocabulary#xref) )* )
 
-### Attributes
+---
 #### align
 Controls whether the content of the cell appears left justified, centered, or right justified. Note that "center" or "right" will probably only work well in cells with plain text; any other elements might make the contents render badly.
 
@@ -2330,7 +2330,7 @@ A container for a set of footer rows for a table.
 Used in: [**\<table\>**](/rfcxml-vocabulary#table).
 Allowed content: [**\<tr\>**](/rfcxml-vocabulary#tr)+
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 ### Schema
@@ -2352,7 +2352,7 @@ A cell in a table row. When rendered, this will normally come out in boldface; o
 Used in: [**\<tr\>**](/rfcxml-vocabulary#tr).
 Allowed content: ( ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<dl\>**](/rfcxml-vocabulary#dl) | [**\<figure\>**](/rfcxml-vocabulary#figure) | [**\<ol\>**](/rfcxml-vocabulary#ol) | [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) | [**\<t\>**](/rfcxml-vocabulary#t) | [**\<ul\>**](/rfcxml-vocabulary#ul) )+ | ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>**](/rfcxml-vocabulary#br) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<u\>**](/rfcxml-vocabulary#u) | [**\<xref\>**](/rfcxml-vocabulary#xref) )* )
 
-### Attributes
+---
 #### align
 Controls whether the content of the cell appears left justified, centered, or right justified. Note that "center" or "right" will probably only work well in cells with plain text; any other elements might make the contents render badly.
 
@@ -2408,7 +2408,7 @@ A container for a set of header rows for a table.
 Used in: [**\<table\>**](/rfcxml-vocabulary#table).
 Allowed content: [**\<tr\>**](/rfcxml-vocabulary#tr)+
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 ### Schema
@@ -2432,7 +2432,7 @@ When this element appears in the [**\<front\>**](/rfcxml-vocabulary#front) eleme
 Used in: [**\<front\>**](/rfcxml-vocabulary#front).
 Allowed content: ( text | [**\<br\>**](/rfcxml-vocabulary#br) )*
 
-### Attributes
+---
 #### abbrev
 Specifies an abbreviated variant of the document title.
 
@@ -2475,7 +2475,7 @@ A row of a table.
 Used in: [**\<tbody\>**](/rfcxml-vocabulary#tbody), [**\<tfoot\>**](/rfcxml-vocabulary#tfoot), and [**\<thead\>**](/rfcxml-vocabulary#thead).
 Allowed content: ( [**\<td\>**](/rfcxml-vocabulary#td) | [**\<th\>**](/rfcxml-vocabulary#th) )+
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 ### Schema
@@ -2528,7 +2528,7 @@ The [**\<u\>**](/rfcxml-vocabulary#u) element is required to enclose Unicode str
 Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<li\>**](/rfcxml-vocabulary#li), [**\<t\>**](/rfcxml-vocabulary#t), [**\<td\>**](/rfcxml-vocabulary#td), and [**\<th\>**](/rfcxml-vocabulary#th).
 Allowed content: text
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 
@@ -2572,7 +2572,7 @@ Used in: [**\<abstract\>**](/rfcxml-vocabulary#abstract), [**\<aside\>**](/rfcxm
 
 Allowed content: [**\<li\>**](/rfcxml-vocabulary#li)+
 
-### Attributes
+---
 #### anchor
 Document-wide unique identifier for this element.
 
@@ -2696,7 +2696,7 @@ See [References in RFCXML](/references-in-rfcxml) for more information.
 Used in: [**\<annotation\>**](/rfcxml-vocabulary#annotation), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<cref\>**](/rfcxml-vocabulary#cref), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<dt\>**](/rfcxml-vocabulary#dt), [**\<em\>**](/rfcxml-vocabulary#em), [**\<li\>**](/rfcxml-vocabulary#li), [**\<name\>**](/rfcxml-vocabulary#name), [**\<strong\>**](/rfcxml-vocabulary#strong), [**\<sub\>**](/rfcxml-vocabulary#sub), [**\<sup\>**](/rfcxml-vocabulary#sup), [**\<t\>**](/rfcxml-vocabulary#t), [**\<td\>**](/rfcxml-vocabulary#td), [**\<th\>**](/rfcxml-vocabulary#th), [**\<tt\>**](/rfcxml-vocabulary#tt).
 Allowed content: ( text | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) )*
 
-### Attributes
+---
 #### format
 Possible values: "default", "title", "counter", "none"
 Default value: "default"

@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2025-10-21T05:48:06.080Z
+date: 2025-10-21T05:48:47.082Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -27,8 +27,7 @@ Used in: [**\<front\>**](/rfcxml-vocabulary#front)
 Allowed content: ([**\<dl\>**](/rfcxml-vocabulary#dl), [**\<ol\>**](/rfcxml-vocabulary#ol), [**\<t\>**](/rfcxml-vocabulary#t), [**\<ul\>**](/rfcxml-vocabulary#ul))+
 
 ---
-#### Attributes
-##### anchor
+#### anchor
 Document-wide unique identifier for this element.
 ### Schema
 ```

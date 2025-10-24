@@ -24,6 +24,6 @@ Telephone numbers used in examples should be those numbers that were reserved fo
 UK: +44-\<geographic-area-code\>-496-\<0000-0999\>
 USA: +1-\<area code\>-555-\<0100-0199\>
 
-For USA examples, also see [ATIS-0300115](https://www.nationalnanpa.com/pdf/NRUF/ATIS-0300115.pdf).
+For USA examples, also see [ATIS-0300115](https://www.nanpa.com/sites/default/files/2024-07/ATIS-0300115.pdf).
   
 - [x] Verify that real telephone numbers are not used in examples.

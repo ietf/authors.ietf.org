@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2025-10-21T05:48:47.082Z
+date: 2025-10-27T22:43:45.218Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -808,7 +808,8 @@ Default value: "normal"
 The term being defined in a definition list.
 
 Used in: [**\<dl\>**](/rfcxml-vocabulary#dl).
-Allowed content: ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>**](/rfcxml-vocabulary#br) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<xref\>**](/rfcxml-vocabulary#xref) )*
+Allowed content: ( text | [**\<bcp14\>**](/rfcxml-vocabulary#bcp14) | [**\<br\>**](/rfcxml-vocabulary#br) | [**\<cref\>**](/rfcxml-vocabulary#cref) | [**\<em\>**](/rfcxml-vocabulary#em) | [**\<eref\>**](/rfcxml-vocabulary#eref) | [**\<iref\>**](/rfcxml-vocabulary#iref) | [**\<strong\>**](/rfcxml-vocabulary#strong) | [**\<sub\>**](/rfcxml-vocabulary#sub) | [**\<sup\>**](/rfcxml-vocabulary#sup) | [**\<tt\>**](/rfcxml-vocabulary#tt) | [**\<xref\>**](/rfcxml-vocabulary#xref) )
+
 ---
 #### anchor 
 Document-wide unique identifier for this element.
@@ -874,8 +875,8 @@ The value is expected to be the addr-spec defined in Section 2 of RFC6068.
 Multiple email addresses are permitted.
 
 Used in: [**\<address\>**](/rfcxml-vocabulary#address).
-
 Allowed content: text
+
 ---
 #### ascii
 The ASCII equivalent of the author's email address. This is only used if the email address has any internationalized components.
@@ -930,8 +931,8 @@ This attribute must be specified and must be the URI of the link target (RFC3986
 Extra address information. This element can be used for address parts more specific than a street, for instance apartment numbers, suite numbers, building parts, etc.
 
 Used in: [**\<postal\>**](/rfcxml-vocabulary#postal).
-
 Allowed content: text
+
 ---
 #### ascii
 
@@ -953,8 +954,8 @@ The ASCII equivalent of the [**\<extaddr\>**](/rfcxml-vocabulary#extaddr) conten
 Contains a figure with a caption with the figure number. If the element contains a [**\<name\>**](/rfcxml-vocabulary#name) element, the caption will also show that name.
 
 Used in: [**\<aside\>**](/rfcxml-vocabulary#aside), [**\<blockquote\>**](/rfcxml-vocabulary#blockquote), [**\<dd\>**](/rfcxml-vocabulary#dd), [**\<li\>**](/rfcxml-vocabulary#li), [**\<section\>**](/rfcxml-vocabulary#section), [**\<td\>**](/rfcxml-vocabulary#td), and [**\<th\>**](/rfcxml-vocabulary#th).
-
 Allowed content: [**\<name\>**](/rfcxml-vocabulary#name)?, [**\<iref\>**](/rfcxml-vocabulary#iref)\*, ( [**\<artset\>**](/rfcxml-vocabulary#artset) | [**\<artwork\>**](/rfcxml-vocabulary#artwork) | [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) )+
+
 ---
 #### align
 

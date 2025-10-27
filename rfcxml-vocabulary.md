@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2025-10-27T22:43:45.218Z
+date: 2025-10-27T22:46:44.874Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -461,7 +461,7 @@ Used in: [**\<postal\>**](/rfcxml-vocabulary#postal)
 Allowed content: text
 
 ---
-#### "ascii"
+#### ascii
 
 The ASCII equivalent of the [**\<city\>**](/rfcxml-vocabulary#city) content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 ### Schema
@@ -506,7 +506,7 @@ Used in: [**\<postal\>**](/rfcxml-vocabulary#postal).
 Allowed content: text
 
 ---
-#### "ascii" 
+#### ascii 
 The ASCII equivalent of the [**\<code\>**](/rfcxml-vocabulary#code) content. This element may have non-ASCII Latin script content without specifying an ASCII equivalent, but for other non-ASCII content an ASCII equivalent is required.
 ### Schema
 ```

@@ -2,7 +2,7 @@
 title: RFCXML vocabulary reference
 description: 
 published: true
-date: 2025-10-27T22:46:44.874Z
+date: 2025-10-27T23:04:02.305Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-02T22:58:38.001Z
@@ -2544,12 +2544,9 @@ For more details see [non-ASCII characters in RFCXML](/non-ascii-characters-in-r
 Default value: "lit-name-num"
 
 ### Examples
-Non-ASCII characters in an author's name:
-* in the Latin blocks: RFC 8655, RFC 8753, RFC 8831.
-* outside the Latin blocks: RFC 8694, RFC 9005, RFC 9093, RFC 9094
-Non-ASCII characters in a contact's name:
-* in the Latin blocks: RFC 8725
-* outside the Latin blocks: RFC 9000, RFC 9001, RFC 9002
+`<u format="num-name-lit">水</u>` yields U+6C34 (CJK UNIFIED IDEOGRAPH-6C34, "水") in RFC 8949
+`<u format="num-lit-name">🁁</u>` yields U+1F041 ("🁁", DOMINO TILE HORIZONTAL-02-02) in RFC 9535
+`<u format="lit-name-num">╧</u>` yields "╧" (BOX DRAWINGS UP SINGLE AND HORIZONTAL DOUBLE, U+2567) in RFC 9787
 
 ### Schema
 ```

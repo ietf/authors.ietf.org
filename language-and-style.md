@@ -24,6 +24,7 @@ An I-D may indicate its intended status, if it were to be published as an RFC, b
 
 # Use of BCP 14 terms
 If [BCP 14](https://www.rfc-editor.org/info/bcp14) language (MUST, SHOULD, etc.) is used, the guidelines in RFC 2119, especially those in Sections 6 and 7, should be followed. SHOULD is especially problematic: it needs to be clear why SHOULD is used rather than MUST, and what the implications are of varying from the recommendation.
+Please also review the [IESG statement on clarifying the use of BCP 14 keywords](https://datatracker.ietf.org/doc/statement-iesg-statement-on-clarifying-the-use-of-bcp-14-key-words/).
 
 # Inclusive language
 The IESG has made a [statement](https://www.ietf.org/about/groups/iesg/statements/on-inclusive-language/) recommending authors review [NISTIR 8366](https://doi.org/10.6028/NIST.IR.8366) for guidelines on using inclusive terminology. Similar guidance pointing to NISTIR 8366 exists for other RFC Streams. Authors are encouraged to familiarize themselves with and apply the guidance.

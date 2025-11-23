@@ -31,7 +31,7 @@ To use one of these templates you will also need to download both of the schemas
 ```xml
 <?xml-model href="rfc7991bis.rnc"?>
 ```
-All of the templates above aleady have this processing instruction included and so will support schema validation and schema-aware editing out of the box.
+All of the templates above already have this processing instruction included and so will support schema validation and schema-aware editing out of the box.
 
 ### SVG-1.2-RFC.rnc
 [SVG-1.2-RFC.rnc](https://github.com/ietf-tools/RFCXML/raw/main/SVG-1.2-RFC.rnc) is the RelaxNG Compact schema for the subset of SVG allowed in RFCXML documents (SVG 1.2 RFC).  This schema is referenced in rfc7991bis.rnc and so no specific processing instruction is required to include it but a local copy must be present. 

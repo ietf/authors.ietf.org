@@ -33,7 +33,7 @@ For an Internet-Draft, the citation filename uses the draft string. Note there a
 ```
 If you want to point to a specific version of an I-D, the draft string should include both "draft-" and the version number. For example: 
 ```xml
-<xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.daley-meeting-network-requirements-00.xml"/>
+<xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.draft-daley-meeting-network-requirements-00.xml"/>
 ```
 That creates the anchor `I-D.daley-meeting-network-requirements` even if a specific version is referenced.
 

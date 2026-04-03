@@ -68,7 +68,7 @@ If the document is not already in [RFCXML](https://authors.ietf.org/en/rfcxml-ov
 * Add the [\<seriesInfo\>](/rfcxml-vocabulary#seriesinfo) element to capture the RFC number.
 * If the document has key words from BCP 14 (e.g., “MUST”, “RECOMMENDED”), tag those key words with the [\<bcp14\>](/rfcxml-vocabulary#bcp14) element, which provides text formatting.
 * Check the contents of anything tagged with [\<artwork\>](/rfcxml-vocabulary#artwork) to assess whether it should be converted to a table, a list, or tagged with [\<sourcecode\>](/rfcxml-vocabulary#sourcecode) instead.
-* Clean up any blank spaces or lines around [\<artwork\>](/rfcxml-vocabulary#artwork) or [\<sourcecode\>]((/rfcxml-vocabulary#sourcecode) and may make edits to get the the contents to fit within the width limit.
+* Clean up any blank spaces or lines around [\<artwork\>](/rfcxml-vocabulary#artwork) or [\<sourcecode\>](/rfcxml-vocabulary#sourcecode) and may make edits to get the the contents to fit within the width limit.
 * Check lists for correct semantics and update if necessary (e.g., changing a bulleted list to a definition list).
 * If **\<ul empty=”true”\>** is used for indentation, this will be replaced with a more appropriate tag such as [\<blockquote\>](/rfcxml-vocabulary#blockquote), [\<aside\>](/rfcxml-vocabulary#aside), or **\<t indent=”6″\>**.
 * Adjust [\<table\>](/rfcxml-vocabulary#table) formatting if needed.

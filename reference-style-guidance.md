@@ -12,8 +12,7 @@ dateCreated: 2026-04-06T20:20:40.216Z
 
 This section provides guidance about reference entries commonly found in Internet-Drafts and RFCs; it is non-exhaustive.  These are the recommended reference formats for differnet types of references, and authors should follow this guidance when drafting their documents.  Note: Being included on this page does NOT imply endoresement or recognition of any kind.
 
-Send comments or questions about this guidance or other reference issues to the RFC Production Center (RPC) at rfc-editor@rfc-editor.org or open an [issue on
-GitHub](https://github.com/ietf/authors.ietf.org/issues).
+Send comments or questions about this guidance or other reference issues to the RFC Production Center (RPC) at rfc-editor@rfc-editor.org or open an [issue on GitHub](https://github.com/ietf/authors.ietf.org/issues).
 
 ## RFC Series
 
@@ -36,10 +35,7 @@ DOI 10.17487/RFC3080, March 2001, <https://www.rfc-editor.org/info/rfc3080>.
 
 **Using the BibXML Service for RFCs**
 
-Add RFC references using
-the [BibXML
-service](https://bib.ietf.org/indexed-sources/relaton-data-rfcs/). For
-example:
+Add RFC references using the [BibXML service](https://bib.ietf.org/indexed-sources/relaton-data-rfcs/). For example:
 
 ```xml
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.1234.xml"/>
@@ -86,22 +82,17 @@ Cerf, V., “ASCII format for network interchange”, STD 80, RFC 20, DOI
 
 **Using the BibXML Service for Subseries:**
 
-Add references for subseries documents using the [BibXML
-service](https://bib.ietf.org/indexed-sources/relaton-data-rfcs/). For
-example:
+Add references for subseries documents using the [BibXML service](https://bib.ietf.org/indexed-sources/relaton-data-rfcs/). For example:
 
 ```xml
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml9/reference.BCP.0237.xml"/>
 ```
 
-For more information on inserting references in RFCXML, see
-<https://authors.ietf.org/en/references-in-rfcxml>.
+For more information on inserting references in RFCXML, see <https://authors.ietf.org/en/references-in-rfcxml>.
 
 ### Errata
 
-This guidance overrides [Section
-4.8.6.5 of RFC
-7322](https://www.rfc-editor.org/rfc/rfc7322.html#section-4.8.6.5).
+This guidance overrides [Section 4.8.6.5 of RFC 7322](https://www.rfc-editor.org/rfc/rfc7322.html#section-4.8.6.5).
 
 The format for references to errata reports is as follows:
 
@@ -120,26 +111,19 @@ The format for references to errata reports is as follows:
 
 **Referencing "Reported" Errata:**
 
-Errata in the [Reported](https://www.rfc-editor.org/errata-definitions/)
-state should not be referenced; they are not considered stable.
+Errata in the [Reported](https://www.rfc-editor.org/errata-definitions/) state should not be referenced; they are not considered stable.
 
 **Note on Updating or Obsoleting RFCs with Errata**
 
-If your Internet-Draft ["Updates" or
-"Obsoletes"](https://www.ietf.org/process/rfcs/#obsoleting-and-updating)
-another RFC and addresses errata filed against those RFCs, we recommend asking your Area
-Director (AD) or Stream Manager to verify the relevant reported errata.
+If your Internet-Draft ["Updates" or "Obsoletes"](https://www.ietf.org/process/rfcs/#obsoleting-and-updating) another RFC and addresses errata filed against those RFCs, we recommend asking your Area Director (AD) or Stream Manager to verify the relevant reported errata.
 
 ## IANA Registries and Registry Groups
 
 ### IANA Registry
 
-Note that the top-level URL is used when referring to a group of
-registries and/or specific registries within the group.
+Note that the top-level URL is used when referring to a group of registries and/or specific registries within the group.
 
-This guidance was developed in coordination with IANA. See [“Guidance
-for RFC Authors”](https://www.iana.org/help/protocol-registration) for
-more information.
+This guidance was developed in coordination with IANA. See [“Guidance for RFC Authors”](https://www.iana.org/help/protocol-registration) for more information.
 
 **Format**
 
@@ -170,16 +154,13 @@ more information.
 
 ### Using the BibXML Service for IANA Reference Entries
 
-Add reference entries for IANA registries and registry groups using the [BibXML
-Service](https://bib.ietf.org/indexed-sources/relaton-data-iana/). For
-example:
+Add reference entries for IANA registries and registry groups using the [BibXML Service](https://bib.ietf.org/indexed-sources/relaton-data-iana/). For example:
 
 ```xml
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml8/reference.IANA.ancp_message-types.xml"/>
 ```
 
-For more information on inserting references in RFCXML, see
-<https://authors.ietf.org/en/references-in-rfcxml>.
+For more information on inserting references in RFCXML, see <https://authors.ietf.org/en/references-in-rfcxml>.
 
 ## Working Groups (WGs) and Research Groups (RGs)
 
@@ -204,17 +185,13 @@ Progress, Internet-Draft, draft-editorial-rswg-rfc9280-updates-04, 31 July 2025,
 
 **Using the BibXML Service for I-Ds**
 
-Add reference entries for I-Ds using
-the [BibXML
-service](https://bib.ietf.org/indexed-sources/relaton-data-rfcs/). For
-example:
+Add reference entries for I-Ds using the [BibXML service](https://bib.ietf.org/indexed-sources/relaton-data-rfcs/). For example:
 
 ```xml
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.rpc-rfc7322bis.xml"/>
 ```
 
-For more information on inserting references in RFCXML, see
-<https://authors.ietf.org/en/references-in-rfcxml>.
+For more information on inserting references in RFCXML, see <https://authors.ietf.org/en/references-in-rfcxml>.
 
 ### Working Group (WG) pages on Datatracker
 
@@ -234,17 +211,11 @@ For more information on inserting references in RFCXML, see
 **Note: Finding a Working Group’s Datatracker page and the appropriate
 URL**
 
-A list of active IETF Working Groups is available on
-[Datatracker](https://datatracker.ietf.org/wg/).
+A list of active IETF Working Groups is available on [Datatracker](https://datatracker.ietf.org/wg/).
 
-Use the WG’s Datatracker URL. Both /charter and /about point to the same
-page. Aim for consistency within a document.
+Use the WG’s Datatracker URL. Both /charter and /about point to the same page. Aim for consistency within a document.
 
-Note that, while a WG can have a GitHub repo, and RFCs can point to
-these, the text shouldn’t imply that the repo is the main information
-page for the working group. There should be a link to the WG’s
-Datatracker page instead. A link to a  WG’s repo can be found on their
-Datatracker page under “Additional Resources”.
+Note that, while a WG can have a GitHub repo, and RFCs can point to these, the text shouldn’t imply that the repo is the main information page for the working group. There should be a link to the WG’s Datatracker page instead. A link to a  WG’s repo can be found on their Datatracker page under “Additional Resources”.
 
 ### Mailing List Discussions
 
@@ -267,13 +238,9 @@ https://mailarchive.ietf.org/arch/msg/rfc-interest/czuWiLuFOiuXLmRw3Z6Syt9QXM4/.
 
 **Note:**
 
-For a message on an IETF mailing list, use mailarchive.ietf.org
-URLs. To find a WG mailing list, check
-https://datatracker.ietf.org/wg/ and/or
-https://datatracker.ietf.org/group/concluded/.
+For a message on an IETF mailing list, use mailarchive.ietf.org URLs. To find a WG mailing list, check https://datatracker.ietf.org/wg/ and/or https://datatracker.ietf.org/group/concluded/.
 
-Mailing list addresses of the format “@lists.ietf.org” (mostly WG
-lists) have not been valid since 2005.
+Mailing list addresses of the format “@lists.ietf.org” (mostly WG lists) have not been valid since 2005.
 
 #### Entire Mailing List
 
@@ -312,8 +279,7 @@ IETF 99 Proceedings, July 2017,
 Past IETF meetings are listed here:
 https://www.ietf.org/how/meetings/past/
 
-Meeting materials can also be found on each working group’s meeting page
-on Datatracker. For example,
+Meeting materials can also be found on each working group’s meeting page on Datatracker. For example,
 https://datatracker.ietf.org/wg/quic/meetings/
 
 ### IAB Workshop Position Papers
@@ -354,7 +320,6 @@ Internet Access of Services (BIAS), January 2024,
 
 ## Other Organizations
 
-> [!IMPORTANT]
 > The main purpose of this section is to provide authors with a
 > non-exhaustive list of commonly used references to promote
 > consistent formatting of reference entries in RFCs and
@@ -362,6 +327,7 @@ Internet Access of Services (BIAS), January 2024,
 > sole purpose of providing examples to authors. The inclusion of an
 > organization in this list does not represent an endorsement of that
 > organization's standards, specifications, or other any documentation.
+{.is-warning}
 
 ### 3rd Generation Partnership Project (3GPP)
 
@@ -381,9 +347,7 @@ TS 23.501,
 
 **Referencing Specific Versions and/or Releases of 3GPP Specifications**
 
-If referencing a specific version from a specific release by 3GPP, include the
-version and release number, the date of publication, and the URL pointing to
-that version. For example:
+If referencing a specific version from a specific release by 3GPP, include the version and release number, the date of publication, and the URL pointing to that version. For example:
 
 ```txt
 [TR.26.857] 3GPP, "5G Media Service Enablers", 3GPP TR 26.857, Version
@@ -410,9 +374,7 @@ Framework", ETSI GS NFV 002, V1.2.1, December 2014,
 
 **Note:**
 
-A list of the types of standards, specifications, and reports produced by ETSI
-is available on [their
-website](https://www.etsi.org/standards/types-of-standards).
+A list of the types of standards, specifications, and reports produced by ETSI is available on [their website](https://www.etsi.org/standards/types-of-standards).
 
 ### Institute of Electrical and Electronics Engineers (IEEE) Standards
 
@@ -431,9 +393,7 @@ website](https://www.etsi.org/standards/types-of-standards).
 <https://ieeexplore.ieee.org/document/9105034>.
 ```
 
-When creating reference entries for IEEE Standards, we recommend using
-URLs for IEEExplore. For example:
-<https://ieeexplore.ieee.org/document/9363693>.
+When creating reference entries for IEEE Standards, we recommend using URLs for IEEExplore. For example: <https://ieeexplore.ieee.org/document/9363693>.
 
 ### International Organization for Standardization (ISO) / International Electrotechnical Commission (IEC)
 
@@ -506,8 +466,7 @@ Proxy Models for Cloud-Native Applications”, NIST SP 800-233, DOI
 
 ### Unicode Consortium
 
-The following guidance is adapted from the [Unicode Consortium's
-reference guidance](https://www.unicode.org/versions/#References).
+The following guidance is adapted from the [Unicode Consortium's reference guidance](https://www.unicode.org/versions/#References).
 
 #### Referencing the latest version of the Unicode Standard (versionless)
 
@@ -526,16 +485,9 @@ reference guidance](https://www.unicode.org/versions/#References).
 
 ### Web Hypertext Application Technology Working Group (WHATWG)
 
-WHATWG provides ["commit
-snapshots"](https://urlpattern.spec.whatwg.org/commit-snapshots/d13ebead18003059a83ca4a25240e5cafc066c4c/)
-for their standards. Since WHATWG publishes ["Living
-Standards"](https://whatwg.org/faq#living-standard) which are
-regularly updated and changed, we recommend adding a URL to this
-commit snapshot in the reference in an annotation.
+WHATWG provides ["commit snapshots"](https://urlpattern.spec.whatwg.org/commit-snapshots/d13ebead18003059a83ca4a25240e5cafc066c4c/) for their standards. Since WHATWG publishes ["Living Standards"](https://whatwg.org/faq#living-standard) which are regularly updated and changed, we recommend adding a URL to this commit snapshot in the reference in an annotation.
 
-The URL for the commit snapshot can be found by clicking the "Snapshot
-as of this commit" link provided at the main URL for a Living
-Standard.
+The URL for the commit snapshot can be found by clicking the "Snapshot as of this commit" link provided at the main URL for a Living Standard.
 
 For more information on WHATWG commit snapshots, see:
 <https://whatwg.org/faq#change-at-any-time>.
@@ -561,20 +513,15 @@ Commit snapshot:
 
 **Note on Anchor Permanence in WHATWG Living Standards**
 
-[WHATWG guidance on the permanence of
-anchors](https://whatwg.org/working-mode#anchors) in WHATWG Living
-Standards notes:
+[WHATWG guidance on the permanence of anchors](https://whatwg.org/working-mode#anchors) in WHATWG Living Standards notes:
 
 > Since Living Standards are continually evolving, the set of anchors in
 > a document is not static, and some anchors could disappear over time.
 
-WHATWG recommends filing an issue on an Living Standard's GitHub if
-another standards organization "wishes to ensure an anchor is
-permanently available in the canonical Living Standard". For example:
+WHATWG recommends filing an issue on an Living Standard's GitHub if another standards organization "wishes to ensure an anchor is permanently available in the canonical Living Standard". For example:
 <https://github.com/whatwg/html/issues/11646>.
 
-Please inform the RPC during the intake process if you are waiting on
-WHATWG to approve making anchors in a Living Standard permanent.
+Please inform the RPC during the intake process if you are waiting on WHATWG to approve making anchors in a Living Standard permanent.
 
 ### World Wide Web Consortium (W3C)
 
@@ -583,8 +530,7 @@ W3C provides two URLs for their documents:
 - A "This version" URL. For example: <https://www.w3.org/TR/2008/REC-xml-20081126>.
 - A "Latest version" URL. For example: <https://www.w3.org/TR/xml/>.
 
-We recommend including both URLs in reference entries to W3C documents
-using the following format:
+We recommend including both URLs in reference entries to W3C documents using the following format:
 
 **Format**
 
@@ -608,8 +554,7 @@ Latest version available at <https://www.w3.org/TR/xml/>.
 
 **Note:**
 
-The "latest version" annotation can be included in a reference in
-RFCXML like so:
+The "latest version" annotation can be included in a reference in RFCXML like so:
 
 ```xml
 <annotation>Latest version available at <eref target="URL" brackets="angle"/>.</annotation>
@@ -619,9 +564,7 @@ RFCXML like so:
 
 ### Referencing Internet Content: Best Practices and Recommendations
 
-This section expands on the guidance for using URIs in RFCs from
-[Section 4.8.6.1 of RFC
-7322](https://www.rfc-editor.org/rfc/rfc7322.html#section-4.8.6.1):
+This section expands on the guidance for using URIs in RFCs from [Section 4.8.6.1 of RFC 7322](https://www.rfc-editor.org/rfc/rfc7322.html#section-4.8.6.1):
 
 > The use of URIs in references is acceptable, as long as the URI is
 > the most stable (i.e., unlikely to change and expected to be
@@ -648,18 +591,11 @@ When assessing URLs for stability, consider the following:
 
 **"Link rot" and "content drift"**
 
-"Link rot" is the phenomenon where a URL fails to point to its
-original target. This failure is often the result of the resource
-being moved to a new address or becoming permanently unavailable.
+"Link rot" is the phenomenon where a URL fails to point to its original target. This is often the result of the resource being moved to a new address or becoming permanently unavailable.
 
-"Content drift" is the phenomenon where a URL is functional, but the
-content available at that URL changes over time - for example, an
-organization's homepage content changing due to a name change or being
-folded into another organization.
+"Content drift" is the phenomenon where a URL is functional, but the content available at that URL changes over time - for example, an organization's homepage content changing due to a name change or being folded into another organization.
 
-Using permanent identifiers and/or archived URLs may help preserve the
-stability of a reference's URL and prevent a reference from being
-affected by link rot or content drift.
+Using permanent identifiers and/or archived URLs may help preserve the stability of a reference's URL and prevent a reference from being affected by link rot or content drift.
 
 For more information on link rot and content drift see:
 - https://en.wikipedia.org/w/index.php?title=Link_rot&oldid=1324240675
@@ -669,20 +605,15 @@ For more information on link rot and content drift see:
 
 **Using Permanent URLs - i.e., "permalinks", Digital Object Identifiers (DOIs), etc.**
 
-- Is there a permanent identifier for the reference (for example, a Digital
-  Object Identifier (DOI))?
+- Is there a permanent identifier for the reference (for example, a Digital Object Identifier (DOI))?
 
-If there is a permanent identifier for the reference, we recommend including it
-in the reference entry.
+If there is a permanent identifier for the reference, we recommend including it in the reference entry.
 
 **Using Archived URLs**
 
-- Is there a concern about the longevity of the reference's URL? For example, is
-  the URL likely to redirect or "break" in the next few years?
+- Is there a concern about the longevity of the reference's URL? For example, is the URL likely to redirect or "break" in the next few years?
 
-If there is a concern about the longevity of the URL, we recommending
-using an archived URL in the reference. For example, using the
-[Internet Archive Wayback Machine](https://web.archive.org/):
+If there is a concern about the longevity of the URL, we recommending using an archived URL in the reference. For example, using the [Internet Archive Wayback Machine](https://web.archive.org/):
 
 Example of an Internet Archive Wayback Machine URL:
 
@@ -704,8 +635,7 @@ Example of an Internet Archive Wayback Machine URL:
 
 **Titles for References to Websites.**
 
-Some websites may not have exact titles or the title may not be clear. If this
-is the case, a description may be used instead.
+Some websites may not have exact titles or the title may not be clear. If this is the case, a description may be used instead.
 
 For example:
 
@@ -715,8 +645,7 @@ Microsoft, "Microsoft home page", <https://www.microsoft.com/en-us/>.
 
 **Dates for References to Websites**
 
-If the website being referenced includes a publication date or "Last modified"
-date (or equivalent), include it as the date for the reference.
+If the website being referenced includes a publication date or "Last modified" date (or equivalent), include it as the date for the reference.
 
 ### Wikipedia Articles
 
@@ -735,11 +664,9 @@ date (or equivalent), include it as the date for the reference.
 
 **Permanent Links for Wikipedia Reference Entries**
 
-Wikipedia provides a permanent link under the "Tools" tab. A list of permanent
-links is also available under the "View history" tab.
+Wikipedia provides a permanent link under the "Tools" tab. A list of permanent links is also available under the "View history" tab.
 
-When constructing the reference target in RFCXML, replace the ‘&’ in the
-versioned URL with “&”:
+When constructing the reference target in RFCXML, replace the ‘&’ in the versioned URL with “&”:
 
 ``` xml
 <reference anchor="Magnet"
@@ -770,8 +697,7 @@ graphs", Numerische Mathematik, vol. 1, pp. 269-271, DOI
 
 **Format for Journal Volume and Issue Numbers**
 
-For journal articles with volume and issue numbers we recommend using the
-following style:
+For journal articles with volume and issue numbers we recommend using the following style:
 
 Volume 1 = vol. 1
 

@@ -1,8 +1,8 @@
 ---
 title: Reference style guidance
-description: This page provides guidance about reference entries commonly found in Internet-Drafts and RFCs; it is non-exhaustive. 
+description: This page provides guidance about reference entries commonly found in Internet-Drafts and RFCs; it is non-exhaustive.
 published: true
-date: 2026-04-06T20:20:40.216Z
+date: 2026-04-08T18:37:14.518Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-06T20:20:40.216Z
@@ -452,14 +452,14 @@ Publication, <URL>.
 
 ```txt
 [CITE-TAG] Last name, First initial., Ed. (if applicable), “Title of
-SP”, NIST SP Number, DOI, Date of Publication, <URL>.
+SP”, National Institute of Standards and Technology, NIST SP Number, DOI, Date of Publication, <URL>.
 ```
 
 **Example**
 
 ``` txt
 [NIST_SP_800-233] Chandramouli, R., Butcher, Z., and J. Callaghan, “Service Mesh
-Proxy Models for Cloud-Native Applications”, NIST SP 800-233, DOI
+Proxy Models for Cloud-Native Applications”, National Institute of Standards and Technology, NIST SP 800-233, DOI
 10.6028/NIST.SP.800-233, October 2024,
 <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-233.pdf>.
 ```

@@ -2,7 +2,7 @@
 title: Reference style guidance
 description: This page provides guidance about reference entries commonly found in Internet-Drafts and RFCs; it is non-exhaustive.
 published: true
-date: 2026-04-08T18:37:14.518Z
+date: 2026-04-27T20:09:37.739Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-06T20:20:40.216Z
@@ -165,6 +165,10 @@ For more information on inserting references in RFCXML, see <https://authors.iet
 ## Working Groups (WGs) and Research Groups (RGs)
 
 ### Internet Draft (I-D)
+
+> References to Internet-Drafts may only appear as informative references. See [Section 4.8.6.4 of RFC 7322](https://www.rfc-editor.org/rfc/rfc7322.html#section-4.8.6.4) for more information.
+{.is-warning}
+
 
 **Format**
 
@@ -758,6 +762,10 @@ Circuits", M.S. Thesis, Massachusetts Institute of Technology, 1940,
 ```
 
 ## Web-based Public Code Repositories
+
+> References to web-based public code repositories may only appear as informative references.
+{.is-warning}
+
 
 ### Repositories
 

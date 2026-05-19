@@ -16,10 +16,8 @@ The process for publishing an RFC begins when an Internet-Draft is approved by o
 * **Independent Stream**. The process for publication of Independent Submission RFCs is documented in [Section 3](https://www.rfc-editor.org/rfc/rfc4846#section-3) of [RFC 4846](https://www.rfc-editor.org/rfc/rfc4846).
 * **Editorial Stream**. The process for publication of Editorial Stream RFCs is documented in [Section 3.2](https://www.rfc-editor.org/rfc/rfc9920#name-process) of [RFC 9920](https://www.rfc-editor.org/rfc/rfc9920). 
 
-# Publication queue and states
+# Publication queue
 Once a document is approved, it enters the [publication queue](https://queue.rfc-editor.org/) and is managed by the RFC Production Center (RPC). From this point on, the RPC has change control of the document. This means that the RPC now manages the document in their own repository, and that all changes the authors wish to make must go through the RPC. Any non-technical changes, such as updating the contact information, will normally be accepted directly, but any technical updates will require stream approval.
-
-When a document enters the publication queue, it is assigned an initial state, and this state is updated as the document progresses through the queue. Any time the document's state changes, an automatic email message summarizing the state change is sent to the authors.
 
 ## Clusters
 Sometimes groups of documents are managed together as a cluster. This can be for two reasons:
@@ -88,13 +86,13 @@ The references in the document are checked for accuracy and stability and, where
 ## IANA processing
 If the document contains IANA actions, such as creating or updating an IANA registry, then IANA will start their processing when the document is approved for publication. IANA processing usually takes place in parallel with editing.
 
-Occasionally IANA processing can take longer than editing, for example, if IANA is waiting for a designated expert to respond. In which case, the document will be shown as blocked and "IANA Hold", until the IANA processing is complete. Once IANA has completed their actions, the document will 
+Occasionally IANA processing can take longer than editing, for example, if IANA is waiting for a designated expert to respond. In which case, the document will be shown as blocked and `IANA Hold`, until the IANA processing is complete. Once IANA has completed their actions, the document will move forward to `Second Edit`.
 
 # Second Edit
 
 During `Second Edit`, a senior editor reviews the formatting, copy edits, and the team's proposed questions to authors.
 
-If there is an IANA Considerations section, the senior editor reviews the messages regarding IANA actions, compares the information within the document to the information within the registry, and updates the section. If there are any issues with the IANA registry itself, these are noted for discussion with IANA during Final Review. 
+If there is an IANA Considerations section, the senior editor reviews the messages regarding IANA actions, compares the information within the document to the information within the registry, and updates the section. If there are any issues with the IANA registry itself, these are noted for discussion with IANA during `Final Review`. 
 
 If there are code components such as YANG modules, XML, or ABNF, the senior editor validates them with automated tools and notes any issues to discuss with authors during final approval.
 

@@ -53,7 +53,7 @@ It is common for authors to render their documents into a easily read format suc
 When you are ready to share your I-D you need to submit it to the Datatracker at which point it will be automatically validated.  Datatracker only accepts I-Ds in RFCXML or plaintext format.  For more details see [Submitting your Internet-Draft](/submitting-your-internet-draft).
 
 - **RFC Pre-publication review**
-If an I-D is approved to published as an RFC (each [RFC Stream](https://rfc-editor.org/info/rfc8729) has a different process for this) then it will need to go through the [AUTH48 pre-publication review process](https://www.rfc-editor.org/pubprocess/auth48/). At this stage you will need to work with RFCXML to address any issues raised by the RFC Publication Center (RPC) editors in order for the RFC to be published.
+If an I-D is approved to published as an RFC (each [RFC Stream](https://rfc-editor.org/info/rfc8729) has a different process for this) then it will need to go through the [final review process](/rfc-publication-process#authors-final-review). At this stage you will need to work with RFCXML to address any issues raised by the RFC Publication Center (RPC) editors in order for the RFC to be published.
 
 - **RFC Publication**
 The canonical format for published RFCs is RFCXML. Other published formats, PDF, HTML and plain text, are derived from this RFCXML. The published RFCXML looks quite different from Internet-Draft RFCXML as it has been passed through the RPC 'prep' tool which makes it work better as a standalone document. 

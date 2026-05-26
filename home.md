@@ -23,7 +23,7 @@ This site is the central resource site for authors of an Internet-Draft (I-D), w
 
 Internet-Drafts (I-Ds) are the basic work items of the IETF and they are produced for a variety of purposes by a wide range of individuals and groups. Anyone can write and submit an Internet-Draft. 
 
-Some I-Ds may eventually be published as a Request for Comment (RFC).  Each of the [RFC Streams](https://rfc-editor.org/info/rfc8729) has their own process for how an I-D becomes an RFC.  For the IETF that is documented in the [standards development process](https://www.ietf.org/standards/process/).  When an I-D is approved to become an RFC, it follows the separate RFC Editor [RFC publication process](https://www.rfc-editor.org/pubprocess/).
+Some I-Ds may eventually be published as a Request for Comment (RFC).  Each of the [RFC Streams](https://rfc-editor.org/info/rfc8729) has their own process for how an I-D becomes an RFC.  For the IETF that is documented in the [standards development process](https://www.ietf.org/standards/process/).  When an I-D is approved to become an RFC, it follows the separate RFC Editor [RFC publication process](/rfc-publication-process).
 
 Unless otherwise indicated, the information on this site applies to all streams.
 

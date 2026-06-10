@@ -242,7 +242,7 @@ The [Author Tools](https://author-tools.ietf.org) web service can validate your 
 [RFC 8899](https://www.rfc-editor.org/rfc/rfc8899.html#figure-1) (Figures 1 - 5)
 [RFC 8989](https://www.rfc-editor.org/rfc/rfc8989.html#figure-1) (Figures 1 - 4)
 
-Some extracted SVG diagrams are also [available](https://www.rfc-editor.org/materials/format/svg/)
+For more examples of SVG diagrams used in RFCs, see [this list](https://rpc-wiki.rfc-editor.org/doku.php?id=v3_feature_usage).
 ## ASCII-art and SVG in a single \<artset\>
 The following example has one [**\<artset\>**](https://authors.ietf.org/en/rfcxml-vocabulary#artset) element that contains two [**\<artwork\>**](https://authors.ietf.org/en/rfcxml-vocabulary#artwork) elements, each of a different type. The SVG is included directly and a **name** attribute provided to recommend a filename if the diagram is extracted.
 ```xml

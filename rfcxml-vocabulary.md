@@ -1974,7 +1974,7 @@ Specifies the type of the source code. The value of this attribute is free text 
 
 Most of the preferred values for [**\<sourcecode\>**](/rfcxml-vocabulary#sourcecode) types are language names, in a wide sense, such as "abnf", "asn.1", "bash", "c++", etc.
 
-A list of the preferred values is maintained on the RFC Editor web site at [https://www.rfc-editor.org/materials/sourcecode-types.txt](https://www.rfc-editor.org/materials/sourcecode-types.txt), and that list is updated over time. Thus, a consumer of RFCXML should not cause a failure when it encounters an unexpected type or no type is specified.
+A [list of the preferred values](https://rpc-wiki.rfc-editor.org/rpc/wiki/doku.php?id=sourcecode-types) is maintained by the RFC Production Center, and that list is updated over time. Thus, a consumer of RFCXML should not cause a failure when it encounters an unexpected type or no type is specified.
 ### Examples
 The following is a basic example of a c program as set by the **type** attribute, using a CDATA block because the source code contains angle brackets, and a **name** attribute that suggests a file name for the extracted code:
 ```xml

@@ -2,7 +2,7 @@
 title: Reference style guidance
 description: This page provides guidance about reference entries commonly found in Internet-Drafts and RFCs; it is non-exhaustive.
 published: true
-date: 2026-06-16T18:32:43.128Z
+date: 2026-06-16T18:36:30.465Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-06T20:20:40.216Z
@@ -10,7 +10,7 @@ dateCreated: 2026-04-06T20:20:40.216Z
 
 # Reference Style Guidance
 
-This section provides guidance about reference entries commonly found in Internet-Drafts and RFCs; it is non-exhaustive.  These are the recommended reference formats for differnet types of references, and authors should follow this guidance when drafting their documents.  Note: Being included on this page does NOT imply endorsement or recognition of any kind.
+This section provides guidance about reference entries commonly found in Internet-Drafts and RFCs; it is non-exhaustive.  These are the recommended reference formats for different types of references, and authors should follow this guidance when drafting their documents.  Note: Being included on this page does NOT imply endorsement or recognition of any kind.
 
 Send comments or questions about this guidance or other reference issues to the RFC Production Center (RPC) at rfc-editor@rfc-editor.org or open an [issue on GitHub](https://github.com/ietf/authors.ietf.org/issues).
 

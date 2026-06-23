@@ -8,20 +8,20 @@ editor: markdown
 dateCreated: 2022-03-01T02:54:51.361Z
 ---
 
-# Making the right choice 
+# Selecting a Format 
 
-The IETF does not provide an authoring toolchain and does not recommend a specific authoring format. You will need to choose what works best for you. Writing Internet-Drafts is complex and time consuming, and you can make that much easier by basing your choice on what markup languages and document editing tools you are familiar with, and how you intend to work.  
+The IETF does not dictate working with a particular word processor or editing tool to create an Internet-Draft. You can choose what works best for you -- using a document editing tool that you are familiar with to create an Internet-Draft in either XML or markdown.
 
 ## Checklist
 
-1. If you know XML reasonably well, have access to a fully-featured XML editor, and will be collaborating with people in the same position then you should be [Drafting in RFCXML](/drafting-in-xml).  RFCXML is supported end-to-end in the authoring process.
+1. If you know XML reasonably well, have access to a fully featured XML editor, and will be collaborating with people in the same position, then you should be [Drafting in RFCXML](/drafting-in-xml).  RFCXML is supported end-to-end in the authoring process.
 
-1. If not then you should be [Drafting in Markdown](/drafting-in-markdown).  Markdown is not supported end-to-end but the Markdown toolchains will generate RFCXML when required, normally hiding that complexity.
+1. If not, then you should be [Drafting in Markdown](/drafting-in-markdown).  Although markdown is not seamlessly supported end-to-end, the markdown toolchains can generate RFCXML that you can then submit to the Datatracker.
 
 1. Drafting in any other format is not recommended for new authors.
 
 # How your choice fits into the process
-The diagram below shows the different formats supported at each stage of the authoring process.  Some of these stages only support RFCXML and plaintext, but if you are using Markdown then that should not be a problem as the toolchain will generate the RFCXML for you.
+The diagram below shows the different formats supported at each stage of the authoring process.  Some of these stages only support RFCXML and plaintext; however, using markdown should not be a problem as the toolchain will generate the RFCXML for you.
 
 ```mermaid
 graph TD  

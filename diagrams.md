@@ -101,12 +101,12 @@ Another nice feature of Inkscape is that its 'Resize page to content' lets you r
 #### Nevil Brownlee, July 2018
 This is good if you're used to LibreOffice, and your drawing is fairly simple.
 
-Create your drawing using Draw, group it into a single object, then export it. (For me, that makes an SVG diagram that emacs and Inkscape display properly, but Firefox donesn't - however, check-svg.py's rewritten SVG diagram displays properly in Firefox, with Draw's arrowheads displayed properly.)
+Create your drawing using Draw, group it into a single object, then export it. (For me, that makes an SVG diagram that emacs and Inkscape display properly, but Firefox doesn't - however, check-svg.py's rewritten SVG diagram displays properly in Firefox, with Draw's arrowheads displayed properly.)
 
-## Powerpoint
+## PowerPoint
 ## {.tabset}
 ### Details
-Powerpoint is a commercial presentation tools with basic digramming capabilities, part of the MS Office suite. 
+PowerPoint is a commercial presentation tools with basic diagramming capabilities, part of the MS Office suite. 
 
 ### Community tips
 #### Don Fedyk, April 2021
@@ -191,7 +191,7 @@ Adjusted for 1/2 page it might look like this:
   viewBox="0 15 210 110"  
 ```
 
-Note that the x dimension is unchanged; also, in my experience, the scaling is far from linear. A slightly large diagram needed these values but the difference from 50 to 30 on the veiwBox height was hardly noticeable.
+Note that the x dimension is unchanged; also, in my experience, the scaling is far from linear. A slightly large diagram needed these values but the difference from 50 to 30 on the viewBox height was hardly noticeable.
 ```
 
   width="210mm"
@@ -242,7 +242,7 @@ The [Author Tools](https://author-tools.ietf.org) web service can validate your 
 [RFC 8899](https://www.rfc-editor.org/rfc/rfc8899.html#figure-1) (Figures 1 - 5)
 [RFC 8989](https://www.rfc-editor.org/rfc/rfc8989.html#figure-1) (Figures 1 - 4)
 
-Some extracted SVG diagrams are also [available](https://www.rfc-editor.org/materials/format/svg/)
+For more examples of SVG diagrams used in RFCs, see [this list](https://rpc-wiki.rfc-editor.org/doku.php?id=v3_feature_usage).
 ## ASCII-art and SVG in a single \<artset\>
 The following example has one [**\<artset\>**](https://authors.ietf.org/en/rfcxml-vocabulary#artset) element that contains two [**\<artwork\>**](https://authors.ietf.org/en/rfcxml-vocabulary#artwork) elements, each of a different type. The SVG is included directly and a **name** attribute provided to recommend a filename if the diagram is extracted.
 ```xml

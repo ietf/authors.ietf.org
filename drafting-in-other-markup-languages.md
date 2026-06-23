@@ -27,13 +27,13 @@ Most of these toolchains are not widely used and in some cases rely on tools tha
 lyx2rfc is unmaintained and was last updated in 2014.
 
 # nroff format
-nroff is a text formatting program that produces output suitable for fixed-width files. An out of date [Nroff template](https://www.rfc-editor.org/materials/3-nroff.template) is available with a similarly out of date [tutorial](https://www.rfc-editor.org/materials/nroff.html).
+nroff is a text formatting program that produces output suitable for fixed-width files. 
   
 ## Emacs editor in nroff mode
 The popular open source editor Emacs includes [Nroff mode](https://www.gnu.org/software/emacs/manual/html_node/emacs/Nroff-Mode.html).
 
 ## nroff with Nroff Edit
-[nroff Edit](https://aaa-sec.com/nroffedit/) is a Java based WYSIWYG editor for writing and editing Internet-Drafts in nroff. The nroff based Internet-Draft file is edited in the left window while the resulting compiled text version is instantly shown in the right Window as a result of any edit changes.
+[nroff Edit](https://aaa-sec.com/nroffedit/) is a Java-based WYSIWYG editor for writing and editing Internet-Drafts in nroff. The nroff based Internet-Draft file is edited in the left window while the resulting compiled text version is instantly shown in the right window as a result of any edit changes. For an nroff template (without the whole application), there's an [empty I-D template](http://aaa-sec.com/pub/NroffEdit/empty.nroff) available.
 
 Nroff Edit is unmaintained and was last updated in 2015.
 

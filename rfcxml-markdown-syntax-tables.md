@@ -1,8 +1,8 @@
 ---
 title: RFCXML and Markdown Syntax Comparison Tables
-description: The Rosetta stone of RFCXML and Comparison
+description: The Rosetta stone of RFCXML and Markdown
 published: true
-date: 2026-07-23T13:01:08.788Z
+date: 2026-07-23T13:20:27.690Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-23T11:54:17.943Z

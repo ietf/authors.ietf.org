@@ -2,7 +2,7 @@
 title: RFCXML and Markdown Syntax Comparison Tables
 description: The Rosetta stone of RFCXML and Markdown
 published: true
-date: 2026-07-23T13:20:27.690Z
+date: 2026-07-23T13:38:52.356Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-23T11:54:17.943Z
@@ -542,22 +542,6 @@ Note: <code>v: 3</code> must be in the YAML header for this to work.
 </td>
 	</tr>
 </table>
-
-
-## Other Features
-
-<table class="inline">
-	<thead>
-	<tr class="row0">
-		<th class="col0 leftalign"> <strong>Concept</strong>      </th><th class="col1 leftalign"> <strong>RFCXML</strong>          </th><th class="col2 leftalign"> <strong>kramdown-rfc</strong>     </th>
-	</tr>
-	</thead>
-	<tr class="row1">
-		<td class="col0 leftalign"> Insert keyword boilerplate  </td><td class="col1 leftalign"> 2119v3.xml   </td><td class="col2 leftalign"> {::boilerplate bcp14-tagged}  </td>
-	</tr>
-</table>
-
- 
 
         
 

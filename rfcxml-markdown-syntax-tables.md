@@ -2,17 +2,13 @@
 title: RFCXML and Markdown Syntax Comparison Tables
 description: The Rosetta stone of RFCXML and Markdown
 published: true
-date: 2026-07-23T13:38:52.356Z
+date: 2026-07-23T13:57:55.825Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-23T11:54:17.943Z
 ---
 
 # RFCXML vs. kramdown-rfc syntax
-
-> This page is still being written.
-{.is-warning}
-
 
 A simplistic translation (a.k.a. Rosetta Stone) is below. For details and examples, please see:
 - kramdown-rfc documentation: [Syntax](https://github.com/cabo/kramdown-rfc/wiki/Syntax) and [Syntax2](https://github.com/cabo/kramdown-rfc/wiki/Syntax2)

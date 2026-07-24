@@ -2,7 +2,7 @@
 title: RFCXML and Markdown Syntax Comparison Tables
 description: The Rosetta stone of RFCXML and Markdown
 published: true
-date: 2026-07-24T07:48:09.437Z
+date: 2026-07-24T08:23:13.166Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-23T11:54:17.943Z
@@ -92,9 +92,14 @@ foo
 </td>
 	</tr>
 	<tr class="row7">
-		<td class="col0 leftalign"> Citation  </td><td class="col1 leftalign"> &lt;xref target=“RFC9999”/&gt;<br/>
-&lt;xref target=“I-D.ietf-blah-blah”/&gt;     </td><td class="col2 leftalign"> {{RFC9999}}<br/>
-{{I-D.ietf-blah-blah}}  </td>
+		<td class="col0 leftalign"> Citation  </td><td class="col1 leftalign">
+    	<pre class="prismjs"><code>&lt;xref target=“RFC9999”/&gt;<br/>
+&lt;xref target=“I-D.ietf-blah-blah”/&gt;
+</code></pre>
+    	</td>
+    	<td class="col2 leftalign">
+    		<pre class="prismjs"><code>{{RFC9999}}<br/>
+{{I-D.ietf-blah-blah}}</code></pre></td>
 	</tr>
 	<tr class="row8">
 		<td class="col0 leftalign"> Citation with section number  </td><td class="col1 leftalign"> &lt;xref target=“RFC9999” section=“5”/&gt;      </td><td class="col2 leftalign"> <pre class="code">{{Section 5 of RFC9999}}</pre>

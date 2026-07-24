@@ -14,7 +14,7 @@ Markdown is a lightweight markup language that is widely supported.  While Markd
 ## Quick start guide
 
 1.  Choose a Markdown toolchain from the list below
-1.  The chosen toolchain will normally include its own template, which you then edit with your choice of text editor.
+1.  The chosen toolchain will normally include its own template, but you may also find templates at [Templates and schemas](/templates-and-schemas#markdown), which you then edit with your choice of text editor.
 1. If you require automated builds then consider the [Github workflow](https://github.com/martinthomson/i-d-template/blob/main/doc/TEMPLATE.md).
 1. Process your edited I-D using the [IETF Author Tools web service](https://author-tools.ietf.org).
 

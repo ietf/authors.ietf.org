@@ -1,8 +1,8 @@
 ---
 title: RFCXML and Markdown Syntax Comparison Tables
-description: The Rosetta stone of RFCXML and Markdown
+description: The Rosetta Stone of RFCXML and Markdown
 published: true
-date: 2026-07-24T09:01:17.703Z
+date: 2026-07-24T10:14:22.746Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-23T11:54:17.943Z
@@ -467,8 +467,8 @@ See [documentation on references](https://github.com/cabo/kramdown-rfc#reference
 	<tr class="row1">
 		<td class="col0 leftalign"> Normative Ref       </td><td class="col1 leftalign"> <pre class="code">&lt;xi:include href=&quot;https://bib.ietf.org/
 public/rfc/bibxml/reference.RFC.9200.xml&quot;/&gt;</pre>
-</td><td class="col2 leftalign"> {{!RFC9200}} (in the body) or <pre class="code">normative:
-  RFC9200:</pre>
+    </td><td class="col2 leftalign">in the body: <pre class="prismjs"><code>{{!RFC9200}} </code></pre>or in the YAML header: <pre class="prismjs"><code>normative:
+  RFC9200:</code></pre>
 </td>
 	</tr>
 	<tr class="row2">
@@ -476,10 +476,10 @@ public/rfc/bibxml/reference.RFC.9200.xml&quot;/&gt;</pre>
 public/rfc/bibxml/reference.RFC.8032.xml&quot;/&gt;
 &lt;xi:include href=&quot;https://bib.ietf.org/
 public/rfc/bibxml3/reference.I-D.ietf-mpls-rmr.xml&quot;/&gt;</pre>
-</td><td class="col2 leftalign"> {{?RFC8032}}<br/>
-{{?I-D.ietf-mpls-rmr}} (in the body) or <pre class="code">informative:
+</td><td class="col2 leftalign">in the body: <pre class="prismjs"><code>{{?RFC8032}}
+{{?I-D.ietf-mpls-rmr}}</code></pre> or in the YAML header: <pre class="prismjs"><code>informative:
   RFC8032:
-  I-D.ietf-mpls-rmr:</pre>
+  I-D.ietf-mpls-rmr:</code></pre>
 </td>
 	</tr>
 	<tr class="row3">

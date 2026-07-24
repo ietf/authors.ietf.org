@@ -2,7 +2,7 @@
 title: RFCXML and Markdown Syntax Comparison Tables
 description: The Rosetta stone of RFCXML and Markdown
 published: true
-date: 2026-07-23T13:57:55.825Z
+date: 2026-07-24T07:48:09.437Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-23T11:54:17.943Z
@@ -511,9 +511,7 @@ I-D.ietf-mpls-rmr:
   display: RMR</pre>
 
 <p>
- In the body, cite as: {{RFC5234}} and {{I-D.ietf-mpls-rmr}}<br/>
-<br/>
-Note (6/2/2026): It appears that the format “I-D.ietf-mpls-rmr: MPLS-RMR” and “RFC5234: ABNF” now work as well.   
+ In the body, cite as: {{RFC5234}} and {{I-D.ietf-mpls-rmr}} 
 </p>
 </td>
 	</tr>

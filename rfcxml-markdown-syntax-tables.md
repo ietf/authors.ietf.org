@@ -2,7 +2,7 @@
 title: RFCXML and Markdown Syntax Comparison Tables
 description: The Rosetta stone of RFCXML and Markdown
 published: true
-date: 2026-07-24T08:57:13.102Z
+date: 2026-07-24T09:01:17.703Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-23T11:54:17.943Z
@@ -108,7 +108,10 @@ foo
 </td>
 	</tr>
 	<tr class="row9">
-		<td class="col0 leftalign"> Citation with multiple section numbers  </td><td class="col1 leftalign"><pre class="prismjs"><code>Sections &lt;xref target=“RFC9999” section=“5”<br/> sectionFormat=“bare”/&gt; and<br/> &lt;xref target=“RFC9999” section=“6”<br/> sectionFormat=“bare”/&gt; of &lt;xref target=“RFC9999”/&gt;</code></pre></td><td class="col2 leftalign"> <pre class="prismjs"><code>{{Sections 5 and 6 of RFC9999}}<br/>
+		<td class="col0 leftalign"> Citation with multiple section numbers  </td><td class="col1 leftalign"><pre class="prismjs"><code>Sections &lt;xref target=“RFC9999” section=“5”
+sectionFormat=“bare”/&gt; and
+&lt;xref target=“RFC9999” section=“6”
+sectionFormat=“bare”/&gt; of &lt;xref target=“RFC9999”/&gt;</code></pre></td><td class="col2 leftalign"> <pre class="prismjs"><code>{{Sections 5 and 6 of RFC9999}}<br/>
 {{Sections 5 and 6 of ?RFC9999}}</code></pre>
 </td>
 	</tr>

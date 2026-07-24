@@ -2,7 +2,7 @@
 title: RFCXML and Markdown Syntax Comparison Tables
 description: The Rosetta stone of RFCXML and Markdown
 published: true
-date: 2026-07-24T08:46:28.783Z
+date: 2026-07-24T08:55:56.305Z
 tags: 
 editor: markdown
 dateCreated: 2026-07-23T11:54:17.943Z
@@ -102,14 +102,14 @@ foo
 {{I-D.ietf-blah-blah}}</code></pre></td>
 	</tr>
 	<tr class="row8">
-		<td class="col0 leftalign"> Citation with section number  </td><td class="col1 leftalign"> &lt;xref target=“RFC9999” section=“5”/&gt;      </td><td class="col2 leftalign"> <pre class="code">{{Section 5 of RFC9999}}</pre>
-<pre class="code">{{RFC9999, Section 5}}</pre>
-<pre class="code">{{!RFC9999, Section 5}}</pre>
+		<td class="col0 leftalign"> Citation with section number  </td><td class="col1 leftalign"><pre class="prismjs"><code>&lt;xref target=“RFC9999” section=“5”/&gt;</code></pre></td><td class="col2 leftalign"> <pre class="prismjs"><code>{{Section 5 of RFC9999}}<br/>
+{{RFC9999, Section 5}}<br/>
+{{!RFC9999, Section 5}}</code></pre>
 </td>
 	</tr>
 	<tr class="row9">
-		<td class="col0 leftalign"> Citation with multiple section numbers  </td><td class="col1 leftalign"> Sections &lt;xref target=“RFC9999” section=“5” sectionFormat=“bare”/&gt; and &lt;xref target=“RFC9999” section=“6” sectionFormat=“bare”/&gt; of &lt;xref target=“RFC9999”/&gt;    </td><td class="col2 leftalign"> <pre class="code">{{Sections 5 and 6 of RFC9999}}</pre>
-<pre class="code">{{Sections 5 and 6 of ?RFC9999}}</pre>
+		<td class="col0 leftalign"> Citation with multiple section numbers  </td><td class="col1 leftalign"><pre class="prismjs"><code>Sections &lt;xref target=“RFC9999” section=“5” sectionFormat=“bare”/&gt; and &lt;xref target=“RFC9999” section=“6” sectionFormat=“bare”/&gt; of &lt;xref target=“RFC9999”/&gt;</code></pre></td><td class="col2 leftalign"> <pre class="prismjs"><code>{{Sections 5 and 6 of RFC9999}}<br/>
+{{Sections 5 and 6 of ?RFC9999}}</code></pre>
 </td>
 	</tr>
 	<tr class="row10">

@@ -12,7 +12,7 @@ dateCreated: 2021-11-15T10:07:09.043Z
 ## Templates
 To use one of these templates you will also need to download both of the schemas below and keep them all in the same directory.  For those that use Git, you can clone the [repository](https://github.com/ietf-tools/rfcxml-templates-and-schemas) and go from there.
 
-> NOTE: While RFCs validate with the same schema as Internet-Drafts, using an XML RFC as a template for an Internet-Draft is not recommended as the prep tool hard codes multiple data into the RFC, making it unsuitable for further manual editing.
+> NOTE: The XML of an RFC is not recommended as a template for a new Internet-Draft because the [prep tool](/rfcxml-overview#the-prep-tool) adds hard-coded data that makes it unsuitable for manual editing. To write a "bis" document, see [starting from an existing RFC](/rfcxml-templates-and-schemas/#starting-from-an-existing-rfc).
 {.is-warning}
 
 ### draft-rfcxml-general-template-standard-00.xml
@@ -23,6 +23,21 @@ To use one of these templates you will also need to download both of the schemas
 
 ### draft-rfcxml-general-template-annotated-00.xml
 [draft-rfcxml-general-template-annotated-00.xml](https://raw.githubusercontent.com/ietf-tools/RFCXML/refs/heads/main/templates/draft-rfcxml-general-template-annotated-00.xml) is an RFCXML template that includes examples for almost all of the features of RFCXML and many examples of how to achieve specific formatting, along with ample comments to explain the examples.
+
+## Starting from an existing RFC 
+
+To start on a "bis" document (which revises an existing RFC):
+
+1. Click "Get editor source" on the Datatracker page of the RFC (e.g., `https://datatracker.ietf.org/doc/rfcNNNN/`), available for RFC 8650 and higher. 
+   * Source files of earlier RFCs are available by request; please send email to the [RFC Editor](mailto:rfc-editor@rfc-editor.org).
+1. If necessary, convert the RFCXML from v2 to v3 using the [Author Tools web service](https://author-tools.ietf.org). See [Upgrading from v2](/upgrading-from-v2).
+1. Make the following edits to the RFCXML:
+   * Remove the **number** attribute (e.g., `number="NNNN"`) from the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element.
+   * Add a **docName** attribute to the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element (e.g., `docName="draft-foo-rfcNNNNbis-00"`).
+   * Update the **obsoletes** attribute in the [**\<rfc\>**](/rfcxml-vocabulary#rfc) element (e.g., `obsoletes="NNNN"`).
+   * Remove the [**\<seriesInfo\>**](/rfcxml-vocabulary#seriesInfo) element for the RFC (e.g., `<seriesInfo name="RFC" value="NNNN"/>`).
+   * Add a **day** attribute to the [**\<date\>**](/rfcxml-vocabulary#date) element (e.g., `<date year="2023" month="April" day="30"/>`).
+1. Review the reports on the [RFC Errata site](http://errata.rfc-editor.org) for any updates needed.
 
 ## Schemas
 
@@ -69,7 +84,7 @@ The following legacy files are for those working with old I-Ds or RFCs and shoul
 ### rfc2629-other.ent
 [rfc2629-other.ent](https://raw.githubusercontent.com/ietf-tools/RFCXML/refs/heads/main/legacy/rfc2629-other.ent) is a small set of character entities.  This file is no longer needed as the [special processing of non-ASCII character](/upgrading-from-v2#special-processing-of-non-ascii-characters) has been superseded by direct support for [non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml).
 ### rfc2629-xhtml.ent
-[rfc2629-xhtml.ent](https://raw.githubusercontent.com/ietf-tools/RFCXML/refs/heads/main/legacy/rfc2629-xhtml.ent) is a larger set of character entities. This file is no longer needed as the [special processing of non-ASCII character](/upgrading-from-v2#special-processing-of-non-ascii-characters) has been superseded by direct support for[non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml).
+[rfc2629-xhtml.ent](https://raw.githubusercontent.com/ietf-tools/RFCXML/refs/heads/main/legacy/rfc2629-xhtml.ent) is a larger set of character entities. This file is no longer needed as the [special processing of non-ASCII character](/upgrading-from-v2#special-processing-of-non-ascii-characters) has been superseded by direct support for [non-ASCII characters in RFCXML](/non-ascii-characters-in-rfcxml).
 ### rfc2629.dtd
 [rfc2629.dtd](https://raw.githubusercontent.com/ietf-tools/RFCXML/refs/heads/main/legacy/rfc2629.dtd) is the DTD for v1 of RFCXML as documented in RFC2629.
 

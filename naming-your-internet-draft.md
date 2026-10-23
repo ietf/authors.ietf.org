@@ -79,7 +79,7 @@ This describes the subject of the I-D, usually in just a few words. Each word is
 
 The name of an I-D should not imply a status. Avoid the use of the terms "Standard", "Proposed", "Draft", "Experimental", "Historic", "Required", "Recommended", "Elective", or "Restricted".
 
-Internet-Drafts that revise existing RFCs often have names with "bis" in them, meaning 'again' or 'twice'. For example, an I-D that is proposed as a replacement to RFC 2345 might be called "draft-someone-rfc2345bis-00".
+Internet-Drafts that revise existing RFCs often have names with "bis" in them, meaning 'again' or 'twice'. For example, an I-D that is proposed as a replacement to RFC 2345 might be called "draft-someone-rfc2345bis-00". See [starting from an existing RFC](/rfcxml-templates-and-schemas/#starting-from-an-existing-rfc) for details.
 
 ## (version)
 Internet-Drafts are versioned with two digits, separated from the name with a hyphen. The initial version of an I-D must be "00", and subsequent updates must increment the version number by one.

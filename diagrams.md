@@ -67,6 +67,18 @@ See above for details on the specific SVG profile that must be supported and [Va
 In addition, please provide detailed descriptions of the artwork in SVG `<desc>` elements to assist readers who are visually impaired. For more information about this element, please see the [Accessibility Features of SVG](https://www.w3.org/TR/SVG-access/#Equivalent).
 
 The following tools are known to be used by community members to generate SVG using one or more of the methods above:
+## rfc-draw
+#### Nevil Brownlee <nevil.brownlee@gmail.com>  Fri, 17 Nov 2023 
+## {.tabset}
+### Details
+To answer the question "how do I make an SVG diagram that conforms to RFC7996", I've created a python program called rfc-draw, using python's interactive environment, tkinter. 
+
+The current (v1.0) version is on github, i.e. at https://github.com/nevil-brownlee/rfc-draw  
+rfc-draw lets you draw your diagram on-screen, and save it to an rfc-draw data (.rdd) file.  
+From that .rdd file you can make an svg version, an ASCII-art version, and also 
+an xml2rfc <figure>, with both ascii and svg versions.  
+For more details and downloads see  https://github.com/nevil-brownlee   
+I'm happy to fix any problems you may find, and of course suggestions for improvements are welcome!
 
 ## Dia
 ## {.tabset}

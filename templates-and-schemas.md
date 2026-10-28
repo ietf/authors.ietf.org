@@ -12,7 +12,7 @@ dateCreated: 2021-11-15T10:07:09.043Z
 ## Templates
 To use one of these templates you will also need to download both of the schemas below and keep them all in the same directory.  For those that use Git, you can clone the [repository](https://github.com/ietf-tools/rfcxml-templates-and-schemas) and go from there.
 
-> NOTE: The XML of an RFC is not recommended as a template for a new Internet-Draft because the [prep tool](/rfcxml-overview#the-prep-tool) adds hard-coded data that makes it unsuitable for manual editing. To write a "bis" document, see [starting from an existing RFC](/rfcxml-templates-and-schemas/#starting-from-an-existing-rfc).
+> NOTE: The XML of an RFC is not recommended as a template for a new Internet-Draft because the [prep tool](/rfcxml-overview#the-prep-tool) adds hard-coded data that makes it unsuitable for manual editing. To write a "bis" document, see [starting from an existing RFC](/rfcxml-templates-and-schemas#starting-from-an-existing-rfc).
 {.is-warning}
 
 ### draft-rfcxml-general-template-standard-00.xml

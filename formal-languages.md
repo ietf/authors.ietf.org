@@ -41,9 +41,9 @@ smilint -m -s -l 6 -i namelength-32
 [rfcstrip](https://github.com/mbj4668/rfcstrip) extracts code components, YANG modules and SMIv2 (MIB) modules from RFCs and I-Ds, and extracts and unfolds artwork from RFCs and I-Ds in XML format.
 
 # YANG
-YANG (Yet Another Next Generation) is a data modeling language for data sent over network management protocols such as NETCONF and RESTCONF. It is specified in [RFC 7950](https://www.rfc-editor.org/info/rfc7950/), [RFC 8340](https://www.rfc-editor.org/info/rfc8340/), and many other RFCs.
+YANG (Yet Another Next Generation) is a data modeling language for data sent over network management protocols such as NETCONF and RESTCONF. It is specified in RFC 7950, RFC 8340, and many other RFCs.
 
-All YANG modules must follow the "Guidelines for Authors and Reviewers of YANG Data Model Documents" ([RFC 9907](https://www.rfc-editor.org/info/rfc9907/)) and the [YANG module security considerations](https://wiki.ietf.org/group/ops/yang-security-guidelines). For the template, the latter is authoritative.
+All YANG modules must follow the "Guidelines for Authors and Reviewers of YANG Data Model Documents" (RFC 9907) and the [YANG module security considerations](https://wiki.ietf.org/group/ops/yang-security-guidelines). For the template, the latter is authoritative.
 
 ## YANG Catalog
 [YANG Catalog](https://www.yangvalidator.com/) is a website operated and maintained by the IETF that provides a central resource for the use of YANG, including the [YANG Validator](https://www.yangvalidator.com/yangvalidator).  YANG Catalog is [open source](https://github.com/YangCatalog).

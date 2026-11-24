@@ -1,11 +1,11 @@
 ---
 title: Content guidelines overview
-description: 
+description: ''
 published: true
-date: 2022-06-01T11:45:52.918Z
-tags: 
+date: '2022-06-01T13:58:36.077Z'
+tags: []
 editor: markdown
-dateCreated: 2022-06-01T11:42:48.572Z
+dateCreated: '2022-06-01T11:42:01.237Z'
 ---
 
 The section covers the naming and content of Internet-Drafts (I-Ds) including the required and recommended sections.  There are lots of rules governing the content, developed over many years in order, which aim to ensure the readability and consistency of I-Ds.  Please follow this section closely.  The pages in this section are:

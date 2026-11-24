@@ -1,11 +1,11 @@
 ---
 title: Collaborative editing
-description: 
+description: ''
 published: true
-date: 2023-08-11T12:02:30.445Z
-tags: 
+date: '2023-08-11T12:02:35.112Z'
+tags: []
 editor: markdown
-dateCreated: 2021-08-25T04:21:06.810Z
+dateCreated: '2021-08-25T04:21:06.810Z'
 ---
 
 Collaborative editing is generally the hardest part of authoring an I-D as you will need to keep on top of multiple changes from multiple sources.
@@ -25,3 +25,4 @@ The [ietf-github-services](https://github.com/ietf-github-services) organisation
 
 # Comparing two documents
 [iddiff](https://author-tools.ietf.org/iddiff) is a web service that provides a side-by-side comparison of two documents.  It is generally used to show the differences between two version of the same I-D to see what has changed, or between a submitted I-D and a working draft.
+

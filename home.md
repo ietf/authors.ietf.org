@@ -2,10 +2,10 @@
 title: Home
 description: Welcome to the Internet-Draft/RFC author resources site
 published: true
-date: 2026-08-05T22:56:03.547Z
-tags: 
+date: '2026-11-24T13:14:54.650Z'
+tags: []
 editor: markdown
-dateCreated: 2021-08-18T00:11:52.864Z
+dateCreated: '2021-08-18T00:11:52.864Z'
 ---
 
 # Welcome to the Internet-Draft authors resource site
@@ -38,5 +38,6 @@ This site includes much text from previous work by Henrik Levkowetz, Robert Spar
 # Activity tracking
 
 Activity on this site is tracked in accordance with the [IETF/IRTF/IAB Privacy Statement](https://www.ietf.org/privacy-statement/)
+
 
 

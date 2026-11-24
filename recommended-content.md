@@ -1,11 +1,11 @@
 ---
 title: Recommended content
-description: 
+description: ''
 published: true
-date: 2022-05-20T11:45:52.918Z
-tags: 
+date: '2022-05-25T11:09:51.839Z'
+tags: []
 editor: markdown
-dateCreated: 2022-05-20T11:42:48.572Z
+dateCreated: '2022-05-25T11:09:49.469Z'
 ---
 
 All Internet-Drafts should contain the following sections, depending on need:

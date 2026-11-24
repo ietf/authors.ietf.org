@@ -1,11 +1,11 @@
 ---
 title: Example addresses
-description: 
+description: ''
 published: true
-date: 2022-05-19T13:53:12.438Z
-tags: 
+date: '2025-10-24T11:36:39.068Z'
+tags: []
 editor: markdown
-dateCreated: 2022-05-19T13:52:28.098Z
+dateCreated: '2022-05-19T14:05:44.061Z'
 ---
 
 # Domain names
@@ -27,3 +27,4 @@ USA: +1-\<area code\>-555-\<0100-0199\>
 For USA examples, also see [ATIS-0300115](https://www.nanpa.com/sites/default/files/2024-07/ATIS-0300115.pdf).
   
 - [x] Verify that real telephone numbers are not used in examples.
+

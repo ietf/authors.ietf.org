@@ -1,11 +1,11 @@
 ---
 title: Upgrading from v2
-description: 
+description: ''
 published: true
-date: 2022-12-02T11:00:17.128Z
-tags: 
+date: '2022-12-02T11:00:23.087Z'
+tags: []
 editor: markdown
-dateCreated: 2021-11-04T19:26:45.619Z
+dateCreated: '2021-11-04T19:26:45.619Z'
 ---
 
 # Converting an XML file from v2 to v3

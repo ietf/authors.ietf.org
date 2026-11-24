@@ -1,11 +1,11 @@
 ---
 title: Drafting in word processors
-description: 
+description: ''
 published: true
-date: 2021-12-14T20:45:40.623Z
-tags: 
+date: '2021-12-21T07:29:36.175Z'
+tags: []
 editor: markdown
-dateCreated: 2021-08-18T10:58:56.227Z
+dateCreated: '2021-08-18T10:58:56.227Z'
 ---
 
 # Word processor toolchains

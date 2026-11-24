@@ -1,11 +1,11 @@
 ---
 title: Getting help
-description: 
+description: ''
 published: true
-date: 2024-12-17T16:02:16.849Z
-tags: 
+date: '2024-12-17T16:02:19.306Z'
+tags: []
 editor: markdown
-dateCreated: 2022-06-01T13:43:17.915Z
+dateCreated: '2022-06-01T13:43:17.915Z'
 ---
 
 Plenty of help is available on authoring I-Ds, both direct from the IETF and from other members of the IETF community. If you do not know where to start or your issue type is not listed below please [email Support](mailto:support@ietf.org).  While we cannot answer all questions, we should be able to direct you to the right place where we can't.
@@ -27,3 +27,4 @@ This is a more general list for discussion of the RFC Series and all aspects of 
 * **Tools Discuss**
 This is an even more general list for discussion of the IETF Tools and their development.  If your question is about the Datatracker, including the I-D submission process or the I-D repository/archive then this is a good place to start.
 ([subscribe](https://mailman3.ietf.org/mailman3/lists/tools-discuss.ietf.org/) : [post](mailto:tools-discuss@ietf.org) : [archive](https://mailarchive.ietf.org/arch/browse/tools-discuss/))
+

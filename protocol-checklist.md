@@ -1,11 +1,11 @@
 ---
 title: Protocol checklist
-description: 
+description: ''
 published: true
-date: 2022-05-02T08:57:16.921Z
-tags: 
+date: '2022-06-01T11:42:20.678Z'
+tags: []
 editor: markdown
-dateCreated: 2021-12-15T04:40:23.005Z
+dateCreated: '2021-12-15T04:40:23.005Z'
 ---
 
 This is a general checklist that will help to avoid extended discussion during the document review and approval process. The IESG has compiled a more detailed list of [useful topics to consider](https://trac.ietf.org/trac/iesg/wiki/ExpertTopics).

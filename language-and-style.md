@@ -1,11 +1,11 @@
 ---
 title: Language and style
-description: 
+description: ''
 published: true
-date: 2021-12-15T05:20:12.438Z
-tags: 
+date: '2026-08-26T22:52:10.477Z'
+tags: []
 editor: markdown
-dateCreated: 2021-12-14T23:52:28.098Z
+dateCreated: '2021-12-14T23:52:28.098Z'
 ---
 
 # Style guide
@@ -31,3 +31,4 @@ The IESG has made a [statement](https://www.ietf.org/about/groups/iesg/statement
 
 # Stale text
 Avoid text that will become outdated after the I-D is published. Examples include non-permanent URLs, mentions of specific mailing lists as places to send comments on a document, or referring to specific WGs as a place to perform specific future actions (e.g., reviewing follow-up documents). In some cases (like the ORGANIZATION clause in MIB modules), references to working groups are impossible to avoid; however, generally, Internet-Drafts should not assign powers or responsibilities to WGs unless the WG in question is certain to exist as long as the practice documented in the published RFC remains valid. In cases where a specific WG is expected to be a focal point for future action, it is acceptable to give the task to the IESG, giving instructions on how the action is expected to be delegated, e.g., by forwarding to an appropriate WG or another set of experts.
+

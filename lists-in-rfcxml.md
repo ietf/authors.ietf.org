@@ -1,11 +1,11 @@
 ---
 title: Lists in RFCXML
-description: 
+description: ''
 published: true
-date: 2021-11-05T01:37:10.690Z
-tags: 
+date: '2021-12-21T07:30:03.276Z'
+tags: []
 editor: markdown
-dateCreated: 2021-11-05T01:35:56.674Z
+dateCreated: '2021-11-05T01:35:56.674Z'
 ---
 
 # Different kinds of lists

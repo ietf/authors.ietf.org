@@ -1,11 +1,11 @@
 ---
 title: Naming your Internet-Draft
-description: 
+description: ''
 published: true
-date: 2021-12-16T04:43:36.904Z
-tags: 
+date: '2026-10-23T22:00:19.255Z'
+tags: []
 editor: markdown
-dateCreated: 2021-12-14T23:17:10.215Z
+dateCreated: '2021-12-14T23:17:10.215Z'
 ---
 
 Internet-Drafts have structured names that should accurately reflect the status and subject of the draft.  Please ensure that the following guidelines are followed when naming your draft.
@@ -83,3 +83,4 @@ Internet-Drafts that revise existing RFCs often have names with "bis" in them, m
 
 ## (version)
 Internet-Drafts are versioned with two digits, separated from the name with a hyphen. The initial version of an I-D must be "00", and subsequent updates must increment the version number by one.
+

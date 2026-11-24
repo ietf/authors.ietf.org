@@ -1,11 +1,11 @@
 ---
 title: Diagrams
-description: 
+description: ''
 published: true
-date: 2024-11-20T00:05:14.174Z
-tags: 
+date: '2026-08-26T22:52:07.496Z'
+tags: []
 editor: markdown
-dateCreated: 2021-11-17T10:06:49.972Z
+dateCreated: '2021-11-17T10:06:49.972Z'
 ---
 
 # Supported formats
@@ -270,3 +270,4 @@ The following example has one [**\<artset\>**](https://authors.ietf.org/en/rfcxm
   </artset>
 </figure>
 ```
+

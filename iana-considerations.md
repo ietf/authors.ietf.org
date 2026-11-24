@@ -1,11 +1,11 @@
 ---
 title: IANA Considerations
-description: 
+description: ''
 published: true
-date: 2025-06-24T21:46:36.233Z
-tags: 
+date: '2025-06-24T21:46:37.459Z'
+tags: []
 editor: markdown
-dateCreated: 2024-07-21T22:32:52.691Z
+dateCreated: '2024-07-21T22:32:52.691Z'
 ---
 
 The [Internet Assigned Numbers Authority](https://www.iana.org/) (IANA) operates registries that provide global coordination of the DNS root, IP addressing, and other Internet protocol resources for the IETF. These registries are created, revised, obsoleted and closed by RFCs. For some registries, an RFC is required to register or deprecate an entry in that registry. 
@@ -48,4 +48,5 @@ If the registration policy requires mailing list review, consider reaching out t
 
 # Replacing an RFC that has IANA actions
 If your I-D aims to replace an existing RFC that contains IANA actions, then special care is needed. This is explained in [Section 8 of RFC 8126](https://www.rfc-editor.org/rfc/rfc8126.html#section-8) with additional guidance in the IANA [Protocol Registration Procedures](https://www.iana.org/help/protocol-registration#bis.)
+
 

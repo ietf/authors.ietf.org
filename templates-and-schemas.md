@@ -1,11 +1,11 @@
 ---
 title: Templates and schemas
-description: 
+description: ''
 published: true
-date: 2025-10-01T02:25:16.199Z
-tags: 
+date: '2026-10-28T19:47:00.527Z'
+tags: []
 editor: markdown
-dateCreated: 2021-11-15T10:07:09.043Z
+dateCreated: '2021-11-15T10:07:09.043Z'
 ---
 
 # RFCXML
@@ -103,4 +103,5 @@ Community developed Markdown examples specific to [mmark](https://mmark.miek.nl/
 ## Templates
 Community developed Asciidoc template specific to [metanorma-ietf](https://github.com/metanorma/metanorma-ietf):
 * [Metanorma IETF RFC template](https://github.com/metanorma/mn-templates-ietf)
+
 

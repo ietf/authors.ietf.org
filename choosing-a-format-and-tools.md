@@ -1,11 +1,11 @@
 ---
 title: Choosing a format and tools
-description: 
+description: ''
 published: true
-date: 2023-12-04T14:36:49.115Z
-tags: 
+date: '2026-11-24T13:13:37.095Z'
+tags: []
 editor: markdown
-dateCreated: 2022-03-01T02:54:51.361Z
+dateCreated: '2022-03-01T02:54:51.361Z'
 ---
 
 # Making the right choice 
@@ -23,6 +23,7 @@ The IETF does not provide an authoring toolchain and does not recommend a specif
 # How your choice fits into the process
 The diagram below shows the different formats supported at each stage of the authoring process.  Some of these stages only support RFCXML and plaintext, but if you are using Markdown then that should not be a problem as the toolchain will generate the RFCXML for you.
 
+::block-diagram
 ```mermaid
 graph TD  
   A("Initial drafting<br/>(Any format)") --> B("Collaborative editing<br/>(Any format)")
@@ -36,6 +37,7 @@ graph TD
   E --> F("RFC Pre-publication review<br/>(RFCXML)")
   F --> G([RFC Publication])
 ```
+::
 
 - **Initial drafting** 
 As explained, there are multiple formats for initial drafting but a careful choice is needed.  New authors often report that they used a format and tool recommended by a fellow author and then later had to put in significant effort to convert it into something they could use more productively. 
@@ -67,4 +69,5 @@ The following authoring formats are in use by the IETF community, though some by
 * **Other markup languages**.  If you are very familiar with one of the less well known text markup languages and their normal editors, for example LaTeX, reStructuredText, nroff or Org Mode in Emacs, then this may be a good choice for you.  A number of these markup languages are supported by tools that can convert your text to either RFCXML or plaintext I-D format, though they may not be as well maintained or fully featured as the Markdown tools.  See [Drafting in other markup languages](/drafting-in-other-markup-languages) for more details.
 * **Plain text**.  Plaintext documents are still accepted for I-Ds submission some people either directly create plaintext documents in a text editor, or author in a markup language and generating the plaintext from that.  Drafting in plaintext requires the author to manually provide lots of content that is automatically generated when using a markup language.
 *  **Word processors**.  Finally, there are a couple of tools that support word processors such as Microsoft Word, converting their output to RFCXML. See [Drafting in word processors](/drafting-in-word-processors) for more details.
+
 

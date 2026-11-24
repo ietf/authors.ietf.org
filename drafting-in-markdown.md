@@ -1,11 +1,11 @@
 ---
 title: Drafting in Markdown
-description: 
+description: ''
 published: true
-date: 2022-03-01T03:38:59.420Z
-tags: 
+date: '2026-08-26T22:57:15.735Z'
+tags: []
 editor: markdown
-dateCreated: 2021-08-18T10:57:57.022Z
+dateCreated: '2021-08-18T10:57:57.022Z'
 ---
 
 # Introduction
@@ -51,3 +51,4 @@ Authors writing in Markdown may find the following tools helpful:
 ## vscode-livepreview
 [vscode-livepreview](https://github.com/microsoft/vscode-livepreview) is a VS Code extension from Microsoft that can preview the HTML document rendering. It does this by hosting a local HTTP server that can be accessed via the internal VS Code browser or an external browser. Can be combined with any "build
 on save" approach for a more live-update type workflow.
+

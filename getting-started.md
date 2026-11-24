@@ -1,11 +1,11 @@
 ---
 title: Getting started
-description: 
+description: ''
 published: true
-date: 2022-03-01T04:02:07.237Z
-tags: 
+date: '2022-06-01T13:58:38.765Z'
+tags: []
 editor: markdown
-dateCreated: 2021-08-17T23:57:12.813Z
+dateCreated: '2021-08-17T23:57:12.813Z'
 ---
 
 The basic steps in authoring an Internet-Draft (I-D) are as follows:
@@ -21,3 +21,4 @@ The basic steps in authoring an Internet-Draft (I-D) are as follows:
 - [Render it into some output formats *Make sure that it outputs the way you expect it to*](/rendering-and-converting)
 - [Submit your I-D to Datatracker *Then share the IETF Datatracker link to your I-D and gather feedback*](/submitting-your-internet-draft)
 {.links-list}
+

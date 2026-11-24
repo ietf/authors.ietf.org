@@ -1,11 +1,11 @@
 ---
 title: Non-ASCII characters in RFCXML
-description: 
+description: ''
 published: true
-date: 2021-12-16T04:45:35.249Z
-tags: 
+date: '2023-09-07T15:51:10.270Z'
+tags: []
 editor: markdown
-dateCreated: 2021-12-16T02:40:30.443Z
+dateCreated: '2021-12-16T02:40:30.443Z'
 ---
 
 The use of non-ASCII characters in RFCXML is detailed in RFC 7997. Your file encoding must be set as UTF-8 (the default).
@@ -176,3 +176,4 @@ comes out as shown below:
 | 9   | \<Richard Ⅳ\> (U+2163) | \<richard iv\>                          |
 _Table 1: A Sample of Legal Nicknames_
 ```
+

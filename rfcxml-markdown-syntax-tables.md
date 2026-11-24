@@ -2,10 +2,10 @@
 title: RFCXML and Markdown Syntax Comparison Tables
 description: The Rosetta Stone of RFCXML and Markdown
 published: true
-date: 2026-07-28T19:10:53.992Z
-tags: 
+date: '2026-07-28T19:10:55.870Z'
+tags: []
 editor: markdown
-dateCreated: 2026-07-23T11:54:17.943Z
+dateCreated: '2026-07-23T11:54:17.943Z'
 ---
 
 # RFCXML vs. kramdown-rfc syntax

@@ -1,11 +1,11 @@
 ---
 title: Rendering and converting
-description: 
+description: ''
 published: true
-date: 2021-12-09T03:39:05.871Z
-tags: 
+date: '2023-01-20T10:15:16.634Z'
+tags: []
 editor: markdown
-dateCreated: 2021-09-02T02:05:52.949Z
+dateCreated: '2021-09-02T02:05:52.949Z'
 ---
 
 It is common for authors to render (convert) their documents into a different format to make them easier to read, or to convert to another format for use in another tool. 
@@ -40,3 +40,4 @@ There are three main ways to render plaintext:
 
 # Rendering other formats
 If you want to convert from a different source format then you should first convert to RFCXML or plaintext and follow the instructions above.
+

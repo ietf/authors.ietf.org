@@ -1,11 +1,11 @@
 ---
 title: Drafting in plaintext
-description: 
+description: ''
 published: true
-date: 2023-11-02T12:48:07.104Z
-tags: 
+date: '2023-11-02T12:48:12.681Z'
+tags: []
 editor: markdown
-dateCreated: 2021-12-10T00:25:37.371Z
+dateCreated: '2021-12-10T00:25:37.371Z'
 ---
 
 Drafting in plaintext can be achieved with any text editor or word processor and so no toolchains are listed here.  It should be noted that drafting in plaintext, in comparison to a markup language, requires authors to manually handle multiple sections of content and ensure that the document conforms to many formatting rules.
@@ -41,3 +41,4 @@ The following formatting requirements for plaintext I-Ds are often overlooked:
     - [ ] Control characters other than CR, NL, and FF are not allowed. 
     - [ ] The use of non-ASCII characters is limited to when there is a specific need, most notably for names. Many uses of non-ASCII characters will require listing the Unicode codepoint by number in addition to the character itself.
 - [ ] Verify that the I-D is well formatted for readability and clarity.
+

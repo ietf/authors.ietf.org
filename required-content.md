@@ -1,11 +1,11 @@
 ---
 title: Required content
-description: 
+description: ''
 published: true
-date: 2025-06-24T21:48:59.047Z
-tags: 
+date: '2025-06-24T21:49:00.357Z'
+tags: []
 editor: markdown
-dateCreated: 2021-12-15T09:33:48.572Z
+dateCreated: '2021-12-15T09:33:48.572Z'
 ---
 
 All Internet-Drafts must contain the following sections:
@@ -139,3 +139,4 @@ Per RFC 7322:
 Checklist:
 - [x] Verify that the I-D contains a section giving the name and contact information (postal mail, phone, and/or email) for the authors.
 - [x] Verify that there are no more than five authors or editors. If there is a need to list more, discuss the need with the relevant stream leadership as early in the process as possible. For the IETF stream, consult an Area Director.
+

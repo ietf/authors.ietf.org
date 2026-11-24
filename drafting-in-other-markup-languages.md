@@ -1,11 +1,11 @@
 ---
 title: Drafting in other markup languages
-description: 
+description: ''
 published: true
-date: 2021-12-14T20:45:17.733Z
-tags: 
+date: '2026-08-26T22:52:09.043Z'
+tags: []
 editor: markdown
-dateCreated: 2021-08-19T09:01:14.498Z
+dateCreated: '2021-08-19T09:01:14.498Z'
 ---
 
 There are many other lightweight text markup languages with their own processing systems. Those listed here are supported by a toolchain that produces either a plaintext or an RFCXML Internet-Draft.
@@ -56,4 +56,5 @@ developers, among others.
 ## RST with rst2xmlrfc
 
 [rst2rfcxml](https://github.com/dthaler/rst2rfcxml) is a processing tool that converts files in RST format into v3 RFCXML.
+
 

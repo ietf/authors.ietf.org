@@ -1,11 +1,11 @@
 ---
 title: Drafting in XML
-description: 
+description: ''
 published: true
-date: 2023-08-11T12:00:07.248Z
-tags: 
+date: '2023-08-11T12:00:12.332Z'
+tags: []
 editor: markdown
-dateCreated: 2021-08-18T10:56:56.326Z
+dateCreated: '2021-08-18T10:56:56.326Z'
 ---
 
 # Introduction
@@ -51,3 +51,4 @@ This [script](https://strayalpha.com/software/rfcxml/lookback-bcp-fix.pl) adds `
 
 ## i-d-template
 [Drafting in Markdown](/drafting-in-markdown#h-3-internet-draft-template-and-i-d-template) describes the use of the [i-d-template](https://github.com/martinthomson/i-d-template) and [internet-draft-template](https://github.com/martinthomson/internet-draft-template) projects for managing I-Ds. These tools can be used to manage RFCXML I-Ds by adding the RFCXML I-D to the root of the repository.
+

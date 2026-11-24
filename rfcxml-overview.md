@@ -1,11 +1,11 @@
 ---
 title: RFCXML overview and background
-description: 
+description: ''
 published: true
-date: 2021-12-09T03:43:42.456Z
-tags: 
+date: '2022-11-25T19:43:35.356Z'
+tags: []
 editor: markdown
-dateCreated: 2021-11-03T13:17:49.168Z
+dateCreated: '2021-11-03T13:17:49.168Z'
 ---
 
 # Overview
@@ -29,3 +29,4 @@ v3 was documented in RFC 7991, published in December 2016 but following publicat
 # The 'prep' tool
 
 Published RFCs go through a 'prep' process that makes multiple changes to the RFCXML in order to support the long time archival nature of RFCs.  Key aspects of the prep tool are documented in RFC 7998.  
+

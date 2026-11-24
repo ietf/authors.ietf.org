@@ -1,11 +1,11 @@
 ---
 title: RFCXML vocabulary reference
-description: 
+description: ''
 published: true
-date: 2025-10-27T23:04:02.305Z
-tags: 
+date: '2026-08-26T22:52:13.382Z'
+tags: []
 editor: markdown
-dateCreated: 2021-11-02T22:58:38.001Z
+dateCreated: '2021-11-02T22:58:38.001Z'
 ---
 
 The current version of the RFCXML vocabulary is v3 and this page is currently the authoritative documentation for v3, superseding RFC 7991 as multiple changes have been made since the publication of RFC 7991.  
@@ -2758,3 +2758,4 @@ Identifies the document component being referenced.  The value needs to match th
        (text | em | strong | sub | sup | tt)*
      }
 ```
+

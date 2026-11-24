@@ -1,11 +1,11 @@
 ---
 title: Submitting your Internet-Draft
-description: 
+description: ''
 published: true
-date: 2021-12-09T19:31:26.698Z
-tags: 
+date: '2021-12-21T07:30:36.153Z'
+tags: []
 editor: markdown
-dateCreated: 2021-12-09T03:59:06.890Z
+dateCreated: '2021-12-09T03:59:06.890Z'
 ---
 
 # Submission tool
@@ -56,3 +56,4 @@ An I-D expires 185 days after it was placed in the Repository, unless it is in a
 Additionally, all versions of Internet-Drafts are kept in the [Internet-Draft Archive](https://www.ietf.org/archive/id) along with any additional renderings.  Removing an I-D from the Archive occurs only in exceptional circumstances, described in this [IESG Statement](https://www.ietf.org/about/groups/iesg/statements/internet-draft-removal/).
 
 Even though Internet-Drafts are kept in an Archive, they are not an archival series and should not be cited or quoted as anything other than "work in progress".
+

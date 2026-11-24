@@ -1,11 +1,11 @@
 ---
 title: RFC Publication process
-description: 
+description: ''
 published: true
-date: 2026-05-10T23:45:10.052Z
-tags: 
+date: '2026-05-20T21:07:43.062Z'
+tags: []
 editor: markdown
-dateCreated: 2024-07-23T22:38:08.063Z
+dateCreated: '2024-07-23T22:38:08.063Z'
 ---
 
 # Stream approval
@@ -143,3 +143,4 @@ A document may occasionally be withdrawn from the queue, e.g., because a stream 
 
 # Publication
 When an RFC is published, an announcement is sent to the ietf-announce and rfc-dist mailing lists. The URL for the info page of an RFC is of the form: https://www.rfc-editor.org/info/rfcXXXX. The RFC Editor maintains a list of [the most recently published RFCs (RSS Feed)](https://www.rfc-editor.org/rfcrss.xml).
+

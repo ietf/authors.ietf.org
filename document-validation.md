@@ -1,11 +1,11 @@
 ---
 title: Document validation
-description: 
+description: ''
 published: true
-date: 2022-01-31T22:26:01.925Z
-tags: 
+date: '2022-01-31T22:26:04.311Z'
+tags: []
 editor: markdown
-dateCreated: 2021-08-20T02:57:26.157Z
+dateCreated: '2021-08-20T02:57:26.157Z'
 ---
 
 Document validation is an important step for an Internet-Draft to ensure that it is correctly formatted.  This is different from the syntax validation that some of the tools perform as you use them.  
@@ -40,4 +40,5 @@ The command line validation tools below only support I-Ds written in RFCXML or p
 
 # Validating by submitting your I-D to Datatracker
 When an I-D is submitted to Datatracker it automatically validates the I-D and reports any errors.  For more details, see [Submitting your Internet-Draft](/submitting-your-internet-draft).
+
 

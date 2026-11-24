@@ -1,11 +1,11 @@
 ---
 title: References in RFCXML
-description: 
+description: ''
 published: true
-date: 2025-09-04T03:56:36.239Z
-tags: 
+date: '2025-12-11T17:24:10.638Z'
+tags: []
 editor: markdown
-dateCreated: 2021-11-04T23:45:18.949Z
+dateCreated: '2021-11-04T23:45:18.949Z'
 ---
 
 # Introduction
@@ -264,3 +264,4 @@ Use the [**\<name\>**](/rfcxml-vocabulary#name) element (child of the [**\<refer
 
 ## bibtex2rfc
 Authors who often cite academic publications may find the [bibtex2rfc](https://github.com/yaronf/bibtex2rfc) tool, which converts BibTeX references into valid RFCXML references, helpful since most databases include bibliographic entries in BibTex format.
+

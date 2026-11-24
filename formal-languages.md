@@ -1,11 +1,11 @@
 ---
 title: Formal languages
-description: 
+description: ''
 published: true
-date: 2021-12-16T04:44:58.833Z
-tags: 
+date: '2022-09-14T17:05:05.230Z'
+tags: []
 editor: markdown
-dateCreated: 2021-12-11T22:42:14.471Z
+dateCreated: '2021-12-11T22:42:14.471Z'
 ---
 
 There are a number of formal languages used in I-Ds and several tools have been written to help process them. 
@@ -81,3 +81,4 @@ XML allows syntax extensions using structures, such as the `<any>` element infor
 
 # Programming languages
 When programming languages are used in Internet-Drafts, you must include as a reference the formal definition of that coding language (e.g., [C99](https://www.iso.org/standard/29237.html)).
+

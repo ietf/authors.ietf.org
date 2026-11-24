@@ -2,7 +2,7 @@
 title: Diagrams
 description: ''
 published: true
-date: '2026-08-26T22:52:07.496Z'
+date: '2026-11-24T14:11:03.406Z'
 tags: []
 editor: markdown
 dateCreated: '2021-11-17T10:06:49.972Z'
@@ -41,18 +41,12 @@ If you are [Drafting in plaintext](/drafting-in-plaintext) then all diagrams nee
 # Generating ASCII-art diagrams
 
 ## asciiflow
-## {.tabset}
-### Details
 [asciiflow](https://asciiflow.com/#/) is a web based interactive ASCII diagramming tool. It support both ASCII and extended Unicode box drawing characters.  asciiflow only exports as text.
 
 ## Textik
-## {.tabset}
-### Details
 [Textik](https://textik.com/) is a web based interactive ASCII diagramming tool.  It only supports ASCII characters.  Textik is [open source](https://github.com/astashov/tixi).
 
 ## Monodraw
-## {.tabset}
-### Details
 [Monodraw](https://monodraw.helftone.com) is an interactive ASCII diagramming tool that support both ASCII and extended Unicode box drawing characters.  It is paid, but very cheap, and MacOS only.  Monodraw can generate SVG but no information is available on the features used by the generated SVG.
 
 # Generating SVG diagrams
@@ -69,28 +63,33 @@ In addition, please provide detailed descriptions of the artwork in SVG `<desc>`
 The following tools are known to be used by community members to generate SVG using one or more of the methods above:
 
 ## Dia
-## {.tabset}
-### Details
+:::block-tabs
+::block-tab{label="Details"}
 Dia is a program to draw structured diagrams.  It is open source and runs on Windows, OSX, GNU/Linux and Unix. For more details and downloads see [http://dia-installer.de](http://dia-installer.de).  Dia outputs SVG where text strings within the diagram are searchable and selectable.
+::
 
-### Community tips
+::block-tab{label="Community tips"}
 #### Nevil Brownlee, July 2018
 Dia is simple to use. Save your drawing as xxx.dia, then export it as xxx.svg.
 
 Dia draws line-end arrowheads as filled polygons, and it doesn't use markers.
+:::
 
 ## Inkscape
-## {.tabset}
-### Details
+:::block-tabs
+::block-tab{label="Details"}
 [Inkscape](https://inkscape.org) is a professional quality, open source, vector graphics  editor that runs on Linux, Windows and MacOS.
+::
 
-### Community tips
+::block-tab{label="Community tips"}
 #### Nevil Brownlee, July 2018
 Of the Open Source packages, in my opinion Inkscape is the best of them. It's a big package, though, with many features, so there's a big learning curve to go through. Fortunately there's a lot of tutorial material on the web, for example: [Inkscape tutorial](http://tavmjong.free.fr/INKSCAPE/MANUAL/html/QuickStart.html) Note, however, that SVG 1.2 RFC only allows objects that are part of black-and-white line drawings.
 
 Again, Inkscape uses markers for line-end symbols (even if you create your own markers using Object → Objects to Marker). That means, if you want arrowheads at the end of lines, you have to draw them in yourself. The simplest way to do that is to make an arrowhead with two lines grouped together, draw your lines, then copy your arrowhead at the end(s) of them.
 
 Another nice feature of Inkscape is that its 'Resize page to content' lets you resize your svg drawing to trim the white space around its edges before you save it as 'Plain SVG'. See the example [SVG flowchart diagram](https://www.rfc-editor.org/rse/wiki/lib/exe/fetch.php?media=inkscape-drawn-arrows.svg) produced in this way.
+::
+:::
 
 ## LibreOffice Draw
 ## {.tabset}

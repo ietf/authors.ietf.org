@@ -2,7 +2,7 @@
 title: Submitting your Internet-Draft
 description: ''
 published: true
-date: '2021-12-21T07:30:36.153Z'
+date: '2026-11-24T16:23:36.223Z'
 tags: []
 editor: markdown
 dateCreated: '2021-12-09T03:59:06.890Z'
@@ -19,8 +19,8 @@ It is currently possible to submit a legacy v2 RFCXML I-D instead of the current
 
 It is also currently possible to submit a PDF rendering of the document alongside both an RFCXML and plaintext submission. It is expected that support for PDF will be removed at some point.
 
-> In short: submit RFCXML if at all possible, with v3 preferred over v2.
-{.is-success}
+> [!TIP] In short:
+> Submit RFCXML if at all possible, with v3 preferred over v2.
 
 # Submission process
 When a submission is made through the submission tool, the authors will receive email with a request to verify the submission. The submission will not be accepted and posted until the action requested in that email is performed. If the submitter is logged into the Datatracker and listed as an author this step is bypassed.

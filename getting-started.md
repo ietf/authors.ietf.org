@@ -2,7 +2,7 @@
 title: Getting started
 description: ''
 published: true
-date: '2022-06-01T13:58:38.765Z'
+date: '2026-11-24T16:54:24.166Z'
 tags: []
 editor: markdown
 dateCreated: '2021-08-17T23:57:12.813Z'

@@ -2,7 +2,7 @@
 title: Diagrams
 description: ''
 published: true
-date: '2026-11-24T14:11:03.406Z'
+date: '2026-11-24T16:27:26.576Z'
 tags: []
 editor: markdown
 dateCreated: '2021-11-17T10:06:49.972Z'
@@ -92,22 +92,24 @@ Another nice feature of Inkscape is that its 'Resize page to content' lets you r
 :::
 
 ## LibreOffice Draw
-## {.tabset}
-### Details
+:::block-tabs
+::block-tab{label="Details"}
 [LibreOffice Draw](https://www.libreoffice.org/discover/draw/) is an open source, vector graphics editor.
-
-### Community tips
+::
+::block-tab{label="Community tips"}
 #### Nevil Brownlee, July 2018
 This is good if you're used to LibreOffice, and your drawing is fairly simple.
 
 Create your drawing using Draw, group it into a single object, then export it. (For me, that makes an SVG diagram that emacs and Inkscape display properly, but Firefox doesn't - however, check-svg.py's rewritten SVG diagram displays properly in Firefox, with Draw's arrowheads displayed properly.)
+::
+:::
 
 ## PowerPoint
-## {.tabset}
-### Details
+:::block-tabs
+::block-tab{label="Details"}
 PowerPoint is a commercial presentation tools with basic diagramming capabilities, part of the MS Office suite. 
-
-### Community tips
+::
+::block-tab{label="Community tips"}
 #### Don Fedyk, April 2021
 If you have black and white diagrams in PowerPoint these can be copied and pasted into Inkscape. You can resize and position on Inkscape's default page or you can create a drawing size and adjust. Then you can save as a plain svg. PowerPoint can save natively into SVG as well but that SVG is very detailed.
 
@@ -199,15 +201,19 @@ Note that the x dimension is unchanged; also, in my experience, the scaling is f
 ```
 
 The scaling is constant whether the drawing is at the top or following other drawings. Two pictures easily fit with captions on a page using this.
+::
+:::
 
 ## Adobe Illustrator
-## {.tabset}
-### Details
+:::block-tabs
+::block-tab{label="Details"}
 Adobe Illustrator is not open source but is included as some may have already have access to it.  
-
-### Community tips
+::
+::block-tab{label="Community tips"}
 #### Nevil Brownlee, July 2018
 If you're familiar with Adobe Illustrator, it can also be used. It can save files as SVG-t (i.e. SVG Tiny), which - I assume - means that drawings saved in SVG-t don't use arrowheads.
+::
+:::
 
 ## Other tools
 For reference, the following tools are also known to generate SVG.  If you use any of these tools then please send us any tips that should be included here.
@@ -219,9 +225,8 @@ For reference, the following tools are also known to generate SVG.  If you use a
 
 # Converting ASCII-art to SVG
 It is quite common for people to produce their diagrams in ASCII-art and then convert them into SVG using the following tool:
+
 ## aasvg
-## {.tabset}
-### Details
 [aasvg](https://github.com/martinthomson/aasvg) takes ASCII diagrams and converts them into SVG.  This has the advantage of ensuring that the text version of the RFC presents very similar diagrams to HTML and PDF formats.
 
 This tool is inspired by [goat](https://github.com/blampe/goat) and uses a modified version of the original [markdeep](https://casual-effects.com/markdeep/) code.
